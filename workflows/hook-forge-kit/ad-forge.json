@@ -1,0 +1,382 @@
+{
+  "contract": "exodus-workflow",
+  "description": "Selected hooks (verbatim, one or many) + a general description → assembled into one brief → four parallel body-copy passes on the brand's unaware/problem-aware primer: MarioBot twice and In-feed VSL twice. Each variant is delivered separately, formatted with the selected hooks at the top and the body copy underneath, so a human can compare and choose.",
+  "edges": [
+    {
+      "id": "e1",
+      "source": "hooks-in",
+      "sourceHandle": "text",
+      "target": "assemble",
+      "targetHandle": "hooks"
+    },
+    {
+      "id": "e2",
+      "source": "desc-in",
+      "sourceHandle": "text",
+      "target": "assemble",
+      "targetHandle": "description"
+    },
+    {
+      "id": "e3",
+      "source": "assemble",
+      "sourceHandle": "formatted",
+      "target": "mario-1",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e4",
+      "source": "assemble",
+      "sourceHandle": "formatted",
+      "target": "mario-2",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e5",
+      "source": "assemble",
+      "sourceHandle": "formatted",
+      "target": "infeed-1",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e6",
+      "source": "assemble",
+      "sourceHandle": "formatted",
+      "target": "infeed-2",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e7",
+      "source": "body-primer",
+      "sourceHandle": "primer",
+      "target": "mario-1",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e8",
+      "source": "body-primer",
+      "sourceHandle": "primer",
+      "target": "mario-2",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e9",
+      "source": "body-primer",
+      "sourceHandle": "primer",
+      "target": "infeed-1",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e10",
+      "source": "body-primer",
+      "sourceHandle": "primer",
+      "target": "infeed-2",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e11",
+      "source": "hooks-in",
+      "sourceHandle": "text",
+      "target": "fmt-m1",
+      "targetHandle": "hooks"
+    },
+    {
+      "id": "e12",
+      "source": "hooks-in",
+      "sourceHandle": "text",
+      "target": "fmt-m2",
+      "targetHandle": "hooks"
+    },
+    {
+      "id": "e13",
+      "source": "hooks-in",
+      "sourceHandle": "text",
+      "target": "fmt-i1",
+      "targetHandle": "hooks"
+    },
+    {
+      "id": "e14",
+      "source": "hooks-in",
+      "sourceHandle": "text",
+      "target": "fmt-i2",
+      "targetHandle": "hooks"
+    },
+    {
+      "id": "e15",
+      "source": "mario-1",
+      "sourceHandle": "text",
+      "target": "fmt-m1",
+      "targetHandle": "body"
+    },
+    {
+      "id": "e16",
+      "source": "mario-2",
+      "sourceHandle": "text",
+      "target": "fmt-m2",
+      "targetHandle": "body"
+    },
+    {
+      "id": "e17",
+      "source": "infeed-1",
+      "sourceHandle": "text",
+      "target": "fmt-i1",
+      "targetHandle": "body"
+    },
+    {
+      "id": "e18",
+      "source": "infeed-2",
+      "sourceHandle": "text",
+      "target": "fmt-i2",
+      "targetHandle": "body"
+    },
+    {
+      "id": "e19",
+      "source": "fmt-m1",
+      "sourceHandle": "formatted",
+      "target": "out-m1",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e20",
+      "source": "fmt-m2",
+      "sourceHandle": "formatted",
+      "target": "out-m2",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e21",
+      "source": "fmt-i1",
+      "sourceHandle": "formatted",
+      "target": "out-i1",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e22",
+      "source": "fmt-i2",
+      "sourceHandle": "formatted",
+      "target": "out-i2",
+      "targetHandle": "content"
+    }
+  ],
+  "name": "Ad Forge",
+  "nodes": [
+    {
+      "config": {
+        "askOrder": 1,
+        "description": "Paste the hook(s) you picked from the hook workflow — one or many, exactly as written. The ad must follow from these; they are never rewritten.",
+        "fieldName": "hooks",
+        "label": "Selected hooks (verbatim)",
+        "required": true,
+        "source": "text"
+      },
+      "id": "hooks-in",
+      "kind": "brief",
+      "position": {
+        "x": 0,
+        "y": 160
+      }
+    },
+    {
+      "config": {
+        "askOrder": 2,
+        "description": "What this ad is about — product, offer, angle, audience, constraints. Whatever the writers need beyond the hook.",
+        "fieldName": "description",
+        "label": "General description",
+        "required": true,
+        "source": "text"
+      },
+      "id": "desc-in",
+      "kind": "brief",
+      "position": {
+        "x": 0,
+        "y": 420
+      }
+    },
+    {
+      "config": {
+        "primerAwareness": "unawareProblemAware",
+        "primerKind": "body"
+      },
+      "id": "body-primer",
+      "kind": "primer",
+      "position": {
+        "x": 0,
+        "y": 680
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "You are writing ONE complete long-form text ad.\n\nTHE SELECTED HOOK(S) — the ad MUST follow directly from these. The\nhook is the ad's opening: the body continues from it in the same\nvoice, at the same intensity, and pays off the exact promise and\ntension the hook opens. If several hooks are given, they are\ninterchangeable openers for the SAME ad — lead from the strongest and\nwrite body copy that works beneath any of them. Never rewrite, soften,\nor skip the hooks.\n\n{{hooks}}\n\nGENERAL DESCRIPTION (product, offer, angle, and any constraints for\nthis ad):\n\n{{description}}\n\nWrite the full ad now, continuing from the hook.\n"
+      },
+      "id": "assemble",
+      "kind": "formatter",
+      "position": {
+        "x": 320,
+        "y": 290
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "The ad MUST follow from the selected hook(s) in the brief — the hook is the opening; continue from it at the same intensity and pay off its promise. Long-form text ad.",
+        "sessionMode": true,
+        "slug": "mariobot",
+        "temperature": 1
+      },
+      "id": "mario-1",
+      "kind": "bot",
+      "position": {
+        "x": 660,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "The ad MUST follow from the selected hook(s) in the brief — the hook is the opening; continue from it at the same intensity and pay off its promise. Long-form text ad.",
+        "sessionMode": true,
+        "slug": "mariobot",
+        "temperature": 1
+      },
+      "id": "mario-2",
+      "kind": "bot",
+      "position": {
+        "x": 660,
+        "y": 280
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "The ad MUST follow from the selected hook(s) in the brief — the hook is the opening; continue from it at the same intensity and pay off its promise. Long-form text ad.",
+        "customSlug": "in-feed-vsl-bot",
+        "sessionMode": true,
+        "slug": "custom",
+        "temperature": 1
+      },
+      "id": "infeed-1",
+      "kind": "bot",
+      "position": {
+        "x": 660,
+        "y": 500
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "The ad MUST follow from the selected hook(s) in the brief — the hook is the opening; continue from it at the same intensity and pay off its promise. Long-form text ad.",
+        "customSlug": "in-feed-vsl-bot",
+        "sessionMode": true,
+        "slug": "custom",
+        "temperature": 1
+      },
+      "id": "infeed-2",
+      "kind": "bot",
+      "position": {
+        "x": 660,
+        "y": 720
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "=== SELECTED HOOKS ===\n\n{{hooks}}\n\n\n=== BODY COPY — MarioBot v1 ===\n\n{{body}}\n"
+      },
+      "id": "fmt-m1",
+      "kind": "formatter",
+      "position": {
+        "x": 1000,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "=== SELECTED HOOKS ===\n\n{{hooks}}\n\n\n=== BODY COPY — MarioBot v2 ===\n\n{{body}}\n"
+      },
+      "id": "fmt-m2",
+      "kind": "formatter",
+      "position": {
+        "x": 1000,
+        "y": 280
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "=== SELECTED HOOKS ===\n\n{{hooks}}\n\n\n=== BODY COPY — In-feed VSL v1 ===\n\n{{body}}\n"
+      },
+      "id": "fmt-i1",
+      "kind": "formatter",
+      "position": {
+        "x": 1000,
+        "y": 500
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "=== SELECTED HOOKS ===\n\n{{hooks}}\n\n\n=== BODY COPY — In-feed VSL v2 ===\n\n{{body}}\n"
+      },
+      "id": "fmt-i2",
+      "kind": "formatter",
+      "position": {
+        "x": 1000,
+        "y": 720
+      }
+    },
+    {
+      "config": {
+        "key": "mario-v1",
+        "label": "Mario v1",
+        "order": 1,
+        "outputType": "text"
+      },
+      "id": "out-m1",
+      "kind": "output",
+      "position": {
+        "x": 1340,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "key": "mario-v2",
+        "label": "Mario v2",
+        "order": 2,
+        "outputType": "text"
+      },
+      "id": "out-m2",
+      "kind": "output",
+      "position": {
+        "x": 1340,
+        "y": 280
+      }
+    },
+    {
+      "config": {
+        "key": "infeed-v1",
+        "label": "Infeed VSL v1",
+        "order": 3,
+        "outputType": "text"
+      },
+      "id": "out-i1",
+      "kind": "output",
+      "position": {
+        "x": 1340,
+        "y": 500
+      }
+    },
+    {
+      "config": {
+        "key": "infeed-v2",
+        "label": "Infeed VSL v2",
+        "order": 4,
+        "outputType": "text"
+      },
+      "id": "out-i2",
+      "kind": "output",
+      "position": {
+        "x": 1340,
+        "y": 720
+      }
+    }
+  ],
+  "version": 1
+}

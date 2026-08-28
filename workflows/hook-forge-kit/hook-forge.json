@@ -1,0 +1,205 @@
+{
+  "contract": "exodus-workflow",
+  "description": "One raw idea → the Genesis hook bot escalated over 3 in-chat Level-3 passes, run twice in parallel — once with YOUR hook primer injected, once raw — then every hook from both pools collected verbatim into one doc, organized by type and graded.",
+  "edges": [
+    {
+      "id": "e1",
+      "source": "idea",
+      "sourceHandle": "text",
+      "target": "inject-primer",
+      "targetHandle": "idea"
+    },
+    {
+      "id": "e9",
+      "source": "inject-primer",
+      "sourceHandle": "formatted",
+      "target": "hooks-primed",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e2",
+      "source": "idea",
+      "sourceHandle": "text",
+      "target": "hooks-raw",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e3",
+      "source": "hook-primer",
+      "sourceHandle": "primer",
+      "target": "hooks-primed",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e4",
+      "source": "hooks-primed",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "primed_hooks"
+    },
+    {
+      "id": "e5",
+      "source": "hooks-raw",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "unprimed_hooks"
+    },
+    {
+      "id": "e6",
+      "source": "sort",
+      "sourceHandle": "text",
+      "target": "out-sorted",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e7",
+      "source": "hooks-primed",
+      "sourceHandle": "text",
+      "target": "out-primed",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e8",
+      "source": "hooks-raw",
+      "sourceHandle": "text",
+      "target": "out-raw",
+      "targetHandle": "content"
+    }
+  ],
+  "name": "Hook Forge",
+  "nodes": [
+    {
+      "config": {
+        "description": "Any raw idea — a product angle, an observation, a pain, a mechanism, a rant. Both hook lanes write from this same input.",
+        "fieldName": "brief",
+        "label": "Raw idea",
+        "required": true,
+        "source": "text"
+      },
+      "id": "idea",
+      "kind": "brief",
+      "position": {
+        "x": 0,
+        "y": 200
+      }
+    },
+    {
+      "config": {
+        "primerKind": "hook"
+      },
+      "id": "hook-primer",
+      "kind": "primer",
+      "position": {
+        "x": 0,
+        "y": 460
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "Operate at LEVEL 3 on every hook: the opening line is an emotional bomb that sets the STAKES — never vague (Level 1), never merely hinting (Level 2). The opening 1-2 lines MUST trigger an immediate emotional response and force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Be tangible and concrete (specific symptoms, patterns, numbers, clear comparisons), relevant to both the pain they feel and the things they already know, and always promise value as an insight or reframe (\"It's not X, it's Y\"). Use subtle-but-strong sensationalism (light conspiracy, bold claims) and emotionally charged, visceral wording. Hooks read like information/news, stay widely relevant and general-interest, and are simple enough to understand immediately — no crowded numbers, ample whitespace. These are long-form TEXT ads: never reference \"this\" as a visual; emojis occasionally at most. Spread the set across genuinely different angles — never two hooks from the same angle.",
+        "loopInstructions": [
+          "",
+          "Push every hook to LEVEL 3 — more vicious, stronger. The ladder: Level 1 states the topic vaguely. Level 2 hints at the area of decline. Level 3 is an emotional bomb detonating in the opening line — it sets the STAKES of the story. Rewrite the full set in this same chat: every opening 1-2 lines must trigger an IMMEDIATE emotional response — ruthless, vicious, on the edge of believable. Any hook a reader could shrug \"WHO CARES\" at is an automatic failure: kill it and replace it with a bigger swing. Keep every hook tangible — specific symptoms, patterns, numbers — and reading like news.",
+          "Second amplification, same chat: take the strongest hooks and make them MORE vicious and stronger still — emotionally gut-punching scenarios that sound ALMOST unbelievable while staying concrete and true to this market. Check every hook: does the first line detonate and set stakes? Does it promise an insight or reframe? Is it simple, whitespace-paced, news-like? Kill and replace anything still safe, polished, or lukewarm, then output the complete final set at Level 3."
+        ],
+        "loops": 3,
+        "sessionMode": true,
+        "slug": "ad-hook-bot-1",
+        "temperature": 1
+      },
+      "id": "hooks-primed",
+      "kind": "bot",
+      "position": {
+        "x": 380,
+        "y": 100
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "Operate at LEVEL 3 on every hook: the opening line is an emotional bomb that sets the STAKES — never vague (Level 1), never merely hinting (Level 2). The opening 1-2 lines MUST trigger an immediate emotional response and force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Be tangible and concrete (specific symptoms, patterns, numbers, clear comparisons), relevant to both the pain they feel and the things they already know, and always promise value as an insight or reframe (\"It's not X, it's Y\"). Use subtle-but-strong sensationalism (light conspiracy, bold claims) and emotionally charged, visceral wording. Hooks read like information/news, stay widely relevant and general-interest, and are simple enough to understand immediately — no crowded numbers, ample whitespace. These are long-form TEXT ads: never reference \"this\" as a visual; emojis occasionally at most. Spread the set across genuinely different angles — never two hooks from the same angle.",
+        "loopInstructions": [
+          "",
+          "Push every hook to LEVEL 3 — more vicious, stronger. The ladder: Level 1 states the topic vaguely. Level 2 hints at the area of decline. Level 3 is an emotional bomb detonating in the opening line — it sets the STAKES of the story. Rewrite the full set in this same chat: every opening 1-2 lines must trigger an IMMEDIATE emotional response — ruthless, vicious, on the edge of believable. Any hook a reader could shrug \"WHO CARES\" at is an automatic failure: kill it and replace it with a bigger swing. Keep every hook tangible — specific symptoms, patterns, numbers — and reading like news.",
+          "Second amplification, same chat: take the strongest hooks and make them MORE vicious and stronger still — emotionally gut-punching scenarios that sound ALMOST unbelievable while staying concrete and true to this market. Check every hook: does the first line detonate and set stakes? Does it promise an insight or reframe? Is it simple, whitespace-paced, news-like? Kill and replace anything still safe, polished, or lukewarm, then output the complete final set at Level 3."
+        ],
+        "loops": 3,
+        "sessionMode": true,
+        "slug": "ad-hook-bot-1",
+        "temperature": 1
+      },
+      "id": "hooks-raw",
+      "kind": "bot",
+      "position": {
+        "x": 380,
+        "y": 440
+      }
+    },
+    {
+      "config": {
+        "promptText": "You are a creative strategist's sorting assistant. Below are two pools of Facebook ad hooks written from the same brief for the same brand. Pool A was written WITH the brand's own hook primer. Pool B was written WITHOUT it — raw model instincts only.\n\nPOOL A — PRIMED:\n{{primed_hooks}}\n\nPOOL B — RAW:\n{{unprimed_hooks}}\n\nBuild ONE organized hook document from every hook in both pools:\n\n1. Group ALL hooks by similar type/pattern — e.g. curiosity gap, direct callout, confession/story open, warning/consequence, contrarian claim, mechanism tease, identity/status, question lead. Use only the types actually present, and invent a better-fitting label when none of these fit.\n2. Include EVERY hook from BOTH pools, VERBATIM and IN FULL — never rewrite, shorten, clean up, merge, or drop a single one. If the same hook appears twice, list it twice. Nothing is deleted: a human picks winners from this list, so silently discarding anything is failure.\n3. Tag each hook [P] (primed) or [R] (raw).\n4. Grade every hook on the brand's ladder and append the grade: L1 = vague, L2 = hints at the decline, L3 = an emotional bomb that detonates in the opening 1-2 lines and sets the stakes. Flag any hook a reader could shrug \"WHO CARES\" at with \"(who-cares)\".\n5. Within each group, order strongest first.\n6. Close with a short strategist's note: which types dominated, how the primed pool differed from the raw pool, how many hooks actually hit L3, and the 3 hooks you'd test first.\n\nFormat as clean markdown: one \"## <Hook type>\" heading per group, one hook per line.",
+        "temperature": 0.2
+      },
+      "id": "sort",
+      "kind": "prompt",
+      "position": {
+        "x": 760,
+        "y": 270
+      }
+    },
+    {
+      "config": {
+        "key": "sorted-hooks",
+        "label": "Sorted hook doc",
+        "order": 1,
+        "outputType": "text"
+      },
+      "id": "out-sorted",
+      "kind": "output",
+      "position": {
+        "x": 1140,
+        "y": 270
+      }
+    },
+    {
+      "config": {
+        "key": "primed-hooks",
+        "label": "Primed hooks (final pass)",
+        "order": 2,
+        "outputType": "text"
+      },
+      "id": "out-primed",
+      "kind": "output",
+      "position": {
+        "x": 1140,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "key": "raw-hooks",
+        "label": "Raw hooks (final pass)",
+        "order": 3,
+        "outputType": "text"
+      },
+      "id": "out-raw",
+      "kind": "output",
+      "position": {
+        "x": 1140,
+        "y": 480
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "YOUR BRAND'S HOOK PRIMER GOES HERE.\n\nReplace this entire template body with your own hook primer document: the rules your hooks must follow, plus 15-25 of your own proven exemplar hooks. Write it yourself, or port a proven primer you have access to into your market with the MADLIBS process (bundled with this kit).\n\nKeep the final line below EXACTLY as it is — it is the input slot where the run's raw idea arrives:\n\n###THIS IS THE IDEA TO DEVELOP HOOKS FOR:\n\n{{idea}}"
+      },
+      "id": "inject-primer",
+      "kind": "formatter",
+      "position": {
+        "x": 190,
+        "y": 20
+      }
+    }
+  ],
+  "version": 1
+}

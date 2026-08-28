@@ -1,0 +1,350 @@
+{
+  "contract": "exodus-workflow",
+  "description": "Three lanes: raw hook bot, primed hook bot (your primer injected), then both pools + your primer + a hook-amplification craft brief run through the hook bot AND MarioBot for a full amplification pass. Every hook from all four pools collected verbatim into one organized, graded doc.",
+  "edges": [
+    {
+      "id": "e1",
+      "source": "idea",
+      "sourceHandle": "text",
+      "target": "inject-primer",
+      "targetHandle": "idea"
+    },
+    {
+      "id": "e2",
+      "source": "idea",
+      "sourceHandle": "text",
+      "target": "hooks-raw",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e3",
+      "source": "hook-primer",
+      "sourceHandle": "primer",
+      "target": "hooks-primed",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e4",
+      "source": "inject-primer",
+      "sourceHandle": "formatted",
+      "target": "hooks-primed",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e5",
+      "source": "inject-primer",
+      "sourceHandle": "formatted",
+      "target": "amp-assembly",
+      "targetHandle": "briefed_primer"
+    },
+    {
+      "id": "e6",
+      "source": "hooks-primed",
+      "sourceHandle": "text",
+      "target": "amp-assembly",
+      "targetHandle": "primed_hooks"
+    },
+    {
+      "id": "e7",
+      "source": "hooks-raw",
+      "sourceHandle": "text",
+      "target": "amp-assembly",
+      "targetHandle": "raw_hooks"
+    },
+    {
+      "id": "e8",
+      "source": "amp-assembly",
+      "sourceHandle": "formatted",
+      "target": "amp-hookbot",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e9",
+      "source": "amp-assembly",
+      "sourceHandle": "formatted",
+      "target": "amp-mario",
+      "targetHandle": "brief"
+    },
+    {
+      "id": "e10",
+      "source": "hook-primer",
+      "sourceHandle": "primer",
+      "target": "amp-hookbot",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e11",
+      "source": "hook-primer",
+      "sourceHandle": "primer",
+      "target": "amp-mario",
+      "targetHandle": "primer"
+    },
+    {
+      "id": "e12",
+      "source": "hooks-primed",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "primed_hooks"
+    },
+    {
+      "id": "e13",
+      "source": "hooks-raw",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "unprimed_hooks"
+    },
+    {
+      "id": "e14",
+      "source": "amp-hookbot",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "hookbot_amped"
+    },
+    {
+      "id": "e15",
+      "source": "amp-mario",
+      "sourceHandle": "text",
+      "target": "sort",
+      "targetHandle": "mario_amped"
+    },
+    {
+      "id": "e16",
+      "source": "sort",
+      "sourceHandle": "text",
+      "target": "out-sorted",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e17",
+      "source": "amp-hookbot",
+      "sourceHandle": "text",
+      "target": "out-amp-hookbot",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e18",
+      "source": "amp-mario",
+      "sourceHandle": "text",
+      "target": "out-amp-mario",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e19",
+      "source": "hooks-primed",
+      "sourceHandle": "text",
+      "target": "out-primed",
+      "targetHandle": "content"
+    },
+    {
+      "id": "e20",
+      "source": "hooks-raw",
+      "sourceHandle": "text",
+      "target": "out-raw",
+      "targetHandle": "content"
+    }
+  ],
+  "name": "Hook Forge Amplified",
+  "nodes": [
+    {
+      "config": {
+        "description": "Any raw idea — a product angle, an observation, a pain, a mechanism, a rant. All three lanes write from this same input.",
+        "fieldName": "brief",
+        "label": "Raw idea",
+        "required": true,
+        "source": "text"
+      },
+      "id": "idea",
+      "kind": "brief",
+      "position": {
+        "x": 0,
+        "y": 240
+      }
+    },
+    {
+      "config": {
+        "primerKind": "hook"
+      },
+      "id": "hook-primer",
+      "kind": "primer",
+      "position": {
+        "x": 0,
+        "y": 520
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "YOUR BRAND'S HOOK PRIMER GOES HERE.\n\nReplace this entire template body with your own hook primer document: the rules your hooks must follow, plus 15-25 of your own proven exemplar hooks. Write it yourself, or port a proven primer you have access to into your market with the MADLIBS process (bundled with this kit).\n\nKeep the final line below EXACTLY as it is — it is the input slot where the run's raw idea arrives:\n\n###THIS IS THE IDEA TO DEVELOP HOOKS FOR:\n\n{{idea}}"
+      },
+      "id": "inject-primer",
+      "kind": "formatter",
+      "position": {
+        "x": 200,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "Operate at LEVEL 3 on every hook: the opening line is an emotional bomb that sets the STAKES — never vague (Level 1), never merely hinting (Level 2). The opening 1-2 lines MUST trigger an immediate emotional response and force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Be tangible and concrete (specific symptoms, patterns, numbers, clear comparisons), relevant to both the pain they feel and the things they already know, and always promise value as an insight or reframe (\"It's not X, it's Y\"). Use subtle-but-strong sensationalism (light conspiracy, bold claims) and emotionally charged, visceral wording. Hooks read like information/news, stay widely relevant and general-interest, and are simple enough to understand immediately — no crowded numbers, ample whitespace. These are long-form TEXT ads: never reference \"this\" as a visual; emojis occasionally at most. Spread the set across genuinely different angles — never two hooks from the same angle.",
+        "loopInstructions": [
+          "",
+          "Push every hook to LEVEL 3 — more vicious, stronger. The ladder: Level 1 states the topic vaguely. Level 2 hints at the area of decline. Level 3 is an emotional bomb detonating in the opening line — it sets the STAKES of the story. Rewrite the full set in this same chat: every opening 1-2 lines must trigger an IMMEDIATE emotional response — ruthless, vicious, on the edge of believable. Any hook a reader could shrug \"WHO CARES\" at is an automatic failure: kill it and replace it with a bigger swing. Keep every hook tangible — specific symptoms, patterns, numbers — and reading like news.",
+          "Second amplification, same chat: take the strongest hooks and make them MORE vicious and stronger still — emotionally gut-punching scenarios that sound ALMOST unbelievable while staying concrete and true to this market. Check every hook: does the first line detonate and set stakes? Does it promise an insight or reframe? Is it simple, whitespace-paced, news-like? Kill and replace anything still safe, polished, or lukewarm, then output the complete final set at Level 3."
+        ],
+        "loops": 3,
+        "sessionMode": true,
+        "slug": "ad-hook-bot-1",
+        "temperature": 1
+      },
+      "id": "hooks-primed",
+      "kind": "bot",
+      "position": {
+        "x": 440,
+        "y": 120
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "Operate at LEVEL 3 on every hook: the opening line is an emotional bomb that sets the STAKES — never vague (Level 1), never merely hinting (Level 2). The opening 1-2 lines MUST trigger an immediate emotional response and force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Be tangible and concrete (specific symptoms, patterns, numbers, clear comparisons), relevant to both the pain they feel and the things they already know, and always promise value as an insight or reframe (\"It's not X, it's Y\"). Use subtle-but-strong sensationalism (light conspiracy, bold claims) and emotionally charged, visceral wording. Hooks read like information/news, stay widely relevant and general-interest, and are simple enough to understand immediately — no crowded numbers, ample whitespace. These are long-form TEXT ads: never reference \"this\" as a visual; emojis occasionally at most. Spread the set across genuinely different angles — never two hooks from the same angle.",
+        "loopInstructions": [
+          "",
+          "Push every hook to LEVEL 3 — more vicious, stronger. The ladder: Level 1 states the topic vaguely. Level 2 hints at the area of decline. Level 3 is an emotional bomb detonating in the opening line — it sets the STAKES of the story. Rewrite the full set in this same chat: every opening 1-2 lines must trigger an IMMEDIATE emotional response — ruthless, vicious, on the edge of believable. Any hook a reader could shrug \"WHO CARES\" at is an automatic failure: kill it and replace it with a bigger swing. Keep every hook tangible — specific symptoms, patterns, numbers — and reading like news.",
+          "Second amplification, same chat: take the strongest hooks and make them MORE vicious and stronger still — emotionally gut-punching scenarios that sound ALMOST unbelievable while staying concrete and true to this market. Check every hook: does the first line detonate and set stakes? Does it promise an insight or reframe? Is it simple, whitespace-paced, news-like? Kill and replace anything still safe, polished, or lukewarm, then output the complete final set at Level 3."
+        ],
+        "loops": 3,
+        "sessionMode": true,
+        "slug": "ad-hook-bot-1",
+        "temperature": 1
+      },
+      "id": "hooks-raw",
+      "kind": "bot",
+      "position": {
+        "x": 440,
+        "y": 460
+      }
+    },
+    {
+      "config": {
+        "mode": "template",
+        "template": "HOOK AMPLIFICATION — THE CRAFT PASS\n(distilled from the Genesis Live Training hook-amplification system, 2026-08-17)\n\nYour job in this pass: take the hook pools you are given, mine them for the strongest IDEAS, and AMPLIFY those ideas — then deliver the amplified set. Bangers are ideas, not sentences: intensity multiplies a good idea and never rescues a bad one. Most of the real work is killing your own versions for named reasons.\n\nTHE PHYSICS\n- A hook has one job: make the right person feel an irresistible need to consume the very next sentence. It works if they think \"Wait... WHAT?\" / \"That's me.\" / \"I need to know.\" It fails if they think \"interesting\" — interest scrolls.\n- Hooks detonate, they don't create: they trigger emotion the reader already carries (years of faithful use, money spent, self-blame in the mirror, advice they obeyed that never worked). A hook aimed at nothing stored is loud and dead.\n- Anger converts. Shame paralyzes. Every strong hook hands the reader absolution: your past failures were never your fault, and now there's a named reason why.\n- Recognition is not compulsion: a line that makes someone feel perfectly SEEN, but complete, is a mirror — he nods and keeps scrolling. Leave the loop OPEN.\n- GOOD hooks are hyper-specific validation of a valence flip: something perceived bad revealed as secretly good, or something perceived good revealed as secretly and ACTIVELY harmful — never merely \"ineffective\"; ineffective makes nobody flinch. GREAT hooks do all that AND open a loop the prospect feels chemically compelled to close. The test at the end of every hook: what specific question is the reader left holding? None = you wrote a diagnosis, not a hook.\n- The core equation: Attention = Relevance x (Curiosity + Tension + Value + Novelty) x Credibility. Relevance, tension, and clear value are the core; everything else intensifies them. Amplifiers can never substitute for the core — a great open loop with no tension underneath is a trivia question. Grade the core trio FIRST.\n- THE TRUTH ANCHOR (caps every dial): amplify FRAMING, never facts. The most charged TRUE framing is legal (\"flavored SEAWATER\", \"fake gold\"); an invented claim never is. Any number or absolute that ships needs a source a hostile reader can't break — flag it.\n\nTHE PROTOCOL (run it on each hook you amplify)\n0. AIM IT: which suspicion does this market already carry? Whose enemy gets the rock? Which past failure gets justified? Which identity is under threat — not the symptom, the kneeling in the garden, the kid's respect, the marriage.\n1. FREEZE THE IDEA as one ugly sentence. If the market wouldn't stop for the boring version, find a better idea — do not polish a dud. The frozen idea never changes during the climb; a stronger neighboring idea is a DIFFERENT hook — park it and climb it separately.\n2. THE INEFFECTIVE GATE: an idea shaped like \"X doesn't work\" may not enter. Escalate it first: what's IN it (the contamination lane — the corner-cutting that made it filler lets poison in), what it KEPT them on (the harmful thing the false relief protected), what it let PROGRESS (the condition that advanced while they thought they were treating it), or what prize does it steal outright (prize theft: name the DESIRED RESULT and how the crime STOPS it).\n3. CLIMB — amplify the FACT, not the sentence: each version must assert a STRONGER CLAIM than the last (a recategorization, a harder consequence, a more damning checkable fact). The same claim in prettier clothes is expression dressing — still weak. Ask each rung: what is actually TRUE here that is WORSE than what I just said? Stakes ladder: wallet, then body, then brain/irreversible, then identity/relationship. Kill versions out loud and name the law each death teaches.\n4. HUNT THE CONNOTATION: what is this crime ALREADY CALLED in everyday life? (Fake gold. Counterfeiting. Cutting the product. Seawater. Coffee belly.) Name the criminal's trade, not just the crime. A coinage that rides a naming genre the culture owns arrives half-understood — and that half IS the loop: the reader must have it decoded and must self-check.\n5. RENDER AS SPEECH: say it across the table to one market member and transcribe THAT. The bar test: if you couldn't say the line at a bar exactly as written, it isn't rendered. Caveman words (sweat, not perspire). Protect the charged word — never trade a hard word for its polite synonym. Collision by word 10-12; stop at the hardest word.\n6. THE LOOP GATE: write down the specific question the reader is left holding (WHICH word? WHICH brands? Is MINE one?). None = put the mystery back — withhold the discriminator; the mechanism stays in the body copy. The explanation closes what the coinage opens.\n7. THE CORE-FIRST AUDIT: grade relevance, tension, value BEFORE admiring craft. Final read: does it make YOU flinch? If it reads politer, vaguer, or more resolved than the best ads in this niche, it is not done.\n\nTHE FOUR MOVES (final passes over every draft — every killer hook contains all four; every dead version is missing at least one)\n1. THE WORST TRUTH: what is the WORST thing that's TRUE here? Never \"doesn't work\" — hunt what's in it, what it kept them on, what it let progress, what prize it steals. Then set the volume with the caricature license: the most charged TRUE framing.\n2. THEIR MOMENT: what moment of theirs does this line make them SEE? Staged (written into the line: still thirsty an hour later, the clump in the shower drain) or summoned (forces them to see their own shelf, mirror, or bottle without describing it). Nobody may escape with \"that's not me.\"\n3. THE FACE: what is this crime already CALLED — and who's doing it? Best of all, catch the villain PERFORMING after the crime (\"then acting surprised your cells are SCREAMING with thirst\").\n4. THE ITCH: what must they find out — and can you say the line at a bar? Swap every soft word for its detonator and stop at the hardest one.\nThe sentence to take home: every killer hook is the worst true thing, landing in a moment they lived, with a face on the crime, leaving one question burning.\n\nTHE DIALS (a finished hook carries 4-6, never more — past that it becomes a checklist sentence):\nCharacter: charge-stacking (every attribute opens a file), the unlikely messenger, the witness (\"My wife stopped asking if I'm okay. Now she just watches.\"). Scene: named mundane setting, the relic object (two glasses of iced tea), exact clocks (6:12 AM). Villain: enemy inversion (the helper is the cause), authority-failure clause (\"...my doctors never could\"), crime verb, coined enemy. Stakes: consequence magnitude, suffering duration, irreversible loss (\"the ones that close don't come back\"), load-bearing target (the marriage, not the symptom). Language: charged-word protection, caveman words, velocity. Loop: withhold the cause, paradox in one breath, self-verification (the drain he can check right now), edge of reality. Also proven: present tense as a dial (\"is pulling right now\" out-hits any statistic), the receipt ($437 in 3 months), composure (\"she didn't yell\" is scarier than yelling), the category hijack (\"the next smoking epidemic\"), the irony knife (the purchase motive named inside the conviction), the calibrated hedge placed exactly on the biggest claim (\"could be\").\n\nCEILING — CRANK VS FORK: not every hook has headroom; at ceiling, more voltage makes it worse. The next move is a FORK: the family sibling (same frozen idea through a different awareness door — the 98% line works the cold market; the forgetting-your-keys line convicts owners), the symptom door (enter through a moment the reader lived this week, then REDIRECT the blame — fear and absolution in the same breath), or the POV re-skin (self / spouse / mother). And the reverse trap: craft and spend do not prove stakes — run the who-gives-a-fuck check before admiring technique; rescue trivial crimes by prize theft, never by louder outrage.\n\nCALIBRATION LINES (the bar — if your output is politer, vaguer, or more resolved than these, go around again):\n- \"Your sunscreen is COOKING the collagen out of your face.\"\n- \"The wrinkles you blame on birthdays were MANUFACTURED by your SPF.\"\n- \"Sunscreen is the only product on your shelf that ages you while you THANK it.\"\n- \"Every morning you oil your beard. And every morning, that oil packs the clog CHOKING your growth.\"\n- \"Flip your beard oil bottle over. Nothing on the label says 4c.\"\n- \"98% of store-bought Turmeric contains 'fake gold' that POISONS your brain instead of fixing your knees.\"\n- \"Forgetting your keys? That could be poisoning from the 'fake gold' in the turmeric you bought for your knees.\"\n- \"Most electrolyte companies are selling you flavored SEAWATER in fancy packaging. Then acting surprised your cells are SCREAMING with thirst.\"\n- \"Your child isn't shy. It's their acne, and telling them they're beautiful is making it worse.\"\n- \"My wife found the credit card statement. $437 in 3 months. All on supplements. She didn't yell. She just looked at me and said 'You know they're lying to you, right?'\"\n- \"Your baby is pulling minerals from your body right now to build their cells. What's left for yours?\"\n- \"Hysterectomy takes more than your uterus. Nobody tells you that part.\"\n- \"My son beat me arm wrestling last week. I laughed it off in front of him. In the garage after, I didn't.\"\n- \"Look down at your shower drain. That clump of hair? That's DHT shrinking your follicles in real time.\"\n\nOUTPUT CONTRACT FOR THIS PASS\nFor each hook you deliver: the frozen ugly sentence, then the settled amplified line (show 1-2 dead rungs with the law each death teaches when instructive), the dials in use (4-6, named), the specific question the reader is left holding, and its grade on the Level ladder (L1 vague / L2 hinting / L3 emotional bomb that sets the stakes). Rotate vehicles across the set — no two adjacent hooks share a skeleton. Flag any number or absolute that needs a source before shipping. Deliver at least 10 amplified hooks, strongest first.\n\n===\n\nTHE BRAND'S HOOK PRIMER + THE IDEA (the market, the Level-3 doctrine,\nand the exemplar hooks — obey its rules; the idea being written for is\nat the bottom):\n\n{{briefed_primer}}\n\n===\n\nPOOL A — first-pass hooks written WITH the primer:\n\n{{primed_hooks}}\n\n===\n\nPOOL B — first-pass hooks written RAW (no primer):\n\n{{raw_hooks}}\n\n===\n\nYOUR TASK: run the amplification pass now. Mine BOTH pools for the\nstrongest ideas — an idea can be rescued from a weak hook. Freeze each\nas an ugly sentence, run the Ineffective Gate, climb it (amplify the\nFACT, not the sentence), hunt the coinage, render it as speech, check\nthe loop, and deliver the amplified set exactly per the OUTPUT CONTRACT\nabove.\n"
+      },
+      "id": "amp-assembly",
+      "kind": "formatter",
+      "position": {
+        "x": 720,
+        "y": 290
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "You are running an AMPLIFICATION pass, not a first draft: the brief contains the full craft system, the brand primer, and two pools of existing hooks. Follow its protocol and output contract exactly. Operate at LEVEL 3 only — vicious opening lines that force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Amplify framing, never facts; flag any number or absolute that needs a source.",
+        "sessionMode": true,
+        "slug": "ad-hook-bot-1",
+        "temperature": 1
+      },
+      "id": "amp-hookbot",
+      "kind": "bot",
+      "position": {
+        "x": 980,
+        "y": 170
+      }
+    },
+    {
+      "config": {
+        "customInstructions": "You are running a HOOK AMPLIFICATION pass, not writing body copy: the brief contains the full craft system, the brand primer, and two pools of existing hooks. Deliver amplified HOOKS only, per the brief's protocol and output contract — no long-form body. Operate at LEVEL 3 only — vicious opening lines that force readership; any hook a reader could shrug \"WHO CARES\" at is an automatic failure. Amplify framing, never facts; flag any number or absolute that needs a source.",
+        "sessionMode": true,
+        "slug": "mariobot",
+        "temperature": 1
+      },
+      "id": "amp-mario",
+      "kind": "bot",
+      "position": {
+        "x": 980,
+        "y": 430
+      }
+    },
+    {
+      "config": {
+        "promptText": "You are a creative strategist's sorting assistant. Below are four pools of Facebook ad hooks written from the same brief for the same brand. Pool A was written WITH the brand's hook primer. Pool B was written WITHOUT it. Pools C and D are AMPLIFICATION passes — two different bots ran the full Hook Amplification craft system over pools A and B.\n\nPOOL A — PRIMED [P]:\n{{primed_hooks}}\n\nPOOL B — RAW [R]:\n{{unprimed_hooks}}\n\nPOOL C — AMPLIFIED by the hook bot [AMP-H]:\n{{hookbot_amped}}\n\nPOOL D — AMPLIFIED by MarioBot [AMP-M]:\n{{mario_amped}}\n\nBuild ONE organized hook document from every hook in all four pools:\n\n1. Group ALL hooks by similar type/pattern — e.g. curiosity gap, direct callout, confession/story open, warning/consequence, contrarian claim, mechanism tease, identity/status, question lead. Use only the types actually present, and invent a better-fitting label when none of these fit.\n2. Include EVERY hook from ALL FOUR pools, VERBATIM and IN FULL — never rewrite, shorten, clean up, merge, or drop a single one. If the same hook appears in more than one pool, list it every time it appears. From the amplification pools include every hook line — settled lines AND climb rungs — verbatim. Nothing is deleted: a human picks winners from this list, so silently discarding anything is failure.\n3. Tag each hook with its source pool: [P], [R], [AMP-H], or [AMP-M].\n4. Grade every hook on the brand's ladder and append the grade: L1 = vague, L2 = hints at the decline, L3 = an emotional bomb that detonates in the opening 1-2 lines and sets the stakes. Flag any hook a reader could shrug \"WHO CARES\" at with \"(who-cares)\".\n5. Within each group, order strongest first.\n6. Close with a short strategist's note: which types dominated, how the four pools differed (did the primer help? did amplification lift the first passes?), how many hooks actually hit L3, and the 3 hooks you'd test first.\n\nFormat as clean markdown: one \"## <Hook type>\" heading per group, one hook per line.",
+        "temperature": 0.2
+      },
+      "id": "sort",
+      "kind": "prompt",
+      "position": {
+        "x": 1240,
+        "y": 290
+      }
+    },
+    {
+      "config": {
+        "key": "sorted-hooks",
+        "label": "Sorted hook doc",
+        "order": 1,
+        "outputType": "text"
+      },
+      "id": "out-sorted",
+      "kind": "output",
+      "position": {
+        "x": 1520,
+        "y": 60
+      }
+    },
+    {
+      "config": {
+        "key": "amplified-hookbot",
+        "label": "Amplified hooks (hook bot)",
+        "order": 2,
+        "outputType": "text"
+      },
+      "id": "out-amp-hookbot",
+      "kind": "output",
+      "position": {
+        "x": 1520,
+        "y": 220
+      }
+    },
+    {
+      "config": {
+        "key": "amplified-mario",
+        "label": "Amplified hooks (MarioBot)",
+        "order": 3,
+        "outputType": "text"
+      },
+      "id": "out-amp-mario",
+      "kind": "output",
+      "position": {
+        "x": 1520,
+        "y": 380
+      }
+    },
+    {
+      "config": {
+        "key": "primed-hooks",
+        "label": "Primed hooks (first pass)",
+        "order": 4,
+        "outputType": "text"
+      },
+      "id": "out-primed",
+      "kind": "output",
+      "position": {
+        "x": 1520,
+        "y": 540
+      }
+    },
+    {
+      "config": {
+        "key": "raw-hooks",
+        "label": "Raw hooks (first pass)",
+        "order": 5,
+        "outputType": "text"
+      },
+      "id": "out-raw",
+      "kind": "output",
+      "position": {
+        "x": 1520,
+        "y": 700
+      }
+    }
+  ],
+  "version": 1
+}

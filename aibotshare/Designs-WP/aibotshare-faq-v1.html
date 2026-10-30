@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en" data-theme="pleasant-pink">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Bot Share - FAQ</title>
+<meta name="description" content="Every AI Bot Share question, answered by an embedded AI Bot Share bot.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<script>
+  try {
+    var t = localStorage.getItem('abs-preview-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+<style>
+  :root,
+[data-theme="pleasant-pink"] {
+    --theme-bg: oklch(0.98 0.01 290);
+    --theme-surface: #ffffff;
+    --theme-surface-alt: oklch(0.96 0.01 290);
+    --theme-surface-hover: oklch(0.985 0.008 290);
+    --theme-sidebar: oklch(0.95 0.02 280);
+    --theme-text: oklch(0.28 0.03 290);
+    --theme-text-secondary: oklch(0.44 0.03 290);
+    --theme-text-muted: oklch(0.55 0.03 290);
+    --theme-text-subtle: oklch(0.62 0.03 290);
+    --theme-text-on-accent: #ffffff;
+    --theme-border: oklch(0.94 0.01 290);
+    --theme-border-strong: oklch(0.90 0.015 290);
+    --theme-border-width: 1px;
+    --theme-accent: oklch(0.75 0.13 330);
+    --theme-accent-hover: oklch(0.68 0.14 330);
+    --theme-accent-soft: oklch(0.94 0.05 330);
+    --theme-success: oklch(0.45 0.11 155);
+    --theme-success-soft: oklch(0.93 0.05 155);
+    --theme-warning: oklch(0.50 0.13 80);
+    --theme-warning-soft: oklch(0.94 0.07 80);
+    --theme-danger: oklch(0.50 0.16 25);
+    --theme-danger-soft: oklch(0.94 0.05 25);
+    --theme-info: oklch(0.45 0.12 250);
+    --theme-info-soft: oklch(0.93 0.04 250);
+    --theme-font-display: 'Baloo 2', system-ui, sans-serif;
+    --theme-font-body: 'Nunito Sans', system-ui, sans-serif;
+    --theme-radius-card: 22px;
+    --theme-radius-nav: 16px;
+    --theme-radius-control: 12px;
+    --theme-radius-pill: 999px;
+    --theme-shadow-card: none;
+    --theme-shadow-raised: 0 4px 10px oklch(0.75 0.13 330 / 0.30);
+  }
+
+  [data-theme="nightshift"] {
+    --theme-bg: oklch(0.16 0.02 260);
+    --theme-surface: oklch(0.19 0.02 260);
+    --theme-surface-alt: oklch(0.14 0.02 260);
+    --theme-surface-hover: oklch(0.22 0.02 260);
+    --theme-sidebar: oklch(0.13 0.02 260);
+    --theme-text: oklch(0.95 0.005 260);
+    --theme-text-secondary: oklch(0.72 0.015 260);
+    --theme-text-muted: oklch(0.60 0.02 260);
+    --theme-text-subtle: oklch(0.50 0.02 260);
+    --theme-text-on-accent: oklch(0.13 0.02 260);
+    --theme-border: oklch(0.25 0.02 260);
+    --theme-border-strong: oklch(0.32 0.02 260);
+    --theme-border-width: 1px;
+    --theme-accent: oklch(0.78 0.14 200);
+    --theme-accent-hover: oklch(0.85 0.14 200);
+    --theme-accent-soft: oklch(0.28 0.05 200);
+    --theme-success: oklch(0.75 0.15 155);
+    --theme-success-soft: oklch(0.26 0.05 155);
+    --theme-warning: oklch(0.80 0.13 80);
+    --theme-warning-soft: oklch(0.28 0.05 80);
+    --theme-danger: oklch(0.72 0.15 25);
+    --theme-danger-soft: oklch(0.28 0.06 25);
+    --theme-info: oklch(0.75 0.12 250);
+    --theme-info-soft: oklch(0.26 0.05 250);
+    --theme-font-display: 'Sora', system-ui, sans-serif;
+    --theme-font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --theme-radius-card: 12px;
+    --theme-radius-nav: 8px;
+    --theme-radius-control: 8px;
+    --theme-radius-pill: 999px;
+    --theme-shadow-card: 0 1px 2px rgb(0 0 0 / 0.30);
+    --theme-shadow-raised: 0 4px 12px rgb(0 0 0 / 0.45);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; font-family: var(--theme-font-body); background: var(--theme-bg); color: var(--theme-text); }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .display { font-family: var(--theme-font-display); }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--theme-border-strong); border-radius: var(--theme-radius-pill); }
+
+  /* -- header -- */
+  .site-header { position: sticky; top: 0; z-index: 20; background: var(--theme-bg); border-bottom: var(--theme-border-width) solid var(--theme-border); }
+  .header-row { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 18px; }
+  .nav-links { display: flex; align-items: center; gap: 30px; font-size: 14.5px; font-weight: 700; color: var(--theme-text-secondary); }
+  .header-ctas { display: flex; align-items: center; gap: 14px; }
+
+  /* -- buttons -- */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 26px; border-radius: var(--theme-radius-pill); font-size: 15px; font-weight: 800; border: none; cursor: pointer; font-family: inherit; white-space: nowrap; }
+  .btn-primary { background: var(--theme-accent); color: var(--theme-text-on-accent); box-shadow: var(--theme-shadow-raised); }
+  .btn-ghost { background: var(--theme-surface-alt); color: var(--theme-text-secondary); }
+  .btn-outline { background: transparent; color: var(--theme-text); border: 2px solid var(--theme-border-strong); }
+  .btn-sm { padding: 10px 18px; font-size: 13.5px; }
+  .btn-lg { padding: 18px 34px; font-size: 17px; }
+  .btn-block { width: 100%; }
+
+  /* -- eyebrow / section head -- */
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--theme-accent); background: var(--theme-accent-soft); padding: 7px 16px; border-radius: var(--theme-radius-pill); }
+  .section { padding: 90px 0; }
+  .section-head { text-align: center; max-width: 700px; margin: 0 auto 52px; }
+  .section-head h2 { font-size: 36px; margin: 16px 0 14px; }
+  .section-head p { font-size: 17px; color: var(--theme-text-secondary); line-height: 1.6; margin: 0; }
+
+  /* -- hero -- */
+  .hero { padding: 76px 0 40px; text-align: center; }
+  .hero h1 { font-size: 54px; line-height: 1.08; margin: 22px 0 20px; }
+  .hero .lede { font-size: 19px; color: var(--theme-text-secondary); max-width: 640px; margin: 0 auto 34px; line-height: 1.6; }
+  .hero-ctas { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .hero-fine { margin-top: 16px; font-size: 13px; color: var(--theme-text-muted); font-weight: 700; }
+
+  /* -- mock chrome for screenshots/demo frames -- */
+  .mock-frame { background: var(--theme-surface); border-radius: var(--theme-radius-card); box-shadow: var(--theme-shadow-raised); overflow: hidden; border: var(--theme-border-width) solid var(--theme-border); }
+  .mock-chrome { display: flex; gap: 6px; padding: 12px 16px; background: var(--theme-surface-alt); }
+  .mock-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--theme-border-strong); }
+
+  /* -- cards, grids -- */
+  .grid { display: grid; gap: 22px; }
+  .cols-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .card { background: var(--theme-surface); border-radius: var(--theme-radius-card); padding: 30px 26px; box-shadow: var(--theme-shadow-card); border: var(--theme-border-width) solid var(--theme-border); }
+  .icon-tile { width: 48px; height: 48px; border-radius: var(--theme-radius-nav); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+  .card h3 { font-size: 19px; margin: 0 0 10px; }
+  .card p { font-size: 14.5px; color: var(--theme-text-secondary); line-height: 1.6; margin: 0; }
+
+  /* -- mechanism (three-way bot market) -- */
+  .mech-card { position: relative; }
+  .mech-num { position: absolute; top: 26px; right: 26px; font-size: 34px; font-weight: 800; color: var(--theme-border-strong); }
+
+  /* -- pricing -- */
+  .price-grid { display: grid; grid-template-columns: repeat(5, minmax(0,1fr)); gap: 16px; align-items: stretch; }
+  .price-card { background: var(--theme-surface); border-radius: var(--theme-radius-card); padding: 26px 20px; border: 2px solid var(--theme-border); display: flex; flex-direction: column; }
+  .price-card.featured { border-color: var(--theme-accent); box-shadow: var(--theme-shadow-raised); transform: translateY(-8px); }
+  .price-pill { align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; background: var(--theme-accent); color: var(--theme-text-on-accent); padding: 5px 12px; border-radius: var(--theme-radius-pill); margin-bottom: 12px; }
+  .price-name { font-size: 18px; font-weight: 800; margin: 0 0 4px; }
+  .price-amount { font-size: 34px; font-weight: 800; font-family: var(--theme-font-display); }
+  .price-amount span { font-size: 14px; font-weight: 700; color: var(--theme-text-muted); }
+  .price-note { font-size: 13px; color: var(--theme-text-muted); margin: 8px 0 20px; line-height: 1.5; min-height: 40px; }
+  .price-features { list-style: none; margin: 0 0 22px; padding: 0; font-size: 13px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .price-features li { display: flex; align-items: flex-start; gap: 8px; color: var(--theme-text-secondary); }
+  .price-features svg { flex-shrink: 0; margin-top: 2px; color: var(--theme-success); }
+
+  /* -- badges -- */
+  .badge-founder { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 800; background: var(--theme-warning-soft); color: var(--theme-warning); padding: 6px 14px; border-radius: var(--theme-radius-pill); }
+
+  /* -- testimonials -- */
+  .testimonial { display: flex; flex-direction: column; gap: 16px; }
+  .testimonial .stars { display: flex; gap: 3px; color: var(--theme-warning); }
+  .testimonial blockquote { margin: 0; font-size: 15px; line-height: 1.65; color: var(--theme-text); }
+  .testimonial-who { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+  .testimonial-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--theme-accent); color: var(--theme-text-on-accent); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0; }
+  .testimonial-name { font-size: 13.5px; font-weight: 800; }
+  .testimonial-role { font-size: 12px; color: var(--theme-text-muted); }
+
+  /* -- widget demo -- */
+  .widget-demo-frame { position: relative; background: var(--theme-surface-alt); border-radius: var(--theme-radius-card); padding: 60px 40px; min-height: 320px; }
+  .widget-bubble { position: absolute; bottom: 24px; right: 24px; width: 300px; background: var(--theme-surface); border-radius: var(--theme-radius-card); box-shadow: var(--theme-shadow-raised); overflow: hidden; border: var(--theme-border-width) solid var(--theme-border); }
+  .widget-head { display: flex; align-items: center; gap: 10px; padding: 14px 16px; background: var(--theme-accent); color: var(--theme-text-on-accent); font-weight: 800; font-size: 13px; }
+  .widget-body { padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .widget-msg { font-size: 12.5px; line-height: 1.5; padding: 9px 12px; border-radius: 12px; max-width: 85%; }
+  .widget-msg.them { background: var(--theme-surface-alt); align-self: flex-start; }
+  .widget-msg.us { background: var(--theme-accent-soft); color: var(--theme-accent); align-self: flex-end; }
+
+  /* -- faq (reuses the app's accordion pattern) -- */
+  .faq-item { background: var(--theme-surface); border-radius: var(--theme-radius-card); border: var(--theme-border-width) solid var(--theme-border); overflow: hidden; margin-bottom: 12px; }
+  .faq-q { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; cursor: pointer; font-weight: 700; font-size: 15px; }
+  .faq-a { padding: 0 24px 20px; font-size: 14px; color: var(--theme-text-secondary); line-height: 1.6; }
+  .faq-item:not(.open) .faq-a { display: none; }
+  .faq-item.open .faq-q svg { transform: rotate(180deg); }
+
+  /* -- cta band -- */
+  .cta-band { text-align: center; padding: 70px 40px; border-radius: var(--theme-radius-card); background: var(--theme-accent-soft); }
+  .cta-band h2 { font-size: 32px; margin: 0 0 14px; }
+  .cta-band p { font-size: 16px; color: var(--theme-text-secondary); margin: 0 0 28px; }
+
+  /* -- footer -- */
+  .site-footer { border-top: var(--theme-border-width) solid var(--theme-border); padding: 56px 0 34px; }
+  .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 40px; }
+  .footer-blurb { font-size: 13.5px; color: var(--theme-text-muted); line-height: 1.6; max-width: 280px; }
+  .footer-heading { font-size: 12px; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; color: var(--theme-text-muted); margin-bottom: 16px; }
+  .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; font-size: 13.5px; font-weight: 700; color: var(--theme-text-secondary); }
+  .footer-bottom { display: flex; align-items: center; justify-content: space-between; font-size: 12.5px; color: var(--theme-text-muted); border-top: var(--theme-border-width) solid var(--theme-border); padding-top: 24px; }
+
+  /* -- long-form (variant 2) -- */
+  .letter { max-width: 720px; margin: 0 auto; }
+  .letter h2 { font-size: 27px; margin: 44px 0 16px; }
+  .letter p { font-size: 16.5px; line-height: 1.75; color: var(--theme-text-secondary); margin: 0 0 20px; }
+  .letter p.lead { font-size: 19px; color: var(--theme-text); font-weight: 600; }
+  .letter ul.benefits { list-style: none; padding: 0; margin: 24px 0; display: flex; flex-direction: column; gap: 14px; }
+  .letter ul.benefits li { display: flex; gap: 12px; font-size: 15.5px; color: var(--theme-text); align-items: flex-start; }
+  .letter ul.benefits svg { flex-shrink: 0; margin-top: 3px; color: var(--theme-success); }
+  .letter blockquote.pull { border-left: 4px solid var(--theme-accent); padding: 4px 0 4px 22px; font-size: 18px; font-style: italic; margin: 32px 0; color: var(--theme-text); }
+  .p-s { font-size: 15px; font-weight: 700; }
+
+  /* -- comparison table (variant 3) -- */
+  .compare-table { width: 100%; border-collapse: collapse; background: var(--theme-surface); border-radius: var(--theme-radius-card); overflow: hidden; box-shadow: var(--theme-shadow-card); }
+  .compare-table th, .compare-table td { padding: 16px 20px; text-align: center; border-bottom: var(--theme-border-width) solid var(--theme-border); font-size: 13.5px; }
+  .compare-table th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--theme-text-muted); font-weight: 800; }
+  .compare-table td:first-child, .compare-table th:first-child { text-align: left; font-weight: 700; }
+  .compare-table td.us { background: var(--theme-accent-soft); font-weight: 800; color: var(--theme-accent); }
+  .tab-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 40px; flex-wrap: wrap; }
+  .tab-pill { padding: 10px 20px; border-radius: var(--theme-radius-pill); font-size: 13.5px; font-weight: 700; background: var(--theme-surface-alt); color: var(--theme-text-secondary); cursor: pointer; }
+  .tab-pill.active { background: var(--theme-accent); color: var(--theme-text-on-accent); }
+
+  @media (max-width: 900px) {
+    .cols-2, .cols-3 { grid-template-columns: 1fr; }
+    .price-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 38px; }
+    .nav-links { display: none; }
+  }
+
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="aibotshare-design-e-softline-marketing-home-v1.html" class="brand display">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <circle cx="15" cy="15" r="14" fill="var(--theme-accent)"/>
+      <circle cx="11" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+      <circle cx="19" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+      <path d="M10.5 19c1.3 1.4 2.9 2 4.5 2s3.2-.6 4.5-2" stroke="var(--theme-text-on-accent)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    </svg>
+    AI Bot Share
+  </a>
+    <nav class="nav-links">
+      <a href="#mechanism">Bot Market</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="aibotshare-design-e-softline-marketing-affiliate-v1.html">Affiliates</a>
+    </nav>
+    <div class="header-ctas">
+      <a href="#" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="#pricing" class="btn btn-primary btn-sm">Take Me To The Lab</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero wrap" style="padding-bottom:10px;">
+  <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> FAQ</span>
+  <h1 class="display" style="font-size:40px;">Questions, answered live</h1>
+  <p class="lede">The same embeddable-bot feature you would use on your own sales page is answering every question below.</p>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap" style="max-width:760px;">
+    <div class="section-head">
+      <span class="eyebrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12l2.2 2.2L15.5 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> FAQ</span>
+      <h2 class="display">Every question, answered by the product itself</h2>
+      <p>The same embeddable bot feature you would put on your own sales page is answering these questions live, right here.</p>
+    </div>
+
+        <div class="faq-item open">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Will AI Bot Share pull the rug the way OpenAI did?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">No platform can promise the future. What you do have is a choice of four models rather than one vendor, published fees rather than an undisclosed formula and a data export for what you build.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            What does the platform take from my sales?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">One published fee on every sale: 5% of the price after tax on Apprentice, Novice and Expert or 3% on Pro and Master, plus 30 cents. It covers paywall access purchases, message top-ups and Bot Market sales.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            What are the three ways to sell a bot?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Sell access through a paywall; sell copies with resale rights through Multi-sell; or sell the bot outright through Transfer. Selling in the Bot Market starts at Pro.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Can I offer affiliates a share of my sales?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Yes, on Bot Market listings. You set the affiliate share on each listing. Any member from Novice up can promote it with their own link and earn that share of the price after the platform fee. Only one level is paid.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Which models can I build on?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Claude, ChatGPT, Grok or Gemini at launch. You choose the model for each bot. Nothing is routed or swapped for you automatically.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Can I move an existing GPT across?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">AI Bot Share has an importer for moving an old GPT across. OpenAI does not let other platforms pull a GPT configuration automatically, so you bring the instructions and files and the importer helps you rebuild it.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Can I embed a bot on my own site?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Yes. Any bot can be embedded on any web page, including as a live FAQ assistant on a sales page. This FAQ is answered the same way.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Is billing monthly or annual?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Both options are available.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            Can I cancel and what about refunds?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Yes. Cancelling keeps your access until the end of the current billing period. Monthly subscriptions are not refunded. On an annual plan the unused remainder of the year is refunded.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="this.parentNode.classList.toggle('open')">
+            What do Founders receive?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="faq-a">Founders keep their discount for life and wear a permanent Founders badge on their bot pages. There is no seat limit.</div>
+        </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2 class="display">Ready to stop cobbling tools together?</h2>
+      <p>Five tiers from $5. One published fee on every sale. No payout formula to decode.</p>
+      <a href="#pricing" class="btn btn-primary btn-lg">Take Me To The Lab</a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="aibotshare-design-e-softline-marketing-home-v1.html" class="brand display">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <circle cx="15" cy="15" r="14" fill="var(--theme-accent)"/>
+      <circle cx="11" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+      <circle cx="19" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+      <path d="M10.5 19c1.3 1.4 2.9 2 4.5 2s3.2-.6 4.5-2" stroke="var(--theme-text-on-accent)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    </svg>
+    AI Bot Share
+  </a>
+        <p class="footer-blurb" style="margin-top:16px;">Build, run and sell AI bots across Claude, ChatGPT, Grok and Gemini. Own what you build. Sell it three ways.</p>
+      </div>
+      <div>
+        <div class="footer-heading">Botterverse</div>
+        <ul class="footer-links">
+          <li><a href="#mechanism">Bot Market</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="aibotshare-design-e-softline-marketing-affiliate-v1.html">Affiliates</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Company</div>
+        <ul class="footer-links">
+          <li><a href="aibotshare-design-e-softline-marketing-about-v1.html">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#">Support desk</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Legal</div>
+        <ul class="footer-links">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AI Bot Share. All rights reserved.</span>
+      <span>Earnings disclaimer: results vary. Nothing on this site is a promise of income.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

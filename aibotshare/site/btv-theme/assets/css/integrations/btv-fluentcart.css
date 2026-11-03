@@ -87,6 +87,9 @@ body .fct-customer-dashboard-main-content { background: var(--surface); border-r
 body .fct-order-review-page, body [class*="fct-receipt-page"], body [class*="fct-thank-you-page"] { color: var(--text-2); }
 body [class*="fct-receipt-page"] h1, body [class*="fct-receipt-page"] h2, body [class*="fct-thank-you-page"] h1, body [class*="fct-thank-you-page"] h2, body .fct-order-review-page h1, body .fct-order-review-page h2 { font-family: var(--font-head); color: var(--text); }
 
+/* Receipt page: the heading and the text above the card match the card width (620px). The account page stays wide. */
+body:has(.fct-thank-you-page) .btv-main .page-head, body:has(.fct-thank-you-page) .btv-main .prose { max-width: 620px; margin-inline: auto; }
+
 /* Shop */
 body .fct-product-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow); overflow: hidden; }
 body .fct-product-card a { color: var(--text); text-decoration: none; }

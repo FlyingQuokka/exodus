@@ -355,14 +355,14 @@
  },
  "E51": {
   "title": "Report this bot reply (on event, reporters who left an email address)",
-  "subject": "[Botterverse] About your report on {{bot_name}}",
-  "body_html": "<p>Hello,</p>\n<p>Thank you for your report about the bot {{bot_name}}. The Botter Support Team has looked into it.</p>\n<p>{{reply_text}}</p>\n<p>If you have more to add send it with a new report using Report this bot on the bot's page.</p>\n<p>Your Botter Support Team</p>",
+  "subject": "[Botterverse] About your report",
+  "body_html": "<p>Hello,</p>\n<p>Thank you for your report. The Botter Support Team has looked into it.</p>\n<p>{{response.full_content}}</p>\n<p>If you have more to add send it with a new report using Report this bot on the bot's page.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-28-54.md"
  },
  "E52": {
   "title": "Support ticket replies (on event, members with a ticket)",
-  "subject": "[Botterverse] Re: {{ticket_title}}",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Botter Support Team has replied to your ticket.</p>\n<p>{{reply_text}}</p>\n<p>Reply to this email to answer.</p>\n<p>Your Botter Support Team</p>",
+  "subject": "[Botterverse] Re: {{ticket.title}}",
+  "body_html": "<p>Hi {{customer.full_name}},</p>\n<p>The Botter Support Team has replied to your ticket.</p>\n<p>{{response.full_content}}</p>\n<p>Reply to this email to answer.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-28-54.md"
  },
  "O01-01": {

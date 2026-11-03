@@ -66,7 +66,7 @@ Updated 2 November 2026. These notes are still open. A decision note needs the o
 **`events-28-54`**
 - E38 (decision): the app agent says (answer 27) the app has no email for a refunded credit pack. A pack refund reaches the app through Stripe, the credits removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optio
 - E41a: settled on 3 November 2026. Your plan shows no plan details so the email links to the pricing page comparison table.
-- E51 (open): whether the report carries the bot name for the help desk to use. Asked in brief 23.
+- E51: settled on 3 November 2026. Fluent Support has no bot name tag so the bot name is left out.
 - E52: settled on 3 November 2026. Members can reply by email and the email says so.
 
 **`seq-O05-O15`**

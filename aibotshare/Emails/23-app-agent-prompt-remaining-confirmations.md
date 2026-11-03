@@ -1,33 +1,33 @@
-# Prompt for the app coding agent: one question and one wording change
+# Prompt for the app coding agent: the last open confirmations
 
 Copy everything below the line into the app agent's session.
 
 ---
 
-## Brief: a report question and a wording change
+## Brief: seven small confirmations
 
-Do not change any code for question 1. Part 2 asks for a wording change in three emails.
+Thank you for the earlier answers. These are the last facts I cannot check from outside the code. Do not change any code for this brief. Answer each numbered question with its number. If you cannot tell from the code say so and name the file you looked in.
 
-If you have not yet answered `16-app-agent-prompt-follow-up-questions-and-plan-upgraded.md` (the seller sale email in Part 1 and the plan upgraded and password changed emails in Parts 2 and 4) please do that as well. It is still open on my side.
+If you have not yet answered `16-app-agent-prompt-follow-up-questions-and-plan-upgraded.md` (the declarations time allowed and the seller sale email in Part 1, the plan upgraded email and the password changed email), please do that as well. It is still open on my side.
 
-### Part 1 - Reports about a bot
+### Plan page
 
-1. **The bot name in a report.** Anyone can send a report using Report this bot on a bot's page. The Botter Support Team replies from the help desk and the reply email says "About your report on [bot name]". Does the report reach the help desk with the bot's name saved on it, for example as a custom field? If yes give the exact field name so the help desk email can use it as a substitution tag. If no say what the help desk receives (the reason and the description and the email address only?).
+1. **Your plan section.** On Billing and credits does the **Your plan** section list what the current plan includes (bots and safety scans and credits and similar)? One email tells the member to look there to see what a new plan includes. If the section shows only the plan name and price I will reword the email.
 
-### Part 2 - Wording change for bought credits
+### Help desk emails
 
-The owner wants one wording wherever an email says what happens to bought credits on a plan change or plan end. Replace "Credits you bought stay with you." with:
+2. **Reply text.** When a member's support request receives a reply from the Botter Support Team the email carries the bot name and the reply text. Can the help desk fill in `{{bot_name}}` and `{{reply_text}}` in that email? Give the exact names of the tags it does offer.
+3. **Replying by email.** Can a member reply to a help desk email and have the reply added to the request? If yes say which address the reply goes to. If no I will tell them to reply on the Support page.
 
-**Remaining credits from any credit packs you bought are untouched.**
+### Feedback and win-back emails
 
-Please change it in these templates and in any other of your emails that says the same thing in other words:
+4. **Replies to the win-back email.** A win-back email asks a cancelled member why they left and says "reply to this email". Which address do replies reach and does a person read them? If no one does tell me what the member should do instead.
+5. **The Feedback page.** One email says "We read what arrives." Is the member's Feedback page read by a person? Say who and how often if you know. Otherwise tell me to remove the sentence.
 
-- `plan.downgraded` (the sentence after "Paywalls, listings and bot styles follow the features of your plan.")
-- `plan.fewer_bots` (the sentence after "When your new plan starts your bots come back, oldest first, up to the new plan's bot limit.")
-- `plan.ended` if it carries a similar sentence
-- The new plan upgraded email, if you have already built it (Part 2 of brief 16 uses the new wording already)
+### Affiliates
 
-Tests: each changed email shows the new sentence and nothing else changes.
+6. **Where the swipe material is.** Where in Botter's Lab do affiliates find the swipe material (the ready-made text for promoting a bot)? Give the page name and the menu path exactly as the member sees them.
+7. **What it contains.** Is the swipe material text only or does it include images or banners as well? List the kinds of item.
 
 ### Report back
 

@@ -14,7 +14,6 @@ Transactional and notification emails for events 28 to 54 in `06-event-emails-pl
 | `{{domain}}` | Base domain |
 | `{{amount}}` | Amount charged by an auto top-up (E33) |
 | `{{credits_removed}}` | Credits taken off after a refunded pack (E38) |
-| `{{bot_name}}` | Name of the reported bot (E51) |
 | `{{plan_name}}` | The member's current plan (E40) |
 | `{{old_plan_name}}` and `{{new_plan_name}}` | Plan before and after a change (E41a) |
 | `{{end_date}}` | Date the plan ends (E42a and E42b) |
@@ -22,8 +21,7 @@ Transactional and notification emails for events 28 to 54 in `06-event-emails-pl
 | `{{period_start_date}}` and `{{period_end_date}}` | The dates the insights report covers (E29). The app's tag names |
 | `{{grace_end_date}}` | Date the grace period ends (E47) |
 | `{{order_summary}}` | The order lines and totals the cart inserts (E39) |
-| `{{ticket_title}}` | Subject of the support ticket (E52) |
-| `{{reply_text}}` | The Botter Support Team's written reply (E51 and E52) |
+| `{{ticket.title}}` and `{{customer.full_name}}` and `{{response.full_content}}` | Fluent Support's own tags in E51 and E52: the subject and the member's name and the written reply |
 
 **Sender key:** App means the Botter's Lab sends it. Cart means FluentCart or WordPress. Desk means the help desk. CRM means a FluentCRM automation. Every sender is still to be verified with the app agent.
 
@@ -578,15 +576,15 @@ Your Botter Support Team
 
 ## E51 - Report this bot reply (on event, reporters who left an email address)
 
-**Subject:** [Botterverse] About your report on {{bot_name}}
+**Subject:** [Botterverse] About your report
 
 **Body:**
 
 Hello,
 
-Thank you for your report about the bot {{bot_name}}. The Botter Support Team has looked into it.
+Thank you for your report. The Botter Support Team has looked into it.
 
-{{reply_text}}
+{{response.full_content}}
 
 If you have more to add send it with a new report using Report this bot on the bot's page.
 
@@ -596,21 +594,21 @@ Your Botter Support Team
 - Facts: anyone can send a report with no account using Report this bot with Reason and What is wrong and Your email address (optional) and Send the report (4.7).
 - Sender: Desk. A reply template.
 - No first name is known so the greeting is "Hello,". No response time is promised.
-- Open: {{bot_name}} and {{reply_text}} are my own placeholders. Fluent Support lets the body use custom substitution tags, so the app agent has been asked whether the report carries the bot name (see `23-app-agent-prompt-remaining-confirmations.md`).
+- Confirmed by the app agent 3 November 2026: Fluent Support has no bot name tag, so the bot name is left out. The reply text tag is `{{response.full_content}}`.
 
 ---
 
 ## E52 - Support ticket replies (on event, members with a ticket)
 
-**Subject:** [Botterverse] Re: {{ticket_title}}
+**Subject:** [Botterverse] Re: {{ticket.title}}
 
 **Body:**
 
-Hi {{contact.first_name}},
+Hi {{customer.full_name}},
 
 The Botter Support Team has replied to your ticket.
 
-{{reply_text}}
+{{response.full_content}}
 
 Reply to this email to answer.
 
@@ -619,5 +617,5 @@ Your Botter Support Team
 **Notes**
 - Facts: Support opens the help desk in a new tab with its own sign-in. A member who bought a plan or credits already has a website account (13.1).
 - Sender: Desk. A template for the Fluent Support emails.
-- Confirmed 3 November 2026: members can reply by email.
+- Confirmed by the owner 3 November 2026: members can reply by email. The app agent says this works only through Fluent Support Pro's email piping, which is set up on the live site at go-live and has not been tested. Check it on the live site before launch.
 - No response time is promised. Priority support is not mentioned.

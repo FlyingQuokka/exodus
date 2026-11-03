@@ -1,0 +1,24 @@
+[
+ {
+  "title": "FB1 Founders offer is open",
+  "email": "FB1",
+  "include": "Lead",
+  "exclude": [
+   "Customer",
+   "Founder",
+   "Upgrade Active",
+   "Welcome Active"
+  ]
+ },
+ {
+  "title": "FB2 Founders offer closes soon",
+  "email": "FB2",
+  "include": "Lead",
+  "exclude": [
+   "Customer",
+   "Founder",
+   "Upgrade Active",
+   "Welcome Active"
+  ]
+ }
+]

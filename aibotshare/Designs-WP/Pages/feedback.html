@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Feedback</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/botterverse-pages.css">
+<style>
+  .mock-label { display:flex; gap:.7rem; align-items:center; flex-wrap:wrap; background: var(--accent-soft); color: var(--text); border:2px dashed var(--accent-text); border-radius: var(--r-ctl); padding: .8rem 1.1rem; margin-bottom: 1rem; font-weight: 700; }
+  .mock { border:2px dashed var(--border-strong); border-radius: var(--r-card); padding: 1.2rem; background: var(--surface-alt); }
+  .mock .form-card, .mock .card { box-shadow: none; }
+  .mock-tabs { display:flex; gap:.4rem; flex-wrap:wrap; margin-bottom:1.2rem; }
+  .mock-tabs span { padding:.5rem 1rem; border-radius:999px; font-weight:800; color:var(--text); background: var(--surface); border:1px solid var(--border); }
+  .mock-tabs span.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+  .tickets { list-style:none; margin:0; padding:0; }
+  .tickets li { display:grid; grid-template-columns: auto 1fr auto; gap:.3rem 1rem; align-items:center; padding:.9rem 0; border-bottom:1px solid var(--border); }
+  .tickets li:last-child { border-bottom:0; }
+  .tickets .id { color:var(--muted); font-weight:700; }
+  .tickets .t { color:var(--text); font-weight:800; }
+  .tickets .meta { grid-column:2 / 4; font-size:.88rem; color:var(--muted); }
+  .st { font-size:.8rem; font-weight:800; padding:.15rem .7rem; border-radius:999px; border:1px solid currentColor; }
+  .st-open { color: var(--info); } .st-wait { color: var(--warning); } .st-done { color: var(--success); }
+  .table-wrap table { border-collapse:collapse; width:100%; min-width:560px; }
+  .table-wrap th, .table-wrap td { text-align:left; padding:.8rem 1rem; border-bottom:1px solid var(--border); vertical-align:top; }
+  .table-wrap thead th { font-family: var(--font-head); color: var(--text); background: var(--surface-alt); }
+  .table-wrap tr:last-child td { border-bottom:0; }
+  .table-wrap td:first-child { font-weight:800; color:var(--text); }
+  .mock .field-row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  @media (max-width:620px){ .mock .field-row { grid-template-columns:1fr; } .tickets li { grid-template-columns: 1fr auto; } .tickets .id { display:none; } .tickets .meta { grid-column:1 / 3; } .form-card { padding:1.3rem; } .mock { padding:.7rem; } }
+</style>
+</head>
+<body>
+
+<!-- Optional Founders band: one block to remove when the offer ends -->
+<div class="band">Founders offer: 50% off every plan for life. Enter FOUNDER50 at checkout. Closes 30 November. <a href="founders.html">See the offer</a></div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="home.html" aria-label="Botterverse home"><img src="assets/logo.svg" alt="Botterverse"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="affiliates.html">Affiliates</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-small" href="https://lab.{{domain}}/login">Log in</a>
+      <a class="btn btn-primary btn-small" href="pricing.html">Take Me To The Botterverse</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero"><div class="narrow">
+    <span class="eyebrow">Feedback</span>
+    <h1>Help us make Botterverse better</h1>
+    <p class="lede">Found a bug or have an idea? Tell us. It goes to the same help desk as support so you use the same sign-in.</p>
+  </div></section>
+  <section class="section-tight"><div class="container">
+    <h2>Choose a type</h2>
+    <div class="grid grid-2">
+      <div class="card"><span class="icon-dot">1</span><h3>Bug report</h3><p>Tell us what you did, what you expected and what happened.</p></div>
+      <div class="card"><span class="icon-dot">2</span><h3>Feature suggestion</h3><p>Tell us what you want to do and why.</p></div>
+    </div>
+  </div></section>
+  <section class="section-tight"><div class="narrow">
+    <div class="mock-label"><span class="tag">Placeholder</span> The Fluent Support feedback form sits here. This is a styled mock so the look can be judged.</div>
+    <div class="mock"><div class="form-card">
+      <h3>Send feedback</h3>
+      <div class="field"><label for="f1">Topic</label><select id="f1"><option>Feedback</option></select></div>
+      <div class="field"><label for="f2">Type</label><select id="f2"><option>Bug report</option><option>Feature suggestion</option></select></div>
+      <div class="field"><label for="f3">Subject</label><input type="text" id="f3" placeholder="A short summary"></div>
+      <div class="field"><label for="f4">Message</label><textarea id="f4" placeholder="Tell us what you did, what you expected and what happened."></textarea></div>
+      <span class="btn btn-primary" role="presentation">Send feedback</span>
+    </div></div>
+  </div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Botterverse">
+        <p class="small">Build a bot. Share it. Sell access.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="affiliates.html">Affiliates</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="support.html">Support</a></li><li><a href="/docs/">Help centre</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="/my-account/">Billing and invoices</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms-and-conditions/">Terms And Conditions</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/legal/">Legal</a></li></ul></div>
+    </div>
+    <div class="footer-note">Botterverse does not promise or guarantee any income. Results depend on your bot, your audience and your effort.</div>
+  </div>
+</footer>
+
+<script src="assets/pictures.js"></script>
+</body>
+</html>

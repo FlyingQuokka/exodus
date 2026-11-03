@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Image concepts v2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --pink-hover: #c876c1; --tint: #ffe0fb; --link: #984f92;
+    --cyan: #00d1da; --navy: #080d16; --ink: #282637; --line: #ebeaf2;
+    --sky1: #f8f7ff; --sky2: #dcd6fa; --cloud: #ffffff; --star: 0;
+  }
+  :root[data-theme="night"] {
+    --bg: #080d16; --panel: #121a2b; --card: #0f1626; --heading: #f8f7ff; --text: #b9bcd6;
+    --line: #1c2540; --ink: #282637;
+    --sky1: #080d16; --sky2: #26235a; --cloud: #3a3d78; --star: 1;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  .lede { max-width: 760px; line-height: 1.6; margin: 0 0 20px; }
+  .toggle { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 16px; background: var(--pink); color: #282637; border: 0; border-radius: 999px; padding: 10px 22px; cursor: pointer; margin-bottom: 28px; }
+  .toggle:hover { background: var(--pink-hover); }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .concept { background: var(--card); border-radius: 22px; border: 1px solid var(--line); overflow: hidden; }
+  .concept svg.art { display: block; width: 100%; height: auto; background: var(--sky1); }
+  .meta { padding: 16px 22px 22px; }
+  .meta h2 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 21px; margin: 0 0 4px; }
+  .meta h2 span { color: var(--pink); margin-right: 8px; }
+  .meta p { margin: 0; font-size: 15px; line-height: 1.55; }
+  .meta .use { margin-top: 10px; font-size: 13.5px; font-weight: 800; color: var(--link); }
+  :root[data-theme="night"] .meta .use { color: var(--pink); }
+  svg text { font-family: 'Baloo 2', sans-serif; font-weight: 800; fill: var(--ink); }
+  .stars { opacity: var(--star); }
+  .glowlayer { opacity: calc(.35 + var(--star) * .65); }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 30px; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sky1)"/><stop offset="1" style="stop-color:var(--sky2)"/></linearGradient>
+    <linearGradient id="gPink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c4f1"/><stop offset=".55" stop-color="#dc8fd5"/><stop offset="1" stop-color="#c876c1"/></linearGradient>
+    <linearGradient id="gCyan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7cf3f7"/><stop offset=".55" stop-color="#00d1da"/><stop offset="1" stop-color="#009ea6"/></linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b873b2"/><stop offset=".6" stop-color="#984f92"/><stop offset="1" stop-color="#6c3568"/></linearGradient>
+    <linearGradient id="gRock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a96"/><stop offset=".6" stop-color="#4a3468"/><stop offset="1" stop-color="#282637"/></linearGradient>
+    <linearGradient id="gTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6fe"/><stop offset="1" stop-color="#ffe0fb"/></linearGradient>
+    <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".85"/><stop offset="1" stop-color="#ebedfc" stop-opacity=".55"/></linearGradient>
+    <radialGradient id="rCyan"><stop offset="0" stop-color="#00d1da" stop-opacity=".75"/><stop offset="1" stop-color="#00d1da" stop-opacity="0"/></radialGradient>
+    <radialGradient id="rPink"><stop offset="0" stop-color="#dc8fd5" stop-opacity=".8"/><stop offset="1" stop-color="#dc8fd5" stop-opacity="0"/></radialGradient>
+    <radialGradient id="rWarm"><stop offset="0" stop-color="#ffe0fb" stop-opacity=".95"/><stop offset="1" stop-color="#ffe0fb" stop-opacity="0"/></radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#282637" flood-opacity=".28"/></filter>
+
+    <symbol id="bot" viewBox="0 0 60 70">
+      <line x1="30" y1="12" x2="30" y2="5" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="30" cy="4.5" r="4" fill="#00d1da"/>
+      <rect x="5" y="12" width="50" height="42" rx="17" fill="#dc8fd5"/>
+      <circle cx="21" cy="31" r="4.6" fill="#282637"/><circle cx="39" cy="31" r="4.6" fill="#282637"/>
+      <path d="M22 41 Q30 47 38 41" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="14" y="54" width="10" height="12" rx="5" fill="#984f92"/><rect x="36" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    </symbol>
+    <symbol id="cube" viewBox="0 0 60 70">
+      <line x1="30" y1="14" x2="30" y2="6" stroke="#282637" stroke-width="3" stroke-linecap="round"/><circle cx="30" cy="5" r="4" fill="#dc8fd5"/>
+      <rect x="7" y="14" width="46" height="40" rx="8" fill="url(#gCyan)"/><rect x="13" y="22" width="34" height="18" rx="5" fill="#ffffff" opacity=".9"/>
+      <rect x="19" y="27" width="7" height="8" rx="2" fill="#282637"/><rect x="34" y="27" width="7" height="8" rx="2" fill="#282637"/>
+      <path d="M24 46 H36" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="54" width="10" height="12" rx="4" fill="#984f92"/><rect x="36" y="54" width="10" height="12" rx="4" fill="#984f92"/>
+    </symbol>
+    <symbol id="orb" viewBox="0 0 60 70">
+      <circle cx="30" cy="36" r="25" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/>
+      <ellipse cx="9" cy="38" rx="6" ry="9" fill="#dc8fd5"/><ellipse cx="51" cy="38" rx="6" ry="9" fill="#dc8fd5"/>
+      <circle cx="30" cy="34" r="10" fill="#282637"/><circle cx="33" cy="31" r="3.4" fill="#ffffff"/><circle cx="29" cy="37" r="1.6" fill="#00d1da"/>
+      <path d="M25 51 Q30 55 35 51" stroke="#282637" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <path d="M30 11 L30 4" stroke="#282637" stroke-width="3" stroke-linecap="round"/><path d="M30 1 L32 5 L36 6 L32 8 L30 12 L28 8 L24 6 L28 5Z" fill="#00d1da"/>
+      <rect x="18" y="58" width="9" height="9" rx="4" fill="#984f92"/><rect x="33" y="58" width="9" height="9" rx="4" fill="#984f92"/>
+    </symbol>
+    <symbol id="tall" viewBox="0 0 50 80">
+      <line x1="25" y1="14" x2="25" y2="6" stroke="#282637" stroke-width="3" stroke-linecap="round"/><circle cx="25" cy="5" r="4" fill="#ffe0fb" stroke="#282637" stroke-width="2"/>
+      <rect x="6" y="14" width="38" height="56" rx="17" fill="url(#gPurple)"/>
+      <rect x="11" y="26" width="28" height="14" rx="7" fill="#00d1da"/><circle cx="19" cy="33" r="3" fill="#282637"/><circle cx="31" cy="33" r="3" fill="#282637"/>
+      <rect x="15" y="50" width="20" height="9" rx="4.5" fill="#dc8fd5" opacity=".9"/>
+      <rect x="12" y="68" width="10" height="10" rx="4" fill="#dc8fd5"/><rect x="28" y="68" width="10" height="10" rx="4" fill="#dc8fd5"/>
+    </symbol>
+    <symbol id="isl" viewBox="0 0 200 100">
+      <path d="M3 30 C10 62 50 70 78 84 C92 92 98 98 100 99 C102 98 108 92 122 84 C150 70 190 62 197 30 Z" fill="url(#gRock)"/>
+      <path d="M60 52 L52 70 M140 52 L150 68 M100 60 L96 82" stroke="#282637" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <ellipse cx="100" cy="30" rx="98" ry="24" fill="url(#gTop)"/>
+      <path d="M8 34 Q100 70 192 34 Q196 30 190 30 Q100 54 10 30 Q4 30 8 34Z" fill="#dc8fd5" opacity=".9"/>
+      <ellipse cx="100" cy="26" rx="64" ry="12" fill="#ffffff" opacity=".45"/>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 120 40"><path d="M14 36 A14 14 0 0 1 22 10 A20 20 0 0 1 60 6 A18 18 0 0 1 96 14 A13 13 0 0 1 108 36 Z"/></symbol>
+    <symbol id="spark" viewBox="0 0 20 20"><path d="M10 0 L12 8 L20 10 L12 12 L10 20 L8 12 L0 10 L8 8Z"/></symbol>
+    <symbol id="stars" viewBox="0 0 640 400">
+      <g fill="#ffffff">
+        <circle cx="30" cy="40" r="1.6"/><circle cx="96" cy="120" r="1.2"/><circle cx="150" cy="30" r="2"/><circle cx="210" cy="86" r="1.3"/><circle cx="260" cy="24" r="1.6"/><circle cx="330" cy="60" r="1.2"/><circle cx="380" cy="20" r="2"/><circle cx="440" cy="90" r="1.4"/><circle cx="500" cy="36" r="1.7"/><circle cx="560" cy="80" r="1.2"/><circle cx="612" cy="26" r="2"/><circle cx="610" cy="150" r="1.4"/><circle cx="40" cy="180" r="1.5"/><circle cx="20" cy="260" r="1.2"/><circle cx="300" cy="130" r="1.1"/><circle cx="420" cy="150" r="1.3"/><circle cx="180" cy="160" r="1.2"/><circle cx="590" cy="230" r="1.4"/><circle cx="70" cy="320" r="1.3"/><circle cx="360" cy="110" r="1"/>
+      </g>
+    </symbol>
+    <symbol id="gear" viewBox="0 0 60 60">
+      <circle cx="30" cy="30" r="21" fill="none" stroke="#984f92" stroke-width="9" stroke-dasharray="7 5.2"/>
+      <circle cx="30" cy="30" r="17" fill="#984f92"/><circle cx="30" cy="30" r="7" fill="#ffe0fb"/>
+    </symbol>
+    <symbol id="lamp" viewBox="0 0 20 30"><circle cx="10" cy="14" r="14" fill="url(#rWarm)"/><path d="M5 8 Q10 0 15 8 L16 20 Q10 26 4 20Z" fill="#ffe0fb" stroke="#984f92" stroke-width="1.8"/><rect x="7" y="2" width="6" height="4" rx="2" fill="#282637"/></symbol>
+    <symbol id="crystal" viewBox="0 0 30 40"><path d="M15 0 L28 14 L15 40 L2 14Z" fill="url(#gCyan)"/><path d="M15 0 L22 14 L15 40 L8 14Z" fill="#ffffff" opacity=".35"/><path d="M2 14 H28" stroke="#ffffff" stroke-opacity=".6" stroke-width="1.5"/></symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Botterverse - Image concepts v2</h1>
+  <p class="lede">Ten new illustrations built around the Botterverse idea: one shared world of islands and bridges and workshops where bots of every shape live. Each is drawn as pure vector shapes so it stays sharp and light. Each has a job on the home page. None shows income or results or a named competitor or a real person. Use the button to see the Nightshift version.</p>
+  <button class="toggle" id="themeBtn" type="button" aria-pressed="false">Switch to Nightshift</button>
+  <div class="grid">
+
+<!-- 1 HERO -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A pink bot on a floating island with bridges to neighbouring islands under a ringed planet">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="500" cy="110" r="120" fill="url(#rPink)" class="glowlayer"/>
+  <ellipse cx="500" cy="112" rx="112" ry="20" fill="none" stroke="#ffe0fb" stroke-width="9" transform="rotate(-14 500 112)" opacity=".9"/>
+  <circle cx="500" cy="110" r="64" fill="url(#gPurple)"/>
+  <path d="M446 96 Q500 120 554 92 M444 122 Q500 146 556 118" stroke="#dc8fd5" stroke-width="6" fill="none" opacity=".55" stroke-linecap="round"/>
+  <path d="M432 104 Q500 134 568 104" stroke="#ffe0fb" stroke-width="9" fill="none" transform="rotate(-14 500 112)" stroke-linecap="round" opacity=".95"/>
+  <circle cx="110" cy="76" r="22" fill="url(#gCyan)"/><circle cx="102" cy="70" r="5" fill="#fff" opacity=".4"/><circle cx="118" cy="84" r="3" fill="#fff" opacity=".3"/>
+  <use href="#cloud" x="10" y="318" width="170" height="56" style="fill:var(--cloud)" opacity=".85"/>
+  <use href="#cloud" x="470" y="330" width="170" height="56" style="fill:var(--cloud)" opacity=".85"/>
+  <use href="#isl" x="22" y="236" width="170" height="85" filter="url(#soft)"/>
+  <use href="#isl" x="462" y="238" width="160" height="80" filter="url(#soft)"/>
+  <path d="M168 272 Q196 250 226 286 M425 290 Q448 258 476 266" stroke="#ffe0fb" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <path d="M168 272 Q196 250 226 286 M425 290 Q448 258 476 266" stroke="#984f92" stroke-width="3" fill="none" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <use href="#isl" x="190" y="248" width="270" height="135" filter="url(#soft)"/>
+  <circle cx="325" cy="215" r="90" fill="url(#rCyan)" class="glowlayer"/>
+  <use href="#cube" x="84" y="226" width="40" height="47"/>
+  <use href="#orb" x="528" y="204" width="44" height="51"/>
+  <use href="#tall" x="244" y="226" width="34" height="54"/>
+  <use href="#cube" x="384" y="244" width="30" height="35"/>
+  <use href="#bot" x="280" y="190" width="90" height="105" filter="url(#soft)"/>
+  <rect x="330" y="150" width="3" height="40" fill="#984f92"/><path d="M333 150 L376 160 L333 174Z" fill="#00d1da"/>
+  <use href="#spark" x="60" y="150" width="18" height="18" style="fill:#dc8fd5"/><use href="#spark" x="420" y="170" width="14" height="14" style="fill:#00d1da"/><use href="#spark" x="580" y="300" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="230" y="120" width="12" height="12" style="fill:#ffe0fb"/>
+</svg>
+<div class="meta"><h2><span>1</span>Welcome to the Botterverse</h2><p>A friendly bot on its home island with bridges to neighbours under a ringed planet. It shows a shared world rather than a lone tool.</p><div class="use">Use: Hero (section 1)</div></div>
+</article>
+
+<!-- 2 BUILD -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A bot building a smaller bot in a floating workshop with gears and a blueprint">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <use href="#cloud" x="440" y="320" width="200" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <use href="#cloud" x="-20" y="330" width="190" height="60" style="fill:var(--cloud)" opacity=".8"/>
+  <rect x="60" y="70" width="150" height="104" rx="12" fill="#ffffff" stroke="#984f92" stroke-width="4" filter="url(#soft)"/>
+  <path d="M60 100 H210 M98 70 V174 M172 70 V174" stroke="#00d1da" stroke-width="1.5" opacity=".5"/>
+  <rect x="104" y="94" width="42" height="34" rx="9" fill="none" stroke="#dc8fd5" stroke-width="3" stroke-dasharray="5 4"/><path d="M125 94 V84" stroke="#dc8fd5" stroke-width="3" stroke-dasharray="3 3"/><circle cx="125" cy="80" r="4" fill="none" stroke="#00d1da" stroke-width="2.5"/>
+  <path d="M110 140 H140 M110 150 H128" stroke="#984f92" stroke-width="3" stroke-linecap="round"/>
+  <use href="#gear" x="470" y="70" width="70" height="70"/>
+  <use href="#gear" x="520" y="120" width="52" height="52" style="opacity:.85"/>
+  <use href="#gear" x="404" y="40" width="40" height="40" style="opacity:.7"/>
+  <use href="#isl" x="100" y="226" width="440" height="160" filter="url(#soft)"/>
+  <circle cx="320" cy="215" r="120" fill="url(#rWarm)" class="glowlayer"/>
+  <path d="M120 218 Q320 190 520 218" stroke="#282637" stroke-width="2.5" fill="none"/>
+  <use href="#lamp" x="160" y="214" width="20" height="30"/><use href="#lamp" x="260" y="204" width="20" height="30"/><use href="#lamp" x="360" y="204" width="20" height="30"/><use href="#lamp" x="460" y="214" width="20" height="30"/>
+  <use href="#bot" x="268" y="206" width="84" height="98" filter="url(#soft)"/>
+  <path d="M352 252 L388 232" stroke="#984f92" stroke-width="7" stroke-linecap="round"/>
+  <rect x="190" y="282" width="270" height="14" rx="7" fill="#282637"/><rect x="204" y="294" width="12" height="30" fill="#282637"/><rect x="434" y="294" width="12" height="30" fill="#282637"/>
+  <rect x="190" y="276" width="270" height="9" rx="4.5" fill="#ffe0fb"/>
+  <use href="#cube" x="384" y="220" width="52" height="61"/>
+  <path d="M432 238 L460 226 M424 266 L452 276" stroke="#984f92" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="222" cy="268" r="9" fill="#00d1da"/><rect x="238" y="262" width="18" height="14" rx="4" fill="#dc8fd5"/>
+  <path d="M388 232 L402 214 L414 222" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#spark" x="402" y="190" width="18" height="18" style="fill:#00d1da"/><use href="#spark" x="238" y="170" width="14" height="14" style="fill:#dc8fd5"/><use href="#spark" x="580" y="250" width="16" height="16" style="fill:#ffe0fb"/>
+</svg>
+<div class="meta"><h2><span>2</span>The workshop</h2><p>A bot builds a smaller bot under a string of lamps. Gears turn above and a blueprint hangs on the wall.</p><div class="use">Use: Build card (section 2) and step 3 of How it works (section 6)</div></div>
+</article>
+
+<!-- 3 SHARE -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A bot sends glowing links across the sky to three islands with bots waving">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="320" cy="200" r="190" fill="url(#rCyan)" class="glowlayer" opacity=".5"/>
+  <use href="#cloud" x="150" y="330" width="220" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <path d="M210 250 C280 120 330 100 410 112" stroke="#00d1da" stroke-width="5" fill="none" stroke-dasharray="2 11" stroke-linecap="round"/>
+  <path d="M220 270 C330 300 420 300 490 296" stroke="#dc8fd5" stroke-width="5" fill="none" stroke-dasharray="2 11" stroke-linecap="round"/>
+  <path d="M230 240 C340 170 480 180 548 150" stroke="#984f92" stroke-width="5" fill="none" stroke-dasharray="2 11" stroke-linecap="round"/>
+  <use href="#isl" x="345" y="118" width="130" height="65" filter="url(#soft)"/>
+  <use href="#isl" x="420" y="288" width="150" height="75" filter="url(#soft)"/>
+  <use href="#isl" x="500" y="150" width="125" height="62" filter="url(#soft)"/>
+  <use href="#orb" x="395" y="64" width="46" height="54"/>
+  <use href="#tall" x="480" y="236" width="38" height="61"/>
+  <use href="#cube" x="550" y="100" width="42" height="49"/>
+  <path d="M452 72 L472 56 M462 90 L486 84" stroke="#00d1da" stroke-width="3" stroke-linecap="round"/>
+  <use href="#isl" x="20" y="236" width="230" height="115" filter="url(#soft)"/>
+  <use href="#bot" x="104" y="168" width="84" height="98" filter="url(#soft)"/>
+  <path d="M184 206 Q206 176 226 188" stroke="#dc8fd5" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g transform="translate(60 80)" filter="url(#soft)">
+    <rect x="0" y="12" width="52" height="26" rx="13" fill="none" stroke="#984f92" stroke-width="8" transform="rotate(-24 26 25)"/>
+    <rect x="30" y="2" width="52" height="26" rx="13" fill="none" stroke="#dc8fd5" stroke-width="8" transform="rotate(-24 56 15)"/>
+  </g>
+  <path d="M250 232 L284 214 L270 240 L262 236Z" fill="#ffffff" stroke="#984f92" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M338 330 L372 312 L358 338 L350 334Z" fill="#ffffff" stroke="#984f92" stroke-width="2.5" stroke-linejoin="round" opacity=".8"/>
+  <use href="#spark" x="300" y="80" width="18" height="18" style="fill:#ffe0fb"/><use href="#spark" x="40" y="60" width="14" height="14" style="fill:#00d1da"/><use href="#spark" x="590" y="300" width="14" height="14" style="fill:#dc8fd5"/>
+</svg>
+<div class="meta"><h2><span>3</span>Send it across</h2><p>One bot and one link. Glowing trails carry the link to three islands where other bots wave back.</p><div class="use">Use: Share card (section 2) and Your link or your site (section 4)</div></div>
+</article>
+
+<!-- 4 EMBED -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A floating web page with a chat bubble and a code snippet arriving from a bot island">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <use href="#cloud" x="380" y="326" width="260" height="70" style="fill:var(--cloud)" opacity=".85"/>
+  <rect x="270" y="36" width="340" height="250" rx="20" fill="#ffffff" filter="url(#soft)"/>
+  <path d="M270 56 A20 20 0 0 1 290 36 H590 A20 20 0 0 1 610 56 V72 H270Z" fill="#282637"/>
+  <circle cx="292" cy="54" r="5" fill="#dc8fd5"/><circle cx="310" cy="54" r="5" fill="#ffe0fb"/><circle cx="328" cy="54" r="5" fill="#00d1da"/>
+  <rect x="350" y="46" width="200" height="16" rx="8" fill="#ffffff" opacity=".18"/>
+  <rect x="294" y="94" width="130" height="18" rx="9" fill="#282637"/><rect x="294" y="122" width="190" height="9" rx="4.5" fill="#ebedfc"/><rect x="294" y="140" width="160" height="9" rx="4.5" fill="#ebedfc"/><rect x="294" y="172" width="78" height="28" rx="14" fill="#dc8fd5"/>
+  <rect x="404" y="130" width="188" height="144" rx="18" fill="#ffe0fb" stroke="#dc8fd5" stroke-width="3"/>
+  <rect x="418" y="146" width="110" height="22" rx="11" fill="#ffffff"/><rect x="470" y="176" width="108" height="22" rx="11" fill="#dc8fd5"/><rect x="418" y="206" width="84" height="22" rx="11" fill="#ffffff"/>
+  <circle cx="436" cy="252" r="3" fill="#984f92"/><circle cx="448" cy="252" r="3" fill="#984f92" opacity=".6"/><circle cx="460" cy="252" r="3" fill="#984f92" opacity=".3"/>
+  <circle cx="588" cy="274" r="30" fill="url(#rPink)" class="glowlayer"/><circle cx="588" cy="274" r="24" fill="#dc8fd5" filter="url(#soft)"/><use href="#bot" x="575" y="258" width="26" height="30"/>
+  <use href="#isl" x="20" y="236" width="250" height="125" filter="url(#soft)"/>
+  <use href="#bot" x="96" y="170" width="84" height="98" filter="url(#soft)"/>
+  <use href="#orb" x="190" y="214" width="40" height="47"/>
+  <g filter="url(#soft)"><rect x="60" y="88" width="132" height="62" rx="14" fill="#282637"/><text x="126" y="130" text-anchor="middle" font-size="34" style="fill:#00d1da">&lt;/&gt;</text></g>
+  <path d="M192 110 C220 100 230 130 262 150" stroke="#00d1da" stroke-width="4" fill="none" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <path d="M254 140 L268 154 L250 156Z" fill="#00d1da"/>
+  <use href="#spark" x="236" y="60" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="30" y="120" width="14" height="14" style="fill:#dc8fd5"/><use href="#spark" x="610" y="14" width="12" height="12" style="fill:#00d1da"/>
+</svg>
+<div class="meta"><h2><span>4</span>A bot on your page</h2><p>One small snippet floats from a bot island onto a web page. A chat bubble opens and the visitor has an answer.</p><div class="use">Use: Your link or your site (section 4) and Share card (section 2)</div></div>
+</article>
+
+<!-- 5 IMPORT -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A bot carries a box across a bridge from a dimmed island to a bright island with a house">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="500" cy="230" r="170" fill="url(#rWarm)" class="glowlayer"/>
+  <use href="#cloud" x="200" y="330" width="240" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <g style="filter:grayscale(.85) brightness(.82)" opacity=".8">
+    <use href="#isl" x="14" y="250" width="190" height="95"/>
+    <use href="#tall" x="64" y="182" width="42" height="68" style="opacity:.8"/>
+  </g>
+  <circle cx="150" cy="170" r="26" fill="#ebedfc" stroke="#282637" stroke-width="3" opacity=".8"/><path d="M150 154 V170 M140 160 A13 13 0 1 0 160 160" stroke="#282637" stroke-width="3.5" fill="none" stroke-linecap="round" opacity=".8"/>
+  <path d="M40 270 L60 296 M120 280 L106 308" stroke="#282637" stroke-width="2.5" opacity=".4" stroke-linecap="round"/>
+  <use href="#isl" x="400" y="240" width="230" height="115" filter="url(#soft)"/>
+  <path d="M490 292 L490 244 L520 218 L550 244 L550 292Z" fill="#ffffff" stroke="#984f92" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M478 248 L520 206 L562 248Z" fill="url(#gPink)" stroke="#984f92" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="508" y="260" width="24" height="32" rx="12" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><circle cx="520" cy="232" r="6" fill="#00d1da"/>
+  <circle cx="520" cy="276" r="40" fill="url(#rWarm)" class="glowlayer"/>
+  <use href="#cube" x="566" y="246" width="38" height="45"/>
+  <use href="#lamp" x="452" y="252" width="16" height="24"/>
+  <path d="M160 296 Q300 140 450 286" stroke="#282637" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M160 296 Q300 140 450 286" stroke="#ffe0fb" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M180 270 Q300 130 436 266" stroke="#984f92" stroke-width="2.5" fill="none" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <use href="#bot" x="268" y="116" width="70" height="82" filter="url(#soft)"/>
+  <g transform="translate(300 160)" filter="url(#soft)"><rect x="-26" y="-6" width="52" height="38" rx="8" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><rect x="-5" y="-6" width="10" height="38" fill="#00d1da"/></g>
+  <rect x="208" y="196" width="22" height="28" rx="3" fill="#ffffff" stroke="#984f92" stroke-width="2" transform="rotate(-14 219 210)"/><rect x="372" y="130" width="22" height="28" rx="3" fill="#ffffff" stroke="#984f92" stroke-width="2" transform="rotate(12 383 144)"/><rect x="232" y="150" width="20" height="26" rx="3" fill="#ffffff" stroke="#00d1da" stroke-width="2" transform="rotate(8 242 163)"/>
+  <use href="#spark" x="560" y="170" width="18" height="18" style="fill:#dc8fd5"/><use href="#spark" x="340" y="70" width="14" height="14" style="fill:#00d1da"/>
+</svg>
+<div class="meta"><h2><span>5</span>Crossing the bridge</h2><p>A bot leaves a switched-off island with its files in a box. It crosses a bridge to a bright house of its own.</p><div class="use">Use: Switch-off block (section 3)</div></div>
+</article>
+
+<!-- 6 BOT MARKET -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A floating market square with two stalls and bunting where bots browse">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="320" cy="150" r="200" fill="url(#rPink)" class="glowlayer" opacity=".45"/>
+  <use href="#cloud" x="0" y="320" width="240" height="70" style="fill:var(--cloud)" opacity=".85"/>
+  <use href="#cloud" x="420" y="326" width="240" height="70" style="fill:var(--cloud)" opacity=".85"/>
+  <use href="#isl" x="40" y="200" width="560" height="190" filter="url(#soft)"/>
+  <path d="M40 60 Q320 120 600 60" stroke="#282637" stroke-width="2.5" fill="none"/>
+  <path d="M60 64 l16 6 l-4 22z M110 78 l16 5 l-2 22z M160 88 l16 4 l-1 22z M210 96 l16 3 l0 22z M260 102 l16 2 l1 22z M312 104 l16 1 l2 22z M364 103 l16 -1 l3 22z M416 100 l16 -3 l3 22z M468 94 l16 -4 l3 22z M520 86 l16 -6 l2 22z M568 76 l16 -6 l-1 22z" fill="#dc8fd5"/>
+  <path d="M110 78 l16 5 l-2 22z M210 96 l16 3 l0 22z M312 104 l16 1 l2 22z M416 100 l16 -3 l3 22z M520 86 l16 -6 l2 22z" fill="#00d1da"/>
+  <g>
+    <rect x="86" y="206" width="136" height="70" fill="#ffffff"/><rect x="86" y="226" width="136" height="50" fill="#ebedfc"/>
+    <path d="M76 176 H232 L222 212 H86Z" fill="#dc8fd5"/><path d="M76 176 H102 L108 212 H86Z M128 176 H154 L156 212 H132Z M180 176 H206 L204 212 H180Z" fill="#ffffff"/>
+    <use href="#cube" x="132" y="206" width="44" height="52"/>
+    <rect x="80" y="258" width="148" height="16" rx="5" fill="#984f92"/>
+    <rect x="96" y="246" width="20" height="14" rx="4" fill="#00d1da"/><rect x="190" y="248" width="18" height="12" rx="4" fill="#ffe0fb" stroke="#984f92" stroke-width="2"/>
+  </g>
+  <g>
+    <rect x="418" y="206" width="136" height="70" fill="#ffffff"/><rect x="418" y="226" width="136" height="50" fill="#ebedfc"/>
+    <path d="M408 176 H564 L554 212 H418Z" fill="#00d1da"/><path d="M408 176 H434 L440 212 H418Z M460 176 H486 L488 212 H464Z M512 176 H538 L536 212 H512Z" fill="#ffffff"/>
+    <use href="#orb" x="464" y="206" width="44" height="52"/>
+    <rect x="412" y="258" width="148" height="16" rx="5" fill="#984f92"/>
+    <rect x="428" y="246" width="22" height="14" rx="4" fill="#dc8fd5"/><rect x="522" y="248" width="18" height="12" rx="4" fill="#00d1da"/>
+  </g>
+  <rect x="316" y="190" width="8" height="100" rx="3" fill="#282637"/><use href="#lamp" x="296" y="164" width="48" height="72" class="glowlayer"/>
+  <g transform="translate(320 146)" filter="url(#soft)"><rect x="-38" y="-24" width="76" height="40" rx="12" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><path d="M-12 -4 L-4 -12 L4 -4 L12 -12 L12 6 L-12 6Z" fill="#dc8fd5"/></g>
+  <use href="#bot" x="260" y="248" width="66" height="77" filter="url(#soft)"/>
+  <use href="#tall" x="340" y="262" width="34" height="54"/>
+  <use href="#spark" x="40" y="120" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="590" y="130" width="14" height="14" style="fill:#00d1da"/>
+</svg>
+<div class="meta"><h2><span>6</span>The market square</h2><p>A floating square with bunting and two stalls run by bots. A visitor bot browses between them.</p><div class="use">Use: Bot Market card (section 4) and the Pro plan row (section 8)</div></div>
+</article>
+
+<!-- 7 MODELS -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="Four different planets circling a bot who chooses one with a control panel">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <ellipse cx="320" cy="190" rx="296" ry="130" fill="none" stroke="#984f92" stroke-width="2" stroke-dasharray="3 9" opacity=".6"/>
+  <circle cx="110" cy="130" r="80" fill="url(#rCyan)" class="glowlayer"/>
+  <circle cx="110" cy="130" r="44" fill="url(#gCyan)"/><path d="M70 120 Q110 140 150 116 M68 142 Q110 160 152 138" stroke="#ffffff" stroke-width="5" fill="none" opacity=".4" stroke-linecap="round"/>
+  <circle cx="250" cy="70" r="30" fill="url(#gPink)"/><circle cx="240" cy="62" r="6" fill="#c876c1"/><circle cx="262" cy="78" r="4" fill="#c876c1"/><circle cx="252" cy="52" r="3" fill="#c876c1"/>
+  <ellipse cx="404" cy="80" rx="62" ry="12" fill="none" stroke="#dc8fd5" stroke-width="6" transform="rotate(-12 404 80)" opacity=".9"/>
+  <circle cx="404" cy="82" r="36" fill="url(#gPurple)"/>
+  <path d="M368 80 Q404 96 440 78" stroke="#dc8fd5" stroke-width="8" fill="none" transform="rotate(-12 404 80)" stroke-linecap="round"/>
+  <circle cx="540" cy="170" r="84" fill="url(#rPink)" class="glowlayer"/>
+  <circle cx="540" cy="170" r="48" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><circle cx="522" cy="156" r="8" fill="#dc8fd5"/><circle cx="552" cy="184" r="12" fill="#00d1da" opacity=".8"/><circle cx="556" cy="150" r="5" fill="#984f92"/>
+  <path d="M320 262 L130 160 M320 262 L250 100 M320 262 L400 120 M320 262 L520 200" stroke="#00d1da" stroke-width="2" opacity=".35" stroke-dasharray="4 7"/>
+  <path d="M320 262 L400 120" stroke="#00d1da" stroke-width="5" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <use href="#cloud" x="40" y="320" width="220" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <use href="#cloud" x="400" y="322" width="240" height="68" style="fill:var(--cloud)" opacity=".8"/>
+  <use href="#isl" x="190" y="262" width="260" height="130" filter="url(#soft)"/>
+  <g filter="url(#soft)"><rect x="226" y="298" width="188" height="44" rx="14" fill="#282637"/>
+    <circle cx="258" cy="320" r="11" fill="#00d1da" opacity=".5"/><circle cx="294" cy="320" r="11" fill="#dc8fd5" opacity=".5"/>
+    <circle cx="330" cy="320" r="11" fill="#00d1da"/><circle cx="330" cy="320" r="16" fill="none" stroke="#ffe0fb" stroke-width="3"/>
+    <circle cx="366" cy="320" r="11" fill="#984f92" opacity=".7"/><circle cx="394" cy="320" r="5" fill="#ffe0fb" opacity=".6"/></g>
+  <use href="#bot" x="286" y="206" width="76" height="89" filter="url(#soft)"/>
+  <path d="M362 250 Q384 228 392 214" stroke="#dc8fd5" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <use href="#spark" x="40" y="250" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="590" y="300" width="14" height="14" style="fill:#00d1da"/><use href="#spark" x="320" y="20" width="14" height="14" style="fill:#dc8fd5"/>
+</svg>
+<div class="meta"><h2><span>7</span>Pick a model</h2><p>Four different planets orbit one island. The bot points a glowing beam at the one it wants. Nothing is chosen for it.</p><div class="use">Use: Your model card (section 4) and the model choice in Build (section 2)</div></div>
+</article>
+
+<!-- 8 TRUST -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A bot inspecting other bots at a gate beneath a large shield with a tick">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="320" cy="120" r="150" fill="url(#rCyan)" class="glowlayer" opacity=".6"/>
+  <use href="#cloud" x="20" y="326" width="220" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <use href="#cloud" x="420" y="330" width="220" height="64" style="fill:var(--cloud)" opacity=".8"/>
+  <path d="M320 30 L396 54 V120 C396 168 362 196 320 214 C278 196 244 168 244 120 V54Z" fill="url(#gPink)" stroke="#984f92" stroke-width="5" stroke-linejoin="round" filter="url(#soft)"/>
+  <path d="M320 46 L382 66 V120 C382 158 354 182 320 198Z" fill="#ffffff" opacity=".18"/>
+  <path d="M286 120 L312 146 L358 92" stroke="#ffffff" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M286 120 L312 146 L358 92" stroke="#00d1da" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#isl" x="80" y="236" width="480" height="150" filter="url(#soft)"/>
+  <path d="M130 292 V242 A50 50 0 0 1 230 242 V292" fill="none" stroke="#984f92" stroke-width="14"/>
+  <path d="M130 292 V242 A50 50 0 0 1 230 242 V292" fill="none" stroke="#ffe0fb" stroke-width="6"/>
+  <rect x="140" y="250" width="80" height="42" fill="url(#rCyan)" class="glowlayer"/>
+  <use href="#cube" x="140" y="244" width="40" height="47"/>
+  <circle cx="186" cy="248" r="11" fill="#00d1da"/><path d="M180 248 L185 253 L193 243" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#orb" x="440" y="244" width="40" height="47"/><circle cx="478" cy="248" r="11" fill="#00d1da"/><path d="M472 248 L477 253 L485 243" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#tall" x="500" y="230" width="36" height="58"/>
+  <use href="#bot" x="296" y="226" width="80" height="93" filter="url(#soft)"/>
+  <g transform="translate(396 268)"><circle cx="0" cy="0" r="22" fill="#ffffff" fill-opacity=".55" stroke="#282637" stroke-width="5"/><path d="M16 16 L38 38" stroke="#282637" stroke-width="8" stroke-linecap="round"/><path d="M-10 -2 L-3 6 L10 -10" stroke="#00d1da" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <use href="#spark" x="180" y="80" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="450" y="70" width="18" height="18" style="fill:#00d1da"/><use href="#spark" x="70" y="190" width="14" height="14" style="fill:#dc8fd5"/><use href="#spark" x="560" y="190" width="14" height="14" style="fill:#ffe0fb"/>
+</svg>
+<div class="meta"><h2><span>8</span>Checked at the gate</h2><p>A bot with a magnifier looks over each visitor at a stone gate. Bots that pass wear a tick. A big shield glows overhead.</p><div class="use">Use: Checked bots (section 7)</div></div>
+</article>
+
+<!-- 9 REFERRALS -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A glowing trail of lights leading new bots from island to island towards a gift">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <circle cx="540" cy="70" r="130" fill="url(#rPink)" class="glowlayer"/>
+  <circle cx="540" cy="70" r="36" fill="url(#gCyan)"/><circle cx="530" cy="62" r="6" fill="#fff" opacity=".4"/>
+  <use href="#cloud" x="0" y="326" width="220" height="64" style="fill:var(--cloud)" opacity=".85"/>
+  <path d="M130 290 C230 270 180 200 280 190 C380 180 330 130 430 120 C490 114 500 100 540 90" stroke="#ffe0fb" stroke-width="12" fill="none" stroke-linecap="round" opacity=".75" class="glowlayer"/>
+  <path d="M130 290 C230 270 180 200 280 190 C380 180 330 130 430 120 C490 114 500 100 540 90" stroke="#00d1da" stroke-width="4" fill="none" stroke-dasharray="2 11" stroke-linecap="round"/>
+  <use href="#isl" x="420" y="124" width="150" height="75" filter="url(#soft)"/>
+  <use href="#isl" x="250" y="190" width="150" height="75" filter="url(#soft)"/>
+  <use href="#isl" x="20" y="256" width="230" height="115" filter="url(#soft)"/>
+  <use href="#orb" x="480" y="72" width="42" height="49"/>
+  <use href="#cube" x="308" y="146" width="40" height="47"/>
+  <use href="#tall" x="372" y="154" width="30" height="48"/>
+  <use href="#bot" x="94" y="188" width="86" height="100" filter="url(#soft)"/>
+  <rect x="190" y="164" width="3" height="104" fill="#282637" transform="rotate(10 190 268)"/><path d="M200 164 L246 176 L204 194Z" fill="#dc8fd5" stroke="#984f92" stroke-width="2" stroke-linejoin="round"/>
+  <g transform="translate(528 36) rotate(8)" filter="url(#soft)"><rect x="-26" y="0" width="52" height="42" rx="8" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><rect x="-5" y="0" width="10" height="42" fill="#dc8fd5"/><rect x="-26" y="14" width="52" height="9" fill="#00d1da" opacity=".7"/><path d="M0 0 C-14 -16 -22 -2 0 0 C22 -2 14 -16 0 0Z" fill="#dc8fd5" stroke="#984f92" stroke-width="2"/></g>
+  <path d="M236 232 l6 -8 l6 8 l-6 10z" fill="#dc8fd5"/><path d="M340 120 l6 -8 l6 8 l-6 10z" fill="#00d1da"/>
+  <use href="#spark" x="20" y="130" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="560" y="250" width="16" height="16" style="fill:#00d1da"/><use href="#spark" x="220" y="90" width="12" height="12" style="fill:#dc8fd5"/><use href="#spark" x="600" y="330" width="14" height="14" style="fill:#ffe0fb"/>
+</svg>
+<div class="meta"><h2><span>9</span>Follow the trail</h2><p>A bot waves a flag and a trail of lights leads new bots from island to island. A wrapped gift waits at the end.</p><div class="use">Use: Earn by referring (section 9)</div></div>
+</article>
+
+<!-- 10 CREDITS -->
+<article class="concept">
+<svg class="art" viewBox="0 0 640 400" role="img" aria-label="A bot beside a glass tank of glowing crystals with a gauge while small bots carry in more crystals">
+  <rect width="640" height="400" fill="url(#sky)"/>
+  <use href="#stars" class="stars" width="640" height="400"/>
+  <use href="#cloud" x="0" y="330" width="230" height="64" style="fill:var(--cloud)" opacity=".85"/>
+  <use href="#cloud" x="430" y="326" width="230" height="64" style="fill:var(--cloud)" opacity=".85"/>
+  <circle cx="400" cy="190" r="170" fill="url(#rCyan)" class="glowlayer"/>
+  <use href="#isl" x="60" y="248" width="520" height="140" filter="url(#soft)"/>
+  <rect x="340" y="260" width="130" height="16" rx="6" fill="#282637"/>
+  <path d="M350 262 V84 A50 50 0 0 1 460 84 V262Z" fill="url(#gGlass)" stroke="#984f92" stroke-width="5"/>
+  <path d="M356 262 V146 H454 V262Z" fill="url(#gCyan)" opacity=".92"/>
+  <path d="M356 146 Q380 136 405 146 T454 146" stroke="#ffffff" stroke-width="3" fill="none" opacity=".7"/>
+  <use href="#crystal" x="366" y="196" width="26" height="35"/><use href="#crystal" x="404" y="212" width="30" height="40"/><use href="#crystal" x="426" y="180" width="22" height="30"/>
+  <circle cx="378" cy="170" r="5" fill="#fff" opacity=".6"/><circle cx="420" cy="158" r="3.5" fill="#fff" opacity=".6"/><circle cx="394" cy="120" r="4" fill="none" stroke="#984f92" stroke-width="2"/><circle cx="420" cy="100" r="3" fill="none" stroke="#984f92" stroke-width="2"/>
+  <path d="M360 106 H372 M360 126 H368" stroke="#984f92" stroke-width="3" stroke-linecap="round"/>
+  <path d="M470 232 H506 V200" stroke="#984f92" stroke-width="8" fill="none" stroke-linejoin="round"/>
+  <g transform="translate(520 176)" filter="url(#soft)"><circle cx="0" cy="0" r="32" fill="#ffffff" stroke="#984f92" stroke-width="5"/><path d="M-20 14 A26 26 0 1 1 20 14" stroke="#ebedfc" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-20 14 A26 26 0 0 1 -12 -18" stroke="#dc8fd5" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M-12 -18 A26 26 0 0 1 14 -22" stroke="#00d1da" stroke-width="6" fill="none"/><path d="M0 4 L14 -12" stroke="#282637" stroke-width="4" stroke-linecap="round"/><circle cx="0" cy="4" r="5" fill="#282637"/></g>
+  <g transform="translate(500 246)"><circle cx="0" cy="0" r="7" fill="#984f92"/><circle cx="22" cy="0" r="7" fill="#ffe0fb" stroke="#984f92" stroke-width="2"/><path d="M22 -7 A7 7 0 0 0 22 7Z" fill="#984f92"/><circle cx="44" cy="0" r="7" fill="#ffe0fb" stroke="#984f92" stroke-width="2"/></g>
+  <use href="#bot" x="240" y="196" width="84" height="98" filter="url(#soft)"/>
+  <path d="M324 244 Q336 240 346 232" stroke="#dc8fd5" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M60 130 Q180 90 300 128" stroke="#282637" stroke-width="2.5" fill="none"/>
+  <use href="#cube" x="100" y="196" width="42" height="49"/><use href="#crystal" x="108" y="176" width="26" height="35"/>
+  <use href="#orb" x="168" y="206" width="40" height="47"/>
+  <use href="#crystal" x="150" y="106" width="24" height="32" style="opacity:.95"/><use href="#crystal" x="216" y="96" width="20" height="27" style="opacity:.8"/>
+  <use href="#spark" x="300" y="100" width="16" height="16" style="fill:#ffe0fb"/><use href="#spark" x="40" y="180" width="14" height="14" style="fill:#00d1da"/><use href="#spark" x="590" y="110" width="14" height="14" style="fill:#dc8fd5"/>
+</svg>
+<div class="meta"><h2><span>10</span>The credit tank</h2><p>A tall glass tank of crystals shows the balance. Small bots carry more in and a gauge shows how full it is.</p><div class="use">Use: Who pays when people chat (section 10) and Plans credits (section 8)</div></div>
+</article>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('themeBtn');
+  var root = document.documentElement;
+  btn.addEventListener('click', function () {
+    var night = root.getAttribute('data-theme') === 'night';
+    if (night) { root.removeAttribute('data-theme'); } else { root.setAttribute('data-theme', 'night'); }
+    btn.setAttribute('aria-pressed', night ? 'false' : 'true');
+    btn.textContent = night ? 'Switch to Nightshift' : 'Switch to light';
+  });
+})();
+</script>
+</body>
+</html>

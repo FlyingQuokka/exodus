@@ -1,0 +1,18 @@
+{
+ "title": "FND1 Founders coupon",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Founder"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "FND1",
+   "do": "email",
+   "email": "FND1"
+  }
+ ]
+}

@@ -1,8 +1,8 @@
-// Generates every AiBotShare member + Back Office example page from one shared shell.
+// Generates every Botterverse member + Back Office example page from one shared shell.
 // Run: node build-pages.mjs
 import { writeFileSync } from 'node:fs';
 
-const PREFIX = 'aibotshare-design-e-softline';
+const PREFIX = 'botterverse-design-e-softline';
 const f = (slug) => `${PREFIX}-${slug}.html`;
 
 /* ---------------------------------------------------------------- icons */
@@ -449,7 +449,7 @@ const table = (headers, rows) => `
 function page({ area, slug, title, extraCss = '', body, showCredits = true }) {
   const isOffice = area === 'office';
   const nav = isOffice ? OFFICE_NAV : MEMBER_NAV;
-  const wordmark = isOffice ? 'Back Office' : 'AI Bot Share';
+  const wordmark = isOffice ? 'Back Office' : 'Botterverse';
   const home = f(isOffice ? 'back-office-dashboard' : 'dashboard');
   const profile = f(isOffice ? 'back-office-profile' : 'profile');
   const width = isOffice ? 262 : 258;
@@ -705,8 +705,8 @@ ${accordion(false, 'Paywall &amp; pricing', 'One-time purchase at $49', 'card', 
             </div>`)}
 
 ${accordion(false, 'Sharing &amp; embed', 'Link plus embed snippet', 'tag', 'danger', `
-            <div class="field-row single"><div class="field"><label>Share link</label><input type="text" value="https://chat.aibotshare.com/b/client-onboarding-bot" readonly></div></div>
-            <div class="field-row single"><div class="field"><label>Embed snippet</label><textarea rows="3" readonly>&lt;script src="https://embed.aibotshare.com/v1.js" data-bot="client-onboarding-bot"&gt;&lt;/script&gt;</textarea></div></div>`)}
+            <div class="field-row single"><div class="field"><label>Share link</label><input type="text" value="https://chat.botterverse.com/b/client-onboarding-bot" readonly></div></div>
+            <div class="field-row single"><div class="field"><label>Embed snippet</label><textarea rows="3" readonly>&lt;script src="https://embed.botterverse.com/v1.js" data-bot="client-onboarding-bot"&gt;&lt;/script&gt;</textarea></div></div>`)}
 
         <div class="card" style="display:flex; gap:10px; align-items:center;">
           <button class="btn btn-primary">Save bot</button>
@@ -919,7 +919,7 @@ PAGES.push(page({
           <div class="divider"></div>
           <div class="toggle-row"><div class="toggle-text"><div class="t-title">Show in the central Bot Market</div><div class="t-sub">Turn off to sell only through your own shareable listing link</div></div><div class="toggle on"><div class="knob"></div></div></div>
           <div class="divider"></div>
-          <div class="notice n-amber">${ic('credit', 15)} AiBotShare takes 5% of each sale. On $49 you receive $46.55, available to withdraw after the holdback.</div>
+          <div class="notice n-amber">${ic('credit', 15)} Botterverse takes 5% of each sale. On $49 you receive $46.55, available to withdraw after the holdback.</div>
         </div>
 
         <div class="card" style="display:flex; gap:10px; align-items:center;">
@@ -1031,7 +1031,7 @@ ${accordion(true, 'Account', 'Notification preferences', 'cog', 'accent', `
             <div class="toggle-row"><div class="toggle-text"><div class="t-title">Usage alerts</div><div class="t-sub">Email me when a bot's credit cap is close to being hit</div></div><div class="toggle on"><div class="knob"></div></div></div>
             <div class="toggle-row"><div class="toggle-text"><div class="t-title">New sale notifications</div><div class="t-sub">Email me when a bot or Bot Market listing sells</div></div><div class="toggle on"><div class="knob"></div></div></div>
             <div class="toggle-row"><div class="toggle-text"><div class="t-title">Auto top-up receipts</div><div class="t-sub">Email me each time credits are topped up automatically</div></div><div class="toggle on"><div class="knob"></div></div></div>
-            <div class="toggle-row"><div class="toggle-text"><div class="t-title">Product updates</div><div class="t-sub">Occasional email about new AiBotShare features</div></div><div class="toggle off"><div class="knob"></div></div></div>
+            <div class="toggle-row"><div class="toggle-text"><div class="t-title">Product updates</div><div class="t-sub">Occasional email about new Botterverse features</div></div><div class="toggle off"><div class="knob"></div></div></div>
             <div class="divider"></div>
             <button class="btn btn-primary">Save changes</button>`)}
 
@@ -1359,7 +1359,7 @@ PAGES.push(page({
           <div class="panel-head"><div><div class="panel-title display">Connector</div><div class="panel-sub">Lifecycle events are emitted internally, then translated by the active connector</div></div></div>
           <div class="field-row">
             <div class="field"><label>Active provider</label><select><option>FluentCRM</option><option>Mailchimp</option><option>ActiveCampaign</option><option>None - events discarded</option></select></div>
-            <div class="field"><label>API endpoint</label><input type="text" value="https://crm.aibotshare.com/wp-json/fluent-crm/v2"></div>
+            <div class="field"><label>API endpoint</label><input type="text" value="https://crm.botterverse.com/wp-json/fluent-crm/v2"></div>
           </div>
           <div class="field-row">
             <div class="field"><label>API key</label><input type="password" value="················"></div>
@@ -1554,7 +1554,7 @@ PAGES.push(page({
               <div class="field"><label>First name</label><input type="text" value="Priya"></div>
               <div class="field"><label>Last name</label><input type="text" value="Adeyemi"></div>
             </div>
-            <div class="field"><label>Email address</label><input type="text" value="priya@aibotshare.com"></div>
+            <div class="field"><label>Email address</label><input type="text" value="priya@botterverse.com"></div>
           </div>
           <div class="field-row">
             <div class="field"><label>New password</label><input type="password" placeholder="••••••••"></div>

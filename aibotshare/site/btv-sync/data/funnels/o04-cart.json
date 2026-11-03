@@ -1,0 +1,43 @@
+{
+ "title": "O04 Cart abandonment",
+ "trigger": {
+  "type": "cart_abandoned"
+ },
+ "run_multiple": true,
+ "publish": false,
+ "steps": [
+  {
+   "key": "O04-w1",
+   "do": "wait",
+   "amount": 1,
+   "unit": "hours"
+  },
+  {
+   "key": "O04-01",
+   "do": "email",
+   "email": "O04-01"
+  },
+  {
+   "key": "O04-w2",
+   "do": "wait",
+   "amount": 23,
+   "unit": "hours"
+  },
+  {
+   "key": "O04-02",
+   "do": "email",
+   "email": "O04-02"
+  },
+  {
+   "key": "O04-w3",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O04-03",
+   "do": "email",
+   "email": "O04-03"
+  }
+ ]
+}

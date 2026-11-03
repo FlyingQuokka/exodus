@@ -1,0 +1,83 @@
+{
+ "title": "UP Catch-up - Novice to Pro",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Upgrade Done"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "C-check",
+   "do": "condition",
+   "note": "Only the member who made this jump continues.",
+   "if": {
+    "match": "all",
+    "tags": [
+     "Upgraded From Novice",
+     "Pro Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "C-end",
+     "do": "end"
+    }
+   ]
+  },
+  {
+   "key": "C-wait-1",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UE02",
+   "do": "email",
+   "email": "UE02"
+  },
+  {
+   "key": "C-wait-2",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UE03",
+   "do": "email",
+   "email": "UE03"
+  },
+  {
+   "key": "C-wait-3",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UE05",
+   "do": "email",
+   "email": "UE05"
+  },
+  {
+   "key": "C-wait-4",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UE06",
+   "do": "email",
+   "email": "UE06"
+  },
+  {
+   "key": "C-from-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgraded From Novice"
+   ]
+  }
+ ]
+}

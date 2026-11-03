@@ -1,0 +1,822 @@
+{
+ "title": "A0 Welcome",
+ "trigger": {
+  "type": "subscription_activated"
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "A0-tags-on",
+   "do": "add_tag",
+   "tags": [
+    "Welcome Active",
+    "Customer"
+   ],
+   "note": "Start of the welcome track."
+  },
+  {
+   "key": "A0-lead-off",
+   "do": "remove_tag",
+   "tags": [
+    "Lead"
+   ]
+  },
+  {
+   "key": "S01",
+   "do": "email",
+   "email": "S01",
+   "note": "Day 1. Welcome. Sent at once."
+  },
+  {
+   "key": "A0-wait-T1",
+   "do": "wait",
+   "amount": 5,
+   "unit": "minutes"
+  },
+  {
+   "key": "T1",
+   "do": "email",
+   "email": "T1",
+   "note": "Day 1. Quick tour."
+  },
+  {
+   "key": "A0-T2-check",
+   "do": "condition",
+   "note": "Day 1. T2 goes when the plan tag has arrived. Otherwise it goes at the end of day 1.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "T2-now",
+     "do": "email",
+     "email": "T2"
+    }
+   ],
+   "no": [
+    {
+     "key": "A0-wait-T2",
+     "do": "wait",
+     "amount": 8,
+     "unit": "hours"
+    },
+    {
+     "key": "T2-late",
+     "do": "email",
+     "email": "T2"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-02",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "B1",
+   "do": "email",
+   "email": "B1",
+   "note": "Day 2. All plans."
+  },
+  {
+   "key": "wait-day-03",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "B2",
+   "do": "email",
+   "email": "B2",
+   "note": "Day 3. All plans."
+  },
+  {
+   "key": "wait-day-04",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "B3",
+   "do": "email",
+   "email": "B3",
+   "note": "Day 4. All plans."
+  },
+  {
+   "key": "wait-day-05",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "C1",
+   "do": "email",
+   "email": "C1",
+   "note": "Day 5. All plans."
+  },
+  {
+   "key": "wait-day-06",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "W1",
+   "do": "email",
+   "email": "W1",
+   "note": "Day 6. All plans."
+  },
+  {
+   "key": "wait-day-07",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "W2",
+   "do": "email",
+   "email": "W2",
+   "note": "Day 7. All plans."
+  },
+  {
+   "key": "wait-day-08",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "W3",
+   "do": "email",
+   "email": "W3",
+   "note": "Day 8. All plans."
+  },
+  {
+   "key": "wait-day-09",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-09",
+   "do": "condition",
+   "note": "Day 9. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets M1-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M1",
+     "do": "email",
+     "email": "M1"
+    }
+   ],
+   "no": [
+    {
+     "key": "M1-preview",
+     "do": "email",
+     "email": "M1-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-10",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-10",
+   "do": "condition",
+   "note": "Day 10. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets M2-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M2",
+     "do": "email",
+     "email": "M2"
+    }
+   ],
+   "no": [
+    {
+     "key": "M2-preview",
+     "do": "email",
+     "email": "M2-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-11",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-11",
+   "do": "condition",
+   "note": "Day 11. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets M3-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M3",
+     "do": "email",
+     "email": "M3"
+    }
+   ],
+   "no": [
+    {
+     "key": "M3-preview",
+     "do": "email",
+     "email": "M3-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-12",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-12",
+   "do": "condition",
+   "note": "Day 12. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets M4-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M4",
+     "do": "email",
+     "email": "M4"
+    }
+   ],
+   "no": [
+    {
+     "key": "M4-preview",
+     "do": "email",
+     "email": "M4-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-13",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-13",
+   "do": "condition",
+   "note": "Day 13. Full email for Pro Botter, Master Botter. Everyone else gets M5-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M5",
+     "do": "email",
+     "email": "M5"
+    }
+   ],
+   "no": [
+    {
+     "key": "M5-preview",
+     "do": "email",
+     "email": "M5-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-14",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-14",
+   "do": "condition",
+   "note": "Day 14. Full email for Pro Botter, Master Botter. Everyone else gets M6-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "M6",
+     "do": "email",
+     "email": "M6"
+    }
+   ],
+   "no": [
+    {
+     "key": "M6-preview",
+     "do": "email",
+     "email": "M6-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-15",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-15",
+   "do": "condition",
+   "note": "Day 15. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets F1-P.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "F1",
+     "do": "email",
+     "email": "F1"
+    }
+   ],
+   "no": [
+    {
+     "key": "F1-P",
+     "do": "email",
+     "email": "F1-P"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-16",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-16",
+   "do": "condition",
+   "note": "Day 16. Full email for Novice Botter, Expert Botter, Pro Botter, Master Botter. Everyone else gets F2-P.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "F2",
+     "do": "email",
+     "email": "F2"
+    }
+   ],
+   "no": [
+    {
+     "key": "F2-P",
+     "do": "email",
+     "email": "F2-P"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-17",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "TIP1",
+   "do": "email",
+   "email": "TIP1",
+   "note": "Day 17. All plans."
+  },
+  {
+   "key": "wait-day-18",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-18",
+   "do": "condition",
+   "note": "Day 18. Full email for Expert Botter, Pro Botter, Master Botter. Everyone else gets F3-P.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "F3",
+     "do": "email",
+     "email": "F3"
+    }
+   ],
+   "no": [
+    {
+     "key": "F3-P",
+     "do": "email",
+     "email": "F3-P"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-19",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "F4",
+   "do": "email",
+   "email": "F4",
+   "note": "Day 19. All plans."
+  },
+  {
+   "key": "wait-day-20",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-20",
+   "do": "condition",
+   "note": "Day 20. Full email for Pro Botter, Master Botter. Everyone else gets F5-P.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "F5",
+     "do": "email",
+     "email": "F5"
+    }
+   ],
+   "no": [
+    {
+     "key": "F5-P",
+     "do": "email",
+     "email": "F5-P"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-21",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-21",
+   "do": "condition",
+   "note": "Day 21. Full email for Pro Botter, Master Botter. Everyone else gets F6-P.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "F6",
+     "do": "email",
+     "email": "F6"
+    }
+   ],
+   "no": [
+    {
+     "key": "F6-P",
+     "do": "email",
+     "email": "F6-P"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-22",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "N1",
+   "do": "email",
+   "email": "N1",
+   "note": "Day 22. All plans."
+  },
+  {
+   "key": "wait-day-23",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "N2",
+   "do": "email",
+   "email": "N2",
+   "note": "Day 23. All plans."
+  },
+  {
+   "key": "wait-day-24",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-24",
+   "do": "condition",
+   "note": "Day 24. Full email for Master Botter. Everyone else gets N3.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "N3-master",
+     "do": "email",
+     "email": "N3-master"
+    }
+   ],
+   "no": [
+    {
+     "key": "N3",
+     "do": "email",
+     "email": "N3"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-25",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-25",
+   "do": "condition",
+   "note": "Day 25. Full email for Master Botter. Everyone else gets N4.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "N4-master",
+     "do": "email",
+     "email": "N4-master"
+    }
+   ],
+   "no": [
+    {
+     "key": "N4",
+     "do": "email",
+     "email": "N4"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-26",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "N5",
+   "do": "email",
+   "email": "N5",
+   "note": "Day 26. All plans."
+  },
+  {
+   "key": "wait-day-27",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "N6",
+   "do": "email",
+   "email": "N6",
+   "note": "Day 27. All plans."
+  },
+  {
+   "key": "wait-day-28",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "TIP2",
+   "do": "email",
+   "email": "TIP2",
+   "note": "Day 28. All plans."
+  },
+  {
+   "key": "wait-day-29",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-day-29",
+   "do": "condition",
+   "note": "Day 29. Full email for Pro Botter, Master Botter. Everyone else gets S28-preview.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S28",
+     "do": "email",
+     "email": "S28"
+    }
+   ],
+   "no": [
+    {
+     "key": "S28-preview",
+     "do": "email",
+     "email": "S28-preview"
+    }
+   ]
+  },
+  {
+   "key": "wait-day-30",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "gate-S30-A",
+   "do": "condition",
+   "note": "Day 30. The version for Apprentice Botter.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S30-A",
+     "do": "email",
+     "email": "S30-A"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "gate-S30-N",
+   "do": "condition",
+   "note": "Day 30. The version for Novice Botter.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S30-N",
+     "do": "email",
+     "email": "S30-N"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "gate-S30-E",
+   "do": "condition",
+   "note": "Day 30. The version for Expert Botter.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Expert Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S30-E",
+     "do": "email",
+     "email": "S30-E"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "gate-S30-P",
+   "do": "condition",
+   "note": "Day 30. The version for Pro Botter.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Pro Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S30-P",
+     "do": "email",
+     "email": "S30-P"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "gate-S30-M",
+   "do": "condition",
+   "note": "Day 30. The version for Master Botter.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "S30-M",
+     "do": "email",
+     "email": "S30-M"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "A0-done-on",
+   "do": "add_tag",
+   "tags": [
+    "Welcome Done"
+   ]
+  },
+  {
+   "key": "A0-active-off",
+   "do": "remove_tag",
+   "tags": [
+    "Welcome Active"
+   ],
+   "note": "Broadcasts exclude Welcome Active, so it goes at the end."
+  }
+ ]
+}

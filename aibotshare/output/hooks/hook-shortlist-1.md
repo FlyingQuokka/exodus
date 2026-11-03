@@ -16,7 +16,7 @@ A hook is rejected if it does any of these:
 
 Several of the strongest ownership hooks say you "never had your buyers' emails". That is true of GPT users in general. It may be false for imers who sold access through their own checkout, because their payment processor holds the emails. What a GPT seller genuinely lost is sight of who used the bot and any way to message those users through the platform. I rewrote the picks around that safer truth. Your Skool material will show which version lands.
 
-Settled on 21 October: the export includes no buyer names and no emails, to keep data protection responsibility with AI Bot Share. Still unconfirmed: what a seller can see about members who sign up on their bot. No copy says "customer list" or "email list".
+Settled on 21 October: the export includes no buyer names and no emails, to keep data protection responsibility with Botterverse. Still unconfirmed: what a seller can see about members who sign up on their bot. No copy says "customer list" or "email list".
 
 ## Angle A: ownership
 
@@ -55,7 +55,7 @@ Settled on 21 October: the export includes no buyer names and no emails, to keep
 | Your list already understands PLR. Tell them they can buy a bot and resell it under their own name and it needs no explaining. They need a link. | Affiliate benefit |
 | You earn 50% of a referred member's first payment and 20% of every payment after, at launch. It keeps paying while they stay. | Affiliate benefit |
 | Sellers set an affiliate share on each Bot Market listing. You can refer members and promote their bots and earn on both. | Affiliate benefit |
-| Put a bot on your promo page that answers your list's questions about the platform before they click away. You are not only promoting AI Bot Share. You are demonstrating it. | Affiliate benefit |
+| Put a bot on your promo page that answers your list's questions about the platform before they click away. You are not only promoting Botterverse. You are demonstrating it. | Affiliate benefit |
 
 The affiliate angle assumes your audience's lists are full of displaced GPT sellers. Your Skool material should confirm that.
 

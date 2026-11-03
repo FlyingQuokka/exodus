@@ -1,0 +1,53 @@
+{
+ "title": "STOP Upgrade - cancelled or plan ended",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Cancelled",
+   "Plan Ended"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "X-cancel",
+   "do": "cancel",
+   "automations": [
+    "UP Detect - from Apprentice",
+    "UP Detect - from Novice",
+    "UP Detect - from Expert",
+    "UP Detect - from Pro",
+    "UP Sequence - Novice",
+    "UP Sequence - Expert",
+    "UP Sequence - Pro",
+    "UP Sequence - Master",
+    "UP Catch-up - Apprentice to Expert",
+    "UP Catch-up - Apprentice to Pro",
+    "UP Catch-up - Apprentice to Master",
+    "UP Catch-up - Novice to Pro",
+    "UP Catch-up - Novice to Master",
+    "UP Catch-up - Expert to Master"
+   ]
+  },
+  {
+   "key": "X-clear",
+   "do": "remove_tag",
+   "tags": [
+    "Upgrade Active",
+    "Upgrade Done",
+    "Upgrade Routed",
+    "Upgrade Unrouted",
+    "Upgraded From Apprentice",
+    "Upgraded From Novice",
+    "Upgraded From Expert",
+    "Upgraded From Pro",
+    "Start Upgrade Novice",
+    "Start Upgrade Expert",
+    "Start Upgrade Pro",
+    "Start Upgrade Master"
+   ],
+   "note": "Leaves no old tag behind to block a later upgrade."
+  }
+ ]
+}

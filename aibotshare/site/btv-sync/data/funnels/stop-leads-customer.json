@@ -1,0 +1,23 @@
+{
+ "title": "STOP Leads - Customer",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Customer"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "STOP-cancel",
+   "do": "cancel",
+   "automations": [
+    "O01 Pre-launch nurture",
+    "O03 Public launch",
+    "O04 Cart abandonment"
+   ],
+   "note": "A buyer leaves the lead sequences."
+  }
+ ]
+}

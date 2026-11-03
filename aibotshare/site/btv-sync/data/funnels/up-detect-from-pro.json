@@ -1,0 +1,201 @@
+{
+ "title": "UP Detect - from Pro",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Upgraded From Pro"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "D-wait",
+   "do": "wait",
+   "amount": 2,
+   "unit": "minutes",
+   "note": "Lets the new plan tag arrive."
+  },
+  {
+   "key": "D-cancel",
+   "do": "cancel",
+   "automations": [
+    "A0 Welcome",
+    "UP Sequence - Novice",
+    "UP Sequence - Expert",
+    "UP Sequence - Pro",
+    "UP Sequence - Master",
+    "UP Catch-up - Apprentice to Expert",
+    "UP Catch-up - Apprentice to Pro",
+    "UP Catch-up - Apprentice to Master",
+    "UP Catch-up - Novice to Pro",
+    "UP Catch-up - Novice to Master",
+    "UP Catch-up - Expert to Master",
+    "UP Detect - from Apprentice",
+    "UP Detect - from Novice",
+    "UP Detect - from Expert"
+   ],
+   "note": "An upgrade ends the welcome track and any earlier upgrade run."
+  },
+  {
+   "key": "D-clear",
+   "do": "remove_tag",
+   "tags": [
+    "Welcome Active",
+    "Upgrade Done",
+    "Upgrade Routed",
+    "Upgrade Unrouted",
+    "Upgraded From Apprentice",
+    "Upgraded From Novice",
+    "Upgraded From Expert",
+    "Start Upgrade Novice",
+    "Start Upgrade Expert",
+    "Start Upgrade Pro",
+    "Start Upgrade Master"
+   ],
+   "note": "Clears old state so the tags that follow are new and the hooks fire."
+  },
+  {
+   "key": "D-flags",
+   "do": "add_tag",
+   "tags": [
+    "Welcome Done",
+    "Upgrade Active"
+   ]
+  },
+  {
+   "key": "D1-to-Master",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D1-start-Master",
+     "do": "add_tag",
+     "tags": [
+      "Start Upgrade Master",
+      "Upgrade Routed"
+     ]
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D1-routed",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgrade Routed"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D1-routed-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D2-wait",
+   "do": "wait",
+   "amount": 10,
+   "unit": "minutes"
+  },
+  {
+   "key": "D2-to-Master",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D2-start-Master",
+     "do": "add_tag",
+     "tags": [
+      "Start Upgrade Master",
+      "Upgrade Routed"
+     ]
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D2-routed",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgrade Routed"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D2-routed-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D3-wait",
+   "do": "wait",
+   "amount": 20,
+   "unit": "minutes"
+  },
+  {
+   "key": "D3-to-Master",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D3-start-Master",
+     "do": "add_tag",
+     "tags": [
+      "Start Upgrade Master",
+      "Upgrade Routed"
+     ]
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D3-routed",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgrade Routed"
+    ]
+   },
+   "yes": [
+    {
+     "key": "D3-routed-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "D-unrouted",
+   "do": "add_tag",
+   "tags": [
+    "Upgrade Unrouted"
+   ],
+   "note": "No plan tag arrived in about 32 minutes. Staff can find these contacts by this tag."
+  }
+ ]
+}

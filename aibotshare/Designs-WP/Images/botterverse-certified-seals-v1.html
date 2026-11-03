@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Certified seals v1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --tint: #ffe0fb; --link: #984f92; --cyan: #00d1da; --navy: #080d16; --ink: #282637; --line: #ebeaf2;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  h2.sec { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 26px; margin: 44px 0 10px; }
+  .lede { max-width: 760px; line-height: 1.6; margin: 0 0 30px; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  .seal { background: var(--card); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .seal .big { display: grid; grid-template-columns: 1fr 1fr; }
+  .seal .big div { display: flex; align-items: center; justify-content: center; padding: 18px 8px; }
+  .seal .big .l { background: var(--bg); }
+  .seal .big .d { background: var(--navy); }
+  .seal svg.s { width: 150px; height: 150px; display: block; }
+  .seal .sm { display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--panel); }
+  .seal .sm svg { display: block; }
+  .seal .sm span { font-size: 12px; font-weight: 700; }
+  .seal .meta { padding: 12px 18px 18px; }
+  .seal h3 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 18px; margin: 0 0 4px; }
+  .seal h3 b { color: var(--pink); margin-right: 8px; }
+  .seal p { margin: 0; font-size: 13.5px; line-height: 1.5; }
+  .ctx { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .box { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 18px; }
+  .box h3 { font-family: 'Baloo 2', sans-serif; color: var(--heading); margin: 0 0 12px; font-size: 18px; }
+  .listing { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .listing .top { background: var(--tint); height: 110px; display: flex; align-items: center; justify-content: center; position: relative; }
+  .listing .top svg.b { width: 70px; height: 82px; }
+  .listing .top svg.s { position: absolute; right: 12px; bottom: -22px; width: 64px; height: 64px; }
+  .listing .body { padding: 28px 16px 16px; }
+  .listing .name { font-family: 'Baloo 2', sans-serif; font-weight: 800; color: var(--heading); font-size: 18px; }
+  .listing .bar { height: 9px; border-radius: 5px; background: var(--panel); margin-top: 8px; }
+  .listing .price { margin-top: 12px; display: inline-block; background: var(--pink); color: #391d37; font-weight: 800; border-radius: 999px; padding: 6px 16px; font-size: 14px; }
+  .chat { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff; }
+  .chat .msg { margin: 12px; padding: 10px 14px; border-radius: 14px; background: var(--panel); font-size: 14px; max-width: 80%; }
+  .chat .msg.me { background: var(--pink); color: #391d37; margin-left: auto; }
+  .chat .foot { display: flex; align-items: center; gap: 8px; padding: 8px 14px; border-top: 1px solid var(--line); font-size: 12px; font-weight: 700; background: var(--bg); }
+  .chat .foot svg { width: 26px; height: 26px; flex: none; }
+  @media (max-width: 960px) { .grid { grid-template-columns: 1fr 1fr; } .ctx { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bot" viewBox="0 0 60 70">
+      <line x1="30" y1="12" x2="30" y2="5" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="30" cy="4.5" r="4" fill="#00d1da"/>
+      <rect x="5" y="12" width="50" height="42" rx="17" fill="#dc8fd5"/>
+      <circle cx="21" cy="31" r="4.6" fill="#282637"/><circle cx="39" cy="31" r="4.6" fill="#282637"/>
+      <path d="M22 41 Q30 47 38 41" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="14" y="54" width="10" height="12" rx="5" fill="#984f92"/><rect x="36" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    </symbol>
+    <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eeaee8"/><stop offset="1" stop-color="#c876c1"/></linearGradient>
+    <linearGradient id="gc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6df0f5"/><stop offset="1" stop-color="#00b9c2"/></linearGradient>
+    <linearGradient id="gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b66fb0"/><stop offset="1" stop-color="#984f92"/></linearGradient>
+    <symbol id="tickbadge" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="21" fill="url(#gc)" stroke="#282637" stroke-width="3.5"/>
+      <path d="M13 25 L21 33 L36 15" fill="none" stroke="#282637" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 25 L21 33 L36 15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Certified seals, version 1</h1>
+  <p class="lede">Six seal styles for the Certified by Botterverse mark. It appears on Bot Market listings and in the footer of embedded chats. Each is a traditional seal shape with the bot in the middle and the tick offset to the lower right. The drawing is cartoony but the layout is formal so the mark reads as official. The first four carry the words. The last two drop the words so they stay clear at small sizes. Each seal shows at full size on light and on Nightshift and then at 64 and 32 and 20 pixels.</p>
+
+  <div class="grid" id="grid"></div>
+
+  <h2 class="sec">In use</h2>
+  <p class="lede">Seal 06 on a Bot Market listing card and in the footer of an embedded chat.</p>
+  <div class="ctx">
+    <div class="box"><h3>Bot Market listing</h3>
+      <div class="listing"><div class="top"><svg class="b" viewBox="0 0 60 70"><use href="#bot"/></svg><svg class="s" viewBox="0 0 200 200" id="ctxSeal"></svg></div>
+      <div class="body"><div class="name">Example bot name</div><div class="bar" style="width:90%"></div><div class="bar" style="width:70%"></div><span class="price">Buy</span></div></div>
+    </div>
+    <div class="box"><h3>Embedded chat footer</h3>
+      <div class="chat"><div class="msg">Hi. Ask me anything about the course.</div><div class="msg me">How long are the lessons?</div>
+      <div class="foot"><svg viewBox="0 0 200 200" id="ctxSeal2"></svg><span>Certified by Botterverse</span></div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var NS = 'http://www.w3.org/2000/svg';
+  function pts(n, r1, r2, off) { var a = []; for (var i = 0; i < n * 2; i++) { var r = i % 2 ? r1 : r2; var t = Math.PI * i / n - Math.PI / 2 + (off || 0); a.push((100 + r * Math.cos(t)).toFixed(1) + ',' + (100 + r * Math.sin(t)).toFixed(1)); } return a.join(' '); }
+  function scallop(n, R, r, fill) { var o = ''; for (var i = 0; i < n; i++) { var t = 2 * Math.PI * i / n; o += '<circle cx="' + (100 + R * Math.cos(t)).toFixed(1) + '" cy="' + (100 + R * Math.sin(t)).toFixed(1) + '" r="' + r + '" fill="' + fill + '"/>'; } return o; }
+  var botAt = function (w) { var h = w * 70 / 60; return '<use href="#bot" x="' + (100 - w / 2) + '" y="' + (100 - h / 2 - 2) + '" width="' + w + '" height="' + h + '"/>'; };
+  var tick = '<use href="#tickbadge" x="124" y="118" width="62" height="62"/>';
+  function ringText(id, r, txt) { return '<defs><path id="' + id + '" d="M ' + (100 - r) + ' 100 A ' + r + ' ' + r + ' 0 1 1 ' + (100 + r) + ' 100 A ' + r + ' ' + r + ' 0 1 1 ' + (100 - r) + ' 100"/></defs><text font-family="Baloo 2" font-weight="800" font-size="10.5" fill="#282637"><textPath href="#' + id + '" startOffset="0" textLength="' + (2 * Math.PI * r - 3).toFixed(0) + '" lengthAdjust="spacing">' + txt + '</textPath></text>'; }
+  var T = 'CERTIFIED BY BOTTERVERSE • CERTIFIED BY BOTTERVERSE •';
+  var seals = [
+    ['Rosette', 'A scalloped rosette with a text band. The most familiar shape for a certificate.',
+      function (u) { return scallop(16, 82, 13, '#c876c1') + '<circle cx="100" cy="100" r="82" fill="url(#gp)" stroke="#282637" stroke-width="3.5"/>' +
+        '<circle cx="100" cy="100" r="58" fill="#fff" stroke="#282637" stroke-width="3.5"/><circle cx="100" cy="100" r="50" fill="#ffe0fb"/>' + ringText('rt' + u, 68, T) + botAt(48) + tick; }],
+    ['Starburst', 'A twenty-point star with ribbon tails. A little louder and good on a listing card.',
+      function (u) { return '<path d="M70 150 L52 198 L80 186 L96 200 L104 150Z" fill="#984f92" stroke="#282637" stroke-width="3" stroke-linejoin="round"/><path d="M130 150 L148 198 L120 186 L104 200 L96 150Z" fill="#dc8fd5" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+        '<polygon points="' + pts(20, 78, 92) + '" fill="url(#gp)" stroke="#282637" stroke-width="3.5" stroke-linejoin="round"/>' +
+        '<circle cx="100" cy="100" r="62" fill="#fff" stroke="#282637" stroke-width="3.5"/><circle cx="100" cy="100" r="54" fill="#ffe0fb"/>' + ringText('rt' + u, 71, T) + botAt(48) + tick; }],
+    ['Double ring', 'Two thin rings with the words between. The most formal and the closest to an official stamp.',
+      function (u) { return '<circle cx="100" cy="100" r="92" fill="#fff" stroke="#282637" stroke-width="4"/><circle cx="100" cy="100" r="84" fill="#ffe0fb" stroke="#984f92" stroke-width="2"/>' +
+        '<circle cx="100" cy="100" r="58" fill="#fff" stroke="#984f92" stroke-width="2"/><circle cx="100" cy="100" r="56" fill="none" stroke="#282637" stroke-width="3.5"/>' + ringText('rt' + u, 70, T) + botAt(48) + tick; }],
+    ['Shield', 'A shield with a ribbon label. Says protection and checked before anything else.',
+      function (u) { return '<path d="M100 8 L176 34 V102 C176 146 142 176 100 194 C58 176 24 146 24 102 V34 Z" fill="url(#gv)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+        '<path d="M100 22 L162 43 V102 C162 138 134 163 100 179 C66 163 38 138 38 102 V43 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3"/>' +
+        '<rect x="42" y="132" width="116" height="26" rx="8" fill="#dc8fd5" stroke="#282637" stroke-width="3"/><text x="100" y="150" text-anchor="middle" font-family="Baloo 2" font-weight="800" font-size="13" fill="#282637" letter-spacing="1">CERTIFIED</text>' +
+        '<use href="#bot" x="72" y="38" width="46" height="54"/>' +
+        '<use href="#tickbadge" x="114" y="64" width="54" height="54"/>'; }],
+    ['Medal', 'A rounded hexagon medal with no words. Reads at small sizes and still looks official.',
+      function (u) { return '<path d="M70 150 L56 198 L86 186 L98 198 L106 150Z" fill="#984f92" stroke="#282637" stroke-width="3" stroke-linejoin="round"/><path d="M130 150 L144 198 L114 186 L102 198 L94 150Z" fill="#dc8fd5" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+        '<polygon points="' + pts(6, 82, 82, Math.PI / 6 * 0) + '" fill="url(#gp)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+        '<polygon points="' + pts(6, 62, 62) + '" fill="#fff" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' + botAt(54) + tick; }],
+    ['Compact rosette', 'The rosette with no words and thicker lines. The one for 48 pixels and under and for the embed footer.',
+      function (u) { return scallop(12, 80, 15, '#c876c1') + '<circle cx="100" cy="100" r="82" fill="url(#gp)" stroke="#282637" stroke-width="5"/>' +
+        '<circle cx="100" cy="100" r="62" fill="#fff" stroke="#282637" stroke-width="5"/>' + botAt(58) + '<use href="#tickbadge" x="116" y="112" width="74" height="74"/>'; }]
+  ];
+  var grid = document.getElementById('grid');
+  seals.forEach(function (s, i) {
+    var n = '0' + (i + 1);
+    function svg(u, cls) { return '<svg class="' + (cls || 's') + '" viewBox="0 0 200 200" role="img" aria-label="Certified by Botterverse seal">' + s[2](u) + '</svg>'; }
+    function small(u, px) { return '<svg width="' + px + '" height="' + px + '" viewBox="0 0 200 200" aria-hidden="true">' + s[2](u) + '</svg>'; }
+    grid.insertAdjacentHTML('beforeend',
+      '<article class="seal"><div class="big"><div class="l">' + svg('a' + i) + '</div><div class="d">' + svg('b' + i) + '</div></div>' +
+      '<div class="sm">' + small('c' + i, 64) + small('d' + i, 32) + small('e' + i, 20) + '<span>64 and 32 and 20 pixels</span></div>' +
+      '<div class="meta"><h3><b>' + n + '</b>' + s[0] + '</h3><p>' + s[1] + '</p></div></article>');
+  });
+  document.getElementById('ctxSeal').innerHTML = seals[5][2]('x1');
+  document.getElementById('ctxSeal2').innerHTML = seals[5][2]('x2');
+</script>
+</body>
+</html>

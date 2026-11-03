@@ -76,13 +76,13 @@ Your list already understands PLR. They buy and resell digital rights every day.
 
 So when you tell them they can now buy a bot, resell it under their own name, or sell access through a paywall — they don't need it explained. They need a link.
 
-AI Bot Share built the Bot Market around the exact rights model your subscribers already use. Three sale types. One published fee. No mystery payout formula.
+Botterverse built the Bot Market around the exact rights model your subscribers already use. Three sale types. One published fee. No mystery payout formula.
 
 ---
 
 **HOOK 8**
 
-Here's an angle nobody's talking about yet: you don't just earn when you refer someone to AI Bot Share.
+Here's an angle nobody's talking about yet: you don't just earn when you refer someone to Botterverse.
 
 Sellers on the Bot Market can set an affiliate share on each listing, which means other Botters can promote and sell their bots and earn a cut on every sale.
 
@@ -104,9 +104,9 @@ Not once. Every month. For as long as they stay on whatever platform they landed
 
 What if you could demo the product you're promoting right on your sales page?
 
-AI Bot Share lets you embed a working bot on any web page. Put one on your promo page that answers your list's questions about the platform in real time, before they click away.
+Botterverse lets you embed a working bot on any web page. Put one on your promo page that answers your list's questions about the platform in real time, before they click away.
 
-You're not just promoting AI Bot Share. You're proving it works while they watch.
+You're not just promoting Botterverse. You're proving it works while they watch.
 
 ---
 

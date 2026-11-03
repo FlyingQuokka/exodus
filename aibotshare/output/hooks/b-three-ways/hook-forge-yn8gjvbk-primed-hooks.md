@@ -42,7 +42,7 @@ That's not a business. That's a tip jar on someone else's counter.
 
 You accepted mystery money on your most profitable asset for months and called it a business.
 
-AI Bot Share publishes one fee on every sale: 5% or 3% plus 30 cents depending on your tier. You can calculate your exact cut before you list a single bot.
+Botterverse publishes one fee on every sale: 5% or 3% plus 30 cents depending on your tier. You can calculate your exact cut before you list a single bot.
 
 When was the last time a platform told you what you'd earn before you earned it?
 

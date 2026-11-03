@@ -1,0 +1,131 @@
+{
+ "title": "O05 Dormant check-in",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Dormant"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O05-tag-off",
+   "do": "remove_tag",
+   "tags": [
+    "Dormant"
+   ],
+   "note": "Dormant is only the trigger here. The app never removes it, so this step does."
+  },
+  {
+   "key": "O05-busy",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Welcome Active",
+     "Upgrade Active"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O05-busy-end",
+     "do": "end"
+    }
+   ],
+   "no": [],
+   "note": "Not while the welcome track or an upgrade sequence is running."
+  },
+  {
+   "key": "O05-member-1",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "O05-member-1-end",
+     "do": "end"
+    }
+   ],
+   "note": "A member whose plan has ended is not asked whether the plan still fits."
+  },
+  {
+   "key": "O05-1",
+   "do": "email",
+   "email": "O05-1"
+  },
+  {
+   "key": "O05-w2",
+   "do": "wait",
+   "amount": 4,
+   "unit": "days"
+  },
+  {
+   "key": "O05-member-2",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "O05-member-2-end",
+     "do": "end"
+    }
+   ]
+  },
+  {
+   "key": "O05-2",
+   "do": "email",
+   "email": "O05-2"
+  },
+  {
+   "key": "O05-w3",
+   "do": "wait",
+   "amount": 4,
+   "unit": "days"
+  },
+  {
+   "key": "O05-member-3",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "O05-member-3-end",
+     "do": "end"
+    }
+   ]
+  },
+  {
+   "key": "O05-3",
+   "do": "email",
+   "email": "O05-3"
+  }
+ ]
+}

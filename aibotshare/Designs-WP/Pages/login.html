@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Sign-in screens</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/botterverse-pages.css">
+<style>
+  .panels { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.4rem; align-items:start; }
+  @media (max-width:960px){ .panels { grid-template-columns:1fr; max-width:460px; margin-inline:auto; } }
+  .panel-label { font-weight:800; color:var(--text); margin:0 0 .6rem; }
+  .wp-login { background:var(--panel); border-radius:var(--r-card); padding:2rem 1.2rem; }
+  .wp-login .lg { display:block; height:56px; width:auto; margin:0 auto 1.4rem; }
+  .wp-login .form-card { padding:1.5rem; }
+  .wp-login h2 { font-size:1.7rem; margin-bottom:.6rem; }
+  .wp-login .btn { width:100%; }
+  .wp-login .links { text-align:center; margin:1rem 0 0; font-size:.95rem; }
+  .hooks code { background:var(--surface-alt); padding:.1rem .4rem; border-radius:6px; }
+</style>
+</head>
+<body>
+
+<!-- Optional Founders band: one block to remove when the offer ends -->
+<div class="band">Founders offer: 50% off every plan for life. Enter FOUNDER50 at checkout. Closes 30 November. <a href="founders.html">See the offer</a></div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="home.html" aria-label="Botterverse home"><img src="assets/logo.svg" alt="Botterverse"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="affiliates.html">Affiliates</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-small" href="https://lab.{{domain}}/login">Log in</a>
+      <a class="btn btn-primary btn-small" href="pricing.html">Take Me To The Botterverse</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero"><div class="container">
+    <span class="eyebrow">WordPress screens</span>
+    <h1>Sign-in screens</h1>
+    <p class="lede">Three screens shown side by side. Each is a centred card with the logo above.</p>
+  </div></section>
+  <section class="section-tight"><div class="container panels">
+    <div><p class="panel-label">Billing login</p><div class="wp-login">
+      <img class="lg" src="assets/logo.svg" alt="Botterverse">
+      <div class="form-card">
+        <h2>Billing login</h2>
+        <p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter's Lab sign-in instead.</p>
+        <p><a href="https://lab.{{domain}}/login">Go to the Botter's Lab sign-in</a></p>
+        <div class="field"><label for="l1">Username or email address</label><input type="text" id="l1"></div>
+        <div class="field"><label for="l2">Password</label><input type="password" id="l2"></div>
+        <label class="check"><input type="checkbox"><span>Keep me signed in</span></label>
+        <span class="btn btn-primary" role="presentation">Sign in</span>
+        <p class="links"><a href="#">Forgotten your password?</a></p>
+      </div></div></div>
+    <div><p class="panel-label">Billing login: forgotten password</p><div class="wp-login">
+      <img class="lg" src="assets/logo.svg" alt="Botterverse">
+      <div class="form-card">
+        <h2>Forgotten your password?</h2>
+        <p>Enter your username or email address. We will send you a link to choose a new one.</p>
+        <div class="field"><label for="l3">Username or email address</label><input type="text" id="l3"></div>
+        <span class="btn btn-primary" role="presentation">Send me a link</span>
+        <p class="notice notice-info" style="margin-top:1.2rem"><strong>After sending:</strong> Check your email. The link works once and expires after 24 hours.</p>
+      </div></div></div>
+    <div><p class="panel-label">Help desk sign in</p><div class="wp-login">
+      <img class="lg" src="assets/logo.svg" alt="Botterverse">
+      <div class="form-card">
+        <h2>Help desk sign in</h2>
+        <p>This is separate from the Botter's Lab. If you bought a plan or credits you already have an account. Press Reset password. If you are new press Create an account.</p>
+        <p class="links"><a href="#">Reset password</a></p>
+        <p class="links"><a href="#">Create an account</a></p>
+      </div></div></div>
+  </div></section>
+  <section class="section-tight"><div class="narrow"><div class="card hooks">
+    <h2>CSS hooks for the theme</h2>
+    <p>The first two screens are WordPress screens. Style them from <code>login_enqueue_scripts</code>.</p>
+    <ul>
+      <li><code>body.login</code> for the page background and fonts.</li>
+      <li><code>#loginform</code> for the card (and <code>#lostpasswordform</code> on the forgotten password screen).</li>
+      <li><code>body.login h1 a</code> for the logo link. Set its background image to the logo file and use the <code>login_headerurl</code> and <code>login_headertext</code> filters to point it at the home page.</li>
+      <li><code>.login #nav a</code> for the forgotten password link and <code>.wp-core-ui .button-primary</code> for the button.</li>
+    </ul>
+    <p class="small">The help desk screen is the Fluent Support portal. Scope it inside <code>#fluent_support_client_app</code>.</p>
+  </div></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Botterverse">
+        <p class="small">Build a bot. Share it. Sell access.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="affiliates.html">Affiliates</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="support.html">Support</a></li><li><a href="/docs/">Help centre</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="/my-account/">Billing and invoices</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms-and-conditions/">Terms And Conditions</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/legal/">Legal</a></li></ul></div>
+    </div>
+    <div class="footer-note">Botterverse does not promise or guarantee any income. Results depend on your bot, your audience and your effort.</div>
+  </div>
+</footer>
+
+<script src="assets/pictures.js"></script>
+</body>
+</html>

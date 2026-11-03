@@ -1,0 +1,145 @@
+<!doctype html>
+<!--
+SYSTEM PAGE. FluentCart renders this page from the shortcodes [fluent_cart_cart] and [fluent_cart_checkout].
+The page content itself is never changed. It is only styled through theme CSS.
+Wrapper classes the real CSS must target:
+  body: .fluent-cart-theme or .fluent-cart-custom or .fluent-cart-no-colors
+  colour variables: --fct-primary-bg-color and --fct-primary-text-color (map to --accent and --on-accent)
+  cart: .fct-cart-page and .fluent-cart-cart-empty-content
+  checkout: .fct_checkout_form and .fct_checkout_inner and .fct_checkout_form_section
+            .fct_checkout_summary (the order summary panel) and .fct_checkout_payment_methods
+            .fct_checkout_input_group (coupon and field groups) and .fct_checkout_agree_terms
+  after payment: .fct-order-review-page and .fluent_cart_order_confirmation and .fct-receipt-page-* and .fct-thank-you-page-*
+The class names on this design are illustrative. Not tested with a filled cart.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Cart</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/botterverse-pages.css">
+<style>
+  .cart-layout > * { min-width: 0; }
+  .cart-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 1.6rem; align-items: start; }
+  .cart-layout .fct_checkout_form { display: grid; gap: 1.4rem; }
+  .cart-layout h2 { font-size: 1.4rem; }
+  .plan-line { font-size: 1.1rem; color: var(--text); }
+  .billing { border: 0; padding: 0; margin: 0; }
+  .billing legend { font-weight: 800; color: var(--text); margin-bottom: .4rem; padding: 0; }
+  .opt, .pack { display: flex; gap: .6rem; align-items: center; padding: .6rem .9rem; border: 2px solid var(--border-strong); border-radius: var(--r-ctl); margin-bottom: .5rem; background: var(--surface); }
+  .opt input, .pack input { width: 1.2rem; height: 1.2rem; accent-color: var(--accent-text); }
+  .packs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 130px), 1fr)); gap: .5rem; }
+  .pack { margin: 0; }
+  .fct_checkout_summary { position: sticky; top: 6rem; }
+  .sum-row { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px solid var(--border); color: var(--text); }
+  .sum-row.total { font-family: var(--font-head); font-weight: 800; font-size: 1.4rem; border-bottom: 0; margin-top: .8rem; }
+  .coupon-row { display: flex; gap: .5rem; }
+  .coupon-row input { flex: 1; min-width: 0; font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .6rem .9rem; }
+  .coupon-row input:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .fct_checkout_summary .pay { width: 100%; margin: .8rem 0 .6rem; text-align: center; line-height: 1.2; }
+  .region { margin: 0; }
+  .confirm { margin-top: 2rem; }
+  @media (max-width: 860px) { .cart-layout { grid-template-columns: 1fr; } .fct_checkout_summary { position: static; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="home.html" aria-label="Botterverse home"><img src="assets/logo.svg" alt="Botterverse"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="affiliates.html">Affiliates</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-small" href="https://lab.{{domain}}/login">Log in</a>
+      <a class="btn btn-primary btn-small" href="pricing.html">Take Me To The Botterverse</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section-tight">
+    <div class="container fct-cart-page">
+      <div class="section-head">
+        <h1>You are one step from the Botter's Lab</h1>
+      </div>
+      <div class="cart-layout fct_checkout_inner">
+        <div class="fct_checkout_form">
+          <div class="card fct_checkout_form_section">
+            <h2>Your plan</h2>
+            <p class="plan-line"><strong>Novice Botter.</strong> $47 a month. 20 bots. 2,000 credits each month.</p>
+            <fieldset class="billing">
+              <legend>Billing choice</legend>
+              <label class="opt"><input type="radio" name="bill" checked> Pay monthly.</label>
+              <label class="opt"><input type="radio" name="bill"> Pay annually and have two months free.</label>
+            </fieldset>
+          </div>
+          <div class="card fct_checkout_form_section">
+            <h2>Add credits (optional)</h2>
+            <p>Choose a Starter or Builder or Launcher or Promoter or Campaigner pack. Bigger packs include bonus credits. Credits you buy never expire.</p>
+            <div class="packs">
+              <label class="pack"><input type="checkbox"> Starter</label>
+              <label class="pack"><input type="checkbox"> Builder</label>
+              <label class="pack"><input type="checkbox"> Launcher</label>
+              <label class="pack"><input type="checkbox"> Promoter</label>
+              <label class="pack"><input type="checkbox"> Campaigner</label>
+            </div>
+          </div>
+          <div class="card fct_checkout_form_section">
+            <h2>Account</h2>
+            <div class="field"><label for="em">Email address</label><input id="em" type="email" autocomplete="email"></div>
+            <div class="fct_checkout_payment_methods">
+              <label class="opt"><input type="radio" name="pay" checked> Card</label>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card fct_checkout_summary" aria-label="Order summary">
+          <h2>Order summary</h2>
+          <div class="sum-row"><span>Novice Botter</span><span>$47</span></div>
+          <div class="fct_checkout_input_group">
+            <p class="small">Have a coupon? Enter it in the coupon box before you pay.</p>
+            <div class="coupon-row">
+              <label class="visually-hidden" for="cp">Coupon</label>
+              <input id="cp" type="text" placeholder="Coupon">
+              <button class="btn btn-ghost btn-small" type="button">Apply</button>
+            </div>
+          </div>
+          <div class="sum-row total"><span>Due today</span><span>$47</span></div>
+          <p class="small fct_checkout_agree_terms">Cancel from Billing and credits when you like. Your plan runs to the end of the period you paid for.</p>
+          <a class="btn btn-primary pay" href="#">Join as a Novice Botter</a>
+          <p class="small region">Paid services cannot be offered in the EU. You can still use free Public bots.</p>
+        </aside>
+      </div>
+
+      <div class="notice notice-info confirm fluent_cart_order_confirmation">
+        <strong>Confirmation message</strong>
+        <p>Welcome to the Botter's Lab. Your plan is active. One email is on its way. It has two links. The second one creates your Botter's Lab account. Use the email address you bought with.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Botterverse">
+        <p class="small">Build a bot. Share it. Sell access.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="affiliates.html">Affiliates</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="support.html">Support</a></li><li><a href="/docs/">Help centre</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="/my-account/">Billing and invoices</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms-and-conditions/">Terms And Conditions</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/legal/">Legal</a></li></ul></div>
+    </div>
+    <div class="footer-note">Botterverse does not promise or guarantee any income. Results depend on your bot, your audience and your effort.</div>
+  </div>
+</footer>
+
+<script src="assets/pictures.js"></script>
+</body>
+</html>

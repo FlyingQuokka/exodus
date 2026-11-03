@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Logo concepts v1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&family=Sora:wght@600;700&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --pink-hover: #c876c1; --tint: #ffe0fb; --link: #984f92;
+    --cyan: #00d1da; --navy: #080d16;
+    --ink: #282637; --eye: #282637; --pop: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  .lede { max-width: 720px; line-height: 1.6; margin: 0 0 36px; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .concept { background: var(--card); border-radius: 22px; border: 1px solid #ebeaf2; overflow: hidden; }
+  .concept header { padding: 18px 22px 0; display: flex; gap: 12px; align-items: baseline; }
+  .num { font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 26px; color: var(--pink); }
+  .concept h2 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 20px; margin: 0; }
+  .concept p.why { margin: 4px 22px 16px; font-size: 14px; line-height: 1.55; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; }
+  .light, .dark { padding: 26px 12px; display: flex; align-items: center; justify-content: center; min-height: 120px; }
+  .light { background: var(--bg); }
+  .dark { background: var(--navy); --ink: #eceff2; }
+  .lockup { display: flex; align-items: center; gap: 10px; }
+  .lockup svg { width: 56px; height: 56px; flex: none; }
+  .word { font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 22px; color: var(--ink); white-space: nowrap; line-height: 1; }
+  .word b { color: var(--link); font-weight: 800; }
+  .dark .word b { color: var(--pink); }
+  .sizes { display: flex; align-items: center; gap: 14px; padding: 12px 22px 16px; background: var(--panel); }
+  .sizes svg { flex: none; }
+  .sizes span { font-size: 12px; font-weight: 700; color: var(--text); }
+  .fav { border-radius: 8px; background: #fff; padding: 3px; border: 1px solid #ebeaf2; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } .stage { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 1 Bubble bot -->
+    <symbol id="m1" viewBox="0 0 64 64">
+      <path d="M18 44 L12 58 L32 46 Z" fill="var(--pink)"/>
+      <rect x="6" y="14" width="52" height="34" rx="15" fill="var(--pink)"/>
+      <line x1="32" y1="14" x2="32" y2="6" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="5" r="3.5" fill="var(--cyan)"/>
+      <circle cx="23" cy="30" r="4.2" fill="var(--eye)"/><circle cx="41" cy="30" r="4.2" fill="var(--eye)"/>
+      <path d="M25 38 Q32 43 39 38" stroke="var(--eye)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- 2 Share nodes face -->
+    <symbol id="m2" viewBox="0 0 64 64">
+      <path d="M18 20 L46 20 L32 48 Z" stroke="var(--ink)" stroke-width="3" fill="none" stroke-linejoin="round"/>
+      <circle cx="18" cy="20" r="10" fill="var(--pink)"/><circle cx="46" cy="20" r="10" fill="var(--pink)"/>
+      <circle cx="32" cy="50" r="9" fill="var(--cyan)"/>
+      <circle cx="18" cy="20" r="3.4" fill="var(--eye)"/><circle cx="46" cy="20" r="3.4" fill="var(--eye)"/>
+    </symbol>
+    <!-- 3 Key bot -->
+    <symbol id="m3" viewBox="0 0 64 64">
+      <circle cx="32" cy="11" r="7" stroke="var(--ink)" stroke-width="3.2" fill="none"/>
+      <line x1="32" y1="18" x2="32" y2="26" stroke="var(--ink)" stroke-width="3.2"/>
+      <line x1="32" y1="21" x2="38" y2="21" stroke="var(--ink)" stroke-width="3.2" stroke-linecap="round"/>
+      <rect x="9" y="26" width="46" height="32" rx="13" fill="var(--pink)"/>
+      <circle cx="23" cy="40" r="4.2" fill="var(--eye)"/><circle cx="41" cy="40" r="4.2" fill="var(--eye)"/>
+      <path d="M26 48 Q32 52 38 48" stroke="var(--eye)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- 4 Hand-off blocks -->
+    <symbol id="m4" viewBox="0 0 64 64">
+      <rect x="4" y="30" width="26" height="26" rx="9" fill="var(--pink)"/>
+      <rect x="34" y="30" width="26" height="26" rx="9" fill="var(--cyan)"/>
+      <circle cx="13" cy="42" r="2.6" fill="var(--eye)"/><circle cx="22" cy="42" r="2.6" fill="var(--eye)"/>
+      <circle cx="43" cy="42" r="2.6" fill="var(--eye)"/><circle cx="52" cy="42" r="2.6" fill="var(--eye)"/>
+      <path d="M15 24 Q32 4 49 24" stroke="var(--ink)" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M42 22 L50 25 L48 16" stroke="var(--ink)" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- 5 Flask bot -->
+    <symbol id="m5" viewBox="0 0 64 64">
+      <path d="M24 6 H40 V10 H38 V26 L53 50 Q57 58 48 58 H16 Q7 58 11 50 L26 26 V10 H24 Z" fill="var(--tint)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M17 41 H47 L52 50 Q55 55 48 55 H16 Q9 55 12 50 Z" fill="var(--pink)"/>
+      <circle cx="27" cy="47" r="2.4" fill="var(--eye)"/><circle cx="37" cy="47" r="2.4" fill="var(--eye)"/>
+      <circle cx="31" cy="33" r="2.6" fill="none" stroke="var(--ink)" stroke-width="2"/><circle cx="36" cy="27" r="2" fill="none" stroke="var(--ink)" stroke-width="2"/>
+    </symbol>
+    <!-- 6 Linked loops -->
+    <symbol id="m6" viewBox="0 0 64 64">
+      <rect x="5" y="12" width="32" height="24" rx="12" stroke="var(--pink)" stroke-width="7" fill="none"/>
+      <rect x="27" y="28" width="32" height="24" rx="12" stroke="var(--ink)" stroke-width="7" fill="none"/>
+      <circle cx="46" cy="40" r="2.5" fill="var(--cyan)"/><circle cx="52" cy="40" r="2.5" fill="var(--cyan)"/>
+    </symbol>
+    <!-- 7 Orbit -->
+    <symbol id="m7" viewBox="0 0 64 64">
+      <g transform="rotate(-24 32 32)">
+        <ellipse cx="32" cy="32" rx="29" ry="11" stroke="var(--ink)" stroke-width="2.6" fill="none"/>
+        <circle cx="61" cy="32" r="4.4" fill="var(--cyan)"/><circle cx="3" cy="32" r="3.6" fill="var(--pink)"/>
+      </g>
+      <circle cx="32" cy="32" r="15" fill="var(--pink)"/>
+      <circle cx="27" cy="30" r="2.8" fill="var(--eye)"/><circle cx="37" cy="30" r="2.8" fill="var(--eye)"/>
+      <path d="M27 37 Q32 41 37 37" stroke="var(--eye)" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- 8 Home bot -->
+    <symbol id="m8" viewBox="0 0 64 64">
+      <path d="M6 31 L32 7 L58 31 V56 H6 Z" fill="var(--pink)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="23" cy="36" r="4" fill="var(--eye)"/><circle cx="41" cy="36" r="4" fill="var(--eye)"/>
+      <path d="M25 45 Q32 50 39 45" stroke="var(--eye)" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="21" r="3" fill="var(--cyan)"/>
+    </symbol>
+    <!-- 9 Spark chip -->
+    <symbol id="m9" viewBox="0 0 64 64">
+      <rect x="6" y="6" width="52" height="52" rx="15" fill="var(--ink)"/>
+      <path d="M32 12 Q34 30 52 32 Q34 34 32 52 Q30 34 12 32 Q30 30 32 12 Z" fill="var(--pink)"/>
+      <circle cx="47" cy="17" r="3.4" fill="var(--cyan)"/>
+    </symbol>
+    <!-- 10 Tag bot -->
+    <symbol id="m10" viewBox="0 0 64 64">
+      <path d="M8 8 H34 L58 32 Q61 35 58 38 L38 58 Q35 61 32 58 L8 34 Z" fill="var(--pink)" stroke="var(--ink)" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="19" cy="19" r="4.2" fill="var(--bg, #f8f7ff)" stroke="var(--ink)" stroke-width="2.4"/>
+      <circle cx="32" cy="34" r="3.2" fill="var(--eye)"/><circle cx="42" cy="44" r="3.2" fill="var(--eye)"/>
+      <path d="M31 46 Q33 49 38 49" stroke="var(--eye)" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Logo concepts, version 1</h1>
+  <p class="lede">Ten blue-sky marks for Botterverse. Each shows on the light page and on the Nightshift navy. The strip under each mark shows the favicon at 32 and 16 pixels. None is final. Tell me which to push further or mix.</p>
+
+  <div class="grid" id="grid"></div>
+</div>
+
+<script>
+  var concepts = [
+    ['Bubble Bot', 'A chat bubble that is also a bot head. Says "conversation" and "friendly" at once.'],
+    ['Share Nodes', 'Three connected nodes make a share symbol and a face. Eyes are pink and the mouth is cyan.'],
+    ['Key Bot', 'The antenna is a key. Ownership is the one thing the old platforms never gave.'],
+    ['Hand-off', 'Two blocks pass a bot between them. Reads as selling and as Transfer.'],
+    ['Flask Bot', 'A lab flask with a face. A direct nod to the Botter\'s Lab.'],
+    ['Linked Loops', 'Two chain links. The link you own. The most abstract and the easiest to scale.'],
+    ['Orbit', 'A bot planet with two orbiting bots. The Botterverse.'],
+    ['Home Bot', 'A house with a face. Land you own and not land you rent.'],
+    ['Spark Chip', 'A dark chip with a pink spark. The most technical and the least cute.'],
+    ['Tag Bot', 'A price tag with a face. Selling and the Bot Market.']
+  ];
+  var grid = document.getElementById('grid');
+  concepts.forEach(function (c, i) {
+    var n = i + 1;
+    var lock = '<div class="lockup"><svg viewBox="0 0 64 64"><use href="#m' + n + '"/></svg><span class="word">AI <b>Bot</b> Share</span></div>';
+    grid.insertAdjacentHTML('beforeend',
+      '<article class="concept"><header><span class="num">' + n + '</span><h2>' + c[0] + '</h2></header>' +
+      '<p class="why">' + c[1] + '</p>' +
+      '<div class="stage"><div class="light">' + lock + '</div><div class="dark">' + lock + '</div></div>' +
+      '<div class="sizes"><svg class="fav" width="32" height="32" viewBox="0 0 64 64"><use href="#m' + n + '"/></svg>' +
+      '<svg class="fav" width="16" height="16" viewBox="0 0 64 64" style="padding:1px"><use href="#m' + n + '"/></svg>' +
+      '<span>Favicon 32 and 16 pixels</span></div></article>');
+  });
+</script>
+</body>
+</html>

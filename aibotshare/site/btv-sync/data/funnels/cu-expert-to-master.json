@@ -1,0 +1,83 @@
+{
+ "title": "UP Catch-up - Expert to Master",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Upgrade Done"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "C-check",
+   "do": "condition",
+   "note": "Only the member who made this jump continues.",
+   "if": {
+    "match": "all",
+    "tags": [
+     "Upgraded From Expert",
+     "Master Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "C-end",
+     "do": "end"
+    }
+   ]
+  },
+  {
+   "key": "C-wait-1",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UP02",
+   "do": "email",
+   "email": "UP02"
+  },
+  {
+   "key": "C-wait-2",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UP03",
+   "do": "email",
+   "email": "UP03"
+  },
+  {
+   "key": "C-wait-3",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UP06",
+   "do": "email",
+   "email": "UP06"
+  },
+  {
+   "key": "C-wait-4",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "C-UP08",
+   "do": "email",
+   "email": "UP08"
+  },
+  {
+   "key": "C-from-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgraded From Expert"
+   ]
+  }
+ ]
+}

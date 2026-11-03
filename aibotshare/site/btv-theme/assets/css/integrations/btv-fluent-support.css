@@ -1,0 +1,73 @@
+/* Fluent Support portal (Support and Feedback pages and the help desk sign-in).
+   The plugin styles itself with --fs-* variables and .fs_* classes inside #fluent_support_client_app.
+   Everything here is scoped to that app. Written from the plugin source. Not tested on a signed-in customer yet. */
+
+#fluent_support_client_app, .fs_portal_wrap {
+  --fs-text-primary: var(--text);
+  --fs-text-secondary: var(--text-2);
+  --fs-text-muted: var(--muted);
+  --fs-text-strong: var(--text);
+  --fs-text-link: var(--accent-text);
+  --fs-bg-primary: var(--surface);
+  --fs-bg-white: var(--surface);
+  --fs-bg-subtle: var(--surface-alt);
+  --fs-bg-weak: var(--surface-alt);
+  --fs-border-default: var(--border);
+  --fs-border-soft: var(--border);
+  --fs-stroke-soft: var(--border);
+  --fs-stroke-strong: var(--border-strong);
+  --fs-radius-md: var(--r-ctl);
+  --fs-radius-lg: var(--r-card);
+  --fs-btn-primary-bg: var(--accent);
+  --fs-table-header-bg: var(--surface-alt);
+  font-family: var(--font-body);
+  color: var(--text-2);
+}
+
+#fluent_support_client_app { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); padding: 1.4rem; box-shadow: var(--shadow); }
+#fluent_support_client_app h1, #fluent_support_client_app h2, #fluent_support_client_app h3, #fluent_support_client_app h4 { font-family: var(--font-head); color: var(--text); }
+#fluent_support_client_app a { color: var(--accent-text); }
+
+#fluent_support_client_app input[type=text], #fluent_support_client_app input[type=email], #fluent_support_client_app input[type=password],
+#fluent_support_client_app select, #fluent_support_client_app textarea, #fluent_support_client_app .el-input__inner, #fluent_support_client_app .el-textarea__inner {
+  font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); box-shadow: none;
+}
+#fluent_support_client_app input:focus, #fluent_support_client_app textarea:focus, #fluent_support_client_app .el-input__inner:focus, #fluent_support_client_app .el-textarea__inner:focus {
+  outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+#fluent_support_client_app button.el-button--primary, #fluent_support_client_app .fs_btn_primary, #fluent_support_client_app .el-button--primary {
+  background: var(--accent); border-color: var(--accent); color: var(--on-accent); border-radius: 999px; font-family: var(--font-head); font-weight: 800;
+}
+#fluent_support_client_app button.el-button--primary:hover, #fluent_support_client_app .el-button--primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); color: var(--on-accent); }
+#fluent_support_client_app :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+
+/* Ticket status chips */
+#fluent_support_client_app .fs_tkt_status_new, #fluent_support_client_app .fs_tkt_status_active { color: var(--info); }
+#fluent_support_client_app .fs_tkt_status_waiting { color: var(--warning); }
+#fluent_support_client_app .fs_tkt_status_closed { color: var(--success); }
+
+/* Signed-out login and reset screens */
+#fluent_support_client_app .fs_login_wrap, #fluent_support_client_app .fs_auth_wrap { max-width: 460px; margin-inline: auto; }
+
+/* Signed-out help desk screens: login, create an account and reset password */
+body .fst_login_form_auth_wrapper { max-width: 460px; margin: 0 auto 2rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); padding: 1.8rem; box-shadow: var(--shadow); font-family: var(--font-body); color: var(--text-2); }
+body .fst_login_form_auth_wrapper label { display: block; font-weight: 800; color: var(--text); margin-bottom: .35rem; }
+body .fst_login_form_auth_wrapper p { margin: 0 0 1rem; }
+body .fst_login_form_auth_wrapper input[type=text], body .fst_login_form_auth_wrapper input[type=email], body .fst_login_form_auth_wrapper input[type=password] {
+  width: 100%; font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .7rem 1rem; box-shadow: none;
+}
+body .fst_login_form_auth_wrapper input:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }
+body .fst_login_form_auth_wrapper input[type=checkbox] { accent-color: var(--accent-text); width: 1.2rem; height: 1.2rem; }
+body .fst_login_form_auth_wrapper input[type=submit], body .fst_login_form_auth_wrapper button, body .fst_login_form_auth_wrapper .el-button {
+  display: block; width: 100%; background: var(--accent); color: var(--on-accent); border: 2px solid transparent; border-radius: 999px; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; line-height: 1; padding: .95rem 1.7rem; cursor: pointer; box-shadow: none; height: auto;
+}
+body .fst_login_form_auth_wrapper input[type=submit]:hover, body .fst_login_form_auth_wrapper button:hover { background: var(--accent-hover); color: var(--on-accent); }
+body .fst_login_form_auth_wrapper a { color: var(--accent-text); }
+body .fst_login_form_auth_wrapper :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+body .fst_login_form_auth_wrapper svg path { fill: var(--on-accent); }
+body .fst_login_form_auth_wrapper #wp-submit, body .fst_login_form_auth_wrapper .button.button-primary {
+  display: block !important; width: 100% !important; background: var(--accent) !important; color: var(--on-accent) !important; border: 2px solid transparent !important; border-radius: 999px !important;
+  font-family: var(--font-head) !important; font-weight: 800 !important; font-size: 1.1rem !important; line-height: 1 !important; padding: .95rem 1.7rem !important; height: auto !important; box-shadow: none !important; text-shadow: none !important;
+}
+body .fst_login_form_auth_wrapper #wp-submit:hover { background: var(--accent-hover) !important; }

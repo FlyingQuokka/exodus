@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Forms</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/botterverse-pages.css">
+<link rel="stylesheet" href="assets/fluent-forms-botterverse.css">
+<style>
+  .form-card h3 { margin-bottom: .3rem; }
+  .form-card .intro { margin-bottom: 1.3rem; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+  .inline-bar { display: flex; flex-wrap: wrap; gap: .8rem 1.4rem; align-items: center; justify-content: space-between; background: var(--accent-soft); border-radius: var(--r-card); padding: 1.2rem 1.5rem; }
+  .inline-bar .txt { flex: 1 1 14rem; color: var(--text); font-weight: 700; margin: 0; }
+  .inline-bar form { flex: 2 1 22rem; }
+  .inline-row { display: flex; flex-wrap: wrap; gap: .7rem; }
+  .inline-row input { flex: 1 1 12rem; min-width: 0; font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .8rem 1rem; }
+  .inline-row input:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--surface); }
+  .inline-bar .check { margin: .7rem 0 0; font-size: .92rem; }
+  .msg-ok { background: var(--surface); border: 1px solid var(--border); border-left: 5px solid var(--success); border-radius: var(--r-ctl); padding: 1rem 1.2rem; color: var(--text); }
+  .state-label { font-family: var(--font-head); font-weight: 800; color: var(--text); margin-bottom: .5rem; }
+  .state-ok input { border-color: var(--success) !important; }
+  .ok-note { color: var(--success); font-weight: 700; font-size: .92rem; margin-top: .35rem; }
+  .state-focus input { border-color: var(--accent-text) !important; box-shadow: 0 0 0 4px var(--accent-soft); }
+  .state-error input { border-color: var(--danger) !important; }
+  .bad { border-color: var(--danger) !important; }
+  @media (max-width: 620px) { .two { grid-template-columns: 1fr; } .form-card { padding: 1.4rem; } }
+</style>
+</head>
+<body>
+
+<div class="band">Founders offer: 50% off every plan for life. Enter FOUNDER50 at checkout. Closes 30 November. <a href="founders.html">See the offer</a></div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="logo" href="home.html" aria-label="Botterverse home"><img src="assets/logo.svg" alt="Botterverse"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="pricing.html">Pricing</a>
+      <a href="how-it-works.html">How it works</a>
+      <a href="affiliates.html">Affiliates</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost btn-small" href="https://lab.{{domain}}/login">Log in</a>
+      <a class="btn btn-primary btn-small" href="pricing.html">Take Me To The Botterverse</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">Design page</span>
+      <h1>Forms</h1>
+      <p class="lede">The email sign-up form and the contact form. The Fluent Forms test at the bottom uses the real class names with the stylesheet applied.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head"><h2>Email sign-up</h2></div>
+      <div class="grid grid-2">
+        <div class="form-card">
+          <h3>Stay in the loop</h3>
+          <p class="intro">News about Botterverse sent to your inbox. Only when there is something worth saying.</p>
+          <form onsubmit="return false">
+            <div class="field"><label for="s-name">First name</label><input type="text" id="s-name" autocomplete="given-name"></div>
+            <div class="field"><label for="s-email">Email address</label><input type="email" id="s-email" autocomplete="email"></div>
+            <label class="check"><input type="checkbox"><span>Yes - email me Botterverse news. I can unsubscribe at any time. See the <a href="/privacy-policy/">Privacy Policy</a>.</span></label>
+            <button class="btn btn-primary" type="submit">Keep me posted</button>
+          </form>
+        </div>
+        <div>
+          <div class="state-label">Compact version for a footer or banner</div>
+          <div class="inline-bar">
+            <p class="txt">News from Botterverse by email.</p>
+            <form onsubmit="return false">
+              <div class="inline-row">
+                <input type="email" aria-label="Email address" placeholder="Email address">
+                <button class="btn btn-primary" type="submit">Keep me posted</button>
+              </div>
+              <label class="check"><input type="checkbox"><span>Yes - email me Botterverse news. I can unsubscribe at any time.</span></label>
+            </form>
+          </div>
+          <div class="state-label" style="margin-top:1.6rem">Success message</div>
+          <div class="msg-ok" role="status">You are on the list. Please check your inbox to confirm your email address.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight section-alt">
+    <div class="container">
+      <div class="section-head"><h2>Contact</h2></div>
+      <div class="grid grid-2">
+        <div class="form-card">
+          <h3>Send us a message</h3>
+          <p class="intro">For help with your account please use the <a href="support.html">Support page</a> instead. It is the quickest way to reach us.</p>
+          <form onsubmit="return false">
+            <div class="two">
+              <div class="field"><label for="c-name">Your name</label><input type="text" id="c-name" autocomplete="name"></div>
+              <div class="field"><label for="c-email">Email address</label><input type="email" id="c-email" autocomplete="email"></div>
+            </div>
+            <div class="field"><label for="c-topic">Topic</label>
+              <select id="c-topic"><option>General question</option><option>Billing</option><option>Something else</option></select></div>
+            <div class="field"><label for="c-msg">Message</label><textarea id="c-msg"></textarea></div>
+            <label class="check"><input type="checkbox"><span>I agree that Botterverse may use these details to reply to me. See the <a href="/privacy-policy/">Privacy Policy</a>.</span></label>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+        <div>
+          <div class="state-label">Success message</div>
+          <div class="msg-ok" role="status">Thank you. Your message is on its way and we will reply by email.</div>
+          <div class="state-label" style="margin-top:1.6rem">Example error state</div>
+          <div class="form-card">
+            <div class="field"><label for="e-email">Email address</label><input type="email" id="e-email" class="bad" value="sam@example" aria-invalid="true" aria-describedby="e-err"><div class="error" id="e-err">Please enter a valid email address.</div></div>
+            <div class="field" style="margin-bottom:0"><label for="e-msg">Message</label><textarea id="e-msg" class="bad" aria-invalid="true" aria-describedby="e-err2"></textarea><div class="error" id="e-err2">Please write a message.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="section-head"><h2>Field states</h2></div>
+      <div class="grid grid-4">
+        <div class="field"><div class="state-label">Default</div><label for="st1">Email address</label><input type="email" id="st1" value="sam@example.com"></div>
+        <div class="field state-focus"><div class="state-label">Focus</div><label for="st2">Email address</label><input type="email" id="st2" value="sam@example.com"></div>
+        <div class="field state-error"><div class="state-label">Error</div><label for="st3">Email address</label><input type="email" id="st3" value="sam@example" aria-invalid="true"><div class="error">Please enter a valid email address.</div></div>
+        <div class="field state-ok"><div class="state-label">Success</div><label for="st4">Email address</label><input type="email" id="st4" value="sam@example.com"><div class="ok-note">Looks good.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight section-alt">
+    <div class="container">
+      <div class="section-head"><h2>Fluent Forms markup test</h2>
+        <p>Real Fluent Forms class names in the same nesting. Styled only by <code>fluent-forms-botterverse.css</code>.</p></div>
+      <div class="grid grid-2">
+        <div class="form-card">
+          <div class="fluentform ff-default fluentform_wrapper_1">
+            <form class="frm-fluent-form fluent_form_1 ff-el-form-top ff_form_instance_1_1" onsubmit="return false">
+              <fieldset style="border:0;padding:0;margin:0;min-width:0">
+                <div class="ff-el-group ff-el-form-top">
+                  <div class="ff-el-input--label ff-el-is-required asterisk-right"><label for="ff_1_name">Your name</label></div>
+                  <div class="ff-el-input--content"><input type="text" name="names" id="ff_1_name" class="ff-el-form-control"></div>
+                </div>
+                <div class="ff-el-group ff-el-is-error">
+                  <div class="ff-el-input--label ff-el-is-required asterisk-right"><label for="ff_1_email">Email address</label></div>
+                  <div class="ff-el-input--content"><input type="email" name="email" id="ff_1_email" class="ff-el-form-control" value="sam@example"><div class="error text-danger"><span>Please enter a valid email address.</span></div></div>
+                </div>
+                <div class="ff-el-group">
+                  <div class="ff-el-input--label"><label for="ff_1_topic">Topic</label></div>
+                  <div class="ff-el-input--content"><select name="topic" id="ff_1_topic" class="ff-el-form-control"><option>General question</option><option>Billing</option><option>Something else</option></select></div>
+                </div>
+                <div class="ff-el-group">
+                  <div class="ff-el-input--label"><label for="ff_1_msg">Message</label></div>
+                  <div class="ff-el-input--content"><textarea name="message" id="ff_1_msg" class="ff-el-form-control" rows="4"></textarea></div>
+                </div>
+                <div class="ff-el-group">
+                  <div class="ff-el-input--content"><div class="ff-el-form-check"><label class="ff-el-form-check-label"><input type="checkbox" name="consent" class="ff-el-form-check-input ff-el-form-check-checkbox"><span>I agree that Botterverse may use these details to reply to me.</span></label></div></div>
+                </div>
+                <div class="ff-el-group ff-text-left ff_submit_btn_wrapper">
+                  <button type="submit" class="ff-btn ff-btn-submit ff-btn-md ff_btn_style">Send message</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="state-label">Success message</div>
+          <div class="fluentform"><div id="fluentform_1_success" class="ff-message-success"><p>Thank you. Your message is on its way and we will reply by email.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Botterverse">
+        <p class="small">Build a bot. Share it. Sell access.</p>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="pricing.html">Pricing</a></li><li><a href="how-it-works.html">How it works</a></li><li><a href="affiliates.html">Affiliates</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="support.html">Support</a></li><li><a href="/docs/">Help centre</a></li><li><a href="feedback.html">Feedback</a></li><li><a href="/my-account/">Billing and invoices</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="/terms-and-conditions/">Terms And Conditions</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/legal/">Legal</a></li></ul></div>
+    </div>
+    <div class="footer-note">Botterverse does not promise or guarantee any income. Results depend on your bot, your audience and your effort.</div>
+  </div>
+</footer>
+
+</body>
+</html>

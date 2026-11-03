@@ -1,0 +1,95 @@
+{
+ "title": "O03 Public launch",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Launch Open"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O03-01",
+   "do": "email",
+   "email": "O03-01"
+  },
+  {
+   "key": "O03-w02",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-02",
+   "do": "email",
+   "email": "O03-02"
+  },
+  {
+   "key": "O03-w03",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-03",
+   "do": "email",
+   "email": "O03-03"
+  },
+  {
+   "key": "O03-w04",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-04",
+   "do": "email",
+   "email": "O03-04"
+  },
+  {
+   "key": "O03-w05",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-05",
+   "do": "email",
+   "email": "O03-05"
+  },
+  {
+   "key": "O03-w06",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-06",
+   "do": "email",
+   "email": "O03-06"
+  },
+  {
+   "key": "O03-w07",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-07",
+   "do": "email",
+   "email": "O03-07"
+  },
+  {
+   "key": "O03-w08",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O03-08",
+   "do": "email",
+   "email": "O03-08"
+  }
+ ]
+}

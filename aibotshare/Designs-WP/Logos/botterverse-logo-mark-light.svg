@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 78" width="76" height="78" role="img" aria-label="Botterverse logo mark">
+  <title>Botterverse logo mark</title>
+  <g transform="rotate(-16 38 41)"><ellipse cx="38" cy="41" rx="36" ry="11" fill="none" stroke="#984f92" stroke-width="4"/></g>
+  <g transform="translate(8 3)">
+    <line x1="30" y1="12" x2="30" y2="5" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="30" cy="4.5" r="4" fill="#00d1da"/>
+    <rect x="14" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    <rect x="36" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    <rect x="5" y="12" width="50" height="42" rx="17" fill="#dc8fd5"/>
+    <circle cx="21" cy="31" r="4.6" fill="#282637"/><circle cx="39" cy="31" r="4.6" fill="#282637"/>
+    <path d="M22 41 Q30 47 38 41" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(-16 38 41)">
+    <path d="M2 41 A36 11 0 0 0 74 41" fill="none" stroke="#f8f7ff" stroke-width="9"/>
+    <path d="M2 41 A36 11 0 0 0 74 41" fill="none" stroke="#984f92" stroke-width="4"/>
+  </g>
+  <circle cx="6" cy="18" r="2.6" fill="#00d1da"/><circle cx="71" cy="14" r="2" fill="#dc8fd5"/>
+</svg>

@@ -1,4 +1,4 @@
-# AIBotShare — Brand Profile
+# Botterverse — Brand Profile
 
 > Auto-generated from the dashboard foundation. The section above the boundary marker is rewritten every time you run `exodus brand use`. Anything below the marker is preserved — keep brand-specific notes (proven angles, segments, ICP details, differentiators) there.
 
@@ -14,7 +14,7 @@
 
 ## Brand Voice
 
-Speaks the imer's own language: PLR, MRR, RR, funnels, OTOs, affiliates, credits, tiers, not generic SaaS terms. Direct and plain, confident without corporate hedging, aimed at people who already sell online. Speaks as the product, never as a named founder. Calls the member area the Botter's Lab. Names the OpenAI shutdown directly without gloating, since this audience lived through it. Leans on proof over promises: published fees, a live embedded demo and exact numbers (50% of a referred member's first payment, 20% of every payment after) rather than vague reward language. Never promises income. Writes the name as AI Bot Share in prose and AIBotShare only as the domain.
+Speaks the imer's own language: PLR, MRR, RR, funnels, OTOs, affiliates, credits, tiers, not generic SaaS terms. Direct and plain, confident without corporate hedging, aimed at people who already sell online. Speaks as the product, never as a named founder. Calls the member area the Botter's Lab. Names the OpenAI shutdown directly without gloating, since this audience lived through it. Leans on proof over promises: published fees, a live embedded demo and exact numbers (50% of a referred member's first payment, 20% of every payment after) rather than vague reward language. Never promises income. Writes the name as Botterverse in prose and Botterverse only as the domain.
 
 ## Core Offer
 
@@ -38,7 +38,7 @@ Example hooks:
 
 1. OpenAI closed new GPT creation to personal accounts with very little notice. Ask who actually owns the next bot you build.
 2. You built an audience on a bot you never owned. It lived behind someone else's login under someone else's branding.
-3. The GPT Store never told you its payout formula. AI Bot Share publishes its fee: 3% or 5% plus 30 cents.
+3. The GPT Store never told you its payout formula. Botterverse publishes its fee: 3% or 5% plus 30 cents.
 4. Every imer replacing GPT income is stitching together three or four tools that were never built to work together.
 5. There is a difference between a platform that lets you sell a bot and a platform that lets you sell rights to a bot the way you already sell rights to an info product.
 

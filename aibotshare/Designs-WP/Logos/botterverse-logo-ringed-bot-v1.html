@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Ringed Bot logo v1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --bg2: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --tint: #ffe0fb; --link: #984f92; --cyan: #00d1da; --navy: #080d16;
+    --ink: #282637; --eye: #282637;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  .lede { max-width: 760px; line-height: 1.6; margin: 0 0 36px; }
+  .grid { display: grid; grid-template-columns: 1fr; gap: 26px; }
+  .concept { background: var(--card); border-radius: 22px; border: 1px solid #ebeaf2; overflow: hidden; }
+  .concept header { padding: 18px 22px 0; display: flex; gap: 12px; align-items: baseline; }
+  .num { font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 26px; color: var(--pink); }
+  .concept h2 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 20px; margin: 0; }
+  .concept p.why { margin: 4px 22px 16px; font-size: 14px; line-height: 1.55; }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; }
+  .light, .dark { padding: 18px 8px; display: flex; align-items: center; justify-content: center; }
+  .light { background: var(--bg); --bg2: #f8f7ff; }
+  .dark { background: var(--navy); --ink: #eceff2; --bg2: #080d16; }
+  .lockup { display: flex; align-items: center; gap: 6px; }
+  .mk { width: 112px; height: 115px; flex: none; display: block; }
+  .word { font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 44px; color: var(--ink); white-space: nowrap; line-height: 1; letter-spacing: -0.01em; }
+  .word b { color: var(--link); font-weight: 800; }
+  .dark .word b { color: var(--pink); }
+  .row { display: grid; grid-template-columns: 1fr 1.2fr 1fr; background: var(--panel); }
+  .cell { padding: 14px 16px 18px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+  .lab { font-size: 12px; font-weight: 800; color: var(--text); }
+  .stack { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+  .stack .mk { width: 120px; height: 123px; }
+  .stack .word { font-size: 34px; }
+  .cell .lockup .mk { width: 64px; height: 66px; }
+  .cell .lockup .word { font-size: 28px; }
+  .mono { --pink: var(--ink); --cyan: var(--ink); --link: var(--ink); --eye: #f8f7ff; }
+  .mono .word b { color: var(--ink); }
+  .favs { display: flex; flex-direction: column; gap: 8px; }
+  .fav { display: flex; align-items: center; gap: 12px; border-radius: 8px; background: #fff; padding: 6px 10px; border: 1px solid #ebeaf2; --bg2: #ffffff; }
+  .fav.navy { background: var(--navy); border-color: var(--navy); --ink: #eceff2; --bg2: #080d16; }
+  .f48 { width: 48px; height: 49px; }
+  .f32 { width: 32px; height: 33px; }
+  .f16 { width: 16px; height: 16px; }
+  @media (max-width: 760px) { .stage, .row { grid-template-columns: 1fr; } .mk { width: 100px; height: 103px; } .word { font-size: 38px; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- The bot with feet, from the image concepts v1 file, drawn to fill the box -->
+    <symbol id="bot-body" viewBox="0 0 76 78">
+      <g transform="translate(8 3)">
+        <line x1="30" y1="12" x2="30" y2="5" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="30" cy="4.5" r="4" fill="var(--cyan)"/>
+        <rect x="14" y="54" width="10" height="12" rx="5" fill="var(--link)"/>
+        <rect x="36" y="54" width="10" height="12" rx="5" fill="var(--link)"/>
+        <rect x="5" y="12" width="50" height="42" rx="17" fill="var(--pink)"/>
+        <circle cx="21" cy="31" r="4.6" fill="var(--eye)"/><circle cx="39" cy="31" r="4.6" fill="var(--eye)"/>
+        <path d="M22 41 Q30 47 38 41" stroke="var(--eye)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Ringed Bot, version 1</h1>
+  <p class="lede">Concept 02 from the logo set, refined. The bot now has the feet from the image concepts and the marks are drawn to fill their space. Three versions of the same idea: the ring colour and the extras change. Tell me which to take forward.</p>
+  <div class="grid" id="grid"></div>
+</div>
+
+<script>
+  // Each mark: back half of ring, bot, front half of ring (with a gap halo so it passes in front of the body)
+  function mark(ringColour, extras, cls) {
+    return '<svg class="' + cls + '" viewBox="0 0 76 78" aria-hidden="true">' +
+      '<g transform="rotate(-16 38 41)"><ellipse cx="38" cy="41" rx="36" ry="11" fill="none" stroke="' + ringColour + '" stroke-width="4"/></g>' +
+      '<use href="#bot-body"/>' +
+      '<g transform="rotate(-16 38 41)"><path d="M2 41 A36 11 0 0 0 74 41" fill="none" stroke="var(--bg2)" stroke-width="9"/>' +
+      '<path d="M2 41 A36 11 0 0 0 74 41" fill="none" stroke="' + ringColour + '" stroke-width="4"/></g>' +
+      extras + '</svg>';
+  }
+  var concepts = [
+    ['Ringed Bot', 'The ring in ink. The plainest version and the easiest to print in one colour.', 'var(--ink)', ''],
+    ['Cyan Ring', 'The ring in cyan so the bot and its orbit read as two parts. A small moon sits on the ring.', 'var(--cyan)', '<circle cx="70" cy="30" r="3.4" fill="var(--pink)"/>'],
+    ['Purple Ring', 'A purple ring with two small stars. The most playful of the three.', 'var(--link)', '<circle cx="6" cy="18" r="2.6" fill="var(--cyan)"/><circle cx="71" cy="14" r="2" fill="var(--pink)"/>']
+  ];
+  function lock(m, extra) { return '<div class="lockup">' + mark(m[2], m[3], 'mk') + '<span class="word"><b>Botter</b>verse</span></div>'; }
+  var grid = document.getElementById('grid');
+  concepts.forEach(function (c, i) {
+    var n = '0' + (i + 1);
+    grid.insertAdjacentHTML('beforeend',
+      '<article class="concept"><header><span class="num">' + n + '</span><h2>' + c[0] + '</h2></header>' +
+      '<p class="why">' + c[1] + '</p>' +
+      '<div class="stage"><div class="light">' + lock(c) + '</div><div class="dark">' + lock(c) + '</div></div>' +
+      '<div class="row">' +
+        '<div class="cell"><span class="lab">Stacked</span><div class="stack">' + mark(c[2], c[3], 'mk') + '<span class="word"><b>Botter</b>verse</span></div></div>' +
+        '<div class="cell mono"><span class="lab">One colour</span>' + lock(c) + '</div>' +
+        '<div class="cell"><span class="lab">Favicon 48 and 32 and 16</span><div class="favs">' +
+          '<div class="fav">' + mark(c[2], c[3], 'f48') + mark(c[2], c[3], 'f32') + mark(c[2], c[3], 'f16') + '</div>' +
+          '<div class="fav navy">' + mark(c[2], c[3], 'f48') + mark(c[2], c[3], 'f32') + mark(c[2], c[3], 'f16') + '</div>' +
+        '</div></div>' +
+      '</div></article>');
+  });
+</script>
+</body>
+</html>

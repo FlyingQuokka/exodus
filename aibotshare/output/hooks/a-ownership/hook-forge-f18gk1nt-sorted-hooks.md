@@ -10,7 +10,7 @@ Hooks that assault who the reader *is* — not what they lost, but what they are
 
 **[P]** The list is the business. Every imer alive knows this. So explain to me how you sold GPT access for months on a platform that never gave you a single buyer's email, never showed you analytics on your own bot, and could delete your page with barely a warning. You broke your own first commandment and now your customers are strangers clicking a dead URL. — **L3**
 
-**[P]** The people who paid you for your GPT don't know your name, your email, or where to find you now. You are a complete stranger to your own paying customers. Not because they forgot you, but because the platform was designed so you'd never have their information in the first place. On AI Bot Share you can require sign-up on every bot so you hold a list of known users, see analytics on every bot you build, and export your bots to take them anywhere you want. — **L3**
+**[P]** The people who paid you for your GPT don't know your name, your email, or where to find you now. You are a complete stranger to your own paying customers. Not because they forgot you, but because the platform was designed so you'd never have their information in the first place. On Botterverse you can require sign-up on every bot so you hold a list of known users, see analytics on every bot you build, and export your bots to take them anywhere you want. — **L3**
 
 **[R]** You're not the owner of your GPT business. You're the product inside someone else's. You can't see who's buying. You can't message them. You can't export your own bot. You can't even set your own price. You just build, promote, and hope the platform doesn't pull the plug while you're sleeping. — **L3**
 
@@ -60,7 +60,7 @@ Hooks that recast the GPT Store arrangement as something darker via a single gov
 
 **[R]** A sharecropper in 1850 had more ownership over his work than most GPT sellers have right now. At least the sharecropper knew who bought the cotton. You can't see your own analytics, you can't export your own bot, you can't set your own price, and if the field gets shut down your "customers" vanish without a trace because you never had their names to begin with. — **L3**
 
-**[P]** You couldn't even see how many people were using your own GPT. No analytics. No user names. No emails. No usage data. You built something people paid for and the platform treated you like a guest in your own house, allowed to cook but never allowed to see who was eating. AI Bot Share shows you analytics on every bot, lets you require sign-up to hold a list, and lets you export your bots to take them with you. The founders window is open at 50% off for life. — **L3**
+**[P]** You couldn't even see how many people were using your own GPT. No analytics. No user names. No emails. No usage data. You built something people paid for and the platform treated you like a guest in your own house, allowed to cook but never allowed to see who was eating. Botterverse shows you analytics on every bot, lets you require sign-up to hold a list, and lets you export your bots to take them with you. The founders window is open at 50% off for life. — **L3**
 
 **[R]** Your GPT "survived" the last migration. But its actions were stripped, its model was swapped, and its old link went dead. So your bot came back lobotomized, your customers got a 404, and nobody was moved over. The platform migrated your bot in name only and erased everything that made it actually work. — **L3**
 
@@ -68,7 +68,7 @@ Hooks that recast the GPT Store arrangement as something darker via a single gov
 
 ## Hidden-Cost Exposé
 
-**[P]** Every dollar you spent driving traffic to your GPT bought customers for a platform that kept their email addresses and gave you nothing but a payout with no formula attached. Your ad spend built someone else's user base. Your content brought in buyers whose names you'll never know. And now those buyers are hitting a dead link while you start over from zero with an empty room. On AI Bot Share you own the bot page, set the paywall, require sign-up so every user goes on your list, and can export the whole bot if you ever want to leave. — **L3**
+**[P]** Every dollar you spent driving traffic to your GPT bought customers for a platform that kept their email addresses and gave you nothing but a payout with no formula attached. Your ad spend built someone else's user base. Your content brought in buyers whose names you'll never know. And now those buyers are hitting a dead link while you start over from zero with an empty room. On Botterverse you own the bot page, set the paywall, require sign-up so every user goes on your list, and can export the whole bot if you ever want to leave. — **L3**
 
 ---
 

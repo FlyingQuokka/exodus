@@ -1,4 +1,4 @@
-# AI Bot Share: ten product image concepts
+# Botterverse: ten product image concepts
 
 Concepts only, so you can choose which are worth pursuing. Real app screenshots will replace the "screen" shots later, so these lean on illustration and staged scenes. Each has an image-generator prompt ready to use with the Exodus image engines.
 
@@ -65,8 +65,8 @@ Shared style line to append to every prompt: *clean modern illustration, soft ro
 ## 8. The trust seal
 
 **Shows:** A bot page card with a round certification seal and a short checklist of tick marks.
-**Idea:** Certified by AI Bot Share means genuine and declared, not "guaranteed safe".
-**Best for:** The trust section and the Certified by AI Bot Share page.
+**Idea:** Certified by Botterverse means genuine and declared, not "guaranteed safe".
+**Best for:** The trust section and the Certified by Botterverse page.
 **Prompt:** A clean card showing a small robot avatar, a round seal badge with a tick and a column of seven blank checklist rows with small tick marks, calm blue and white palette.
 
 ## 9. The Botter's Lab

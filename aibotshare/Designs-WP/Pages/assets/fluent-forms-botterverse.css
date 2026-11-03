@@ -1,0 +1,51 @@
+/* Botterverse look for real Fluent Forms.
+
+   How to apply
+   1. Enqueue this file from the theme on the front end (wp_enqueue_style) after the Fluent Forms
+      stylesheet and after the theme tokens. It needs the CSS variables from the theme
+      (the same names as botterverse-pages.css: --surface and --text and --accent and so on).
+   2. In Fluent Forms open Global Settings and the default style preset. Choose the plain
+      "Default" style and leave the colour and font options empty so this file is not fought.
+      The preset only applies to NEW forms. Open each existing form and check its style.
+   3. Test every form in Pleasant Pink and in Nightshift (data-theme="nightshift").
+   Every rule is scoped under .fluentform so nothing else on the site changes. */
+
+.fluentform { font-family: var(--font-body); color: var(--text-2); font-size: 1rem; }
+.fluentform .ff-el-group { margin-bottom: 1.1rem; }
+.fluentform .ff-el-input--label label { display: block; font-weight: 800; color: var(--text); margin-bottom: .35rem; font-size: 1rem; }
+.fluentform .ff-el-input--label.ff-el-is-required.asterisk-right label::after { content: " *"; color: var(--danger); }
+.fluentform .ff-el-help-message, .fluentform .ff_t_c { font-size: .9rem; color: var(--muted); margin-top: .3rem; }
+
+/* Fields */
+.fluentform .ff-el-form-control { width: 100%; font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .8rem 1rem; line-height: 1.4; box-shadow: none; min-height: 0; }
+.fluentform .ff-el-form-control::placeholder { color: var(--muted); opacity: 1; }
+.fluentform textarea.ff-el-form-control { min-height: 150px; resize: vertical; }
+.fluentform select.ff-el-form-control { appearance: auto; padding-right: 2rem; }
+.fluentform .ff-el-form-control:focus { outline: none; color: var(--text); background: var(--surface); border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }
+
+/* Tick boxes */
+.fluentform .ff-el-form-check { margin: 0 0 .5rem; }
+.fluentform .ff-el-form-check label.ff-el-form-check-label { display: flex; gap: .7rem; align-items: flex-start; font-weight: 400; color: var(--text-2); cursor: pointer; }
+.fluentform .ff-el-form-check-input { flex: none; width: 1.3rem; height: 1.3rem; margin: .25rem 0 0; accent-color: var(--accent-text); }
+.fluentform .ff-el-form-check-input:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+
+/* Button */
+.fluentform .ff_submit_btn_wrapper { margin-bottom: 0; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; line-height: 1; padding: .95rem 1.7rem; border-radius: 999px; border: 2px solid transparent; background: var(--accent); color: var(--on-accent); cursor: pointer; box-shadow: none; transition: transform .15s ease, background .15s ease; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--accent-hover); color: var(--on-accent); transform: translateY(-1px); opacity: 1; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+
+/* Errors */
+.fluentform .ff-el-is-error .ff-el-form-control { border-color: var(--danger); }
+.fluentform .ff-el-is-error .ff-el-form-control:focus { box-shadow: 0 0 0 4px color-mix(in srgb, var(--danger) 22%, transparent); }
+.fluentform .ff-el-is-error .text-danger, .fluentform .error.text-danger { color: var(--danger); font-weight: 700; font-size: .92rem; margin-top: .35rem; display: block; }
+
+/* Messages */
+.fluentform .ff-message-success, .ff-message-success { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-left: 5px solid var(--success); border-radius: var(--r-ctl); padding: 1rem 1.2rem; box-shadow: none; }
+.fluentform .ff-message-success p:last-child { margin-bottom: 0; }
+.fluentform .ff-errors-in-stack { color: var(--danger); font-weight: 700; }
+
+/* Layout columns collapse on small screens */
+@media (max-width: 620px) { .fluentform .ff-t-container { display: block; } .fluentform .ff-t-cell { width: 100% !important; padding: 0 !important; } }
+@media (prefers-reduced-motion: reduce) { .fluentform .ff-btn-submit { transition: none; } }

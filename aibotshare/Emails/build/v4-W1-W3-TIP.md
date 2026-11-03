@@ -34,23 +34,23 @@ Open the bot from [Bot list](https://lab.{{domain}}/bots) and go to its [Create 
 2. Paste it into your website's custom code box or HTML box.
 3. Save the page and open it to check the bot appears.
 
-The embed follows the bot so later changes show up without pasting again. Visitors are told they're talking to an AI assistant before the first reply.
+The embed follows the bot, so later changes show up without pasting again. Visitors are told they're talking to an AI assistant before the first reply.
 
 **Why you may see a button and not a chat**
 
-Require visitors to sign up is on for a new bot. While it's on the embed shows a button that says "Chat with" followed by your bot's name. The button opens your bot's page in a new tab.
+Require visitors to sign up is on for a new bot. While it's on, the embed shows a button that says "Chat with" followed by your bot's name. The button opens your bot's page in a new tab.
 
-Switch it off in Sharing and embed and a free bot runs its chat inside your page. A paid bot always needs an account so it keeps the button.
+Switch it off in Sharing and embed and a free bot runs its chat inside your page. A paid bot always needs an account, so it keeps the button.
 
 **Set a Daily credit limit first**
 
-With sign-up off anyone can chat at once and every message uses your credits. In Sharing and embed, Daily credit limit lets you leave the box empty to use the platform default or enter a number of whole credits.
+With sign-up off, anyone can chat at once and every message uses your credits. In Sharing and embed, Daily credit limit lets you leave the box empty to use the platform default or enter a number of whole credits.
 
-When a free visitor reaches the limit they're told the bot has reached its limit for the day while paid buyers and you carry on. It resets at midnight UTC and we email you once that day.
+When a free visitor reaches the limit, they're told the bot has reached its limit for the day while paid buyers and you carry on. It resets at midnight UTC and we email you once that day.
 
 **Task for today**
 
-Paste the Embed snippet into one page of your site. In Sharing and embed, decide whether Require visitors to sign up stays on then set a Daily credit limit and press Save.
+Paste the Embed snippet into one page of your site. In Sharing and embed, decide whether Require visitors to sign up stays on, then set a Daily credit limit and press Save.
 
 See you tomorrow,
 
@@ -81,7 +81,7 @@ Both follow one rule. They answer only from your own material and they never mak
 
 **An FAQ bot**
 
-Build it on the [Create a bot](https://lab.{{domain}}/bots/create) page. Everything below is for example only so swap in your own details.
+Build it on the [Create a bot](https://lab.{{domain}}/bots/create) page. Everything below is for example only, so swap in your own details.
 
 | Field | For example |
 |---|---|
@@ -105,7 +105,7 @@ Build it on the [Create a bot](https://lab.{{domain}}/bots/create) page. Everyth
 
 **Task for today**
 
-Pick one of the two and build it from your own sales page. Save the bot first then in Knowledge files press Add a file and wait for the status to read Ready.
+Pick one of the two and build it from your own sales page. Save the bot first, then in Knowledge files, press Add a file and wait for the status to read Ready.
 
 Try three real questions in Preview before you embed it. Preview uses your credits.
 
@@ -169,7 +169,7 @@ New topic: three more bots that suit a website. Each answers only from your own 
 
 **Task for today**
 
-Choose the one that matches the material you already have and fill in the table with your own details. On the [Create a bot](https://lab.{{domain}}/bots/create) page save the bot before you use Knowledge files.
+Choose the one that matches the material you already have and fill in the table with your own details. On the [Create a bot](https://lab.{{domain}}/bots/create) page, save the bot before you use Knowledge files.
 
 All the best,
 
@@ -195,18 +195,18 @@ Hi {{contact.first_name}},
 
 Recap: last time we read the numbers for a bot. We left one question open: what one message costs.
 
-New topic: every message uses credits by its real size so it's worth knowing roughly what a message costs before you set a price for access.
+New topic: every message uses credits by its real size, so it's worth knowing roughly what a message costs before you set a price for access.
 
 **How to find out**
 
-Note your Credit balance on the [Dashboard](https://lab.{{domain}}/) then send ten typical questions to your bot in Preview. Check the Credit balance again and divide the difference by ten.
+Note your Credit balance on the [Dashboard](https://lab.{{domain}}/), then send ten typical questions to your bot in Preview. Check the Credit balance again and divide the difference by ten.
 
-Balances show in whole credits and round down so ten messages give a steadier figure than one. If your plan includes [Analytics](https://lab.{{domain}}/bots/analytics), the basic panel also shows credits used and credits per message.
+Balances show in whole credits and round down, so ten messages give a steadier figure than one. If your plan includes [Analytics](https://lab.{{domain}}/bots/analytics), the basic panel also shows credits used and credits per message.
 
 **Three things that change the figure**
 
 - A dearer model uses more credits per message. You choose it in Model.
-- Testing in Preview uses credits too so your own tests count.
+- Testing in Preview uses credits too, so your own tests count.
 - Longer questions and longer answers use more.
 
 If you sell access with a paywall, each buyer message is paid from your credits. A Message cap is there to protect you, so work out the cost per message first and then decide on a One-time price and a cap.
@@ -246,7 +246,7 @@ New topic: a free Public bot can show visitors what you know and a paid bot can 
 
 The teaser answers your most common questions from a short knowledge file. The full version draws on your complete material and sits behind a paywall with a One-time price.
 
-A paywall belongs to Novice Botter and above. On Apprentice Botter the free bot still works as it stands because you can share it by link or embed.
+A paywall belongs to Novice Botter and above. On Apprentice Botter, the free bot still works as it stands because you can share it by link or embed.
 
 To build the second bot, open the first from [Bot list](https://lab.{{domain}}/bots) and press Duplicate. The copy starts Personal with its paywall off and keeps the instructions, files, starters and model.
 

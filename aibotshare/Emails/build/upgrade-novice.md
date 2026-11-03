@@ -29,7 +29,7 @@ Hi {{contact.first_name}},
 
 Your move to Novice Botter has gone through. Everything from your last plan is still there and several new things have opened.
 
-Today is a short tour so you can choose where to start. Over the next few weeks one email covers each feature in depth and each one ends with something you can use straight away.
+Today is a short tour so you can choose where to start. Over the next few weeks, one email covers each feature in depth and each one ends with something you can use straight away.
 
 **What Novice Botter adds**
 
@@ -42,7 +42,7 @@ Today is a short tour so you can choose where to start. Over the next few weeks 
 
 **Task for today**
 
-Pick the one you want to try first. If you want a bot to answer better or more cheaply start with the models (tomorrow). If you want a bot to earn start with the paywall (day 3).
+Pick the one you want to try first. If you want a bot to answer better or more cheaply, start with the models (tomorrow). If you want a bot to earn, start with the paywall (day 3).
 
 Glad to have you on the next step,
 
@@ -69,11 +69,11 @@ Yesterday's tour showed that every AI model is now yours to choose from. Today i
 
 **Choosing a model**
 
-Open the bot from [Bot list](https://lab.{{domain}}/bots) and select the Model section. You'll find Claude (the default), GPT, Gemini and Grok. On your earlier plan only the everyday models were offered and now every model in each family is open.
+Open the bot from [Bot list](https://lab.{{domain}}/bots) and select the Model section. You'll find Claude (the default), GPT, Gemini and Grok. On your earlier plan, only the everyday models were offered and now every model in each family is open.
 
 A dearer model uses more credits per message. That applies to your visitors' chats and to your own testing in Preview.
 
-Two rules are worth knowing. If you change the model on a Public bot you'll confirm its declarations again. If your instructions are too long for the model you pick, Save refuses with the message The instructions are too large for this model.
+Two rules are worth knowing. If you change the model on a Public bot, you'll confirm its declarations again. If your instructions are too long for the model you pick, Save refuses with the message The instructions are too large for this model.
 
 **Try the same question on each family**
 
@@ -85,7 +85,7 @@ Use a question that needs judgement and not a fact. Here's one you can adapt:
 
 Use Duplicate on a working bot so your original stays untouched. The copy starts as Personal and counts towards your bot limit.
 
-In the copy choose a different model and press Save. Open Preview and ask the question above. Check your credits pill before and after to see what the answer cost. Repeat for each family and keep the one whose answer you'd be happy for a customer to read.
+In the copy, choose a different model and press Save. Open Preview and ask the question above. Check your credits pill before and after to see what the answer cost. Repeat for each family and keep the one whose answer you'd be happy for a customer to read.
 
 Enjoy the comparison,
 
@@ -108,7 +108,7 @@ P.S. Next up: your bot is ready to earn. What will a buyer see before they pay?
 
 Hi {{contact.first_name}},
 
-Two days ago you compared the model families and chose the one that answers best. That bot is ready to earn.
+Two days ago, you compared the model families and chose the one that answers best. That bot is ready to earn.
 
 Today you'll switch on the paywall and see what a buyer sees. Visitors pay a one-time price for access to the bot. There's no subscription.
 
@@ -124,7 +124,7 @@ Each sale adds to your earnings less the platform fee. A price change applies to
 
 **What buyers see**
 
-The paywall page shows your bot's name and description, the starters under Things you can ask it, the price and the guarantee if you add one. A signed-out visitor chooses Sign up or Sign in. After that they tick the agreement and press Pay. The chat then opens.
+The paywall page shows your bot's name and description, the starters under Things you can ask it, the price and the guarantee if you add one. A signed-out visitor chooses Sign up or Sign in. After that, they tick the agreement and press Pay. The chat then opens.
 
 That makes your description and starters the sales page. Here's a layout to adapt, with an example below it.
 
@@ -160,13 +160,13 @@ P.S. Next up: a paywall with no limits can cost you. How do you cap it?
 
 Hi {{contact.first_name}},
 
-On day 3 you switched on the paywall and saw what a buyer sees. A paywall with no limits can cost you, because every buyer message is paid from your credits.
+On day 3, you switched on the paywall and saw what a buyer sees. A paywall with no limits can cost you, because every buyer message is paid from your credits.
 
 Today you'll add a Message cap and a top-up so each sale stays worthwhile.
 
 **How the cap works**
 
-Message cap is the number of messages one purchase includes. If you leave it empty the access has no cap. Once a buyer reaches the cap they see a Top up button.
+Message cap is the number of messages one purchase includes. If you leave it empty, the access has no cap. Once a buyer reaches the cap, they see a Top up button.
 
 A top-up needs three things: a cap, a Top-up size in messages and a Top-up price. The platform fee is taken from each access and each top-up.
 
@@ -180,7 +180,7 @@ For example, a cap of 100 messages with a top-up of 50 messages. The guide's own
 
 Open Paywall and pricing on your bot. Enter a Message cap then a Top-up size in messages and a Top-up price. Press Save.
 
-Minimum prices apply. If you change a price to a figure that is too low a message appears beside the field.
+Minimum prices apply. If you change a price to a figure that is too low, a message appears beside the field.
 
 See you in two days,
 
@@ -208,7 +208,7 @@ Last time you capped the messages and added a top-up. Today is about one promise
 
 **Guarantee and rating**
 
-In Paywall and pricing you'll find Money-back guarantee. The choices are No guarantee, 7 days or 14 days. The wording on the paywall is fixed so buyers see the same promise everywhere.
+In Paywall and pricing, you'll find Money-back guarantee. The choices are No guarantee, 7 days or 14 days. The wording on the paywall is fixed so buyers see the same promise everywhere.
 
 Below it is Show the bot's rating on its paywall page. Buyers can rate a bot from 1 to 5 stars after a few messages and that rating appears once you switch this on.
 
@@ -216,14 +216,14 @@ Below it is Show the bot's rating on its paywall page. Buyers can rate a bot fro
 
 The buyer uses Request a refund on [Bots I bought](https://lab.{{domain}}/my-bots) and gives a reason. You're emailed and [Sales](https://lab.{{domain}}/sales) shows the claim with the reason and the date it will be refunded automatically.
 
-You can press Refund or Ask the Botter Support Team to review. If you do nothing the buyer is refunded on that date. A guarantee refund takes the full price from your earnings even when that leaves them below zero.
+You can press Refund or Ask the Botter Support Team to review. If you do nothing, the buyer is refunded on that date. A guarantee refund takes the full price from your earnings even when that leaves them below zero.
 
 **Choosing your guarantee**
 
-1. Can a buyer judge the bot in a few messages? If so 7 days is usually enough.
+1. Can a buyer judge the bot in a few messages? If so, 7 days is usually enough.
 2. Have you promised a longer period on your own site? A promise longer than the platform's can leave you unable to refund from earnings.
 3. Is the bot new? Leave the rating off until buyers have rated it.
-4. Are you happy to refund the full price? If not choose No guarantee.
+4. Are you happy to refund the full price? If not, choose No guarantee.
 
 **Task for today**
 
@@ -253,7 +253,7 @@ Hi {{contact.first_name}},
 
 Last time you chose a guarantee and learned how a claim is handled. Today a bot writes your promotions for you.
 
-First you'll join the affiliate programme and then build a small helper bot to draft the posts.
+First, you'll join the affiliate programme and then build a small helper bot to draft the posts.
 
 **Joining**
 
@@ -296,13 +296,13 @@ P.S. Next up: your own bots aren't the only ones you can promote. Whose would yo
 
 Hi {{contact.first_name}},
 
-Two days ago you joined the affiliate programme and built a bot to draft your posts. Your own bots aren't the only ones you can promote.
+Two days ago, you joined the affiliate programme and built a bot to draft your posts. Your own bots aren't the only ones you can promote.
 
 Today you'll promote a listing on the Bot Market and see where the commission appears.
 
 **How a promote link works**
 
-Members sell bots to each other on the Bot Market. When you promote a listing with your link you earn commission on the sale. If a buyer clicks more than one link the last click counts, within the affiliate period.
+Members sell bots to each other on the Bot Market. When you promote a listing with your link, you earn commission on the sale. If a buyer clicks more than one link, the last click counts, within the affiliate period.
 
 The seller sets an Affiliate share (%) on the listing and it's taken from what's left after the platform fee. Commission waits for the refund period and then becomes withdrawable.
 
@@ -348,7 +348,7 @@ An integration lets a bot call your booking system, an order lookup or a price l
 
 **Before you start**
 
-Save the bot first. Then open the bot from [Bot list](https://lab.{{domain}}/bots) and in Integrations select Add an integration. You'll need the web address of your service and its documentation open beside you.
+Save the bot first. Then open the bot from [Bot list](https://lab.{{domain}}/bots) and in Integrations, select Add an integration. You'll need the web address of your service and its documentation open beside you.
 
 **The fields, with example values**
 
@@ -366,7 +366,7 @@ Press Save integration. Credentials are stored encrypted and are never shown aga
 
 In Instructions, add this to What the bot should do and save the bot:
 
-> When a visitor asks about availability use Check appointment times. Ask them for the date first.
+> When a visitor asks about availability, use Check appointment times. Ask them for the date first.
 
 Sending data to anyone other than the model provider has to be declared under declaration 7. Confirm your declarations again if the bot is Public.
 
@@ -418,7 +418,7 @@ Conversations without purchases on a paid bot suggest the description or starter
 
 **A peek at Expert Botter**
 
-Expert Botter adds Busiest hours, which shows when visitors chat. It also adds Top conversation starters, which counts your starters. Between them they tell you when to share and what to change. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
+Expert Botter adds Busiest hours, which shows when visitors chat. It also adds Top conversation starters, which counts your starters. Between them, they tell you when to share and what to change. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
 
 **Task for today**
 
@@ -468,7 +468,7 @@ Pro Botter lets you sell a bot itself on the Bot Market. You choose a Price (USD
 
 Write down your own map in the same shape. One line per bot with a job, a mode and whether it has a paywall. Then build the next bot on it.
 
-That's the end of this series. If a question comes up look in the [help articles](https://{{domain}}/docs/) or ask the support team.
+That's the end of this series. If a question comes up, look in the [help articles](https://{{domain}}/docs/) or ask the support team.
 
 Happy building,
 

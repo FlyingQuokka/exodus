@@ -51,6 +51,8 @@ body .fct_checkout_form_section { background: var(--surface); border: 1px solid 
 body .fct_checkout_form_section h1, body .fct_checkout_form_section h2, body .fct_checkout_form_section h3, body .fct_checkout_summary h2 { font-family: var(--font-head); color: var(--text); }
 body .fct_checkout_summary { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow); }
 body .fct_checkout_summary { align-self: start; height: auto; }
+/* The summary card already is the card, so the section inside it must not draw a second one */
+body .fct_checkout_summary .fct_checkout_form_section, body .fct_checkout_summary .fct_summary_box .fct_checkout_form_section { background: transparent; border: 0; border-radius: 0; box-shadow: none; }
 @media (min-width: 861px) { body .fct_checkout_summary { position: sticky; top: 6rem; } }
 body .fct_checkout_agree_terms { font-size: .9rem; color: var(--muted); }
 body .fluent_cart_order_confirmation { border-left: 5px solid var(--info); background: var(--surface); border-radius: var(--r-ctl); padding: 1rem 1.2rem; }

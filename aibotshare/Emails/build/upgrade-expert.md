@@ -29,7 +29,7 @@ Hi {{contact.first_name}},
 
 Your move to Expert Botter has gone through. Everything from your last plan is still there and the deeper analytics have opened.
 
-Today is a short tour so you can choose where to start. Over the next weeks one email covers each feature in depth and each one ends with something you can use straight away.
+Today is a short tour so you can choose where to start. Over the next weeks, one email covers each feature in depth and each one ends with something you can use straight away.
 
 **What Expert Botter adds**
 
@@ -40,7 +40,7 @@ Today is a short tour so you can choose where to start. Over the next weeks one 
 
 **Task for today**
 
-Pick one to try first. If you want to know what visitors respond to start with Top conversation starters (tomorrow). If you want to know when to share a link start with Busiest hours (day 3).
+Pick one to try first. If you want to know what visitors respond to, start with Top conversation starters (tomorrow). If you want to know when to share a link, start with Busiest hours (day 3).
 
 Glad to have you on board,
 
@@ -117,9 +117,9 @@ Share your link just before that stretch because that's when people are most rea
 
 **Daily credit limit**
 
-On a busy day a free bot can use many credits. In Sharing and embed on the [Create a bot](https://lab.{{domain}}/bots/create) page, Daily credit limit caps that. Leave it empty to use the platform default or enter a whole number of credits.
+On a busy day, a free bot can use many credits. In Sharing and embed on the [Create a bot](https://lab.{{domain}}/bots/create) page, Daily credit limit caps that. Leave it empty to use the platform default or enter a whole number of credits.
 
-At the limit free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. The count resets at midnight UTC and you're emailed once that day.
+At the limit, free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. The count resets at midnight UTC and you're emailed once that day.
 
 **A simple posting plan**
 
@@ -130,7 +130,7 @@ At the limit free visitors are told the bot has reached its limit for the day. P
 
 **Task for today**
 
-Follow the four steps above for your busiest bot. Next week compare Conversations on Analytics with the week before.
+Follow the four steps above for your busiest bot. Next week, compare Conversations on Analytics with the week before.
 
 Speak soon,
 
@@ -164,8 +164,8 @@ The panel stays hidden until enough bots in your category feed it, so a new cate
 
 **How to read it**
 
-1. Start with messages per buyer. If yours is well below the average buyers may be leaving early.
-2. Check conversion next. If it's below the average look at your description and starters.
+1. Start with messages per buyer. If yours is well below the average, buyers may be leaving early.
+2. Check conversion next. If it's below the average, look at your description and starters.
 3. Check price last. Compare it against the average before changing anything, because a price change applies to new buyers only.
 
 A gap tells you where to look. It doesn't tell you the cause and that's tomorrow's problem.
@@ -174,7 +174,7 @@ A gap tells you where to look. It doesn't tell you the cause and that's tomorrow
 
 Open Analytics and choose a bot that has a Category and a paywall. Read Category benchmarks in the order above and write one sentence about each.
 
-If the panel is hidden open the bot from [Bot list](https://lab.{{domain}}/bots) and check its Category. Suggest a category costs no credits.
+If the panel is hidden, open the bot from [Bot list](https://lab.{{domain}}/bots) and check its Category. Suggest a category costs no credits.
 
 All the best,
 
@@ -221,7 +221,7 @@ Choose the suggestion that matches your most common unanswered question. Press A
 
 **Task for today**
 
-Switch on Conversation insights for your busiest bot. When the report arrives use Add to knowledge on one suggestion.
+Switch on Conversation insights for your busiest bot. When the report arrives, use Add to knowledge on one suggestion.
 
 Best of luck,
 
@@ -298,7 +298,7 @@ Included credits are added with your plan and reset at each renewal or plan chan
 
 The usage graph shows which days used the most. The history labels tell you whether credits came from Plan credits or Credits bought.
 
-If your credits can't cover a message every one of your bots stops answering everyone, buyers included. You're emailed when that happens.
+If your credits can't cover a message, every one of your bots stops answering everyone, buyers included. You're emailed when that happens.
 
 **Setting up Auto top-up**
 
@@ -309,7 +309,7 @@ If your credits can't cover a message every one of your bots stops answering eve
 
 For example, below 500 credits with a top-up of 10 dollars. Choose figures that suit your own usage.
 
-You'll need an active plan and a card on file. You're emailed each time it charges. A daily cap pauses it until the next day. If your card is declined twice it switches off with an email.
+You'll need an active plan and a card on file. You're emailed each time it charges. A daily cap pauses it until the next day. If your card is declined twice, it switches off with an email.
 
 **Task for today**
 
@@ -340,11 +340,11 @@ Last time you switched on Auto top-up. Your numbers can also tune your paywall, 
 
 **Three settings the data can guide**
 
-Message cap and top-up. If credits per message on [Analytics](https://lab.{{domain}}/bots/analytics) is high the cap may be too generous. If buyers reach it and don't top up the top-up size may be too large.
+Message cap and top-up. If credits per message on [Analytics](https://lab.{{domain}}/bots/analytics) is high, the cap may be too generous. If buyers reach it and don't top up, the top-up size may be too large.
 
 Starters. Top conversation starters shows which ones open the most conversations. They show on the paywall under Things you can ask it.
 
-Description. If visitors reach the paywall and don't buy the description may not say what the bot does. Compare conversion with Category benchmarks.
+Description. If visitors reach the paywall and don't buy, the description may not say what the bot does. Compare conversion with Category benchmarks.
 
 **A price change affects new buyers only**
 
@@ -393,7 +393,7 @@ Select [Bot styles](https://lab.{{domain}}/bot-styles) in the menu then New styl
 
 A live Preview updates as you change things. Contrast warnings tell you if text is hard to read.
 
-On Expert Botter your bots keep the default look. Pro Botter and above can use styles. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
+On Expert Botter, your bots keep the default look. Pro Botter and above can use styles. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
 
 **A recipe to plan now**
 
@@ -437,7 +437,7 @@ Last time you planned a style for your bots. What if someone wanted to buy the b
 
 Pro Botter and above can list a Public bot on the Bot Market. There are two sale types. Transfer moves ownership and sells once. Multi-sell gives each buyer their own copy under your licence and you keep the original.
 
-To list a bot select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. The form includes Description and Tags with a Suggest a description and tags button that uses no credits. It also has Sale type and licence, Price (USD) and Affiliate share (%).
+To list a bot, select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. The form includes Description and Tags with a Suggest a description and tags button that uses no credits. It also has Sale type and licence, Price (USD) and Affiliate share (%).
 
 You choose one of four licences: Personal use, Resell rights, Master resell rights or PLR. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
 
@@ -449,7 +449,7 @@ You choose one of four licences: Personal use, Resell rights, Master resell righ
 
 You can browse the Bot Market now. Select [Browse](https://lab.{{domain}}/market) then switch on 4 stars and up. Open three listings and note what each description says and which licence it uses. That's your research for the day you list one.
 
-That's the end of this series. If a question comes up look in the [help articles](https://{{domain}}/docs/) or ask the support team.
+That's the end of this series. If a question comes up, look in the [help articles](https://{{domain}}/docs/) or ask the support team.
 
 Happy building,
 

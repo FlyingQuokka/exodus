@@ -35,7 +35,7 @@ New topic: today is a map of what has opened up. The next nine emails take one i
 
 **What Master Botter adds**
 
-Master Botter includes everything in the plans below it. On top of that you have two features and a larger set of included credits:
+Master Botter includes everything in the plans below it. On top of that, you have two features and a larger set of included credits:
 
 1. [A/B tests](https://lab.{{domain}}/bots/ab-tests) - run two or more versions of a bot at once and see which one does better. You find it under Bots in the menu.
 2. Advanced analytics - a Conversion panel on the [Analytics](https://lab.{{domain}}/bots/analytics) page that sets Paywall views and Listing views against Purchases and Conversion.
@@ -72,7 +72,7 @@ Hi {{contact.first_name}},
 
 Recap: yesterday we covered what Master Botter adds and I said we'd take your first A/B test from a blank page to Start the test.
 
-New topic: today you set the test up. The next email gives you the wording to paste in but the structure comes first.
+New topic: today you set the test up. The next email gives you the wording to paste in, but the structure comes first.
 
 **How a test is built**
 
@@ -82,7 +82,7 @@ Select [A/B tests](https://lab.{{domain}}/bots/ab-tests) under Bots in the menu 
 
 Add a variant. Each variant has a Variant name, a Share (%) and its own Instructions and Starters. Press Add a variant for more. The shares of all versions must total 100%.
 
-Press Save and the test is stored as a Draft. Press Start the test when you're ready. While it's Running the same visitor always sees the same version, so a person's chat doesn't change halfway through.
+Press Save and the test is stored as a Draft. Press Start the test when you're ready. While it's Running, the same visitor always sees the same version, so a person's chat doesn't change halfway through.
 
 A test stops by itself if the bot is sold by Transfer or deleted. It also stops if your plan drops below Master Botter.
 
@@ -121,7 +121,7 @@ Hi {{contact.first_name}},
 
 Recap: last time you set up the test as a Draft and I said we'd look at what to test first, with five ideas and the wording to paste in.
 
-New topic: change one thing per test. If a variant differs in two ways you won't know which one caused the result.
+New topic: change one thing per test. If a variant differs in two ways, you won't know which one caused the result.
 
 **Five tests**
 
@@ -181,12 +181,12 @@ Hi {{contact.first_name}},
 
 Recap: last time you started a test and I said we'd look at which of the five measures to read first.
 
-New topic: the Results show five figures for each version. Each one answers a different question so pick one before you read.
+New topic: the Results show five figures for each version. Each one answers a different question, so pick one before you read.
 
 **The five measures**
 
 1. Conversations - how many chats each version had. It tells you whether the split is working and whether you have enough data yet.
-2. Messages per conversation - how long chats last. A higher figure can mean people are interested. It can also mean the bot isn't answering fully. Each message uses credits so read it with care.
+2. Messages per conversation - how long chats last. A higher figure can mean people are interested. It can also mean the bot isn't answering fully. Each message uses credits, so read it with care.
 3. Returning customers - who came back. This is the strongest sign that a version is useful.
 4. Paywall conversion - the share of that version's paywall views that led to a successful payment for access. It applies only to bots that sell access and shows No views if there were none.
 5. Revenue per conversation - your share of the access payments and message top-ups credited to that version, divided by its conversations. Bot Market sales are not included. It shows No data if there were no conversations.
@@ -235,7 +235,7 @@ Hi {{contact.first_name}},
 
 Recap: last time we looked at the five measures. I said we'd see what to do with a result and which of four buttons ends a test.
 
-New topic: when you finish a test you have four choices.
+New topic: when you finish a test, you have four choices.
 
 **The four buttons**
 
@@ -253,7 +253,7 @@ A small gap is not a result. For example, use this rule:
 > 3. If a version leads on that measure and isn't behind on Returning customers, choose it as the winner.
 > 4. If the gap is small, keep the control and test something bigger.
 
-Write down what you learned in one line. After five tests that list is the most useful document you own.
+Write down what you learned in one line. After five tests, that list is the most useful document you own.
 
 > Test: [WHAT I CHANGED]
 > Result: [WINNER OR CONTROL]
@@ -356,9 +356,9 @@ Change these on the bot itself. Price changes apply to new buyers only and exist
 2. Message cap, top-up size and top-up price.
 3. Money-back guarantee (No guarantee, 7 days or 14 days).
 4. The paywall description.
-5. The model. On a Public bot a model change means confirming declarations again and a dearer model uses more credits per message.
+5. The model. On a Public bot, a model change means confirming declarations again and a dearer model uses more credits per message.
 
-Change one setting. Note the date. Compare the same Date range before and after in [Analytics](https://lab.{{domain}}/bots/analytics). Don't change the control's own settings while a test runs because the results stop being comparable.
+Change one setting. Note the date. Compare the same Date range before and after in [Analytics](https://lab.{{domain}}/bots/analytics). Don't change the control's own settings while a test runs, because the results stop being comparable.
 
 **A change log**
 
@@ -402,7 +402,7 @@ New topic: every message in every version of a test uses your credits and so do 
 
 1. Daily credit limit. Open the bot from [Bot list](https://lab.{{domain}}/bots) then open Sharing and embed. Enter whole credits. Free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. It resets at midnight UTC and you're emailed once that day.
 2. Auto top-up. Open [Billing and credits](https://lab.{{domain}}/billing) then Auto top-up. Read the statement then press Agree and switch on. Set Top up when my credits fall below and the Top-up amount. It needs an active plan and a card on file. It emails you each time it charges.
-3. Warnings. You're emailed when credits fall below your top-up threshold and again when credits can't cover a message. At that point all your bots stop answering everyone until credits are added.
+3. Warnings. You're emailed when credits fall below your top-up threshold and again when credits can't cover a message. At that point, all your bots stop answering everyone until credits are added.
 
 The usage graph on Billing and credits shows Messages, Plan credits and Credits bought over time, so you can see which days run heavy.
 
@@ -448,7 +448,7 @@ New topic: every event the CRM connector sends carries the A/B variant. Your own
 
 Each event holds the event name, a tag, the customer's name and email address, the bot's name and slug, the A/B variant, the time and an event id. Only customers who ticked the box to share their details are included. Customers without an account are never sent.
 
-If you haven't connected your CRM yet open [Settings](https://lab.{{domain}}/settings) then CRM. You need a Webhook address and Your privacy notice. Then press Save and keep the signing secret that appears once. Press Send test event and Switch on. The [help article](https://{{domain}}/docs/crm-connector/) covers each step.
+If you haven't connected your CRM yet, open [Settings](https://lab.{{domain}}/settings) then CRM. You need a Webhook address and Your privacy notice. Then press Save and keep the signing secret that appears once. Press Send test event and Switch on. The [help article](https://{{domain}}/docs/crm-connector/) covers each step.
 
 **Segmenting by variant**
 
@@ -502,10 +502,10 @@ New topic: tests only help if you keep running them. A short weekly routine make
 
 Set a time each week and work through these four steps. Pick one bot at a time.
 
-1. Analytics. Open [Analytics](https://lab.{{domain}}/bots/analytics) in the menu. Note Conversations, Messages per conversation and credits used for the period. On a bot that sells access open the Conversion panel and note the four figures.
-2. A/B tests. Open [A/B tests](https://lab.{{domain}}/bots/ab-tests). If a test has reached your number finish it with Choose as winner, Keep the control or Stop the test. Then press Start a new test with the next idea from your list.
+1. Analytics. Open [Analytics](https://lab.{{domain}}/bots/analytics) in the menu. Note Conversations, Messages per conversation and credits used for the period. On a bot that sells access, open the Conversion panel and note the four figures.
+2. A/B tests. Open [A/B tests](https://lab.{{domain}}/bots/ab-tests). If a test has reached your number, finish it with Choose as winner, Keep the control or Stop the test. Then press Start a new test with the next idea from your list.
 3. Credits. Check the credits pill and the usage graph on [Billing and credits](https://lab.{{domain}}/billing). Make sure Auto top-up is on and a Daily credit limit is set for any bot under test.
-4. CRM. If your CRM is connected compare the segments for each variant of your running test.
+4. CRM. If your CRM is connected, compare the segments for each variant of your running test.
 
 Write one line in your change log for anything you changed.
 

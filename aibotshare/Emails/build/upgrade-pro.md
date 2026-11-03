@@ -35,7 +35,7 @@ New topic: today is a map of what has opened up. The next nine emails take one f
 
 **What Pro Botter adds**
 
-Pro Botter includes everything from the plans below it. That covers every model, the paywall, integrations, the affiliate programme and deeper analytics. On top of that you now have:
+Pro Botter includes everything from the plans below it. That covers every model, the paywall, integrations, the affiliate programme and deeper analytics. On top of that, you now have:
 
 1. [Bot styles](https://lab.{{domain}}/bot-styles) - your own colours, logo and fonts on a bot's chat page, paywall, embed and sign-up pages. You can also switch off the powered-by tag.
 2. Selling on Bot Market - list a bot for sale under your own licence terms.
@@ -47,13 +47,13 @@ The [Pricing](https://{{domain}}/pricing/) page lists the bot limit and the fee 
 
 **Where to find it**
 
-Bot styles now sits under Bots in the menu and [My listings](https://lab.{{domain}}/listings) sits under Bot Market. The [Create a bot](https://lab.{{domain}}/bots/create) page also shows two new sections called Style and Interest tags. In [Settings](https://lab.{{domain}}/settings) you will find Branding, CRM and Licence terms.
+Bot styles now sits under Bots in the menu and [My listings](https://lab.{{domain}}/listings) sits under Bot Market. The [Create a bot](https://lab.{{domain}}/bots/create) page also shows two new sections called Style and Interest tags. In [Settings](https://lab.{{domain}}/settings), you will find Branding, CRM and Licence terms.
 
 **Task for today**
 
-Choose the feature you want to try first. For example, if your bots live on your own website start with Bot styles. If you have a bot worth selling start with My listings. If you already keep a list of contacts start with the CRM connector.
+Choose the feature you want to try first. For example, if your bots live on your own website, start with Bot styles. If you have a bot worth selling, start with My listings. If you already keep a list of contacts, start with the CRM connector.
 
-All three have their own email soon so there is no need to do it today.
+All three have their own email soon, so there is no need to do it today.
 
 See you tomorrow,
 
@@ -89,7 +89,7 @@ Select [Bot styles](https://lab.{{domain}}/bot-styles) under Bots in the menu th
 3. Text and corners - Font, Chat text size (Small, Medium or Large) and Corners (Square, Soft or Round).
 4. What shows - Show the header, Show the bot's image and Show the powered-by tag.
 
-A live Preview updates as you work. If a colour pairing is hard to read the editor shows a contrast warning.
+A live Preview updates as you work. If a colour pairing is hard to read, the editor shows a contrast warning.
 
 A style changes the chat page, paywall, embed and sign-up pages for the bots that use it. It doesn't change the Botter's Lab itself.
 
@@ -201,7 +201,7 @@ New topic: that setting is the licence. You have four to choose from and your ow
 
 **The four licences**
 
-When you list a bot you choose Personal use, Resell rights, Master resell rights or PLR. A bot you built yourself carries no licence until you list it, so any of the four is open to you.
+When you list a bot, you choose Personal use, Resell rights, Master resell rights or PLR. A bot you built yourself carries no licence until you list it, so any of the four is open to you.
 
 The guide's table sets out what each one allows. These points help you choose:
 
@@ -210,13 +210,13 @@ The guide's table sets out what each one allows. These points help you choose:
 3. Master resell rights - the buyer can sell copies on Personal use or Resell rights. They can't see the instructions or knowledge files either.
 4. PLR - the buyer can rename and edit the bot.
 
-So if your instructions are the valuable part keep them private with one of the first three. If you want buyers to make the bot their own choose PLR.
+So if your instructions are the valuable part, keep them private with one of the first three. If you want buyers to make the bot their own, choose PLR.
 
 **Your licence terms**
 
 Open [Settings](https://lab.{{domain}}/settings) then Licence terms. Press Copy our template to start (this is a one-off copy) then edit it under Your licence terms. Press Save. The saved terms are checked. Botterverse doesn't give legal advice about them.
 
-A listing can't be submitted until the terms are saved. When you change them later press Notify my buyers. That emails every current licence holder a link to the terms page. Saving alone sends no email.
+A listing can't be submitted until the terms are saved. When you change them later, press Notify my buyers. That emails every current licence holder a link to the terms page. Saving alone sends no email.
 
 **A starting point**
 
@@ -265,11 +265,11 @@ Select [My profile](https://lab.{{domain}}/market/profile) under Bot Market to s
 2. 10 Sales - you've made ten verified sales.
 3. Top Rated - shown while you have enough Bot Market reviews with a high enough average (currently ten reviews averaging 4.5 stars or more).
 
-To set up payouts open [Payouts](https://lab.{{domain}}/payouts) then press Set up payouts. Follow the payment processor's own form. Botterverse never sees your bank details.
+To set up payouts, open [Payouts](https://lab.{{domain}}/payouts) then press Set up payouts. Follow the payment processor's own form. Botterverse never sees your bank details.
 
 **Replying to reviews**
 
-Reply from [Sales](https://lab.{{domain}}/sales). Press Reply then Post the reply. You can change it later with Edit the reply. To hear about each sale and review by email open [Settings](https://lab.{{domain}}/settings) and switch on Sales under Email notifications. Then press Save.
+Reply from [Sales](https://lab.{{domain}}/sales). Press Reply then Post the reply. You can change it later with Edit the reply. To hear about each sale and review by email, open [Settings](https://lab.{{domain}}/settings) and switch on Sales under Email notifications. Then press Save.
 
 **Two replies to start from**
 
@@ -323,11 +323,11 @@ Because only customers who agreed are included, turn on Require visitors to sign
 1. Open [Settings](https://lab.{{domain}}/settings) then CRM.
 2. Enter your Webhook address. It must start with https and it comes from your CRM.
 3. Enter Your privacy notice. This address is required and it's the one setting that must be right first, because customers follow it before they agree.
-4. Press Save. Your signing secret appears once so copy it somewhere safe. Your developer can use it to check each event (HMAC-SHA256 in the X-ABS-Signature header).
+4. Press Save. Your signing secret appears once, so copy it somewhere safe. Your developer can use it to check each event (HMAC-SHA256 in the X-ABS-Signature header).
 5. Press Send test event and check it arrives in your CRM.
 6. Press Switch on.
 
-Each event holds the event name, a tag, the time, the customer's name and email address and your bot's name and slug. Switch off, Replace secret and Disconnect sit on the same page. After repeated failures the connection switches itself off and you're emailed.
+Each event holds the event name, a tag, the time, the customer's name and email address and your bot's name and slug. Switch off, Replace secret and Disconnect sit on the same page. After repeated failures, the connection switches itself off and you're emailed.
 
 You become responsible for this data under data protection law and you must honour every unsubscribe.
 
@@ -417,7 +417,7 @@ New topic: today covers interest tags and the customer download. Both depend on 
 
 **Interest tags**
 
-An interest tag is a keyword rule. When a customer's message contains one of your words or phrases the tag is sent to your CRM, once per tag for each customer. Only the customer's messages are read and never the bot's replies. Matching is on whole words and ignores capital letters.
+An interest tag is a keyword rule. When a customer's message contains one of your words or phrases, the tag is sent to your CRM, once per tag for each customer. Only the customer's messages are read and never the bot's replies. Matching is on whole words and ignores capital letters.
 
 Open [Settings](https://lab.{{domain}}/settings) then CRM then Interest tags and press Add a rule. Fill in Tag and Keywords or phrases then choose Cover all my bots or pick under Bots this rule covers. Press Save. The [Create a bot](https://lab.{{domain}}/bots/create) page has an Interest tags section too (on a saved bot).
 
@@ -440,7 +440,7 @@ Because matching is on whole words, "price" won't match "pricing". List both.
 
 **The customer download**
 
-Under Settings then CRM then Your customers press Download customers (CSV). It lists the customers who agreed to share their details and haven't stopped, with their name, email address, the bot, where they agreed and the date. It never includes customers who didn't tick the box.
+Under Settings then CRM then Your customers, press Download customers (CSV). It lists the customers who agreed to share their details and haven't stopped, with their name, email address, the bot, where they agreed and the date. It never includes customers who didn't tick the box.
 
 Customers can stop sharing at any time under Shared with bot owners in their own Settings. Honour every unsubscribe in your CRM.
 
@@ -475,9 +475,9 @@ New topic: Pro Botter and above have priority support. A clear ticket helps the 
 
 **Where to ask**
 
-Select Support at the foot of the menu. It opens the help desk in a new tab and it has its own sign-in, separate from the Botter's Lab. If you've bought a plan or credits you already have a website account, so press Reset password beside "Forgot your password?". Otherwise use Create an account beside "Not registered?".
+Select Support at the foot of the menu. It opens the help desk in a new tab and it has its own sign-in, separate from the Botter's Lab. If you've bought a plan or credits, you already have a website account, so press Reset password beside "Forgot your password?". Otherwise, use Create an account beside "Not registered?".
 
-For a bug or an idea use the Feedback page instead. Choose the Type of Bug report or Feature suggestion. Help beside each page title opens that page's help article.
+For a bug or an idea, use the Feedback page instead. Choose the Type of Bug report or Feature suggestion. Help beside each page title opens that page's help article.
 
 **What a good ticket holds**
 
@@ -522,13 +522,13 @@ Hi {{contact.first_name}},
 
 Recap: last time we covered priority support and the lower fee. I said to picture two versions of your bot answering the same visitors.
 
-New topic: that's an A/B test. It's a Master Botter feature so you can't run one on your plan, but here is what it does.
+New topic: that's an A/B test. It's a Master Botter feature, so you can't run one on your plan, but here is what it does.
 
 **What it looks like**
 
 Open [A/B tests](https://lab.{{domain}}/bots/ab-tests) in the menu on Master Botter and you pick a bot. The bot as it stands is the control. You set the Control's share (%) then add a variant with its own Variant name, Share (%), Instructions and Starters. The shares must total 100%.
 
-While the test is Running the same visitor always sees the same version. The results show Conversations, Messages per conversation, Returning customers, Paywall conversion and Revenue per conversation for each version.
+While the test is Running, the same visitor always sees the same version. The results show Conversations, Messages per conversation, Returning customers, Paywall conversion and Revenue per conversation for each version.
 
 Master Botter also adds a Conversion panel to [Analytics](https://lab.{{domain}}/bots/analytics). It sets Paywall views and Listing views against Purchases so you can see where visitors stop. Price is never tested.
 

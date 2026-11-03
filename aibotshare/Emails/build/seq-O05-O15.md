@@ -49,7 +49,7 @@ Today is a short check-in with one thing worth a few minutes.
 
 **Pick up where you stopped**
 
-Sign in at https://lab.{{domain}}/login with your username and password. If you've forgotten your username press Forgotten username? and we'll email it to you.
+Sign in at https://lab.{{domain}}/login with your username and password. If you've forgotten your username, press Forgotten username? and we'll email it to you.
 
 Open [Bot list](https://lab.{{domain}}/bots) to see your bots and their status such as Running or Paused by you. A bot that's saved but never tested is a good place to start.
 
@@ -78,9 +78,9 @@ P.S. Next up: the quickest way to a working bot, if starting from a blank page i
 
 Hi {{contact.first_name}},
 
-Last time we suggested a quick Preview of one of your bots.
+Last time, we suggested a quick Preview of one of your bots.
 
-If starting from a blank page is what held you back there are two shortcuts.
+If starting from a blank page is what held you back, there are two shortcuts.
 
 **Import a bot**
 
@@ -90,7 +90,7 @@ You'll work through Instructions, Files, Integrations (optional) and Review. Not
 
 **Duplicate**
 
-If you already have a bot that works you can copy it with Duplicate. Open the bot from [Bot list](https://lab.{{domain}}/bots) and find it at the foot of the page. The copy is named with "Copy" on the end and starts as Personal.
+If you already have a bot that works, you can copy it with Duplicate. Open the bot from [Bot list](https://lab.{{domain}}/bots) and find it at the foot of the page. The copy is named with "Copy" on the end and starts as Personal.
 
 A copy counts towards your plan's bot limit like any other bot.
 
@@ -118,15 +118,15 @@ P.S. Next up: what to do if your plan no longer fits the way you use the Botter'
 
 Hi {{contact.first_name}},
 
-Last time we covered two shortcuts for starting a bot.
+Last time, we covered two shortcuts for starting a bot.
 
-Today is about the plan itself. If you don't need all of it a smaller plan may suit you better and here's how that works.
+Today is about the plan itself. If you don't need all of it, a smaller plan may suit you better and here's how that works.
 
 **Moving to a lower plan**
 
 The way to move down is to cancel your current plan on [Billing and credits](https://lab.{{domain}}/billing) and buy the lower plan once the current one ends. Open Your plan and press Cancel my plan. You'll keep your current plan until the end of the period you've paid for.
 
-Between the two plans your bots pause and their pages show as unavailable. They come back when your new plan starts, oldest first, up to the new plan's bot limit.
+Between the two plans, your bots pause and their pages show as unavailable. They come back when your new plan starts, oldest first, up to the new plan's bot limit.
 
 We'll email you reminders as the end date comes close. The [Pricing](https://{{domain}}/pricing/) page lists what each plan includes.
 
@@ -136,7 +136,7 @@ You don't need to do anything. Your plan and your bots stay as they are.
 
 **Task for today**
 
-Look at Your plan on Billing and credits and decide whether it matches how you use your bots. If you'd like to talk it through open the [Support](https://{{domain}}/support/) page.
+Look at Your plan on Billing and credits and decide whether it matches how you use your bots. If you'd like to talk it through, open the [Support](https://{{domain}}/support/) page.
 
 Whenever you're ready,
 
@@ -175,7 +175,7 @@ What was the main reason? A reply of a few words is plenty. These are the usual 
 
 **Task for today**
 
-Reply to this email with the number or a line of your own. If something didn't work as you expected you can also open the [Support](https://{{domain}}/support/) page and we'll look at it with you.
+Reply to this email with the number or a line of your own. If something didn't work as you expected, you can also open the [Support](https://{{domain}}/support/) page and we'll look at it with you.
 
 Thank you,
 
@@ -198,7 +198,7 @@ P.S. Next up: in a few weeks a short note on what is waiting in your account.
 
 Hi {{contact.first_name}},
 
-A few weeks ago we asked why you cancelled.
+A few weeks ago, we asked why you cancelled.
 
 Today is a short update. Your Botter's Lab account is still open and nothing in it has been removed.
 
@@ -237,13 +237,13 @@ P.S. Next up: a reminder of what your account still holds.
 
 Hi {{contact.first_name}},
 
-A month ago we told you your account is still here.
+A month ago, we told you your account is still here.
 
 This is a reminder of what it holds and how to take your work with you if you want to.
 
 **Still in your account**
 
-Your bots are paused with their data kept. If you built bots on knowledge files those files are still attached.
+Your bots are paused with their data kept. If you built bots on knowledge files, those files are still attached.
 
 **Taking your work with you**
 
@@ -279,7 +279,7 @@ Hi {{contact.first_name}},
 
 This is the last email in this series. We won't keep writing about your cancelled plan.
 
-Your account stays open and your bots stay saved. If you ever want to build again buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.
+Your account stays open and your bots stay saved. If you ever want to build again, buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.
 
 If something stopped you from staying and we could have helped, the [Feedback](https://{{domain}}/feedback/) page is open any time. We read every email.
 
@@ -307,7 +307,7 @@ We've refunded your payment. The money goes back to the card you paid with. Your
 
 Your Botter's Lab account stays open. If your plan has ended your bots are paused with their data kept and you can request an export from [Settings](https://lab.{{domain}}/settings).
 
-We'd value one thing in return. If you tell us what didn't work for you we can fix it. The [Feedback](https://{{domain}}/feedback/) page is the place for that. If you'd like to talk to someone open the [Support](https://{{domain}}/support/) page.
+We'd value one thing in return. If you tell us what didn't work for you, we can fix it. The [Feedback](https://{{domain}}/feedback/) page is the place for that. If you'd like to talk to someone, open the [Support](https://{{domain}}/support/) page.
 
 You're welcome back whenever it suits you,
 
@@ -344,9 +344,9 @@ Each commission waits for the refund period. After that Botterverse reviews it a
 
 **The rules**
 
-Referring yourself breaks the terms. The programme has a single level so only people you refer directly count.
+Referring yourself breaks the terms. The programme has a single level, so only people you refer directly count.
 
-If you move to Apprentice Botter or your plan ends you leave the programme and the commission you've earned stays yours. Moving back to Novice Botter or above restores it.
+If you move to Apprentice Botter or your plan ends, you leave the programme and the commission you've earned stays yours. Moving back to Novice Botter or above restores it.
 
 **Task for today**
 
@@ -375,7 +375,7 @@ P.S. Next up: what to say when you share your link. Plain wording you can adapt.
 
 Hi {{contact.first_name}},
 
-Yesterday you found Your link in [Affiliates](https://lab.{{domain}}/affiliates).
+Yesterday, you found Your link in [Affiliates](https://lab.{{domain}}/affiliates).
 
 Today is about what to say with it. Plain wording works better than a sales pitch.
 
@@ -389,7 +389,7 @@ Say what you built and how you use it. Then add your link. Please don't promise 
 
 Here's a starting point:
 
-> I built [WHAT YOUR BOT DOES] with Botterverse. You choose the AI model and share the bot by link or on your own website. If you'd like to try it here is my link: [YOUR LINK]
+> I built [WHAT YOUR BOT DOES] with Botterverse. You choose the AI model and share the bot by link or on your own website. If you'd like to try it, here is my link: [YOUR LINK]
 
 One tip: ask people to sign up with the email address they intend to use because that helps the referral reach you.
 
@@ -418,9 +418,9 @@ P.S. Next up: ready-made material in the Affiliates page so you don't start from
 
 Hi {{contact.first_name}},
 
-Last time we covered plain wording for sharing your link.
+Last time, we covered plain wording for sharing your link.
 
-Today you have a shortcut. The [Affiliates](https://lab.{{domain}}/affiliates) page of the Botter's Lab holds swipe material you can copy and adapt.
+Today, you have a shortcut. The [Affiliates](https://lab.{{domain}}/affiliates) page of the Botter's Lab holds swipe material you can copy and adapt.
 
 **How to use it**
 
@@ -453,7 +453,7 @@ P.S. Next up: a second way to earn commission, by promoting a Bot Market listing
 
 Hi {{contact.first_name}},
 
-Last time we pointed you to the swipe material in [Affiliates](https://lab.{{domain}}/affiliates).
+Last time, we pointed you to the swipe material in [Affiliates](https://lab.{{domain}}/affiliates).
 
 Today is about a second link. You can also promote a listing on the Bot Market and earn commission when someone buys through it.
 
@@ -463,7 +463,7 @@ Open [Browse](https://lab.{{domain}}/market) and find a listing you'd happily re
 
 The last link clicked counts within the affiliate period. Sellers set an Affiliate share on each listing and it's taken from what's left after the platform fee.
 
-The Bot Market is for members only so share the link with people who might build or buy bots. Affiliates shows Promoted listings with Sales and Commission earned.
+The Bot Market is for members only, so share the link with people who might build or buy bots. Affiliates shows Promoted listings with Sales and Commission earned.
 
 The [Bot Market help articles](https://{{domain}}/docs/browse-and-buy/) explain the rest.
 
@@ -492,7 +492,7 @@ P.S. Next up: what to check if your first referral hasn't arrived yet.
 
 Hi {{contact.first_name}},
 
-A week ago we showed you how to promote a Bot Market listing.
+A week ago, we showed you how to promote a Bot Market listing.
 
 Today is a check on how your link is doing and what to try if nothing has happened yet.
 
@@ -504,7 +504,7 @@ Subscription commissions shows each commission with its status such as Pending, 
 
 **If nothing has arrived yet**
 
-That's normal at the start. Put your link somewhere that stays visible such as your website or your email footer so it keeps working after you post.
+That's normal at the start. Put your link somewhere that stays visible such as your website or your email footer, so it keeps working after you post.
 
 Share it once in a place you haven't tried. Ask people to sign up with the email address they plan to use.
 
@@ -543,7 +543,7 @@ Open [Payouts](https://lab.{{domain}}/payouts) and look at Your earnings. The am
 
 Withdrawals are requested in the Botter's Lab. If you haven't yet, press Set up payouts on the Payouts page and finish the form. We never see your bank details.
 
-Once your earnings reach the smallest withdrawal shown on Payouts the Withdraw card lets you choose an amount and press Show the fees. Some withdrawals are sent on set days or by hand so each one shows its status.
+Once your earnings reach the smallest withdrawal shown on Payouts, the Withdraw card lets you choose an amount and press Show the fees. Some withdrawals are sent on set days or by hand, so each one shows its status.
 
 **Task for today**
 
@@ -576,7 +576,7 @@ We'd like to hear how it's going because Botters who sell can tell us things nob
 
 What made you decide to sell a bot? What was the hardest part? What one thing would you change in the Botter's Lab?
 
-You can answer in a line each. If you've found a bug or have an idea for a feature the [Feedback](https://{{domain}}/feedback/) page takes both.
+You can answer in a line each. If you've found a bug or have an idea for a feature, the [Feedback](https://{{domain}}/feedback/) page takes both.
 
 **Task for today**
 
@@ -611,7 +611,7 @@ Buyers can ask for a refund within the refund period, which is 14 days at most. 
 
 **Withdrawing**
 
-Withdrawals are requested in the Botter's Lab. Open Payouts and press Set up payouts if you haven't yet. The minimum withdrawal is $50. When an amount is available press Withdraw and follow the steps. Some withdrawals are sent on set days or by hand so each one shows its status.
+Withdrawals are requested in the Botter's Lab. Open Payouts and press Set up payouts if you haven't yet. The minimum withdrawal is $50. When an amount is available, press Withdraw and follow the steps. Some withdrawals are sent on set days or by hand, so each one shows its status.
 
 **Task for today**
 
@@ -674,9 +674,9 @@ P.S. Next up: how reviews and badges build trust in your listing.
 
 Hi {{contact.first_name}},
 
-Last time we covered tips for your listing.
+Last time, we covered tips for your listing.
 
-Buyers look for signs of trust so today is about reviews and badges.
+Buyers look for signs of trust, so today is about reviews and badges.
 
 **Reviews**
 
@@ -686,7 +686,7 @@ Buyers who bought your bot can leave a review marked Verified purchase. Open [Sa
 
 Your profile page [My profile](https://lab.{{domain}}/market/profile) shows badges. Verified Seller appears once you've been paid out or set up payouts. 10 Sales appears after ten verified sales and Top Rated appears while you have enough Bot Market reviews with a high enough average (currently ten reviews averaging 4.5 stars or more).
 
-Badges show only while their condition holds so a badge can disappear if it no longer applies.
+Badges show only while their condition holds, so a badge can disappear if it no longer applies.
 
 **Task for today**
 
@@ -717,13 +717,13 @@ Your new bot is in [Bot list](https://lab.{{domain}}/bots) marked Purchased. It 
 
 Open [Bots I bought](https://lab.{{domain}}/my-bots) and select Licence terms. The licence says what you can do with the bot such as resell it or use it for yourself.
 
-Integrations arrive switched off and their passwords and keys never move. If the bot uses one enter your own credentials and switch it on. Then confirm the declarations.
+Integrations arrive switched off and their passwords and keys never move. If the bot uses one, enter your own credentials and switch it on. Then confirm the declarations.
 
 Preview the bot before anyone else sees it. Preview uses your credits.
 
 **If it doesn't work**
 
-If the bot doesn't work or isn't as described press Request a refund and tell us why. The Botter Support Team decides. Putting the bot on sale or making it Public ends the right to a refund.
+If the bot doesn't work or isn't as described, press Request a refund and tell us why. The Botter Support Team decides. Putting the bot on sale or making it Public ends the right to a refund.
 
 The [Bot Market help articles](https://{{domain}}/docs/browse-and-buy/) cover each step.
 
@@ -752,15 +752,15 @@ P.S. Next up: a review and why it matters to the next buyer.
 
 Hi {{contact.first_name}},
 
-Last time we covered what to check when you open a bought bot.
+Last time, we covered what to check when you open a bought bot.
 
-If you've used it for a while a review now helps the next person decide.
+If you've used it for a while, a review now helps the next person decide.
 
 **Leaving a review**
 
 Open [Bots I bought](https://lab.{{domain}}/my-bots) and select Leave a review. Choose Your rating from 1 to 5 and add Your review if you like. The text is optional. Press Publish the review.
 
-Your review shows with a Verified purchase mark so it carries weight. An honest review helps buyers and sellers alike.
+Your review shows with a Verified purchase mark, so it carries weight. An honest review helps buyers and sellers alike.
 
 **Task for today**
 
@@ -791,7 +791,7 @@ You've brought a bot across from a GPT. Before anyone uses it, check how it beha
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) and use Preview. Ask the questions your GPT handled well and a few it should refuse. Preview uses your credits.
 
-The import is paste-only and it doesn't connect to your old account. The Review step listed what was Not carried across so check that list for anything you need to rebuild.
+The import is paste-only and it doesn't connect to your old account. The Review step listed what was Not carried across, so check that list for anything you need to rebuild.
 
 **Rebuild actions as integrations**
 
@@ -830,9 +830,9 @@ You receive an email each time it happens. Here's where to see and change it.
 
 Open [Billing and credits](https://lab.{{domain}}/billing) and find Auto top-up. Top up when my credits fall below sets the level that triggers a top-up and Top-up amount sets how much is added.
 
-A daily cap pauses it until midnight UTC and we email you when that happens. After that it tries again the next time your credits are used while the balance is below your level.
+A daily cap pauses it until midnight UTC and we email you when that happens. After that, it tries again the next time your credits are used while the balance is below your level.
 
-If your card is declined twice it switches off and we email you. Press Agree and switch on to turn it back on.
+If your card is declined twice, it switches off and we email you. Press Agree and switch on to turn it back on.
 
 **Task for today**
 
@@ -859,15 +859,15 @@ P.S. Next up: a few ways to make your credits go further.
 
 Hi {{contact.first_name}},
 
-Last time we covered auto top-up and where to change it.
+Last time, we covered auto top-up and where to change it.
 
 Today is about using fewer credits for the same job.
 
 **Four ways**
 
-1. Choose the model with care. A dearer model uses more credits per message so use one only where the answers need it.
-2. Open the bot from [Bot list](https://lab.{{domain}}/bots) and set a Daily credit limit in Sharing and embed. At the limit free visitors are told the bot has reached its limit for the day.
-3. If you sell access set a Message cap. Each buyer message is paid from your credits so the cap protects you.
+1. Choose the model with care. A dearer model uses more credits per message, so use one only where the answers need it.
+2. Open the bot from [Bot list](https://lab.{{domain}}/bots) and set a Daily credit limit in Sharing and embed. At the limit, free visitors are told the bot has reached its limit for the day.
+3. If you sell access, set a Message cap. Each buyer message is paid from your credits, so the cap protects you.
 4. Check Usage this month on the [Dashboard](https://lab.{{domain}}/) and the usage graph on [Billing and credits](https://lab.{{domain}}/billing) to see which days cost most.
 
 Uploading knowledge files and the importer use no credits. Preview does.
@@ -921,9 +921,9 @@ Hi {{contact.first_name}},
 
 Your plan ends tomorrow. The [Billing and credits](https://lab.{{domain}}/billing) page shows the exact time.
 
-**Moving to a different plan?** Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active your bots pause and their pages show as unavailable so buying straight away keeps them running for your visitors.
+**Moving to a different plan?** Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.
 
-Use the same email address as your Botter's Lab account so your new plan reaches it. If you have a Founders coupon type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
+Use the same email address as your Botter's Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
 
 **Changed your mind?** Press Keep my plan on the Billing and credits page.
 
@@ -943,7 +943,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Today's the day. Your plan ends later today at the time shown on the [Billing and credits](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended so you can buy your new plan straight away.
+Today's the day. Your plan ends later today at the time shown on the [Billing and credits](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended, so you can buy your new plan straight away.
 
 **Have these ready:** the email address of your Botter's Lab account and your Founders coupon if you have one.
 
@@ -965,15 +965,15 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your plan has ended so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.
+Your plan has ended, so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.
 
 **[See the plans](https://{{domain}}/pricing/)**
 
-Use the same email address as your Botter's Lab account. If you have a Founders coupon remember to type it at checkout.
+Use the same email address as your Botter's Lab account. If you have a Founders coupon, remember to type it at checkout.
 
 Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
 
-If you're on an annual plan and were due a refund for whole unused months it goes back to your card within a day.
+If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.
 
 If you're leaving, thank you. Your account stays here if you ever come back.
 

@@ -45,7 +45,7 @@ Thank you for your purchase. This email holds the two links you need to start.
 1. Set the password for your billing login: {{billing_password_link}}. The billing login is where you find invoices, change your card and cancel your plan. The link works once and expires after 24 hours.
 2. Create your Botter's Lab account: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
 
-If you already have a Botter's Lab account under this email address you only need to sign in and verify your email address. Your plan is added automatically.
+If you already have a Botter's Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
 Your Botter Support Team
 
@@ -64,11 +64,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Thank you for your purchase. You already have a help desk sign-in under this email address so we haven't created a separate billing login.
+Thank you for your purchase. You already have a help desk sign-in under this email address, so we haven't created a separate billing login.
 
-Use your help desk sign-in for invoices and card changes. To start building create your Botter's Lab account here: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
+Use your help desk sign-in for invoices and card changes. To start building, create your Botter's Lab account here: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
 
-If you already have a Botter's Lab account under this email address you only need to sign in and verify your email address. Your plan is added automatically.
+If you already have a Botter's Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
 Your Botter Support Team
 
@@ -89,7 +89,7 @@ Hi {{contact.first_name}},
 
 Your Botter's Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.
 
-Some things stay closed until you do. For example you can't make a bot Public or submit a listing. If you paid for your plan before creating your account the plan and its credits are added once you confirm.
+Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its credits are added once you confirm.
 
 Your Botter Support Team
 
@@ -111,7 +111,7 @@ Hi {{contact.first_name}},
 
 You asked us to send the link again. Here is a fresh one: {{confirmation_link}}. It works for 60 minutes.
 
-Once you confirm your email address making a bot Public and submitting a listing open up.
+Once you confirm your email address, making a bot Public and submitting a listing open up.
 
 Your Botter Support Team
 
@@ -130,7 +130,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You've confirmed your email address so your plan and its credits have been added to your Botter's Lab account.
+You've confirmed your email address, so your plan and its credits have been added to your Botter's Lab account.
 
 [Sign in](https://lab.{{domain}}/login) with your username and your password. Your [Dashboard](https://lab.{{domain}}/) shows your credit balance and how many bots your plan allows.
 
@@ -150,9 +150,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-We received a request to choose a new password for your Botter's Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link the earlier one stops working.
+We received a request to choose a new password for your Botter's Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link, the earlier one stops working.
 
-If you didn't ask for this you can ignore this email and your password stays as it is.
+If you didn't ask for this, you can ignore this email and your password stays as it is.
 
 Your Botter Support Team
 
@@ -193,9 +193,9 @@ Hi {{contact.first_name}},
 
 You asked to reset the password for your billing login. Use this link: {{reset_link}}.
 
-The link works once and expires after 24 hours. Your billing login is separate from your Botter's Lab sign-in so this doesn't change your Botter's Lab password.
+The link works once and expires after 24 hours. Your billing login is separate from your Botter's Lab sign-in, so this doesn't change your Botter's Lab password.
 
-If you didn't ask for this you can ignore this email.
+If you didn't ask for this, you can ignore this email.
 
 Your Botter Support Team
 
@@ -215,7 +215,7 @@ Hi {{contact.first_name}},
 
 You asked to change the email address on your Botter's Lab account to this one. Confirm the change with this link: {{confirmation_link}}.
 
-Your change also carries to your billing account. If you didn't ask for this you can ignore this email.
+Your change also carries to your billing account. If you didn't ask for this, you can ignore this email.
 
 Your Botter Support Team
 
@@ -235,7 +235,7 @@ Hi {{contact.first_name}},
 
 Someone asked to change the email address on your Botter's Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.
 
-If this was you there is nothing to do. If it wasn't you please contact the Botter Support Team at https://{{domain}}/support/ and change your password in [Settings](https://lab.{{domain}}/settings).
+If this was you, there is nothing to do. If it wasn't you, please contact the Botter Support Team at https://{{domain}}/support/ and change your password in [Settings](https://lab.{{domain}}/settings).
 
 Your Botter Support Team
 
@@ -256,7 +256,7 @@ Hi {{contact.first_name}},
 
 The email address on your Botter's Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.
 
-If you didn't make this change please contact the Botter Support Team at https://{{domain}}/support/ straight away.
+If you didn't make this change, please contact the Botter Support Team at https://{{domain}}/support/ straight away.
 
 Your Botter Support Team
 
@@ -297,7 +297,7 @@ Hi {{contact.first_name}},
 
 The password for your Botter's Lab account has just been changed.
 
-If this was you there is nothing to do. If it wasn't you use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/.
+If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/.
 
 Your Botter Support Team
 
@@ -316,7 +316,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The model provider refused the text of {{bot_name}} so the bot is now Personal. A Personal bot can't be shared or embedded and has no customers.
+The model provider refused the text of {{bot_name}}, so the bot is now Personal. A Personal bot can't be shared or embedded and has no customers.
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) to see the reason shown there. Change what the provider objected to and press Save. Then press Make Public again.
 
@@ -336,11 +336,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The check found that {{bot_name}} falls into a category that isn't allowed: {{blocked_categories}}. The bot is now Personal so its link and embed have stopped and it has no customers.
+The check found that {{bot_name}} falls into a category that isn't allowed: {{blocked_categories}}. The bot is now Personal, so its link and embed have stopped and it has no customers.
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) and review its name, description, instructions and knowledge files. Press Save then Make Public once the text is changed. The full list of banned categories is in the terms.
 
-If you think the check was wrong contact the Botter Support Team at https://{{domain}}/support/.
+If you think the check was wrong, contact the Botter Support Team at https://{{domain}}/support/.
 
 Your Botter Support Team
 
@@ -358,7 +358,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The declarations for {{bot_name}} weren't confirmed again in the time allowed so the bot has been switched to Personal. Its link and embed have stopped and it has no customers.
+The declarations for {{bot_name}} weren't confirmed again in the time allowed, so the bot has been switched to Personal. Its link and embed have stopped and it has no customers.
 
 Declarations need confirming again after a model change, an integration change, a knowledge change or a new finding by the check. Open the bot from [Bot list](https://lab.{{domain}}/bots) and go to Mode. Tick the declarations that apply and press Confirm declarations. Then press Make Public.
 
@@ -381,7 +381,7 @@ Hi {{contact.first_name}},
 
 {{bot_name}} has reached its Daily credit limit for today. Free visitors are told the bot has reached its limit for the day. Paid buyers and you can carry on.
 
-The limit resets at midnight UTC. To change it open the bot from [Bot list](https://lab.{{domain}}/bots) and go to Sharing and embed. Enter a new Daily credit limit and press Save. You'll receive this email once per day.
+The limit resets at midnight UTC. To change it, open the bot from [Bot list](https://lab.{{domain}}/bots) and go to Sharing and embed. Enter a new Daily credit limit and press Save. You'll receive this email once per day.
 
 Your Botter Support Team
 
@@ -403,7 +403,7 @@ Hi [first name],
 
 [bot name] has been paused by the Botter Support Team. Its status in your Bot list now reads Paused by the Botter Support Team. Only the Botter Support Team can unpause it.
 
-To find out more or to ask for a review contact the Botter Support Team through the Support link in the menu. Please include your username and the name of the bot.
+To find out more or to ask for a review, contact the Botter Support Team through the Support link in the menu. Please include your username and the name of the bot.
 
 Your Botter Support Team
 
@@ -430,7 +430,7 @@ Your plan has changed, so some of what your account can do has changed with it.
 
 Bots over your new plan's limit are paused, the most recently created first. You can choose which to keep running from your Bot list. Upgrading again starts them all.
 
-Paywalls, listings and bot styles follow the features of your plan. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
+Paywalls, listings and bot styles follow the features of your plan. Remaining credits from any credit packs you bought are untouched. Your included credits change to your new plan's at your next renewal.
 
 [Open your Bot list]
 [Open Billing and credits]
@@ -456,7 +456,7 @@ Your plan has ended. Your account is still open and your data is kept.
 Your bots are paused until you buy a plan again.
    * Bots paused: {{ paused_bot_count }}
 
-When your new plan starts your bots come back, oldest first, up to the new plan's bot limit. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
+When your new plan starts, your bots come back, oldest first, up to the new plan's bot limit. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
 
 [See the plans]
 [Open Billing and credits]
@@ -501,7 +501,7 @@ Hi {{contact.first_name}},
 
 A buyer has sent a Money-back guarantee claim on {{bot_name}}. Open [Sales](https://lab.{{domain}}/sales) to see the claim and the reason given.
 
-You can press Refund or press Ask the Botter Support Team to review. If you do nothing the claim is refunded automatically on {{refund_date}}. A guarantee refund takes the full price from your earnings even if that takes them below zero.
+You can press Refund or press Ask the Botter Support Team to review. If you do nothing, the claim is refunded automatically on {{refund_date}}. A guarantee refund takes the full price from your earnings even if that takes them below zero.
 
 Your Botter Support Team
 
@@ -521,7 +521,7 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and the amount of {{amount}} is being refunded to you. Your bank may take a few days to show it.
 
-Your access to the bot ends once the refund has settled. If you have a question about the refund contact the Botter Support Team at https://{{domain}}/support/.
+Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the Botter Support Team at https://{{domain}}/support/.
 
 Your Botter Support Team
 
@@ -542,7 +542,7 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and it wasn't approved for a refund.
 
-If you'd like this looked at again contact the Botter Support Team at https://{{domain}}/support/. Please say which bot it was and what happened.
+If you'd like this looked at again, contact the Botter Support Team at https://{{domain}}/support/. Please say which bot it was and what happened.
 
 Your Botter Support Team
 
@@ -561,9 +561,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time so it has been refunded automatically.
+The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time, so it has been refunded automatically.
 
-The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it contact the Botter Support Team at https://{{domain}}/support/.
+The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the Botter Support Team at https://{{domain}}/support/.
 
 Your Botter Support Team
 
@@ -583,7 +583,7 @@ Hi {{contact.first_name}},
 
 Your payment for {{bot_name}} is confirmed. The bot is in your [Bot list](https://lab.{{domain}}/bots) and is marked Purchased.
 
-Before you use it with customers enter the credentials for any integrations and switch each one on. Then confirm the declarations. The bot runs on your own credits. You can read the terms any time under Licence terms on the bot.
+Before you use it with customers, enter the credentials for any integrations and switch each one on. Then confirm the declarations. The bot runs on your own credits. You can read the terms any time under Licence terms on the bot.
 
 Your Botter Support Team
 
@@ -622,7 +622,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The Botter Support Team has approved your refund request for {{bot_name}}. The refund is {{amount}} which is the price you paid less a processing fee.
+The Botter Support Team has approved your refund request for {{bot_name}}. The refund is {{amount}}, which is the price you paid less a processing fee.
 
 Nothing more is needed from you.
 
@@ -644,7 +644,7 @@ Hi {{contact.first_name}},
 
 The Botter Support Team has looked at your refund request for {{bot_name}} and it wasn't approved. A refund is only approved when the bot does not work or isn't as described.
 
-If you have more to add contact the Botter Support Team at https://{{domain}}/support/ and include the exact wording of any messages you saw.
+If you have more to add, contact the Botter Support Team at https://{{domain}}/support/ and include the exact wording of any messages you saw.
 
 Your Botter Support Team
 
@@ -685,7 +685,7 @@ Hi {{contact.first_name}},
 
 The seller of {{bot_name}} has updated the licence terms for the bot. You can read them here: {{licence_terms_link}}.
 
-You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms contact the Botter Support Team at https://{{domain}}/support/. Botterverse doesn't give legal advice about licence terms.
+You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms, contact the Botter Support Team at https://{{domain}}/support/. Botterverse doesn't give legal advice about licence terms.
 
 Your Botter Support Team
 
@@ -747,7 +747,7 @@ Hi {{contact.first_name}},
 
 A commission of {{commission_amount}} has been recorded for you. Open [Affiliates](https://lab.{{domain}}/affiliates) to see its status.
 
-A commission waits for the refund period before it is paid into your earnings. Once it is paid you can withdraw it. You receive this email because Sales is switched on under Email notifications in [Settings](https://lab.{{domain}}/settings).
+A commission waits for the refund period before it is paid into your earnings. Once it is paid, you can withdraw it. You receive this email because Sales is switched on under Email notifications in [Settings](https://lab.{{domain}}/settings).
 
 Your Botter Support Team
 
@@ -790,7 +790,7 @@ Hi {{contact.first_name}},
 
 The Botter Support Team has finished setting up your payouts. Payouts are set up on your account now.
 
-Open [Payouts](https://lab.{{domain}}/payouts) to see your earnings. When you want to withdraw use the Withdraw card there.
+Open [Payouts](https://lab.{{domain}}/payouts) to see your earnings. When you want to withdraw, use the Withdraw card there.
 
 Your Botter Support Team
 
@@ -810,7 +810,7 @@ Hi {{contact.first_name}},
 
 Your withdrawal has been sent and is on its way to your bank. The amount sent is {{sent_amount}} after a payout fee of {{fee_amount}}. Its status in [Payouts](https://lab.{{domain}}/payouts) reads Sent. It changes to Paid into your bank account once it arrives.
 
-Open Payouts and look at Withdrawals to follow it. The fees for your withdrawal were shown before you confirmed it. If the actual fee is lower the difference returns to your earnings.
+Open Payouts and look at Withdrawals to follow it. The fees for your withdrawal were shown before you confirmed it. If the actual fee is lower, the difference returns to your earnings.
 
 Your Botter Support Team
 

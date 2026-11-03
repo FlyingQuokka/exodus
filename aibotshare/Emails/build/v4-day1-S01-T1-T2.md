@@ -36,9 +36,9 @@ For help you have the [help articles](https://{{domain}}/docs/), a feedback form
 2. Confirm your email address from the message we send you. Your plan is set up as soon as you do.
 3. Set the password for your billing login from the link in your purchase receipt. That link works once and expires after 24 hours.
 
-A short tour of the Botter's Lab arrives in five minutes. Once your account is confirmed we'll show you how to bring in a bot you already have.
+A short tour of the Botter's Lab arrives in five minutes. Once your account is confirmed, we'll show you how to bring in a bot you already have.
 
-Within three days you'll have a bot built and shared. After that we'll move on to ways to earn from it and the features your plan unlocks.
+Within three days, you'll have a bot built and shared. After that, we'll move on to ways to earn from it and the features your plan unlocks.
 
 **Task for today**
 
@@ -95,7 +95,7 @@ Your plan name shows under your name at the top right. A page your plan doesn't 
 
 [Sign in](https://lab.{{domain}}/login) with your username and tick Keep me signed in. Then find your Credit balance on the Dashboard and open Bot list to see where your bots will live.
 
-For a quick win press the theme button at the top to switch between Pleasant Pink and Nightshift.
+For a quick win, press the theme button at the top to switch between Pleasant Pink and Nightshift.
 
 See you shortly,
 
@@ -118,7 +118,7 @@ P.S. Next up: bringing a bot you already have into the Botter's Lab.
 
 Hi {{contact.first_name}},
 
-Recap: earlier today you had a tour of signing in, the Dashboard and the menu. Your account is confirmed and your plan is in place.
+Recap: earlier today, you had a tour of signing in, the Dashboard and the menu. Your account is confirmed and your plan is in place.
 
 New topic: if you already have a bot somewhere else you don't need to start again. [Import a bot](https://lab.{{domain}}/bots/import) brings it into the Botter's Lab by pasting and uses no credits.
 
@@ -139,7 +139,7 @@ The bot opens in the builder as Personal, so only you can use it. It counts towa
 
 Import one bot. Read Not carried across before you change anything and then try the bot in Preview. Preview uses your credits.
 
-If you have no bot to bring in you don't need to do anything today because tomorrow's email builds one with you.
+If you have no bot to bring in, you don't need to do anything today because tomorrow's email builds one with you.
 
 Welcome home,
 
@@ -164,9 +164,9 @@ P.S. Next up: how to build a bot from scratch in a single sitting.
 
 Hi {{contact.first_name}},
 
-Your plan was bought with the Founders coupon so you're a Founder. That stays with you for life.
+Your plan was bought with the Founders coupon, so you're a Founder. That stays with you for life.
 
-The coupon works on every plan. It doesn't carry over to a new plan by itself so enter the code at the checkout each time you [change plan](https://lab.{{domain}}/billing).
+The coupon works on every plan. It doesn't carry over to a new plan by itself, so enter the code at the checkout each time you [change plan](https://lab.{{domain}}/billing).
 
 Keep the code somewhere safe so you have it when you need it.
 

@@ -34,7 +34,7 @@ Shared notes:
 
 Hi {{contact.first_name}},
 
-You joined our list so here is the short version of what Botterverse is. Custom GPTs are being switched off and many people who built one are looking for somewhere to take it.
+You joined our list, so here is the short version of what Botterverse is. Custom GPTs are being switched off and many people who built one are looking for somewhere to take it.
 
 **What you can do here**
 
@@ -48,7 +48,7 @@ Every bot is checked before it can be made Public. Its Certified by Botterverse 
 
 **Next step**
 
-Open the [FAQ](https://{{domain}}/faq/) and read the question that matches your biggest doubt. If yours isn't there you can ask through [Support](https://{{domain}}/support/).
+Open the [FAQ](https://{{domain}}/faq/) and read the question that matches your biggest doubt. If yours isn't there, you can ask through [Support](https://{{domain}}/support/).
 
 Talk soon,
 
@@ -71,19 +71,19 @@ P.S. Next up: you've built a custom GPT already? Whether you have to start again
 
 Hi {{contact.first_name}},
 
-In the last email I asked whether you have to start again if you've built a custom GPT already. The short answer is no.
+In the last email, I asked whether you have to start again if you've built a custom GPT already. The short answer is no.
 
 **Import a bot**
 
-Botterverse has a page called [Import a bot](https://lab.{{domain}}/bots/import). You paste in your GPT's instructions and add its files. It doesn't connect to your OpenAI account so you bring the content across yourself.
+Botterverse has a page called [Import a bot](https://lab.{{domain}}/bots/import). You paste in your GPT's instructions and add its files. It doesn't connect to your OpenAI account, so you bring the content across yourself.
 
-The steps are Instructions, Files, Integrations and Review. In Review you see a suggested name, description, category and conversation starters. A list called Not carried across shows anything that couldn't move.
+The steps are Instructions, Files, Integrations and Review. In Review, you see a suggested name, description, category and conversation starters. A list called Not carried across shows anything that couldn't move.
 
 Nothing is saved until you press Create bot and it opens as a bot only you can see. Importing uses no credits.
 
 **A note on actions**
 
-If your GPT used actions you rebuild them as integrations. Integrations start on the Novice Botter plan and the [Pricing](https://{{domain}}/pricing/) page lists what each plan adds.
+If your GPT used actions, you rebuild them as integrations. Integrations start on the Novice Botter plan and the [Pricing](https://{{domain}}/pricing/) page lists what each plan adds.
 
 **Next step**
 
@@ -110,7 +110,7 @@ P.S. Next up: who pays when people chat with a bot and how to keep that predicta
 
 Hi {{contact.first_name}},
 
-Last time we covered bringing a GPT across with [Import a bot](https://lab.{{domain}}/bots/import). The next thing most people ask about is who pays when people chat with a bot.
+Last time, we covered bringing a GPT across with [Import a bot](https://lab.{{domain}}/bots/import). The next thing most people ask about is who pays when people chat with a bot.
 
 **Credits**
 
@@ -149,11 +149,11 @@ P.S. Next up: what happens when someone pays to use a bot and what Botterverse k
 
 Hi {{contact.first_name}},
 
-In the last email we looked at who pays when people chat and how limits keep it predictable. Today is the other side: what happens when a visitor pays to use your bot.
+In the last email, we looked at who pays when people chat and how limits keep it predictable. Today is the other side: what happens when a visitor pays to use your bot.
 
 **The paywall**
 
-From the Novice Botter plan you can put a one-time price on a bot. A buyer pays once then chats. You can add a Message cap with a top-up and a money-back guarantee of 7 or 14 days if you want one. There's no subscription for the buyer.
+From the Novice Botter plan, you can put a one-time price on a bot. A buyer pays once then chats. You can add a Message cap with a top-up and a money-back guarantee of 7 or 14 days if you want one. There's no subscription for the buyer.
 
 **The fee**
 
@@ -188,7 +188,7 @@ P.S. Next up: which plan suits what you want to do.
 
 Hi {{contact.first_name}},
 
-Last time we covered what happens when someone pays to use a bot. This email is about choosing a plan to match.
+Last time, we covered what happens when someone pays to use a bot. This email is about choosing a plan to match.
 
 **Start with what you need to do**
 
@@ -250,7 +250,7 @@ Botterverse is open. You can choose a plan and build your first bot today.
 
 You build an AI bot from your own instructions and files on the model you choose. You share it by a link or on your own website and can sell access to it if you want to. There's no code.
 
-It's made for coaches, consultants, course creators and anyone with an audience. If you've built a custom GPT you can bring it across and you don't have to start again.
+It's made for coaches, consultants, course creators and anyone with an audience. If you've built a custom GPT, you can bring it across and you don't have to start again.
 
 **What happens when you join**
 
@@ -280,7 +280,7 @@ P.S. Next up: what a first bot could do.
 
 Hi {{contact.first_name}},
 
-Last time I asked what a first bot could do. Here are some ideas to start from.
+Last time, I asked what a first bot could do. Here are some ideas to start from.
 
 **Examples**
 
@@ -318,7 +318,7 @@ P.S. Next up: how a visitor reaches your bot and who checks it.
 
 Hi {{contact.first_name}},
 
-In the last email we looked at what a first bot could do. Next is how people reach it and what they're told before they chat.
+In the last email, we looked at what a first bot could do. Next is how people reach it and what they're told before they chat.
 
 **Two ways in**
 
@@ -326,9 +326,9 @@ Every Public bot has its own page with your username in the address and a Share 
 
 **Every bot is checked**
 
-Every bot is checked before it can be made Public and every bot starts as Personal so only you can use it. You press Make Public when you're ready.
+Every bot is checked before it can be made Public and every bot starts as Personal, so only you can use it. You press Make Public when you're ready.
 
-Each bot has a Certified by Botterverse page. It shows who owns the bot, the model it runs on and what the owner declared. It doesn't vouch for the answers so you preview your bot and test it before anyone else sees it.
+Each bot has a Certified by Botterverse page. It shows who owns the bot, the model it runs on and what the owner declared. It doesn't vouch for the answers, so you preview your bot and test it before anyone else sees it.
 
 **Next step**
 
@@ -354,11 +354,11 @@ P.S. Next up: putting a price on a bot.
 
 Hi {{contact.first_name}},
 
-Last time we covered how visitors reach a bot and how bots are checked. Today we look at charging for access.
+Last time, we covered how visitors reach a bot and how bots are checked. Today, we look at charging for access.
 
 **The paywall**
 
-From the Novice Botter plan you can sell access to a bot for a one-time price. A buyer pays once and chats. You can set a Message cap with a top-up size and price plus a money-back guarantee of 7 or 14 days.
+From the Novice Botter plan, you can sell access to a bot for a one-time price. A buyer pays once and chats. You can set a Message cap with a top-up size and price plus a money-back guarantee of 7 or 14 days.
 
 Botterverse takes one fee from each sale and the [Pricing](https://{{domain}}/pricing/) page lists it. Your earnings from a sale are what remains.
 
@@ -390,7 +390,7 @@ P.S. Next up: what chatting costs and how to cap it.
 
 Hi {{contact.first_name}},
 
-In the last email we looked at putting a price on a bot. The cost on your side is credits.
+In the last email, we looked at putting a price on a bot. The cost on your side is credits.
 
 **Who pays**
 
@@ -400,7 +400,7 @@ Your plan includes credits each month and they reset at renewal. Credits you buy
 
 **Caps**
 
-Set a Daily credit limit on a bot and a Message cap on a paid bot so a busy day can't use up your balance. Auto top-up is off until you switch it on.
+Set a Daily credit limit on a bot and a Message cap on a paid bot, so a busy day can't use up your balance. Auto top-up is off until you switch it on.
 
 **Next step**
 
@@ -426,15 +426,15 @@ P.S. Next up: Bot Market and the affiliate programme.
 
 Hi {{contact.first_name}},
 
-Last time we covered credits and how to cap them. Two more things can bring people to your bots.
+Last time, we covered credits and how to cap them. Two more things can bring people to your bots.
 
 **Bot Market**
 
-Bot Market is where Botters buy and sell bots with each other. Every plan can buy but selling starts on the Pro Botter plan. When you list a bot you choose the licence terms and can set an affiliate share on the listing.
+Bot Market is where Botters buy and sell bots with each other. Every plan can buy, but selling starts on the Pro Botter plan. When you list a bot, you choose the licence terms and can set an affiliate share on the listing.
 
 **The affiliate programme**
 
-From the Novice Botter plan you can join the programme and share your link. You earn commission on the subscription payments of members who join through it. The [Affiliates](https://{{domain}}/affiliates/) page lists the rates at launch and the rules.
+From the Novice Botter plan, you can join the programme and share your link. You earn commission on the subscription payments of members who join through it. The [Affiliates](https://{{domain}}/affiliates/) page lists the rates at launch and the rules.
 
 Credit packs earn nothing and you can't refer yourself. Botterverse doesn't promise or guarantee any income.
 
@@ -462,7 +462,7 @@ P.S. Next up: which plan to start on.
 
 Hi {{contact.first_name}},
 
-In the last email we covered Bot Market and the affiliate programme. Now the question that comes with all of them: which plan to start on.
+In the last email, we covered Bot Market and the affiliate programme. Now the question that comes with all of them: which plan to start on.
 
 **Start with what you need to do**
 
@@ -496,15 +496,15 @@ P.S. Next up: the questions people ask last.
 
 Hi {{contact.first_name}},
 
-Last time I covered which plan to start on. This is the last email in this series and it answers what people ask just before they join.
+Last time, I covered which plan to start on. This is the last email in this series and it answers what people ask just before they join.
 
 **Do I need to be technical?**
 
-No. If you can brief a new assistant you can write a bot's instructions.
+No. If you can brief a new assistant, you can write a bot's instructions.
 
 **Can someone copy my instructions or files?**
 
-Every bot is told never to reveal or quote or summarise or translate its instructions or files. No instruction is a perfect lock so keep secrets out of them.
+Every bot is told never to reveal or quote or summarise or translate its instructions or files. No instruction is a perfect lock, so keep secrets out of them.
 
 **Will I be locked in?**
 
@@ -512,11 +512,11 @@ No. Request an export from [Settings](https://lab.{{domain}}/settings) and your 
 
 **What if my bot says something wrong?**
 
-You write the instructions and choose what the bot knows. Preview it before anyone else sees it. The Certified page doesn't vouch for the answers so test yours.
+You write the instructions and choose what the bot knows. Preview it before anyone else sees it. The Certified page doesn't vouch for the answers, so test yours.
 
 **Next step**
 
-Read the [FAQ](https://{{domain}}/faq/). If your question isn't there ask through [Support](https://{{domain}}/support/) and we'll reply.
+Read the [FAQ](https://{{domain}}/faq/). If your question isn't there, ask through [Support](https://{{domain}}/support/) and we'll reply.
 
 All the best,
 
@@ -555,9 +555,9 @@ You started choosing a plan and didn't finish. Your cart is still there if you'd
 
 **What happens after you buy**
 
-One email arrives with two links. The first sets the password for your billing login and the second creates your Botter's Lab account. Use the same email address you bought with so your plan reaches your account.
+One email arrives with two links. The first sets the password for your billing login and the second creates your Botter's Lab account. Use the same email address you bought with, so your plan reaches your account.
 
-Then you build your first bot. Every new bot starts as Personal so nobody else sees it until you're ready.
+Then you build your first bot. Every new bot starts as Personal, so nobody else sees it until you're ready.
 
 **Next step**
 
@@ -616,7 +616,7 @@ Hi {{contact.first_name}},
 
 This is the last reminder about the plan you left in your cart. We won't write again about it.
 
-If you're still deciding the [Pricing](https://{{domain}}/pricing/) page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.
+If you're still deciding, the [Pricing](https://{{domain}}/pricing/) page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.
 
 **Next step**
 

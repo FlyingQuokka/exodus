@@ -27,7 +27,7 @@ The order of each list matches the catch-up table in section 8 so the member mee
 
 Hi {{contact.first_name}},
 
-Welcome to Expert Botter. You've moved up from Apprentice Botter in one step so you now have everything Novice Botter adds as well as Expert's own features.
+Welcome to Expert Botter. You've moved up from Apprentice Botter in one step, so you now have everything Novice Botter adds as well as Expert's own features.
 
 **What Expert adds**
 
@@ -38,9 +38,9 @@ Expert Botter adds more bots, larger included credits and deeper analytics. In [
 These Novice features are open to you now. They're in the order the catch-up emails will cover them and each line says where it lives and links to its Help article.
 
 1. Every model. Open a bot from the [Bot list](https://lab.{{domain}}/bots) and look at Model. The most expensive model from each family now appears. [Help article](https://{{domain}}/docs/choose-a-model/)
-2. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
+2. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page, open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
 3. The affiliate programme. Select [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu then Join the affiliate programme. [Help article](https://{{domain}}/docs/affiliate-programme/)
-4. Integrations. In Integrations on the Create a bot page a bot can look things up in your own services. [Help article](https://{{domain}}/docs/integrations/)
+4. Integrations. In Integrations on the Create a bot page, a bot can look things up in your own services. [Help article](https://{{domain}}/docs/integrations/)
 
 Basic analytics is open as well. Select Analytics in the menu for conversations, messages, credits used and revenue.
 
@@ -52,7 +52,7 @@ Speak soon,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow your Expert series continues with the questions your visitors ask most and later the catch-up emails take you through the Novice features above one at a time.
+P.S. Next up: tomorrow, your Expert series continues with the questions your visitors ask most and later the catch-up emails take you through the Novice features above one at a time.
 
 **Notes**
 - Facts: Expert adds more bots and larger included credits and deeper analytics (digest 1.4). Novice features and their locations from digest 3.8, 5.2, 9.1, 11.1 and 8.1 and menu map 1.5. No numbers, prices or limits.
@@ -71,7 +71,7 @@ P.S. Next up: tomorrow your Expert series continues with the questions your visi
 
 Hi {{contact.first_name}},
 
-Welcome to Pro Botter. You've moved up from Apprentice Botter by two steps so you now have everything Novice Botter and Expert Botter add as well as Pro's own features.
+Welcome to Pro Botter. You've moved up from Apprentice Botter by two steps, so you now have everything Novice Botter and Expert Botter add as well as Pro's own features.
 
 **What Pro adds**
 
@@ -82,10 +82,10 @@ Pro Botter adds more bots again, [Bot styles](https://lab.{{domain}}/bot-styles)
 These Novice and Expert features are open to you now. They're in the order the catch-up emails will cover them and each line says where it lives and links to its Help article.
 
 1. Every model. Open a bot from the [Bot list](https://lab.{{domain}}/bots) and look at Model. The most expensive model from each family now appears. [Help article](https://{{domain}}/docs/choose-a-model/)
-2. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
+2. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page, open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
 3. The affiliate programme. Select [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu then Join the affiliate programme. [Help article](https://{{domain}}/docs/affiliate-programme/)
-4. Integrations. In Integrations on the Create a bot page a bot can look things up in your own services. [Help article](https://{{domain}}/docs/integrations/)
-5. Conversation insights. Open the bot from Bot list then in the Analytics section switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
+4. Integrations. In Integrations on the Create a bot page, a bot can look things up in your own services. [Help article](https://{{domain}}/docs/integrations/)
+5. Conversation insights. Open the bot from Bot list then in the Analytics section, switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
 6. Top conversation starters. Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose a bot. [Help article](https://{{domain}}/docs/bot-analytics/)
 
 Basic analytics, Busiest hours and Category benchmarks are open on the same Analytics page.
@@ -98,7 +98,7 @@ Until next time,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow your Pro series starts with making every bot look like yours and later the catch-up emails take you through the Novice and Expert features above one at a time.
+P.S. Next up: tomorrow, your Pro series starts with making every bot look like yours and later the catch-up emails take you through the Novice and Expert features above one at a time.
 
 **Notes**
 - Facts: Pro adds more bots and Bot styles and a lower platform fee and Bot Market selling with own licence terms and the CRM connector and priority support (digest 1.4). Locations from digest 3.8, 5.2, 9.1, 11.1, 8.1, 8.2, 4.6 and menu map 1.5. No numbers.
@@ -117,7 +117,7 @@ P.S. Next up: tomorrow your Pro series starts with making every bot look like yo
 
 Hi {{contact.first_name}},
 
-Welcome to Master Botter. You've moved up from Apprentice Botter by three steps so you now have everything Novice, Expert and Pro Botter add as well as Master's own features.
+Welcome to Master Botter. You've moved up from Apprentice Botter by three steps, so you now have everything Novice, Expert and Pro Botter add as well as Master's own features.
 
 **What Master adds**
 
@@ -127,10 +127,10 @@ Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advance
 
 These features from the plans in between are open to you now. They're in the order the catch-up emails will cover them and each line says where it lives and links to its Help article.
 
-1. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
+1. The paywall. On the [Create a bot](https://lab.{{domain}}/bots/create) page, open Paywall and pricing and use Sell access to this bot to charge a one-time price. [Help article](https://{{domain}}/docs/paywall/)
 2. The affiliate programme. Select [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu then Join the affiliate programme. [Help article](https://{{domain}}/docs/affiliate-programme/)
 3. Top conversation starters. Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose a bot. [Help article](https://{{domain}}/docs/bot-analytics/)
-4. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
+4. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section, switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
 5. Listing a bot on the Bot Market. Select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. [Help article](https://{{domain}}/docs/list-a-bot/)
 6. The CRM connector. Open [Settings](https://lab.{{domain}}/settings) then CRM to send customers who agreed to share their details to your own CRM. [Help article](https://{{domain}}/docs/crm-connector/)
 
@@ -144,7 +144,7 @@ See you soon,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow you set up your first A/B test and later the catch-up emails take you through the Novice, Expert and Pro features above one at a time.
+P.S. Next up: tomorrow, you set up your first A/B test and later the catch-up emails take you through the Novice, Expert and Pro features above one at a time.
 
 **Notes**
 - Facts: Master adds A/B tests and advanced analytics (digest 1.4, 8.1, 8.3). Locations from digest 5.2, 11.1, 8.1, 8.2, 6.5, 9.2 and menu map 1.5. No numbers.
@@ -164,7 +164,7 @@ P.S. Next up: tomorrow you set up your first A/B test and later the catch-up ema
 
 Hi {{contact.first_name}},
 
-Welcome to Pro Botter. You've moved up from Novice Botter by two steps so you now have everything Expert Botter adds as well as Pro's own features.
+Welcome to Pro Botter. You've moved up from Novice Botter by two steps, so you now have everything Expert Botter adds as well as Pro's own features.
 
 **What Pro adds**
 
@@ -176,7 +176,7 @@ These Expert features are open to you now. They're in the order the catch-up ema
 
 1. Top conversation starters. Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose a bot. [Help article](https://{{domain}}/docs/bot-analytics/)
 2. Busiest hours. It sits on the same Analytics page and shows when your visitors chat. [Help article](https://{{domain}}/docs/bot-analytics/)
-3. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
+3. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section, switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
 4. More bots. Active bots on the [Dashboard](https://lab.{{domain}}/) shows how many you have used and Bot list holds them all. [Help article](https://{{domain}}/docs/bot-list/)
 
 Category benchmarks is open as well and sits on the Analytics page beside This bot.
@@ -189,7 +189,7 @@ Speak soon,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow your Pro series starts with making every bot look like yours and later the catch-up emails take you through the Expert features above one at a time.
+P.S. Next up: tomorrow, your Pro series starts with making every bot look like yours and later the catch-up emails take you through the Expert features above one at a time.
 
 **Notes**
 - Facts: Pro adds (digest 1.4). Expert adds more bots and larger included credits and deeper analytics (1.4, 8.1). Locations from digest 8.1, 8.2, 2.6, 3.11, 4.6. No numbers. Category benchmarks stays hidden until enough bots feed it (8.1) so it is only mentioned as open.
@@ -208,7 +208,7 @@ P.S. Next up: tomorrow your Pro series starts with making every bot look like yo
 
 Hi {{contact.first_name}},
 
-Welcome to Master Botter. You've moved up from Novice Botter by two steps so you now have everything Expert and Pro Botter add as well as Master's own features.
+Welcome to Master Botter. You've moved up from Novice Botter by two steps, so you now have everything Expert and Pro Botter add as well as Master's own features.
 
 **What Master adds**
 
@@ -219,7 +219,7 @@ Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advance
 These Expert and Pro features are open to you now. They're in the order the catch-up emails will cover them and each line says where it lives and links to its Help article.
 
 1. Top conversation starters. Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose a bot. [Help article](https://{{domain}}/docs/bot-analytics/)
-2. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
+2. Conversation insights. Open the bot from [Bot list](https://lab.{{domain}}/bots) then in the Analytics section, switch on Conversation insights (each run uses your credits). [Help article](https://{{domain}}/docs/conversation-insights/)
 3. Bot styles. Select [Bot styles](https://lab.{{domain}}/bot-styles) in the menu then New style to give your bots your own look. [Help article](https://{{domain}}/docs/bot-styles/)
 4. Listing a bot on the Bot Market. Select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. [Help article](https://{{domain}}/docs/list-a-bot/)
 5. The CRM connector. Open [Settings](https://lab.{{domain}}/settings) then CRM to send customers who agreed to share their details to your own CRM. [Help article](https://{{domain}}/docs/crm-connector/)
@@ -235,7 +235,7 @@ Until next time,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow you set up your first A/B test and later the catch-up emails take you through the Expert and Pro features above one at a time.
+P.S. Next up: tomorrow, you set up your first A/B test and later the catch-up emails take you through the Expert and Pro features above one at a time.
 
 **Notes**
 - Facts: Master adds (digest 1.4, 8.3). Locations from digest 8.1, 8.2, 4.6, 6.5, 9.2, 9.4, 9.5. Consent condition stated for the CRM and the customer download. No numbers.
@@ -254,7 +254,7 @@ P.S. Next up: tomorrow you set up your first A/B test and later the catch-up ema
 
 Hi {{contact.first_name}},
 
-Welcome to Master Botter. You've moved up from Expert Botter by two steps so you now have everything Pro Botter adds as well as Master's own features.
+Welcome to Master Botter. You've moved up from Expert Botter by two steps, so you now have everything Pro Botter adds as well as Master's own features.
 
 **What Master adds**
 
@@ -279,7 +279,7 @@ See you soon,
 
 Your Botter Support Team
 
-P.S. Next up: tomorrow you set up your first A/B test and later the catch-up emails take you through the Pro features above one at a time.
+P.S. Next up: tomorrow, you set up your first A/B test and later the catch-up emails take you through the Pro features above one at a time.
 
 **Notes**
 - Facts: Master adds (digest 1.4, 8.3). Pro features and locations from digest 4.6, 6.5, 9.2, 9.4, 9.5, 1.4. Consent condition stated. No numbers.

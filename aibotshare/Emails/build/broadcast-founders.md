@@ -46,9 +46,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The Founders offer closes on 30 November. After that new plans are at the standard price.
+The Founders offer closes on 30 November. After that, new plans are at the standard price.
 
-If you join before then your price stays at 50% off for life. The coupon works on every plan so you can choose the plan that suits you.
+If you join before then, your price stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.
 
 Enter FOUNDER50 at the checkout. The [Pricing](https://{{domain}}/pricing/) page lists what each plan includes.
 

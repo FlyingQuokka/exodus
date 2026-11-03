@@ -56,6 +56,7 @@ class BTV_Sync
         $this->forms();
         $this->campaigns();
         $this->settings();
+        $this->affiliateEmails();
     }
 
     /**
@@ -140,6 +141,39 @@ class BTV_Sync
             }
         }
         $this->say('settings: ' . ($changed ? implode(', ', $changed) : 'no change'));
+    }
+
+    /**
+     * Switch off FluentAffiliate's own emails that say things the app does not do.
+     * The app works out and pays every commission and sends its own emails for it.
+     */
+    private function affiliateEmails()
+    {
+        $path = BTV_SYNC_DIR . '/data/affiliate-emails.json';
+        if (!file_exists($path)) {
+            return;
+        }
+        if (!class_exists('FluentAffiliate\App\Helper\Utility')) {
+            $this->say('affiliate emails: FluentAffiliate is not active, skipped');
+            return;
+        }
+        $def = $this->readJson($path);
+        $utility = 'FluentAffiliate\App\Helper\Utility';
+        $saved = $utility::getOption('email_notifications', []);
+        $saved = is_array($saved) ? $saved : [];
+        $changed = [];
+        foreach ($def['off'] as $key) {
+            $row = isset($saved[$key]) && is_array($saved[$key]) ? $saved[$key] : [];
+            if ((isset($row['active']) ? $row['active'] : 'yes') !== 'no') {
+                $row['active'] = 'no';
+                $saved[$key] = $row;
+                $changed[] = $key;
+            }
+        }
+        if ($changed) {
+            $utility::updateOption('email_notifications', $saved);
+        }
+        $this->say('affiliate emails: ' . ($changed ? 'switched off ' . implode(', ', $changed) : 'no change'));
     }
 
     /**

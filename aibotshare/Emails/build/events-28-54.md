@@ -39,7 +39,7 @@ Hi {{contact.first_name}},
 
 Your account is suspended and a withdrawal you asked for earlier is on hold. It hasn't been cancelled.
 
-While the account is suspended you can't withdraw or build or publish or buy. You can still chat with bots you bought access to.
+While the account is suspended, you can't withdraw or build or publish or buy. You can still chat with bots you bought access to.
 
 To find out more or to ask for a review, use the link in the Account suspended banner in the Botter's Lab to message the Botter Support Team.
 
@@ -63,7 +63,7 @@ Hi {{contact.first_name}},
 
 The conversation insights report for {{bot_name}} is ready. It covers {{period_start_date}} to {{period_end_date}}.
 
-It shows Unanswered questions, Common topics and Suggested additions. For each suggestion you can press Add to knowledge or Add to instructions.
+It shows Unanswered questions, Common topics and Suggested additions. For each suggestion, you can press Add to knowledge or Add to instructions.
 
 [Open the report]({{analytics_url}}). It is in the Conversation insights panel on Analytics. Each run uses credits from your balance.
 
@@ -89,9 +89,9 @@ Hi {{contact.first_name}},
 
 Your CRM connection has switched itself off after repeated failures. Nothing is sent to your CRM while it's off.
 
-Open [Settings](https://lab.{{domain}}/settings) and then CRM. Check the Webhook address and press Send test event. When the test works press Switch on.
+Open [Settings](https://lab.{{domain}}/settings) and then CRM. Check the Webhook address and press Send test event. When the test works, press Switch on.
 
-If you need help finding the cause use Support in the menu.
+If you need help finding the cause, use Support in the menu.
 
 Your Botter Support Team
 
@@ -113,7 +113,7 @@ Hi {{contact.first_name}},
 
 Your credits have fallen below the level set under Top up when my credits fall below.
 
-When credits run out all of your bots stop answering everyone. That includes buyers.
+When credits run out, all of your bots stop answering everyone. That includes buyers.
 
 Open [Billing and credits](https://lab.{{domain}}/billing) to add more. Use Buy credits for a pack or switch on Auto top-up so it happens by itself.
 
@@ -135,9 +135,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your credits can no longer cover a message. All of your bots have stopped answering everyone including your buyers until you add credits.
+Your credits can no longer cover a message. All of your bots have stopped answering everyone, including your buyers, until you add credits.
 
-Open [Billing and credits](https://lab.{{domain}}/billing) and add credits with Buy credits. If you have a promo code enter it under Promo code and press Redeem.
+Open [Billing and credits](https://lab.{{domain}}/billing) and add credits with Buy credits. If you have a promo code, enter it under Promo code and press Redeem.
 
 Your bots start answering again from the next message once your balance covers it.
 
@@ -159,7 +159,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your credits fell below your Auto top-up threshold so we charged {{amount}} to your card and added the credits to your balance.
+Your credits fell below your Auto top-up threshold, so we charged {{amount}} to your card and added the credits to your balance.
 
 You can change the threshold or the Top-up amount or switch Auto top-up off in [Billing and credits](https://lab.{{domain}}/billing).
 
@@ -182,7 +182,7 @@ Hi {{contact.first_name}},
 
 Auto top-up has reached its limit for today and is paused until midnight UTC.
 
-After that it tries again the next time your credits are used while the balance is below your level. If your credits run out first your bots stop answering and Auto top-up doesn't restart by itself. To add credits now open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits.
+After that, it tries again the next time your credits are used while the balance is below your level. To add credits now, open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits.
 
 Your Botter Support Team
 
@@ -202,11 +202,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your card was declined twice so Auto top-up has switched itself off. No more charges will be tried.
+Your card was declined twice, so Auto top-up has switched itself off. No more charges will be tried.
 
 Update your card from the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). Then press Agree and switch on.
 
-If your credits run low in the meantime you can add them with Buy credits.
+If your credits run low in the meantime, you can add them with Buy credits.
 
 Your Botter Support Team
 
@@ -230,7 +230,7 @@ We've updated the Auto top-up statement. A top-up came due and wasn't charged. A
 
 Open [Billing and credits](https://lab.{{domain}}/billing) and read the statement. It links to The Auto top-up section of our terms and conditions. Then press Switch off and after that press Agree and switch on.
 
-Until you agree no automatic charges are made.
+Until you agree, no automatic charges are made.
 
 Your Botter Support Team
 
@@ -250,9 +250,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your bank asked for approval of an Auto top-up payment so it didn't go through. We don't retry a payment that needs approval and Auto top-up stays on. The next attempt waits until your balance is back at your level or above.
+Your bank asked for approval of an Auto top-up payment, so it didn't go through. We don't retry a payment that needs approval and Auto top-up stays on. The next attempt waits until your balance is back at your level or above.
 
-To add credits open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits. The checkout opens in a new tab where you can approve the payment with your bank.
+To add credits, open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits. The checkout opens in a new tab where you can approve the payment with your bank.
 
 Your Botter Support Team
 
@@ -370,9 +370,9 @@ Hi {{order.customer.first_name}},
 
 You've cancelled your plan. It ends on {{subscription.expire_at}} and works as normal until then.
 
-On a monthly plan that is the end of the period you paid for. On an annual plan it is the end of the current month and we refund the whole months you haven't used to your card after it ends. We email you when the refund is made.
+On a monthly plan, that is the end of the period you paid for. On an annual plan, it is the end of the current month and we refund the whole months you haven't used to your card after it ends. We email you when the refund is made.
 
-Until then the red Plan cancelling pill shows in the Botter's Lab. If you change your mind press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
+Until then, the red Plan cancelling pill shows in the Botter's Lab. If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
 
 Your Botter Support Team
 
@@ -396,9 +396,9 @@ Hi {{contact.first_name}},
 
 You've cancelled your plan. It ends on {{end_date}}, which is the end of the current month.
 
-After it ends we refund the whole months you haven't used to your card and email you when the refund is made. Until the plan ends the red Plan cancelling pill shows in the Botter's Lab.
+After it ends, we refund the whole months you haven't used to your card and email you when the refund is made. Until the plan ends, the red Plan cancelling pill shows in the Botter's Lab.
 
-If you change your mind press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
+If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
 
 Your Botter Support Team
 
@@ -424,7 +424,7 @@ Your {{plan_name}} plan has ended. Your account stays open and you can sign in t
 
 Your own bots are paused and your data is kept. Unused plan credits have reset. Remaining credits from any credit packs you bought are untouched. Auto top-up is off.
 
-To build and run bots again choose a plan on the [Pricing](https://{{domain}}/pricing/) page. Bots your old plan paused start again up to the new plan's bot limit.
+To build and run bots again, choose a plan on the [Pricing](https://{{domain}}/pricing/) page. Bots your old plan paused start again up to the new plan's bot limit.
 
 Your Botter Support Team
 
@@ -446,9 +446,9 @@ Hi {{contact.first_name}},
 
 Your Botter's Lab account is suspended. You can still sign in and chat with bots you bought access to.
 
-While it's suspended you can't build or publish or buy or withdraw or close the account.
+While it's suspended, you can't build or publish or buy or withdraw or close the account.
 
-To find out more use the link in the Account suspended banner to message the Botter Support Team.
+To find out more, use the link in the Account suspended banner to message the Botter Support Team.
 
 Your Botter Support Team
 
@@ -470,7 +470,7 @@ Hi {{contact.first_name}},
 
 We've updated our terms or privacy policy. You can read both without an account. They're linked in the foot of every page.
 
-[Sign in](https://lab.{{domain}}/login) to the Botter's Lab and press Accept in the banner. Until you do you can't publish a bot or list one for sale.
+[Sign in](https://lab.{{domain}}/login) to the Botter's Lab and press Accept in the banner. Until you do, you can't publish a bot or list one for sale.
 
 Your Botter Support Team
 
@@ -513,9 +513,9 @@ Hi {{contact.first_name}},
 
 You've asked to close your account. It is now closing and the grace period ends on {{grace_end_date}}. Your bots have stopped answering and your listings are hidden.
 
-If you didn't mean to do this sign in before that date. The page Reopen your account? has a Reopen my account button.
+If you didn't mean to do this, sign in before that date. The page Reopen your account? has a Reopen my account button.
 
-Withdraw any earnings from [Payouts](https://lab.{{domain}}/payouts) before then. If you haven't set up your payout details do that first. Earnings left when the account closes are forfeited.
+Withdraw any earnings from [Payouts](https://lab.{{domain}}/payouts) before then. If you haven't set up your payout details, do that first. Earnings left when the account closes are forfeited.
 
 This is a service message about your account. Botterverse marketing emails have been switched off for you.
 
@@ -540,7 +540,7 @@ The grace period for your account has ended and the account is closed. Your bots
 
 Any customers owed a refund have received it. Bots you already sold stay with their buyers.
 
-If you'd like to return you'll need a new account and a new username.
+If you'd like to return, you'll need a new account and a new username.
 
 Your Botter Support Team
 
@@ -562,7 +562,7 @@ Hi {{contact.first_name}},
 
 Your account is open again. Your bots and listings that were paused for the closing are restored. So are your affiliate record and your Botterverse emails. Your plan carries on unless it was set to cancel before you closed the account or its paid period has ended.
 
-Auto top-up stays off. If you used it open [Billing and credits](https://lab.{{domain}}/billing) and switch it on again.
+Auto top-up stays off. If you used it, open [Billing and credits](https://lab.{{domain}}/billing) and switch it on again.
 
 Your Botter Support Team
 
@@ -586,7 +586,7 @@ Thank you for your report. The Botter Support Team has looked into it.
 
 {{response.full_content}}
 
-If you have more to add send it with a new report using Report this bot on the bot's page.
+If you have more to add, send it with a new report using Report this bot on the bot's page.
 
 Your Botter Support Team
 

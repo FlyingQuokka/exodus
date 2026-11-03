@@ -1,0 +1,18 @@
+{
+ "title": "O15-4 Plan Ended",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Plan Ended"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O15-4",
+   "do": "email",
+   "email": "O15-4"
+  }
+ ]
+}

@@ -64,7 +64,7 @@ Every dollar you spent driving traffic to your GPT bought customers for a platfo
 
 Your ad spend built someone else's user base. Your content brought in buyers whose names you'll never know. And now those buyers are hitting a dead link while you start over from zero with an empty room.
 
-On AI Bot Share you own the bot page, set the paywall, require sign-up so every user goes on your list, and can export the whole bot if you ever want to leave.
+On Botterverse you own the bot page, set the paywall, require sign-up so every user goes on your list, and can export the whole bot if you ever want to leave.
 
 ---
 
@@ -84,7 +84,7 @@ The people who paid you for your GPT don't know your name, your email, or where 
 
 You are a complete stranger to your own paying customers. Not because they forgot you, but because the platform was designed so you'd never have their information in the first place.
 
-On AI Bot Share you can require sign-up on every bot so you hold a list of known users, see analytics on every bot you build, and export your bots to take them anywhere you want.
+On Botterverse you can require sign-up on every bot so you hold a list of known users, see analytics on every bot you build, and export your bots to take them anywhere you want.
 
 ---
 
@@ -104,7 +104,7 @@ You couldn't even see how many people were using your own GPT.
 
 No analytics. No user names. No emails. No usage data. You built something people paid for and the platform treated you like a guest in your own house, allowed to cook but never allowed to see who was eating.
 
-AI Bot Share shows you analytics on every bot, lets you require sign-up to hold a list, and lets you export your bots to take them with you. The founders window is open at 50% off for life.
+Botterverse shows you analytics on every bot, lets you require sign-up to hold a list, and lets you export your bots to take them with you. The founders window is open at 50% off for life.
 
 ---
 

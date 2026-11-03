@@ -1,0 +1,83 @@
+{
+ "title": "O08 Affiliate onboarding",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Affiliate Joined"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O08-tier",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [],
+   "no": [
+    {
+     "key": "O08-tier-end",
+     "do": "end"
+    }
+   ],
+   "note": "The programme is Novice Botter and above."
+  },
+  {
+   "key": "O08-1",
+   "do": "email",
+   "email": "O08-1"
+  },
+  {
+   "key": "O08-w2",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O08-2",
+   "do": "email",
+   "email": "O08-2"
+  },
+  {
+   "key": "O08-w3",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O08-3",
+   "do": "email",
+   "email": "O08-3"
+  },
+  {
+   "key": "O08-w4",
+   "do": "wait",
+   "amount": 3,
+   "unit": "days"
+  },
+  {
+   "key": "O08-4",
+   "do": "email",
+   "email": "O08-4"
+  },
+  {
+   "key": "O08-w5",
+   "do": "wait",
+   "amount": 7,
+   "unit": "days"
+  },
+  {
+   "key": "O08-5",
+   "do": "email",
+   "email": "O08-5"
+  }
+ ]
+}

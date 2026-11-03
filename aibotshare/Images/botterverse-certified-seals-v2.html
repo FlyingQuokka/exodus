@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Certified seals v2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --tint: #ffe0fb; --link: #984f92; --cyan: #00d1da; --navy: #080d16; --ink: #282637; --line: #ebeaf2;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  .lede { max-width: 780px; line-height: 1.6; margin: 0 0 30px; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .seal { background: var(--card); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .seal .big { display: grid; grid-template-columns: 1fr 1fr; }
+  .seal .big div { display: flex; align-items: center; justify-content: center; padding: 18px 8px; }
+  .seal .big .l { background: var(--bg); }
+  .seal .big .d { background: var(--navy); }
+  .seal svg.s { width: 165px; height: 165px; display: block; }
+  .seal .sm { display: flex; align-items: center; gap: 14px; padding: 10px 16px; background: var(--panel); }
+  .seal .sm svg { display: block; }
+  .seal .sm span { font-size: 12px; font-weight: 700; }
+  .seal .meta { padding: 12px 18px 18px; }
+  .seal h3 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 18px; margin: 0 0 4px; }
+  .seal h3 b { color: var(--pink); margin-right: 8px; }
+  .seal p { margin: 0; font-size: 13.5px; line-height: 1.5; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bot" viewBox="0 0 60 70">
+      <line x1="30" y1="12" x2="30" y2="5" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="30" cy="4.5" r="4" fill="#00d1da"/>
+      <rect x="5" y="12" width="50" height="42" rx="17" fill="#dc8fd5"/>
+      <circle cx="21" cy="31" r="4.6" fill="#282637"/><circle cx="39" cy="31" r="4.6" fill="#282637"/>
+      <path d="M22 41 Q30 47 38 41" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="14" y="54" width="10" height="12" rx="5" fill="#984f92"/><rect x="36" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    </symbol>
+    <linearGradient id="gv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b66fb0"/><stop offset="1" stop-color="#984f92"/></linearGradient>
+    <linearGradient id="gc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6df0f5"/><stop offset="1" stop-color="#00b9c2"/></linearGradient>
+    <symbol id="tickbadge" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="21" fill="url(#gc)" stroke="#282637" stroke-width="3.5"/>
+      <path d="M13 25 L21 33 L36 15" fill="none" stroke="#282637" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13 25 L21 33 L36 15" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Certified seals, version 2</h1>
+  <p class="lede">Seal 03 (double ring) and seal 04 (shield) from version 1, redone. In the ring the words now sit in the exact middle of the band. One half runs along the top and one along the bottom so both read the right way up. The shield comes in four layouts and each carries the whole phrase Certified by Botterverse. The bot is larger in all of them and the tick stays offset to the right.</p>
+  <div class="grid" id="grid"></div>
+</div>
+
+<script>
+  var FONT = 'Baloo 2';
+  function bot(x, y, w) { var h = w * 70 / 60; return '<use href="#bot" x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '"/>'; }
+  function tickAt(x, y, w) { return '<use href="#tickbadge" x="' + x + '" y="' + y + '" width="' + w + '" height="' + w + '"/>'; }
+  function arcTop(id, r) { return '<path id="' + id + '" d="M ' + (100 - r) + ' 100 A ' + r + ' ' + r + ' 0 0 1 ' + (100 + r) + ' 100" fill="none"/>'; }
+  function arcBottom(id, r) { return '<path id="' + id + '" d="M ' + (100 - r) + ' 100 A ' + r + ' ' + r + ' 0 0 0 ' + (100 + r) + ' 100" fill="none"/>'; }
+  function arcText(id, txt, fs, sp) { return '<text font-family="' + FONT + '" font-weight="800" font-size="' + fs + '" letter-spacing="' + sp + '" fill="#282637" text-anchor="middle"><textPath href="#' + id + '" startOffset="50%">' + txt.slice(0, -1) + '<tspan letter-spacing="0">' + txt.slice(-1) + '</tspan></textPath></text>'; }
+  function flat(x, y, txt, fs, fill, extra) { return '<text x="' + x + '" y="' + y + '" text-anchor="middle" font-family="' + FONT + '" font-weight="800" font-size="' + fs + '" fill="' + fill + '" ' + (extra || '') + '>' + txt + '</text>'; }
+
+  var seals = [
+    ['Double ring, centred', 'The middle of the capital letters now sits on the middle of the band. The top half reads clockwise and the bottom half reads left to right. The bot fills the centre.',
+      function (u) {
+        var rt = 67.4, rb = 74.6;
+        return '<circle cx="100" cy="100" r="94" fill="#fff" stroke="#282637" stroke-width="4"/><circle cx="100" cy="100" r="86" fill="#ffe0fb" stroke="#984f92" stroke-width="2"/>' +
+          '<circle cx="100" cy="100" r="58" fill="#fff" stroke="#984f92" stroke-width="2"/><circle cx="100" cy="100" r="56" fill="#fff" stroke="#282637" stroke-width="3.5"/>' +
+          '<defs>' + arcTop('t' + u, rt) + arcBottom('b' + u, rb) + '</defs>' +
+          arcText('t' + u, 'CERTIFIED BY', 12.5, 2.6) + arcText('b' + u, 'BOTTERVERSE', 12.5, 2.6) +
+          '<circle cx="28" cy="100" r="2.6" fill="#984f92"/><circle cx="172" cy="100" r="2.6" fill="#984f92"/>' +
+          bot(64, 54, 72) + tickAt(122, 74, 62); }],
+    ['Shield with banner', 'A classic shield with a ribbon across the foot. The whole phrase sits on the banner in one line.',
+      function () {
+        return '<path d="M100 6 L174 30 V100 C174 148 140 178 100 196 C60 178 26 148 26 100 V30 Z" fill="url(#gv)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+          '<path d="M100 19 L162 40 V100 C162 140 134 166 100 182 C66 166 38 140 38 100 V40 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+          bot(58, 30, 84) +
+          '<path d="M8 128 H192 L182 143 L192 158 H8 L18 143 Z" fill="#dc8fd5" stroke="#282637" stroke-width="3.5" stroke-linejoin="round"/>' +
+          flat(100, 148, 'CERTIFIED BY BOTTERVERSE', 12.5, '#282637', 'textLength="150" lengthAdjust="spacing"') +
+          tickAt(122, 62, 58); }],
+    ['Arched crest', 'A crest with a pointed top. CERTIFIED BY follows the arch over the bot and BOTTERVERSE sits on a ribbon below.',
+      function (u) {
+        return '<path d="M100 4 C126 22 152 24 176 26 V102 C176 148 142 178 100 196 C58 178 24 148 24 102 V26 C48 24 74 22 100 4 Z" fill="url(#gv)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+          '<path d="M100 17 C122 33 146 36 164 38 V102 C164 140 136 166 100 182 C64 166 36 140 36 102 V38 C54 36 78 33 100 17 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+          '<defs><path id="ar' + u + '" d="M 50 70 Q 100 6 150 70" fill="none"/></defs>' +
+          '<text font-family="' + FONT + '" font-weight="800" font-size="13" letter-spacing="2" fill="#282637" text-anchor="middle"><textPath href="#ar' + u + '" startOffset="50%">CERTIFIED B<tspan letter-spacing="0">Y</tspan></textPath></text>' +
+          bot(60, 54, 78) +
+          '<path d="M14 138 H186 L176 152 L186 166 H14 L24 152 Z" fill="#dc8fd5" stroke="#282637" stroke-width="3.5" stroke-linejoin="round"/>' +
+          flat(100, 157, 'BOTTERVERSE', 14, '#282637', 'letter-spacing="1.4"') +
+          tickAt(124, 78, 52); }],
+    ['Pointed shield with plaque', 'A taller shield that ends in a point. The phrase sits on two lines in a plaque at the foot.',
+      function () {
+        return '<path d="M100 4 L170 22 V92 C170 146 134 180 100 198 C66 180 30 146 30 92 V22 Z" fill="url(#gv)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+          '<path d="M100 16 L158 31 V92 C158 138 128 168 100 184 C72 168 42 138 42 92 V31 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+          bot(58, 24, 86) +
+          '<rect x="50" y="120" width="100" height="46" rx="10" fill="#fff" stroke="#282637" stroke-width="3.5"/>' +
+          flat(100, 137, 'CERTIFIED BY', 10, '#984f92', 'textLength="82" lengthAdjust="spacing"') + flat(100, 157, 'BOTTERVERSE', 12.5, '#282637', 'textLength="84" lengthAdjust="spacing"') +
+          tickAt(126, 54, 56); }],
+    ['Header bar shield', 'A square-topped shield with a dark header bar. The whole phrase sits on two lines in the bar in light type and the bot fills the panel below.',
+      function () {
+        return '<path d="M22 12 H178 V102 C178 148 142 178 100 196 C58 178 22 148 22 102 Z" fill="url(#gv)" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+          '<path d="M34 24 H166 V102 C166 140 138 164 100 181 C62 164 34 140 34 102 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3" stroke-linejoin="round"/>' +
+          '<path d="M22 12 H178 V58 H22 Z" fill="#282637" stroke="#282637" stroke-width="4" stroke-linejoin="round"/>' +
+          flat(100, 31, 'CERTIFIED BY', 11, '#dc8fd5', 'textLength="92" lengthAdjust="spacing"') + flat(100, 51, 'BOTTERVERSE', 16, '#ffe0fb', 'textLength="112" lengthAdjust="spacing"') +
+          bot(58, 64, 80) + tickAt(124, 96, 56); }]
+  ];
+  var grid = document.getElementById('grid');
+  seals.forEach(function (s, i) {
+    var n = '0' + (i + 1);
+    function svg(u) { return '<svg class="s" viewBox="0 0 200 200" role="img" aria-label="Certified by Botterverse seal">' + s[2](u) + '</svg>'; }
+    function small(u, px) { return '<svg width="' + px + '" height="' + px + '" viewBox="0 0 200 200" aria-hidden="true">' + s[2](u) + '</svg>'; }
+    grid.insertAdjacentHTML('beforeend',
+      '<article class="seal"><div class="big"><div class="l">' + svg('a' + i) + '</div><div class="d">' + svg('b' + i) + '</div></div>' +
+      '<div class="sm">' + small('c' + i, 64) + small('d' + i, 32) + small('e' + i, 20) + '<span>64 and 32 and 20 pixels</span></div>' +
+      '<div class="meta"><h3><b>' + n + '</b>' + s[0] + '</h3><p>' + s[1] + '</p></div></article>');
+  });
+</script>
+</body>
+</html>

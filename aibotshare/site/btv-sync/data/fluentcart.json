@@ -1,0 +1,26 @@
+{
+  "send": {
+    "order_paid_customer": "E39",
+    "subscription_renewal_customer": "E39",
+    "subscription_renewal_failed_customer": "E40",
+    "subscription_canceled_customer": "E42a"
+  },
+  "off": [
+    "subscription_past_due_customer",
+    "order_refunded_customer",
+    "order_shipped_customer",
+    "order_delivered_customer",
+    "renewal_created_customer",
+    "system_upcoming_charge_customer",
+    "system_charge_failed_customer",
+    "renewal_reminder_due_customer",
+    "subscription_renewal_reminder_customer",
+    "renewal_overdue_first_customer",
+    "renewal_overdue_followup_customer",
+    "renewal_overdue_final_customer",
+    "subscription_trial_end_reminder_customer",
+    "subscription_period_skipped_customer",
+    "review_approved_customer",
+    "review_replied_customer"
+  ]
+}

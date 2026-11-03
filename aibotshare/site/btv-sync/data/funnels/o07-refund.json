@@ -1,0 +1,10 @@
+{
+  "title": "O07 Refund confirmed",
+  "trigger": {"type": "tag_applied", "tags": ["Refunded"]},
+  "run_multiple": true,
+  "publish": true,
+  "steps": [
+    {"key": "O07-1", "do": "email", "email": "O07-1", "note": "Refund confirmed. Sends at once. Event email so it sends even during a welcome sequence. The app sends Refunded for every refund, annual cancels included."},
+    {"key": "O07-tag-off", "do": "remove_tag", "tags": ["Refunded"], "note": "So the next refund starts this again."}
+  ]
+}

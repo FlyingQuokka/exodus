@@ -1,0 +1,62 @@
+{
+ "title": "O01 Pre-launch nurture",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Lead"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O01-01",
+   "do": "email",
+   "email": "O01-01"
+  },
+  {
+   "key": "O01-w02",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O01-02",
+   "do": "email",
+   "email": "O01-02"
+  },
+  {
+   "key": "O01-w03",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O01-03",
+   "do": "email",
+   "email": "O01-03"
+  },
+  {
+   "key": "O01-w04",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O01-04",
+   "do": "email",
+   "email": "O01-04"
+  },
+  {
+   "key": "O01-w05",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O01-05",
+   "do": "email",
+   "email": "O01-05"
+  }
+ ]
+}

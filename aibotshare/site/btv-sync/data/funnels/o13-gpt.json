@@ -1,0 +1,18 @@
+{
+ "title": "O13 Moved across from a GPT",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Migrated From GPT"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O13-1",
+   "do": "email",
+   "email": "O13-1"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "title": "O08 First commission",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "First Commission"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O08-6",
+   "do": "email",
+   "email": "O08-6"
+  }
+ ]
+}

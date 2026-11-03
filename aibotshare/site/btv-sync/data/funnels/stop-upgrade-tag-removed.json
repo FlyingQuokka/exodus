@@ -1,0 +1,28 @@
+{
+ "title": "STOP Upgrade - tag removed",
+ "trigger": {
+  "type": "tag_removed",
+  "tags": [
+   "Upgrade Active"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "X-cancel",
+   "do": "cancel",
+   "automations": [
+    "UP Detect - from Apprentice",
+    "UP Detect - from Novice",
+    "UP Detect - from Expert",
+    "UP Detect - from Pro",
+    "UP Sequence - Novice",
+    "UP Sequence - Expert",
+    "UP Sequence - Pro",
+    "UP Sequence - Master"
+   ],
+   "note": "Catch-ups are not cancelled here, because a finished sequence removes this tag on purpose."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "title": "O15-2 Plan Ending Tomorrow",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Plan Ending Tomorrow"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O15-2",
+   "do": "email",
+   "email": "O15-2"
+  }
+ ]
+}

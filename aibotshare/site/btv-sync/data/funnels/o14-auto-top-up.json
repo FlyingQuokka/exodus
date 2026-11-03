@@ -1,0 +1,29 @@
+{
+ "title": "O14 Auto top-up",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Auto Top Up"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O14-1",
+   "do": "email",
+   "email": "O14-1"
+  },
+  {
+   "key": "O14-w2",
+   "do": "wait",
+   "amount": 4,
+   "unit": "days"
+  },
+  {
+   "key": "O14-2",
+   "do": "email",
+   "email": "O14-2"
+  }
+ ]
+}

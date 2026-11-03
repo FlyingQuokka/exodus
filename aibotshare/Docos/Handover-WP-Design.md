@@ -1,13 +1,13 @@
-# Handover: AI Bot Share WordPress redesign
+# Handover: Botterverse WordPress redesign
 
 Written 30 October 2026 from the Exodus marketing session. This is the single briefing for the new session. Read it fully before touching anything.
 
 ## 1. Purpose and scope
 
-Redesign the AI Bot Share marketing site (WordPress, local only for now) using approved copy and a design agreed in HTML first. There is **no live site yet**. It will be created after this exercise by moving cleared-down copies of the databases and files to the live server.
+Redesign the Botterverse marketing site (WordPress, local only for now) using approved copy and a design agreed in HTML first. There is **no live site yet**. It will be created after this exercise by moving cleared-down copies of the databases and files to the live server.
 
 Two phases:
-1. **Design phase (this session):** build and tweak HTML designs in `Designs-WP` inside the Exodus `aibotshare` folder. Nothing is written to WordPress.
+1. **Design phase (this session):** build and tweak HTML designs in `Designs-WP` inside the Exodus `botterverse` folder. Nothing is written to WordPress.
 2. **Build phase (later):** build agents translate the final designs into WordPress pages under the site build root.
 
 ## 2. Folders
@@ -33,7 +33,7 @@ The design folder sits in the Exodus workspace, outside the website folder, so n
 - **Manual push first.** Decide on a pipeline or a pull on the server only after the first deployment.
 - **Design files are HTML per page** in `aibotshare/Designs-WP/Pages` (and `Logos`, `Images`). Tweak them until they look right. Once the final designs are approved the build agents create them in the build root.
 - **Version history:** no tool beyond file suffixes is needed.
-  - Name files `aibotshare-{page}-v{n}.html` (for example `aibotshare-home-v1.html`).
+  - Name files `botterverse-{page}-v{n}.html` (for example `botterverse-home-v1.html`).
   - Edit the current version in place while tweaking. Create a new `-vN` file only at a milestone, such as before a major change or when the user wants to compare options.
   - Never overwrite or delete an earlier version without asking.
   - When a design is approved, record the approved file name for each page in a short `aibotshare/Docos/approved-designs.md`. The build agents work only from files listed there.
@@ -63,7 +63,7 @@ Fonts: Baloo 2 (headings) and Nunito Sans (body). Nightshift is the dark theme (
 - British English. No comma before "and" or "or". Hyphens only (no em or en dashes). Avoid the word "get" in prose. No opening platitudes. Plain and succinct.
 
 **Naming**
-- "AIBotShare" only for the domain (AIBotShare.com). "AI Bot Share" in prose.
+- "Botterverse" is the brand name everywhere. The base domain is botterverse.com and is written as the token `{{domain}}` wherever it is used.
 - Vocabulary: Botters, Botterverse, Bot Market, Botting, Botter's Lab (the member area). Never "Bot Cave". Button text such as "Take Me To The Lab".
 - Do not name competitors. OpenAI and the GPT Store are the shared enemy. Never state a date for OpenAI retiring custom GPTs. Say they are being switched off.
 - Never mention Fluent Affiliate in copy.
@@ -99,11 +99,11 @@ Fonts: Baloo 2 (headings) and Nunito Sans (body). Nightshift is the dark theme (
 
 **Product claims**
 - Botters choose the model for each bot. Nothing is auto-routed.
-- Data export will be built. Frame it as never being tied to one platform and taking your bots, knowledge and conversations with you. The export has **no buyer names and no emails** (data protection: AI Bot Share is the seller of record). Never promise a customer list or email addresses. Never say "everything" or "all your customers". What a seller can see about members who sign up on their bot is unconfirmed.
+- Data export will be built. Frame it as never being tied to one platform and taking your bots, knowledge and conversations with you. The export has **no buyer names and no emails** (data protection: Botterverse is the seller of record). Never promise a customer list or email addresses. Never say "everything" or "all your customers". What a seller can see about members who sign up on their bot is unconfirmed.
 - Pain copy stays on what GPT sellers genuinely lost: sight of who used their bot, any way to message those users, the link their customers used and their actions and model choice on migration. Do not claim they "never had buyers' emails".
 - Affiliates: 50% of a referred member's first payment and 20% of every payment after, at launch. Credit packs earn nothing. Sellers can set an affiliate share per Bot Market listing (Novice and up).
 
-**Emails** (FluentCRM): sender "AI Bot Share". Subjects prefixed "[AI Bot Share]". No footers or addresses.
+**Emails** (FluentCRM): sender "Botterverse". Subject prefix: [Botterverse] for general emails and [Botter's Lab] for emails about the Botter's Lab. No footers or addresses.
 
 **CRM tags the app sends:** Apprentice Botter, Novice Botter, Expert Botter, Pro Botter, Master Botter, Downgraded, Cancelled, Dormant, Built First Bot, Published First Bot, First Sale, Migrated From GPT, Bot Market Seller, Bot Market Buyer and Power User (first auto top-up succeeds).
 
@@ -111,7 +111,7 @@ Fonts: Baloo 2 (headings) and Nunito Sans (body). Nightshift is the dark theme (
 
 | File | What it is |
 |---|---|
-| `Docos\aibotshare-brief.md` | Authoritative marketing brief: plans, packs, export contents, theme values, claims to avoid, open questions |
+| `Docos\botterverse-brief.md` | Authoritative marketing brief: plans, packs, export contents, theme values, claims to avoid, open questions |
 | `output\page-copy-draft-1.md` | Plain-text copy for the sales page, cart page, affiliate page and FAQ (20 questions). Contains [CONFIRM] items |
 | `output\hooks\hook-shortlist-1.md` | Vetted hook picks and the reasons others were rejected |
 | `output\product-image-concepts.md` | Ten image concepts with prompts |
@@ -145,7 +145,7 @@ Wiring is described in `E:\Projects\AIBotShare\Docos\WordPress-Setup.md` and `Bu
 
 ## 8. Access
 
-- **Site:** `https://aibotshare.debbie` resolves only in the user's browser (hosts file or DNS proxy). Inside the Claude shell use `curl -k --resolve aibotshare.debbie:443:127.0.0.1 https://aibotshare.debbie/...`. The REST API is at `/wp-json/`.
+- **Site:** `https://botterverse.debbie` resolves only in the user's browser (hosts file or DNS proxy). Inside the Claude shell use `curl -k --resolve botterverse.debbie:443:127.0.0.1 https://botterverse.debbie/...`. The REST API is at `/wp-json/`.
 - **Claude in Chrome:** the extension must be connected to this account. Call `list_connected_browsers`, then `tabs_context_mcp`. The user's Chrome is signed in as **Agent User**, the account provided for build work. Open your own tab and close it afterwards.
 - **Credentials:** the Agent User password will be provided after the design phase. It belongs in a gitignored env file, never in chat or documents. Per-agent Application Passwords come from throwaway WordPress accounts that the user deletes after development. The user backs up the database and files before the build phase.
 
@@ -158,7 +158,7 @@ Wiring is described in `E:\Projects\AIBotShare\Docos\WordPress-Setup.md` and `Bu
 5. What a seller can see about members who sign up on their bot.
 6. OpenAI retirement date (reported as 11 December 2026 but unverified, so do not print it).
 7. Support hours.
-8. Trademark clearance for "AI Bot Share" and the vocabulary.
+8. Trademark clearance for "Botterverse" and the vocabulary.
 9. Legal review of the terms and the earnings disclaimer.
 10. Whether Yoast SEO meta can be written through the REST API (a small helper plugin may be needed).
 11. Whether FluentCart fires Order Paid or Subscription Activated for a new plan (affects the email triggers).

@@ -1,11 +1,11 @@
-# AI Bot Share: FluentCRM email playbook
+# Botterverse: FluentCRM email playbook
 
 Draft 1, 20 October 2026. This says which automations to create in FluentCRM, what starts each one and what goes in every step. Full email bodies come later, once the page copy is settled and the Genesis email bots can run (they need the sales copy as input).
 
 ## Rules for every email
 
-- **From name:** AI Bot Share. No personal name. Sign off "The AI Bot Share team".
-- **Subject lines:** start with `[AI Bot Share]` then a space then the subject. Keep the part after the prefix short.
+- **From name:** Botterverse. No personal name. Sign off "The Botterverse team".
+- **Subject lines:** start with `[Botterverse]` then a space then the subject. Keep the part after the prefix short.
 - **No footers or addresses.** WordPress and FluentCRM add them.
 - **No income promises, no named competitors, no testimonials, no mention of the sixth tier.**
 - **EU:** never mentioned in emails. It lives in the FAQ and on the cart page.
@@ -47,11 +47,11 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **Subject:** [AI Bot Share] Your link was never yours. **Purpose:** welcome, name the problem (the link and customers were never yours), say what AI Bot Share is in two lines and what happens next. |
-| 2 | 2 days | **Subject:** [AI Bot Share] One bot, three ways to be paid. **Purpose:** access, Multi-sell, Transfer in the rights language they know. One link to the sales page. |
-| 3 | 2 days | **Subject:** [AI Bot Share] Answer the question before they leave. **Purpose:** the embeddable bot on a sales page. Link to the demo. |
-| 4 | 3 days | **Subject:** [AI Bot Share] What we take from a sale. **Purpose:** the published fee, plainly, with the $49 example. Honest about the 30 cents. |
-| 5 | 3 days | **Subject:** [AI Bot Share] Founders pay half price for life. **Purpose:** the Founders offer and how to be told first. Apply tag Founders Window Interest if you want to segment. |
+| 1 | Immediately | **Subject:** [Botterverse] Your link was never yours. **Purpose:** welcome, name the problem (the link and customers were never yours), say what Botterverse is in two lines and what happens next. |
+| 2 | 2 days | **Subject:** [Botterverse] One bot, three ways to be paid. **Purpose:** access, Multi-sell, Transfer in the rights language they know. One link to the sales page. |
+| 3 | 2 days | **Subject:** [Botterverse] Answer the question before they leave. **Purpose:** the embeddable bot on a sales page. Link to the demo. |
+| 4 | 3 days | **Subject:** [Botterverse] What we take from a sale. **Purpose:** the published fee, plainly, with the $49 example. Honest about the 30 cents. |
+| 5 | 3 days | **Subject:** [Botterverse] Founders pay half price for life. **Purpose:** the Founders offer and how to be told first. Apply tag Founders Window Interest if you want to segment. |
 
 **End:** nothing. They wait for S2 or S3 to be triggered by tag.
 
@@ -62,12 +62,12 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] The Botter's Lab is open.** The beta is live. Founders offer: 50% off for life, everything charged for real. No seat limit. One button to the cart. |
-| 2 | 1 day | **[AI Bot Share] Which plan fits you?** Short plan guide: bots, credits, what unlocks at Novice and Pro. Link to pricing. |
-| 3 | 2 days | **[AI Bot Share] Bring your old GPT across.** The importer. Be honest that you paste the content in and rebuild actions as integrations. |
-| 4 | 2 days | **[AI Bot Share] Your questions, answered.** The top FAQ answers: fees, cancelling, models. Link to the FAQ. |
-| 5 | 3 days | **[AI Bot Share] Put a bot on your sales page.** Embed demo and a simple how-to. |
-| 6 | 3 days | **[AI Bot Share] Founders window.** Remind them the offer ends two weeks after public launch. Do not give a date until you know it. |
+| 1 | Immediately | **[Botterverse] The Botter's Lab is open.** The beta is live. Founders offer: 50% off for life, everything charged for real. No seat limit. One button to the cart. |
+| 2 | 1 day | **[Botterverse] Which plan fits you?** Short plan guide: bots, credits, what unlocks at Novice and Pro. Link to pricing. |
+| 3 | 2 days | **[Botterverse] Bring your old GPT across.** The importer. Be honest that you paste the content in and rebuild actions as integrations. |
+| 4 | 2 days | **[Botterverse] Your questions, answered.** The top FAQ answers: fees, cancelling, models. Link to the FAQ. |
+| 5 | 3 days | **[Botterverse] Put a bot on your sales page.** Embed demo and a simple how-to. |
+| 6 | 3 days | **[Botterverse] Founders window.** Remind them the offer ends two weeks after public launch. Do not give a date until you know it. |
 
 ## S3. Public launch
 
@@ -76,14 +76,14 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] It is open.** Launch announcement, the three ways to sell, Founders offer and its two-week window. |
-| 2 | 1 day | **[AI Bot Share] Who is it for?** Three short scenes: the seller, the Multi-sell reseller, the sales-page owner. |
-| 3 | 2 days | **[AI Bot Share] The fine print, in plain words.** Fees, billing, cancelling and refunds. Builds trust. |
-| 4 | 3 days | **[AI Bot Share] Founders window: halfway.** Reminder with the Founders badge. |
-| 5 | 3 days | **[AI Bot Share] Last questions.** Objection handling from the FAQ. |
-| 6 | Wait until the last 48 hours of the window | **[AI Bot Share] 48 hours left for Founders.** |
-| 7 | Same day, later | **[AI Bot Share] Last day for the Founders offer.** |
-| 8 | 1 day | Apply tag Founders Window Closed. Send **[AI Bot Share] The Founders window has closed.** Standard prices apply from now on. |
+| 1 | Immediately | **[Botterverse] It is open.** Launch announcement, the three ways to sell, Founders offer and its two-week window. |
+| 2 | 1 day | **[Botterverse] Who is it for?** Three short scenes: the seller, the Multi-sell reseller, the sales-page owner. |
+| 3 | 2 days | **[Botterverse] The fine print, in plain words.** Fees, billing, cancelling and refunds. Builds trust. |
+| 4 | 3 days | **[Botterverse] Founders window: halfway.** Reminder with the Founders badge. |
+| 5 | 3 days | **[Botterverse] Last questions.** Objection handling from the FAQ. |
+| 6 | Wait until the last 48 hours of the window | **[Botterverse] 48 hours left for Founders.** |
+| 7 | Same day, later | **[Botterverse] Last day for the Founders offer.** |
+| 8 | 1 day | Apply tag Founders Window Closed. Send **[Botterverse] The Founders window has closed.** Standard prices apply from now on. |
 
 ## S4. Cart abandonment
 
@@ -91,9 +91,9 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | 1 hour | **[AI Bot Share] You left your plan behind.** Simple reminder with a link back to checkout. |
-| 2 | 1 day | **[AI Bot Share] Questions before you join?** Cancelling, fees and what each plan includes. |
-| 3 | 3 days | **[AI Bot Share] Your Founders price is still there.** Only while the Founders window is open. Use a condition or a separate version after it closes. |
+| 1 | 1 hour | **[Botterverse] You left your plan behind.** Simple reminder with a link back to checkout. |
+| 2 | 1 day | **[Botterverse] Questions before you join?** Cancelling, fees and what each plan includes. |
+| 3 | 3 days | **[Botterverse] Your Founders price is still there.** Only while the Founders window is open. Use a condition or a separate version after it closes. |
 
 ## S5. Onboarding after purchase
 
@@ -102,13 +102,13 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Welcome to the Botter's Lab.** Your plan, your username, where to start. |
-| 2 | 1 day | **[AI Bot Share] Build your first bot.** One page, instructions, files, preview chat. Skip if tag Built First Bot is present. |
-| 3 | 3 days | **[AI Bot Share] Make it Public.** Personal versus Public, your bot page and the embed. Skip if Published First Bot is present. |
-| 4 | 5 days | **[AI Bot Share] Charge for it.** Paywall setup for Novice and above. Show Pro the Bot Market instead. |
-| 5 | 7 days | **[AI Bot Share] Earn from referrals.** The affiliate programme for Novice and above. Say commission details only once the owner confirms payment is live. |
-| 6 | 10 days | **[AI Bot Share] How is it going?** One question and a reply address. Opens the door to feedback. |
-| 7 | 14 days | **[AI Bot Share] How credits work.** Plain explanation: included credits renew with the plan and expire at renewal, credits you buy never expire. Show the five packs and say auto top-up is off until they switch it on. No pressure and no "free credits". |
+| 1 | Immediately | **[Botterverse] Welcome to the Botter's Lab.** Your plan, your username, where to start. |
+| 2 | 1 day | **[Botterverse] Build your first bot.** One page, instructions, files, preview chat. Skip if tag Built First Bot is present. |
+| 3 | 3 days | **[Botterverse] Make it Public.** Personal versus Public, your bot page and the embed. Skip if Published First Bot is present. |
+| 4 | 5 days | **[Botterverse] Charge for it.** Paywall setup for Novice and above. Show Pro the Bot Market instead. |
+| 5 | 7 days | **[Botterverse] Earn from referrals.** The affiliate programme for Novice and above. Say commission details only once the owner confirms payment is live. |
+| 6 | 10 days | **[Botterverse] How is it going?** One question and a reply address. Opens the door to feedback. |
+| 7 | 14 days | **[Botterverse] How credits work.** Plain explanation: included credits renew with the plan and expire at renewal, credits you buy never expire. Show the five packs and say auto top-up is off until they switch it on. No pressure and no "free credits". |
 
 ## S6. Dormant account
 
@@ -116,9 +116,9 @@ The app has no tag for joining the affiliate programme, but FluentAffiliate has 
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your bots are waiting.** Gentle nudge and the one thing that is easiest to do next. |
-| 2 | 5 days | **[AI Bot Share] Stuck on something?** Offer help and link to support. |
-| 3 | 7 days | **[AI Bot Share] Should we pause your plan?** Honest note about downgrading and what happens to bots over the limit. |
+| 1 | Immediately | **[Botterverse] Your bots are waiting.** Gentle nudge and the one thing that is easiest to do next. |
+| 2 | 5 days | **[Botterverse] Stuck on something?** Offer help and link to support. |
+| 3 | 7 days | **[Botterverse] Should we pause your plan?** Honest note about downgrading and what happens to bots over the limit. |
 
 ## S7. Upgrade paths
 
@@ -136,9 +136,9 @@ Each is one email. Keep it factual and link to the plan table.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] You are cancelled.** Access continues to the end of the period you paid for. Remind them they can request a data export from Settings: their bots and settings, uploaded files, instruction history, conversations, sales and commissions. |
-| 2 | 2 days | **[AI Bot Share] One question.** Why did you cancel? A single reply or a short form. |
-| 3 | 30 days | **[AI Bot Share] Anything new?** Soft win-back with a link to what has changed. |
+| 1 | Immediately | **[Botterverse] You are cancelled.** Access continues to the end of the period you paid for. Remind them they can request a data export from Settings: their bots and settings, uploaded files, instruction history, conversations, sales and commissions. |
+| 2 | 2 days | **[Botterverse] One question.** Why did you cancel? A single reply or a short form. |
+| 3 | 30 days | **[Botterverse] Anything new?** Soft win-back with a link to what has changed. |
 
 ## S9. Refunds
 
@@ -150,10 +150,10 @@ Each is one email. Keep it factual and link to the plan table.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] You are in.** Where your link lives, the rates at launch and the rules (no self-referral, credit packs earn nothing). |
-| 2 | 2 days | **[AI Bot Share] What to say.** Plain suggestions for talking about it. Add the line "do not promise income". |
-| 3 | 5 days | **[AI Bot Share] Promote a Bot Market listing.** How listing affiliate shares work. |
-| 4 | 10 days | **[AI Bot Share] Your first referral.** Nudge with a simple share idea. |
+| 1 | Immediately | **[Botterverse] You are in.** Where your link lives, the rates at launch and the rules (no self-referral, credit packs earn nothing). |
+| 2 | 2 days | **[Botterverse] What to say.** Plain suggestions for talking about it. Add the line "do not promise income". |
+| 3 | 5 days | **[Botterverse] Promote a Bot Market listing.** How listing affiliate shares work. |
+| 4 | 10 days | **[Botterverse] Your first referral.** Nudge with a simple share idea. |
 
 **For launch:** send affiliates a separate set of broadcasts: a swipe email, two follow-ups and a last-chance email, plus a short page of links and graphics. That is a one-off campaign, not an automation.
 
@@ -164,8 +164,8 @@ Each is one email. Keep it factual and link to the plan table.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | 5 days | **[AI Bot Share] Tell us how it is going.** Two questions. Explicit permission line asking whether they may be quoted and how to name them. |
-| 2 | 5 days | **[AI Bot Share] One more thing.** Short reminder only if they have not replied. |
+| 1 | 5 days | **[Botterverse] Tell us how it is going.** Two questions. Explicit permission line asking whether they may be quoted and how to name them. |
+| 2 | 5 days | **[Botterverse] One more thing.** Short reminder only if they have not replied. |
 
 Never quote anyone without written permission. Keep every reply that grants it.
 
@@ -175,7 +175,7 @@ Never quote anyone without written permission. Keep every reply that grants it.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your first sale.** Congratulate without any income claim. Explain the timeline plainly: a sale can be refunded for 14 days and its earnings become available to withdraw 21 days after it. Payouts then run daily. Remind them to set up payouts once on Stripe's form. |
+| 1 | Immediately | **[Botterverse] Your first sale.** Congratulate without any income claim. Explain the timeline plainly: a sale can be refunded for 14 days and its earnings become available to withdraw 21 days after it. Payouts then run daily. Remind them to set up payouts once on Stripe's form. |
 
 ## S13. Bot Market seller
 
@@ -183,8 +183,8 @@ Never quote anyone without written permission. Keep every reply that grants it.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your listing is live.** Tips: a clear description, the price guidance, an optional affiliate share and replying to reviews. |
-| 2 | 7 days | **[AI Bot Share] Build a reputation.** Verified purchase reviews, the seller profile and the badges (Founder, Verified Seller, 10 Sales and Top Rated). |
+| 1 | Immediately | **[Botterverse] Your listing is live.** Tips: a clear description, the price guidance, an optional affiliate share and replying to reviews. |
+| 2 | 7 days | **[Botterverse] Build a reputation.** Verified purchase reviews, the seller profile and the badges (Founder, Verified Seller, 10 Sales and Top Rated). |
 
 ## S14. Bot Market buyer
 
@@ -192,8 +192,8 @@ Never quote anyone without written permission. Keep every reply that grants it.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your new bot.** How to open it and where its licence terms are. Read the seller's licence before reselling anything. |
-| 2 | 7 days | **[AI Bot Share] How is it working?** Invite a Verified purchase review. |
+| 1 | Immediately | **[Botterverse] Your new bot.** How to open it and where its licence terms are. Read the seller's licence before reselling anything. |
+| 2 | 7 days | **[Botterverse] How is it working?** Invite a Verified purchase review. |
 
 ## S15. Moved across from a GPT
 
@@ -201,8 +201,8 @@ Never quote anyone without written permission. Keep every reply that grants it.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your GPT has moved across.** Test it in the preview chat, rebuild any actions as integrations and make it Public when ready. |
-| 2 | 3 days | **[AI Bot Share] Share it or sell it.** Embed it, add a paywall from the Novice plan or list it on the Bot Market from Pro. |
+| 1 | Immediately | **[Botterverse] Your GPT has moved across.** Test it in the preview chat, rebuild any actions as integrations and make it Public when ready. |
+| 2 | 3 days | **[Botterverse] Share it or sell it.** Embed it, add a paywall from the Novice plan or list it on the Bot Market from Pro. |
 
 ## S16. Power User (heavy credit use)
 
@@ -210,8 +210,8 @@ Never quote anyone without written permission. Keep every reply that grants it.
 
 | Step | Wait | Email |
 |---|---|---|
-| 1 | Immediately | **[AI Bot Share] Your auto top-up just worked.** Confirm what it does and where to change or switch it off. Reassure them that it stops if the bank asks for approval. |
-| 2 | 3 days | **[AI Bot Share] Making your credits go further.** Show that a bigger credit pack carries bonus credits and that a higher plan includes more credits each month. Factual, with no pressure. |
+| 1 | Immediately | **[Botterverse] Your auto top-up just worked.** Confirm what it does and where to change or switch it off. Reassure them that it stops if the bank asks for approval. |
+| 2 | 3 days | **[Botterverse] Making your credits go further.** Show that a bigger credit pack carries bonus credits and that a higher plan includes more credits each month. Factual, with no pressure. |
 
 ---
 

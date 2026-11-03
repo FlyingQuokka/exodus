@@ -1,0 +1,196 @@
+{
+ "title": "UP Sequence - Pro",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Start Upgrade Pro"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "S-start-off",
+   "do": "remove_tag",
+   "tags": [
+    "Start Upgrade Pro"
+   ]
+  },
+  {
+   "key": "S-first-from-Apprentice",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgraded From Apprentice"
+    ]
+   },
+   "yes": [
+    {
+     "key": "J-AP",
+     "do": "email",
+     "email": "J-AP"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "S-first-from-Novice",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgraded From Novice"
+    ]
+   },
+   "yes": [
+    {
+     "key": "J-NP",
+     "do": "email",
+     "email": "J-NP"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "S-first-from-Expert",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgraded From Expert"
+    ]
+   },
+   "yes": [
+    {
+     "key": "UP01",
+     "do": "email",
+     "email": "UP01"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "S-wait-02",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "UP02",
+   "do": "email",
+   "email": "UP02"
+  },
+  {
+   "key": "S-wait-03",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP03",
+   "do": "email",
+   "email": "UP03"
+  },
+  {
+   "key": "S-wait-04",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP04",
+   "do": "email",
+   "email": "UP04"
+  },
+  {
+   "key": "S-wait-05",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP05",
+   "do": "email",
+   "email": "UP05"
+  },
+  {
+   "key": "S-wait-06",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP06",
+   "do": "email",
+   "email": "UP06"
+  },
+  {
+   "key": "S-wait-07",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP07",
+   "do": "email",
+   "email": "UP07"
+  },
+  {
+   "key": "S-wait-08",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP08",
+   "do": "email",
+   "email": "UP08"
+  },
+  {
+   "key": "S-wait-09",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP09",
+   "do": "email",
+   "email": "UP09"
+  },
+  {
+   "key": "S-wait-10",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UP10",
+   "do": "email",
+   "email": "UP10"
+  },
+  {
+   "key": "S-from-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgraded From Expert"
+   ],
+   "note": "Not a jump, so no catch-up needs this tag."
+  },
+  {
+   "key": "S-active-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgrade Active"
+   ]
+  },
+  {
+   "key": "S-done-on",
+   "do": "add_tag",
+   "tags": [
+    "Upgrade Done"
+   ],
+   "note": "Starts a catch-up if the member jumped."
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "title": "RESET Returning member",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Apprentice Botter",
+   "Novice Botter",
+   "Expert Botter",
+   "Pro Botter",
+   "Master Botter"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "R-clear",
+   "do": "remove_tag",
+   "tags": [
+    "Cancelled",
+    "Plan Ended",
+    "Dormant"
+   ],
+   "note": "A member with a plan again starts clean, so a later cancel or quiet spell is noticed."
+  }
+ ]
+}

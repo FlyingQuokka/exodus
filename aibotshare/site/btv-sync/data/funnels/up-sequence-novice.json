@@ -1,0 +1,160 @@
+{
+ "title": "UP Sequence - Novice",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Start Upgrade Novice"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "S-start-off",
+   "do": "remove_tag",
+   "tags": [
+    "Start Upgrade Novice"
+   ]
+  },
+  {
+   "key": "S-first-from-Apprentice",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Upgraded From Apprentice"
+    ]
+   },
+   "yes": [
+    {
+     "key": "UN01",
+     "do": "email",
+     "email": "UN01"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "S-wait-02",
+   "do": "wait",
+   "amount": 1,
+   "unit": "days"
+  },
+  {
+   "key": "UN02",
+   "do": "email",
+   "email": "UN02"
+  },
+  {
+   "key": "S-wait-03",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN03",
+   "do": "email",
+   "email": "UN03"
+  },
+  {
+   "key": "S-wait-04",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN04",
+   "do": "email",
+   "email": "UN04"
+  },
+  {
+   "key": "S-wait-05",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN05",
+   "do": "email",
+   "email": "UN05"
+  },
+  {
+   "key": "S-wait-06",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN06",
+   "do": "email",
+   "email": "UN06"
+  },
+  {
+   "key": "S-wait-07",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN07",
+   "do": "email",
+   "email": "UN07"
+  },
+  {
+   "key": "S-wait-08",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN08",
+   "do": "email",
+   "email": "UN08"
+  },
+  {
+   "key": "S-wait-09",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN09",
+   "do": "email",
+   "email": "UN09"
+  },
+  {
+   "key": "S-wait-10",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "UN10",
+   "do": "email",
+   "email": "UN10"
+  },
+  {
+   "key": "S-from-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgraded From Apprentice"
+   ],
+   "note": "Not a jump, so no catch-up needs this tag."
+  },
+  {
+   "key": "S-active-off",
+   "do": "remove_tag",
+   "tags": [
+    "Upgrade Active"
+   ]
+  },
+  {
+   "key": "S-done-on",
+   "do": "add_tag",
+   "tags": [
+    "Upgrade Done"
+   ],
+   "note": "Starts a catch-up if the member jumped."
+  }
+ ]
+}

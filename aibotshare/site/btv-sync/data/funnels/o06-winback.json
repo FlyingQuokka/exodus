@@ -1,0 +1,142 @@
+{
+ "title": "O06 Win-back after plan end",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Plan Ended"
+  ]
+ },
+ "run_multiple": true,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O06-w2",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "O06-back-2",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O06-back-2-end",
+     "do": "end"
+    }
+   ],
+   "no": [],
+   "note": "A plan tag means the member has come back."
+  },
+  {
+   "key": "O06-2",
+   "do": "email",
+   "email": "O06-2"
+  },
+  {
+   "key": "O06-w3",
+   "do": "wait",
+   "amount": 28,
+   "unit": "days"
+  },
+  {
+   "key": "O06-back-3",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O06-back-3-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "O06-3",
+   "do": "email",
+   "email": "O06-3"
+  },
+  {
+   "key": "O06-w4",
+   "do": "wait",
+   "amount": 30,
+   "unit": "days"
+  },
+  {
+   "key": "O06-back-4",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O06-back-4-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "O06-4",
+   "do": "email",
+   "email": "O06-4"
+  },
+  {
+   "key": "O06-w5",
+   "do": "wait",
+   "amount": 30,
+   "unit": "days"
+  },
+  {
+   "key": "O06-back-5",
+   "do": "condition",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Apprentice Botter",
+     "Novice Botter",
+     "Expert Botter",
+     "Pro Botter",
+     "Master Botter"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O06-back-5-end",
+     "do": "end"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "O06-5",
+   "do": "email",
+   "email": "O06-5"
+  }
+ ]
+}

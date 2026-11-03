@@ -1,0 +1,24 @@
+{
+ "title": "O09 Feedback request",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "First Sale"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O09-w1",
+   "do": "wait",
+   "amount": 3,
+   "unit": "days"
+  },
+  {
+   "key": "O09-1",
+   "do": "email",
+   "email": "O09-1"
+  }
+ ]
+}

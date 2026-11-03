@@ -1,0 +1,29 @@
+{
+ "title": "O12 Bot Market buyer",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Bot Market Buyer"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O12-1",
+   "do": "email",
+   "email": "O12-1"
+  },
+  {
+   "key": "O12-w2",
+   "do": "wait",
+   "amount": 7,
+   "unit": "days"
+  },
+  {
+   "key": "O12-2",
+   "do": "email",
+   "email": "O12-2"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"layout": { "contentSize": "760px", "wideSize": "1120px" },
+		"color": {
+			"custom": false,
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "background", "name": "Background", "color": "#f8f7ff" },
+				{ "slug": "surface", "name": "Card", "color": "#ffffff" },
+				{ "slug": "surface-alt", "name": "Alternate surface", "color": "#f1f1f8" },
+				{ "slug": "panel", "name": "Panel", "color": "#ebedfc" },
+				{ "slug": "heading", "name": "Heading text", "color": "#282637" },
+				{ "slug": "text-2", "name": "Secondary text", "color": "#4f4d5f" },
+				{ "slug": "muted", "name": "Muted text", "color": "#605e71" },
+				{ "slug": "border", "name": "Border", "color": "#dcdbe6" },
+				{ "slug": "border-strong", "name": "Strong border", "color": "#a9a8af" },
+				{ "slug": "brand-pink", "name": "Brand pink", "color": "#dc8fd5" },
+				{ "slug": "pink-hover", "name": "Pink hover", "color": "#c876c1" },
+				{ "slug": "pink-tint", "name": "Pink tint", "color": "#ffe0fb" },
+				{ "slug": "accent-text", "name": "Coloured text", "color": "#984f92" },
+				{ "slug": "on-accent", "name": "Text on pink", "color": "#391d37" },
+				{ "slug": "success", "name": "Success", "color": "#036639" },
+				{ "slug": "warning", "name": "Warning", "color": "#895800" },
+				{ "slug": "danger", "name": "Danger", "color": "#ac3031" },
+				{ "slug": "info", "name": "Info", "color": "#0e5794" },
+				{ "slug": "nightshift-bg", "name": "Nightshift background", "color": "#080d16" },
+				{ "slug": "nightshift-accent", "name": "Nightshift accent", "color": "#00d1da" }
+			]
+		},
+		"typography": {
+			"customFontSize": false,
+			"fontFamilies": [
+				{ "slug": "heading", "name": "Baloo 2", "fontFamily": "'Baloo 2', system-ui, sans-serif" },
+				{ "slug": "body", "name": "Nunito Sans", "fontFamily": "'Nunito Sans', system-ui, sans-serif" }
+			]
+		},
+		"spacing": {
+			"units": ["px", "rem", "%"],
+			"spacingSizes": [
+				{ "slug": "20", "name": "Small", "size": "1rem" },
+				{ "slug": "40", "name": "Medium", "size": "2rem" },
+				{ "slug": "60", "name": "Large", "size": "3rem" },
+				{ "slug": "80", "name": "Extra large", "size": "4.5rem" }
+			]
+		},
+		"custom": {
+			"radius": { "card": "22px", "nav": "16px", "control": "12px" },
+			"shadow": "0 10px 30px rgba(40, 38, 55, 0.08)"
+		}
+	},
+	"styles": {
+		"spacing": { "blockGap": "0" },
+		"color": { "background": "var(--wp--preset--color--background)", "text": "var(--wp--preset--color--text-2)" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--body)", "fontSize": "17px", "lineHeight": "1.65" },
+		"elements": {
+			"link": {
+				"color": { "text": "var(--wp--preset--color--accent-text)" },
+				":hover": { "color": { "text": "var(--wp--preset--color--pink-hover)" } }
+			},
+			"heading": {
+				"color": { "text": "var(--wp--preset--color--heading)" },
+				"typography": { "fontFamily": "var(--wp--preset--font-family--heading)", "fontWeight": "800", "lineHeight": "1.12" }
+			}
+		}
+	},
+	"customTemplates": [
+		{ "name": "page-landing", "title": "Landing page", "postTypes": ["page"] },
+		{ "name": "page-wide", "title": "Wide page", "postTypes": ["page"] }
+	],
+	"templateParts": [
+		{ "name": "header", "title": "Header", "area": "header" },
+		{ "name": "footer", "title": "Footer", "area": "footer" }
+	]
+}

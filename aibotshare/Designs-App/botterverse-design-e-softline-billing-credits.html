@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en" data-theme="pleasant-pink">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>botterverse-design-e-softline-billing-credits</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito+Sans:wght@400;600;700;800&family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<script>
+  // Applied before first paint so there is no flash of the previous theme.
+  // In the shipped app the attribute is server-rendered from the user's
+  // saved preference instead - see Docos/Theming-Spec.md section 6.
+  try {
+    var t = localStorage.getItem('abs-preview-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+<style>
+/* ---- theme layer ---- */
+  :root,
+[data-theme="pleasant-pink"] {
+    --theme-bg: oklch(0.98 0.01 290);
+    --theme-surface: #ffffff;
+    --theme-surface-alt: oklch(0.96 0.01 290);
+    --theme-surface-hover: oklch(0.985 0.008 290);
+    --theme-sidebar: oklch(0.95 0.02 280);
+    --theme-text: oklch(0.28 0.03 290);
+    --theme-text-secondary: oklch(0.44 0.03 290);
+    --theme-text-muted: oklch(0.55 0.03 290);
+    --theme-text-subtle: oklch(0.62 0.03 290);
+    --theme-text-on-accent: #ffffff;
+    --theme-border: oklch(0.94 0.01 290);
+    --theme-border-strong: oklch(0.90 0.015 290);
+    --theme-border-width: 1px;
+    --theme-accent: oklch(0.75 0.13 330);
+    --theme-accent-hover: oklch(0.68 0.14 330);
+    --theme-accent-soft: oklch(0.94 0.05 330);
+    --theme-success: oklch(0.45 0.11 155);
+    --theme-success-soft: oklch(0.93 0.05 155);
+    --theme-warning: oklch(0.50 0.13 80);
+    --theme-warning-soft: oklch(0.94 0.07 80);
+    --theme-danger: oklch(0.50 0.16 25);
+    --theme-danger-soft: oklch(0.94 0.05 25);
+    --theme-info: oklch(0.45 0.12 250);
+    --theme-info-soft: oklch(0.93 0.04 250);
+    --theme-font-display: 'Baloo 2', system-ui, sans-serif;
+    --theme-font-body: 'Nunito Sans', system-ui, sans-serif;
+    --theme-radius-card: 22px;
+    --theme-radius-nav: 16px;
+    --theme-radius-control: 12px;
+    --theme-radius-pill: 999px;
+    --theme-shadow-card: none;
+    --theme-shadow-raised: 0 4px 10px oklch(0.75 0.13 330 / 0.30);
+  }
+
+  [data-theme="nightshift"] {
+    --theme-bg: oklch(0.16 0.02 260);
+    --theme-surface: oklch(0.19 0.02 260);
+    --theme-surface-alt: oklch(0.14 0.02 260);
+    --theme-surface-hover: oklch(0.22 0.02 260);
+    --theme-sidebar: oklch(0.13 0.02 260);
+    --theme-text: oklch(0.95 0.005 260);
+    --theme-text-secondary: oklch(0.72 0.015 260);
+    --theme-text-muted: oklch(0.60 0.02 260);
+    --theme-text-subtle: oklch(0.50 0.02 260);
+    --theme-text-on-accent: oklch(0.13 0.02 260);
+    --theme-border: oklch(0.25 0.02 260);
+    --theme-border-strong: oklch(0.32 0.02 260);
+    --theme-border-width: 1px;
+    --theme-accent: oklch(0.78 0.14 200);
+    --theme-accent-hover: oklch(0.85 0.14 200);
+    --theme-accent-soft: oklch(0.28 0.05 200);
+    --theme-success: oklch(0.75 0.15 155);
+    --theme-success-soft: oklch(0.26 0.05 155);
+    --theme-warning: oklch(0.80 0.13 80);
+    --theme-warning-soft: oklch(0.28 0.05 80);
+    --theme-danger: oklch(0.72 0.15 25);
+    --theme-danger-soft: oklch(0.28 0.06 25);
+    --theme-info: oklch(0.75 0.12 250);
+    --theme-info-soft: oklch(0.26 0.05 250);
+    --theme-font-display: 'Sora', system-ui, sans-serif;
+    --theme-font-body: 'IBM Plex Sans', system-ui, sans-serif;
+    --theme-radius-card: 12px;
+    --theme-radius-nav: 8px;
+    --theme-radius-control: 8px;
+    --theme-radius-pill: 999px;
+    --theme-shadow-card: 0 1px 2px rgb(0 0 0 / 0.30);
+    --theme-shadow-raised: 0 4px 12px rgb(0 0 0 / 0.45);
+  }
+
+/* ---- component layer: reads tokens only ---- */
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; font-family: var(--theme-font-body); background: var(--theme-bg); color: var(--theme-text); }
+  a { color: var(--theme-accent); text-decoration: none; }
+  .display { font-family: var(--theme-font-display); }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: var(--theme-border-strong); border-radius: var(--theme-radius-pill); }
+
+  .app { display:flex; width:100%; height:100vh; overflow:hidden; padding:14px; gap:14px; }
+
+  .sidebar { display:flex; flex-direction:column; width:100%; height:100%; background:var(--theme-sidebar); border-radius:var(--theme-radius-card); overflow:hidden; }
+  .sidebar-wrap { position:relative; width:258px; flex-shrink:0; transition:width 0.15s ease; }
+  .sidebar-wrap.collapsed { width:80px; }
+
+  .logo { display:flex; align-items:center; gap:10px; padding:22px 18px 18px; flex-shrink:0; white-space:nowrap; }
+  .logo span { color:var(--theme-text); font-weight:700; font-size:17px; transition:opacity 0.1s ease; }
+
+  .collapser-btn { position:absolute; top:23px; right:5px; background:none; border:none; display:flex; align-items:center; justify-content:center; font-size:25px; line-height:1; padding:0; color:var(--theme-text-secondary); cursor:pointer; z-index:2; transition:transform 0.15s ease; }
+  .collapsed .collapser-btn { transform:rotate(180deg); }
+  .collapsed .logo span, .collapsed .nav-label, .collapsed .nav-group { opacity:0; }
+
+  .nav { flex:1; overflow-y:auto; padding:6px 12px; }
+  .nav-group { color:var(--theme-text-muted); font-size:13px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; padding:14px 12px 8px; white-space:nowrap; transition:opacity 0.1s ease; }
+  .nav-item { display:flex; align-items:center; gap:12px; padding:11px 14px; border-radius:var(--theme-radius-nav); margin-bottom:4px; color:var(--theme-text-secondary); }
+  .nav-item svg { flex-shrink:0; }
+  .nav-item .nav-label { font-size:14px; font-weight:700; white-space:nowrap; transition:opacity 0.1s ease; }
+  .nav-item.active { background:var(--theme-accent); color:var(--theme-text-on-accent); box-shadow:var(--theme-shadow-raised); }
+  .sidebar-foot { flex-shrink:0; padding:12px; }
+  .nav-item.foot { color:var(--theme-text-secondary); }
+
+  .main-col { flex:1; display:flex; flex-direction:column; min-width:0; gap:14px; }
+  .topbar { height:70px; flex-shrink:0; background:var(--theme-surface); border-radius:var(--theme-radius-card); display:flex; align-items:center; justify-content:space-between; padding:0 26px; box-shadow:var(--theme-shadow-card); }
+  .topbar h1 { font-size:21px; font-weight:700; margin:0; color:var(--theme-text); }
+  .topbar-right { display:flex; align-items:center; gap:14px; }
+  .credit-chip { display:flex; align-items:center; gap:6px; background:var(--theme-success-soft); color:var(--theme-success); padding:8px 16px; border-radius:var(--theme-radius-pill); font-size:13px; font-weight:700; }
+  .user-block { text-align:right; line-height:1.3; padding:4px 4px; display:block; text-decoration:none; }
+  .user-block:hover { opacity:0.75; }
+  .user-name { font-size:15px; font-weight:700; color:var(--theme-text); }
+  .user-tier { font-size:12.5px; font-weight:700; color:var(--theme-accent); }
+
+  .content { flex:1; overflow-y:auto; padding-right:2px; }
+  .content-inner { display:flex; flex-direction:column; gap:14px; }
+  .narrow { max-width:800px; }
+
+  /* -- surfaces -- */
+  .card { background:var(--theme-surface); border-radius:var(--theme-radius-card); padding:20px 22px; box-shadow:var(--theme-shadow-card); }
+  .panel-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; flex-wrap:wrap; gap:10px; }
+  .panel-title { font-size:19px; font-weight:700; color:var(--theme-text); }
+  .panel-sub { font-size:12.5px; color:var(--theme-text-muted); margin-top:2px; font-weight:400; }
+  .section-note { font-size:13px; color:var(--theme-text-muted); line-height:1.55; margin:0 0 14px; }
+
+  /* -- stats -- */
+  .stat-grid { display:grid; gap:14px; }
+  .cols-2 { grid-template-columns:repeat(2, minmax(0,1fr)); }
+  .cols-3 { grid-template-columns:repeat(3, minmax(0,1fr)); }
+  .cols-4 { grid-template-columns:repeat(4, minmax(0,1fr)); }
+  .stat-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+  .stat-label { font-size:12.5px; font-weight:700; color:var(--theme-text-muted); }
+  .stat-icon { width:38px; height:38px; border-radius:var(--theme-radius-pill); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .stat-value { font-size:26px; font-weight:800; color:var(--theme-text); }
+  .stat-sub { font-size:12.5px; color:var(--theme-text-muted); margin-top:4px; }
+  .stat-sub.up { color:var(--theme-success); }
+  .stat-sub.down { color:var(--theme-danger); }
+  .stat-unit { font-size:15px; font-weight:700; color:var(--theme-text-muted); }
+
+  /* -- date range -- */
+  .range-control { display:flex; gap:4px; background:var(--theme-surface-alt); padding:4px; border-radius:var(--theme-radius-pill); }
+  .range-pill { padding:7px 13px; border-radius:var(--theme-radius-pill); font-size:12.5px; font-weight:700; color:var(--theme-text-muted); cursor:pointer; }
+  .range-pill.active { background:var(--theme-accent); color:var(--theme-text-on-accent); }
+  .axis-labels { display:flex; justify-content:space-between; font-size:11.5px; color:var(--theme-text-subtle); padding:6px 4px 0; }
+
+  /* -- buttons -- */
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:11px 20px; border-radius:var(--theme-radius-pill); font-size:13.5px; font-weight:700; border:none; cursor:pointer; font-family:inherit; }
+  .btn-primary { background:var(--theme-accent); color:var(--theme-text-on-accent); }
+  .btn-ghost { background:var(--theme-surface-alt); color:var(--theme-text-secondary); }
+  .btn-danger { background:var(--theme-danger-soft); color:var(--theme-danger); }
+  .btn-sm { padding:7px 14px; font-size:12.5px; }
+
+  /* -- forms -- */
+  .field-row { display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; margin-bottom:14px; }
+  .field-row.single { grid-template-columns:1fr; }
+  .field { display:flex; flex-direction:column; gap:6px; }
+  .field label { font-size:12.5px; font-weight:700; color:var(--theme-text-secondary); }
+  .field .hint { font-size:11.5px; color:var(--theme-text-subtle); font-weight:400; }
+  .field input, .field select, .field textarea { border:var(--theme-border-width) solid var(--theme-border-strong); background:var(--theme-surface-alt); border-radius:var(--theme-radius-control); padding:10px 14px; font-size:13.5px; font-family:inherit; color:var(--theme-text); width:100%; }
+  .field textarea { resize:vertical; line-height:1.6; }
+  .field input[readonly] { background:var(--theme-surface-hover); color:var(--theme-text-muted); }
+  .field input::placeholder, .field textarea::placeholder { color:var(--theme-text-subtle); }
+  .name-group { display:flex; gap:12px; }
+  .name-group .field { flex:1; }
+  .divider { height:1px; background:var(--theme-border); margin:20px 0; }
+
+  .toggle-row { display:flex; align-items:center; justify-content:space-between; padding:10px 0; gap:16px; }
+  .toggle-text .t-title { font-size:13.5px; font-weight:700; }
+  .toggle-text .t-sub { font-size:12px; color:var(--theme-text-muted); margin-top:1px; }
+  .toggle { width:42px; height:24px; border-radius:var(--theme-radius-pill); flex-shrink:0; position:relative; }
+  .toggle.on { background:var(--theme-accent); }
+  .toggle.off { background:var(--theme-border-strong); }
+  .toggle .knob { position:absolute; top:3px; width:18px; height:18px; border-radius:50%; background:var(--theme-surface); }
+  .toggle.on .knob { right:3px; }
+  .toggle.off .knob { left:3px; }
+
+  .radio-row { display:flex; gap:12px; flex-wrap:wrap; }
+  .radio-card { flex:1; min-width:200px; border:2px solid var(--theme-border-strong); border-radius:var(--theme-radius-nav); padding:14px 16px; cursor:pointer; }
+  .radio-card.sel { border-color:var(--theme-accent); background:var(--theme-accent-soft); }
+  .radio-card .rc-title { font-size:13.5px; font-weight:700; }
+  .radio-card .rc-sub { font-size:12px; color:var(--theme-text-muted); margin-top:3px; line-height:1.5; }
+
+  /* -- accordion -- */
+  .accordion { background:var(--theme-surface); border-radius:var(--theme-radius-card); overflow:hidden; box-shadow:var(--theme-shadow-card); }
+  .accordion-head { display:flex; align-items:center; justify-content:space-between; padding:22px 26px; cursor:pointer; }
+  .accordion-head .title-group { display:flex; align-items:center; gap:14px; }
+  .accordion-icon { width:38px; height:38px; border-radius:var(--theme-radius-pill); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .accordion-title { font-size:18px; font-weight:700; }
+  .accordion-sub { font-size:12.5px; color:var(--theme-text-muted); margin-top:1px; }
+  .accordion-chevron { color:var(--theme-text-muted); transition:transform 0.15s ease; flex-shrink:0; }
+  .accordion.open .accordion-chevron { transform:rotate(180deg); }
+  .accordion-body { padding:0 26px 26px; }
+  .accordion:not(.open) .accordion-body { display:none; }
+
+  /* -- tables -- */
+  .table-wrap { overflow-x:auto; }
+  table.data { width:100%; border-collapse:collapse; font-size:13px; }
+  table.data th { text-align:left; font-size:11.5px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:var(--theme-text-muted); padding:0 14px 12px; white-space:nowrap; }
+  table.data td { padding:13px 14px; border-top:var(--theme-border-width) solid var(--theme-border); vertical-align:middle; }
+  table.data tr:hover td { background:var(--theme-surface-hover); }
+  table.data td.num, table.data th.num { text-align:right; }
+  .cell-main { font-weight:700; }
+  .cell-sub { font-size:11.5px; color:var(--theme-text-muted); margin-top:2px; }
+  .row-actions { display:flex; gap:6px; justify-content:flex-end; }
+  .icon-btn { background:var(--theme-surface-alt); border:none; width:30px; height:30px; border-radius:var(--theme-radius-control); display:flex; align-items:center; justify-content:center; color:var(--theme-text-secondary); cursor:pointer; }
+
+  /* -- badges + chips -- */
+  .badge { display:inline-block; font-size:11px; font-weight:700; padding:4px 10px; border-radius:var(--theme-radius-pill); white-space:nowrap; }
+  .b-green { background:var(--theme-success-soft); color:var(--theme-success); }
+  .b-grey  { background:var(--theme-surface-alt); color:var(--theme-text-muted); }
+  .b-pink  { background:var(--theme-accent-soft); color:var(--theme-accent); }
+  .b-amber { background:var(--theme-warning-soft); color:var(--theme-warning); }
+  .b-red   { background:var(--theme-danger-soft); color:var(--theme-danger); }
+  .b-blue  { background:var(--theme-info-soft); color:var(--theme-info); }
+
+  /* Avatar fills are identity colours, not theme colours - they distinguish
+     one person or bot from another and stay constant across themes. */
+  .avatar-sm { width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:11.5px; color:#fff; flex-shrink:0; }
+  .avatar-lg { width:76px; height:76px; border-radius:50%; background:var(--theme-accent); color:var(--theme-text-on-accent); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:24px; flex-shrink:0; }
+  .with-avatar { display:flex; align-items:center; gap:11px; }
+
+  /* -- search + filters -- */
+  .filter-card { background:var(--theme-surface); border-radius:var(--theme-radius-card); padding:16px 18px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; box-shadow:var(--theme-shadow-card); }
+  .search-box { display:flex; align-items:center; gap:8px; background:var(--theme-surface-alt); border-radius:var(--theme-radius-pill); padding:10px 16px; flex:1; min-width:220px; color:var(--theme-text-muted); }
+  .search-box input { border:none; background:none; outline:none; font-size:13.5px; font-family:inherit; flex:1; color:var(--theme-text); }
+  .search-box input::placeholder { color:var(--theme-text-subtle); }
+  .filter-pill { display:flex; align-items:center; gap:6px; background:var(--theme-surface-alt); border-radius:var(--theme-radius-pill); padding:9px 14px; font-size:13px; font-weight:700; color:var(--theme-text-secondary); white-space:nowrap; cursor:pointer; }
+  .push-right { margin-left:auto; }
+  .results-row { display:flex; align-items:center; justify-content:space-between; padding:0 4px; }
+  .results-count { font-size:13px; font-weight:700; color:var(--theme-text-muted); }
+
+  /* -- notices -- */
+  .notice { display:flex; align-items:flex-start; gap:10px; font-size:12.5px; font-weight:700; padding:12px 16px; border-radius:var(--theme-radius-control); line-height:1.5; }
+  .notice svg { flex-shrink:0; margin-top:1px; }
+  .n-amber { background:var(--theme-warning-soft); color:var(--theme-warning); }
+  .n-pink { background:var(--theme-accent-soft); color:var(--theme-accent); }
+  .n-blue { background:var(--theme-info-soft); color:var(--theme-info); }
+
+  .back-link { display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:700; color:var(--theme-text-muted); padding:2px 4px; }
+  .list-row { display:flex; align-items:center; gap:12px; padding:11px 10px; border-radius:var(--theme-radius-nav); }
+  .list-row + .list-row { border-top:var(--theme-border-width) solid var(--theme-border); }
+  .dot { width:9px; height:9px; border-radius:50%; flex-shrink:0; }
+  .dot-on { background:var(--theme-success); }
+  .dot-off { background:var(--theme-border-strong); }
+  .dot-warn { background:var(--theme-warning); }
+
+  /* -- preview aid only, not a shipped feature -- */
+  .theme-switch { display:flex; flex-direction:column; align-items:center; gap:5px; cursor:pointer; user-select:none; }
+  .theme-switch .tw-label { font-size:10.5px; font-weight:800; letter-spacing:0.06em; text-transform:uppercase; color:var(--theme-text-muted); line-height:1; }
+
+  .sidebar-wrap { width:258px; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <div class="sidebar-wrap" id="sidebar">
+  <div class="sidebar">
+    <a href="botterverse-design-e-softline-dashboard.html" class="logo">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" style="flex-shrink:0;">
+        <circle cx="15" cy="15" r="14" fill="var(--theme-accent)"/>
+        <circle cx="11" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+        <circle cx="19" cy="14" r="2.3" fill="var(--theme-text-on-accent)"/>
+        <path d="M10.5 19c1.3 1.4 2.9 2 4.5 2s3.2-.6 4.5-2" stroke="var(--theme-text-on-accent)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span>Botterverse</span>
+    </a>
+
+    <div class="nav">
+      <div class="nav-group">General</div>
+      <a href="botterverse-design-e-softline-dashboard.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="3" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="3" width="8" height="5" rx="2.5" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="10" width="8" height="11" rx="3" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="13" width="8" height="8" rx="3" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav-label">Dashboard</span>
+      </a>
+      <a href="botterverse-design-e-softline-my-bots.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="4" y="8" width="16" height="12" rx="5" stroke="currentColor" stroke-width="1.8"/><path d="M8 8V6a4 4 0 0 1 8 0v2" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="14" r="1.3" fill="currentColor"/><circle cx="15" cy="14" r="1.3" fill="currentColor"/></svg>
+        <span class="nav-label">My Bots</span>
+      </a>
+      <a href="botterverse-design-e-softline-bot-builder.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3l3 3-9 9H5.7v-3l9-9z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 8l3 3" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav-label">Bot Builder</span>
+      </a>
+      <a href="botterverse-design-e-softline-bot-analytics.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M11 20V4M18 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="nav-label">Bot Analytics</span>
+      </a>
+      <a href="botterverse-design-e-softline-importer.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 4v11m0-11l-4 4m4-4l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 16v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="nav-label">Importer</span>
+      </a>
+
+      <div class="nav-group">Marketplace</div>
+      <a href="botterverse-design-e-softline-bot-market.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav-label">Bot Market</span>
+      </a>
+      <a href="botterverse-design-e-softline-list-a-bot.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M12 3l7.5 7.5a2 2 0 0 1 0 2.8L14 18.8a2 2 0 0 1-2.8 0L3.7 11.3V4A1 1 0 0 1 4.7 3H12z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.3" cy="7.3" r="1.1" fill="currentColor"/></svg>
+        <span class="nav-label">List a Bot</span>
+      </a>
+
+      <div class="nav-group">Account</div>
+      <a href="botterverse-design-e-softline-billing-credits.html" class="nav-item active">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="13" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav-label">Billing &amp; Credits</span>
+      </a>
+      <a href="botterverse-design-e-softline-team-clients.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="9" r="2.4" stroke="currentColor" stroke-width="1.8"/><path d="M15 19a4.2 4.2 0 0 1 6.8-3.3" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="nav-label">Team &amp; Clients</span>
+      </a>
+      <a href="botterverse-design-e-softline-settings.html" class="nav-item">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 13.5a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.9 2.9l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.9-2.9l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.6-1h-.2a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.9-2.9l.1.1a1.7 1.7 0 0 0 1.9.3h.1a1.7 1.7 0 0 0 1-1.6v-.2a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.6h.1a1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.9 2.9l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.6 1h.2a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.6 1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        <span class="nav-label">Settings</span>
+      </a>
+    </div>
+
+    <div class="sidebar-foot">
+      <a href="#" class="nav-item foot">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.4 2.3c-.9.4-1.4 1-1.4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="11.9" cy="16.5" r="1" fill="currentColor"/></svg>
+        <span class="nav-label">Support</span>
+      </a>
+      <a href="#" class="nav-item foot">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="7" cy="8" r="3" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 9.5l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="nav-label">Affiliates</span>
+      </a>
+    </div>
+  </div>
+  <button class="collapser-btn" onclick="document.getElementById('sidebar').classList.toggle('collapsed')" aria-label="Collapse sidebar">&laquo;</button>
+  </div>
+
+  <div class="main-col">
+    <div class="topbar">
+      <h1 class="display">Billing &amp; Credits</h1>
+      <div class="topbar-right">
+        <div class="theme-switch" id="themeSwitch" title="Switch theme">
+          <span class="tw-label">Theme</span>
+          <div class="toggle off"><div class="knob"></div></div>
+        </div>
+        <div class="credit-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> 24,650 credits</div>
+        <a href="botterverse-design-e-softline-profile.html" class="user-block">
+          <div class="user-name">Jamie Marlowe</div>
+          <div class="user-tier">Pro Botter</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-inner narrow">
+        <div class="stat-grid cols-3">
+
+          <div class="card">
+            <div class="stat-head">
+              <span class="stat-label">Credit balance</span>
+              <div class="stat-icon" style="background:var(--theme-accent-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--theme-accent)"><circle cx="12" cy="12" r="9"  stroke-width="2"/><path d="M12 7v5l3 2"  stroke-width="2" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="stat-value display">24,650</div>
+            <div class="stat-sub ">~9,860 messages left</div>
+          </div>
+
+          <div class="card">
+            <div class="stat-head">
+              <span class="stat-label">Used this month</span>
+              <div class="stat-icon" style="background:var(--theme-success-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--theme-success)"><path d="M4 20V10M11 20V4M18 20v-7"  stroke-width="2" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="stat-value display">18,204</div>
+            <div class="stat-sub ">across 6 bots</div>
+          </div>
+
+          <div class="card">
+            <div class="stat-head">
+              <span class="stat-label">Current plan</span>
+              <div class="stat-icon" style="background:var(--theme-warning-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--theme-warning)"><rect x="3" y="6" width="18" height="13" rx="4"  stroke-width="2"/><path d="M3 10h18"  stroke-width="2"/></svg></div>
+            </div>
+            <div class="stat-value display">Pro Botter</div>
+            <div class="stat-sub ">$197/mo · renews 12 Sep</div>
+          </div>
+        </div>
+
+
+        <div class="accordion open">
+          <div class="accordion-head" onclick="this.parentNode.classList.toggle('open')">
+            <div class="title-group">
+              <div class="accordion-icon" style="background:var(--theme-accent-soft);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--theme-accent)"><path d="M4 20V10M11 20V4M18 20v-7"  stroke-width="1.8" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="accordion-title display">Credit usage</div>
+                <div class="accordion-sub">Consumption over time and recent activity</div>
+              </div>
+            </div>
+            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="accordion-body">
+            <div class="panel-head"><div class="range-control"><span class="range-pill">Week</span><span class="range-pill active">Month</span><span class="range-pill">YTD</span><span class="range-pill">5yr</span><span class="range-pill">Custom</span></div></div>
+            <svg width="100%" height="170" viewBox="0 0 720 170" preserveAspectRatio="none">
+            <defs><linearGradient id="cred" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--theme-accent)" stop-opacity="0.25"/>
+              <stop offset="100%" stop-color="var(--theme-accent)" stop-opacity="0"/>
+            </linearGradient></defs>
+            <path d="M0,158 L51,141 L103,149 L154,117 L206,128 L257,102 L309,108 L360,86 L411,95 L463,69 L514,74 L566,48 L617,58 L669,28 L720,35 L720,170 L0,170 Z" fill="url(#cred)"/>
+            <path d="M0,158 L51,141 L103,149 L154,117 L206,128 L257,102 L309,108 L360,86 L411,95 L463,69 L514,74 L566,48 L617,58 L669,28 L720,35" fill="none" stroke="var(--theme-accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+            <div class="axis-labels"><span>1 Jul</span><span>8 Jul</span><span>15 Jul</span><span>22 Jul</span><span>29 Jul</span></div>
+            <div class="divider"></div>
+
+          <div class="table-wrap">
+            <table class="data">
+              <thead><tr><th>Date</th><th>Bot</th><th>Type</th><th class="num">Credits</th></tr></thead>
+              <tbody><tr><td>31 Aug 2026</td><td class="cell-main">Client Onboarding Bot</td><td><span class="badge b-grey">Usage</span></td><td class="num">-1,204</td></tr><tr><td>30 Aug 2026</td><td class="cell-main">Auto top-up</td><td><span class="badge b-green">Purchase</span></td><td class="num">+20,000</td></tr><tr><td>30 Aug 2026</td><td class="cell-main">Sales Qualifier</td><td><span class="badge b-grey">Usage</span></td><td class="num">-486</td></tr><tr><td>28 Aug 2026</td><td class="cell-main">Promo code LAUNCH50</td><td><span class="badge b-pink">Bonus</span></td><td class="num">+5,000</td></tr><tr><td>28 Aug 2026</td><td class="cell-main">Course FAQ Bot</td><td><span class="badge b-grey">Usage</span></td><td class="num">-312</td></tr></tbody>
+            </table>
+          </div></div>
+        </div>
+
+
+        <div class="accordion">
+          <div class="accordion-head" onclick="this.parentNode.classList.toggle('open')">
+            <div class="title-group">
+              <div class="accordion-icon" style="background:var(--theme-success-soft);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--theme-success)"><circle cx="12" cy="12" r="9"  stroke-width="2"/><path d="M12 7v5l3 2"  stroke-width="2" stroke-linecap="round"/></svg></div>
+              <div>
+                <div class="accordion-title display">Auto top-up</div>
+                <div class="accordion-sub">On · tops up when the balance drops below 5,000</div>
+              </div>
+            </div>
+            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="accordion-body">
+            <div class="toggle-row"><div class="toggle-text"><div class="t-title">Top up automatically</div><div class="t-sub">Charges the card on file so your bots never stop mid-conversation</div></div><div class="toggle on"><div class="knob"></div></div></div>
+            <div class="divider"></div>
+            <div class="field-row">
+              <div class="field"><label>Top up when balance falls below</label><input type="text" value="5,000 credits"></div>
+              <div class="field"><label>Top-up amount</label><select><option>20,000 credits - $40</option><option>50,000 credits - $95</option><option>100,000 credits - $180</option></select></div>
+            </div>
+            <div class="notice n-blue"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 9.2a2.5 2.5 0 1 1 3.4 2.3c-.9.4-1.4 1-1.4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="11.9" cy="16.5" r="1" fill="currentColor"/></svg> You are emailed immediately every time an automatic top-up is charged.</div></div>
+        </div>
+
+
+        <div class="accordion">
+          <div class="accordion-head" onclick="this.parentNode.classList.toggle('open')">
+            <div class="title-group">
+              <div class="accordion-icon" style="background:var(--theme-warning-soft);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--theme-warning)"><rect x="3" y="7" width="18" height="11" rx="4"  stroke-width="1.8"/><circle cx="12" cy="12.5" r="2.2"  stroke-width="1.8"/></svg></div>
+              <div>
+                <div class="accordion-title display">Promo code</div>
+                <div class="accordion-sub">Redeem a bonus-credit code</div>
+              </div>
+            </div>
+            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="accordion-body">
+            <div class="field-row">
+              <div class="field"><label>Code</label><input type="text" placeholder="e.g. LAUNCH50"></div>
+              <div class="field" style="justify-content:flex-end;"><button class="btn btn-primary">Redeem code</button></div>
+            </div></div>
+        </div>
+
+
+        <div class="accordion">
+          <div class="accordion-head" onclick="this.parentNode.classList.toggle('open')">
+            <div class="title-group">
+              <div class="accordion-icon" style="background:var(--theme-info-soft);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--theme-info)"><rect x="3" y="6" width="18" height="13" rx="4"  stroke-width="1.8"/><path d="M3 10h18"  stroke-width="1.8"/></svg></div>
+              <div>
+                <div class="accordion-title display">Plan &amp; invoices</div>
+                <div class="accordion-sub">Pro Botter · $197/mo</div>
+              </div>
+            </div>
+            <svg class="accordion-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="accordion-body">
+            <div style="display:flex; gap:10px; margin-bottom:6px;">
+              <button class="btn btn-primary">Upgrade to Master Botter</button>
+              <button class="btn btn-ghost">Change plan</button>
+              <button class="btn btn-ghost">Update card</button>
+            </div>
+            <div class="divider"></div>
+
+          <div class="table-wrap">
+            <table class="data">
+              <thead><tr><th>Invoice</th><th>Date</th><th>Plan</th><th class="num">Amount</th><th class="num"></th></tr></thead>
+              <tbody><tr><td class="cell-main">INV-2026-0841</td><td>12 Aug 2026</td><td>Pro Botter</td><td class="num">$197.00</td><td class="num"><a href="#">PDF</a></td></tr><tr><td class="cell-main">INV-2026-0774</td><td>12 Jul 2026</td><td>Pro Botter</td><td class="num">$197.00</td><td class="num"><a href="#">PDF</a></td></tr><tr><td class="cell-main">INV-2026-0698</td><td>12 Jun 2026</td><td>Expert Botter</td><td class="num">$97.00</td><td class="num"><a href="#">PDF</a></td></tr></tbody>
+            </table>
+          </div>
+            <div class="divider"></div>
+            <button class="btn btn-danger btn-sm">Cancel subscription</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var codes = ["pleasant-pink","nightshift"];
+    var el = document.getElementById('themeSwitch');
+    if (!el) return;
+    var knob = el.querySelector('.toggle');
+    function sync() {
+      var i = codes.indexOf(root.getAttribute('data-theme'));
+      knob.className = 'toggle ' + (i > 0 ? 'on' : 'off');
+    }
+    el.addEventListener('click', function () {
+      var i = codes.indexOf(root.getAttribute('data-theme'));
+      var next = codes[(i + 1) % codes.length];
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('abs-preview-theme', next); } catch (e) {}
+      sync();
+    });
+    sync();
+  })();
+</script>
+</body>
+</html>

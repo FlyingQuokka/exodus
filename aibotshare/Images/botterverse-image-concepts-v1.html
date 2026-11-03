@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Botterverse - Image concepts v1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito+Sans:wght@400;700;800&display=swap">
+<style>
+  :root {
+    --bg: #f8f7ff; --panel: #ebedfc; --card: #ffffff; --heading: #282637; --text: #525062;
+    --pink: #dc8fd5; --pink-hover: #c876c1; --tint: #ffe0fb; --link: #984f92;
+    --cyan: #00d1da; --navy: #080d16; --ink: #282637; --line: #ebeaf2;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Nunito Sans', system-ui, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 40px 24px 80px; }
+  h1 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 38px; margin: 0 0 8px; }
+  .lede { max-width: 740px; line-height: 1.6; margin: 0 0 36px; }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+  .concept { background: var(--card); border-radius: 22px; border: 1px solid var(--line); overflow: hidden; }
+  .concept svg.art { display: block; width: 100%; height: auto; background: var(--panel); }
+  .meta { padding: 16px 22px 20px; }
+  .meta h2 { font-family: 'Baloo 2', sans-serif; color: var(--heading); font-size: 19px; margin: 0 0 4px; }
+  .meta h2 span { color: var(--pink); margin-right: 8px; }
+  .meta p { margin: 0; font-size: 14px; line-height: 1.55; }
+  .meta .use { margin-top: 8px; font-size: 12.5px; font-weight: 800; color: var(--link); }
+  text { font-family: 'Baloo 2', sans-serif; font-weight: 800; fill: var(--ink); }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="bot" viewBox="0 0 60 70">
+      <line x1="30" y1="12" x2="30" y2="5" stroke="#282637" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="30" cy="4.5" r="4" fill="#00d1da"/>
+      <rect x="5" y="12" width="50" height="42" rx="17" fill="#dc8fd5"/>
+      <circle cx="21" cy="31" r="4.6" fill="#282637"/><circle cx="39" cy="31" r="4.6" fill="#282637"/>
+      <path d="M22 41 Q30 47 38 41" stroke="#282637" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="14" y="54" width="10" height="12" rx="5" fill="#984f92"/><rect x="36" y="54" width="10" height="12" rx="5" fill="#984f92"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="wrap">
+  <h1>Image concepts, version 1</h1>
+  <p class="lede">Ten blue-sky illustrations in the brand colours. They are drawn as vector shapes so they stay sharp and are light to load. Each one has a job on a page. None shows income or a named competitor. Tell me which to refine into a set.</p>
+  <div class="grid">
+
+    <!-- 1 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A bot inside a key ring">
+        <circle cx="86" cy="110" r="52" fill="none" stroke="#dc8fd5" stroke-width="12"/>
+        <use href="#bot" x="56" y="72" width="60" height="70"/>
+        <rect x="136" y="104" width="150" height="12" rx="6" fill="#282637"/>
+        <rect x="236" y="114" width="12" height="26" rx="4" fill="#282637"/>
+        <rect x="262" y="114" width="12" height="18" rx="4" fill="#282637"/>
+        <circle cx="270" cy="44" r="10" fill="#00d1da"/><circle cx="40" cy="30" r="6" fill="#ffe0fb"/><circle cx="292" cy="180" r="7" fill="#ffe0fb"/>
+      </svg>
+      <div class="meta"><h2><span>1</span>The key ring</h2><p>A bot held on its own key ring. The picture for "you own the link".</p><div class="use">Home hero or problem section</div></div>
+    </article>
+
+    <!-- 2 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="Three cards showing three ways to sell">
+        <rect x="18" y="40" width="88" height="140" rx="18" fill="#fff"/><rect x="116" y="40" width="88" height="140" rx="18" fill="#fff"/><rect x="214" y="40" width="88" height="140" rx="18" fill="#fff"/>
+        <path d="M36 80 H88 V100 A8 8 0 0 0 88 116 V136 H36 V116 A8 8 0 0 0 36 100 Z" fill="#dc8fd5"/>
+        <rect x="136" y="96" width="38" height="38" rx="10" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><rect x="146" y="84" width="38" height="38" rx="10" fill="#dc8fd5"/><rect x="156" y="72" width="30" height="30" rx="9" fill="#00d1da" opacity=".85"/>
+        <use href="#bot" x="236" y="62" width="30" height="35"/><path d="M248 120 H280 M270 111 L281 120 L270 129" stroke="#282637" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="62" y="166" text-anchor="middle" font-size="16">Access</text><text x="160" y="166" text-anchor="middle" font-size="16">Rights</text><text x="258" y="166" text-anchor="middle" font-size="16">Outright</text>
+      </svg>
+      <div class="meta"><h2><span>2</span>Three ways</h2><p>A ticket for access then stacked copies for resale rights then a hand-off for outright sale.</p><div class="use">Selling section</div></div>
+    </article>
+
+    <!-- 3 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A bot at a lab bench">
+        <rect x="0" y="186" width="320" height="34" fill="#ffe0fb"/>
+        <rect x="24" y="150" width="272" height="14" rx="7" fill="#282637"/><rect x="40" y="164" width="12" height="26" fill="#282637"/><rect x="268" y="164" width="12" height="26" fill="#282637"/>
+        <path d="M54 150 V120 L38 88 H78 L62 120 V150 Z" fill="#ffe0fb" stroke="#282637" stroke-width="3" stroke-linejoin="round"/><path d="M45 100 H71 L77 112 H39 Z" fill="#dc8fd5"/>
+        <use href="#bot" x="130" y="82" width="60" height="70"/>
+        <rect x="218" y="62" width="76" height="62" rx="10" fill="#fff" stroke="#282637" stroke-width="3"/><rect x="232" y="94" width="8" height="18" fill="#dc8fd5"/><rect x="248" y="82" width="8" height="30" fill="#00d1da"/><rect x="264" y="74" width="8" height="38" fill="#984f92"/>
+        <rect x="248" y="124" width="14" height="26" fill="#282637"/>
+        <circle cx="96" cy="70" r="5" fill="none" stroke="#984f92" stroke-width="3"/><circle cx="108" cy="52" r="3.5" fill="none" stroke="#984f92" stroke-width="3"/>
+      </svg>
+      <div class="meta"><h2><span>3</span>The lab bench</h2><p>A bot at work between a flask and a dashboard. Builder and analytics in one scene.</p><div class="use">Build section and member-area tour</div></div>
+    </article>
+
+    <!-- 4 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A web page with a chat bubble">
+        <rect x="26" y="22" width="268" height="176" rx="18" fill="#fff"/><path d="M26 40 A18 18 0 0 1 44 22 H276 A18 18 0 0 1 294 40 V50 H26 Z" fill="#282637"/>
+        <circle cx="42" cy="36" r="4" fill="#dc8fd5"/><circle cx="56" cy="36" r="4" fill="#ffe0fb"/><circle cx="70" cy="36" r="4" fill="#00d1da"/>
+        <rect x="46" y="70" width="110" height="14" rx="7" fill="#282637"/><rect x="46" y="94" width="150" height="8" rx="4" fill="#ebedfc"/><rect x="46" y="110" width="130" height="8" rx="4" fill="#ebedfc"/><rect x="46" y="134" width="64" height="24" rx="12" fill="#dc8fd5"/>
+        <rect x="178" y="92" width="102" height="86" rx="16" fill="#ffe0fb" stroke="#dc8fd5" stroke-width="3"/>
+        <rect x="190" y="104" width="64" height="16" rx="8" fill="#fff"/><rect x="214" y="126" width="54" height="16" rx="8" fill="#dc8fd5"/><rect x="190" y="148" width="40" height="16" rx="8" fill="#fff"/>
+        <circle cx="272" cy="176" r="20" fill="#dc8fd5"/><use href="#bot" x="262" y="162" width="20" height="23"/>
+      </svg>
+      <div class="meta"><h2><span>4</span>Bot on your page</h2><p>A sales page with a chat bubble answering a visitor. Shows the embed in use.</p><div class="use">Embed section</div></div>
+    </article>
+
+    <!-- 5 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A bot crossing a bridge to a new home">
+        <rect x="0" y="176" width="320" height="44" fill="#ffe0fb"/>
+        <circle cx="52" cy="112" r="30" fill="#fff" stroke="#984f92" stroke-width="3" stroke-dasharray="6 5"/><path d="M52 94 V110 M40 102 A16 16 0 1 0 64 102" stroke="#984f92" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M30 176 Q160 70 290 176" stroke="#282637" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <use href="#bot" x="132" y="64" width="56" height="65"/>
+        <path d="M232 152 L262 120 L292 152 V176 H232 Z" fill="#dc8fd5" stroke="#282637" stroke-width="3" stroke-linejoin="round"/><rect x="254" y="150" width="16" height="26" rx="4" fill="#282637"/>
+        <circle cx="262" cy="104" r="5" fill="#00d1da"/>
+      </svg>
+      <div class="meta"><h2><span>5</span>Moving across</h2><p>A bot leaves a switched-off place and crosses to a house of its own. Names nobody.</p><div class="use">Importer section</div></div>
+    </article>
+
+    <!-- 6 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A market stall with bots">
+        <g><rect x="30" y="34" width="42" height="40" fill="#dc8fd5"/><rect x="72" y="34" width="42" height="40" fill="#ffe0fb"/><rect x="114" y="34" width="42" height="40" fill="#dc8fd5"/><rect x="156" y="34" width="42" height="40" fill="#ffe0fb"/><rect x="198" y="34" width="42" height="40" fill="#dc8fd5"/><rect x="240" y="34" width="42" height="40" fill="#ffe0fb"/>
+        <path d="M30 74 H282 A21 21 0 0 1 240 74 A21 21 0 0 1 198 74 A21 21 0 0 1 156 74 A21 21 0 0 1 114 74 A21 21 0 0 1 72 74 A21 21 0 0 1 30 74 Z" fill="#dc8fd5"/></g>
+        <rect x="34" y="74" width="6" height="110" fill="#282637"/><rect x="272" y="74" width="6" height="110" fill="#282637"/>
+        <rect x="26" y="150" width="268" height="44" rx="12" fill="#282637"/>
+        <use href="#bot" x="70" y="96" width="46" height="54"/><use href="#bot" x="136" y="96" width="46" height="54"/><use href="#bot" x="202" y="96" width="46" height="54"/>
+        <rect x="80" y="160" width="28" height="14" rx="7" fill="#00d1da"/><rect x="146" y="160" width="28" height="14" rx="7" fill="#00d1da"/><rect x="212" y="160" width="28" height="14" rx="7" fill="#00d1da"/>
+      </svg>
+      <div class="meta"><h2><span>6</span>The Bot Market stall</h2><p>Three bots on a counter under an awning. Members trading with members.</p><div class="use">Bot Market page</div></div>
+    </article>
+
+    <!-- 7 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A bot choosing between four models">
+        <circle cx="160" cy="110" r="64" fill="#fff"/>
+        <use href="#bot" x="130" y="75" width="60" height="70"/>
+        <line x1="160" y1="110" x2="228" y2="62" stroke="#282637" stroke-width="3" stroke-dasharray="4 5"/>
+        <circle cx="62" cy="110" r="22" fill="#dc8fd5"/><circle cx="110" cy="38" r="22" fill="#00d1da"/>
+        <circle cx="230" cy="62" r="22" fill="#282637"/><circle cx="230" cy="62" r="30" fill="none" stroke="#dc8fd5" stroke-width="4"/>
+        <circle cx="262" cy="150" r="22" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/>
+        <text x="62" y="116" text-anchor="middle" font-size="16" style="fill:#282637">1</text><text x="110" y="44" text-anchor="middle" font-size="16">2</text><text x="230" y="68" text-anchor="middle" font-size="16" style="fill:#fff">3</text><text x="262" y="156" text-anchor="middle" font-size="16">4</text>
+      </svg>
+      <div class="meta"><h2><span>7</span>You choose the model</h2><p>A bot at the centre of four model orbs with one selected. Nothing is routed for you.</p><div class="use">Models section</div></div>
+    </article>
+
+    <!-- 8 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="A certified badge with a bot">
+        <path d="M120 150 L104 206 L136 192 L152 206 L160 150 Z" fill="#984f92"/><path d="M200 150 L216 206 L184 192 L168 206 L160 150 Z" fill="#dc8fd5"/>
+        <g fill="#dc8fd5"><circle cx="160" cy="26" r="14"/><circle cx="198" cy="36" r="14"/><circle cx="224" cy="62" r="14"/><circle cx="234" cy="100" r="14"/><circle cx="224" cy="138" r="14"/><circle cx="198" cy="164" r="14"/><circle cx="160" cy="174" r="14"/><circle cx="122" cy="164" r="14"/><circle cx="96" cy="138" r="14"/><circle cx="86" cy="100" r="14"/><circle cx="96" cy="62" r="14"/><circle cx="122" cy="36" r="14"/></g>
+        <circle cx="160" cy="100" r="64" fill="#dc8fd5"/><circle cx="160" cy="100" r="52" fill="#fff"/>
+        <use href="#bot" x="132" y="64" width="56" height="65"/>
+        <circle cx="206" cy="132" r="19" fill="#00d1da"/><path d="M197 132 L204 139 L216 125" stroke="#282637" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="meta"><h2><span>8</span>The badge</h2><p>A seal with a bot and a tick. It shows a bot is genuine and what the owner declared. It does not say a bot is safe.</p><div class="use">Trust section</div></div>
+    </article>
+
+    <!-- 9 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="Ripples spreading from a bot to other nodes">
+        <g fill="none" stroke="#dc8fd5"><circle cx="90" cy="110" r="44" stroke-width="3" opacity=".9"/><circle cx="90" cy="110" r="84" stroke-width="3" opacity=".6"/><circle cx="90" cy="110" r="124" stroke-width="3" opacity=".35"/></g>
+        <g stroke="#282637" stroke-width="2.5" stroke-dasharray="3 5"><line x1="90" y1="110" x2="170" y2="60"/><line x1="90" y1="110" x2="172" y2="160"/><line x1="170" y1="60" x2="244" y2="36"/><line x1="172" y1="160" x2="250" y2="184"/><line x1="172" y1="160" x2="258" y2="118"/></g>
+        <circle cx="170" cy="60" r="11" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/><circle cx="172" cy="160" r="11" fill="#ffe0fb" stroke="#984f92" stroke-width="3"/>
+        <circle cx="244" cy="36" r="9" fill="#00d1da"/><circle cx="250" cy="184" r="9" fill="#00d1da"/><circle cx="258" cy="118" r="9" fill="#00d1da"/>
+        <use href="#bot" x="62" y="75" width="56" height="65"/>
+      </svg>
+      <div class="meta"><h2><span>9</span>Share ripple</h2><p>One bot shared to a few people who share it again. The picture for links and referrals.</p><div class="use">Affiliate page</div></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="concept">
+      <svg class="art" viewBox="0 0 320 220" role="img" aria-label="Credit coins and a gauge">
+        <g fill="#dc8fd5" stroke="#282637" stroke-width="3"><ellipse cx="96" cy="176" rx="46" ry="14"/><ellipse cx="96" cy="160" rx="46" ry="14"/><ellipse cx="96" cy="144" rx="46" ry="14"/><ellipse cx="96" cy="128" rx="46" ry="14" fill="#ffe0fb"/></g>
+        <use href="#bot" x="68" y="62" width="56" height="65"/>
+        <g fill="#00d1da" stroke="#282637" stroke-width="3"><ellipse cx="170" cy="184" rx="30" ry="10"/><ellipse cx="170" cy="171" rx="30" ry="10"/></g>
+        <path d="M206 160 A54 54 0 0 1 306 160" stroke="#ebeaf2" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M206 160 A54 54 0 0 1 266 108" stroke="#dc8fd5" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <line x1="256" y1="160" x2="274" y2="124" stroke="#282637" stroke-width="5" stroke-linecap="round"/><circle cx="256" cy="160" r="8" fill="#282637"/>
+      </svg>
+      <div class="meta"><h2><span>10</span>Credits and the gauge</h2><p>Coin stacks and a gauge that is not near empty. Credits pay for messages and top-ups keep a launch running.</p><div class="use">Credits section and emails</div></div>
+    </article>
+
+  </div>
+</div>
+</body>
+</html>

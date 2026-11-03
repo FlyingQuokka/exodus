@@ -1,0 +1,19 @@
+{
+ "title": "O10 First sale",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "First Sale"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O10-1",
+   "do": "email",
+   "email": "O10-1",
+   "note": "Event email, so it sends even during the welcome track."
+  }
+ ]
+}

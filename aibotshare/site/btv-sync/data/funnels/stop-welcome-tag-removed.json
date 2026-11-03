@@ -1,0 +1,9 @@
+{
+  "title": "STOP Welcome - tag removed",
+  "trigger": {"type": "tag_removed", "tags": ["Welcome Active"]},
+  "run_multiple": true,
+  "publish": true,
+  "steps": [
+    {"key": "STOP-cancel", "do": "cancel", "automations": ["A0 Welcome"], "note": "Removing Welcome Active stops the welcome track."}
+  ]
+}

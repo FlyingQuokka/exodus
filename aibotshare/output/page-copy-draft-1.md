@@ -1,4 +1,4 @@
-# AI Bot Share: page copy, draft 1
+# Botterverse: page copy, draft 1
 
 Draft 1, 19 October 2026. Plain text only. Written by hand because the Genesis runs failed on OpenRouter credits, so it has not yet been through the hook bots. Level 3 pain comes from public research (`inputs/gpt-withdrawal-pain-research.md`) and will be sharpened with your verbatim material.
 
@@ -16,7 +16,7 @@ Items in [square brackets] need a decision or a check before publishing. The but
 
 ### Subheadline
 
-AI Bot Share is where Botters build AI bots on Claude, ChatGPT, Grok or Gemini then share them, sell access, sell resale rights or sell them outright. You choose the model. You see the numbers. You pay one published fee on every sale.
+Botterverse is where Botters build AI bots on Claude, ChatGPT, Grok or Gemini then share them, sell access, sell resale rights or sell them outright. You choose the model. You see the numbers. You pay one published fee on every sale.
 
 **Button:** Take Me To The Lab
 
@@ -36,15 +36,15 @@ And through all of it you could never email the people who used your bot. You ne
 
 Months of work sat on land you rented.
 
-AI Bot Share is built so your next bot is not at the mercy of one company.
+Botterverse is built so your next bot is not at the mercy of one company.
 
 ### Section 2: What it is
 
 **Heading:** Build it. Share it. Sell it.
 
-Build a bot on one page. Write your instructions, add your own files, pick your model and test it in the preview chat. Keep it Personal while you work. Make it Public when you are ready and it has its own page at yourname.AIBotShare.com.
+Build a bot on one page. Write your instructions, add your own files, pick your model and test it in the preview chat. Keep it Personal while you work. Make it Public when you are ready and it has its own page at yourname.Botterverse.com.
 
-Share the link. Embed it on your own site. Charge for access. List it on the Bot Market. Every bot is checked before it can go Public, because AI Bot Share is for good bots.
+Share the link. Embed it on your own site. Charge for access. List it on the Bot Market. Every bot is checked before it can go Public, because Botterverse is for good bots.
 
 ### Section 3: Three ways to sell
 
@@ -64,7 +64,7 @@ Buying on the Bot Market starts on Apprentice. Selling on the Bot Market starts 
 
 Every bot has analytics from Novice up: conversations, messages, credits used and revenue. Expert adds the busiest hours and the questions people ask first. Master adds a conversion panel that sets views against purchases.
 
-Switch on sign-up and visitors chat as AI Bot Share members instead of anonymously. [CONFIRM what a seller can see about those members: usernames, names or neither. Never promise a customer list or email addresses.] Your bot page and embed are yours. Pro adds your own logo, colours and font and lets you remove the powered-by tag.
+Switch on sign-up and visitors chat as Botterverse members instead of anonymously. [CONFIRM what a seller can see about those members: usernames, names or neither. Never promise a customer list or email addresses.] Your bot page and embed are yours. Pro adds your own logo, colours and font and lets you remove the powered-by tag.
 
 ### Section 5: Put a bot on your sales page
 
@@ -72,7 +72,7 @@ Switch on sign-up and visitors chat as AI Bot Share members instead of anonymous
 
 Embed a bot on any web page with a copied script tag. A free bot needs no sign-up, so the visitor starts typing straight away. Load it with your FAQ and offer details and it answers the exact question each prospect has.
 
-[LIVE DEMO: embedded AI Bot Share bot here.]
+[LIVE DEMO: embedded Botterverse bot here.]
 
 Any other bot embeds as a "Chat with (bot name)" button that opens its own page.
 
@@ -80,9 +80,9 @@ Any other bot embeds as a "Chat with (bot name)" button that opens its own page.
 
 **Heading:** Do not rebuild from scratch.
 
-Paste your existing instructions into the importer. Upload your files. Add your integrations. AI Bot Share suggests a name, description, category and starters then you review and create the bot.
+Paste your existing instructions into the importer. Upload your files. Add your integrations. Botterverse suggests a name, description, category and starters then you review and create the bot.
 
-The importer does not connect to your OpenAI account so you paste the content in. Rebuild any actions as integrations with a simple form. AI Bot Share pays for the importer's AI calls so it uses none of your credits.
+The importer does not connect to your OpenAI account so you paste the content in. Rebuild any actions as integrations with a simple form. Botterverse pays for the importer's AI calls so it uses none of your credits.
 
 ### Section 7: Choose your model
 
@@ -106,9 +106,9 @@ Earnings build up in your Botter's Lab. A sale can be refunded for 14 days. Earn
 
 ### Section 9: Built for good bots
 
-**Heading:** Certified by AI Bot Share.
+**Heading:** Certified by Botterverse.
 
-Every bot is scanned before it can go Public and again before it is listed. Every Public bot carries a Certified by AI Bot Share badge and a page that shows what its owner declared: personal details, sensitive data, financial details, use by under-18s, regulated advice, automated decisions and data shared beyond the AI provider.
+Every bot is scanned before it can go Public and again before it is listed. Every Public bot carries a Certified by Botterverse badge and a page that shows what its owner declared: personal details, sensitive data, financial details, use by under-18s, regulated advice, automated decisions and data shared beyond the AI provider.
 
 The badge shows a bot is genuine and what its owner declared. It does not certify quality or safety. Every public bot page has a Report this bot control.
 
@@ -150,7 +150,7 @@ Cancel with one click and keep your plan to the end of the period you paid for. 
 
 **Button:** Take Me To The Lab
 
-Earnings disclaimer: AI Bot Share does not guarantee any income. Examples are illustrations and not typical results.
+Earnings disclaimer: Botterverse does not guarantee any income. Examples are illustrations and not typical results.
 
 ---
 
@@ -184,7 +184,7 @@ Earnings disclaimer: AI Bot Share does not guarantee any income. Examples are il
 
 **Heading:** Recommend a product your list already needs.
 
-Your list is full of people who built or sold bots on someone else's platform. When they join AI Bot Share through your link you earn 50% of their first payment and 20% of every payment after, at launch.
+Your list is full of people who built or sold bots on someone else's platform. When they join Botterverse through your link you earn 50% of their first payment and 20% of every payment after, at launch.
 
 **Button:** Join from the Botter's Lab
 
@@ -218,7 +218,7 @@ This is arithmetic on listed monthly prices with no discount. It is not an earni
 
 Open the Affiliates page in the Botter's Lab and press Join. You need the Novice plan or above. Your link ends in your own username.
 
-Earnings disclaimer: AI Bot Share does not guarantee any income.
+Earnings disclaimer: Botterverse does not guarantee any income.
 
 [CONFIRM before publishing: commission import and payment are live. The brief says do not say commission is being paid until you confirm.]
 
@@ -241,7 +241,7 @@ Credits pay for the messages a bot sends. You pay for your own testing and for t
 **5. Can I sell my bots?**
 Yes. Charge for access with a one-time paywall from Novice. List a bot on the Bot Market from Pro as a Transfer or a Multi-sell with one of four licences.
 
-**6. What does AI Bot Share take?**
+**6. What does Botterverse take?**
 One fee on every sale: 5% of the price after tax plus 30 cents on Apprentice, Novice and Expert. From Pro it is 3% plus 30 cents. These rates are settings and can change.
 
 **7. How do I withdraw my earnings?**
@@ -251,16 +251,16 @@ Earnings build up in your Botter's Lab. A sale can be refunded for 14 days and i
 Join from the Affiliates page on the Novice plan or above and share your link. You earn 50% of a referred member's first payment and 20% of each later payment at launch. Credit packs earn nothing. Commission is payable after the 14-day refund period.
 
 **9. Can I move my existing GPT?**
-Paste its instructions into the importer and upload its files. AI Bot Share does not connect to your OpenAI account.
+Paste its instructions into the importer and upload its files. Botterverse does not connect to your OpenAI account.
 
 **10. Can I embed a bot on my own site?**
 Yes. Any bot embeds on any web page. A free bot shows inside your page with no sign-up. Any other bot shows as a "Chat with (bot name)" button.
 
-**11. Will I be tied to AI Bot Share?**
+**11. Will I be tied to Botterverse?**
 No. You can export your bots and your data, so you are never tied to one platform and can take your bots elsewhere if you ever want to.
 
 **12. Is every bot safe?**
-Every bot is scanned before it can go Public and reported bots are reviewed. The Certified by AI Bot Share badge shows a bot is genuine and what its owner declared. It does not certify quality or safety.
+Every bot is scanned before it can go Public and reported bots are reviewed. The Certified by Botterverse badge shows a bot is genuine and what its owner declared. It does not certify quality or safety.
 
 **13. What is not allowed?**
 Bots for sexual content, gambling, illegal activity, scams, harm to others and similar. The full list is in the terms. A breach can lead to removal or a ban.
@@ -268,11 +268,11 @@ Bots for sexual content, gambling, illegal activity, scams, harm to others and s
 **14. Can I cancel?**
 Yes with one click. You keep your plan to the end of the period you paid for. Monthly plans are not refunded. On an annual plan the whole unused months are refunded.
 
-**15. Can I use AI Bot Share in the EU?**
+**15. Can I use Botterverse in the EU?**
 You can use free Public bots. We cannot offer our paid services in the EU because the complexity of the EU tax rules makes it impractical for a small business to comply. That covers plans, credits, bot access and Bot Market purchases.
 
-**16. Is AI Bot Share connected to OpenAI?**
-No. AI Bot Share is independent. It is a home for bots built by Botters.
+**16. Is Botterverse connected to OpenAI?**
+No. Botterverse is independent. It is a home for bots built by Botters.
 
 **17. What do Founders receive?**
 50% off for life on every plan and a permanent Founders badge on their bot pages. The founders window is open through the beta and for two weeks after launch.
@@ -284,6 +284,6 @@ Yes. Buy a credit pack at checkout: Starter ($10 for 1,000 credits), Builder ($2
 Auto top-up adds credits when yours run low, so a busy launch does not leave your bot unable to answer. It is off until you switch it on and agree to a short statement. At launch it adds $20 of credits when you fall below 1,000 and runs up to three times a day. You are emailed each time. If your bank asks for approval the top-up pauses until you top up by hand. [CONFIRM the defaults.]
 
 **20. What is in my data export?**
-Your bots and their settings, the files you uploaded, each bot's instruction history, the chats people had with your bots, your own chats with other members' bots, your sales and what they paid you, your purchases, your commissions, a record of every credit and earnings movement and your own logos. It leaves out passwords and integration keys, the hidden contents of a bot you bought while its refund window is open and buyers' names and email addresses. AI Bot Share sells your bots and takes the payment, so buyers' personal details stay with us. [CONFIRM the export is live before launch and the data protection wording with your solicitor.]
+Your bots and their settings, the files you uploaded, each bot's instruction history, the chats people had with your bots, your own chats with other members' bots, your sales and what they paid you, your purchases, your commissions, a record of every credit and earnings movement and your own logos. It leaves out passwords and integration keys, the hidden contents of a bot you bought while its refund window is open and buyers' names and email addresses. Botterverse sells your bots and takes the payment, so buyers' personal details stay with us. [CONFIRM the export is live before launch and the data protection wording with your solicitor.]
 
 *Move questions 18 to 20 into topic order when this is laid out.*

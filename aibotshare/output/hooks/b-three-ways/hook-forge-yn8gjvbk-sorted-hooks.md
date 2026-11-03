@@ -1,10 +1,10 @@
-# Organized Hook Document — Bot Resale Rights / AI Bot Share
+# Organized Hook Document — Bot Resale Rights / Botterverse
 
 ---
 
 ## Identity Demolition (expert-shaming the reader)
 
-**[P] L3** — You accepted mystery money on your most profitable asset for months and called it a business. AI Bot Share publishes one fee on every sale: 5% or 3% plus 30 cents depending on your tier. You can calculate your exact cut before you list a single bot. When was the last time a platform told you what you'd earn before you earned it?
+**[P] L3** — You accepted mystery money on your most profitable asset for months and called it a business. Botterverse publishes one fee on every sale: 5% or 3% plus 30 cents depending on your tier. You can calculate your exact cut before you list a single bot. When was the last time a platform told you what you'd earn before you earned it?
 
 **[P] L3** — Your $17 PLR ebook has three revenue paths. The bot you spent weeks building had one, and you never even saw how the payout was calculated. The cheapest product in your catalog had a better licensing deal than your most valuable one, and you never questioned it.
 

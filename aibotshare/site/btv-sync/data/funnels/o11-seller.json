@@ -1,0 +1,50 @@
+{
+ "title": "O11 Bot Market seller",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Bot Market Seller"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "O11-busy",
+   "do": "condition",
+   "note": "Plan says wait while the welcome track or an upgrade runs. This waits once for ten days.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Welcome Active",
+     "Upgrade Active"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O11-hold",
+     "do": "wait",
+     "amount": 10,
+     "unit": "days"
+    }
+   ],
+   "no": []
+  },
+  {
+   "key": "O11-1",
+   "do": "email",
+   "email": "O11-1"
+  },
+  {
+   "key": "O11-w2",
+   "do": "wait",
+   "amount": 5,
+   "unit": "days"
+  },
+  {
+   "key": "O11-2",
+   "do": "email",
+   "email": "O11-2"
+  }
+ ]
+}

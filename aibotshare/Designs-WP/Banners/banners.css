@@ -1,0 +1,24 @@
+/* Botterverse affiliate banners - shared styles. One fixed pixel size per page. */
+:root { --pink: #dc8fd5; --ink: #282637; --navy: #080d16; --cyan: #00d1da; --on-pink: #391d37; --on-cyan: #04070f; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { overflow: hidden; font-family: 'Nunito Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.b { position: relative; overflow: hidden; display: flex; }
+.light { background: #f8f7ff; color: var(--ink); --pic-bg: #ffe0fb; }
+.dark { background: var(--navy); color: #f8f7ff; --pic-bg: #141c30; }
+.light::before { content: ""; position: absolute; inset: 0; border: 2px solid #dc8fd5; pointer-events: none; }
+.dark::before { content: ""; position: absolute; inset: 0; border: 2px solid #00d1da; pointer-events: none; }
+h1 { font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; line-height: 1.05; letter-spacing: -.01em; margin: 0; }
+p { margin: 0; font-weight: 700; line-height: 1.3; }
+.light h1 { color: var(--ink); }
+.light p { color: #4f4d5f; }
+.dark h1 { color: #f8f7ff; }
+.dark p { color: #c4c3d6; }
+.dark .hl { color: var(--cyan); }
+.light .hl { color: #984f92; }
+.btn { display: inline-flex; align-items: center; justify-content: center; text-align: center; font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; line-height: 1.05; border-radius: 999px; text-decoration: none; white-space: nowrap; }
+.light .btn { background: var(--pink); color: var(--on-pink); }
+.dark .btn { background: var(--cyan); color: var(--on-cyan); }
+.logo { display: block; height: auto; }
+.pic { line-height: 0; border-radius: 18px; overflow: hidden; }
+.pic .pic-svg { width: 100%; height: auto; }

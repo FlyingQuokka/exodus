@@ -1,0 +1,25 @@
+/* Better Docs: the Help centre. CSS only on top of the plugin templates.
+   Written from the plugin source. Not tested against every docs layout yet. */
+
+body [class*="betterdocs-"] { font-family: var(--font-body); }
+body .betterdocs-wrapper, body .betterdocs-content-area, body .betterdocs-single-wraper { color: var(--text-2); }
+body [class*="betterdocs-"] h1, body [class*="betterdocs-"] h2, body [class*="betterdocs-"] h3, body [class*="betterdocs-"] h4 { font-family: var(--font-head); color: var(--text); }
+body [class*="betterdocs-"] a { color: var(--accent-text); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+body [class*="betterdocs-"] a:hover { color: var(--accent-hover); }
+
+/* Hero search */
+body .betterdocs-search-form-wrap, body .betterdocs-searchform { background: transparent; }
+body .betterdocs-search-field, body [class*="betterdocs-"] input[type=search], body [class*="betterdocs-"] input[type=text] {
+  font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .8rem 1rem; box-shadow: none;
+}
+body .betterdocs-search-field:focus, body [class*="betterdocs-"] input:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }
+body .betterdocs-search-submit, body [class*="betterdocs-"] button[type=submit] { background: var(--accent); color: var(--on-accent); border: 2px solid transparent; border-radius: 999px; font-family: var(--font-head); font-weight: 800; }
+body .betterdocs-search-submit:hover { background: var(--accent-hover); }
+
+/* Category and article cards */
+body .betterdocs-category-box, body .betterdocs-single-bg, body .betterdocs-category-grid-wrap, body [class*="betterdocs-category-box"] {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow);
+}
+body .betterdocs-sidebar-content, body .betterdocs-single-sidebar { background: var(--surface-alt); border-radius: var(--r-card); }
+body .betterdocs-breadcrumb a { color: var(--accent-text); }
+body [class*="betterdocs-"] :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }

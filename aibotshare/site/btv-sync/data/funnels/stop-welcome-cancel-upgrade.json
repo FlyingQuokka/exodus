@@ -1,0 +1,10 @@
+{
+  "title": "STOP Welcome - cancelled or upgraded",
+  "trigger": {"type": "tag_applied", "tags": ["Cancelled", "Upgraded From Apprentice", "Upgraded From Novice", "Upgraded From Expert", "Upgraded From Pro"]},
+  "run_multiple": true,
+  "publish": true,
+  "steps": [
+    {"key": "STOP-cancel", "do": "cancel", "automations": ["A0 Welcome"], "note": "An upgrade or a cancel ends the welcome track."},
+    {"key": "STOP-tag-off", "do": "remove_tag", "tags": ["Welcome Active"]}
+  ]
+}

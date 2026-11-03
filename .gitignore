@@ -2,3 +2,6 @@ node_modules/
 output/*
 !output/.gitkeep
 .env
+
+# Test login details for agents
+aibotshare/Docos/Botterverse Details For Agents.txt

@@ -300,6 +300,8 @@ The app has no link that signs a member in. The three links that do exist behave
 **32. Password change. No.**
 Neither a change on Settings nor a forgotten password reset sends an email. The register has no such email. Settings shows the message "Your password is changed." and signs out other devices. The separate billing login does send WordPress's "Password Changed" notice, in the plugin's wording.
 
+Changed on 3 November 2026: the app now sends `auth.password_changed` ("Your password has been changed") to the account's address after every saved change, through Settings or a forgotten password link. No Email notifications switch turns it off. The answer above is how it stood when it was written.
+
 - Source: `app/Livewire/Settings/SettingsPassword.php`, `app/Http/Controllers/Auth/PasswordResetController.php`, `app/Enums/EmailCode.php`, `BuyerAccount.php`.
 - Guide: silent.
 
@@ -399,7 +401,7 @@ If the numbering means the three refund-paid emails instead, the wording differs
 The last two share a subject and a closing line but give different reasons. Files: `resources/mail/templates/`.
 
 **43. Commission. Yes, it is built to be paid at launch. The rates are 50% of the first payment and 20% of every later payment.**
-The daily batch imports referrals from FluentAffiliate into Commission review, where staff press Pay commissions. Nothing in the code switches this off, so payment depends on staff pressing it.
+The daily batch imports referrals from FluentAffiliate and its nightly Commission payment step pays each commission that is due, in every payout mode, with no staff action (the owner's decision of 3 November 2026). Nothing in the code switches this off. Staff act only on a commission the card check holds for them on Commission review. Its Pay commissions button can pay sooner than the nightly run.
 
 How the app derives the rates: it does not read FluentAffiliate's Commission Rate or Renewal Rate. FluentAffiliate tells the app that a referral exists and the app works out the amount itself from two settings:
 
@@ -501,6 +503,7 @@ Emails to members (61):
 | `affiliate.commission_credited` | You have earned an affiliate commission | member_name, amount, affiliates_url |
 | `auth.email_change_requested` | A change to your email address was requested | member_name, new_email, settings_url |
 | `auth.forgot_username` | Your username | member_name, username, login_url |
+| `auth.password_changed` | Your password has been changed | member_name, login_url, support_url |
 | `auth.password_reset` | Reset your password | member_name, reset_url |
 | `auth.verify_email` | Please confirm your email address | member_name, verify_url |
 | `billing.annual_refunded` | We have refunded the unused months of your annual plan | member_name, month_count, refund_amount, billing_url |

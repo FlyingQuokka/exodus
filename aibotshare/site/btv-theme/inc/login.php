@@ -67,3 +67,8 @@ add_filter('login_message', function ($message) {
 });
 
 add_filter('login_site_html_link', '__return_empty_string');
+
+/**
+ * One language only, so the language dropdown is not shown.
+ */
+add_filter('login_display_language_dropdown', '__return_false');

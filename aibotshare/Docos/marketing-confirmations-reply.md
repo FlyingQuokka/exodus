@@ -39,9 +39,9 @@ Use `{{response.full_content}}` for the reply text. FluentSupport's editor lists
 
 ## Feedback and win-back emails
 
-**4. The owner decides this.** The win-back email is sent by FluentCRM, not the app. Its replies go to the reply-to address set in FluentCRM's email settings. Where none is set they go to the sender address. Whether a person reads that mailbox is the owner's arrangement. The owner will answer.
+**4. Yes, keep "reply to this email", with one setting.** The win-back email is sent by FluentCRM, not the app. Its replies go to the reply-to address set in FluentCRM's email settings. Where none is set they go to the sender address. Set that address to `support@botterverse.com` (owner, 3 November 2026). Replies then arrive in FluentSupport, where the Botter Support Team reads them. This rests on the support mailbox being piped to FluentSupport on the live site (question 3), so check one reply arrives there at go-live.
 
-**5. The owner decides this.** The Feedback page is FluentSupport's Feedback inbox (`/feedback/`). Each submission arrives in FluentSupport like a support request, so it can be read. Who reads it and how often is the owner's arrangement. Keep "We read what arrives." only if the owner confirms it.
+**5. Yes, keep "We read what arrives."** The Feedback page is FluentSupport's Feedback inbox (`/feedback/`). Each submission arrives in FluentSupport like a support request and the Botter Support Team reads it (owner, 3 November 2026).
 
 ## Affiliates
 

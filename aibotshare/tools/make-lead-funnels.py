@@ -48,7 +48,7 @@ def main():
         wait('O04-w1', 1, 'hours'), email('O04-01'),
         wait('O04-w2', 23, 'hours'), email('O04-02'),
         wait('O04-w3', 2, 'days'), email('O04-03'),
-    ], run_multiple=True, publish=False)  # stays a draft until a real abandoned cart has been seen
+    ], run_multiple=True, publish=True)
     funnel('stop-leads-customer.json', 'STOP Leads - Customer', {'type': 'tag_applied', 'tags': ['Customer']}, [
         {'key': 'STOP-cancel', 'do': 'cancel', 'automations': ['O01 Pre-launch nurture', 'O03 Public launch', 'O04 Cart abandonment'],
          'note': 'A buyer leaves the lead sequences.'},

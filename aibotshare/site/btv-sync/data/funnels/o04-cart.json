@@ -4,7 +4,7 @@
   "type": "cart_abandoned"
  },
  "run_multiple": true,
- "publish": false,
+ "publish": true,
  "steps": [
   {
    "key": "O04-w1",

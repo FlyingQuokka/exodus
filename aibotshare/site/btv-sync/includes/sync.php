@@ -123,6 +123,22 @@ class BTV_Sync
         if ($changed) {
             update_option('_fluentcrm_experimental_settings', $current);
         }
+
+        // The reply-to address on every FluentCRM email. Replies reach the support desk.
+        if (!empty($def['fluentcrm_reply_to'])) {
+            $global = get_option('fluentcrm-global-settings', []);
+            $global = is_array($global) ? $global : [];
+            $email = isset($global['email_settings']) && is_array($global['email_settings']) ? $global['email_settings'] : [];
+            $want = str_replace('{{domain}}', btv_base_domain(), $def['fluentcrm_reply_to']);
+            $name = isset($def['fluentcrm_reply_to_name']) ? $def['fluentcrm_reply_to_name'] : '';
+            if ((isset($email['reply_to_email']) ? $email['reply_to_email'] : '') !== $want || (isset($email['reply_to_name']) ? $email['reply_to_name'] : '') !== $name) {
+                $email['reply_to_email'] = $want;
+                $email['reply_to_name'] = $name;
+                $global['email_settings'] = $email;
+                update_option('fluentcrm-global-settings', $global);
+                $changed[] = 'reply_to=' . $want;
+            }
+        }
         $this->say('settings: ' . ($changed ? implode(', ', $changed) : 'no change'));
     }
 

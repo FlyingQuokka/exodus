@@ -60,20 +60,18 @@ Updated 2 November 2026. These notes are still open. A decision note needs the o
 
 **`events-01-27`**
 - E08 (decision): the app agent says (answer 32) the app sends no password change email. Settings shows "Your password is changed." and signs out other devices. Ask the app agent to add this email or drop E08. The billing login does send WordPress's own Pass
-- E11 (confirm): the length of time allowed. The guide gives none so none is stated.
+- E11: settled on 3 November 2026. "In the time allowed" stays and no time is stated.
 - E23A (confirm): whether the app sends the same wording for all three.
 
 **`events-28-54`**
 - E38 (decision): the app agent says (answer 27) the app has no email for a refunded credit pack. A pack refund reaches the app through Stripe, the credits removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optio
-- E41a (confirm): that the member sees what the new plan includes under Your plan. The email says only to look there.
-- E51 (confirm): that the desk can fill in {{bot_name}} and {{reply_text}}.
-- E52 (confirm): whether members can reply by email. If they can replace the last paragraph with "Reply to this email to answer."
+- E41a: settled on 3 November 2026. Your plan shows no plan details so the email links to the pricing page comparison table.
+- E51 (open): whether the report carries the bot name for the help desk to use. Asked in brief 23.
+- E52: settled on 3 November 2026. Members can reply by email and the email says so.
 
 **`seq-O05-O15`**
-- O06-2 (confirm): that replies to this email reach a person and are read.
-- O06-5 (confirm): "We read what arrives" is true for the Feedback page.
-- O08-3 (confirm): where affiliates find the swipe material. The brief says it is in the Affiliates page of the Botter's Lab. The email says so and also says "look for" so it stays true if the exact spot differs.
-- O08-3 (confirm): what the swipe material contains (text only or images as well). The email says "swipe material" only.
+- O06-2: settled on 3 November 2026. Replies reach the support desk and the sync sets the reply-to address.
+- O06-5: settled on 3 November 2026. "We read every email" is true.
 
 ## 5. Next steps
 

@@ -185,7 +185,7 @@ P.S. Next up: in a few weeks a short note on what is waiting in your account.
 
 **Notes**
 - Facts: Support page link from the brief. No product claims.
-- [CONFIRM: that replies to this email reach a person and are read.]
+- Confirmed 3 November 2026: replies go to the support desk (support@botterverse.com), so the sync sets the FluentCRM reply-to address to it.
 - Automation: O06 step 1, 2 days after Plan Ended. Skips if a plan tag has been applied. The app sets Plan Ended only when the member cancelled and the plan has ended.
 
 ---
@@ -204,7 +204,7 @@ Today is a short update. Your Botter's Lab account is still open and nothing in 
 
 **What's in your account**
 
-Your bots are paused with their instructions and knowledge files kept. The credits you bought are still there.
+Your bots are paused with their instructions and knowledge files kept. Remaining credits from any credit packs you bought are untouched.
 
 We keep adding to the Botter's Lab. The [help articles](https://{{domain}}/docs/) describe each feature as it stands today.
 
@@ -281,7 +281,7 @@ This is the last email in this series. We won't keep writing about your cancelle
 
 Your account stays open and your bots stay saved. If you ever want to build again buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.
 
-If something stopped you from staying and we could have helped, the [Feedback](https://{{domain}}/feedback/) page is open any time. We read what arrives.
+If something stopped you from staying and we could have helped, the [Feedback](https://{{domain}}/feedback/) page is open any time. We read every email.
 
 Thank you for being a Botter,
 
@@ -290,7 +290,7 @@ Your Botter Support Team
 **Notes**
 - Facts: account stays open after the plan ends (digest 10.7).
 - Final email: no Next up loop. The Cancelled tag stays so later campaigns can reach the member.
-- [CONFIRM: "We read what arrives" is true for the Feedback page.]
+- Confirmed 3 November 2026: "We read every email" is true.
 - Automation: O06 step 5, about 90 days after the tag. Skips if a plan tag has been applied. Sequence ends.
 
 ---
@@ -424,7 +424,7 @@ Today you have a shortcut. The [Affiliates](https://lab.{{domain}}/affiliates) p
 
 **How to use it**
 
-Open Affiliates in the menu and look for the swipe material. Pick one piece that fits the people you talk to.
+Open Affiliates in the menu to find the swipe material. Pick one piece that fits the people you talk to.
 
 Put it in your own words and replace any blank with Your link. Check that it makes no promise of income or results before you post it.
 
@@ -440,8 +440,7 @@ P.S. Next up: a second way to earn commission, by promoting a Bot Market listing
 
 **Notes**
 - Facts: Affiliates page is part of the Botter's Lab (digest 1.5).
-- [CONFIRM: where affiliates find the swipe material. The brief says it is in the Affiliates page of the Botter's Lab. The email says so and also says "look for" so it stays true if the exact spot differs.]
-- [CONFIRM: what the swipe material contains (text only or images as well). The email says "swipe material" only.]
+- Confirmed 3 November 2026: the swipe material is on the Affiliates page in the Botter's Lab. It can hold text or images or both, so the email says "swipe material" only.
 - Automation: O08 step 3, 2 days after step 2.
 
 ---
@@ -972,7 +971,7 @@ Your plan has ended so you can buy your new one now. Your bots are paused until 
 
 Use the same email address as your Botter's Lab account. If you have a Founders coupon remember to type it at checkout.
 
-Credits you bought stay with you. Included credits you had not used have been reset.
+Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
 
 If you're on an annual plan and were due a refund for whole unused months it goes back to your card within a day.
 

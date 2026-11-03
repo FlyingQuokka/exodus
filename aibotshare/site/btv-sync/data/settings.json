@@ -1,5 +1,7 @@
 {
  "fluentcrm_experimental": {
   "abandoned_cart": "yes"
- }
+ },
+ "fluentcrm_reply_to": "support@{{domain}}",
+ "fluentcrm_reply_to_name": "Botter Support Team"
 }

@@ -23,7 +23,7 @@ Your plan has ended. Your account is still open and your data is kept.
 Your bots are paused until you buy a plan again.
    * Bots paused: {{ paused_bot_count }}
 
-When your new plan starts your bots come back, oldest first, up to the new plan's bot limit. Credits you bought stay with you. Included credits you had not used have been reset.
+When your new plan starts your bots come back, oldest first, up to the new plan's bot limit. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
 
 [See the plans]
 [Open Billing and credits]

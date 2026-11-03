@@ -50,6 +50,8 @@ add_filter('fluent_crm/email-design-template-botterverse', function ($emailBody,
     $html = is_readable($file) ? file_get_contents($file) : '{{crm.email_body}}';
     $html = str_replace('{{crm.email_body}}', $emailBody, $html);
     $html = str_replace('{{domain}}', btv_base_domain(), $html);
+    $logo = wp_get_attachment_url((int) get_option('btv_email_logo_id'));
+    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-email-logo.png', $html);
     return $html;
 }, 10, 4);
 

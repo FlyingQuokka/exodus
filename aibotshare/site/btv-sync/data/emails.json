@@ -122,13 +122,13 @@
  "E14": {
   "title": "Plan changed to a lower tier (app template plan.downgraded)",
   "subject": "Your plan has changed",
-  "body_html": "<p>Hello {{ member_name }},</p>\n<p>Your plan has changed, so some of what your account can do has changed with it.<br>   * Bots paused by the plan: {{ paused_bot_count }}</p>\n<p>Bots over your new plan's limit are paused, the most recently created first. You can choose which to keep running from your Bot list. Upgrading again starts them all.</p>\n<p>Paywalls, listings and bot styles follow the features of your plan. Credits you bought stay with you. Included credits you had not used have been reset.</p>\n<p>[Open your Bot list]<br>[Open Billing and credits]</p>",
+  "body_html": "<p>Hello {{ member_name }},</p>\n<p>Your plan has changed, so some of what your account can do has changed with it.<br>   * Bots paused by the plan: {{ paused_bot_count }}</p>\n<p>Bots over your new plan's limit are paused, the most recently created first. You can choose which to keep running from your Bot list. Upgrading again starts them all.</p>\n<p>Paywalls, listings and bot styles follow the features of your plan. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.</p>\n<p>[Open your Bot list]<br>[Open Billing and credits]</p>",
   "source": "events-01-27.md"
  },
  "E14b": {
   "title": "Plan ended (app template plan.ended, new)",
   "subject": "Your plan has ended",
-  "body_html": "<p>Hello {{ member_name }},</p>\n<p>Your plan has ended. Your account is still open and your data is kept.</p>\n<p>Your bots are paused until you buy a plan again.<br>   * Bots paused: {{ paused_bot_count }}</p>\n<p>When your new plan starts your bots come back, oldest first, up to the new plan's bot limit. Credits you bought stay with you. Included credits you had not used have been reset.</p>\n<p>[See the plans]<br>[Open Billing and credits]</p>",
+  "body_html": "<p>Hello {{ member_name }},</p>\n<p>Your plan has ended. Your account is still open and your data is kept.</p>\n<p>Your bots are paused until you buy a plan again.<br>   * Bots paused: {{ paused_bot_count }}</p>\n<p>When your new plan starts your bots come back, oldest first, up to the new plan's bot limit. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.</p>\n<p>[See the plans]<br>[Open Billing and credits]</p>",
   "source": "events-01-27.md"
  },
  "E14c": {
@@ -308,7 +308,7 @@
  "E41a": {
   "title": "Plan change up (on event, members who upgrade)",
   "subject": "[Botterverse] Your plan is now {{new_plan_name}}",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has changed from {{old_plan_name}} to {{new_plan_name}}. The change takes effect now.</p>\n<p>Included credits from your old plan are replaced by the new plan's first payment. Credits you bought stay.</p>\n<p>Features from your earlier plan come back too. Open <a href=\"https://lab.{{domain}}/billing\">Billing and credits</a> and look under Your plan to see what the new plan includes.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has changed from {{old_plan_name}} to {{new_plan_name}}. The change takes effect now.</p>\n<p>Included credits from your old plan are replaced by the new plan's first payment. Remaining credits from any credit packs you bought are untouched.</p>\n<p>{{new_plan_name}} includes all the features of the lower plans. You can see what's included on the <a href=\"https://{{domain}}/pricing/#compare\">pricing page</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-28-54.md"
  },
  "E42a": {
@@ -362,7 +362,7 @@
  "E52": {
   "title": "Support ticket replies (on event, members with a ticket)",
   "subject": "[Botterverse] Re: {{ticket_title}}",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Botter Support Team has replied to your ticket.</p>\n<p>{{reply_text}}</p>\n<p>To answer sign in to the help desk from <a href=\"https://{{domain}}/support/\">Support</a>. The help desk has its own sign-in which is separate from the Botter's Lab.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Botter Support Team has replied to your ticket.</p>\n<p>{{reply_text}}</p>\n<p>Reply to this email to answer.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-28-54.md"
  },
  "O01-01": {
@@ -392,7 +392,7 @@
  "O01-05": {
   "title": "Choosing a plan (day 8, Leads)",
   "subject": "[Botterverse] Which plan suits what you want to do",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Last time we covered what happens when someone pays to use a bot. This email is about choosing a plan to match.</p>\n<h2>Start with what you need to do</h2>\n<p>Each plan includes everything in the one before. Apprentice Botter builds and shares bots with the everyday models. Novice Botter adds every model, the paywall, integrations and the affiliate programme.</p>\n<p>Expert Botter adds deeper analytics. Pro Botter adds <a href=\"https://lab.{{domain}}/bot-styles\">Bot styles</a>, selling on Bot Market, the CRM connector and priority support. Master Botter adds <a href=\"https://lab.{{domain}}/bots/ab-tests\">A/B tests</a> and advanced analytics.</p>\n<p>There's no free plan or trial. You can cancel from <a href=\"https://lab.{{domain}}/billing\">Billing and credits</a> when you like.</p>\n<p>Your plan runs to the end of the period you paid for. You can change plan later and credits you've bought stay.</p>\n<h2>Next step</h2>\n<p>Open the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page and compare the plans against the one bot you'd like to build first.</p>\n<p>Whenever you're ready,</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Last time we covered what happens when someone pays to use a bot. This email is about choosing a plan to match.</p>\n<h2>Start with what you need to do</h2>\n<p>Each plan includes everything in the one before. Apprentice Botter builds and shares bots with the everyday models. Novice Botter adds every model, the paywall, integrations and the affiliate programme.</p>\n<p>Expert Botter adds deeper analytics. Pro Botter adds <a href=\"https://lab.{{domain}}/bot-styles\">Bot styles</a>, selling on Bot Market, the CRM connector and priority support. Master Botter adds <a href=\"https://lab.{{domain}}/bots/ab-tests\">A/B tests</a> and advanced analytics.</p>\n<p>There's no free plan or trial. You can cancel from <a href=\"https://lab.{{domain}}/billing\">Billing and credits</a> when you like.</p>\n<p>Your plan runs to the end of the period you paid for. You can change plan later and remaining credits from any credit packs you bought are untouched.</p>\n<h2>Next step</h2>\n<p>Open the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page and compare the plans against the one bot you'd like to build first.</p>\n<p>Whenever you're ready,</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O01-O04.md"
  },
  "O03-01": {
@@ -434,7 +434,7 @@
  "O03-07": {
   "title": "Choosing a plan (day 12, Leads)",
   "subject": "[Botterverse] Which plan to start on",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>In the last email we covered Bot Market and the affiliate programme. Now the question that comes with all of them: which plan to start on.</p>\n<h2>Start with what you need to do</h2>\n<p>Each plan includes everything in the one before. Apprentice Botter builds and shares bots with the everyday models. Novice Botter adds every model, the paywall, integrations and the affiliate programme.</p>\n<p>Expert Botter adds deeper analytics. Pro Botter adds <a href=\"https://lab.{{domain}}/bot-styles\">Bot styles</a>, selling on Bot Market, the CRM connector and priority support. Master Botter adds <a href=\"https://lab.{{domain}}/bots/ab-tests\">A/B tests</a> and advanced analytics.</p>\n<p>Credits you've bought stay when you change plan from <a href=\"https://lab.{{domain}}/billing\">Billing and credits</a>. You can also cancel when you like and your plan runs to the end of the period you paid for.</p>\n<h2>Next step</h2>\n<p>Open the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page and match a plan to the first thing you'd like to do.</p>\n<p>Speak soon,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: the questions people ask last.</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>In the last email we covered Bot Market and the affiliate programme. Now the question that comes with all of them: which plan to start on.</p>\n<h2>Start with what you need to do</h2>\n<p>Each plan includes everything in the one before. Apprentice Botter builds and shares bots with the everyday models. Novice Botter adds every model, the paywall, integrations and the affiliate programme.</p>\n<p>Expert Botter adds deeper analytics. Pro Botter adds <a href=\"https://lab.{{domain}}/bot-styles\">Bot styles</a>, selling on Bot Market, the CRM connector and priority support. Master Botter adds <a href=\"https://lab.{{domain}}/bots/ab-tests\">A/B tests</a> and advanced analytics.</p>\n<p>Remaining credits from any credit packs you bought are untouched when you change plan from <a href=\"https://lab.{{domain}}/billing\">Billing and credits</a>. You can also cancel when you like and your plan runs to the end of the period you paid for.</p>\n<h2>Next step</h2>\n<p>Open the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page and match a plan to the first thing you'd like to do.</p>\n<p>Speak soon,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: the questions people ask last.</p>",
   "source": "seq-O01-O04.md"
  },
  "O03-08": {
@@ -488,7 +488,7 @@
  "O06-3": {
   "title": "Your account is still here (day 30, Cancelled)",
   "subject": "[Botterverse] Your account is still here",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>A few weeks ago we asked why you cancelled.</p>\n<p>Today is a short update. Your Botter's Lab account is still open and nothing in it has been removed.</p>\n<h2>What's in your account</h2>\n<p>Your bots are paused with their instructions and knowledge files kept. The credits you bought are still there.</p>\n<p>We keep adding to the Botter's Lab. The <a href=\"https://{{domain}}/docs/\">help articles</a> describe each feature as it stands today.</p>\n<h2>If you'd like to come back</h2>\n<p>Buy a plan on the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page using the same email address as your Botter's Lab account. Your bots come back when the plan starts, oldest first, up to the new plan's bot limit.</p>\n<h2>Task for today</h2>\n<p>Sign in at https://lab.{{domain}}/login and look at your <a href=\"https://lab.{{domain}}/bots\">Bot list</a> so you know what's waiting. There's nothing else to do unless you want to.</p>\n<p>All the best,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: a reminder of what your account still holds.</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>A few weeks ago we asked why you cancelled.</p>\n<p>Today is a short update. Your Botter's Lab account is still open and nothing in it has been removed.</p>\n<h2>What's in your account</h2>\n<p>Your bots are paused with their instructions and knowledge files kept. Remaining credits from any credit packs you bought are untouched.</p>\n<p>We keep adding to the Botter's Lab. The <a href=\"https://{{domain}}/docs/\">help articles</a> describe each feature as it stands today.</p>\n<h2>If you'd like to come back</h2>\n<p>Buy a plan on the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page using the same email address as your Botter's Lab account. Your bots come back when the plan starts, oldest first, up to the new plan's bot limit.</p>\n<h2>Task for today</h2>\n<p>Sign in at https://lab.{{domain}}/login and look at your <a href=\"https://lab.{{domain}}/bots\">Bot list</a> so you know what's waiting. There's nothing else to do unless you want to.</p>\n<p>All the best,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: a reminder of what your account still holds.</p>",
   "source": "seq-O05-O15.md"
  },
  "O06-4": {
@@ -500,7 +500,7 @@
  "O06-5": {
   "title": "A last note (day 90, Cancelled)",
   "subject": "[Botterverse] A last note from us",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>This is the last email in this series. We won't keep writing about your cancelled plan.</p>\n<p>Your account stays open and your bots stay saved. If you ever want to build again buy a plan on the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.</p>\n<p>If something stopped you from staying and we could have helped, the <a href=\"https://{{domain}}/feedback/\">Feedback</a> page is open any time. We read what arrives.</p>\n<p>Thank you for being a Botter,</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>This is the last email in this series. We won't keep writing about your cancelled plan.</p>\n<p>Your account stays open and your bots stay saved. If you ever want to build again buy a plan on the <a href=\"https://{{domain}}/pricing/\">Pricing</a> page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.</p>\n<p>If something stopped you from staying and we could have helped, the <a href=\"https://{{domain}}/feedback/\">Feedback</a> page is open any time. We read every email.</p>\n<p>Thank you for being a Botter,</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
  "O07-1": {
@@ -524,7 +524,7 @@
  "O08-3": {
   "title": "Swipe material (day 4, affiliates)",
   "subject": "[Botterverse] Ready-made material for sharing",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Last time we covered plain wording for sharing your link.</p>\n<p>Today you have a shortcut. The <a href=\"https://lab.{{domain}}/affiliates\">Affiliates</a> page of the Botter's Lab holds swipe material you can copy and adapt.</p>\n<h2>How to use it</h2>\n<p>Open Affiliates in the menu and look for the swipe material. Pick one piece that fits the people you talk to.</p>\n<p>Put it in your own words and replace any blank with Your link. Check that it makes no promise of income or results before you post it.</p>\n<h2>Task for today</h2>\n<p>Choose one piece of swipe material and send it to one audience you already have.</p>\n<p>See you soon,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: a second way to earn commission, by promoting a Bot Market listing.</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Last time we covered plain wording for sharing your link.</p>\n<p>Today you have a shortcut. The <a href=\"https://lab.{{domain}}/affiliates\">Affiliates</a> page of the Botter's Lab holds swipe material you can copy and adapt.</p>\n<h2>How to use it</h2>\n<p>Open Affiliates in the menu to find the swipe material. Pick one piece that fits the people you talk to.</p>\n<p>Put it in your own words and replace any blank with Your link. Check that it makes no promise of income or results before you post it.</p>\n<h2>Task for today</h2>\n<p>Choose one piece of swipe material and send it to one audience you already have.</p>\n<p>See you soon,</p>\n<p>Your Botter Support Team</p>\n<p>P.S. Next up: a second way to earn commission, by promoting a Bot Market listing.</p>",
   "source": "seq-O05-O15.md"
  },
  "O08-4": {
@@ -620,7 +620,7 @@
  "O15-4": {
   "title": "Plan ended (event, tag Plan Ended)",
   "subject": "[Botterverse] Your plan has ended - pick your new one now",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has ended so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.</p>\n<h2><a href=\"https://{{domain}}/pricing/\">See the plans</a></h2>\n<p>Use the same email address as your Botter's Lab account. If you have a Founders coupon remember to type it at checkout.</p>\n<p>Credits you bought stay with you. Included credits you had not used have been reset.</p>\n<p>If you're on an annual plan and were due a refund for whole unused months it goes back to your card within a day.</p>\n<p>If you're leaving, thank you. Your account stays here if you ever come back.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has ended so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.</p>\n<h2><a href=\"https://{{domain}}/pricing/\">See the plans</a></h2>\n<p>Use the same email address as your Botter's Lab account. If you have a Founders coupon remember to type it at checkout.</p>\n<p>Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.</p>\n<p>If you're on an annual plan and were due a refund for whole unused months it goes back to your card within a day.</p>\n<p>If you're leaving, thank you. Your account stays here if you ever come back.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
  "UE01": {

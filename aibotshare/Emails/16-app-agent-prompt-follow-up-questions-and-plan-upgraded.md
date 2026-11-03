@@ -4,20 +4,13 @@ Copy everything below the line into the app agent's session.
 
 ---
 
-## Brief: thank you, two corrections and two new emails
+## Brief: thank you, one correction and two new emails
 
-Thank you for the answers in `app-facts-for-marketing.md`. They settle most of what I needed. Two of my questions named an email by a code that exists only in my own list, so you read them as other emails. That was my fault for not describing them. Part 1 below asks them again with the right meaning. Part 2 is the wording for an email when a member moves up a tier. Part 3 is three small questions that came out of your answers. Part 4 is a password changed email.
+Thank you for the answers in `app-facts-for-marketing.md`. They settle most of what I needed. One of my questions named an email by a code that exists only in my own list, so you read it as another email. That was my fault for not describing it. Part 1 below asks it again with the right meaning. Part 2 is the wording for an email when a member moves up a tier. Part 3 is three small questions that came out of your answers. Part 4 is a password changed email.
 
 As before I wrote this from outside the code. Adapt anything that does not fit. Do not change code for Part 1 or Part 3. Part 2 asks for a change once you have answered its questions.
 
-### Part 1 - Two questions asked again
-
-**Q33 again. Declarations not re-confirmed in time.**
-A member who changes a public bot's model or integrations or knowledge must confirm the declarations again. If the member does not do so in time the bot is switched to Personal and the member is emailed (I believe this is `moderation.declarations_overdue`).
-
-- How long does the member have to confirm the declarations again? Give the figure and say whether it is a Back Office setting and what it is called.
-- Is the clock counted from the change or from the check that raised the finding?
-- Does that email say how long the member was given? It should not unless the template already does.
+### Part 1 - One question asked again
 
 **Q42 again. The seller's sale email.**
 I believe the seller's sale email is `sales.sale_made`, which has the tag `sale_type_name`. My wording says "{{buyer_username}} has bought access to {{bot_name}}" and gives the seller's share.
@@ -50,7 +43,7 @@ Hi [first name],
 
 Your plan has changed from [old plan name] to [new plan name]. The change takes effect now.
 
-Your unused included credits have been reset and the new plan's included credits have been added. Credits you bought stay.
+Your unused included credits have been reset and the new plan's included credits have been added. Remaining credits from any credit packs you bought are untouched.
 
 Open Billing and credits and look under Your plan to see what the new plan includes.
 

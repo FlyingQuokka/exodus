@@ -348,9 +348,9 @@ Hi {{contact.first_name}},
 
 Your plan has changed from {{old_plan_name}} to {{new_plan_name}}. The change takes effect now.
 
-Included credits from your old plan are replaced by the new plan's first payment. Credits you bought stay.
+Included credits from your old plan are replaced by the new plan's first payment. Remaining credits from any credit packs you bought are untouched.
 
-Features from your earlier plan come back too. Open [Billing and credits](https://lab.{{domain}}/billing) and look under Your plan to see what the new plan includes.
+{{new_plan_name}} includes all the features of the lower plans. You can see what's included on the [pricing page](https://{{domain}}/pricing/#compare).
 
 Your Botter Support Team
 
@@ -358,7 +358,7 @@ Your Botter Support Team
 - Facts: the new plan's first payment replaces unused included credits and bought credits stay. Moving back up restores features paused by a move down (10.6). Plan change emails are always sent (12.1).
 - Sender: Cart.
 - Automation: pairs with the tier tags. The tag change is set by the cart automation and not by this email.
-- [CONFIRM: that the member sees what the new plan includes under Your plan. The email says only to look there.]
+- Confirmed 3 November 2026: Your plan shows no plan details, so the email links to the plan comparison table on the pricing page.
 
 ---
 
@@ -424,7 +424,7 @@ Hi {{contact.first_name}},
 
 Your {{plan_name}} plan has ended. Your account stays open and you can sign in to chat with bots you bought access to.
 
-Your own bots are paused and your data is kept. Unused plan credits have reset and credits you bought stay. Auto top-up is off.
+Your own bots are paused and your data is kept. Unused plan credits have reset. Remaining credits from any credit packs you bought are untouched. Auto top-up is off.
 
 To build and run bots again choose a plan on the [Pricing](https://{{domain}}/pricing/) page. Bots your old plan paused start again up to the new plan's bot limit.
 
@@ -596,7 +596,7 @@ Your Botter Support Team
 - Facts: anyone can send a report with no account using Report this bot with Reason and What is wrong and Your email address (optional) and Send the report (4.7).
 - Sender: Desk. A reply template.
 - No first name is known so the greeting is "Hello,". No response time is promised.
-- [CONFIRM: that the desk can fill in {{bot_name}} and {{reply_text}}.]
+- Open: {{bot_name}} and {{reply_text}} are my own placeholders. Fluent Support lets the body use custom substitution tags, so the app agent has been asked whether the report carries the bot name (see `23-app-agent-prompt-remaining-confirmations.md`).
 
 ---
 
@@ -612,12 +612,12 @@ The Botter Support Team has replied to your ticket.
 
 {{reply_text}}
 
-To answer sign in to the help desk from [Support](https://{{domain}}/support/). The help desk has its own sign-in which is separate from the Botter's Lab.
+Reply to this email to answer.
 
 Your Botter Support Team
 
 **Notes**
 - Facts: Support opens the help desk in a new tab with its own sign-in. A member who bought a plan or credits already has a website account (13.1).
 - Sender: Desk. A template for the Fluent Support emails.
-- [CONFIRM: whether members can reply by email. If they can replace the last paragraph with "Reply to this email to answer."]
+- Confirmed 3 November 2026: members can reply by email.
 - No response time is promised. Priority support is not mentioned.

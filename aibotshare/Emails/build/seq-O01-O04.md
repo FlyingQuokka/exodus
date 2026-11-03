@@ -198,7 +198,7 @@ Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{
 
 There's no free plan or trial. You can cancel from [Billing and credits](https://lab.{{domain}}/billing) when you like.
 
-Your plan runs to the end of the period you paid for. You can change plan later and credits you've bought stay.
+Your plan runs to the end of the period you paid for. You can change plan later and remaining credits from any credit packs you bought are untouched.
 
 **Next step**
 
@@ -470,7 +470,7 @@ Each plan includes everything in the one before. Apprentice Botter builds and sh
 
 Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{domain}}/bot-styles), selling on Bot Market, the CRM connector and priority support. Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advanced analytics.
 
-Credits you've bought stay when you change plan from [Billing and credits](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
+Remaining credits from any credit packs you bought are untouched when you change plan from [Billing and credits](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
 
 **Next step**
 

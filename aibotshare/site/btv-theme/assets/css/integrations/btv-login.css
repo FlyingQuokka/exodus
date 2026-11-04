@@ -9,11 +9,11 @@ body.login {
   --accent: #dc8fd5; --accent-hover: #c876c1; --accent-soft: #ffe0fb; --accent-text: #984f92; --on-accent: #391d37;
   background: var(--panel); color: var(--text-2); font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6;
 }
-/* The card is #login itself so the heading and form and links all sit inside it. The logo sits above it. */
-body.login #login { position: relative; width: min(440px, calc(100% - 32px)); margin: 110px auto 2rem; padding: 1.8rem; background: var(--surface); border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 10px 30px rgba(40, 38, 55, .08); box-sizing: border-box; }
+/* The card is #login itself so the logo and heading and form and links all sit inside it. */
+body.login #login { position: relative; width: min(440px, calc(100% - 32px)); margin: 6vh auto 2rem; padding: 1.8rem; background: var(--surface); border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 10px 30px rgba(40, 38, 55, .08); box-sizing: border-box; }
 
 /* Logo */
-body.login h1 { position: absolute; top: -84px; left: 0; right: 0; margin: 0; }
+body.login h1 { margin: 0 0 1.2rem; }
 body.login h1 a { background-image: url('../../img/btv-logo.svg'); background-size: contain; background-repeat: no-repeat; background-position: center; width: 100%; height: 56px; margin: 0 auto; }
 
 /* Heading block and form, inside the card */
@@ -22,8 +22,8 @@ body.login .btv-login-head p { margin: 0 0 1em; }
 body.login .btv-login-head p:last-child { text-align: center; margin-bottom: 1.2rem; }
 body.login .btv-login-head a { color: var(--accent-text); }
 body.login form { margin: 0; background: none; border: 0; border-radius: 0; padding: 0; box-shadow: none; }
-body.login .message, body.login .success, body.login #login_error { border-left: 5px solid var(--accent-text); background: var(--surface); border-radius: 12px; box-shadow: none; margin: 0 0 1rem; color: var(--text); }
-body.login #login_error { border-left-color: #ac3031; }
+body.login .message, body.login .success, body.login #login_error { border: 0; background: var(--accent-soft); border-radius: 12px; box-shadow: none; margin: 0 0 1rem; padding: .8rem 1rem; color: var(--text); font-size: 1rem; text-align: center; }
+body.login #login_error { background: #fbe3e3; color: #7a1f20; }
 
 /* Fields */
 body.login label { font-weight: 800; color: var(--text); font-size: 1rem; }
@@ -57,3 +57,7 @@ body.login a:focus-visible, body.login .button:focus-visible, body.login input:f
 .btv-billing__pw-toggle { position: absolute; top: 50%; right: .6rem; transform: translateY(-50%); display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; padding: 0; margin: 0; border: 0; border-radius: 8px; background: transparent; color: #282637; cursor: pointer; }
 .btv-billing__pw-toggle:hover { background: #ffe0fb; }
 .btv-billing__pw-toggle:focus-visible { outline: 3px solid #984f92; outline-offset: 2px; }
+
+/* The logo sits inside the card on the billing account pages too, and their messages match the login screens */
+.btv-billing__card::before { content: ''; display: block; height: 56px; margin: 0 0 1rem; background: url('../../img/btv-logo.svg') center / contain no-repeat; }
+.btv-billing__message { border: 0; text-align: center; font-size: 1rem; }

@@ -70,6 +70,14 @@ add_filter('login_message', function ($message) {
 add_filter('login_site_html_link', '__return_empty_string');
 
 /**
+ * No "You are now logged out" message. Being on the sign-in page says it.
+ */
+add_filter('wp_login_errors', function ($errors) {
+    $errors->remove('loggedout');
+    return $errors;
+});
+
+/**
  * One language only, so the language dropdown is not shown.
  */
 add_filter('login_display_language_dropdown', '__return_false');

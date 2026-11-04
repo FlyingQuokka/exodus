@@ -20,5 +20,16 @@
       button.innerHTML = show ? eyeOff : eye;
     });
     wrap.appendChild(button);
+    /* Centre the button on the field itself. The wrapper can be taller than the field
+       (margin or line gap below it), so a percentage of the wrapper sits too high. */
+    var place = function () {
+      if (!input.offsetHeight) { return; }
+      button.style.transform = 'none';
+      button.style.top = (input.offsetTop + (input.offsetHeight - button.offsetHeight) / 2) + 'px';
+    };
+    place();
+    window.addEventListener('load', place);
+    window.addEventListener('resize', place);
+    if (window.ResizeObserver) { new ResizeObserver(place).observe(input); }
   });
 })();

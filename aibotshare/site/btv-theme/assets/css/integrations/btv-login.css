@@ -50,3 +50,10 @@ body.login .language-switcher { display: none; }
 body.login #nav a, body.login #backtoblog a, body.login .privacy-policy-page-link a { color: var(--accent-text); }
 body.login a:focus-visible, body.login .button:focus-visible, body.login input:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; box-shadow: none; }
 @media (prefers-reduced-motion: reduce) { body.login * { transition: none !important; } }
+
+/* Show and hide password button on the billing account pages (the pages the checkout guard plugin builds) */
+.btv-billing__pw { position: relative; display: block; }
+.btv-billing__pw .btv-billing__input { padding-right: 3.2rem; }
+.btv-billing__pw-toggle { position: absolute; top: 50%; right: .6rem; transform: translateY(-50%); display: inline-flex; align-items: center; justify-content: center; width: 2.4rem; height: 2.4rem; padding: 0; margin: 0; border: 0; border-radius: 8px; background: transparent; color: #282637; cursor: pointer; }
+.btv-billing__pw-toggle:hover { background: #ffe0fb; }
+.btv-billing__pw-toggle:focus-visible { outline: 3px solid #984f92; outline-offset: 2px; }

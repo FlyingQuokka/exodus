@@ -10,6 +10,7 @@ if (!defined('ABSPATH')) {
 
 add_action('login_enqueue_scripts', function () {
     wp_enqueue_style('btv-login', btv_asset('css/integrations/btv-login.css'), [], btv_asset_version('css/integrations/btv-login.css'));
+    wp_enqueue_script('btv-password-toggle', btv_asset('js/btv-password-toggle.js'), [], btv_asset_version('js/btv-password-toggle.js'), ['in_footer' => false, 'strategy' => 'defer']);
 });
 
 add_filter('login_headerurl', function () {

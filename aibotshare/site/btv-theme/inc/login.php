@@ -63,7 +63,7 @@ add_filter('login_message', function ($message) {
     } elseif ($action === 'login' || $action === '') {
         $head = '<h2>Billing login</h2>'
             . '<p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter&#8217;s Lab sign-in instead.</p>'
-            . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Go to the Botter&#8217;s Lab sign-in</a></p>';
+            . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Sign in to the Botter&#8217;s Lab</a></p>';
     } elseif ($action === 'lostpassword') {
         $head = btv_is_admin_login() ? '<h2>Forgotten your admin password?</h2>' : '<h2>Forgotten your password?</h2>';
     } else {
@@ -138,3 +138,13 @@ add_action('login_form_logout', function () {
         exit;
     }
 }, 0);
+
+/**
+ * A member of staff who signs out of the admin area lands on the admin sign-in and not the billing one.
+ */
+add_filter('logout_redirect', function ($redirect, $requested, $user) {
+    if ($user instanceof WP_User && user_can($user, 'manage_options')) {
+        return add_query_arg('redirect_to', rawurlencode(admin_url()), site_url('wp-login.php', 'login'));
+    }
+    return $redirect;
+}, 10, 3);

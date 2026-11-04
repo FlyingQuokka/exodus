@@ -9,8 +9,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-add_filter('wp_die_handler', function () {
-    return 'btv_die_handler';
+add_filter('wp_die_handler', function ($handler) {
+    // If a WordPress update ever renames the core handler this builds on, leave the screen as WordPress makes it.
+    return function_exists('_default_wp_die_handler') ? 'btv_die_handler' : $handler;
 });
 
 function btv_die_handler($message, $title = '', $args = [])

@@ -56,7 +56,11 @@ add_action('login_init', function () {
  */
 add_filter('login_message', function ($message) {
     $action = isset($_REQUEST['action']) ? sanitize_key(wp_unslash($_REQUEST['action'])) : 'login';
-    if ($action === 'login' || $action === '') {
+    $redirect = isset($_REQUEST['redirect_to']) ? (string) wp_unslash($_REQUEST['redirect_to']) : '';
+    if (($action === 'login' || $action === '') && strpos($redirect, '/wp-admin') !== false) {
+        $head = '<h2>Admin login</h2>'
+            . '<p>This sign-in is for the Botterverse site administrators only. Customers use the billing login or the Botter&#8217;s Lab sign-in.</p>';
+    } elseif ($action === 'login' || $action === '') {
         $head = '<h2>Billing login</h2>'
             . '<p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter&#8217;s Lab sign-in instead.</p>'
             . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Go to the Botter&#8217;s Lab sign-in</a></p>';

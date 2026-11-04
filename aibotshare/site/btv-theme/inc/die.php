@@ -40,7 +40,7 @@ html { background: #ebedfc; }
 body { max-width: 440px; margin: 6vh auto 2rem; padding: 1.8rem; box-sizing: border-box; background: #ffffff; border: 1px solid #dcdbe6; border-radius: 22px; box-shadow: 0 10px 30px rgba(40, 38, 55, .08); color: #4f4d5f; font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; text-align: center; }
 body::before { content: ''; display: block; height: 56px; margin: 0 0 1.2rem; background: url('{$logo}') center / contain no-repeat; }
 h1 { margin: 0 0 .6rem; padding: 0; border: 0; font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; font-size: 1.7rem; line-height: 1.12; color: #282637; }
-#error-page { margin-top: 0; }
+#error-page { margin-top: 2rem; }
 #error-page p, #error-page .wp-die-message, body > p, body > .wp-die-message { margin: 0 0 1em; font-size: 1rem; line-height: 1.6; }
 ul { text-align: left; }
 ul li { font-size: 1rem; }
@@ -53,3 +53,19 @@ code { font-size: .9em; word-break: break-word; }
 CSS;
     return preg_replace('#</head>#i', $css . '</head>', $html, 1);
 }
+
+/**
+ * A way for a signed-in administrator to see the screen. /?btv_preview_die=1 shows one message and
+ * /?btv_preview_die=2 shows a list. Nobody else sees anything.
+ */
+add_action('init', function () {
+    if (!isset($_GET['btv_preview_die']) || !current_user_can('manage_options')) {
+        return;
+    }
+    if ($_GET['btv_preview_die'] === '2') {
+        $errors = new WP_Error('first', 'The first thing that went wrong.');
+        $errors->add('second', 'The second thing that went wrong.');
+        wp_die($errors, 'Example error list', ['response' => 403, 'back_link' => true]);
+    }
+    wp_die('This is an example of an error message. It is shown when something fails and WordPress has nothing better to say.', 'Example error', ['response' => 403, 'back_link' => true, 'link_url' => home_url('/'), 'link_text' => 'Go to the home page']);
+}, 20);

@@ -61,3 +61,4 @@ body.login a:focus-visible, body.login .button:focus-visible, body.login input:f
 /* The logo sits inside the card on the billing account pages too, and their messages match the login screens */
 .btv-billing__card::before { content: ''; display: block; height: 56px; margin: 0 0 1rem; background: url('../../img/btv-logo.svg') center / contain no-repeat; }
 .btv-billing__message { border: 0; text-align: center; font-size: 1rem; }
+body.login .btv-login-head h2.btv-login-head__admin { text-align: center; }

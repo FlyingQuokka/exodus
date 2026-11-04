@@ -58,7 +58,7 @@ add_filter('login_message', function ($message) {
     $action = isset($_REQUEST['action']) ? sanitize_key(wp_unslash($_REQUEST['action'])) : 'login';
     $redirect = isset($_REQUEST['redirect_to']) ? (string) wp_unslash($_REQUEST['redirect_to']) : '';
     if (($action === 'login' || $action === '') && strpos($redirect, '/wp-admin') !== false) {
-        $head = '<h2>Admin login</h2>'
+        $head = '<h2 class="btv-login-head__admin">Admin login</h2>'
             . '<p>This sign-in is for the Botterverse site administrators only. Customers use the billing login or the Botter&#8217;s Lab sign-in.</p>';
     } elseif ($action === 'login' || $action === '') {
         $head = '<h2>Billing login</h2>'

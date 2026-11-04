@@ -8,7 +8,7 @@ Copy everything below the line into the app agent's session.
 
 The owner has decided the name should have no apostrophe, because the Lab belongs to all botters. The new name is **Botters Lab** (capital B and capital L, no apostrophe, no other punctuation). "Botterverse" stays the brand and the website name. The Lab host stays `lab.<domain>`.
 
-The website side is already changed: every page and every email I send now says Botters Lab so the subject prefix on my emails is `[Botters Lab]`. The app must change at the same time, because members see both.
+The website side is already changed: every page and every email I send now says Botters Lab. The subject prefix on my emails is `[Botters Lab]`. The app must change at the same time, because members see both.
 
 ### What to change
 

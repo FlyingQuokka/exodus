@@ -55,6 +55,8 @@ CSS;
 }
 
 /**
+ * REMOVE THIS BLOCK BEFORE GO LIVE. The preview is only for checking the look on the local site.
+ *
  * A way for a signed-in administrator to see the screen. /?btv_preview_die=1 shows one message and
  * /?btv_preview_die=2 shows a list. Nobody else sees anything.
  */

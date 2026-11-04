@@ -96,3 +96,41 @@ add_filter('wp_login_errors', function ($errors) {
  * One language only, so the language dropdown is not shown.
  */
 add_filter('login_display_language_dropdown', '__return_false');
+
+/**
+ * Whether this sign-in screen was reached through the admin area.
+ */
+function btv_is_admin_login()
+{
+    $redirect = isset($_REQUEST['redirect_to']) ? (string) wp_unslash($_REQUEST['redirect_to']) : '';
+    return strpos($redirect, '/wp-admin') !== false;
+}
+
+add_action('login_init', function () {
+    if (btv_is_admin_login()) {
+        // Staff reset their password on WordPress's own page and not on the billing page.
+        add_filter('lostpassword_url', function () {
+            $url = site_url('wp-login.php?action=lostpassword', 'login');
+            return add_query_arg('redirect_to', rawurlencode((string) wp_unslash($_REQUEST['redirect_to'])), $url);
+        }, 99);
+    }
+    // The privacy policy link shows on the customer sign-in screens only, and opens in a new tab.
+    add_filter('the_privacy_policy_link', function ($link) {
+        if (btv_is_admin_login()) {
+            return '';
+        }
+        return str_replace('rel="privacy-policy"', 'rel="privacy-policy noopener" target="_blank"', $link);
+    });
+});
+
+/**
+ * The log-out confirmation page is no longer shown. A log-out address without its security token
+ * goes to the sign-in page. The normal log-out button carries the token and logs out at once.
+ */
+add_action('login_form_logout', function () {
+    $nonce = isset($_REQUEST['_wpnonce']) ? sanitize_text_field(wp_unslash($_REQUEST['_wpnonce'])) : '';
+    if (!wp_verify_nonce($nonce, 'log-out')) {
+        wp_safe_redirect(wp_login_url());
+        exit;
+    }
+}, 0);

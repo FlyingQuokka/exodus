@@ -47,16 +47,15 @@ After a wording change in `Emails\build`, run `python tools\build-email-data.py`
 - Sync built and rehearsed on a copy of the database. 39 automations published, then O04 cart abandonment too (all 40 are now published locally). Abandoned cart tracking is on.
 - Theme built and corrected from the owner's feedback: header and footer, pricing, checkout (summary card and order button), receipt page width, sign-in screens (one card with the logo inside and no Register link and no language dropdown), admin sign-in with its own heading, billing account pages with a show and hide password button, error screens and the log-out screen styled.
 - Branded layout for WordPress's own plain-text emails. A fixed reply-to of `support@botterverse.com` on FluentCRM emails. FluentAffiliate's own commission and payout and staff sale emails switched off.
-- Comma pass over all 201 emails. Wording changes for bought credits and E34 and E41a and E51 and E52. Rename to Botters Lab on the website side (files and database). Privacy Policy slug is now `privacy-policy`.
+- Comma pass over all 201 emails. Wording changes for bought credits and E34 and E41a and E51 and E52. Rename to Botters Lab on the website side (files and database). Privacy Policy slug is now `privacy-policy` and the Terms slug is now `terms-and-conditions`.
 - The error screen builds on core's `_default_wp_die_handler`. If it is ever missing the theme emails the support address once a day and shows a plain screen.
 
 ## 5. Outstanding
 
 **For the owner to decide**
-1. The Terms page slug still ends in `-app-version` (`terms-and-conditions-app-version`). The Privacy Policy was fixed on request. Ask whether to fix this one too. It is used by the footer menu and `bin\install-pages.php`.
-2. Whether the comma changes should go to the app agent for the app-sent emails. Those are `events-01-27.md` and the app-sent emails in `events-28-54.md`. The app still holds the old text.
-3. Send dates for the two Founders broadcasts (FB1 and FB2). The owner will decide after the live site is proven.
-4. Whether the Terms and Privacy Policy name change waits or goes in as its own version. Asked in brief 25. The app agent will change its own and **the WordPress Terms and Privacy Policy pages have no mention of the old name, so nothing is needed there**.
+1. Whether the comma changes should go to the app agent for the app-sent emails. Those are `events-01-27.md` and the app-sent emails in `events-28-54.md`. The app still holds the old text.
+2. Send dates for the two Founders broadcasts (FB1 and FB2). The owner will decide after the live site is proven.
+3. Whether the Terms and Privacy Policy name change waits or goes in as its own version. Asked in brief 25. The app agent will change its own and **the WordPress Terms and Privacy Policy pages have no mention of the old name, so nothing is needed there**.
 
 **Waiting on the app agent**
 - Brief 24: bought credits wording in four emails, the `plan.downgraded` sentence (approved: "Your included credits change to your new plan's at your next renewal.") and the E34 daily cap email (delete the restart sentence and add a comma after "now").
@@ -88,6 +87,7 @@ After a wording change in `Emails\build`, run `python tools\build-email-data.py`
 The sync does not carry page content. Repeat these on the live site or add them to the sync first:
 - Terms page (ID 80): the safety scan paragraph (longer wording without the time zone phrase) and the CRM consent box wording in section 4. The auto top-up wording matches the app's own text.
 - Privacy Policy page (ID 81): the "If you start to buy and do not finish." paragraph about abandoned carts. Slug is `privacy-policy`.
+- Terms page slug is `terms-and-conditions` (renamed on 4 November 2026) and the footer menu was updated to match.
 - Pricing page (ID 78): the id `compare` on the comparison table (E41a links to it).
 - The footer menu (post 208) uses the new Privacy Policy slug.
 - Pages 82 and 83 (Auto Top-Up Consent and CRM Consent) are in the trash.

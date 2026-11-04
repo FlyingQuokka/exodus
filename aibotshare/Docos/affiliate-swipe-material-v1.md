@@ -9,7 +9,7 @@ Lines in [square brackets] are for you to fill in or delete. Nothing here has be
 ## 1. How to use this
 
 1. Pick an item. Change the words so they sound like you.
-2. Replace `[YOUR AFFILIATE LINK]` with your own link. You will find it under Affiliates in the Botter's Lab.
+2. Replace `[YOUR AFFILIATE LINK]` with your own link. You will find it under Affiliates in the Botters Lab.
 3. Keep the disclosure line in every item. Do not remove it. Move it if you must but it has to be easy to see.
 4. Say only what the item says. If you are unsure about a feature check the Help centre first.
 

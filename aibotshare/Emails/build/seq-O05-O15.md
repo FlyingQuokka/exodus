@@ -9,7 +9,7 @@ Behaviour sequences wait while Welcome Active or Upgrade Active is on the contac
 | Email | Topic | P.S. loop text |
 |---|---|---|
 | O05-1 | Quiet check-in and one quick win | Next up: the quickest way to a working bot, if starting from a blank page is what held you back. |
-| O05-2 | Import a bot and Duplicate | Next up: what to do if your plan no longer fits the way you use the Botter's Lab. |
+| O05-2 | Import a bot and Duplicate | Next up: what to do if your plan no longer fits the way you use the Botters Lab. |
 | O05-3 | Does your plan still fit | None. Plain sign-off. |
 | O06-2 | Why did you cancel | Next up: in a few weeks a short note on what is waiting in your account. |
 | O06-3 | Your account is still here (30 days) | Next up: a reminder of what your account still holds. |
@@ -37,13 +37,13 @@ Behaviour sequences wait while Welcome Active or Upgrade Active is on the contac
 
 ## O05-1 - Quiet check-in (day 0 of the sequence, Customers tagged Dormant)
 
-**Subject:** [Botter's Lab] Your bots are waiting
+**Subject:** [Botters Lab] Your bots are waiting
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-It's been a while since you last visited the Botter's Lab. Your plan is still active and your account is as you left it.
+It's been a while since you last visited the Botters Lab. Your plan is still active and your account is as you left it.
 
 Today is a short check-in with one thing worth a few minutes.
 
@@ -72,7 +72,7 @@ P.S. Next up: the quickest way to a working bot, if starting from a blank page i
 
 ## O05-2 - Import a bot and Duplicate (day 4, Dormant)
 
-**Subject:** [Botter's Lab] The quickest way to a working bot
+**Subject:** [Botters Lab] The quickest way to a working bot
 
 **Body:**
 
@@ -102,7 +102,7 @@ See you soon,
 
 Your Botter Support Team
 
-P.S. Next up: what to do if your plan no longer fits the way you use the Botter's Lab.
+P.S. Next up: what to do if your plan no longer fits the way you use the Botters Lab.
 
 **Notes**
 - Facts: Import a bot is paste-only and uses no credits. Steps and "Create bot" and opens as Personal. Duplicate adds "Copy" and starts Personal and counts towards the limit (digest 3.10 and 3.12). Integrations are not part of Apprentice Botter: the importer step says so and the member can carry on.
@@ -200,17 +200,17 @@ Hi {{contact.first_name}},
 
 A few weeks ago, we asked why you cancelled.
 
-Today is a short update. Your Botter's Lab account is still open and nothing in it has been removed.
+Today is a short update. Your Botters Lab account is still open and nothing in it has been removed.
 
 **What's in your account**
 
 Your bots are paused with their instructions and knowledge files kept. Remaining credits from any credit packs you bought are untouched.
 
-We keep adding to the Botter's Lab. The [help articles](https://{{domain}}/docs/) describe each feature as it stands today.
+We keep adding to the Botters Lab. The [help articles](https://{{domain}}/docs/) describe each feature as it stands today.
 
 **If you'd like to come back**
 
-Buy a plan on the [Pricing](https://{{domain}}/pricing/) page using the same email address as your Botter's Lab account. Your bots come back when the plan starts, oldest first, up to the new plan's bot limit.
+Buy a plan on the [Pricing](https://{{domain}}/pricing/) page using the same email address as your Botters Lab account. Your bots come back when the plan starts, oldest first, up to the new plan's bot limit.
 
 **Task for today**
 
@@ -251,7 +251,7 @@ Open [Settings](https://lab.{{domain}}/settings) and find Data export. Press Req
 
 **Coming back**
 
-Buy a plan on the [Pricing](https://{{domain}}/pricing/) page using the same email address as your Botter's Lab account. Your bots start again from there.
+Buy a plan on the [Pricing](https://{{domain}}/pricing/) page using the same email address as your Botters Lab account. Your bots start again from there.
 
 **Task for today**
 
@@ -279,7 +279,7 @@ Hi {{contact.first_name}},
 
 This is the last email in this series. We won't keep writing about your cancelled plan.
 
-Your account stays open and your bots stay saved. If you ever want to build again, buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botter's Lab account, then sign in at https://lab.{{domain}}/login.
+Your account stays open and your bots stay saved. If you ever want to build again, buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botters Lab account, then sign in at https://lab.{{domain}}/login.
 
 If something stopped you from staying and we could have helped, the [Feedback](https://{{domain}}/feedback/) page is open any time. We read every email.
 
@@ -305,7 +305,7 @@ Hi {{contact.first_name}},
 
 We've refunded your payment. The money goes back to the card you paid with. Your bank may take a few days to show it.
 
-Your Botter's Lab account stays open. If your plan has ended your bots are paused with their data kept and you can request an export from [Settings](https://lab.{{domain}}/settings).
+Your Botters Lab account stays open. If your plan has ended your bots are paused with their data kept and you can request an export from [Settings](https://lab.{{domain}}/settings).
 
 We'd value one thing in return. If you tell us what didn't work for you, we can fix it. The [Feedback](https://{{domain}}/feedback/) page is the place for that. If you'd like to talk to someone, open the [Support](https://{{domain}}/support/) page.
 
@@ -332,7 +332,7 @@ You've joined the affiliate programme. Here's where your link lives and how it w
 
 **Your link**
 
-Open [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu in the Botter's Lab. Your link ends in your username and you share it wherever you like.
+Open [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu in the Botters Lab. Your link ends in your username and you share it wherever you like.
 
 **What earns commission**
 
@@ -420,7 +420,7 @@ Hi {{contact.first_name}},
 
 Last time, we covered plain wording for sharing your link.
 
-Today, you have a shortcut. The [Affiliates](https://lab.{{domain}}/affiliates) page of the Botter's Lab holds swipe material you can copy and adapt.
+Today, you have a shortcut. The [Affiliates](https://lab.{{domain}}/affiliates) page of the Botters Lab holds swipe material you can copy and adapt.
 
 **How to use it**
 
@@ -439,8 +439,8 @@ Your Botter Support Team
 P.S. Next up: a second way to earn commission, by promoting a Bot Market listing.
 
 **Notes**
-- Facts: Affiliates page is part of the Botter's Lab (digest 1.5).
-- Confirmed 3 November 2026: the swipe material is on the Affiliates page in the Botter's Lab. It can hold text or images or both, so the email says "swipe material" only.
+- Facts: Affiliates page is part of the Botters Lab (digest 1.5).
+- Confirmed 3 November 2026: the swipe material is on the Affiliates page in the Botters Lab. It can hold text or images or both, so the email says "swipe material" only.
 - Automation: O08 step 3, 2 days after step 2.
 
 ---
@@ -541,7 +541,7 @@ Open [Payouts](https://lab.{{domain}}/payouts) and look at Your earnings. The am
 
 **Withdrawing**
 
-Withdrawals are requested in the Botter's Lab. If you haven't yet, press Set up payouts on the Payouts page and finish the form. We never see your bank details.
+Withdrawals are requested in the Botters Lab. If you haven't yet, press Set up payouts on the Payouts page and finish the form. We never see your bank details.
 
 Once your earnings reach the smallest withdrawal shown on Payouts, the Withdraw card lets you choose an amount and press Show the fees. Some withdrawals are sent on set days or by hand, so each one shows its status.
 
@@ -554,7 +554,7 @@ Well done,
 Your Botter Support Team
 
 **Notes**
-- Facts: digest 7.2 and 7.4 and 7.5 and 11.4. Withdrawals are requested in the Botter's Lab. No "daily payouts" wording. No amount stated.
+- Facts: digest 7.2 and 7.4 and 7.5 and 11.4. Withdrawals are requested in the Botters Lab. No "daily payouts" wording. No amount stated.
 - The $50 minimum is left out on purpose: this email's subject is the first commission and not withdrawals. The text points to the figure shown on Payouts.
 - Automation: O08 step 6, sent when the app applies the tag First Commission [proposed event, not yet confirmed to exist]. Last email, no loop.
 
@@ -574,7 +574,7 @@ We'd like to hear how it's going because Botters who sell can tell us things nob
 
 **Three questions**
 
-What made you decide to sell a bot? What was the hardest part? What one thing would you change in the Botter's Lab?
+What made you decide to sell a bot? What was the hardest part? What one thing would you change in the Botters Lab?
 
 You can answer in a line each. If you've found a bug or have an idea for a feature, the [Feedback](https://{{domain}}/feedback/) page takes both.
 
@@ -611,7 +611,7 @@ Buyers can ask for a refund within the refund period, which is 14 days at most. 
 
 **Withdrawing**
 
-Withdrawals are requested in the Botter's Lab. Open Payouts and press Set up payouts if you haven't yet. The minimum withdrawal is $50. When an amount is available, press Withdraw and follow the steps. Some withdrawals are sent on set days or by hand, so each one shows its status.
+Withdrawals are requested in the Botters Lab. Open Payouts and press Set up payouts if you haven't yet. The minimum withdrawal is $50. When an amount is available, press Withdraw and follow the steps. Some withdrawals are sent on set days or by hand, so each one shows its status.
 
 **Task for today**
 
@@ -622,7 +622,7 @@ Well done,
 Your Botter Support Team
 
 **Notes**
-- Facts: digest 7.1 to 7.5. Withdrawals are requested in the Botter's Lab. No daily payouts wording and no income claim.
+- Facts: digest 7.1 to 7.5. Withdrawals are requested in the Botters Lab. No daily payouts wording and no income claim.
 - Confirmed by the app agent (answer 47): the refund period (14 days) and the holdback (21 days) are staff settings with those defaults. Both apply to paywall sales, top-ups and Bot Market sales. A paywall guarantee has its own length of 7 or 14 days, up to the refund period, so the text says "at most". Bot Market refunds are decided by the Botter Support Team and the seller can only comment.
 - The $50 minimum is stated in the Withdrawing paragraph (owner decision 2 November 2026).
 - Automation: O10 single email, tag First Sale. Sends at once. Event email.
@@ -631,7 +631,7 @@ Your Botter Support Team
 
 ## O11-1 - Listing tips (day 0, tag Bot Market Seller)
 
-**Subject:** [Botter's Lab] Tips for your Bot Market listing
+**Subject:** [Botters Lab] Tips for your Bot Market listing
 
 **Body:**
 
@@ -668,7 +668,7 @@ P.S. Next up: how reviews and badges build trust in your listing.
 
 ## O11-2 - Reviews and badges (day 5, Bot Market sellers)
 
-**Subject:** [Botter's Lab] Reviews and badges
+**Subject:** [Botters Lab] Reviews and badges
 
 **Body:**
 
@@ -705,7 +705,7 @@ Your Botter Support Team
 
 ## O12-1 - Open your bought bot and read the licence (day 0, tag Bot Market Buyer)
 
-**Subject:** [Botter's Lab] Your new bot - what to check first
+**Subject:** [Botters Lab] Your new bot - what to check first
 
 **Body:**
 
@@ -746,7 +746,7 @@ P.S. Next up: a review and why it matters to the next buyer.
 
 ## O12-2 - Leave a review (day 7, Bot Market buyers)
 
-**Subject:** [Botter's Lab] Your review helps the next buyer
+**Subject:** [Botters Lab] Your review helps the next buyer
 
 **Body:**
 
@@ -779,7 +779,7 @@ Your Botter Support Team
 
 ## O13-1 - Check your imported bot (event, tag Migrated From GPT)
 
-**Subject:** [Botter's Lab] Check your imported bot
+**Subject:** [Botters Lab] Check your imported bot
 
 **Body:**
 
@@ -816,7 +816,7 @@ Your Botter Support Team
 
 ## O14-1 - Auto top-up and where to change it (day 0, tag Auto Top Up)
 
-**Subject:** [Botter's Lab] Keeping your credits topped up
+**Subject:** [Botters Lab] Keeping your credits topped up
 
 **Body:**
 
@@ -853,7 +853,7 @@ P.S. Next up: a few ways to make your credits go further.
 
 ## O14-2 - Making credits go further (day 4, Power Users)
 
-**Subject:** [Botter's Lab] A few ways to make credits go further
+**Subject:** [Botters Lab] A few ways to make credits go further
 
 **Body:**
 
@@ -895,7 +895,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your Botter's Lab plan ends in 7 days, as you asked. Your bots keep running until then.
+Your Botters Lab plan ends in 7 days, as you asked. Your bots keep running until then.
 
 **Moving to a different plan?** You can buy it as soon as this one ends. We'll remind you on the day.
 
@@ -923,7 +923,7 @@ Your plan ends tomorrow. The [Billing and credits](https://lab.{{domain}}/billin
 
 **Moving to a different plan?** Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.
 
-Use the same email address as your Botter's Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
+Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
 
 **Changed your mind?** Press Keep my plan on the Billing and credits page.
 
@@ -945,7 +945,7 @@ Hi {{contact.first_name}},
 
 Today's the day. Your plan ends later today at the time shown on the [Billing and credits](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended, so you can buy your new plan straight away.
 
-**Have these ready:** the email address of your Botter's Lab account and your Founders coupon if you have one.
+**Have these ready:** the email address of your Botters Lab account and your Founders coupon if you have one.
 
 **Changed your mind?** You can still press Keep my plan on the Billing and credits page until it ends.
 
@@ -969,7 +969,7 @@ Your plan has ended, so you can buy your new one now. Your bots are paused until
 
 **[See the plans](https://{{domain}}/pricing/)**
 
-Use the same email address as your Botter's Lab account. If you have a Founders coupon, remember to type it at checkout.
+Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.
 
 Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
 

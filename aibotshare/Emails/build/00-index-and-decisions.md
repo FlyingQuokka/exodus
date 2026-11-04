@@ -30,7 +30,7 @@ Other documents in `Emails\`: `00-strategy-one-list-and-tags.md` (list and tags)
 ## 2. Decisions made
 
 1. Email format is the soap opera: recap then new topic then content then a Task for today heading then a closing line then the signature on its own line then a P.S. starting "Next up". No preheader or avatars or stories. Paragraphs of one or two sentences.
-2. Signature is Your Botter Support Team on every email (owner decision 2 November 2026). Subject prefix is [Botterverse] for general emails and [Botter's Lab] for Lab emails.
+2. Signature is Your Botter Support Team on every email (owner decision 2 November 2026). Subject prefix is [Botterverse] for general emails and [Botters Lab] for Lab emails.
 3. One main list plus tags. Welcome plan v4: three emails on day 1 (S01 at once and T1 five minutes later and T2 when the tier tag arrives or at the end of day 1). Members below the needed tier receive a preview of a gated email in the same slot. An upgrade ends the welcome track and starts the upgrade sequence.
 4. F4 (daily limit and sign-up requirement) goes to every tier because the app has no tier limit on those settings.
 5. S30 is the last welcome email. It has no P.S. and no "Next up". It winds the sequence up and exists in five tier versions chosen by the tier tag, because FluentCRM has no per-tier blocks inside one email.

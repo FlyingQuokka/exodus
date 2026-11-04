@@ -10,7 +10,7 @@ Lines in [square brackets] are notes to you and are not page text.
 
 [System page. Text only. Style through theme CSS. Never change the cart content itself. The old refund and payout wording is removed.]
 
-**Heading:** You are one step from the Botter's Lab
+**Heading:** You are one step from the Botters Lab
 
 **Plan summary:** [Plan] Botter. $[price] a month. [Bots]. [Credits] credits each month.
 
@@ -30,7 +30,7 @@ Lines in [square brackets] are notes to you and are not page text.
 
 **Button:** Join as a [Plan] Botter
 
-**Confirmation message:** Welcome to the Botter's Lab. Your plan is active. One email is on its way. It has two links. The second one creates your Botter's Lab account. Use the email address you bought with.
+**Confirmation message:** Welcome to the Botters Lab. Your plan is active. One email is on its way. It has two links. The second one creates your Botters Lab account. Use the email address you bought with.
 
 ---
 
@@ -128,7 +128,7 @@ On 30 November.
 
 ### How to browse and buy
 
-1. Open **Browse** in the Botter's Lab.
+1. Open **Browse** in the Botters Lab.
 2. Search or filter by category, model, sale type and rating.
 3. Open a listing. Read the reviews and the seller's profile.
 4. Press **Buy**. Read the licence you are buying and accept the seller's terms.

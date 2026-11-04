@@ -59,11 +59,11 @@ add_filter('login_message', function ($message) {
     $redirect = isset($_REQUEST['redirect_to']) ? (string) wp_unslash($_REQUEST['redirect_to']) : '';
     if (($action === 'login' || $action === '') && strpos($redirect, '/wp-admin') !== false) {
         $head = '<h2 class="btv-login-head__admin">Admin login</h2>'
-            . '<p>This sign-in is for the Botterverse site administrators only. Customers use the billing login or the Botter&#8217;s Lab sign-in.</p>';
+            . '<p>This sign-in is for the Botterverse site administrators only. Customers use the billing login or the Botters Lab sign-in.</p>';
     } elseif ($action === 'login' || $action === '') {
         $head = '<h2>Billing login</h2>'
-            . '<p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter&#8217;s Lab sign-in instead.</p>'
-            . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Sign in to the Botter&#8217;s Lab</a></p>';
+            . '<p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botters Lab sign-in instead.</p>'
+            . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Sign in to the Botters Lab</a></p>';
     } elseif ($action === 'lostpassword') {
         $head = btv_is_admin_login() ? '<h2>Forgotten your admin password?</h2>' : '<h2>Forgotten your password?</h2>';
     } else {
@@ -76,7 +76,7 @@ add_filter('login_site_html_link', '__return_empty_string');
 
 /**
  * No Register link and no register form on the WordPress sign-in screens. An account is made at checkout,
- * by the Botter's Lab or by the help desk's own sign-up form. Those run on other pages and read the
+ * by the Botters Lab or by the help desk's own sign-up form. Those run on other pages and read the
  * setting as usual, so only wp-login.php sees it switched off.
  */
 add_action('login_init', function () {

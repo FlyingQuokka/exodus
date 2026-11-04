@@ -26,7 +26,7 @@ Do not read anything in the `retired` folder. It holds the retired files.
 5. Contractions by preference (it's and you'll and don't and that's).
 6. Friendly but not overly so. Plain words. No flowery language. Do not sound like an AI. No exclamation marks except where the sample voice would use one (almost never).
 7. Paragraphs hold one or two sentences. Never write a run of short one-line sentences. These are information emails and not sales emails.
-8. Botterverse vocabulary where it fits and no more. Botter and Botter's Lab are normal. "The Botterverse" (with the article) is the community and place. "Botterverse" with no article is the company. Do not overdo it.
+8. Botterverse vocabulary where it fits and no more. Botter and Botters Lab are normal. "The Botterverse" (with the article) is the community and place. "Botterverse" with no article is the company. Do not overdo it.
 9. No opening platitude. Start the recap straight away.
 
 ## 3. Brand and fact rules
@@ -38,29 +38,29 @@ Do not read anything in the `retired` folder. It holds the retired files.
 - The customer list for Pro and above carries the consent condition: only customers who ticked the box are included. Never say "all your customers".
 - Priority support starts at Pro.
 - The cheapest tier is Apprentice Botter. The tiers in order are Apprentice Botter and Novice Botter and Expert Botter and Pro Botter and Master Botter. Never imply a member has a feature their tier doesn't. Use the digest to check each feature's tier.
-- Page names must match the Botter's Lab menu: Dashboard and Bot list and Create a bot and Import a bot and Analytics and A/B tests and Bot styles and Browse and Bots I bought and My listings and My profile and Sales and Payouts and Settings and Support and Help and Feedback and Affiliates. Use the guide's exact labels for buttons and fields and section names.
+- Page names must match the Botters Lab menu: Dashboard and Bot list and Create a bot and Import a bot and Analytics and A/B tests and Bot styles and Browse and Bots I bought and My listings and My profile and Sales and Payouts and Settings and Support and Help and Feedback and Affiliates. Use the guide's exact labels for buttons and fields and section names.
 - If you are unsure of a fact write `[CONFIRM: what is unclear]` in the email's Notes and keep the email text neutral. Never invent a number or a feature or a button label.
 
 ## 4. Links and merge codes
 
 - Never type a domain. The base domain token is `{{domain}}`.
-- Botter's Lab sign-in: `https://lab.{{domain}}/login`.
+- Botters Lab sign-in: `https://lab.{{domain}}/login`.
 - Any link to the main site in an email is absolute: `https://{{domain}}/pricing/` and `https://{{domain}}/affiliates/` and `https://{{domain}}/faq/` and `https://{{domain}}/support/` and `https://{{domain}}/feedback/`.
 - Help articles: `https://{{domain}}/docs/<slug>/` using a real slug from `12-help-article-slugs.md` (for example `https://{{domain}}/docs/create-a-bot/`). Never invent a slug.
 - Name: `{{contact.first_name}}`.
-- Links to a place inside the Botter's Lab: see section 11. They are linked and not only described.
+- Links to a place inside the Botters Lab: see section 11. They are linked and not only described.
 
 ## 5. Subject lines
 
 - Prefix `[Botterverse]` for general emails (purchase and billing and account and affiliate programme and anything not about using the Lab).
-- Prefix `[Botter's Lab]` for emails about using a Botter's Lab feature.
+- Prefix `[Botters Lab]` for emails about using a Botters Lab feature.
 - After the prefix write a short plain subject. For sequence emails prefer a subject that echoes the previous P.S. loop.
 - No preheader. No avatars. No images. No stories or invented people.
 
 ## 6. Anatomy of a sequence email (welcome and upgrade and behaviour sequences)
 
 ```
-**Subject:** [Botter's Lab] Subject here
+**Subject:** [Botters Lab] Subject here
 
 Hi {{contact.first_name}},
 
@@ -170,7 +170,7 @@ These win over everything above.
 
 **Day 1 timing.** T1 arrives 5 minutes after S01 (not 5 to 10). S01 says "in five minutes" or "shortly" about the tour.
 
-**Link every page you send the member to.** Whenever an email tells the member to go to a page the first mention in that email is a link so they don't have to search. Later mentions in the same email are plain text. Links to Botter's Lab pages use the pattern `https://lab.{{domain}}/path` with these paths (confirmed from the app's route list on 31 October 2026). Never use any other path:
+**Link every page you send the member to.** Whenever an email tells the member to go to a page the first mention in that email is a link so they don't have to search. Later mentions in the same email are plain text. Links to Botters Lab pages use the pattern `https://lab.{{domain}}/path` with these paths (confirmed from the app's route list on 31 October 2026). Never use any other path:
 
 | Page | Link |
 |---|---|

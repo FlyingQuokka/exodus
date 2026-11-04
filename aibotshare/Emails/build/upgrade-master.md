@@ -23,13 +23,13 @@ Each P.S. loop is paid off by the next email's recap and content. The recap of e
 
 ## UM01 - Welcome to Master Botter (day 0, Master upgrade)
 
-**Subject:** [Botter's Lab] Welcome to Master Botter - what's now open
+**Subject:** [Botters Lab] Welcome to Master Botter - what's now open
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Recap: your upgrade has gone through. The plan name under your name at the top right of the Botter's Lab now reads Master Botter.
+Recap: your upgrade has gone through. The plan name under your name at the top right of the Botters Lab now reads Master Botter.
 
 New topic: today is a map of what has opened up. The next nine emails take one idea each over the next 17 days and they replace the welcome emails, so you won't receive any more of those.
 
@@ -64,7 +64,7 @@ P.S. Next up: your first A/B test, from a blank page to Start the test.
 
 ## UM02 - Your first A/B test (day 1, Master upgrade)
 
-**Subject:** [Botter's Lab] Your first A/B test
+**Subject:** [Botters Lab] Your first A/B test
 
 **Body:**
 
@@ -113,7 +113,7 @@ P.S. Next up: what to test first, with five ideas and the wording to paste in.
 
 ## UM03 - What to test first (day 3, Master upgrade)
 
-**Subject:** [Botter's Lab] Five things worth testing first
+**Subject:** [Botters Lab] Five things worth testing first
 
 **Body:**
 
@@ -173,7 +173,7 @@ P.S. Next up: a test is running and numbers are arriving, so which of the five m
 
 ## UM04 - Read the results (day 5, Master upgrade)
 
-**Subject:** [Botter's Lab] Which of the five measures to read first
+**Subject:** [Botters Lab] Which of the five measures to read first
 
 **Body:**
 
@@ -227,7 +227,7 @@ P.S. Next up: a test has a result, so what do you do with it and which of four b
 
 ## UM05 - Crown a winner (day 7, Master upgrade)
 
-**Subject:** [Botter's Lab] What to do with a test result
+**Subject:** [Botters Lab] What to do with a test result
 
 **Body:**
 
@@ -279,7 +279,7 @@ P.S. Next up: a bot can win a test and still lose the sale, so where do visitors
 
 ## UM06 - Views against purchases (day 9, Master upgrade)
 
-**Subject:** [Botter's Lab] Where visitors drop out
+**Subject:** [Botters Lab] Where visitors drop out
 
 **Body:**
 
@@ -334,7 +334,7 @@ P.S. Next up: one thing no test will ever change and what to do about it.
 
 ## UM07 - What you cannot test (day 11, Master upgrade)
 
-**Subject:** [Botter's Lab] The one thing a test never changes
+**Subject:** [Botters Lab] The one thing a test never changes
 
 **Body:**
 
@@ -388,7 +388,7 @@ P.S. Next up: tests use credits too, so how do you stop a busy week emptying the
 
 ## UM08 - Credits at scale (day 13, Master upgrade)
 
-**Subject:** [Botter's Lab] Stop a busy week emptying your credits
+**Subject:** [Botters Lab] Stop a busy week emptying your credits
 
 **Body:**
 
@@ -434,7 +434,7 @@ P.S. Next up: your CRM can see which version each customer met, so what can you 
 
 ## UM09 - Tests and the CRM (day 15, Master upgrade)
 
-**Subject:** [Botter's Lab] Which version did each customer meet
+**Subject:** [Botters Lab] Which version did each customer meet
 
 **Body:**
 
@@ -488,7 +488,7 @@ P.S. Next up: everything from these emails in one weekly routine.
 
 ## UM10 - Your Master routine (day 17, Master upgrade)
 
-**Subject:** [Botter's Lab] A weekly routine for Master Botter
+**Subject:** [Botters Lab] A weekly routine for Master Botter
 
 **Body:**
 

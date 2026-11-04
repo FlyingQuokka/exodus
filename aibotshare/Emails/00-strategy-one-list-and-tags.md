@@ -58,9 +58,9 @@ Rules:
 ## 4. Sender and format rules
 
 - Sender name: Botterverse.
-- Subject prefix: [Botterverse] for general emails and [Botter's Lab] for emails about the Botter's Lab.
+- Subject prefix: [Botterverse] for general emails and [Botters Lab] for emails about the Botters Lab.
 - No addresses or footers in the copy. WordPress and FluentCRM add them.
-- Name the sign-in in any instruction: Botter's Lab (username) or billing login or help desk.
+- Name the sign-in in any instruction: Botters Lab (username) or billing login or help desk.
 - Never repeat the two links in the purchase email.
 
 ## 5. What the plugin check found (31 October)

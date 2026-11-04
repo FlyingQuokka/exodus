@@ -8,7 +8,7 @@ Copy everything below the line into the app agent's session.
 
 ### Context
 
-The Botter's Lab app sends CRM tag events to the FluentCRM install on the marketing website. The admin has a table of these events. Each row has an event key and a description and a tag field and a default tag. A blank tag field means the event does not fire.
+The Botters Lab app sends CRM tag events to the FluentCRM install on the marketing website. The admin has a table of these events. Each row has an event key and a description and a tag field and a default tag. A blank tag field means the event does not fire.
 
 Rows that exist today include tier_reached_apprentice and tier_reached_novice and tier_reached_expert and tier_reached_pro and tier_reached_master. Each says "A member tier becomes X Botter" and applies the tag "X Botter". The row for the sixth tier is blank so it never fires. A Downgraded event also exists.
 

@@ -30,8 +30,8 @@ Do not install on a live server until the owner approves. Page IDs differ per en
 ## Choices to know about
 
 - One content width site-wide: 1120px (24px gutters on a phone). `.container` and `.narrow` are the same width. The WordPress login card and the help desk and account sign-in cards stay as centred cards inside it.
-- Header (signed out): How it works, Pricing, Bot Market, Affiliates, FAQ, Support, then the Botter's Lab button. It collapses to a menu button at 1000px and below. Signed in: Support, the Account icon and the Botter's Lab button. The cart icon shows only when the cart has items.
-- Every Botter's Lab link opens in a new tab (`target="_blank" rel="noopener"`), as does the footer Documentation link.
+- Header (signed out): How it works, Pricing, Bot Market, Affiliates, FAQ, Support, then the Botters Lab button. It collapses to a menu button at 1000px and below. Signed in: Support, the Account icon and the Botters Lab button. The cart icon shows only when the cart has items.
+- Every Botters Lab link opens in a new tab (`target="_blank" rel="noopener"`), as does the footer Documentation link.
 - `bin/install-pages.php` also rebuilds the Footer navigation post (legal pages only).
 - Pricing keeps the live buy links unchanged except the host, which is now `lab.{{domain}}` and renders to the same address as before. The design had no buy links so each plan button is the monthly link with an "Or pay annually" link below it. The credit pack table has an added Buy column.
 - The Affiliates page needs the slug `affiliates`. The draft portal page (ID 231, Fluent Affiliate shortcode) held it, so the installer renamed that draft's slug to `affiliates-lab`.

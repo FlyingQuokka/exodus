@@ -127,7 +127,7 @@ See credits, usage and revenue on your dashboard. Deeper analytics from Expert. 
 
 **1. Choose a plan.** Buy with the email address you will register with.
 
-**2. Create your Botter's Lab account.** One email arrives after you buy. Use its link.
+**2. Create your Botters Lab account.** One email arrives after you buy. Use its link.
 
 **3. Build the bot.** Name, instructions, files and model. Preview it before anyone else sees it.
 

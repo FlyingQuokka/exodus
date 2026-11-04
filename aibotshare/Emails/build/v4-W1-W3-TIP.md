@@ -16,7 +16,7 @@ Five emails for plan v4, all for All tiers. W1 reworks S10 (the embed snippet). 
 
 ## W1 - Put your bot on your website (day 6, all tiers)
 
-**Subject:** [Botter's Lab] Put your bot on your own website
+**Subject:** [Botters Lab] Put your bot on your own website
 
 **Body:**
 
@@ -67,7 +67,7 @@ P.S. Next up: which kinds of bot work well on a website.
 
 ## W2 - Website bots for a sales page (day 7, all tiers)
 
-**Subject:** [Botter's Lab] Bots that work well on a website
+**Subject:** [Botters Lab] Bots that work well on a website
 
 **Body:**
 
@@ -124,7 +124,7 @@ P.S. Next up: more bot ideas by niche.
 
 ## W3 - Website bots by niche (day 8, all tiers)
 
-**Subject:** [Botter's Lab] Three website bots for your niche
+**Subject:** [Botters Lab] Three website bots for your niche
 
 **Body:**
 
@@ -187,7 +187,7 @@ P.S. Next up: charging for access.
 
 ## TIP1 - Know what a message costs (day 17, all tiers)
 
-**Subject:** [Botter's Lab] What one message costs
+**Subject:** [Botters Lab] What one message costs
 
 **Body:**
 
@@ -232,7 +232,7 @@ P.S. Next up: finding your busy hours.
 
 ## TIP2 - A free bot as a teaser (day 28, all tiers)
 
-**Subject:** [Botter's Lab] A free bot as a teaser
+**Subject:** [Botters Lab] A free bot as a teaser
 
 **Body:**
 

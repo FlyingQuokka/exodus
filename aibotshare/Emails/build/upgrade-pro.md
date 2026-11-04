@@ -23,13 +23,13 @@ Each P.S. loop is paid off by the next email's recap and content. The recap of e
 
 ## UP01 - Welcome to Pro Botter (day 0, Pro upgrade)
 
-**Subject:** [Botter's Lab] Welcome to Pro Botter - what's now open
+**Subject:** [Botters Lab] Welcome to Pro Botter - what's now open
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Recap: your upgrade has gone through. The plan name under your name at the top right of the Botter's Lab now reads Pro Botter.
+Recap: your upgrade has gone through. The plan name under your name at the top right of the Botters Lab now reads Pro Botter.
 
 New topic: today is a map of what has opened up. The next nine emails take one feature each over the next 17 days and they replace the welcome emails, so you won't receive any more of those.
 
@@ -70,7 +70,7 @@ P.S. Next up: how to make every bot look like yours, using one saved style.
 
 ## UP02 - Make every bot look like yours (day 1, Pro upgrade)
 
-**Subject:** [Botter's Lab] Make every bot look like yours
+**Subject:** [Botters Lab] Make every bot look like yours
 
 **Body:**
 
@@ -91,7 +91,7 @@ Select [Bot styles](https://lab.{{domain}}/bot-styles) under Bots in the menu th
 
 A live Preview updates as you work. If a colour pairing is hard to read, the editor shows a contrast warning.
 
-A style changes the chat page, paywall, embed and sign-up pages for the bots that use it. It doesn't change the Botter's Lab itself.
+A style changes the chat page, paywall, embed and sign-up pages for the bots that use it. It doesn't change the Botters Lab itself.
 
 **Using it**
 
@@ -126,7 +126,7 @@ Your Botter Support Team
 P.S. Next up: listing a bot for sale and which part of the form the app can write for you.
 
 **Notes**
-- Facts: all labels from guide 4.6. Styles affect the chat page, paywall, embed and sign-up pages and not the Botter's Lab. Edit changes every bot on the style. Powered-by tag earns only after joining the affiliate programme.
+- Facts: all labels from guide 4.6. Styles affect the chat page, paywall, embed and sign-up pages and not the Botters Lab. Edit changes every bot on the style. Powered-by tag earns only after joining the affiliate programme.
 - The colour values are labelled as an example. The Font choice is left to the member because the guide gives no font list.
 - Automation: UP-Pro step 2 (day 1).
 
@@ -134,7 +134,7 @@ P.S. Next up: listing a bot for sale and which part of the form the app can writ
 
 ## UP03 - List a bot for sale (day 3, Pro upgrade)
 
-**Subject:** [Botter's Lab] Listing a bot for sale
+**Subject:** [Botters Lab] Listing a bot for sale
 
 **Body:**
 
@@ -189,7 +189,7 @@ P.S. Next up: one setting decides what a buyer may do with your bot and you have
 
 ## UP04 - Choose your licence (day 5, Pro upgrade)
 
-**Subject:** [Botter's Lab] Four licences, one choice
+**Subject:** [Botters Lab] Four licences, one choice
 
 **Body:**
 
@@ -245,7 +245,7 @@ P.S. Next up: buyers read more than the listing and they read about you.
 
 ## UP05 - Be a seller people trust (day 7, Pro upgrade)
 
-**Subject:** [Botter's Lab] What buyers read about you
+**Subject:** [Botters Lab] What buyers read about you
 
 **Body:**
 
@@ -302,7 +302,7 @@ P.S. Next up: how customers who agree to share their details reach your own CRM 
 
 ## UP06 - Send leads home (day 9, Pro upgrade)
 
-**Subject:** [Botter's Lab] Customers into your own CRM
+**Subject:** [Botters Lab] Customers into your own CRM
 
 **Body:**
 
@@ -351,7 +351,7 @@ P.S. Next up: your CRM can hear about moments as well as names and you choose wh
 
 ## UP07 - Tag the moments (day 11, Pro upgrade)
 
-**Subject:** [Botter's Lab] Which moments your CRM hears about
+**Subject:** [Botters Lab] Which moments your CRM hears about
 
 **Body:**
 
@@ -405,7 +405,7 @@ P.S. Next up: tag customers by what they ask about, then see who has agreed to s
 
 ## UP08 - Tag what they ask about (day 13, Pro upgrade)
 
-**Subject:** [Botter's Lab] Tag customers by what they ask about
+**Subject:** [Botters Lab] Tag customers by what they ask about
 
 **Body:**
 
@@ -463,7 +463,7 @@ P.S. Next up: what to do when something goes wrong and how Pro changes the way y
 
 ## UP09 - Priority support and a lower fee (day 15, Pro upgrade)
 
-**Subject:** [Botter's Lab] When something goes wrong
+**Subject:** [Botters Lab] When something goes wrong
 
 **Body:**
 
@@ -475,7 +475,7 @@ New topic: Pro Botter and above have priority support. A clear ticket helps the 
 
 **Where to ask**
 
-Select Support at the foot of the menu. It opens the help desk in a new tab and it has its own sign-in, separate from the Botter's Lab. If you've bought a plan or credits, you already have a website account, so press Reset password beside "Forgot your password?". Otherwise, use Create an account beside "Not registered?".
+Select Support at the foot of the menu. It opens the help desk in a new tab and it has its own sign-in, separate from the Botters Lab. If you've bought a plan or credits, you already have a website account, so press Reset password beside "Forgot your password?". Otherwise, use Create an account beside "Not registered?".
 
 For a bug or an idea, use the Feedback page instead. Choose the Type of Bug report or Feature suggestion. Help beside each page title opens that page's help article.
 
@@ -514,7 +514,7 @@ P.S. Next up: one thing Pro does not include, which you can picture as two versi
 
 ## UP10 - A look at A/B tests (day 17, Pro upgrade)
 
-**Subject:** [Botter's Lab] Two versions of one bot
+**Subject:** [Botters Lab] Two versions of one bot
 
 **Body:**
 

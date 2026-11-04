@@ -24,7 +24,7 @@ Congratulations on becoming our latest Botter. You can now build AI bots on the 
 
 **What you've received**
 
-Your plan includes a Botter's Lab account, which is where you build, share and run your bots. It also includes credits every month. Credits pay for the messages your bots send, whether a visitor is chatting or you're testing.
+Your plan includes a Botters Lab account, which is where you build, share and run your bots. It also includes credits every month. Credits pay for the messages your bots send, whether a visitor is chatting or you're testing.
 
 Unused included credits are reset at your next renewal or plan change. Credits you buy never expire. The [Pricing](https://{{domain}}/pricing/) page lists what each plan adds along with the limits.
 
@@ -32,11 +32,11 @@ For help you have the [help articles](https://{{domain}}/docs/), a feedback form
 
 **What happens now**
 
-1. Create your Botter's Lab account. Use the second link in your purchase email, with the same email address you bought with. That's how your plan reaches your account.
+1. Create your Botters Lab account. Use the second link in your purchase email, with the same email address you bought with. That's how your plan reaches your account.
 2. Confirm your email address from the message we send you. Your plan is set up as soon as you do.
 3. Set the password for your billing login from the link in your purchase receipt. That link works once and expires after 24 hours.
 
-A short tour of the Botter's Lab arrives in five minutes. Once your account is confirmed, we'll show you how to bring in a bot you already have.
+A short tour of the Botters Lab arrives in five minutes. Once your account is confirmed, we'll show you how to bring in a bot you already have.
 
 Within three days, you'll have a bot built and shared. After that, we'll move on to ways to earn from it and the features your plan unlocks.
 
@@ -48,7 +48,7 @@ Welcome aboard,
 
 Your Botter Support Team
 
-P.S. Next up: a quick tour of the Botter's Lab, five minutes away.
+P.S. Next up: a quick tour of the Botters Lab, five minutes away.
 
 **Notes**
 - Changes from the approved S01: the closing paragraph no longer promises one email a day for 30 days. It now points to the tour and the import email and the three-day aim. The P.S. is new.
@@ -61,13 +61,13 @@ P.S. Next up: a quick tour of the Botter's Lab, five minutes away.
 
 ## T1 - A quick tour (day 1, all tiers)
 
-**Subject:** [Botter's Lab] A quick tour of your new workspace
+**Subject:** [Botters Lab] A quick tour of your new workspace
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Recap: five minutes ago we covered what your plan includes and how to create your Botter's Lab account. If you haven't created it yet, the link in your purchase email is the place to start.
+Recap: five minutes ago we covered what your plan includes and how to create your Botters Lab account. If you haven't created it yet, the link in your purchase email is the place to start.
 
 New topic: here's a short tour of what you'll see when you sign in, so nothing is a surprise.
 
@@ -101,7 +101,7 @@ See you shortly,
 
 Your Botter Support Team
 
-P.S. Next up: bringing a bot you already have into the Botter's Lab.
+P.S. Next up: bringing a bot you already have into the Botters Lab.
 
 **Notes**
 - Facts: Sign in takes username and password and never the email address. Forgotten username? and Keep me signed in (2.4). Dashboard items (2.6). Menu groups (1.5). Plan name under the member's name at top right and the note on pages a plan doesn't include (1.4). Theme button switches Pleasant Pink and Nightshift (1.6).
@@ -112,7 +112,7 @@ P.S. Next up: bringing a bot you already have into the Botter's Lab.
 
 ## T2 - Bring your existing bot in (day 1, all tiers)
 
-**Subject:** [Botter's Lab] Bring your existing bot in
+**Subject:** [Botters Lab] Bring your existing bot in
 
 **Body:**
 
@@ -120,7 +120,7 @@ Hi {{contact.first_name}},
 
 Recap: earlier today, you had a tour of signing in, the Dashboard and the menu. Your account is confirmed and your plan is in place.
 
-New topic: if you already have a bot somewhere else you don't need to start again. [Import a bot](https://lab.{{domain}}/bots/import) brings it into the Botter's Lab by pasting and uses no credits.
+New topic: if you already have a bot somewhere else you don't need to start again. [Import a bot](https://lab.{{domain}}/bots/import) brings it into the Botters Lab by pasting and uses no credits.
 
 **What you can bring**
 
@@ -177,7 +177,7 @@ Your Botter Support Team
 **Notes**
 - Event-style email: no recap and no Task for today and no P.S. Written to the decisions in the handover (the coupon works on all tiers and a Founder is a Founder for life).
 - Trigger: the Founder tag being applied. It can arrive minutes or days after purchase because the app queues it. FluentCRM sends this once. If the tag arrives before the welcome emails the order of the emails does not matter.
-- The Founder badge is not mentioned (it shows only in the Botter's Lab). No offer terms or prices.
+- The Founder badge is not mentioned (it shows only in the Botters Lab). No offer terms or prices.
 - Not part of the welcome loop and it breaks no P.S. chain. Do not run it through the one-email-per-day collision rule.
 - Automation: FND1 on tag Founder. Sends once. Applies no other tag.
 

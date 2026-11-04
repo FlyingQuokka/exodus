@@ -14,7 +14,7 @@ Every agent building a Botterverse page design reads this first. Designs are pla
 ## Rules for everything you write
 
 1. British English. Never a comma before the word and or the word or. Hyphens only and never an en or em dash. Never the word get. Plain and short. No flowery language. Do not sound like an AI. No exclamation marks.
-2. The brand is Botterverse. The old name never appears. Never type a domain. The Botter's Lab sign-in link is `https://lab.{{domain}}/login`. Links between the designs use the file names (`pricing.html`). Same-site system pages use root-relative paths such as `/terms-and-conditions/`.
+2. The brand is Botterverse. The old name never appears. Never type a domain. The Botters Lab sign-in link is `https://lab.{{domain}}/login`. Links between the designs use the file names (`pricing.html`). Same-site system pages use root-relative paths such as `/terms-and-conditions/`.
 3. Never mention: the sixth tier or Empire, the Founder badge, testimonials or invented customers or results, income claims, a named competitor, "daily" payouts. The customer download always carries the consent condition (only customers who ticked the box are included). Priority support starts at Pro. Founders offer facts: 50% off every plan for life, coupon code FOUNDER50 entered at checkout, closes 30 November, works on every plan.
 4. Use only copy from the copy files named in your assignment. Do not invent product facts. If a copy line has a square-bracket note, treat the note as a note to the owner and keep it out of the page.
 5. Buttons: the main action reads "Take Me To The Botterverse". Button text on pink is `#391d37`. Pink is never used as text (use `--accent-text`). White text on pink is never used.

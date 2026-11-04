@@ -23,7 +23,7 @@ Transactional and notification emails for events 28 to 54 in `06-event-emails-pl
 | `{{order_summary}}` | The order lines and totals the cart inserts (E39) |
 | `{{ticket.title}}` and `{{customer.full_name}}` and `{{response.full_content}}` | Fluent Support's own tags in E51 and E52: the subject and the member's name and the written reply |
 
-**Sender key:** App means the Botter's Lab sends it. Cart means FluentCart or WordPress. Desk means the help desk. CRM means a FluentCRM automation. Every sender is still to be verified with the app agent.
+**Sender key:** App means the Botters Lab sends it. Cart means FluentCart or WordPress. Desk means the help desk. CRM means a FluentCRM automation. Every sender is still to be verified with the app agent.
 
 ---
 
@@ -41,7 +41,7 @@ Your account is suspended and a withdrawal you asked for earlier is on hold. It 
 
 While the account is suspended, you can't withdraw or build or publish or buy. You can still chat with bots you bought access to.
 
-To find out more or to ask for a review, use the link in the Account suspended banner in the Botter's Lab to message the Botter Support Team.
+To find out more or to ask for a review, use the link in the Account suspended banner in the Botters Lab to message the Botter Support Team.
 
 Your Botter Support Team
 
@@ -55,7 +55,7 @@ Your Botter Support Team
 
 ## E29 - Insights report ready (on event, members with the Insights switch on)
 
-**Subject:** [Botter's Lab] Conversation insights for {{bot_name}} are ready
+**Subject:** [Botters Lab] Conversation insights for {{bot_name}} are ready
 
 **Body:**
 
@@ -81,7 +81,7 @@ Your Botter Support Team
 
 ## E30 - CRM connection switched off by failures (on event, Pro Botter and above)
 
-**Subject:** [Botter's Lab] Your CRM connection has switched off
+**Subject:** [Botters Lab] Your CRM connection has switched off
 
 **Body:**
 
@@ -105,7 +105,7 @@ Your Botter Support Team
 
 ## E31 - Credits low (on event, all members with auto top-up threshold set)
 
-**Subject:** [Botter's Lab] Your credits are running low
+**Subject:** [Botters Lab] Your credits are running low
 
 **Body:**
 
@@ -129,7 +129,7 @@ Your Botter Support Team
 
 ## E32 - Credits exhausted (on event, all members)
 
-**Subject:** [Botter's Lab] Your bots have stopped answering
+**Subject:** [Botters Lab] Your bots have stopped answering
 
 **Body:**
 
@@ -211,7 +211,7 @@ If your credits run low in the meantime, you can add them with Buy credits.
 Your Botter Support Team
 
 **Notes**
-- Facts: a declined card is tried once more and then auto top-up switches off with an email (10.4). The billing login is separate from the Botter's Lab (10.8). Switching back on uses Agree and switch on.
+- Facts: a declined card is tried once more and then auto top-up switches off with an email (10.4). The billing login is separate from the Botters Lab (10.8). Switching back on uses Agree and switch on.
 - Sender: App.
 - Automation: none.
 - Confirmed by the app agent (answer 24): the second decline switches Auto top-up off and the member must press Agree and switch on. The button shows only with a card on an active subscription. The threshold and amount are kept.
@@ -305,7 +305,7 @@ Plan payments are listed in the customer area under Invoices, receipts and saved
 Your Botter Support Team
 
 **Notes**
-- Facts: receipts go to the Botter's Lab account email. The billing login is separate from the Botter's Lab. Bot access, message top-ups and Bot Market purchases each send their own receipt and save no card (10.8).
+- Facts: receipts go to the Botters Lab account email. The billing login is separate from the Botters Lab. Bot access, message top-ups and Bot Market purchases each send their own receipt and save no card (10.8).
 - Sender: Cart. Style the FluentCart templates with this wording. One wrapper can serve all receipt types.
 - Automation: none.
 - FluentCart wraps a custom body in its own receipt template, so the opening line stays. Checked against the plugin source: `{{order.items_table}}` inserts the order lines.
@@ -322,9 +322,9 @@ Hi {{order.customer.first_name}},
 
 The last payment for your {{subscription.item_name}} plan didn't go through. Your plan stays while we try the payment again.
 
-Update your card from the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). You sign in there with your billing login and not with your Botter's Lab username.
+Update your card from the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). You sign in there with your billing login and not with your Botters Lab username.
 
-The red Payment past due pill shows at the top of the Botter's Lab until the payment is made.
+The red Payment past due pill shows at the top of the Botters Lab until the payment is made.
 
 Your Botter Support Team
 
@@ -372,7 +372,7 @@ You've cancelled your plan. It ends on {{subscription.expire_at}} and works as n
 
 On a monthly plan, that is the end of the period you paid for. On an annual plan, it is the end of the current month and we refund the whole months you haven't used to your card after it ends. We email you when the refund is made.
 
-Until then, the red Plan cancelling pill shows in the Botter's Lab. If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
+Until then, the red Plan cancelling pill shows in the Botters Lab. If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
 
 Your Botter Support Team
 
@@ -396,7 +396,7 @@ Hi {{contact.first_name}},
 
 You've cancelled your plan. It ends on {{end_date}}, which is the end of the current month.
 
-After it ends, we refund the whole months you haven't used to your card and email you when the refund is made. Until the plan ends, the red Plan cancelling pill shows in the Botter's Lab.
+After it ends, we refund the whole months you haven't used to your card and email you when the refund is made. Until the plan ends, the red Plan cancelling pill shows in the Botters Lab.
 
 If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
 
@@ -444,7 +444,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your Botter's Lab account is suspended. You can still sign in and chat with bots you bought access to.
+Your Botters Lab account is suspended. You can still sign in and chat with bots you bought access to.
 
 While it's suspended, you can't build or publish or buy or withdraw or close the account.
 
@@ -470,7 +470,7 @@ Hi {{contact.first_name}},
 
 We've updated our terms or privacy policy. You can read both without an account. They're linked in the foot of every page.
 
-[Sign in](https://lab.{{domain}}/login) to the Botter's Lab and press Accept in the banner. Until you do, you can't publish a bot or list one for sale.
+[Sign in](https://lab.{{domain}}/login) to the Botters Lab and press Accept in the banner. Until you do, you can't publish a bot or list one for sale.
 
 Your Botter Support Team
 

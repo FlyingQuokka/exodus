@@ -85,9 +85,9 @@ function btv_render_header()
     }
     if (is_user_logged_in()) {
         $actions .= '<a class="icon-link" href="' . esc_url(btv_account_url()) . '"><span class="visually-hidden">Account</span>' . btv_icon('account') . '</a>';
-        $actions .= '<a class="btn btn-primary btn-small" href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">' . esc_html__("Botter's Lab", 'btv-theme') . '</a>';
+        $actions .= '<a class="btn btn-primary btn-small" href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">' . esc_html__("Botters Lab", 'btv-theme') . '</a>';
     } else {
-        $actions .= '<a class="btn btn-primary btn-small" href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">' . esc_html__("Botter's Lab", 'btv-theme') . '</a>';
+        $actions .= '<a class="btn btn-primary btn-small" href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">' . esc_html__("Botters Lab", 'btv-theme') . '</a>';
     }
 
     return '<header class="site-header"><div class="container">'

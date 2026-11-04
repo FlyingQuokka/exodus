@@ -10,9 +10,57 @@ if (!defined('ABSPATH')) {
 }
 
 add_filter('wp_die_handler', function ($handler) {
-    // If a WordPress update ever renames the core handler this builds on, leave the screen as WordPress makes it.
-    return function_exists('_default_wp_die_handler') ? 'btv_die_handler' : $handler;
+    if (function_exists('_default_wp_die_handler')) {
+        return 'btv_die_handler';
+    }
+    // A WordPress update has renamed or removed the core handler this builds on. Tell the support
+    // desk once a day so someone can change the code, then show a plain screen of our own.
+    btv_die_alert();
+    return 'btv_die_fallback';
 });
+
+/**
+ * One email a day to the support address when the core handler cannot be used.
+ */
+function btv_die_alert()
+{
+    if (get_transient('btv_die_alert_sent')) {
+        return;
+    }
+    // Set first so a failure while sending cannot send this again and again.
+    set_transient('btv_die_alert_sent', 1, DAY_IN_SECONDS);
+    global $wp_version;
+    wp_mail(
+        'support@botterverse.com',
+        '[Botterverse] The error screen needs a code change',
+        "The Botterverse theme styles WordPress's error screens by building on the core function _default_wp_die_handler. That function was not found, so the screens are shown without the Botterverse look.
+
+"
+        . 'WordPress version: ' . $wp_version . "
+"
+        . 'Site: ' . home_url('/') . "
+
+"
+        . 'The code to change is in the theme file inc/die.php. This email is sent at most once a day.'
+    );
+}
+
+/**
+ * A plain screen used only when the core handler is missing.
+ */
+function btv_die_fallback($message, $title = '', $args = [])
+{
+    if (is_wp_error($message)) {
+        $message = $message->get_error_message();
+    }
+    $code = is_array($args) && !empty($args['response']) ? (int) $args['response'] : 500;
+    if (!headers_sent()) {
+        status_header($code);
+        header('Content-Type: text/html; charset=utf-8');
+    }
+    echo '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>' . esc_html(wp_strip_all_tags((string) $title)) . '</title></head><body style="font-family:sans-serif;max-width:640px;margin:3rem auto;padding:0 1rem;line-height:1.6"><h1>' . esc_html(wp_strip_all_tags((string) $title)) . '</h1><div>' . (is_string($message) ? $message : '') . '</div></body></html>';
+    die();
+}
 
 function btv_die_handler($message, $title = '', $args = [])
 {

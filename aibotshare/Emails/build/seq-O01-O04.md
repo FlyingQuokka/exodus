@@ -254,7 +254,7 @@ It's made for coaches, consultants, course creators and anyone with an audience.
 
 **What happens when you join**
 
-You buy a plan and one email arrives with two links. The second creates your Botter's Lab account and that's where you build.
+You buy a plan and one email arrives with two links. The second creates your Botters Lab account and that's where you build.
 
 **Next step**
 
@@ -555,7 +555,7 @@ You started choosing a plan and didn't finish. Your cart is still there if you'd
 
 **What happens after you buy**
 
-One email arrives with two links. The first sets the password for your billing login and the second creates your Botter's Lab account. Use the same email address you bought with, so your plan reaches your account.
+One email arrives with two links. The first sets the password for your billing login and the second creates your Botters Lab account. Use the same email address you bought with, so your plan reaches your account.
 
 Then you build your first bot. Every new bot starts as Personal, so nobody else sees it until you're ready.
 

@@ -59,7 +59,7 @@ P.S. Next up: every AI model is now yours to choose from. Which family should an
 
 ## UN02 - Every model: the four families (day 1, Novice Botter)
 
-**Subject:** [Botter's Lab] Which family should answer your visitors?
+**Subject:** [Botters Lab] Which family should answer your visitors?
 
 **Body:**
 
@@ -102,7 +102,7 @@ P.S. Next up: your bot is ready to earn. What will a buyer see before they pay?
 
 ## UN03 - The paywall and the one-time price (day 3, Novice Botter)
 
-**Subject:** [Botter's Lab] What will a buyer see before they pay?
+**Subject:** [Botters Lab] What will a buyer see before they pay?
 
 **Body:**
 
@@ -154,7 +154,7 @@ P.S. Next up: a paywall with no limits can cost you. How do you cap it?
 
 ## UN04 - Message cap and top-up (day 5, Novice Botter)
 
-**Subject:** [Botter's Lab] How do you cap a paywall?
+**Subject:** [Botters Lab] How do you cap a paywall?
 
 **Body:**
 
@@ -198,7 +198,7 @@ P.S. Next up: one promise that puts a buyer at ease. What does it cost you if so
 
 ## UN05 - Money-back guarantee and claims (day 7, Novice Botter)
 
-**Subject:** [Botter's Lab] A promise that puts buyers at ease
+**Subject:** [Botters Lab] A promise that puts buyers at ease
 
 **Body:**
 
@@ -245,7 +245,7 @@ P.S. Next up: a bot that writes your promotions for you. What would you ask it t
 
 ## UN06 - Affiliate programme and a promotions bot (day 9, Novice Botter)
 
-**Subject:** [Botter's Lab] A bot that writes your promotions
+**Subject:** [Botters Lab] A bot that writes your promotions
 
 **Body:**
 
@@ -290,7 +290,7 @@ P.S. Next up: your own bots aren't the only ones you can promote. Whose would yo
 
 ## UN07 - Promoting other Botters' bots (day 11, Novice Botter)
 
-**Subject:** [Botter's Lab] Whose bot would you promote?
+**Subject:** [Botters Lab] Whose bot would you promote?
 
 **Body:**
 
@@ -336,7 +336,7 @@ P.S. Next up: your bot can talk to people. Can it also talk to your booking syst
 
 ## UN08 - Integrations: a booking helper (day 13, Novice Botter)
 
-**Subject:** [Botter's Lab] Can your bot talk to your booking system?
+**Subject:** [Botters Lab] Can your bot talk to your booking system?
 
 **Body:**
 
@@ -390,7 +390,7 @@ P.S. Next up: is it all working? One number to check first.
 
 ## UN09 - Basic analytics (day 15, Novice Botter)
 
-**Subject:** [Botter's Lab] Which number should you check first?
+**Subject:** [Botters Lab] Which number should you check first?
 
 **Body:**
 
@@ -440,7 +440,7 @@ P.S. Next up: how many bots do you really need? A map for one business.
 
 ## UN10 - Using your bots well (day 17, Novice Botter)
 
-**Subject:** [Botter's Lab] A map of bots for one business
+**Subject:** [Botters Lab] A map of bots for one business
 
 **Body:**
 

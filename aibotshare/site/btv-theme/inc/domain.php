@@ -24,7 +24,7 @@ if (!function_exists('btv_base_domain')) {
 }
 
 /**
- * The address of a page in the Botter's Lab, for example btv_lab_url('/login').
+ * The address of a page in the Botters Lab, for example btv_lab_url('/login').
  * The host is lab. plus the base domain and the scheme follows the site.
  */
 function btv_lab_url($path = '/login')

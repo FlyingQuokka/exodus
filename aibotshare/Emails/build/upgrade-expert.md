@@ -57,7 +57,7 @@ P.S. Next up: what are your visitors really asking? Your conversation starters h
 
 ## UE02 - Top conversation starters (day 1, Expert Botter)
 
-**Subject:** [Botter's Lab] What are your visitors really asking?
+**Subject:** [Botters Lab] What are your visitors really asking?
 
 **Body:**
 
@@ -101,7 +101,7 @@ P.S. Next up: you know what they ask. When do they ask it?
 
 ## UE03 - Busiest hours and the Daily credit limit (day 3, Expert Botter)
 
-**Subject:** [Botter's Lab] When do they ask it?
+**Subject:** [Botters Lab] When do they ask it?
 
 **Body:**
 
@@ -148,7 +148,7 @@ P.S. Next up: when is only half the picture. How does your bot compare with othe
 
 ## UE04 - Category benchmarks (day 5, Expert Botter)
 
-**Subject:** [Botter's Lab] How does your bot compare?
+**Subject:** [Botters Lab] How does your bot compare?
 
 **Body:**
 
@@ -193,7 +193,7 @@ P.S. Next up: numbers show a gap but not the cause. Which questions did your bot
 
 ## UE05 - Conversation insights (day 7, Expert Botter)
 
-**Subject:** [Botter's Lab] Which questions did your bot fail to answer?
+**Subject:** [Botters Lab] Which questions did your bot fail to answer?
 
 **Body:**
 
@@ -239,7 +239,7 @@ P.S. Next up: one bot can't suit every audience. What would a set of bots for on
 
 ## UE06 - A suite of bots (day 9, Expert Botter)
 
-**Subject:** [Botter's Lab] A set of bots for one business
+**Subject:** [Botters Lab] A set of bots for one business
 
 **Body:**
 
@@ -284,7 +284,7 @@ P.S. Next up: more bots mean more messages. How do you keep your credits from ru
 
 ## UE07 - Credits at a bigger scale and Auto top-up (day 11, Expert Botter)
 
-**Subject:** [Botter's Lab] Keeping your credits from running out
+**Subject:** [Botters Lab] Keeping your credits from running out
 
 **Body:**
 
@@ -330,7 +330,7 @@ P.S. Next up: your numbers can tune your paywall. Which setting should you chang
 
 ## UE08 - Tune the paywall with data (day 13, Expert Botter)
 
-**Subject:** [Botter's Lab] Which setting should you change first?
+**Subject:** [Botters Lab] Which setting should you change first?
 
 **Body:**
 
@@ -377,7 +377,7 @@ P.S. Next up: same bot, new outfit. A first look at something Pro Botter adds.
 
 ## UE09 - Peek: Bot styles (day 15, Expert Botter)
 
-**Subject:** [Botter's Lab] Same bot, new outfit
+**Subject:** [Botters Lab] Same bot, new outfit
 
 **Body:**
 
@@ -387,7 +387,7 @@ Last time you changed one paywall setting and wrote down the old value. Today is
 
 **What Bot styles does**
 
-A style changes how a bot looks on its chat page and paywall. It also changes the embed and the sign-up pages. It doesn't change the Botter's Lab.
+A style changes how a bot looks on its chat page and paywall. It also changes the embed and the sign-up pages. It doesn't change the Botters Lab.
 
 Select [Bot styles](https://lab.{{domain}}/bot-styles) in the menu then New style. The form has four groups. Branding holds your logo and a Display name. Colours holds Background, Bot message bubble, Customer message bubble, Text and Accent. Text and corners holds Font, Chat text size and Corners. What shows holds Show the header, Show the bot's image and Show the powered-by tag.
 
@@ -416,7 +416,7 @@ Your Botter Support Team
 P.S. Next up: what if someone wanted to buy the bot itself? A look at selling on the Bot Market.
 
 **Notes**
-- Facts: Bot styles are Pro Botter and above; they affect the chat page, paywall, embed and sign-up pages and not the Botter's Lab; field names; live Preview; contrast warnings; logo jpg, png or webp (guide 4.6, 1.5). Below Pro the pages use the default look.
+- Facts: Bot styles are Pro Botter and above; they affect the chat page, paywall, embed and sign-up pages and not the Botters Lab; field names; live Preview; contrast warnings; logo jpg, png or webp (guide 4.6, 1.5). Below Pro the pages use the default look.
 - The powered-by tag point is left out. It carries the owner's affiliate link.
 - Peek only. One short paragraph names the plan. No pressure.
 - Automation: UP-Exp step 9.
@@ -425,7 +425,7 @@ P.S. Next up: what if someone wanted to buy the bot itself? A look at selling on
 
 ## UE10 - Peek: selling on the Bot Market (day 17, Expert Botter)
 
-**Subject:** [Botter's Lab] What if someone wanted to buy the bot?
+**Subject:** [Botters Lab] What if someone wanted to buy the bot?
 
 **Body:**
 

@@ -142,7 +142,7 @@ The first email of the new tier's sequence is replaced by a recap.
 
 - Opens as the normal welcome for the new tier.
 - Says the member has skipped ahead.
-- Lists everything they now have from the skipped tiers. One line per feature. Each line says where it lives in the Botter's Lab and links to its Help article.
+- Lists everything they now have from the skipped tiers. One line per feature. Each line says where it lives in the Botters Lab and links to its Help article.
 - Suggests one thing to try first.
 - The rest of the sequence runs unchanged. The skipped features have one line each and nothing more.
 
@@ -194,7 +194,7 @@ The app agent prompt for the Upgraded From tags is in `04-app-agent-prompt-tier-
 - An upgrade still ends the welcome track at any point (A0 stops and Welcome Done is applied). No welcome email is repeated in an upgrade sequence or a jump recap.
 - The welcome library is now 51 written versions: 30 day slots with full versions and previews for lower tiers and five tier versions of the last email. The upgrade sequences (40 emails) and the six jump recaps are unchanged in count.
 - The upgrade email IDs now carry a U prefix: UN01 to UN10 and UE01 to UE10 and UP01 to UP10 and UM01 to UM10. This keeps them apart from the welcome IDs (M1 to M6 and N1 to N6 and F1 to F6) and the event IDs (E01 to E54).
-- The upgrade and jump-recap emails now follow the v4 brief: linked Botter's Lab pages and no "Advanced" group and "In" for fields. The catch-up lists in section 8 are unchanged because they point at upgrade emails only.
+- The upgrade and jump-recap emails now follow the v4 brief: linked Botters Lab pages and no "Advanced" group and "In" for fields. The catch-up lists in section 8 are unchanged because they point at upgrade emails only.
 - Coding agent report (1 November 2026): the Upgraded From tags work as specified. A move down is now a cancel then a first plan so the Downgraded and Downgraded From tags almost never fire. Use Cancelled and Plan Ended for anything about leaving or moving down.
 
 ## 10. As built (3 November 2026)

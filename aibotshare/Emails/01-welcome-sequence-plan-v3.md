@@ -23,15 +23,15 @@ Every upgrade email shows what the member could achieve with one feature of a hi
 
 ## 3. Rules for every email
 
-- Subject prefix: [Botterverse] for general emails and [Botter's Lab] for emails about the Botter's Lab. The welcome emails use [Botterverse] for S01 and [Botter's Lab] for the feature emails. Sender name is Botterverse. No addresses or footers.
+- Subject prefix: [Botterverse] for general emails and [Botters Lab] for emails about the Botters Lab. The welcome emails use [Botterverse] for S01 and [Botters Lab] for the feature emails. Sender name is Botterverse. No addresses or footers.
 - One function and one bot (or none) and one thing to paste or click.
-- Name the sign-in: Botter's Lab (username and password) or billing login or help desk.
+- Name the sign-in: Botters Lab (username and password) or billing login or help desk.
 - Use the exact on-screen labels from the member guide.
 - Never repeat the two links in the purchase email.
 - No promised durations. No EU wording. No fixed refund or holdback figures. No Founder badge. No sixth plan.
 - Say "customers who agree to share their details" whenever the CRM or customer list comes up.
 - Remind people that preview and visitor messages use their credits.
-- Links to the Botter's Lab use the domain token in section 9. Never a typed domain.
+- Links to the Botters Lab use the domain token in section 9. Never a typed domain.
 - Branded template: light and restrained. Plain background. One accent colour. One button. No banners or busy footers.
 
 ## 4. Voice and vocabulary
@@ -40,7 +40,7 @@ Playful and plain. The Botterverse words arrive in steps.
 
 | Days | Vocabulary |
 |---|---|
-| 1 to 4 | Botter and Botter's Lab only |
+| 1 to 4 | Botter and Botters Lab only |
 | 5 to 8 | Add Botting and light bot jokes |
 | 9 to 14 | Introduce the Botterverse on day 9. Add fellow Botters |
 | 15 to 30 | Full mix with Bot Market. Never forced and never flowery |
@@ -89,7 +89,7 @@ The Pro closing email (S30) also mentions the one feature Master adds.
 
 | ID | Day | Subject idea | Function | Bot | Plans on the spine | Paste or click |
 |---|---|---|---|---|---|---|
-| S01 | 1 | Congratulations on becoming our latest Botter | Welcome. What the plan gives. Create the Botter's Lab account | None. Names the bot to build | All | Use the second link in your purchase email |
+| S01 | 1 | Congratulations on becoming our latest Botter | Welcome. What the plan gives. Create the Botters Lab account | None. Names the bot to build | All | Use the second link in your purchase email |
 | S02 | 2 | Your keys to the Lab | Sign in with the username. Dashboard tour. Keep me signed in | None | All | The theme button: Pleasant Pink and Nightshift |
 | S03 | 3 | Meet bot number one | New bot. Details and Instructions. Save | Quick Answer Bot | All | Full instructions with three blanks |
 | S04 | 4 | Give your bot a shelf and a few first words | Suggest a category. Conversation starters | Quick Answer Bot | All | Three starters |
@@ -182,7 +182,7 @@ Stories open a few of the emails above. See `retired\03-storyselling-plan.md`.
 
 ## 9. Links and the domain
 
-- Botter's Lab sign-in is `https://lab.{{domain}}/login`. The token is the base domain only.
+- Botters Lab sign-in is `https://lab.{{domain}}/login`. The token is the base domain only.
 - In emails the same token is used. FluentCRM only parses codes written as group.key so the theme answers the `fluentcrm_smartcode_fallback` filter for `{{domain}}`. Links in emails must be absolute, for example `https://{{domain}}/pricing/`.
 - The same technique applies everywhere a link would carry the domain. The site plan lists the places.
 

@@ -4,11 +4,11 @@ Draft 1 for review. This covers the emails and notices the member area needs. Th
 
 ## 1. Who sends what
 
-Most events in the guide say "the member is emailed". The Botter's Lab app sends those itself. We do not send them from FluentCRM. What we can provide is the **copy** so every email sounds the same. The app agent adopts it.
+Most events in the guide say "the member is emailed". The Botters Lab app sends those itself. We do not send them from FluentCRM. What we can provide is the **copy** so every email sounds the same. The app agent adopts it.
 
 | Sender | Meaning |
 |---|---|
-| App | The Botter's Lab sends it |
+| App | The Botters Lab sends it |
 | Cart | FluentCart or WordPress sends it |
 | Desk | The help desk sends it |
 | CRM | A FluentCRM automation sends it |
@@ -19,11 +19,11 @@ Every sender is marked [verify with the app agent]. The guide describes behaviou
 ## 2. House style for event emails
 
 - Transactional. No marketing. No stories. No upsells.
-- Subject prefix: [Botterverse] for general emails and [Botter's Lab] for emails about the Botter's Lab. Member-area events use [Botter's Lab]. Purchase and billing events use [Botterverse].
+- Subject prefix: [Botterverse] for general emails and [Botters Lab] for emails about the Botters Lab. Member-area events use [Botters Lab]. Purchase and billing events use [Botterverse].
 - One purpose per email. The first line says what happened.
 - Then what it means for the member. Then the one thing to do if anything.
 - Use the exact on-screen labels from the guide.
-- Name the sign-in when it matters: Botter's Lab or billing login or help desk.
+- Name the sign-in when it matters: Botters Lab or billing login or help desk.
 - Short. No promised durations or response times.
 - Links use the domain token. Never a typed domain.
 

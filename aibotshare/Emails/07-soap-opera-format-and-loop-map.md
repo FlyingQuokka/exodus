@@ -20,7 +20,7 @@ Rules:
 - One bot and one task per email.
 - Where a track branches the loop must name something the member can actually do on their plan. A loop that points to a feature they do not have is never used.
 - Keep the Botterverse vocabulary gradual, as agreed.
-- Subjects carry a prefix: [Botterverse] for general emails and [Botter's Lab] for Botter's Lab emails.
+- Subjects carry a prefix: [Botterverse] for general emails and [Botters Lab] for Botters Lab emails.
 - Subject lines can echo the open loop of the previous email.
 - Sign-off is the same short line each time.
 - Tone: friendly but not overly so. Botterverse words where they fit and no more. These are info emails and not sales emails.
@@ -32,7 +32,7 @@ Rules:
 - Contractions by preference. Lists read a, b and c with no repeated and.
 - Signature on its own line: Your Botter Support Team.
 - The P.S. starts with Next up.
-- Page names match the Botter's Lab menu.
+- Page names match the Botters Lab menu.
 - Say reset and not expire for included credits.
 
 Example of the last line of S03: "Tomorrow your bot receives a shelf in the Botterverse and its first words. Both take two minutes."
@@ -43,15 +43,15 @@ Purpose: make them feel good about the purchase and explain what happens now. Th
 
 Order:
 1. "Congratulations on becoming our latest Botter." A warm opening of two or three sentences.
-2. What has just arrived. Every plan: a Botter's Lab account for building and sharing and running bots. Included credits each month (annual plans receive a new set every month). Each message a bot sends uses credits. That includes the person chatting and your own testing. Unused included credits expire at the next renewal or plan change. Credits you buy never expire. Help articles and Feedback and the support portal, with links. Support needs its own account. The same username and password work for both.
+2. What has just arrived. Every plan: a Botters Lab account for building and sharing and running bots. Included credits each month (annual plans receive a new set every month). Each message a bot sends uses credits. That includes the person chatting and your own testing. Unused included credits expire at the next renewal or plan change. Credits you buy never expire. Help articles and Feedback and the support portal, with links. Support needs its own account. The same username and password work for both.
 3. What your plan adds. A link to the Pricing page and nothing more. Prices and limits stay on the Pricing page because they can change.
 4. What happens now, in order:
-   1. Create your Botter's Lab account with the email you bought with. That is how the plan reaches your account.
+   1. Create your Botters Lab account with the email you bought with. That is how the plan reaches your account.
    2. Confirm your email. Your plan is then set up.
    3. Set your billing password from the link in your purchase receipt.
    4. Create your first bot (link to the help article).
    5. Preview it then share it by link or embed.
-5. Novice and above: join the affiliate programme from the Affiliates page in the Botter's Lab. That is covered in a later email so S01 only mentions it once.
+5. Novice and above: join the affiliate programme from the Affiliates page in the Botters Lab. That is covered in a later email so S01 only mentions it once.
 6. Open loop to S02.
 
 The Founders coupon note ("keep your code for upgrades") goes in a Founder-only block. It shows only to contacts with the Founder tag. The tag may arrive after S01 sends so the same note is repeated in S02 for founders.

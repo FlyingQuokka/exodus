@@ -8,7 +8,7 @@ How to read the tags. **[beta]** means the feature is built during the closed be
 
 ## 1. The product
 
-**In one paragraph.** Botterverse is a platform where people build, share and sell AI chatbots. A member (a "botter") builds a bot in the member area (Botter's Lab) by writing instructions and adding their own files. They pick an AI model then share the bot by link or embed it on their own site. They can charge for access and list the bot on Bot Market so other members can buy it. Members who bring in new members earn ongoing commission through the affiliate programme. Every bot is checked before it can go Public because the idea behind the platform is AI for good.
+**In one paragraph.** Botterverse is a platform where people build, share and sell AI chatbots. A member (a "botter") builds a bot in the member area (Botters Lab) by writing instructions and adding their own files. They pick an AI model then share the bot by link or embed it on their own site. They can charge for access and list the bot on Bot Market so other members can buy it. Members who bring in new members earn ongoing commission through the affiliate programme. Every bot is checked before it can go Public because the idea behind the platform is AI for good.
 
 **In one sentence.** Botterverse lets you build an AI chatbot then share it or sell it and earn from the members you bring in.
 
@@ -265,7 +265,7 @@ All prices are in **US dollars** and are charged monthly or annually. There is *
 
 **What it is.** Ongoing commission on the Botterverse subscription payments of the members a person refers. It is flat and single level. There are no multi-level commissions.
 
-**How a member joins.** From the Affiliates page in Botter's Lab by pressing Join. It needs a plan from **Novice** up. Apprentice shows an upgrade prompt. Only an active member can join. Staff do not add affiliates by hand.
+**How a member joins.** From the Affiliates page in Botters Lab by pressing Join. It needs a plan from **Novice** up. Apprentice shows an upgrade prompt. Only an active member can join. Staff do not add affiliates by hand.
 
 **What earns commission**
 
@@ -298,7 +298,7 @@ Worked on listed monthly prices with no discount (illustration only and not an e
 **Rules**
 
 - **Self-referral is a breach.** Referring yourself through your own account, another account of yours or your own card is checked. A repeat offender is banned and their earnings are forfeited.
-- The programme's own sign-up form is switched off. Members join only inside Botter's Lab.
+- The programme's own sign-up form is switched off. Members join only inside Botters Lab.
 
 **In the closed beta.** The programme is visible and members can join and share links. The commission import, review and payment steps are still being built **[beta]**. Do not say commission is already being paid until the owner confirms.
 
@@ -354,7 +354,7 @@ A declaration is disclosed and not banned. The scan fills in what it finds and l
 **Names to use exactly**
 
 - **Botterverse** is the platform. The mockups write "Botterverse" and the owner writes Botterverse (section 14).
-- **Botter's Lab** is the member area.
+- **Botters Lab** is the member area.
 - **Botter Support Team** is support.
 - **Bot Market** is the marketplace. The documents also use the internal name BotFlip (section 14).
 - Plan names are Apprentice Botter, Novice Botter, Expert Botter, Pro Botter and Master Botter.
@@ -420,7 +420,7 @@ Both font pairs load from Google Fonts. Pink and cyan are the two brand accents.
 **Design notes for assets**
 
 - White text sits on the pink accent in the product. Pink on white is weak for small text so use the darker link pink (#984f92) for small coloured text on a light page.
-- A seller's own bot pages use a seller-made style. These themes apply only to Botter's Lab and the Back Office.
+- A seller's own bot pages use a seller-made style. These themes apply only to Botters Lab and the Back Office.
 - The mockup logo is a placeholder: a round accent-coloured face (two eyes and a smile) beside the words "Botterverse". No final logo is set (section 14).
 - The member area and marketing site are built mobile-first.
 
@@ -560,7 +560,7 @@ Yes with one click. You keep your plan to the end of the period you paid for. An
 
 - **Bot:** an AI chatbot a member builds with instructions and files.
 - **Botter:** a member who builds bots. **Sharer** and **Bottie** are badge family names.
-- **Botter's Lab:** the member area.
+- **Botters Lab:** the member area.
 - **Botter Support Team:** the people who help members and send some payouts by hand.
 - **Plan or tier:** Apprentice, Novice, Expert, Pro or Master. Shown with "Botter" after the name.
 - **Credits:** what messages cost. Included credits come with a plan. Bought credits never expire.

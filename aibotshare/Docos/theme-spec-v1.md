@@ -71,7 +71,7 @@ Cart and checkout and receipt and order review use `page-wide` and are styled on
 **Header**
 - Logo on the left. Menu in the centre. Icons on the right.
 - Signed out: Pricing and How it works and Affiliates and FAQ then a cart icon (only when the cart has items) then Log in.
-- Signed in to WordPress: Botter's Lab button and Support and an Account icon. No Pricing or Shop or Cart or Checkout.
+- Signed in to WordPress: Botters Lab button and Support and an Account icon. No Pricing or Shop or Cart or Checkout.
 - The signed-in switch is a small PHP pattern that tests whether the visitor is logged in.
 
 **Footer**
@@ -101,7 +101,7 @@ Method for each: CSS only unless the plugin offers a template override. Class na
 ## 8. The domain rule
 
 - Same-site links: root-relative paths such as `/pricing/`.
-- Links to the Botter's Lab: written `https://lab.{{domain}}/login`. The token `{{domain}}` is the base domain only. A theme filter replaces it at render time with the site's own host from `home_url()` with any `www.` removed.
+- Links to the Botters Lab: written `https://lab.{{domain}}/login`. The token `{{domain}}` is the base domain only. A theme filter replaces it at render time with the site's own host from `home_url()` with any `www.` removed.
 - One helper function builds the Lab address for PHP. The header Log in link uses it.
 - FluentCRM emails use the same token with absolute links. The theme answers the `fluentcrm_smartcode_fallback` filter for `{{domain}}`. A normal smart code cannot be used because FluentCRM needs a group and a key.
 - The build fails if a typed domain appears in the source.

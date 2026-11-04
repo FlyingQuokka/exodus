@@ -13,7 +13,7 @@ Transactional emails for events 1 to 27 of the event plan (`06-event-emails-plan
 | `{{contact.first_name}}` | Member's first name |
 | `{{domain}}` | Base domain |
 | `{{billing_password_link}}` | Link that sets the billing login password (event 1) |
-| `{{create_account_link}}` | Link that creates the Botter's Lab account (event 1) |
+| `{{create_account_link}}` | Link that creates the Botters Lab account (event 1) |
 | `{{confirmation_link}}` | Email confirmation link (event 2 and 7A) |
 | `{{reset_link}}` | Password reset link (events 4 and 6) |
 | `{{username}}` | The member's username (event 5) |
@@ -43,14 +43,14 @@ Hi {{contact.first_name}},
 Thank you for your purchase. This email holds the two links you need to start.
 
 1. Set the password for your billing login: {{billing_password_link}}. The billing login is where you find invoices, change your card and cancel your plan. The link works once and expires after 24 hours.
-2. Create your Botter's Lab account: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
+2. Create your Botters Lab account: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
 
-If you already have a Botter's Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
+If you already have a Botters Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: one email with two links. The password link works once and expires after 24 hours (digest 1.4 and 10.8). The billing login is separate from the Botter's Lab sign-in.
+- Facts: one email with two links. The password link works once and expires after 24 hours (digest 1.4 and 10.8). The billing login is separate from the Botters Lab sign-in.
 - Automation: none. Sender is Cart [verify with the app agent]. Review that it holds both links and that they are never repeated in the welcome sequence.
 - Never duplicated elsewhere. The welcome email S01 refers to this email and must not contradict it.
 
@@ -66,9 +66,9 @@ Hi {{contact.first_name}},
 
 Thank you for your purchase. You already have a help desk sign-in under this email address, so we haven't created a separate billing login.
 
-Use your help desk sign-in for invoices and card changes. To start building, create your Botter's Lab account here: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
+Use your help desk sign-in for invoices and card changes. To start building, create your Botters Lab account here: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
 
-If you already have a Botter's Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
+If you already have a Botters Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
 Your Botter Support Team
 
@@ -87,7 +87,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your Botter's Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.
+Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.
 
 Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its credits are added once you confirm.
 
@@ -130,7 +130,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You've confirmed your email address, so your plan and its credits have been added to your Botter's Lab account.
+You've confirmed your email address, so your plan and its credits have been added to your Botters Lab account.
 
 [Sign in](https://lab.{{domain}}/login) with your username and your password. Your [Dashboard](https://lab.{{domain}}/) shows your credit balance and how many bots your plan allows.
 
@@ -150,7 +150,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-We received a request to choose a new password for your Botter's Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link, the earlier one stops working.
+We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link, the earlier one stops working.
 
 If you didn't ask for this, you can ignore this email and your password stays as it is.
 
@@ -173,7 +173,7 @@ Hi {{contact.first_name}},
 
 You asked us to send your username. It is {{username}}.
 
-Use it with your password on the [Sign in](https://lab.{{domain}}/login) page of the Botter's Lab. The Sign in page takes your username and never your email address.
+Use it with your password on the [Sign in](https://lab.{{domain}}/login) page of the Botters Lab. The Sign in page takes your username and never your email address.
 
 Your Botter Support Team
 
@@ -193,7 +193,7 @@ Hi {{contact.first_name}},
 
 You asked to reset the password for your billing login. Use this link: {{reset_link}}.
 
-The link works once and expires after 24 hours. Your billing login is separate from your Botter's Lab sign-in, so this doesn't change your Botter's Lab password.
+The link works once and expires after 24 hours. Your billing login is separate from your Botters Lab sign-in, so this doesn't change your Botters Lab password.
 
 If you didn't ask for this, you can ignore this email.
 
@@ -213,7 +213,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You asked to change the email address on your Botter's Lab account to this one. Confirm the change with this link: {{confirmation_link}}.
+You asked to change the email address on your Botters Lab account to this one. Confirm the change with this link: {{confirmation_link}}.
 
 Your change also carries to your billing account. If you didn't ask for this, you can ignore this email.
 
@@ -233,7 +233,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Someone asked to change the email address on your Botter's Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.
+Someone asked to change the email address on your Botters Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.
 
 If this was you, there is nothing to do. If it wasn't you, please contact the Botter Support Team at https://{{domain}}/support/ and change your password in [Settings](https://lab.{{domain}}/settings).
 
@@ -254,7 +254,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The email address on your Botter's Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.
+The email address on your Botters Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.
 
 If you didn't make this change, please contact the Botter Support Team at https://{{domain}}/support/ straight away.
 
@@ -295,7 +295,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The password for your Botter's Lab account has just been changed.
+The password for your Botters Lab account has just been changed.
 
 If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/.
 
@@ -310,7 +310,7 @@ Your Botter Support Team
 
 ## E09 - Bot blocked by the model provider (when it happens)
 
-**Subject:** [Botter's Lab] Your bot has been switched to Personal
+**Subject:** [Botters Lab] Your bot has been switched to Personal
 
 **Body:**
 
@@ -330,7 +330,7 @@ Your Botter Support Team
 
 ## E10 - Public bot switched to Personal after a blocked category (when it happens)
 
-**Subject:** [Botter's Lab] Your bot has been switched to Personal
+**Subject:** [Botters Lab] Your bot has been switched to Personal
 
 **Body:**
 
@@ -352,7 +352,7 @@ Your Botter Support Team
 
 ## E11 - Declarations not re-confirmed in time (when it happens)
 
-**Subject:** [Botter's Lab] Please confirm your declarations again
+**Subject:** [Botters Lab] Please confirm your declarations again
 
 **Body:**
 
@@ -373,7 +373,7 @@ Your Botter Support Team
 
 ## E12 - Daily credit limit reached (once per day per bot)
 
-**Subject:** [Botter's Lab] A bot has reached its daily credit limit
+**Subject:** [Botters Lab] A bot has reached its daily credit limit
 
 **Body:**
 
@@ -395,7 +395,7 @@ Your Botter Support Team
 
 **Sent by the app. Not built in FluentCRM.** The wording is in `../13-app-agent-prompt-paused-and-withdrawal-emails.md` (part A).
 
-**Subject:** [Botter's Lab] Your bot has been paused by the Botter Support Team
+**Subject:** [Botters Lab] Your bot has been paused by the Botter Support Team
 
 **Body:**
 
@@ -463,7 +463,7 @@ When your new plan starts, your bots come back, oldest first, up to the new plan
 
 **Notes**
 - No overlap with O15-4. The app agent confirmed on 1 November 2026 that it sends `plan.ended` only where the member did not press Cancel (failed payment or FluentCart's own Cancel button). A member who pressed Cancel receives O15-4 only. A banned member receives the ban email only.
-- Template names are `plan.ended` and `plan.fewer_bots`. The sign-off comes from the app's email layout and the subject receives the [Botter's Lab] prefix automatically.
+- Template names are `plan.ended` and `plan.fewer_bots`. The sign-off comes from the app's email layout and the subject receives the [Botters Lab] prefix automatically.
 
 ---
 
@@ -493,7 +493,7 @@ Your oldest bots are running up to the limit. The rest stay paused. To choose wh
 
 ## E15 - Guarantee claim received (seller)
 
-**Subject:** [Botter's Lab] A buyer has sent a claim on {{bot_name}}
+**Subject:** [Botters Lab] A buyer has sent a claim on {{bot_name}}
 
 **Body:**
 
@@ -513,7 +513,7 @@ Your Botter Support Team
 
 ## E16A - Guarantee claim decided: refunded (buyer)
 
-**Subject:** [Botter's Lab] Your claim on {{bot_name}} has been refunded
+**Subject:** [Botters Lab] Your claim on {{bot_name}} has been refunded
 
 **Body:**
 
@@ -534,7 +534,7 @@ Your Botter Support Team
 
 ## E16B - Guarantee claim decided: not refunded (buyer)
 
-**Subject:** [Botter's Lab] Your claim on {{bot_name}} has been decided
+**Subject:** [Botters Lab] Your claim on {{bot_name}} has been decided
 
 **Body:**
 
@@ -555,7 +555,7 @@ Your Botter Support Team
 
 ## E17 - Guarantee claim refunded automatically - Optional (buyer)
 
-**Subject:** [Botter's Lab] Your claim on {{bot_name}} has been refunded
+**Subject:** [Botters Lab] Your claim on {{bot_name}} has been refunded
 
 **Body:**
 
@@ -575,7 +575,7 @@ Your Botter Support Team
 
 ## E18 - Bot Market purchase (buyer)
 
-**Subject:** [Botter's Lab] Your new bot is ready
+**Subject:** [Botters Lab] Your new bot is ready
 
 **Body:**
 
@@ -596,7 +596,7 @@ Your Botter Support Team
 
 ## E19 - Bot Market purchase refunded as undeliverable - Optional (buyer)
 
-**Subject:** [Botter's Lab] Your payment has been refunded
+**Subject:** [Botters Lab] Your payment has been refunded
 
 **Body:**
 
@@ -616,7 +616,7 @@ Your Botter Support Team
 
 ## E20A - Bot Market refund decision: approved (buyer)
 
-**Subject:** [Botter's Lab] Your refund request has been approved
+**Subject:** [Botters Lab] Your refund request has been approved
 
 **Body:**
 
@@ -636,7 +636,7 @@ Your Botter Support Team
 
 ## E20B - Bot Market refund decision: not approved (buyer)
 
-**Subject:** [Botter's Lab] Your refund request has been decided
+**Subject:** [Botters Lab] Your refund request has been decided
 
 **Body:**
 
@@ -656,7 +656,7 @@ Your Botter Support Team
 
 ## E21 - Listing goes live (seller)
 
-**Subject:** [Botter's Lab] Your listing is live
+**Subject:** [Botters Lab] Your listing is live
 
 **Body:**
 
@@ -677,7 +677,7 @@ Your Botter Support Team
 
 ## E22 - Licence terms changed (each current holder)
 
-**Subject:** [Botter's Lab] {{seller_username}} has updated the licence terms for {{bot_name}}
+**Subject:** [Botters Lab] {{seller_username}} has updated the licence terms for {{bot_name}}
 
 **Body:**
 
@@ -698,7 +698,7 @@ Your Botter Support Team
 
 ## E23A - Sale notification (seller, opt-in)
 
-**Subject:** [Botter's Lab] You have a new sale on {{bot_name}}
+**Subject:** [Botters Lab] You have a new sale on {{bot_name}}
 
 **Body:**
 
@@ -719,7 +719,7 @@ Your Botter Support Team
 
 ## E23B - Review notification (seller, opt-in)
 
-**Subject:** [Botter's Lab] {{bot_name}} has a new review
+**Subject:** [Botters Lab] {{bot_name}} has a new review
 
 **Body:**
 
@@ -739,7 +739,7 @@ Your Botter Support Team
 
 ## E23C - Commission notification (affiliate, opt-in)
 
-**Subject:** [Botter's Lab] A commission has been added
+**Subject:** [Botters Lab] A commission has been added
 
 **Body:**
 
@@ -761,7 +761,7 @@ Your Botter Support Team
 
 ## E24 - Dispute opened on a sale (seller)
 
-**Subject:** [Botter's Lab] A sale of {{bot_name}} is disputed
+**Subject:** [Botters Lab] A sale of {{bot_name}} is disputed
 
 **Body:**
 
@@ -782,7 +782,7 @@ Your Botter Support Team
 
 ## E25 - Payout set-up done by hand (member)
 
-**Subject:** [Botter's Lab] Your payouts are set up
+**Subject:** [Botters Lab] Your payouts are set up
 
 **Body:**
 
@@ -802,7 +802,7 @@ Your Botter Support Team
 
 ## E26 - Withdrawal sent (member)
 
-**Subject:** [Botter's Lab] Your withdrawal is on its way
+**Subject:** [Botters Lab] Your withdrawal is on its way
 
 **Body:**
 
@@ -825,7 +825,7 @@ Your Botter Support Team
 
 **Sent by the app. Not built in FluentCRM.** The wording is in `../13-app-agent-prompt-paused-and-withdrawal-emails.md` (part B).
 
-**Subject:** [Botter's Lab] Your withdrawal didn't reach your bank
+**Subject:** [Botters Lab] Your withdrawal didn't reach your bank
 
 **Body:**
 

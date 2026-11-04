@@ -6,7 +6,7 @@ Lines in [square brackets] are notes to you and are not page text. Buttons use "
 
 Changes from the old draft (`output\page-copy-draft-1.md`):
 - Priority support starts at Pro and not Expert.
-- "Payouts run daily" is gone. Withdrawals are requested in the Botter's Lab.
+- "Payouts run daily" is gone. Withdrawals are requested in the Botters Lab.
 - The Founder badge is not mentioned on the website.
 - Pro and above can download customers who agreed to share their details. The consent is always stated.
 - Data export and account closing are live.
@@ -104,7 +104,7 @@ Auto top-up is off until you switch it on.
 **Sub:** When someone joins through your link you earn 50% of their first payment and 20% of every payment after. These are the rates at launch.
 
 **Button:** Take Me To The Botterverse
-**Line under the button:** Already on Novice or above? Join from Affiliates in the Botter's Lab. [Link: Botter's Lab sign-in using the domain token.]
+**Line under the button:** Already on Novice or above? Join from Affiliates in the Botters Lab. [Link: Botters Lab sign-in using the domain token.]
 
 ### Why it suits you
 
@@ -140,7 +140,7 @@ Emails, social posts, short pitches and banners are ready to use. Copy them and 
 ### How it works
 
 1. Choose Novice Botter or above.
-2. Open Affiliates in the Botter's Lab and press Join the affiliate programme.
+2. Open Affiliates in the Botters Lab and press Join the affiliate programme.
 3. Copy Your link. It ends in your username.
 4. Share it. Track Referrals and Subscription commissions on the same page.
 5. Withdraw from Payouts when commission is in your earnings.
@@ -167,7 +167,7 @@ Emails, social posts, short pitches and banners are ready to use. Copy them and 
 **1. Choose a plan**
 Pick the plan on the pricing page. Buy with the email address you will register with.
 
-**2. Create your Botter's Lab account**
+**2. Create your Botters Lab account**
 One email arrives after you buy. It has two links. The second one creates your account. Pick a username you like because it becomes part of your bots' web addresses.
 
 **3. Build your bot**
@@ -232,7 +232,7 @@ No. Request an export from Settings. Your bots, knowledge and conversations go w
 Yes. Charge for access with a paywall from Novice. List a bot on Bot Market from Pro. Botterverse takes one fee on each sale: 5% of the price after tax plus 30 cents on Novice and Expert. From Pro it is 3% plus 30 cents. For example a $49 sale on Novice carries a fee of $2.45 plus $0.30 so your earnings from it are $46.25. That is arithmetic and not an earnings claim.
 
 **When can I withdraw my earnings?**
-A sale can be refunded for 14 days. Earnings from a sale become withdrawable 21 days after it. The smallest withdrawal is $50. Request a withdrawal in the Botter's Lab. Payout fees are passed on at cost and shown before you confirm. Some countries cannot be paid yet.
+A sale can be refunded for 14 days. Earnings from a sale become withdrawable 21 days after it. The smallest withdrawal is $50. Request a withdrawal in the Botters Lab. Payout fees are passed on at cost and shown before you confirm. Some countries cannot be paid yet.
 
 **Can I change plan or cancel?**
 Yes to both. An upgrade is prorated. If you move down any bots over the new limit are paused and you choose which keep running. A monthly plan runs to the end of the period you paid for. After a plan ends your account stays open. Your bots pause and your data is kept.
@@ -251,7 +251,7 @@ You can use free Public bots. We cannot offer our paid services in the EU becaus
 **Body:**
 Three places can help.
 
-- **Help centre.** Step-by-step guides. Press Help beside any page title in the Botter's Lab for that page's article.
+- **Help centre.** Step-by-step guides. Press Help beside any page title in the Botters Lab for that page's article.
 - **Support.** Ask the Botter Support Team a question or ask for a refund decision or a safety review. Pro and above have priority support.
 - **Feedback.** Report a bug or suggest an idea.
 
@@ -259,7 +259,7 @@ Three places can help.
 
 | Sign-in | What it is for | How you sign in |
 |---|---|---|
-| Botter's Lab | Building and selling bots | Your username and password |
+| Botters Lab | Building and selling bots | Your username and password |
 | Billing login | Invoices, receipts, card changes and cancelling | The email you bought with. The link is in your purchase email |
 | Help desk | Your tickets | Its own account. If you bought a plan or credits press Reset password. Otherwise press Create an account |
 
@@ -298,9 +298,9 @@ Choose a type:
 
 **Heading:** Billing login
 
-**Body:** Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter's Lab sign-in instead.
+**Body:** Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botters Lab sign-in instead.
 
-**Link:** Go to the Botter's Lab sign-in [domain token].
+**Link:** Go to the Botters Lab sign-in [domain token].
 
 **Fields:** Username or email address. Password.
 
@@ -324,7 +324,7 @@ Choose a type:
 
 **Heading:** Help desk sign in
 
-**Body:** This is separate from the Botter's Lab. If you bought a plan or credits you already have an account. Press Reset password. If you are new press Create an account.
+**Body:** This is separate from the Botters Lab. If you bought a plan or credits you already have an account. Press Reset password. If you are new press Create an account.
 
 **Links:** Reset password. Create an account.
 

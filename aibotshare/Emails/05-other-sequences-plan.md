@@ -5,7 +5,7 @@ Draft 1 for review. This revises the old playbook (`output\fluentcrm-email-playb
 ## 1. Rules that apply to every sequence
 
 - One list with tags. See `00-strategy-one-list-and-tags.md`.
-- Subject prefix: [Botterverse] for general emails and [Botter's Lab] for emails about the Botter's Lab. Sender is Botterverse. No addresses or footers.
+- Subject prefix: [Botterverse] for general emails and [Botters Lab] for emails about the Botters Lab. Sender is Botterverse. No addresses or footers.
 - No income promises. No named competitors. No testimonials. No sixth tier. No EU wording. No Founder badge on website copy.
 - Relative waits only. The launch dates are not set.
 - Stories follow `retired\03-storyselling-plan.md`. None of the sequences below carries a story unless marked.
@@ -98,7 +98,7 @@ Never mention the affiliate software by name.
 
 **O09 Feedback request.** One email after the first sale. It asks for feedback only and never for a quote. Never fabricate a testimonial.
 
-**O10 First sale.** One email. Congratulate without an income claim. Explain the refund period and the holdback and that withdrawals are requested in the Botter's Lab. The old "payouts run daily" wording is removed.
+**O10 First sale.** One email. Congratulate without an income claim. Explain the refund period and the holdback and that withdrawals are requested in the Botters Lab. The old "payouts run daily" wording is removed.
 
 **O11 Bot Market seller.** Two steps. Listing tips. Then reputation: Verified purchase reviews and the badges Verified Seller and 10 Sales and Top Rated. The Founder badge is left out.
 

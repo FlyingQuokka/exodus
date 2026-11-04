@@ -95,7 +95,7 @@ foreach ($pages as $slug => [$title, $template]) {
 // ---- Footer navigation post (the Legal column): legal pages only. Feedback and Support are in the Help column. ----
 $legal = [
     ['Terms And Conditions', 'terms-and-conditions-app-version'],
-    ['Privacy Policy', 'privacy-policy-app-version'],
+    ['Privacy Policy', 'privacy-policy'],
     ['Legal', 'legal', [
         ['CCPA', 'ccpa-california-consumer-privacy-act'],
         ['DMCA', 'dmca'],

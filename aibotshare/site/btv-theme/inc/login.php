@@ -65,7 +65,7 @@ add_filter('login_message', function ($message) {
             . '<p>Use this to see your invoices and receipts. Use it also to change your card or cancel your plan. To build bots use the Botter&#8217;s Lab sign-in instead.</p>'
             . '<p><a href="' . esc_url(btv_lab_url('/login')) . '" target="_blank" rel="noopener">Go to the Botter&#8217;s Lab sign-in</a></p>';
     } elseif ($action === 'lostpassword') {
-        $head = '<h2>Forgotten your password?</h2>';
+        $head = btv_is_admin_login() ? '<h2>Forgotten your admin password?</h2>' : '<h2>Forgotten your password?</h2>';
     } else {
         return $message;
     }
@@ -111,6 +111,10 @@ add_action('login_init', function () {
         // Staff reset their password on WordPress's own page and not on the billing page.
         add_filter('lostpassword_url', function () {
             $url = site_url('wp-login.php?action=lostpassword', 'login');
+            return add_query_arg('redirect_to', rawurlencode((string) wp_unslash($_REQUEST['redirect_to'])), $url);
+        }, 99);
+        // The Sign in link on that page goes back to the admin sign-in and not the billing one.
+        add_filter('login_url', function ($url) {
             return add_query_arg('redirect_to', rawurlencode((string) wp_unslash($_REQUEST['redirect_to'])), $url);
         }, 99);
     }

@@ -37,7 +37,7 @@ function btv_die_skin($html)
 @font-face { font-family: 'Baloo 2'; font-style: normal; font-weight: 400 800; font-display: swap; src: url('{$baloo}') format('woff2'); }
 @font-face { font-family: 'Nunito Sans'; font-style: normal; font-weight: 200 1000; font-display: swap; src: url('{$nunito}') format('woff2'); }
 html { background: #ebedfc; }
-body { max-width: 440px; margin: 6vh auto 2rem; padding: 1.8rem; box-sizing: border-box; background: #ffffff; border: 1px solid #dcdbe6; border-radius: 22px; box-shadow: 0 10px 30px rgba(40, 38, 55, .08); color: #4f4d5f; font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; text-align: center; }
+body { width: fit-content; min-width: min(440px, calc(100% - 32px)); max-width: min(680px, calc(100% - 32px)); margin: 6vh auto 2rem; padding: 1.8rem; box-sizing: border-box; background: #ffffff; border: 1px solid #dcdbe6; border-radius: 22px; box-shadow: 0 10px 30px rgba(40, 38, 55, .08); color: #4f4d5f; font-family: 'Nunito Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; text-align: center; }
 body::before { content: ''; display: block; height: 56px; margin: 0 0 1.2rem; background: url('{$logo}') center / contain no-repeat; }
 h1 { margin: 0 0 .6rem; padding: 0; border: 0; font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; font-size: 1.7rem; line-height: 1.12; color: #282637; }
 #error-page { margin-top: 2rem; }
@@ -46,7 +46,9 @@ ul { text-align: left; }
 ul li { font-size: 1rem; }
 a { color: #984f92; }
 a:hover, a:active, a:focus { color: #7a3c75; box-shadow: none; }
-code { font-size: .9em; word-break: break-word; }
+body, p, li { overflow-wrap: anywhere; }
+code { font-size: .9em; }
+pre { display: block; max-width: 100%; overflow: auto; margin: 0 0 1em; padding: .8rem 1rem; box-sizing: border-box; background: #f3eefb; border-radius: 12px; text-align: left; white-space: pre-wrap; font-size: .85rem; line-height: 1.5; }
 .button { display: inline-block; padding: .7rem 1.7rem; border: 2px solid transparent; border-radius: 999px; background: #dc8fd5; color: #391d37; font-family: 'Baloo 2', system-ui, sans-serif; font-weight: 800; text-decoration: none; }
 .button:hover, .button:focus { background: #c876c1; color: #391d37; }
 </style>

@@ -24,7 +24,9 @@ Link or copy this folder to `wp-content\plugins\btv-sync` and activate it. The p
 | `data\funnels\*.json` | One automation per file |
 | `data\forms.json` | The Fluent Forms lead capture form and its FluentCRM feed. The form id is kept in the option `btv_lead_form_id` |
 | `data\campaigns.json` | Draft broadcast campaigns. Never sent by the sync |
-| `data\settings.json` | FluentCRM experimental features. `abandoned_cart` is `no` until launch |
+| `data\settings.json` | FluentCRM experimental features (`abandoned_cart` is `yes`) and the reply-to address for every FluentCRM email (`support@botterverse.com`) |
+| `dataffiliate-emails.json` | FluentAffiliate emails to switch off, because the app sends its own commission and payout emails |
+| `templates\wp-email.html` | The branded layout for WordPress's own plain-text emails (new user and password notices). Applied by a `wp_mail` filter in `includesuntime.php` |
 | `data\assets\btv-email-logo.png` | Uploaded to the media library once |
 | `templates\email.html` | The branded email wrapper |
 

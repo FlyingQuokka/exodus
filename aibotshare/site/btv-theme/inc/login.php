@@ -31,6 +31,7 @@ add_action('login_init', function () {
             $map = [
                 'Remember Me'                  => 'Keep me signed in',
                 'Log In'                       => 'Sign in',
+                'Log in'                       => 'Sign in',
                 'Lost your password?'          => 'Forgotten your password?',
                 'Get New Password'             => 'Send me a link',
                 'Username or Email Address'    => 'Username or email address',
@@ -70,10 +71,20 @@ add_filter('login_message', function ($message) {
 add_filter('login_site_html_link', '__return_empty_string');
 
 /**
+ * No Register link and no register form on the WordPress sign-in screens. An account is made at checkout,
+ * by the Botter's Lab or by the help desk's own sign-up form. Those run on other pages and read the
+ * setting as usual, so only wp-login.php sees it switched off.
+ */
+add_action('login_init', function () {
+    add_filter('pre_option_users_can_register', '__return_zero');
+});
+
+/**
  * No "You are now logged out" message. Being on the sign-in page says it.
  */
 add_filter('wp_login_errors', function ($errors) {
     $errors->remove('loggedout');
+    $errors->remove('registerdisabled');
     return $errors;
 });
 

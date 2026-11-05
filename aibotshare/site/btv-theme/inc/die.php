@@ -78,7 +78,7 @@ function btv_die_skin($html)
     if (stripos($html, '</head>') === false) {
         return $html;
     }
-    $logo = esc_url(btv_asset('img/btv-logo.svg'));
+    $logo = esc_url(btv_asset('img/btv-logo-transparent.svg'));
     $baloo = esc_url(btv_asset('fonts/btv-baloo-2.woff2'));
     $nunito = esc_url(btv_asset('fonts/btv-nunito-sans.woff2'));
     $css = <<<CSS

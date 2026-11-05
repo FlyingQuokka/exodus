@@ -57,7 +57,7 @@ p { margin: 0 0 1em; }
 /* Header */
 .site-header { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: .7rem; }
-.site-header .logo img { height: 48px; width: auto; display: block; }
+.site-header .logo img { height: 40px; width: auto; display: block; }
 .nav { display: flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
 .nav a { font-weight: 700; color: var(--text); text-decoration: none; padding: .5rem .85rem; border-radius: var(--r-ctl); }
 .nav a:hover, .nav a[aria-current="page"] { background: var(--accent-soft); color: var(--accent-text); }
@@ -72,7 +72,7 @@ p { margin: 0 0 1em; }
 .footer-grid li { margin: .35rem 0; }
 .footer-grid a { color: var(--text-2); text-decoration: none; }
 .footer-grid a:hover { color: var(--accent-text); text-decoration: underline; }
-.footer-brand img { height: 44px; margin-bottom: .8rem; }
+.footer-brand img { height: 36px; margin-bottom: .8rem; }
 .footer-note { border-top: 1px solid var(--border); margin-top: 2rem; padding-top: 1rem; font-size: .85rem; color: var(--muted); text-align: center; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
 
@@ -282,7 +282,7 @@ table.compare.u-flat th, table.compare.u-flat td { text-align: left; }
 .site-footer .wp-block-navigation .wp-block-navigation-item__content { color: var(--text-2); } .site-footer .wp-block-navigation .wp-block-navigation-item__content:hover { color: var(--accent-text); text-decoration: underline; }
 @media (max-width: 620px) {
   .site-header .container { gap: .6rem; }
-  .site-header .logo img { height: 38px; }
+  .site-header .logo img { height: 30px; }
   .header-actions .btn-small { padding: .55rem .9rem; font-size: .9rem; }
 }
 
@@ -291,3 +291,6 @@ table.compare.u-flat th, table.compare.u-flat td { text-align: left; }
 .hero .container:not(.split), .hero .narrow { text-align: center; }
 .hero .container:not(.split) .btn-row, .hero .narrow .btn-row { justify-content: center; }
 .hero .lede { margin-inline: auto; }
+
+/* Nightshift uses the light-text logo */
+[data-theme="nightshift"] .site-header .logo img, [data-theme="nightshift"] .footer-brand img { content: url('../img/btv-logo-transparent-light.svg'); }

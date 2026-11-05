@@ -239,19 +239,27 @@ class BTV_Sync
     private function assets()
     {
         $dir = BTV_SYNC_DIR . '/data/assets';
-        $file = $dir . '/btv-email-logo.png';
+        $file = $dir . '/btv-logo-transparent.png';
         if (!file_exists($file)) {
             return;
         }
         // Found by the id kept from the first upload. A slug search alone is not enough, because WordPress adds
         // a number to the name when a file with the same name already exists.
         $kept = (int) get_option('btv_email_logo_id');
+        if ($kept && get_post($kept) && get_post_type($kept) === 'attachment'
+            && basename((string) get_attached_file($kept)) !== 'btv-logo-transparent.png' && strpos(basename((string) get_attached_file($kept)), 'btv-email-logo') === 0) {
+            // The earlier logo upload. It is replaced by the current logo and its files are removed.
+            wp_delete_attachment($kept, true);
+            delete_option('btv_email_logo_id');
+            $this->say('asset: earlier email logo removed');
+            $kept = 0;
+        }
         if ($kept && get_post($kept) && get_post_type($kept) === 'attachment') {
             $this->say('asset: logo already in the media library');
             return;
         }
         global $wpdb;
-        $found = (int) $wpdb->get_var("SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' AND post_name LIKE 'btv-email-logo%' ORDER BY ID LIMIT 1");
+        $found = (int) $wpdb->get_var("SELECT ID FROM {$wpdb->posts} WHERE post_type = 'attachment' AND post_name LIKE 'btv-logo-transparent%' ORDER BY ID LIMIT 1");
         if ($found) {
             update_option('btv_email_logo_id', $found);
             $this->say('asset: logo already in the media library');
@@ -260,9 +268,9 @@ class BTV_Sync
         require_once ABSPATH . 'wp-admin/includes/file.php';
         require_once ABSPATH . 'wp-admin/includes/media.php';
         require_once ABSPATH . 'wp-admin/includes/image.php';
-        $tmp = wp_tempnam('btv-email-logo.png');
+        $tmp = wp_tempnam('btv-logo-transparent.png');
         copy($file, $tmp);
-        $id = media_handle_sideload(['name' => 'btv-email-logo.png', 'tmp_name' => $tmp], 0);
+        $id = media_handle_sideload(['name' => 'btv-logo-transparent.png', 'tmp_name' => $tmp], 0);
         if (is_wp_error($id)) {
             throw new RuntimeException('Logo upload failed: ' . $id->get_error_message());
         }

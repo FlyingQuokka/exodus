@@ -67,7 +67,7 @@ function btv_icon($name)
 
 function btv_render_header()
 {
-    $logo = esc_url(get_template_directory_uri() . '/assets/img/btv-logo.svg');
+    $logo = esc_url(get_template_directory_uri() . '/assets/img/btv-logo-transparent.svg');
     // The same links for everyone. A signed-in visitor also sees the Account icon below.
     $items = [['How it works', 'how-it-works'], ['Pricing', 'pricing'], ['Bot Market', 'bot-market'], ['Affiliates', 'affiliates'], ['FAQ', 'faq'], ['Support', 'support']];
 
@@ -115,7 +115,7 @@ function btv_footer_navigation_id()
 
 function btv_render_footer()
 {
-    $logo = esc_url(get_template_directory_uri() . '/assets/img/btv-logo.svg');
+    $logo = esc_url(get_template_directory_uri() . '/assets/img/btv-logo-transparent.svg');
     $link = function ($label, $slug) {
         return '<li><a href="' . esc_url(btv_path($slug)) . '">' . esc_html($label) . '</a></li>';
     };

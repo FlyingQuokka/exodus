@@ -51,7 +51,7 @@ add_filter('fluent_crm/email-design-template-botterverse', function ($emailBody,
     $html = str_replace('{{crm.email_body}}', $emailBody, $html);
     $html = str_replace('{{domain}}', btv_base_domain(), $html);
     $logo = wp_get_attachment_url((int) get_option('btv_email_logo_id'));
-    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-email-logo.png', $html);
+    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-logo-transparent.png', $html);
     return $html;
 }, 10, 4);
 
@@ -95,7 +95,7 @@ add_filter('wp_mail', function ($args) {
     $html = str_replace('{{body}}', implode("\n", $paragraphs), $html);
     $html = str_replace('{{domain}}', btv_base_domain(), $html);
     $logo = wp_get_attachment_url((int) get_option('btv_email_logo_id'));
-    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-email-logo.png', $html);
+    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-logo-transparent.png', $html);
     $args['message'] = $html;
     $type = 'Content-Type: text/html; charset=UTF-8';
     $args['headers'] = is_array($headers) ? array_merge($headers, [$type]) : trim($joined . "\n" . $type);

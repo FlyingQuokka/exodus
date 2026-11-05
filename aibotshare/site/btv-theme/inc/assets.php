@@ -38,7 +38,7 @@ add_action('wp_enqueue_scripts', function () {
 }, 100);
 
 add_action('wp_head', function () {
-    echo '<link rel="icon" href="' . esc_url(btv_asset('img/btv-favicon.svg')) . '" type="image/svg+xml">' . "\n";
+    echo '<link rel="icon" href="' . esc_url(btv_asset('img/btv-favicon-64.svg')) . '" type="image/svg+xml">' . "\n";
     echo '<link rel="icon" href="' . esc_url(btv_asset('img/btv-favicon-32.png')) . '" sizes="32x32" type="image/png">' . "\n";
 }, 2);
 

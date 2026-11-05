@@ -23,3 +23,51 @@ body .betterdocs-category-box, body .betterdocs-single-bg, body .betterdocs-cate
 body .betterdocs-sidebar-content, body .betterdocs-single-sidebar { background: var(--surface-alt); border-radius: var(--r-card); }
 body .betterdocs-breadcrumb a { color: var(--accent-text); }
 body [class*="betterdocs-"] :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
+
+/* Help centre grid: overrides the colours Better Docs saved inside its blocks (blue headings, blue count badge, square white cards) */
+body .betterdocs-category-grid-wrapper { padding-block: 1rem 3rem; }
+body .betterdocs-category-grid-inner-wrapper { gap: 1.25rem; }
+body .betterdocs-single-category-wrapper.category-grid {
+  background: var(--surface) !important; border: 1px solid var(--border) !important; border-radius: var(--r-card) !important;
+  box-shadow: var(--shadow) !important; padding: 1.25rem 1.4rem 1.4rem !important; overflow: hidden;
+}
+body .betterdocs-single-category-wrapper .betterdocs-category-header { border-bottom: 1px solid var(--border) !important; padding-bottom: .75rem; margin-bottom: .6rem; }
+body .betterdocs-single-category-wrapper .betterdocs-category-title,
+body .betterdocs-single-category-wrapper .betterdocs-category-title a {
+  font-family: var(--font-head) !important; font-weight: 800 !important; font-size: 1.15rem !important; color: var(--text) !important; text-decoration: none;
+}
+body .betterdocs-single-category-wrapper .betterdocs-category-items-counts {
+  background: var(--accent) !important; color: var(--on-accent) !important; font-family: var(--font-head); font-weight: 800; border-radius: 999px !important;
+}
+body .betterdocs-single-category-wrapper .betterdocs-category-items-counts span { color: var(--on-accent) !important; }
+body .betterdocs-single-category-wrapper .betterdocs-category-icon-img { filter: none; max-height: 2rem; width: auto; }
+body .betterdocs-articles-list li, body .betterdocs-articles-list a { font-size: .98rem; line-height: 1.5; }
+body .betterdocs-articles-list a { color: var(--text-2) !important; text-decoration: none; }
+body .betterdocs-articles-list a:hover { color: var(--accent-text) !important; text-decoration: underline; }
+body .betterdocs-articles-list svg, body .betterdocs-articles-list i { color: var(--accent-text) !important; fill: var(--accent-text) !important; }
+body .betterdocs-footer .docs-cat-link-btn {
+  background: transparent !important; color: var(--accent-text) !important; border: 2px solid var(--accent-text) !important; border-radius: 999px !important;
+  font-family: var(--font-head); font-weight: 800; padding: .35rem 1.1rem !important; text-decoration: none;
+}
+body .betterdocs-footer .docs-cat-link-btn:hover { background: var(--accent-soft) !important; }
+
+/* Search modal and results */
+body .betterdocs-search-modal-layout-1 input, body #betterdocs-search-modal input {
+  background: var(--surface) !important; color: var(--text) !important; border: 2px solid var(--border-strong) !important; border-radius: 999px !important; padding: .85rem 1.2rem .85rem 2.6rem;
+}
+body .betterdocs-search-result-wrap, body .betterdocs-search-modal-content { background: var(--surface) !important; border: 1px solid var(--border); border-radius: var(--r-card); box-shadow: var(--shadow); color: var(--text-2); }
+
+/* Single article and category pages */
+body.single-docs .betterdocs-single-bg, body .betterdocs-content-area { background: var(--surface); }
+body .betterdocs-entry-content, body .betterdocs-content-area { color: var(--text-2); line-height: 1.7; }
+body .betterdocs-entry-title, body .betterdocs-single-title, body .betterdocs-category-title { font-family: var(--font-head); color: var(--text); }
+body .betterdocs-toc, body .betterdocs-sidebar-content, body .betterdocs-single-sidebar {
+  background: var(--surface-alt) !important; border: 1px solid var(--border); border-radius: var(--r-card);
+}
+body .betterdocs-breadcrumb, body .betterdocs-breadcrumb li, body .betterdocs-breadcrumb span { color: var(--muted); }
+body .betterdocs-sidebar-content a, body .betterdocs-toc a { color: var(--text-2) !important; }
+body .betterdocs-sidebar-content a:hover, body .betterdocs-toc a:hover, body .betterdocs-sidebar-content .active > a { color: var(--accent-text) !important; }
+body .betterdocs-single-bg pre, body .betterdocs-entry-content pre { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--r-ctl); padding: 1rem; }
+body .betterdocs-entry-content table { border-collapse: collapse; width: 100%; }
+body .betterdocs-entry-content th, body .betterdocs-entry-content td { border: 1px solid var(--border); padding: .6rem .8rem; }
+body .betterdocs-entry-content th { background: var(--surface-alt); font-family: var(--font-head); color: var(--text); }

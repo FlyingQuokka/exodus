@@ -475,7 +475,7 @@ New topic: Pro Botter and above have priority support. A clear ticket helps the 
 
 **Where to ask**
 
-Select Support at the foot of the menu. It opens the help desk in a new tab and it has its own sign-in, separate from the Botters Lab. If you've bought a plan or credits, you already have a website account, so press Reset password beside "Forgot your password?". Otherwise, use Create an account beside "Not registered?".
+Select Support at the foot of the menu. It opens the help desk in a new tab and you are signed in already. There is no separate account to create.
 
 For a bug or an idea, use the Feedback page instead. Choose the Type of Bug report or Feature suggestion. Help beside each page title opens that page's help article.
 
@@ -505,7 +505,7 @@ Your Botter Support Team
 P.S. Next up: one thing Pro does not include, which you can picture as two versions of your bot answering the same visitors.
 
 **Notes**
-- Facts: priority support starts at Pro (1.4 and 13.1). Support opens in a new tab with its own sign-in, Reset password and Create an account (13.1). Feedback and Type (13.2). Ticket advice (13.1). Fee wording (digest conflict 15: "a percentage plus a fixed amount per sale, never more than the sale").
+- Facts: priority support starts at Pro (1.4 and 13.1). Support opens in a new tab and the member is signed in with no separate account (13.1, changed 5 November 2026). Feedback and Type (13.2). Ticket advice (13.1). Fee wording (digest conflict 15: "a percentage plus a fixed amount per sale, never more than the sale").
 - No response times (the guide is silent).
 - Signature is Support Team because it's a support email.
 - Automation: UP-Pro step 9 (day 15).

@@ -25,12 +25,12 @@ Thanks for your purchase. There are two things to set up.
 
 1. Your Botters Lab account. This is where you build your bots. Create it with this same email address so your plan is added to it: {{register_url}}
 
-2. Your billing login. This is where you see invoices, change your card or cancel. Set its password here: {{set_password_url}} You can sign in to your billing account with your Botters Lab username as well.
+2. Your billing login. This is where you see invoices, change your card or cancel. Set its password here: {{set_password_url}} You can sign into your billing account with your Botters Lab username as well.
 
 Already have a Botters Lab account under this email? Sign in and verify your email if you have not yet. Your plan is then added automatically.
 ```
 
-The subject stays as it is. The app is not on the live site yet so no migration is needed. The local site's saved option is already changed to match.
+The subject stays as it is. The local site's saved option is already changed to match.
 
 ### Questions
 

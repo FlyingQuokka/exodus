@@ -35,7 +35,7 @@ The subject stays as it is. The WordPress side is already changed in the local s
 
 ### Questions
 
-1. Does the plugin send a plain-text email or an HTML one? The website wraps plain-text emails in the Botterverse layout, and it would show the numbered paragraphs as they are.
+1. Does the plugin send a plain-text email or an HTML one? The website wraps plain-text emails in the Botterverse layout so it would show the numbered paragraphs as they are.
 2. Is there any other place that shows these two steps in this order (a screen, a help article or another email)? List each one.
 
 ### Report back

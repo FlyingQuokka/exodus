@@ -285,3 +285,9 @@ table.compare.u-flat th, table.compare.u-flat td { text-align: left; }
   .site-header .logo img { height: 38px; }
   .header-actions .btn-small { padding: .55rem .9rem; font-size: .9rem; }
 }
+
+/* Page titles are centred. The home and Founders heroes sit beside a picture and stay left */
+.page-head, .page-head h1, h1.wp-block-post-title { text-align: center; }
+.hero .container:not(.split), .hero .narrow { text-align: center; }
+.hero .container:not(.split) .btn-row, .hero .narrow .btn-row { justify-content: center; }
+.hero .lede { margin-inline: auto; }

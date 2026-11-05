@@ -57,6 +57,7 @@ class BTV_Sync
         $this->campaigns();
         $this->settings();
         $this->affiliateEmails();
+        $this->docsTemplates();
     }
 
     /**
@@ -147,6 +148,24 @@ class BTV_Sync
      * Switch off FluentAffiliate's own emails that say things the app does not do.
      * The app works out and pays every commission and sends its own emails for it.
      */
+    private function docsTemplates()
+    {
+        // Better Docs saves its own templates, and they name another theme's header and footer.
+        global $wpdb;
+        $theme = get_stylesheet();
+        $rows = $wpdb->get_results("SELECT ID, post_content FROM {$wpdb->posts} WHERE post_type = 'wp_template' AND post_content LIKE '%wp:template-part%'");
+        $fixed = 0;
+        foreach ($rows as $row) {
+            $new = preg_replace('/(wp:template-part \{"slug":"(?:header|footer)"[^}]*?"theme":")(?!' . preg_quote($theme, '/') . '")[^"]+"/', '${1}' . $theme . '"', $row->post_content);
+            if ($new !== null && $new !== $row->post_content) {
+                $wpdb->update($wpdb->posts, ['post_content' => $new], ['ID' => $row->ID]);
+                clean_post_cache($row->ID);
+                $fixed++;
+            }
+        }
+        $this->say('saved templates: header and footer repointed in ' . $fixed);
+    }
+
     private function affiliateEmails()
     {
         $path = BTV_SYNC_DIR . '/data/affiliate-emails.json';

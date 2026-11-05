@@ -71,3 +71,25 @@ body .betterdocs-single-bg pre, body .betterdocs-entry-content pre { background:
 body .betterdocs-entry-content table { border-collapse: collapse; width: 100%; }
 body .betterdocs-entry-content th, body .betterdocs-entry-content td { border: 1px solid var(--border); padding: .6rem .8rem; }
 body .betterdocs-entry-content th { background: var(--surface-alt); font-family: var(--font-head); color: var(--text); }
+
+/* Article sidebar: the vertical guide line keeps the same gap at the bottom as at the top */
+body .betterdocs-sidebar-layout-7 .betterdocs-single-category-wrapper.active.default.show:before {
+  bottom: 29px !important; height: calc(100% - 58px) !important; background: var(--border) !important;
+}
+body .betterdocs-sidebar-layout-7 .betterdocs-nested-category-list.active:before { bottom: 12px !important; height: calc(100% - 40px) !important; background: var(--border) !important; }
+body .betterdocs-sidebar.betterdocs-sidebar-layout-7 .betterdocs-sidebar-content { background: transparent !important; padding: 1.25rem 1.4rem !important; }
+body .betterdocs-full-sidebar-left.betterdocs-sidebar-layout-7 { border-right: 0 !important; }
+body .betterdocs-articles-list li a.active:before { background: var(--accent) !important; }
+body .betterdocs-articles-list li a.active { background: var(--accent-soft) !important; color: var(--text) !important; border-radius: 10px; }
+
+/* Table of contents: even padding all round, text lined up, no left guide line */
+body .betterdocs-toc { display: block !important; background: transparent !important; border: 0 !important; padding: 1.25rem 1.4rem !important; }
+body .betterdocs-full-sidebar-right, body .betterdocs-full-sidebar-left.betterdocs-toc-block { padding-top: 0 !important; }
+body .betterdocs-toc .toc-title { display: block; margin: 0 0 .75rem !important; padding: 0 !important; font-family: var(--font-head); font-weight: 800; color: var(--text); }
+body .betterdocs-toc ul, body .betterdocs-toc .toc-list, body .betterdocs-toc .betterdocs-hierarchial-toc {
+  border: 0 !important; border-left: 0 !important; margin: 0 !important; padding: 0 !important; list-style: none;
+}
+body .betterdocs-toc ul:before, body .betterdocs-toc ul:after, body .betterdocs-toc li:before { content: none !important; display: none !important; }
+body .betterdocs-toc li { margin: 0 !important; padding: 0 !important; }
+body .betterdocs-toc li a { display: block; padding: .5rem 0 !important; text-decoration: none; }
+body .betterdocs-toc li a.active { color: var(--accent-text) !important; font-weight: 700; }

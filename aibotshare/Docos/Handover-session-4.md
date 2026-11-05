@@ -95,6 +95,7 @@ The sync does not carry page content. Repeat these on the live site or add them 
 
 ## 8. Things learned
 
+- **Help centre had no theme (5 November).** Better Docs saves its own templates in the database and they named the Twenty Twenty-Five header and footer. The sync now repoints them to the active theme. Snapshot: `pre-docs-templates-2026-11-05.sql`.
 - **Shared scratchpad.** Agents running in parallel share one scratchpad folder and overwrote each other's `c.py`. Give every agent unique file names.
 - **Python escapes.** `\a`, `\b` and `\f` in a normal Python string become control characters. Use raw strings or `chr(92)` for backslashes in paths. This corrupted a README once.
 - **The firewall plugin.** The All In One Security firewall permanently blocked the owner's IP (88.98.87.250) for a POST with no user agent. Every page redirected to `127.0.0.1`. The owner removed it under WP Security, Dashboard, Permanent block list. It may recur if the app server posts with no user agent.

@@ -26,6 +26,7 @@ Link or copy this folder to `wp-content\plugins\btv-sync` and activate it. The p
 | `data\campaigns.json` | Draft broadcast campaigns. Never sent by the sync |
 | `data\settings.json` | FluentCRM experimental features (`abandoned_cart` is `yes`) and the reply-to address for every FluentCRM email (`support@botterverse.com`) |
 | `data\affiliate-emails.json` | FluentAffiliate emails to switch off, because the app sends its own commission and payout emails |
+| (no data file) | Saved templates: Better Docs keeps its own copies of the Help centre templates. The sync points their header and footer at the active theme |
 | `templates\wp-email.html` | The branded layout for WordPress's own plain-text emails (new user and password notices). Applied by a `wp_mail` filter in `includesuntime.php` |
 | `data\assets\btv-email-logo.png` | Uploaded to the media library once |
 | `templates\email.html` | The branded email wrapper |

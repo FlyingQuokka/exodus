@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>H3. Syne, crossed bands</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Nunito+Sans:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.6}img{max-width:100%}a{color:inherit}
+.container{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%}
+
+:root{--ink:#282637;--pink:#dc8fd5;--pink-soft:#ffe0fb;--purple:#984f92;--cyan:#00d1da;--cyan-soft:#d4f6f8;--lilac:#ebedfc;--paper:#fbf8ff;--head:Syne,sans-serif;--tick-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 10.5l4 4 8-9' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+body{font-family:"Nunito Sans",sans-serif;color:var(--ink);background:var(--paper)}
+.banner{background:var(--ink);color:#fff;text-align:center;font-size:.88rem;padding:.55rem 1rem}.banner a{font-weight:700;color:var(--pink)}
+header.nav{background:var(--paper);position:sticky;top:0;z-index:10}.nav-in{display:flex;align-items:center;gap:2rem;height:70px}.nav-in img{height:34px}
+.nav-links{display:flex;gap:.4rem;margin-inline:auto;background:#fff;border:1px solid #e3e0ee;border-radius:999px;padding:.3rem}.nav-links a{text-decoration:none;font-weight:700;font-size:.9rem;padding:.4rem 1rem;border-radius:999px}.nav-links a:hover{background:var(--pink-soft)}
+.btn{display:inline-block;background:var(--ink);color:#fff;font-weight:800;padding:.9rem 1.6rem;border-radius:999px;text-decoration:none;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-2px);background:var(--purple)}.btn.small{padding:.55rem 1.1rem;font-size:.88rem}
+.display{font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,6.4vw,5.6rem);line-height:1;letter-spacing:-.025em;margin:3rem 0 2rem;display:flex;flex-wrap:wrap;gap:0 .3em}
+.display span:nth-child(1){color:var(--ink)}.display span:nth-child(2){color:var(--purple)}.display span:nth-child(3){color:var(--pink)}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:minmax(170px,auto);gap:1rem}
+.tile{border-radius:28px;padding:1.8rem;position:relative;overflow:hidden}
+.t-main{grid-column:span 3;grid-row:span 2;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:center}
+.t-main h1{font-family:var(--head);font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;letter-spacing:-.02em;font-weight:800;margin:.6rem 0 1rem;color:#fff}.t-main h1 em{font-style:normal;color:var(--pink)}
+.t-main p.lede{color:#cfcde0;font-size:1.1rem;max-width:34rem;margin:0 0 1.6rem}.t-main .btn{background:var(--pink);color:var(--ink);align-self:flex-start}.t-main .btn:hover{background:#fff}
+.eyebrow{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:var(--pink)}.note{font-size:.85rem;color:#a9a7bf;margin:1rem 0 0}
+.t-chat{grid-column:span 3;grid-row:span 2;background:#ebedfc;padding:1.2rem;display:grid;place-items:center}
+.t-chat:before{content:"";position:absolute;inset:auto -20% -30% auto;width:70%;aspect-ratio:1;border-radius:50%;border:2px dashed rgba(40,38,55,.18)}
+.chat{position:relative;width:100%;max-width:520px;background:#0f1626;color:#e9e8f5;border:1px solid rgba(255,255,255,.1);border-radius:22px;box-shadow:0 30px 70px rgba(40,38,55,.35);overflow:hidden;font-family:Inter,"Nunito Sans",sans-serif}
+.chat-top{display:flex;align-items:center;gap:.7rem;padding:.9rem 1.1rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.chat-top img{width:38px;height:38px;animation:float 4s ease-in-out infinite}.chat-top b{font-family:var(--head);font-size:.98rem;color:#fff;font-weight:800}.chat-top small{display:block;color:#a2a1b8;font-size:.75rem}
+.chip{margin-left:auto;font-size:.7rem;border:1px solid rgba(0,209,218,.4);color:#00d1da;padding:.2rem .6rem;border-radius:999px}
+@keyframes float{50%{transform:translateY(-4px)}}
+.chat-body{padding:1.1rem;display:grid;gap:.75rem;min-height:330px;align-content:start}
+.msg{max-width:86%;padding:.65rem .9rem;border-radius:16px;font-size:.92rem;opacity:0;animation:pop .5s ease forwards}
+.msg.user{justify-self:end;background:linear-gradient(135deg,#b97ab3,#984f92);color:#fff;border-bottom-right-radius:4px}
+.msg.bot{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-bottom-left-radius:4px}
+.m1{animation-delay:.6s}.m2{animation-delay:2s}.m3{animation-delay:4.2s}.m4{animation-delay:5.6s}
+.typing{opacity:0;animation:typing 1.6s 2.4s 1 forwards;display:flex;gap:4px;padding:.3rem .2rem}.typing i{width:7px;height:7px;border-radius:50%;background:#a2a1b8;animation:bounce 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}.typing.two{animation-delay:4.9s}
+.chat-foot{display:flex;align-items:center;gap:.6rem;padding:.8rem 1.1rem;border-top:1px solid rgba(255,255,255,.1);color:#7d7c95;font-size:.85rem}.chat-foot span{flex:1;border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:.45rem .9rem}.chat-foot b{background:var(--pink);color:#1d0f1c;border-radius:999px;padding:.45rem .9rem;font-size:.8rem}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes typing{0%{opacity:0}15%,80%{opacity:1}100%{opacity:0;height:0;padding:0}}
+@keyframes bounce{50%{transform:translateY(-4px)}}
+.t-stat{grid-column:span 2;background:var(--cyan-soft)}.t-stat b{font-family:var(--head);font-size:4.2rem;line-height:1;display:block;font-weight:800}.t-stat span{font-weight:700}
+.t-models{grid-column:span 2;background:var(--lilac);display:flex;flex-direction:column;justify-content:space-between;padding-inline:0}.t-models h3{padding:0 1.8rem;font-family:var(--head);font-size:1.25rem;margin:0;font-weight:800}
+.marq{overflow:hidden;white-space:nowrap}.marq div{display:inline-block;animation:marq 14s linear infinite}.marq span{display:inline-block;margin-right:.6rem;background:#fff;border-radius:999px;padding:.5rem 1.2rem;font-weight:800}
+@keyframes marq{to{transform:translateX(-50%)}}@keyframes marqr{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.t-list{grid-column:span 2;background:#fff;border:1px solid #e3e0ee}.t-list h3{font-family:var(--head);font-size:1.25rem;margin:0 0 .7rem;font-weight:800}.t-list ul{margin:0;padding:0;list-style:none;display:grid;gap:.4rem;font-weight:700}
+.t-list li:before,.plan li:before{content:"";display:inline-block;width:15px;height:15px;margin-right:.55rem;vertical-align:-2px;background:var(--purple);-webkit-mask:var(--tick-mask) center/contain no-repeat;mask:var(--tick-mask) center/contain no-repeat}
+.section{padding:5.5rem 0 1rem}.kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--purple)}
+h2{font-family:var(--head);font-weight:800;font-size:clamp(2rem,4.2vw,3.4rem);letter-spacing:-.02em;line-height:1.02;margin:.4rem 0 2rem}
+.rows .row{display:grid;grid-template-columns:110px 1fr 1.4fr;gap:2rem;align-items:center;padding:1.8rem 0;border-top:2px solid var(--ink);transition:padding .2s,background .2s}
+.rows .row:last-child{border-bottom:2px solid var(--ink)}.rows .row:hover{background:var(--pink-soft);padding-left:1rem}
+.rows .num{font-family:var(--head);font-weight:800;font-size:4.2rem;line-height:1;color:var(--purple)}.rows h3{font-family:var(--head);font-size:2.1rem;margin:0;font-weight:800}.rows p{margin:0;font-size:1.08rem;color:#4f4d5f}
+.plans{display:block}.plan{display:grid;grid-template-columns:1fr .9fr 1.8fr auto;gap:1.6rem;align-items:center;padding:1.5rem 1.6rem;border-radius:22px;background:#fff;border:1px solid #e3e0ee;margin-bottom:.8rem;position:relative;transition:transform .2s,box-shadow .2s}
+.plan:hover{transform:translateX(6px);box-shadow:0 14px 34px rgba(40,38,55,.08)}.plan.feat{background:var(--pink-soft);border-color:var(--purple)}
+.plan h3{font-family:var(--head);font-size:1.25rem;margin:0;font-weight:800}.price{font-family:var(--head);font-weight:800;font-size:2.6rem;margin:0;line-height:1}.price small{font-family:"Nunito Sans",sans-serif;font-size:.8rem;font-weight:700;letter-spacing:0;margin-left:.4em}
+.yearly{margin:.2rem 0 0;font-size:.82rem;color:#6b6980}.plan ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;font-size:.93rem}.plan p.d{grid-column:1/-1;margin:0;font-size:.95rem;color:#4f4d5f}
+.plan .btn{padding:.7rem 1.3rem;font-size:.9rem}
+.flag{position:absolute;top:-11px;left:1.6rem;background:var(--purple);color:#fff;font-size:.68rem;font-weight:800;padding:.2rem .7rem;border-radius:999px;letter-spacing:.04em}
+footer{padding:1rem 0 7rem;font-size:.85rem;color:#6b6980}.foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.foot img{height:28px}
+.sticky{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:20;background:var(--ink);color:#fff;border-radius:999px;padding:.5rem .5rem .5rem 1.4rem;display:flex;align-items:center;gap:1.2rem;box-shadow:0 14px 40px rgba(40,38,55,.35);font-weight:700;font-size:.92rem}
+.sticky .btn{background:var(--pink);color:var(--ink);padding:.65rem 1.2rem;font-size:.9rem}
+.sample-tag{display:none}
+@media (max-width:980px){.bento{grid-template-columns:repeat(2,1fr)}.t-main,.t-chat,.t-stat,.t-models,.t-list{grid-column:span 2;grid-row:auto}.nav-links{display:none}.nav-in{justify-content:space-between}.rows .row{grid-template-columns:70px 1fr}.rows p{grid-column:1/-1}.plan{grid-template-columns:1fr}.sticky span{display:none}}
+@media (prefers-reduced-motion:reduce){.msg{opacity:1;animation:none}.typing{display:none}.chat-top img,.m-track,.m-track2{animation:none}}
+.mq3{position:relative;height:300px;margin:4rem 0 1rem;overflow:hidden}.mq3 .band{position:absolute;left:-5%;width:110%;white-space:nowrap;padding:1.1rem 0;font-family:var(--head);font-weight:800;font-size:clamp(1.6rem,3.6vw,2.6rem)}.mq3 .b1{top:46px;background:var(--ink);color:var(--pink);transform:rotate(-3deg)}.mq3 .b2{top:128px;background:var(--pink);color:var(--ink);transform:rotate(2.2deg)}.mq3 .m-track{display:inline-block;animation:marq 26s linear infinite}.mq3 .m-track2{display:inline-block;animation:marqr 26s linear infinite}.mq3 img{height:1.3em;vertical-align:-.25em;margin:0 .6em}
+.rows .row{grid-template-columns:150px 1fr 1.4fr}.rows .num{font-size:3rem}.rows h3{font-size:1.7rem}h2{font-size:clamp(1.6rem,3.2vw,2.6rem)}.price{font-size:2rem}.plan h3{font-size:1.02rem}.t-main h1{font-size:clamp(1.5rem,2.4vw,2.05rem)}.t-stat b{font-size:3rem}.t-models h3,.t-list h3{font-size:1.05rem}.chat-top b{font-size:.9rem}
+.sample-tag{position:fixed;right:12px;bottom:12px;z-index:99;font:600 12px/1 system-ui,sans-serif;background:#282637;color:#fff;padding:8px 12px;border-radius:999px;opacity:.85}
+</style></head><body>
+
+<div class="banner">Founders offer: 50% off every plan for life with code FOUNDER50. Closes 30 November. <a href="#">See the offer</a></div>
+<header class="nav"><div class="container nav-in"><img src="../../Logos/SVGs/btv-logo-transparent.svg" alt="Botterverse"><nav class="nav-links"><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Bot Market</a><a href="#">Affiliates</a><a href="#">FAQ</a><a href="#">Support</a></nav><a class="btn small" href="#">Botters Lab</a></div></header>
+<div class="container">
+ <div class="display"><span>Build.</span><span>Share.</span><span>Sell.</span></div>
+ <div class="bento">
+  <div class="tile t-main"><span class="eyebrow">For coaches, consultants, course creators and anyone with an audience</span><h1>Who needs custom GPTs when you can <em>build bots you control</em>?</h1><p class="lede">Build a bot. Share it. Sell access to it. You choose the model and set the price. No code.</p><a class="btn" href="#">Take Me To The Botterverse</a><p class="note">Plans from $5 a month.</p></div>
+  <div class="tile t-chat"><div class="chat"><div class="chat-top"><img src="../../Logos/SVGs/btv-bot-icon.svg" alt=""><div><b>Ask Maya</b><small>A bot by Maya Lopez</small></div><span class="chip">Claude</span></div>
+   <div class="chat-body">
+    <div class="msg user m1">Can I move my sessions to a Thursday?</div>
+    <div class="typing"><i></i><i></i><i></i></div>
+    <div class="msg bot m2">Yes. Thursday slots are open from 10:00 to 16:00. I can send you the booking link now.</div>
+    <div class="msg user m3">Please do. And what does a package cost?</div>
+    <div class="typing two"><i></i><i></i><i></i></div>
+    <div class="msg bot m4">The standard package is $49 for ten sessions. You are talking to an AI assistant, so for anything special my coach will follow up.</div>
+   </div>
+   <div class="chat-foot"><span>Type a message</span><b>Send</b></div></div></div>
+  <div class="tile t-stat"><b>5</b><span>plans, from $5 a month. Every one includes everything in the one before.</span></div>
+  <div class="tile t-models"><h3>You choose the model</h3><div class="marq"><div><span>Claude</span><span>GPT</span><span>Gemini</span><span>Grok</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>Grok</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>Grok</span><span>Claude</span><span>GPT</span><span>Gemini</span><span>Grok</span></div></div></div>
+  <div class="tile t-list"><h3>No code</h3><ul><li>Plain language instructions</li><li>Your own files</li><li>Your price</li></ul></div>
+ </div>
+ <section class="section"><span class="kicker">The motto in three steps</span><h2>Three things you can do today</h2><div class="rows"><div class="row"><div class="num">01</div><h3>Build</h3><p>Write what the bot should do in plain language. Add your files. Choose Claude, GPT, Gemini or Grok.</p></div><div class="row"><div class="num">02</div><h3>Share</h3><p>Send a link or paste one snippet into your site. Visitors are told they are talking to an AI before the first reply.</p></div><div class="row"><div class="num">03</div><h3>Sell</h3><p>Charge a one-time price for access. Set a message cap with a top-up. Add a money-back guarantee if you want one.</p></div></div></section>
+ <section class="section"><span class="kicker">Plans</span><h2>Pick a plan. Build your first bot.</h2><div class="plans"><div class="plan"><div><h3>Apprentice Botter</h3><p class="yearly">or $50 per year</p></div><p class="price">$5<small> per month</small></p><ul><li>1 bot</li><li>300 credits each month</li><li>5 safety scans each month</li></ul><a class="btn" href="#">Choose Apprentice</a><p class="d">Build and share bots with everyday AI models.</p></div><div class="plan feat"><span class="flag">Selling starts here</span><div><h3>Novice Botter</h3><p class="yearly">or $470 per year</p></div><p class="price">$47<small> per month</small></p><ul><li>20 bots</li><li>2,000 credits each month</li><li>40 safety scans each month</li></ul><a class="btn" href="#">Choose Novice</a><p class="d">Every model. Sell access with a paywall.</p></div><div class="plan"><div><h3>Expert Botter</h3><p class="yearly">or $970 per year</p></div><p class="price">$97<small> per month</small></p><ul><li>50 bots</li><li>5,000 credits each month</li><li>100 safety scans each month</li></ul><a class="btn" href="#">Choose Expert</a><p class="d">See what your visitors ask and when.</p></div><div class="plan"><div><h3>Pro Botter</h3><p class="yearly">or $1,970 per year</p></div><p class="price">$197<small> per month</small></p><ul><li>Unlimited bots</li><li>12,000 credits each month</li><li>250 safety scans each month</li></ul><a class="btn" href="#">Choose Pro</a><p class="d">Your own look. Sell bots on Bot Market.</p></div><div class="plan"><div><h3>Master Botter</h3><p class="yearly">or $2,970 per year</p></div><p class="price">$297<small> per month</small></p><ul><li>Unlimited bots</li><li>20,000 credits each month</li><li>350 safety scans each month</li></ul><a class="btn" href="#">Choose Master</a><p class="d">Test two versions and see what wins.</p></div></div></section>
+</div>
+<div class="mq3"><div class="band b1"><div class="m-track">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt=""></div></div><div class="band b2"><div class="m-track2">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt="">Build it. Share it. Sell it.<img src="../../Logos/SVGs/btv-bot-icon.svg" alt=""></div></div></div>
+<footer><div class="container foot"><img src="../../Logos/SVGs/btv-logo-transparent.svg" alt="Botterverse"><span>Prices are in US dollars. Botterverse does not guarantee income.</span></div></footer>
+<div class="sticky"><span>Build it. Share it. Sell it.</span><a class="btn" href="#">Take Me To The Botterverse</a></div>
+
+<div class="sample-tag">Design sample: H3. Syne, crossed bands</div>
+</body></html>

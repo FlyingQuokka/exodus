@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A. Quiet pink</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.6}img{max-width:100%}a{color:inherit}
+.container{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%}
+:root{--bg:#fff;--surface:#fff;--ink:#282637;--text:#282637;--text-2:#4f4d5f;--muted:#6b6980;--border:#e3e0ee;--border-strong:#cfcbe0;--accent-text:#984f92;--accent-soft:#ffe0fb;--tint:#f8f7ff;--tint-2:#f1f1f8;--nav-bg:rgba(255,255,255,.92);--tick-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 10.5l4 4 8-9' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");--font-head:"Nunito Sans",sans-serif;--font-body:"Nunito Sans",sans-serif;--h-weight:800;--h3-weight:800;--h-track:-.02em;--r-btn:12px;--r-card:14px;--r-ico:12px;--r-field:8px;--btn-bg:#984f92;--btn-fg:#fff;--banner-bg:#282637;--banner-fg:#f8f7ff;--hero-bg:linear-gradient(180deg,#fff 0,#f8f7ff 100%);--cta-bg:#282637;--cta-fg:#fff;--cta-btn-bg:#dc8fd5;--cta-btn-fg:#391d37;--shadow:0 1px 2px rgba(40,38,55,.05),0 6px 18px rgba(40,38,55,.05);--shadow-lg:0 20px 50px rgba(40,38,55,.12);--shadow-feat:0 10px 28px rgba(152,79,146,.18)}
+body{font-family:var(--font-body);color:var(--text);background:var(--bg)}
+.banner{background:var(--banner-bg);color:var(--banner-fg);text-align:center;font-size:.9rem;padding:.55rem 1rem}
+.banner a{color:inherit;font-weight:700}
+header.nav{background:var(--nav-bg);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+.nav-in{display:flex;align-items:center;gap:2rem;height:68px}
+.nav-in img{height:34px;display:block}
+.nav-links{display:flex;gap:1.6rem;margin-inline:auto}
+.nav-links a{text-decoration:none;font-size:.95rem;color:var(--text-2);font-weight:600}
+.nav-links a:hover{color:var(--accent-text)}
+.btn{display:inline-block;background:var(--btn-bg);color:var(--btn-fg);padding:.85rem 1.55rem;border-radius:var(--r-btn);font-weight:700;text-decoration:none;font-family:var(--font-body);border:0;transition:filter .15s}
+.btn:hover{filter:brightness(1.08)}
+.btn.small{padding:.5rem 1.1rem;font-size:.9rem}
+.hero{padding:4.5rem 0 4rem;background:var(--hero-bg)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center}
+.eyebrow{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent-text);font-weight:800;margin:0 0 1rem}
+h1,h2,h3{font-family:var(--font-head);color:var(--ink);margin:0}
+h1{font-weight:var(--h-weight);font-size:clamp(2.2rem,4.2vw,3.5rem);line-height:1.1;letter-spacing:var(--h-track);margin-bottom:1.2rem}
+h2{font-weight:var(--h-weight);font-size:clamp(1.7rem,2.8vw,2.3rem);line-height:1.15;letter-spacing:var(--h-track);text-align:center;margin-bottom:.6rem}
+.lede{font-size:1.15rem;color:var(--text-2);max-width:34rem;margin:0 0 1.8rem}
+.btn-row{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.btn-row .link{font-weight:700;color:var(--accent-text)}
+.note{font-size:.9rem;color:var(--muted);margin:1rem 0 0}
+.section{padding:4.5rem 0}.section.tint{background:var(--tint)}
+.sub{text-align:center;color:var(--text-2);max-width:40rem;margin:0 auto}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-card);box-shadow:var(--shadow);padding:1.7rem}
+.card h3{font-size:1.2rem;font-weight:var(--h3-weight);margin:.9rem 0 .4rem}
+.card p{margin:0;color:var(--text-2)}
+.ico{width:48px;height:48px;border-radius:var(--r-ico);background:var(--accent-soft);color:var(--accent-text);display:grid;place-items:center}
+.plans{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:2.6rem;align-items:stretch}
+.plan{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-card);padding:1.4rem;display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
+.plan.feat{border:2px solid var(--accent-text);box-shadow:var(--shadow-feat)}
+.plan .flag{position:absolute;top:-12px;left:1.2rem;background:var(--accent-text);color:#fff;font-size:.72rem;font-weight:800;padding:.2rem .7rem;border-radius:999px;letter-spacing:.03em}
+.plan h3{font-size:1rem;font-weight:var(--h3-weight)}
+.price{font-family:var(--font-head);font-weight:var(--h-weight);font-size:2.2rem;color:var(--ink);margin:.5rem 0 0;line-height:1.1}
+.price small{font-size:.9rem;font-weight:600;color:var(--text-2);font-family:var(--font-body)}
+.yearly{font-size:.85rem;color:var(--muted);margin:0 0 1rem}
+.plan ul{list-style:none;padding:0;margin:0 0 1rem;display:grid;gap:.45rem;font-size:.95rem;color:var(--text-2)}
+.plan li{display:flex;gap:.55rem;align-items:flex-start}
+.plan li:before{content:"";flex:none;width:16px;height:16px;margin-top:.28rem;background:var(--accent-text);-webkit-mask:var(--tick-mask) center/contain no-repeat;mask:var(--tick-mask) center/contain no-repeat}
+.plan p.d{font-size:.92rem;color:var(--text-2);margin:0 0 1.2rem}
+.plan .btn{margin-top:auto;text-align:center;font-size:.92rem;padding:.7rem 1rem}
+.compare{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-card);overflow:hidden;font-size:.94rem}
+.compare th,.compare td{padding:.8rem 1rem;text-align:center;border-bottom:1px solid var(--border)}
+.compare thead th{background:var(--tint-2);font-family:var(--font-head);color:var(--ink);font-size:.9rem}
+.compare tbody th{text-align:left;font-weight:600;color:var(--ink)}
+.compare tr:last-child th,.compare tr:last-child td{border-bottom:0}
+.compare td{color:var(--text-2)}.tick{color:var(--accent-text);vertical-align:middle}.dash{color:#b9b6c9}
+.cta{background:var(--cta-bg);color:var(--cta-fg);border-radius:var(--r-card);padding:3.4rem 2rem;text-align:center;margin:0 auto}
+.cta h2{color:var(--cta-fg);margin-bottom:.4rem}.cta p{margin:0 0 1.6rem;opacity:.85}
+.cta .btn{background:var(--cta-btn-bg);color:var(--cta-btn-fg)}
+footer{padding:2.4rem 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--border);margin-top:1rem}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}.foot img{height:28px}
+.mock{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-card);box-shadow:var(--shadow-lg);overflow:hidden;max-width:470px;margin-left:auto}
+.mock-bar{display:flex;align-items:center;gap:6px;padding:.8rem 1rem;background:var(--tint-2);border-bottom:1px solid var(--border);font-size:.82rem;color:var(--muted)}
+.mock-bar i{width:10px;height:10px;border-radius:50%;background:#d8d4e6}.mock-bar span{margin-left:.6rem;font-weight:700;color:var(--ink)}
+.mock-body{padding:1.2rem;display:grid;gap:.9rem}.mock-row label{display:block;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.mock .field{border:1px solid var(--border-strong);border-radius:var(--r-field);padding:.55rem .8rem;font-size:.92rem;background:#fff;color:var(--ink)}.mock .field.tall{min-height:4.2rem;color:var(--text-2)}
+.mock-row.two{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.mock-foot{display:flex;justify-content:space-between;align-items:center}
+.pill{background:var(--accent-soft);color:var(--accent-text);font-size:.78rem;font-weight:800;padding:.25rem .7rem;border-radius:999px}
+.mock-btn{background:var(--btn-bg);color:var(--btn-fg);font-weight:700;font-size:.9rem;padding:.5rem 1.2rem;border-radius:var(--r-btn)}
+.mascot{position:absolute;width:92px;right:-8px;bottom:-62px;filter:drop-shadow(0 8px 14px rgba(60,30,60,.22))}
+.hero-art{position:relative;padding-bottom:40px}
+@media (max-width:980px){.hero-grid,.grid3{grid-template-columns:1fr}.plans{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.nav-in{justify-content:space-between}.mock{margin:0}}
+@media (max-width:560px){.plans{grid-template-columns:1fr}}
+
+.sample-tag{position:fixed;right:12px;bottom:12px;z-index:99;font:600 12px/1 system-ui,sans-serif;background:#282637;color:#fff;padding:8px 12px;border-radius:999px;opacity:.85}
+</style></head><body>
+
+<div class="banner">Founders offer: 50% off every plan for life with code FOUNDER50. Closes 30 November. <a href="#">See the offer</a></div>
+<header class="nav"><div class="container nav-in"><img src="../../Logos/SVGs/btv-logo-transparent.svg" alt="Botterverse"><nav class="nav-links"><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Bot Market</a><a href="#">Affiliates</a><a href="#">FAQ</a><a href="#">Support</a></nav><a class="btn small" href="#">Botters Lab</a></div></header>
+<section class="hero"><div class="container hero-grid">
+  <div><p class="eyebrow">For coaches, consultants, course creators and anyone with an audience</p><h1>Who needs custom GPTs when you can build bots you control?</h1><p class="lede">Build a bot. Share it. Sell access to it. You choose the model and set the price. No code.</p>
+  <div class="btn-row"><a class="btn" href="#">Take Me To The Botterverse</a><a class="link" href="#">See how it works</a></div><p class="note">Plans from $5 a month.</p></div>
+  <div class="hero-art"><div class="mock" aria-hidden="true">
+  <div class="mock-bar"><i></i><i></i><i></i><span>Bot builder</span></div>
+  <div class="mock-body">
+    <div class="mock-row"><label>Name</label><div class="field">Ask Maya</div></div>
+    <div class="mock-row"><label>Model</label><div class="field">Claude</div></div>
+    <div class="mock-row"><label>Instructions</label><div class="field tall">Greet people warmly. Answer from my notes. Keep replies short.</div></div>
+    <div class="mock-row two"><div><label>Access</label><div class="field">One-time $49</div></div><div><label>Message cap</label><div class="field">500 + top-up</div></div></div>
+    <div class="mock-foot"><span class="pill">Public</span><span class="mock-btn">Publish</span></div>
+  </div>
+</div><img class="mascot" src="../../Logos/SVGs/btv-bot-icon.svg" alt=""></div>
+</div></section>
+<section class="section"><div class="container"><h2>Three things you can do today</h2><div class="grid3"><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2.2"/><circle cx="8" cy="17" r="2.2"/></svg></div><h3>Build</h3><p>Write what the bot should do in plain language. Add your files. Choose Claude, GPT, Gemini or Grok.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div><h3>Share</h3><p>Send a link or paste one snippet into your site. Visitors are told they are talking to an AI before the first reply.</p></div><div class="card"><div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12.5L12.5 20a2 2 0 0 1-2.8 0L3 13.3V4h9.3L20 11.7a1 1 0 0 1 0 .8z"/><circle cx="8" cy="8" r="1.4"/></svg></div><h3>Sell</h3><p>Charge a one-time price for access. Set a message cap with a top-up. Add a money-back guarantee if you want one.</p></div></div></div></section>
+<section class="section tint" id="pricing"><div class="container"><h2>Pick a plan. Build your first bot.</h2>
+<p class="sub">Five plans. Each one includes everything in the one before. Pay monthly or pay annually and have two months free.</p>
+<div class="plans"><div class="plan"><h3>Apprentice Botter</h3><p class="price">$5 <small>per month</small></p><p class="yearly">or $50 per year</p><ul><li>1 bot</li><li>300 credits each month</li><li>5 safety scans each month</li></ul><p class="d">Build and share bots with everyday AI models.</p><a class="btn" href="#">Choose Apprentice</a></div><div class="plan feat"><span class="flag">Selling starts here</span><h3>Novice Botter</h3><p class="price">$47 <small>per month</small></p><p class="yearly">or $470 per year</p><ul><li>20 bots</li><li>2,000 credits each month</li><li>40 safety scans each month</li></ul><p class="d">Every model. Sell access with a paywall.</p><a class="btn" href="#">Choose Novice</a></div><div class="plan"><h3>Expert Botter</h3><p class="price">$97 <small>per month</small></p><p class="yearly">or $970 per year</p><ul><li>50 bots</li><li>5,000 credits each month</li><li>100 safety scans each month</li></ul><p class="d">See what your visitors ask and when.</p><a class="btn" href="#">Choose Expert</a></div><div class="plan"><h3>Pro Botter</h3><p class="price">$197 <small>per month</small></p><p class="yearly">or $1,970 per year</p><ul><li>Unlimited bots</li><li>12,000 credits each month</li><li>250 safety scans each month</li></ul><p class="d">Your own look. Sell bots on Bot Market.</p><a class="btn" href="#">Choose Pro</a></div><div class="plan"><h3>Master Botter</h3><p class="price">$297 <small>per month</small></p><p class="yearly">or $2,970 per year</p><ul><li>Unlimited bots</li><li>20,000 credits each month</li><li>350 safety scans each month</li></ul><p class="d">Test two versions and see what wins.</p><a class="btn" href="#">Choose Master</a></div></div>
+<div style="height:3.4rem"></div><h2>What each plan includes</h2><div style="height:1.4rem"></div><div class="table-wrap"><table class="compare"><thead><tr><th></th><th>Apprentice</th><th>Novice</th><th>Expert</th><th>Pro</th><th>Master</th></tr></thead><tbody><tr><th scope="row">Build bots and share by link or embed</th><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">AI models</th><td>Everyday models</td><td>Every model</td><td>Every model</td><td>Every model</td><td>Every model</td></tr><tr><th scope="row">Paywall with message top-ups</th><td><span class="dash">-</span></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">Affiliate programme</th><td><span class="dash">-</span></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">Deeper analytics</th><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">Sell on Bot Market with your own licence terms</th><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">A/B tests</th><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><span class="dash">-</span></td><td><svg class="tick" viewBox="0 0 20 20" width="18" height="18" aria-label="Included"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></td></tr><tr><th scope="row">Selling fee</th><td>Not selling</td><td>5% + 30 cents</td><td>5% + 30 cents</td><td>3% + 30 cents</td><td>3% + 30 cents</td></tr></tbody></table></div></div></section>
+<section class="section"><div class="container"><div class="cta"><h2>Build a bot. Share it. Sell access.</h2><p>Start with one bot on the Apprentice plan and grow from there.</p><a class="btn" href="#">Take Me To The Botterverse</a></div></div></section>
+<footer><div class="container foot"><img src="../../Logos/SVGs/btv-logo-transparent.svg" alt="Botterverse"><span>Prices are in US dollars. Botterverse does not guarantee income.</span></div></footer>
+
+<div class="sample-tag">Design sample: A. Quiet pink</div>
+</body></html>

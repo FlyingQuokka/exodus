@@ -71,6 +71,7 @@ After a wording change in `Emails\build`, run `python tools\build-email-data.py`
 
 ## 6. Go-live plan (the order the owner agreed)
 
+0. **Advanced Ads plugin.** Install and activate Advanced Ads 2.x on the live site before the sync. The sync then creates the Founders banner and the `top-of-page` slot from `btv-sync\dataanners.json`. Without the plugin the sync skips banners and the header slot shows nothing. The Founders banner ends on its own at 23:59:59 on 30 November (site time zone).
 0. **Home page placeholders.** The home page (`sitetv-theme\pages\home.html`) has two boxes for live bots: `btv-demo` and `btv-faqbot`. Each holds placeholder text until the app agent's one script element goes inside it. Remove the placeholder text when the script is in. Also put `favicon.ico` in the live web root (the repository does not carry it).
 1. **Remove the error screen preview.** Delete the block marked "REMOVE THIS BLOCK BEFORE GO LIVE" in `site\btv-theme\inc\die.php` (the `btv_preview_die` hook). The owner asked for this. A memory note also records it.
 2. **New repository `botterversewp`.** The owner wants it separate so it can be passed to a future buyer. Agreed design:

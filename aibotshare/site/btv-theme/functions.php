@@ -16,6 +16,7 @@ require_once __DIR__ . '/inc/login.php';
 require_once __DIR__ . '/inc/die.php';
 require_once __DIR__ . '/inc/seo.php';
 require_once __DIR__ . '/inc/forms.php';
+require_once __DIR__ . '/inc/banners.php';
 
 add_action('after_setup_theme', function () {
     add_theme_support('title-tag');

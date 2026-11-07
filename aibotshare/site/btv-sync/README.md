@@ -23,6 +23,7 @@ Link or copy this folder to `wp-content\plugins\btv-sync` and activate it. The p
 | `data\fluentcart.json` | Which FluentCart emails carry our wording and which stock ones are switched off |
 | `data\funnels\*.json` | One automation per file |
 | `data\forms.json` | The Fluent Forms lead capture form and its FluentCRM feed. The form id is kept in the option `btv_lead_form_id` |
+| `dataanners.json` | Banner slots and banners for the Advanced Ads plugin. See "Banners" below |
 | `data\campaigns.json` | Draft broadcast campaigns. Never sent by the sync |
 | `data\settings.json` | FluentCRM experimental features (`abandoned_cart` is `yes`) and the reply-to address for every FluentCRM email (`support@botterverse.com`) |
 | `data\affiliate-emails.json` | FluentAffiliate emails to switch off, because the app sends its own commission and payout emails |
@@ -31,6 +32,20 @@ Link or copy this folder to `wp-content\plugins\btv-sync` and activate it. The p
 untime.php` |
 | `data\assets\btv-logo-transparent.png` | Uploaded to the media library once. An earlier `btv-email-logo` upload is removed |
 | `templates\email.html` | The branded email wrapper |
+
+## Banners
+
+Needs the Advanced Ads plugin (2.x) installed and active on the site. The plugin is not in this repository. If it is not active the sync says so and skips this step.
+
+`dataanners.json` lists slots and banners. Each has a fixed `key`. The sync finds them by that key (kept in post meta `_btv_key`) and never by ID, so local and live can differ.
+
+- A **slot** is a place on the page. The header holds the slot `top-of-page` (`[the_ad_placement id="top-of-page"]` in `parts/header.html`). A slot's `banner` names the banner it shows. Change that name to change which banner shows there.
+- A **banner** has a `title`, `html` (use the theme's classes, for example `band`), `active`, `pages` and `ends`. `pages` is `"all"` or a list of page slugs such as `["home", "pricing"]`. `ends` is a date and time in the site's time zone. Leave it out for no end date.
+- The file is the single source of truth. Each run puts back any change made in the admin to a listed banner or slot. Banners made by hand in the admin are never touched. Nothing is deleted. To switch a banner off set `"active": false`.
+- A new banner starts as a draft. A banner whose file says `active` is published only on a run with `--publish`. `"active": false` makes it a draft on any run.
+- To add another slot, put a shortcode `[the_ad_placement id="<key>"]` where it should appear (a Shortcode block in a template part or page) and add the slot to the file.
+
+Tested locally on 7 November 2026: first run creates the slot and banner as a draft. A run with `--publish` publishes it. A repeat run changes nothing. A change made in the admin is put back. Setting `pages` to `["home"]` limits the banner to the home page and setting it back to `"all"` clears the limit. `"active": false` hides it everywhere.
 
 ## An automation file
 

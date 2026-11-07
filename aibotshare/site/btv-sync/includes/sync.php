@@ -58,6 +58,7 @@ class BTV_Sync
         $this->settings();
         $this->affiliateEmails();
         $this->docsTemplates();
+        $this->banners();
     }
 
     /**
@@ -142,6 +143,119 @@ class BTV_Sync
             }
         }
         $this->say('settings: ' . ($changed ? implode(', ', $changed) : 'no change'));
+    }
+
+    /**
+     * Banners and the slots they sit in, kept in Advanced Ads. The file is the single source of truth for
+     * everything it lists: a later run puts back any change made in the admin to a listed banner or slot.
+     * Banners and slots made by hand are never touched. Nothing is deleted. To switch a banner off set "active": false.
+     * Found again by the key kept in post meta `_btv_key`, never by ID.
+     * A new banner starts as a draft. A banner whose file says active is published only on a run with --publish.
+     */
+    private function banners()
+    {
+        $path = BTV_SYNC_DIR . '/data/banners.json';
+        if (!file_exists($path)) {
+            return;
+        }
+        if (!function_exists('wp_advads_create_new_ad') || !function_exists('wp_advads_create_new_placement')) {
+            $this->say('banners: Advanced Ads 2.x is not active, skipped');
+            return;
+        }
+        $def = $this->readJson($path);
+        $zone = wp_timezone();
+
+        $find = function ($postType, $key) {
+            $found = get_posts([
+                'post_type' => $postType, 'post_status' => 'any', 'numberposts' => 1, 'fields' => 'ids',
+                'meta_key' => '_btv_key', 'meta_value' => $key,
+            ]);
+            return $found ? (int) $found[0] : 0;
+        };
+
+        $adIds = [];
+        foreach ($def['banners'] as $b) {
+            $ad = null;
+            $id = $find('advanced_ads', $b['key']);
+            if ($id) {
+                $ad = wp_advads_get_ad($id);
+            }
+            $isNew = !$ad;
+            if ($isNew) {
+                $ad = wp_advads_create_new_ad('plain');
+            }
+
+            // The page choice: "all" or a list of page slugs, turned into this site's page IDs.
+            $conditions = [];
+            if (isset($b['pages']) && is_array($b['pages'])) {
+                $ids = [];
+                foreach ($b['pages'] as $slug) {
+                    $page = get_page_by_path($slug, OBJECT, 'page');
+                    if ($page) {
+                        $ids[] = (int) $page->ID;
+                    } else {
+                        $this->say('banner ' . $b['key'] . ': no page with the slug ' . $slug);
+                    }
+                }
+                $conditions = [['type' => 'postids', 'operator' => 'is', 'value' => $ids]];
+            }
+
+            $ends = 0;
+            if (!empty($b['ends'])) {
+                $date = date_create($b['ends'], $zone);
+                $ends = $date ? $date->getTimestamp() : 0;
+            }
+
+            $status = $isNew ? 'draft' : $ad->get_status();
+            if (empty($b['active'])) {
+                $status = 'draft';
+            } elseif ($this->publish) {
+                $status = 'publish';
+            }
+            $status = in_array($status, ['draft', 'publish'], true) ? $status : 'draft';
+
+            $changed = [];
+            if ($isNew || $ad->get_title() !== $b['title']) { $ad->set_prop('title', $b['title']); $changed[] = 'title'; }
+            if ($isNew || $ad->get_content() !== $b['html']) { $ad->set_prop('content', $b['html']); $changed[] = 'html'; }
+            if ($isNew || $ad->get_status() !== $status) { $ad->set_prop('status', $status); $changed[] = 'status ' . $status; }
+            if ($isNew || (int) $ad->get_expiry_date() !== $ends) { $ad->set_prop('expiry_date', $ends ?: false); $changed[] = 'end date'; }
+            if ($isNew || wp_json_encode($ad->get_display_conditions()) !== wp_json_encode($conditions)) { $ad->set_display_conditions($conditions); $changed[] = 'pages'; }
+
+            if ($changed) {
+                $id = $ad->save();
+            }
+            update_post_meta($id, '_btv_key', $b['key']);
+            $adIds[$b['key']] = $id;
+            $this->say('banner ' . $b['key'] . ': ' . ($isNew ? 'created (' . implode(', ', $changed) . ')' : ($changed ? 'updated ' . implode(', ', $changed) : 'no change')));
+        }
+
+        foreach ($def['slots'] as $s) {
+            $placement = null;
+            $id = $find('advanced_ads_plcmnt', $s['key']);
+            if ($id) {
+                $placement = wp_advads_get_placement($id);
+            }
+            $isNew = !$placement;
+            if ($isNew) {
+                $placement = wp_advads_create_new_placement('default');
+            }
+            $item = (!empty($s['banner']) && isset($adIds[$s['banner']])) ? 'ad_' . $adIds[$s['banner']] : '';
+            if (!empty($s['banner']) && !isset($adIds[$s['banner']])) {
+                $this->say('slot ' . $s['key'] . ': the banner ' . $s['banner'] . ' is not in the file, slot left empty');
+            }
+            $status = $item ? 'publish' : 'draft';
+
+            $changed = [];
+            if ($isNew || $placement->get_title() !== $s['title']) { $placement->set_prop('title', $s['title']); $changed[] = 'title'; }
+            if ($isNew || $placement->get_slug() !== $s['key']) { $placement->set_prop('slug', $s['key']); $changed[] = 'id'; }
+            if ($isNew || $placement->get_item() !== $item) { $placement->set_item($item); $changed[] = 'banner'; }
+            if ($isNew || $placement->get_status() !== $status) { $placement->set_prop('status', $status); $changed[] = 'status ' . $status; }
+            if ($changed) {
+                $id = $placement->save();
+            }
+            update_post_meta($id, '_btv_key', $s['key']);
+            $this->say('slot ' . $s['key'] . ': ' . ($isNew ? 'created (' . implode(', ', $changed) . ')' : ($changed ? 'updated ' . implode(', ', $changed) : 'no change')));
+        }
     }
 
     /**

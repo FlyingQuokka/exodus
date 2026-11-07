@@ -1,0 +1,15 @@
+{
+  "slots": [
+    {"key": "top-of-page", "title": "Top of page", "banner": "founders-offer"}
+  ],
+  "banners": [
+    {
+      "key": "founders-offer",
+      "title": "Founders offer banner",
+      "active": true,
+      "pages": "all",
+      "ends": "2026-11-30 23:59:59",
+      "html": "<div class=\"band\">Founders offer: 50% off every plan for life with code FOUNDER50. Closes 30 November. <a href=\"/founders/\">See the offer</a></div>"
+    }
+  ]
+}

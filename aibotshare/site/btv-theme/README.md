@@ -23,7 +23,7 @@ Do not install on a live server until the owner approves. Page IDs differ per en
 - `assets/css/integrations/`: FluentCart, Fluent Forms, Fluent Support, Better Docs and the WordPress login. CSS only.
 - `templates/`: front-page, page, page-landing, page-wide, single, index, home, archive, search, 404.
 - `parts/`: header and footer. Both are dynamic blocks (`inc/header-footer.php`). The header changes when signed in. The footer's Legal column shows the Footer navigation post (found by title). No credit row.
-- `patterns/`: hero, cards, accordion, pricing table, CTA band, step list, email capture and the Founders band. To end the Founders offer remove the one pattern line in `parts/header.html`.
+- `patterns/`: hero, cards, accordion, pricing table, CTA band, step list and email capture. The header holds a banner slot (see `inc/banners.php`). Banners are managed in Advanced Ads and set up by the sync from `btv-sync/data/banners.json`. To end the Founders offer set `"active": false` on its banner in that file.
 - `pages/`: Home, Pricing, How it works, Affiliates, FAQ, Support, Feedback, Founders offer and Bot Market as block markup. Each design section is a Custom HTML block, so edit the files and run the installer, not the Site Editor.
 - `inc/domain.php`: the `{{domain}}` and `{{theme}}` token filter and `btv_lab_url()`.
 - `inc/seo.php`: the Articles page is noindex and the three Yoast fields are registered for pages.

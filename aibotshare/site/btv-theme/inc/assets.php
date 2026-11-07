@@ -28,7 +28,12 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_style('btv-' . $name, btv_asset($rel), ['btv-theme'], btv_asset_version($rel));
     }
 
-    wp_enqueue_script('btv-site', btv_asset('js/btv-site.js'), [], btv_asset_version('js/btv-site.js'), ['in_footer' => true, 'strategy' => 'defer']);
+    // The home page has its own stylesheet and two display fonts, loaded on that page only.
+    if (is_front_page()) {
+        wp_enqueue_style('btv-home', btv_asset('css/btv-home.css'), ['btv-theme'], btv_asset_version('css/btv-home.css'));
+    }
+
+    wp_enqueue_script('btv-site',btv_asset('js/btv-site.js'), [], btv_asset_version('js/btv-site.js'), ['in_footer' => true, 'strategy' => 'defer']);
 
     // The picture set draws the ten illustrations. Load it only on pages that use one.
     $post = get_post();

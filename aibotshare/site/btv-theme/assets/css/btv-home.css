@@ -1,0 +1,156 @@
+/* Home page only. Every rule starts with .hm so nothing here can touch another page.
+   Two display fonts are used here and nowhere else: Nunito Black for the motto and M PLUS Rounded 1c for the sub-headings. */
+
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 900; font-display: swap; src: url('../fonts/btv-nunito-black.woff2') format('woff2'); }
+@font-face { font-family: 'M PLUS Rounded 1c'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/btv-m-plus-rounded-1c.woff2') format('woff2'); }
+
+.hm { --hm-ink: #282637; --hm-purple: #984f92; --hm-pink: #dc8fd5; --hm-pinksoft: #ffe0fb; --hm-cyansoft: #d4f6f8; --hm-lilac: #ebedfc; --hm-line: #e3e0ee;
+  --hm-head: 'M PLUS Rounded 1c', 'Baloo 2', system-ui, sans-serif; --hm-motto: 'Nunito', 'Baloo 2', system-ui, sans-serif; color: var(--hm-ink); }
+.hm h2 { font-family: var(--hm-head); font-weight: 800; color: var(--hm-ink); text-align: center; font-size: clamp(1.8rem, 3.8vw, 3.1rem); letter-spacing: -.015em; line-height: 1.05; margin: .4rem 0 2rem; }
+.hm h3 { font-family: var(--hm-head); font-weight: 800; color: var(--hm-ink); letter-spacing: -.01em; }
+.hm-sec { padding-top: 5rem; }
+.hm-lead { max-width: 44rem; margin: -1rem auto 2rem; text-align: center; font-size: 1.12rem; color: #4f4d5f; }
+
+/* Buttons */
+.hm-btn { display: inline-block; background: var(--hm-purple); color: #fff; font-family: var(--font-body); font-weight: 800; font-size: 1.15rem; line-height: 1.2; padding: .9rem 1.6rem; border-radius: 999px; text-decoration: none; text-align: center; transition: transform .15s, background .15s; }
+.hm-btn:hover { background: var(--hm-ink); color: #fff; transform: translateY(-2px); }
+
+/* Motto and tiles */
+.hm-top { padding-top: 2.4rem; }
+.hm-display-wrap { container-type: inline-size; margin: 0 0 1.8rem; }
+.hm-display { font-family: var(--hm-motto); font-weight: 900; font-size: calc(100cqw / 11.3); letter-spacing: -.02em; line-height: 1; display: flex; justify-content: space-between; gap: 0 .2em; white-space: nowrap; margin: 0; }
+.hm-display span:nth-child(1) { color: var(--hm-ink); } .hm-display span:nth-child(2) { color: var(--hm-purple); } .hm-display span:nth-child(3) { color: var(--hm-pink); }
+.hm-bento { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: minmax(170px, auto); gap: 1rem; }
+.hm-tile { border-radius: 28px; padding: 1.5rem; position: relative; overflow: hidden; }
+.hm-main { grid-column: span 3; grid-row: span 2; background: var(--hm-ink); color: #fff; display: flex; flex-direction: column; justify-content: center; padding: .9rem 2rem; }
+.hm-eyebrow { font-size: .95rem; line-height: 1.4; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; color: var(--hm-pink); }
+.hm-main h1 { font-family: var(--hm-head); font-weight: 800; font-size: clamp(1.7rem, 3vw, 2.6rem); line-height: 1.1; letter-spacing: -.02em; margin: .5rem 0 .8rem; color: #fff; }
+.hm-main h1 em { font-style: normal; color: #c27bbb; }
+.hm-main .hm-lede { color: #e6e4f2; font-size: 1.22rem; margin: 0 0 1.1rem; max-width: 34rem; }
+.hm-main .hm-btn { align-self: center; }
+
+/* Example chat */
+.hm-chat-tile { grid-column: span 3; grid-row: span 2; display: grid; padding: 0; overflow: visible; }
+.hm-chat { background: #fff; color: var(--hm-ink); border: 1px solid var(--hm-purple); border-radius: 22px; box-shadow: 0 18px 44px rgba(152, 79, 146, .16); overflow: hidden; display: flex; flex-direction: column; height: 100%; font-family: var(--font-body); }
+.hm-chat-top { display: flex; align-items: center; gap: .7rem; padding: .7rem 1.1rem; border-bottom: 1px solid var(--hm-line); }
+.hm-chat-top img.bot { width: 38px; height: 38px; animation: hm-float 4s ease-in-out infinite; }
+.hm-chat-top b { font-family: var(--hm-head); font-size: 1.25rem; line-height: 1.15; font-weight: 800; }
+.hm-chat-top img.seal { margin-left: auto; width: 56px; height: 56px; margin-block: -6px; }
+.hm-chat-body { flex: 1; padding: .8rem; display: grid; gap: .5rem; align-content: start; }
+.hm-msg { max-width: 86%; padding: .55rem .8rem; border-radius: 16px; font-size: .88rem; line-height: 1.5; opacity: 0; animation: hm-pop .5s ease forwards; }
+.hm-msg.user { justify-self: end; background: linear-gradient(135deg, #b97ab3, #984f92); color: #fff; border-bottom-right-radius: 4px; }
+.hm-msg.bot { background: #f6f1fa; border: 1px solid #e8dff0; border-bottom-left-radius: 4px; }
+.hm-m1 { animation-delay: .6s; } .hm-m2 { animation-delay: 2s; } .hm-m3 { animation-delay: 4.2s; } .hm-m4 { animation-delay: 5.6s; }
+.hm-typing { opacity: 0; animation: hm-typing 1.6s 2.4s 1 forwards; display: flex; gap: 4px; padding: .3rem .2rem; }
+.hm-typing i { width: 7px; height: 7px; border-radius: 50%; background: #b9b6c9; animation: hm-bounce 1s infinite; } .hm-typing i:nth-child(2) { animation-delay: .15s; } .hm-typing i:nth-child(3) { animation-delay: .3s; } .hm-typing.two { animation-delay: 4.9s; }
+.hm-chat-foot { display: flex; align-items: center; gap: .6rem; padding: .6rem 1.1rem; border-top: 1px solid var(--hm-line); color: #8a879e; font-size: .85rem; }
+.hm-chat-foot span { flex: 1; border: 1px solid #d9d4e6; border-radius: 999px; padding: .45rem .9rem; background: #fff; }
+.hm-chat-foot b { background: var(--hm-pink); color: #1d0f1c; border-radius: 999px; padding: .45rem .9rem; font-size: .8rem; }
+@keyframes hm-float { 50% { transform: translateY(-4px); } }
+@keyframes hm-pop { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes hm-typing { 0% { opacity: 0; } 15%, 80% { opacity: 1; } 100% { opacity: 0; height: 0; padding: 0; } }
+@keyframes hm-bounce { 50% { transform: translateY(-4px); } }
+
+/* Three small cards */
+.hm-stat, .hm-models, .hm-nocode { grid-column: span 2; display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: flex-start; padding: 1.5rem 1.6rem; }
+.hm-stat { background: var(--hm-pinksoft); } .hm-models { background: var(--hm-lilac); } .hm-nocode { background: #fff; border: 1px solid var(--hm-line); }
+.hm-stat b, .hm-models h3, .hm-nocode h3 { font-family: var(--hm-head); font-weight: 800; font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.05; margin: 0 0 1.1rem; padding: 0; letter-spacing: -.01em; display: block; color: var(--hm-ink); }
+.hm-stat span, .hm-models p { font-weight: 700; font-size: 1.3rem; line-height: 1.35; margin: 0; }
+.hm-nocode ul { margin: 0 auto; padding: 0; list-style: none; text-align: left; width: fit-content; display: grid; gap: .4rem; font-weight: 700; font-size: 1.02rem; }
+.hm-nocode li:before, .hm-plan li:before { content: ""; display: inline-block; width: 15px; height: 15px; margin-right: .55rem; vertical-align: -2px; background: var(--hm-purple); -webkit-mask: var(--hm-tick) center/contain no-repeat; mask: var(--hm-tick) center/contain no-repeat; }
+.hm { --hm-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 10.5l4 4 8-9' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+
+/* Three things */
+.hm-rows .hm-row { display: grid; grid-template-columns: 130px 190px 1fr; gap: 1.6rem; align-items: center; padding: 1.8rem 0; border-top: 2px solid var(--hm-ink); transition: padding .2s, background .2s; }
+.hm-rows .hm-row:last-child { border-bottom: 2px solid var(--hm-ink); } .hm-rows .hm-row:hover { background: var(--hm-pinksoft); padding-left: 1rem; }
+.hm-rows .num { font-family: var(--hm-motto); font-weight: 900; font-size: 4.2rem; line-height: 1; color: var(--hm-purple); }
+.hm-rows h3 { font-size: 1.9rem; margin: 0; } .hm-rows p { margin: 0; font-size: 1.08rem; color: #4f4d5f; }
+
+/* Who it is for */
+.hm-who { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.hm-who .c { border: 1px solid var(--hm-line); border-radius: 24px; padding: 1.5rem; display: flex; flex-direction: column; gap: .7rem; background: #fff; }
+.hm-who .c:nth-child(1) { background: var(--hm-pinksoft); } .hm-who .c:nth-child(2) { background: var(--hm-cyansoft); } .hm-who .c:nth-child(3) { background: var(--hm-lilac); }
+.hm-who h3 { font-size: 1.3rem; margin: 0; line-height: 1.15; } .hm-who p { margin: 0; color: #3d3b4d; }
+.hm-who .ex { margin-top: auto; font-size: .88rem; border-top: 1px solid rgba(40, 38, 55, .15); padding-top: .7rem; }
+.hm-who .ex i { display: block; font-style: normal; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: #6b6980; } .hm-who .ex b { display: block; color: var(--hm-purple); font-size: .95rem; }
+
+/* Worked example */
+.hm-sum { background: #fff; border: 1px solid var(--hm-line); border-radius: 24px; padding: 1.6rem 1.8rem; max-width: 520px; margin: 0 auto; text-align: left; }
+.hm-sum .r { display: flex; justify-content: space-between; gap: 1rem; padding: .7rem 0; border-bottom: 1px dashed #d9d4e6; font-weight: 700; } .hm-sum .r:last-of-type { border-bottom: 0; }
+.hm-sum .r span:last-child { font-family: var(--hm-head); font-weight: 800; }
+.hm-sum .tot { background: var(--hm-pinksoft); margin: .6rem -1rem 0; padding: .9rem 1rem; border-radius: 14px; border: 0; font-size: 1.15rem; }
+.hm-sum small { display: block; margin-top: 1rem; color: #6b6980; font-size: .85rem; }
+
+/* Safety */
+.hm-safe { display: grid; grid-template-columns: 260px 1fr; gap: 2rem; align-items: center; }
+.hm-safe .seal { display: grid; place-items: center; background: var(--hm-lilac); border-radius: 28px; padding: 1.6rem; } .hm-safe .seal img { width: 190px; }
+.hm-safe ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
+.hm-safe li { background: #fff; border: 1px solid var(--hm-line); border-radius: 20px; padding: 1.1rem 1.4rem; } .hm-safe li b { font-family: var(--hm-head); display: block; font-size: 1.15rem; margin-bottom: .15rem; color: var(--hm-ink); }
+
+/* Live bot slots. The app adds its own script inside the box. */
+.hm-slot { background: #fff; border: 2px dashed var(--hm-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; min-height: 440px; display: grid; place-items: center; text-align: center; padding: 2rem; color: #6b6980; }
+.hm-slot b { display: block; font-family: var(--hm-head); color: var(--hm-ink); font-size: 1.3rem; margin-bottom: .3rem; }
+.hm-slot-note { margin: .8rem 0 0; font-size: .9rem; color: #6b6980; text-align: center; }
+
+/* Plans */
+.hm-plan { display: grid; grid-template-columns: 220px 190px 1fr 215px; gap: 1.4rem; align-items: center; padding: 1.5rem 1.6rem; border-radius: 22px; background: #fff; border: 1px solid var(--hm-line); margin-bottom: .8rem; position: relative; transition: transform .2s, box-shadow .2s; }
+.hm-plan:hover { transform: translateX(6px); box-shadow: 0 14px 34px rgba(40, 38, 55, .08); } .hm-plan.feat { background: var(--hm-pinksoft); border-color: var(--hm-purple); }
+.hm-plan h3 { font-size: 1.25rem; margin: 0; }
+.hm-price { font-family: var(--hm-head); font-weight: 800; font-size: 2.6rem; margin: 0; line-height: 1; color: var(--hm-ink); } .hm-price small { font-family: var(--font-body); font-size: .8rem; font-weight: 700; letter-spacing: 0; margin-left: .4em; }
+.hm-yearly { margin: .2rem 0 0; font-size: .82rem; color: #6b6980; } .hm-yearly a { color: #6b6980; }
+.hm-plan ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; font-size: .93rem; }
+.hm-plan p.d { grid-column: 1 / -1; margin: 0; font-size: .95rem; color: #4f4d5f; }
+.hm-plan .hm-btn { width: 100%; font-size: 1.05rem; padding: .7rem 1.3rem; white-space: nowrap; }
+.hm-flag { position: absolute; top: -15px; left: 1.6rem; background: var(--hm-purple); color: #fff; font-size: .9rem; font-weight: 800; padding: .3rem .9rem; border-radius: 999px; letter-spacing: .04em; }
+
+/* Guarantee certificate */
+.hm-cert { max-width: 600px; margin: 0 auto; border: 38px solid transparent; border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cpath d='M17 3H73A14 14 0 0 0 87 17V73A14 14 0 0 0 73 87H17A14 14 0 0 0 3 73V17A14 14 0 0 0 17 3Z' fill='%23fffafd' stroke='%23984f92' stroke-width='2.4'/%3E%3Cpath d='M17 9H73A8 8 0 0 0 81 17V73A8 8 0 0 0 73 81H17A8 8 0 0 0 9 73V17A8 8 0 0 0 17 9Z' fill='none' stroke='%23dc8fd5' stroke-width='1.2'/%3E%3Cpath d='M17 13.5H73A3.5 3.5 0 0 0 76.5 17V73A3.5 3.5 0 0 0 73 76.5H17A3.5 3.5 0 0 0 13.5 73V17A3.5 3.5 0 0 0 17 13.5Z' fill='none' stroke='%23984f92' stroke-width='.8' stroke-dasharray='1.5 2.2'/%3E%3Ccircle cx='5' cy='5' r='2.6' fill='%23984f92'/%3E%3Ccircle cx='85' cy='5' r='2.6' fill='%23984f92'/%3E%3Ccircle cx='5' cy='85' r='2.6' fill='%23984f92'/%3E%3Ccircle cx='85' cy='85' r='2.6' fill='%23984f92'/%3E%3C/svg%3E") 30 / 38px stretch; background: #fffafd; background-clip: padding-box; padding: .4rem 1.2rem; text-align: center; }
+.hm-cert img { width: 96px; display: block; margin: 0 auto .8rem; } .hm-cert p { margin: 0 auto; max-width: 30rem; font-size: 1.08rem; }
+.hm-cert .sig { display: inline-block; margin-top: 1.3rem; padding-top: .4rem; border-top: 1px solid var(--hm-purple); font-family: var(--hm-head); font-weight: 800; font-size: .95rem; color: var(--hm-purple); min-width: 12rem; }
+
+/* Comparison table */
+.hm-table-wrap { overflow-x: auto; }
+.hm-compare { border-collapse: separate; border-spacing: 0; table-layout: fixed; width: 100%; min-width: 880px; font-size: .95rem; }
+.hm-compare col.c0 { width: 31%; }
+.hm-compare th, .hm-compare td { background: #fff; border-bottom: 1px solid #eeeaf5; padding: .8rem .5rem; text-align: center; }
+.hm-compare .lab { border-left: 1px solid var(--hm-line); text-align: left; padding-left: 1rem; font-weight: 700; } .hm-compare .last { border-right: 1px solid var(--hm-line); }
+.hm-compare .pn { display: block; font-family: var(--hm-head); font-size: .92rem; white-space: nowrap; } .hm-compare .pp { display: block; font-weight: 700; font-size: .82rem; color: #6b6980; }
+.hm-compare tr.names th { background: var(--hm-lilac); border-top: 1px solid var(--hm-line); vertical-align: top; font-weight: 800; }
+.hm-compare tr.names .lab { border-top-left-radius: 22px; } .hm-compare tr.names .last { border-top-right-radius: 22px; }
+.hm-compare .pro { background: var(--hm-pinksoft) !important; border-left: 2px solid var(--hm-purple); border-right: 2px solid var(--hm-purple); }
+.hm-compare tr.names .pro { border-top: 0; }
+.hm-compare tr.topcap td { background: transparent !important; border: 0; padding: 0; }
+.hm-compare tr.topcap .pro { background: var(--hm-purple) !important; color: #fff; border: 2px solid var(--hm-purple); border-bottom: 0; border-radius: 16px 16px 0 0; padding: .5rem .4rem; font-weight: 800; font-size: .85rem; letter-spacing: .03em; }
+.hm-compare .tick { color: var(--hm-purple); } .hm-compare .dash { color: #b9b6c9; } .hm-compare .sub { display: block; font-size: .78rem; color: #6b6980; line-height: 1.2; margin-top: .15rem; }
+.hm-compare tr.buyrow th, .hm-compare tr.buyrow td { border-top: 1px solid #eeeaf5; border-bottom: 1px solid var(--hm-line); } .hm-compare tr.buyrow .lab { border-bottom-left-radius: 22px; } .hm-compare tr.buyrow .last { border-bottom-right-radius: 22px; } .hm-compare tr.buyrow .pro { border-bottom: 0; }
+.hm-compare tr.cap td { background: transparent !important; border: 0; padding: 0; height: 16px; } .hm-compare tr.cap .pro { background: var(--hm-pinksoft) !important; border: 2px solid var(--hm-purple); border-top: 0; border-radius: 0 0 16px 16px; }
+.hm-compare .hm-btn { font-size: .85rem; padding: .6rem .4rem; width: 100%; white-space: nowrap; }
+
+/* FAQ */
+.hm-faq { display: grid; gap: .7rem; max-width: 52rem; margin-inline: auto; }
+.hm-faq details { background: #fff; border: 1px solid var(--hm-line); border-radius: 18px; padding: 0 1.4rem; }
+.hm-faq summary { cursor: pointer; font-family: var(--hm-head); font-weight: 800; font-size: 1.1rem; padding: 1.1rem 0; list-style: none; display: flex; justify-content: space-between; gap: 1rem; color: var(--hm-ink); }
+.hm-faq summary::-webkit-details-marker { display: none; } .hm-faq summary:after { content: "+"; color: var(--hm-purple); font-size: 1.5rem; line-height: 1; } .hm-faq details[open] summary:after { content: "-"; }
+.hm-faq details p { margin: 0 0 1.2rem; color: #4f4d5f; }
+.hm-faqbot { margin-top: 3.5rem; text-align: center; } .hm-faqbot h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 1.4rem; }
+
+/* Closing card, marquee and floating button */
+.hm-final { margin: 6rem auto 0; max-width: 780px; background: #fff; border: 1px solid var(--hm-line); border-radius: 32px; padding: 3rem 2rem; text-align: center; }
+.hm-final h2 { margin: 0 auto 1rem; max-width: 44rem; } .hm-final p { margin: 0 auto 1.6rem; max-width: 34rem; color: #4f4d5f; font-size: 1.15rem; } .hm-final small { display: block; margin-top: 1rem; color: #6b6980; }
+.hm-marq { font-family: var(--hm-motto); font-weight: 900; font-size: clamp(1.8rem, 4.2vw, 3.4rem); line-height: 1; margin: 5rem 0 1rem; overflow: hidden; white-space: nowrap; }
+.hm-marq .track { display: inline-block; animation: hm-marq 30s linear infinite; }
+.hm-marq .a { color: var(--hm-ink); } .hm-marq .b { color: var(--hm-purple); } .hm-marq .c { color: var(--hm-pink); }
+@keyframes hm-marq { to { transform: translateX(-50%); } }
+.hm-disclaimer { text-align: center; font-size: .85rem; color: #6b6980; padding: 1rem 0 6rem; margin: 0; }
+.hm-sticky { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 20; background: var(--hm-ink); color: #fff; border-radius: 999px; padding: .5rem .5rem .5rem 1.4rem; display: flex; align-items: center; gap: 1.2rem; box-shadow: 0 14px 40px rgba(40, 38, 55, .35); font-weight: 700; font-size: 1.05rem; white-space: nowrap; }
+.hm-sticky .hm-btn { padding: .7rem 1.3rem; font-size: 1.05rem; }
+
+@media (max-width: 980px) {
+  .hm-bento { grid-template-columns: repeat(2, 1fr); }
+  .hm-main, .hm-chat-tile, .hm-stat, .hm-models, .hm-nocode { grid-column: span 2; grid-row: auto; }
+  .hm-who { grid-template-columns: 1fr 1fr; } .hm-safe { grid-template-columns: 1fr; }
+  .hm-rows .hm-row { grid-template-columns: 70px 1fr; } .hm-rows p { grid-column: 1 / -1; }
+  .hm-plan { grid-template-columns: 1fr; } .hm-sticky span { display: none; }
+}
+@media (max-width: 620px) { .hm-who { grid-template-columns: 1fr; } .hm-sec { padding-top: 3.5rem; } }
+@media (prefers-reduced-motion: reduce) { .hm-msg { opacity: 1; animation: none; } .hm-typing { display: none; } .hm-chat-top img.bot, .hm-marq .track { animation: none; } }

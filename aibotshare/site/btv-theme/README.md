@@ -19,6 +19,7 @@ Do not install on a live server until the owner approves. Page IDs differ per en
 
 - `theme.json`: palette, fonts, layout widths.
 - `assets/css/btv-theme.css`: all tokens and components. No inline styles anywhere.
+- `assets/css/btv-home.css`: the home page only (every rule starts with `.hm`). It also loads Nunito Black and M PLUS Rounded 1c, which are used on that page and nowhere else. Enqueued by `inc/assets.php` on the front page. To update the home page without touching other pages' database edits, write `pages/home.html` into the Home page alone. Do not run the full page installer, which replaces every page.
 - `assets/css/integrations/`: FluentCart, Fluent Forms, Fluent Support, Better Docs and the WordPress login. CSS only.
 - `templates/`: front-page, page, page-landing, page-wide, single, index, home, archive, search, 404.
 - `parts/`: header and footer. Both are dynamic blocks (`inc/header-footer.php`). The header changes when signed in. The footer's Legal column shows the Footer navigation post (found by title). No credit row.

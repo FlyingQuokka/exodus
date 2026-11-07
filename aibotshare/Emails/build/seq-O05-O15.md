@@ -29,8 +29,8 @@ Behaviour sequences wait while Welcome Active or Upgrade Active is on the contac
 | O12-1 | Open your bought bot and read the licence | Next up: a review and why it matters to the next buyer. |
 | O12-2 | Leave a review | None. Plain sign-off. |
 | O13-1 | Check your imported bot | None. Single email. |
-| O14-1 | Auto top-up and where to change it | Next up: a few ways to make your credits go further. |
-| O14-2 | Making credits go further | None. Plain sign-off. |
+| O14-1 | Auto top-up and where to change it | Next up: a few ways to make your boosts go further. |
+| O14-2 | Making boosts go further | None. Plain sign-off. |
 | O15-1 to O15-4 | Plan-ending reminders | None. Each is sent by its own tag. |
 
 ---
@@ -55,7 +55,7 @@ Open [Bot list](https://lab.{{domain}}/bots) to see your bots and their status s
 
 **Task for today**
 
-Open a bot from Bot list and use Preview to ask it one question. Preview uses your credits and it shows you what a visitor would see.
+Open a bot from Bot list and use Preview to ask it one question. Preview uses your boosts and it shows you what a visitor would see.
 
 Whenever you're ready,
 
@@ -64,7 +64,7 @@ Your Botter Support Team
 P.S. Next up: the quickest way to a working bot, if starting from a blank page is what held you back.
 
 **Notes**
-- Facts: sign-in uses the username. Forgotten username? exists. Bot list statuses. Preview is a section of the bot's page and uses the owner's credits (digest 2.4 and 3.9 and 3.11).
+- Facts: sign-in uses the username. Forgotten username? exists. Bot list statuses. Preview is a section of the bot's page and uses the owner's boosts (digest 2.4 and 3.9 and 3.11).
 - Automation: O05 step 1, sends once the Dormant tag is applied and Welcome Active and Upgrade Active are absent. Exit when Dormant is removed.
 - Confirmed by the app agent (answer 48): the app sets Dormant 60 days after the member was last active (a staff setting, measured from any signed-in request and not from sign-in itself). The text says "a while" and "visited".
 
@@ -84,7 +84,7 @@ If starting from a blank page is what held you back, there are two shortcuts.
 
 **Import a bot**
 
-[Import a bot](https://lab.{{domain}}/bots/import) lets you paste in instructions you already have, for example from a GPT. It doesn't connect to any other account and it uses no credits.
+[Import a bot](https://lab.{{domain}}/bots/import) lets you paste in instructions you already have, for example from a GPT. It doesn't connect to any other account and it uses no boosts.
 
 You'll work through Instructions, Files, Integrations (optional) and Review. Nothing is saved until you press Create bot and the new bot opens as Personal.
 
@@ -105,7 +105,7 @@ Your Botter Support Team
 P.S. Next up: what to do if your plan no longer fits the way you use the Botters Lab.
 
 **Notes**
-- Facts: Import a bot is paste-only and uses no credits. Steps and "Create bot" and opens as Personal. Duplicate adds "Copy" and starts Personal and counts towards the limit (digest 3.10 and 3.12). Integrations are not part of Apprentice Botter: the importer step says so and the member can carry on.
+- Facts: Import a bot is paste-only and uses no boosts. Steps and "Create bot" and opens as Personal. Duplicate adds "Copy" and starts Personal and counts towards the limit (digest 3.10 and 3.12). Integrations are not part of Apprentice Botter: the importer step says so and the member can carry on.
 - Automation: O05 step 2, about 4 days after step 1. Skips if Dormant has been removed.
 
 ---
@@ -124,7 +124,7 @@ Today is about the plan itself. If you don't need all of it, a smaller plan may 
 
 **Moving to a lower plan**
 
-The way to move down is to cancel your current plan on [Billing and credits](https://lab.{{domain}}/billing) and buy the lower plan once the current one ends. Open Your plan and press Cancel my plan. You'll keep your current plan until the end of the period you've paid for.
+The way to move down is to cancel your current plan on [Billing and boosts](https://lab.{{domain}}/billing) and buy the lower plan once the current one ends. Open Your plan and press Cancel my plan. You'll keep your current plan until the end of the period you've paid for.
 
 Between the two plans, your bots pause and their pages show as unavailable. They come back when your new plan starts, oldest first, up to the new plan's bot limit.
 
@@ -136,14 +136,14 @@ You don't need to do anything. Your plan and your bots stay as they are.
 
 **Task for today**
 
-Look at Your plan on Billing and credits and decide whether it matches how you use your bots. If you'd like to talk it through, open the [Support](https://{{domain}}/support/) page.
+Look at Your plan on Billing and boosts and decide whether it matches how you use your bots. If you'd like to talk it through, open the [Support](https://{{domain}}/support/) page.
 
 Whenever you're ready,
 
 Your Botter Support Team
 
 **Notes**
-- Facts: owner decision of 31 October 2026 (see `plan-ending-emails.md`): a lower plan is bought after the current plan ends and FluentCart offers no downward move. Bots pause between plans and return oldest first up to the new limit. Cancel my plan is under Your plan on Billing and credits. A cancelled plan runs to the end of the paid period (digest 10.7).
+- Facts: owner decision of 31 October 2026 (see `plan-ending-emails.md`): a lower plan is bought after the current plan ends and FluentCart offers no downward move. Bots pause between plans and return oldest first up to the new limit. Cancel my plan is under Your plan on Billing and boosts. A cancelled plan runs to the end of the paid period (digest 10.7).
 - The plan asked for an offer to pause the plan. The guide has no plan pause so the email offers a lower plan instead. The guide has no plan pause (owner check, 1 November 2026).
 - The guide describes a Change plan route for moving down but the owner and the app agent confirm that moving down is a cancel then a new purchase. This email follows that. Change plan is built and working for upgrades (owner, 1 November 2026).
 - Automation: O05 step 3, about 4 days after step 2. Last email. Dormant removal ends the sequence.
@@ -204,7 +204,7 @@ Today is a short update. Your Botters Lab account is still open and nothing in i
 
 **What's in your account**
 
-Your bots are paused with their instructions and knowledge files kept. Remaining credits from any credit packs you bought are untouched.
+Your bots are paused with their instructions and knowledge files kept. Remaining boosts from any Botter Boosters you bought are untouched.
 
 We keep adding to the Botters Lab. The [help articles](https://{{domain}}/docs/) describe each feature as it stands today.
 
@@ -223,7 +223,7 @@ Your Botter Support Team
 P.S. Next up: a reminder of what your account still holds.
 
 **Notes**
-- Facts: digest 10.7 (account stays open and bots pause and data kept and bought credits stay). Bots return oldest first up to the new limit (`plan-ending-emails.md`).
+- Facts: digest 10.7 (account stays open and bots pause and data kept and bought boosts stay). Bots return oldest first up to the new limit (`plan-ending-emails.md`).
 - The text stays neutral and points to the help articles (owner decision 2 November 2026).
 - Automation: O06 step 3, about 30 days after the tag. Skips if a plan tag has been applied.
 
@@ -336,7 +336,7 @@ Open [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu in 
 
 **What earns commission**
 
-You earn commission on the subscription payments of members who joined through your link. That covers their first payment and every renewal. Commission is currently 50% on the first payment and 20% on later ones, worked out on the part of the payment after tax. Credit packs earn nothing.
+You earn commission on the subscription payments of members who joined through your link. That covers their first payment and every renewal. Commission is currently 50% on the first payment and 20% on later ones, worked out on the part of the payment after tax. Botter Boosters earn nothing.
 
 You also earn on Bot Market sales made through your listing links. That's covered in a later email.
 
@@ -361,7 +361,7 @@ P.S. Next up: what to say when you share your link. Plain wording you can adapt.
 **Notes**
 - Facts: digest chapter 11 (11.1 to 11.4). Self-referral and single level and leaving the programme.
 - The affiliate software is never named.
-- Confirmed by the app agent (answer 43): the app pays 50% of a member's first ever subscription payment and 20% of every later payment, on the part after tax. Credit packs and order bumps earn nothing. Staff set both rates and press Pay commissions after the refund period. The text gives no figures.
+- Confirmed by the app agent (answer 43): the app pays 50% of a member's first ever subscription payment and 20% of every later payment, on the part after tax. Botter Boosters and order bumps earn nothing. Staff set both rates and press Pay commissions after the refund period. The text gives no figures.
 - The rates are stated as "currently" because staff set them (owner approved the wording on 2 November 2026).
 - Automation: O08 step 1, trigger is the affiliate-joined event. Novice Botter and above only. Test the tier tag before starting.
 
@@ -641,7 +641,7 @@ Your bot is live on the Bot Market. Here are four things that help a listing do 
 
 **Four tips**
 
-1. Use Suggest a description and tags on the listing form. It costs no credits and gives you a clear first draft to edit.
+1. Use Suggest a description and tags on the listing form. It costs no boosts and gives you a clear first draft to edit.
 2. Pick the sale type with care. Transfer moves ownership and sells once. Multi-sell gives each buyer their own copy and you keep the original.
 3. Check your licence terms under [Settings](https://lab.{{domain}}/settings). Copy our template gives you a starting point and Notify my buyers tells current holders when the terms change.
 4. Use the On the listing switches. Show verified sales and conversations is one buyers pay attention to.
@@ -711,7 +711,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your new bot is in [Bot list](https://lab.{{domain}}/bots) marked Purchased. It runs on your own credits.
+Your new bot is in [Bot list](https://lab.{{domain}}/bots) marked Purchased. It runs on your own boosts.
 
 **Before you use it with customers**
 
@@ -719,7 +719,7 @@ Open [Bots I bought](https://lab.{{domain}}/my-bots) and select Licence terms. T
 
 Integrations arrive switched off and their passwords and keys never move. If the bot uses one, enter your own credentials and switch it on. Then confirm the declarations.
 
-Preview the bot before anyone else sees it. Preview uses your credits.
+Preview the bot before anyone else sees it. Preview uses your boosts.
 
 **If it doesn't work**
 
@@ -789,7 +789,7 @@ You've brought a bot across from a GPT. Before anyone uses it, check how it beha
 
 **Test it in Preview**
 
-Open the bot from [Bot list](https://lab.{{domain}}/bots) and use Preview. Ask the questions your GPT handled well and a few it should refuse. Preview uses your credits.
+Open the bot from [Bot list](https://lab.{{domain}}/bots) and use Preview. Ask the questions your GPT handled well and a few it should refuse. Preview uses your boosts.
 
 The import is paste-only and it doesn't connect to your old account. The Review step listed what was Not carried across, so check that list for anything you need to rebuild.
 
@@ -816,21 +816,21 @@ Your Botter Support Team
 
 ## O14-1 - Auto top-up and where to change it (day 0, tag Auto Top Up)
 
-**Subject:** [Botters Lab] Keeping your credits topped up
+**Subject:** [Botters Lab] Keeping your boosts topped up
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Auto top-up has just added credits to your balance. That usually means your bots are busy.
+Auto top-up has just added boosts to your balance. That usually means your bots are busy.
 
 You receive an email each time it happens. Here's where to see and change it.
 
 **Auto top-up**
 
-Open [Billing and credits](https://lab.{{domain}}/billing) and find Auto top-up. Top up when my credits fall below sets the level that triggers a top-up and Top-up amount sets how much is added.
+Open [Billing and boosts](https://lab.{{domain}}/billing) and find Auto top-up. Top up when my boosts fall below sets the level that triggers a top-up and Top-up amount sets how much is added.
 
-A daily cap pauses it until midnight UTC and we email you when that happens. After that, it tries again the next time your credits are used while the balance is below your level.
+A daily cap pauses it until midnight UTC and we email you when that happens. After that, it tries again the next time your boosts are used while the balance is below your level.
 
 If your card is declined twice, it switches off and we email you. Press Agree and switch on to turn it back on.
 
@@ -842,18 +842,18 @@ Best wishes,
 
 Your Botter Support Team
 
-P.S. Next up: a few ways to make your credits go further.
+P.S. Next up: a few ways to make your boosts go further.
 
 **Notes**
-- Facts: digest 10.4. Top up when my credits fall below and Top-up amount and the daily cap and the declined card rule. No defaults or caps stated.
+- Facts: digest 10.4. Top up when my boosts fall below and Top-up amount and the daily cap and the declined card rule. No defaults or caps stated.
 - Confirmed by the app agent (answers 23, 24 and 48): the tag formerly called Power User was renamed Auto Top Up on 25 October 2026 and fires on the member's first successful auto top-up only. The daily cap resets at midnight UTC and the next attempt comes from the next usage charge that leaves the balance below the level. After two declines the member presses Agree and switch on. [Exact live tag word still to be confirmed by the app agent.]
 - Automation: O14 step 1, tag Auto Top Up.
 
 ---
 
-## O14-2 - Making credits go further (day 4, Power Users)
+## O14-2 - Making boosts go further (day 4, Power Users)
 
-**Subject:** [Botters Lab] A few ways to make credits go further
+**Subject:** [Botters Lab] A few ways to make boosts go further
 
 **Body:**
 
@@ -861,20 +861,20 @@ Hi {{contact.first_name}},
 
 Last time, we covered auto top-up and where to change it.
 
-Today is about using fewer credits for the same job.
+Today is about using fewer boosts for the same job.
 
 **Four ways**
 
-1. Choose the model with care. A dearer model uses more credits per message, so use one only where the answers need it.
-2. Open the bot from [Bot list](https://lab.{{domain}}/bots) and set a Daily credit limit in Sharing and embed. At the limit, free visitors are told the bot has reached its limit for the day.
-3. If you sell access, set a Message cap. Each buyer message is paid from your credits, so the cap protects you.
-4. Check Usage this month on the [Dashboard](https://lab.{{domain}}/) and the usage graph on [Billing and credits](https://lab.{{domain}}/billing) to see which days cost most.
+1. Choose the model with care. A dearer model uses more boosts per message, so use one only where the answers need it.
+2. Open the bot from [Bot list](https://lab.{{domain}}/bots) and set a Daily boost limit in Sharing and embed. At the limit, free visitors are told the bot has reached its limit for the day.
+3. If you sell access, set a Message cap. Each buyer message is paid from your boosts, so the cap protects you.
+4. Check Usage this month on the [Dashboard](https://lab.{{domain}}/) and the usage graph on [Billing and boosts](https://lab.{{domain}}/billing) to see which days cost most.
 
-Uploading knowledge files and the importer use no credits. Preview does.
+Uploading knowledge files and the importer use no boosts. Preview does.
 
 **Task for today**
 
-Pick one bot and review its Model and Daily credit limit. Save if you change either.
+Pick one bot and review its Model and Daily boost limit. Save if you change either.
 
 See you soon,
 
@@ -882,7 +882,7 @@ Your Botter Support Team
 
 **Notes**
 - Facts: digest 3.8 and 4.4 and 5.3 and 10.1. The Message cap needs Novice Botter and above.
-- No "free credits" wording and no pressure to buy.
+- No "free boosts" wording and no pressure to buy.
 - Automation: O14 step 2, 4 days after step 1.
 
 ---
@@ -899,7 +899,7 @@ Your Botters Lab plan ends in 7 days, as you asked. Your bots keep running until
 
 **Moving to a different plan?** You can buy it as soon as this one ends. We'll remind you on the day.
 
-**Changed your mind?** Press Keep my plan on the [Billing and credits](https://lab.{{domain}}/billing) page and nothing changes.
+**Changed your mind?** Press Keep my plan on the [Billing and boosts](https://lab.{{domain}}/billing) page and nothing changes.
 
 If you're leaving, thank you for botting with us. Your account stays here if you ever come back.
 
@@ -919,13 +919,13 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your plan ends tomorrow. The [Billing and credits](https://lab.{{domain}}/billing) page shows the exact time.
+Your plan ends tomorrow. The [Billing and boosts](https://lab.{{domain}}/billing) page shows the exact time.
 
 **Moving to a different plan?** Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.
 
 Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
 
-**Changed your mind?** Press Keep my plan on the Billing and credits page.
+**Changed your mind?** Press Keep my plan on the Billing and boosts page.
 
 Your Botter Support Team
 
@@ -943,11 +943,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Today's the day. Your plan ends later today at the time shown on the [Billing and credits](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended, so you can buy your new plan straight away.
+Today's the day. Your plan ends later today at the time shown on the [Billing and boosts](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended, so you can buy your new plan straight away.
 
 **Have these ready:** the email address of your Botters Lab account and your Founders coupon if you have one.
 
-**Changed your mind?** You can still press Keep my plan on the Billing and credits page until it ends.
+**Changed your mind?** You can still press Keep my plan on the Billing and boosts page until it ends.
 
 Your Botter Support Team
 
@@ -971,7 +971,7 @@ Your plan has ended, so you can buy your new one now. Your bots are paused until
 
 Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.
 
-Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
+Remaining boosts from any Botter Boosters you bought are untouched. Included boosts you had not used have been reset.
 
 If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.
 
@@ -982,5 +982,5 @@ Your Botter Support Team
 **Notes**
 - Facts: `plan-ending-emails.md`. Fires the moment the plan has ended and also on that day. Only for a member who pressed Cancel.
 - Never says a refund has been paid: it goes in the next daily run after the plan ends. Says "within a day" as the source does.
-- App agent confirmed 1 November 2026: a member who pressed Cancel receives this email and not the app's `plan.ended`. Every other ending (failed payment or FluentCart's own Cancel) receives `plan.ended` and no tag. So this email must carry what `plan.ended` says: bots paused until a plan is bought, bought credits stay and unused included credits are reset. The app sends no paused bot count through the tag so none is given here.
+- App agent confirmed 1 November 2026: a member who pressed Cancel receives this email and not the app's `plan.ended`. Every other ending (failed payment or FluentCart's own Cancel) receives `plan.ended` and no tag. So this email must carry what `plan.ended` says: bots paused until a plan is bought, bought boosts stay and unused included boosts are reset. The app sends no paused bot count through the tag so none is given here.
 - Automation: O15 funnel for tag `Plan Ended`, one email sent at once. The app removes all four tags once the member has a plan again so a later cancellation sends the emails again. Stop the funnel on a tier tag.

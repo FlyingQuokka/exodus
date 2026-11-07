@@ -18,7 +18,7 @@ Every upgrade email shows what the member could achieve with one feature of a hi
 - A worked example the member can read in seconds: a sample screen or a sample conversation or a sample set of instructions.
 - Any sample output comes from a real run. Any sample figure is labelled as an example.
 - No income claims.
-- One sentence at the end names the plan that has it and points to Change plan under Billing and credits.
+- One sentence at the end names the plan that has it and points to Change plan under Billing and boosts.
 - No countdowns and no pressure.
 
 ## 3. Rules for every email
@@ -30,7 +30,7 @@ Every upgrade email shows what the member could achieve with one feature of a hi
 - Never repeat the two links in the purchase email.
 - No promised durations. No EU wording. No fixed refund or holdback figures. No Founder badge. No sixth plan.
 - Say "customers who agree to share their details" whenever the CRM or customer list comes up.
-- Remind people that preview and visitor messages use their credits.
+- Remind people that preview and visitor messages use their boosts.
 - Links to the Botters Lab use the domain token in section 9. Never a typed domain.
 - Branded template: light and restrained. Plain background. One accent colour. One button. No banners or busy footers.
 
@@ -99,7 +99,7 @@ The Pro closing email (S30) also mentions the one feature Master adds.
 | S08 | 8 | Time to go Public | Mode and declarations and Make Public | Quick Answer Bot | All | The steps and what Checking means |
 | S09 | 9 | Welcome to the Botterverse | Share link | Quick Answer Bot | All | A short message to send with the link |
 | S10 | 10 | Put your bot on your own patch | Embed snippet. Require visitors to sign up | Quick Answer Bot | All | The embed steps |
-| S11 | 11 | What fuels a bot | Credits and the credits pill | None | All | Press the credits pill |
+| S11 | 11 | What fuels a bot | Boosts and the boosts pill | None | All | Press the boosts pill |
 | S12 | 12 | Keep the lights on | Auto top-up and Promo code | None | All | The auto top-up steps |
 | S13 | 13 | Put a price on it | Paywall and One-time price | Paid Answer Desk | Novice and up | An example price |
 | S14 | 14 | Cap it and promise it | Message cap and top-up and Money-back guarantee | Paid Answer Desk | Novice and up | An example cap and top-up |
@@ -108,7 +108,7 @@ The Pro closing email (S30) also mentions the one feature Master adds.
 | S17 | 17 | Read the numbers | Basic analytics | Paid Answer Desk | Novice and up | The info marks |
 | S18 | 18 | Find the busy hours | Category benchmarks and Busiest hours and Top conversation starters | Paid Answer Desk | Expert and up | Where each panel sits |
 | S19 | 19 | Ask your bot what it did not know | Conversation insights | Quick Answer Bot | Expert and up | Switch it on. Use Add to knowledge |
-| S20 | 20 | Set the doors | Daily credit limit. Require visitors to sign up | Lead Catcher | Expert and up | The two settings |
+| S20 | 20 | Set the doors | Daily boost limit. Require visitors to sign up | Lead Catcher | Expert and up | The two settings |
 | S21 | 21 | Dress your bot | Bot styles | Quick Answer Bot | Pro and up | The style fields |
 | S22 | 22 | Sell on the Bot Market | Listing and Licence terms and Suggest a description and tags | A bot of the member's choice | Pro and up | The listing steps |
 | S23 | 23 | Send your leads home | CRM connector | Lead Catcher | Pro and up | Send test event |

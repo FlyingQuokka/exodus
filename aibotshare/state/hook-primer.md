@@ -4,7 +4,7 @@ RULES YOUR HOOKS MUST FOLLOW
 - The audience is imers: internet marketers who sold access to GPTs and lost income when OpenAI closed new GPT creation to personal accounts on 16 August 2026. They sell info products and understand PLR, MRR and RR rights. They distrust platforms after the shutdown.
 - Name the live complaints plainly without gloating: no published revenue share, no ownership, no way to contact your users, poor discovery and sudden removal with very little notice.
 - The strongest angles are platform risk and ownership, the three-way Bot Market in the rights language imers already use, the embeddable FAQ bot on a sales page, the published fee and the choice of model. Anchor at least half of every batch on the first two.
-- Voice: IM-native, direct and plain. Use words imers use: PLR, MRR, RR, funnel, affiliate, credits. No corporate SaaS speak. Short sentences. Proof over promises.
+- Voice: IM-native, direct and plain. Use words imers use: PLR, MRR, RR, funnel, affiliate, boosts. No corporate SaaS speak. Short sentences. Proof over promises.
 - Write the name as Botterverse in prose and Botterverse only as a domain.
 - Make the reader need the next sentence. A hook that only describes a feature has failed.
 - Never promise income. Never claim a feature that is not listed above.
@@ -24,7 +24,7 @@ EXEMPLAR HOOKS
 11. A published fee on every sale: 3% or 5% plus 30 cents. No payout formula to decode.
 12. You do not have to start from scratch. Botterverse has an importer built for moving your old GPT across.
 13. Refer a Botter and earn 50% of their first payment. Then 20% of every payment after.
-14. Your commissions land in your account balance. Withdraw to Stripe on demand or spend them on your own bots' credits.
+14. Your commissions land in your account balance. Withdraw to Stripe on demand or spend them on your own bots' boosts.
 15. Four of the biggest AI models under one roof. You choose which one runs each bot.
 16. Join in the founders window and pay 50% less for life, with a permanent Founders badge on every bot page.
 17. The Bot Market has three ways to sell and one published fee.

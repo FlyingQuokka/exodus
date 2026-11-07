@@ -44,7 +44,7 @@ Copy: Yes means we write it. Optional means the guide shows a notice only. A sho
 | 9 | Bot blocked by model provider | App | Yes | |
 | 10 | Public bot switched to Personal after a blocked category | App | Yes | |
 | 11 | Declarations not re-confirmed in time | App | Yes | |
-| 12 | Daily credit limit reached | App | Yes | Once per day |
+| 12 | Daily boost limit reached | App | Yes | Once per day |
 | 13 | Bot paused by staff | App | Yes | Not stated in the guide. Recommended |
 | 14 | Bots paused by plan change | App | Yes | Sent by the app. The Downgraded tags rarely fire. Not stated in the guide |
 | 15 | Guarantee claim received (seller) | App | Yes | |
@@ -63,14 +63,14 @@ Copy: Yes means we write it. Optional means the guide shows a notice only. A sho
 | 28 | Withdrawal held on suspension | App | Optional | |
 | 29 | Insights report ready | App | Yes | Opt-in |
 | 30 | CRM connection switched off by failures | App | Yes | |
-| 31 | Credits low | App | Yes | |
-| 32 | Credits exhausted | App | Yes | All bots have stopped answering |
+| 31 | Boosts low | App | Yes | |
+| 32 | Boosts exhausted | App | Yes | All bots have stopped answering |
 | 33 | Auto top-up charged | App | Yes | Power User tag fires on the first one |
 | 34 | Auto top-up daily cap reached | App | Yes | |
 | 35 | Auto top-up declined twice | App | Yes | |
 | 36 | Auto top-up statement updated | App | Yes | The member must agree again |
 | 37 | Auto top-up needs bank approval | App | Yes | Not stated in the guide. Recommended |
-| 38 | Credit pack refunded | App | Optional | |
+| 38 | Botter Booster refunded | App | Optional | |
 | 39 | Receipts and invoices | Cart | Yes | Style the FluentCart email templates |
 | 40 | Payment failed | Cart | Yes | The guide shows the Payment past due pill only. Recommended |
 | 41 | Plan change | Cart | Yes | Two variants: up and down. Pairs with the tier tags |
@@ -96,7 +96,7 @@ Eleven events have no email in the guide where one would help. They are marked R
 
 ## 5. Delivery
 
-- Write the copy in groups: account and sign-in then bots then Bot Market then earnings and withdrawals then credits and billing then plan and account.
+- Write the copy in groups: account and sign-in then bots then Bot Market then earnings and withdrawals then boosts and billing then plan and account.
 - Each group is one file in `emails\events\`.
 - Give the app agent a short brief that points to the files and the house style.
 

@@ -39,7 +39,7 @@ Other documents in `Emails\`: `00-strategy-one-list-and-tags.md` (list and tags)
 8. The Downgraded tags almost never fire (a move down is a cancel then a first plan). Leaving and win-back emails use Cancelled and Plan Ended. E41b (plan change down) is dropped. E14 (bots paused) is sent by the app.
 9. Pages in emails are linked at first mention using the real Lab paths. Fields and sections use "In" (In Instructions). The Create a bot page has no Advanced group. Help articles use the real slugs in `../12-help-article-slugs.md`.
 10. No serial "and": lists read a, b and c. Say "annual" and never "yearly". The tagline is Build a bot. Share it. Sell access. No sixth tier is ever mentioned.
-11. Make Public is spelled as the guide spells it. Included credits "reset" and bought credits never expire.
+11. Make Public is spelled as the guide spells it. Included boosts "reset" and bought boosts never expire.
 12. Example bots and website bots are labelled "for example". No income claims and no invented customers.
 13. Change plan is built and working for upgrades. Moving down is a cancel then a new purchase (O05-3 says so).
 14. Jump recaps keep their P.S. naming tomorrow's email then the catch-up (the new plan's day 1 email arrives before the catch-up starts on day 19). Say if you want it changed.
@@ -64,7 +64,7 @@ Updated 2 November 2026. These notes are still open. A decision note needs the o
 - E23A (confirm): whether the app sends the same wording for all three.
 
 **`events-28-54`**
-- E38 (decision): the app agent says (answer 27) the app has no email for a refunded credit pack. A pack refund reaches the app through Stripe, the credits removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optio
+- E38 (decision): the app agent says (answer 27) the app has no email for a refunded Botter Booster. A Botter Booster refund reaches the app through Stripe, the boosts removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optio
 - E41a: settled on 3 November 2026. Your plan shows no plan details so the email links to the pricing page comparison table.
 - E51: settled on 3 November 2026. Fluent Support has no bot name tag so the bot name is left out.
 - E52: settled on 3 November 2026. Members can reply by email and the email says so.

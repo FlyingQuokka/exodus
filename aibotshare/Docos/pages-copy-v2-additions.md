@@ -12,18 +12,18 @@ Lines in [square brackets] are notes to you and are not page text.
 
 **Heading:** You are one step from the Botters Lab
 
-**Plan summary:** [Plan] Botter. $[price] a month. [Bots]. [Credits] credits each month.
+**Plan summary:** [Plan] Botter. $[price] a month. [Bots]. [Boosts] boosts each month.
 
 **Billing choice:** Pay monthly. Pay annually and have two months free.
 
-**Add credits (optional):** Choose a Starter or Builder or Launcher or Promoter or Campaigner pack. Bigger packs include bonus credits. Credits you buy never expire.
+**Add boosts (optional):** Choose a Starter or Builder or Launcher or Promoter or Campaigner pack. Bigger packs include bonus boosts. Boosts you buy never expire.
 
 **Coupon line:** Have a coupon? Enter it in the coupon box before you pay.
 [Show this line on every plan. The Founders coupon is FOUNDER50 and it is entered at checkout.]
 
 **Order summary label:** Due today
 
-**Terms line:** Cancel from Billing and credits when you like. Your plan runs to the end of the period you paid for.
+**Terms line:** Cancel from Billing and boosts when you like. Your plan runs to the end of the period you paid for.
 
 **Region line (next to the button):** Paid services cannot be offered in the EU. You can still use free Public bots.
 [The EU wording stays on this page and the FAQ only.]
@@ -103,7 +103,7 @@ On 30 November.
 
 **Heading:** Buy a bot. Or sell one you built.
 
-**Sub:** Members sell bots to each other. The buyer receives the bot itself and runs it on their own credits.
+**Sub:** Members sell bots to each other. The buyer receives the bot itself and runs it on their own boosts.
 
 **Button:** Take Me To The Botterverse
 

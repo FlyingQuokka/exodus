@@ -77,7 +77,7 @@ Cart and checkout and receipt and order review use `page-wide` and are styled on
 **Footer**
 - Three columns: Product and Help and Legal.
 - The Legal column uses the Footer navigation post so you can edit it.
-- The bottom credit row is removed.
+- The bottom boost row is removed.
 
 ## 6. Patterns
 

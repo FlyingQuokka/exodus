@@ -91,8 +91,8 @@ Each line gives the feature then the benefit to the member.
 
 - **Four model families.** Claude (the default), GPT, Gemini and Grok. Benefit: you are not tied to one company and can pick a model for each bot. Apprentice members can use the everyday models but not each provider's most expensive one.
 - **Integrations (Novice and above).** A simple form (name, address, method, parameters and key type) lets a bot call another service. The mockups show "Create CRM contact" and "Book discovery call". Benefit: a bot can do things as well as talk.
-- **Credits are used by the real size of each message.** Benefit: the cost matches what was used.
-- **Limits protect your credits.** Every visitor is rate limited and each bot has a daily credit ceiling. Benefit: a busy launch cannot empty your balance without warning.
+- **Boosts are used by the real size of each message.** Benefit: the cost matches what was used.
+- **Limits protect your boosts.** Every visitor is rate limited and each bot has a daily boost ceiling. Benefit: a busy launch cannot empty your balance without warning.
 - **A bot that cannot answer tells the visitor why** in plain fixed messages. Benefit: visitors are never left with a blank screen.
 - **An AI disclosure line** is added on embeds and white-labelled pages. Benefit: visitors know they are talking to an AI.
 
@@ -100,7 +100,7 @@ Each line gives the feature then the benefit to the member.
 
 - **Your own page for each public bot** on your own subdomain (your username before botterverse.com). Your username is chosen at sign-up and cannot be changed. Benefit: a clean link you can share.
 - **Embed on your own site.** A copied script tag shows a free bot that needs no sign-up inside your page. Any other bot embeds as a "Chat with (bot name)" button that opens its own page. Benefit: your bot lives where your audience already is.
-- **Paywall (Novice and above).** One-time purchase with an optional usage cap and optional message top-ups. Benefit: you charge once and protect yourself from open-ended credit costs.
+- **Paywall (Novice and above).** One-time purchase with an optional usage cap and optional message top-ups. Benefit: you charge once and protect yourself from open-ended boost costs.
 - **A money-back guarantee you choose.** None, 7 days or 14 days, with fixed wording. Benefit: a promise buyers can read and you can honour.
 - **Star ratings from paying users.** Benefit: social proof on your paywall page.
 - **Bot style (Pro and above).** Logo, display name, five colours, font, size, corner style and switches for the header, avatar and powered-by tag, with a live preview. Benefit: the bot looks like your brand.
@@ -124,10 +124,10 @@ Each line gives the feature then the benefit to the member.
 
 ### Analytics
 
-- **Dashboard.** Credit balance, revenue over time, active bots and usage this month. Benefit: one glance shows how things stand.
-- **Bot analytics by plan.** Basic (Novice and above) shows conversations, messages, credits used and revenue with a volume graph. Deeper (Expert and above) adds busiest hours, top conversation starters and category benchmarks. Advanced (Master and above) adds a conversion panel that sets views against purchases. Benefit: you see what works.
+- **Dashboard.** Boost balance, revenue over time, active bots and usage this month. Benefit: one glance shows how things stand.
+- **Bot analytics by plan.** Basic (Novice and above) shows conversations, messages, boosts used and revenue with a volume graph. Deeper (Expert and above) adds busiest hours, top conversation starters and category benchmarks. Advanced (Master and above) adds a conversion panel that sets views against purchases. Benefit: you see what works.
 - **An info mark on every figure** explains what it means. Benefit: no guessing at a number.
-- **Conversation insights [beta].** An optional run lists questions the bot could not answer, common topics and suggested additions. It uses credits and is off by default. Benefit: the bot improves from real use.
+- **Conversation insights [beta].** An optional run lists questions the bot could not answer, common topics and suggested additions. It uses boosts and is off by default. Benefit: the bot improves from real use.
 
 ### A/B testing (Master Tier)
 
@@ -139,12 +139,12 @@ Each line gives the feature then the benefit to the member.
 ### Importing
 
 - **Importer wizard.** You paste your existing instructions, upload files, add integrations, review and create the bot. AI suggests a name, description, category and starters. Benefit: you move an existing bot's setup in without starting again. The importer does not connect to an OpenAI account. You paste the content in.
-- **Botterverse pays for the importer's AI calls** and for listing suggestions. Benefit: no credits are used.
+- **Botterverse pays for the importer's AI calls** and for listing suggestions. Benefit: no boosts are used.
 
-### Credits and billing
+### Boosts and billing
 
-- **Included credits every month** with your plan, plus credit packs and optional auto top-up. Benefit: you do not run dry in the middle of a launch.
-- **Promo codes** that add bonus credits. Benefit: easy to give credits away.
+- **Included boosts every month** with your plan, plus Botter Boosters and optional auto top-up. Benefit: you do not run dry in the middle of a launch.
+- **Promo codes** that add bonus boosts. Benefit: easy to give boosts away.
 - **Monthly or annual billing** with plan changes up or down through a prorated checkout. Benefit: you can move as you grow.
 - **Cancel with one click and keep your plan to the end of the period you paid for.** Benefit: no lock-in.
 - **Data export [beta].** Benefit: your bots and conversations can leave with you. A member requests it on Settings and downloads a zip when it is ready. It holds:
@@ -158,9 +158,9 @@ Each line gives the feature then the benefit to the member.
 | Conversations with my bots | the chats visitors and customers had with the member's bots |
 | My conversations as a customer | the member's own chats with other members' bots, as the chat showed them |
 | Sales credited to me | each sale and what it paid the member |
-| My purchases | plans, credit packs, bot access and Bot Market purchases |
+| My purchases | plans, Botter Boosters, bot access and Bot Market purchases |
 | My commissions | affiliate commissions |
-| Credit ledger and earnings ledger | every credit and earnings movement |
+| Boost ledger and earnings ledger | every boost and earnings movement |
 | Avatar and bot style logos | the member's own images |
 
 Left out on purpose: the hidden contents of a bought bot while its refund window is open and of bots whose licence hides them, the time before a Transferred bot reached the member, integration keys and passwords, staff notes and a list of customers' email addresses (planned for a later release). Say "your bots, knowledge and conversations go with you". Do not say "everything" or "all your customers".
@@ -183,7 +183,7 @@ See section 8. Benefit: a platform that buyers and partners can trust.
 
 All prices are in **US dollars** and are charged monthly or annually. There is **no free trial and no free plan**. Every plan is an ordinary paid subscription. The annual price is ten times the monthly price.
 
-| Plan | Monthly | Annual | Bots | Included credits each month |
+| Plan | Monthly | Annual | Bots | Included boosts each month |
 |---|---|---|---|---|
 | Apprentice Botter | $5 | $50 | 1 | 300 |
 | Novice Botter | $47 | $470 | 5 | 2,000 |
@@ -197,17 +197,17 @@ All prices are in **US dollars** and are charged monthly or annually. There is *
 |---|---|---|
 | Apprentice | One bot, sharing by link, embedding, everyday AI models, buying on Bot Market and the platform's default look | Paywall, integrations, analytics panels, affiliate programme, flagship models and selling on Bot Market |
 | Novice | Everything in Apprentice plus twenty bots, every model, paywall, integrations, basic analytics and the affiliate programme | Deeper analytics, bot style and Bot Market selling |
-| Expert | Everything in Novice plus fifty bots, larger credits, deeper analytics and priority support | Bot style, Bot Market selling and A/B testing |
+| Expert | Everything in Novice plus fifty bots, larger boosts, deeper analytics and priority support | Bot style, Bot Market selling and A/B testing |
 | Pro | Everything in Expert plus unlimited bots, white-label bot style (logo, colours, font and a removable powered-by tag), a lower platform fee and Bot Market selling | A/B testing and advanced analytics |
 | Master | Everything in Pro plus A/B testing and advanced analytics | Nothing in the list above is held back |
 
-**Credits.** Credits pay for every message a bot sends. They are used by the real size of the message. The bot owner pays for the chats their visitors have. A cheaper model uses fewer credits.
+**Boosts.** Boosts pay for every message a bot sends. They are used by the real size of the message. The bot owner pays for the chats their visitors have. A cheaper model uses fewer boosts.
 
-- **Included credits** arrive with each subscription payment. On an annual plan they arrive monthly. Unused included credits **expire** at the next renewal or on a plan change.
-- **Bought credits never expire.**
-- **Credit packs** are bought at the cart checkout. The packs at launch (decided 20 October 2026):
+- **Included boosts** arrive with each subscription payment. On an annual plan they arrive monthly. Unused included boosts **expire** at the next renewal or on a plan change.
+- **Bought boosts never expire.**
+- **Botter Boosters** are bought at the cart checkout. The packs at launch (decided 20 October 2026):
 
-| Pack | Price | Credits | Of which bonus |
+| Pack | Price | Boosts | Of which bonus |
 |---|---|---|---|
 | Starter | $10 | 1,000 | none |
 | Builder | $25 | 2,600 | 100 |
@@ -215,12 +215,12 @@ All prices are in **US dollars** and are charged monthly or annually. There is *
 | Promoter | $100 | 11,500 | 1,500 |
 | Campaigner | $250 | 30,000 | 5,000 |
 
-- **How to describe the bonus.** The bonus is extra credits on top of one credit for each cent paid, the rate an auto top-up buys at. Describe it in credits, never as a percentage or a saving: "5,500 credits, including 500 bonus credits". In one line: "Bigger packs include bonus credits, up to 5,000 extra on the Campaigner pack." Pair it with the fact that bought credits never expire. Do not call them "free credits".
-- **Auto top-up** is off until the member switches it on and agrees to a short statement. It charges the card on the active subscription. A new member starts with a top-up of $20 when credits fall below 1,000. At most three top-ups are charged in one day. The member is emailed each time. If the bank asks for approval the top-up stops until the member tops up by hand.
-- **A top-up buys one credit for each cent charged.**
+- **How to describe the bonus.** The bonus is extra boosts on top of one boost for each cent paid, the rate an auto top-up buys at. Describe it in boosts, never as a percentage or a saving: "5,500 boosts, including 500 bonus boosts". In one line: "Bigger Botter Boosters include bonus boosts, up to 5,000 extra on the Campaigner pack." Pair it with the fact that bought boosts never expire. Do not call them "free boosts".
+- **Auto top-up** is off until the member switches it on and agrees to a short statement. It charges the card on the active subscription. A new member starts with a top-up of $20 when boosts fall below 1,000. At most three top-ups are charged in one day. The member is emailed each time. If the bank asks for approval the top-up stops until the member tops up by hand.
+- **A top-up buys one boost for each cent charged.**
 - **Message counts are not a promise.** The spec sets each allowance against one reference message on a mid-range model. That gives about 44 messages on Apprentice, 350 on Novice, 980 on Expert, 2,650 on Pro and 5,050 on Master. A dearer model uses more. Do not quote these in assets.
 
-**Figures that are settings and can change:** every price and annual price, each plan's bot limit and included credits, the platform fee percentages and the fixed fee per sale, the minimum prices, the refund and holdback periods, the affiliate rates and the pack list. Say "at launch" or point to the pricing page for any figure.
+**Figures that are settings and can change:** every price and annual price, each plan's bot limit and included boosts, the platform fee percentages and the fixed fee per sale, the minimum prices, the refund and holdback periods, the affiliate rates and the Botter Booster list. Say "at launch" or point to the pricing page for any figure.
 
 **Plan changes.** Moving between plans goes through a prorated checkout. Moving to a cheaper plan part-way through a period loses the unused part and the member is told before confirming. Moving down to Apprentice or lapsing pauses bots over the new limit. The bots keep their data.
 
@@ -257,7 +257,7 @@ All prices are in **US dollars** and are charged monthly or annually. There is *
 - **Bot Market sale:** staff refund only if the bot does not work or is not as described. A buyer who simply started using a bot has no right to a refund. An approved refund is less a processing fee equal to the platform fee. Putting the bot on sale ends the right to a refund.
 - **Chargebacks:** a lost chargeback is treated as a refund and dispute fees come from the seller's earnings.
 - **When a bot is taken away** (a ban, an upheld licence breach, an account closure or a deletion) customers with unused messages are refunded from the seller's earnings.
-- **Platform sales** (subscriptions and credit packs) are refunded at staff discretion. No money-back guarantee is stated (section 14).
+- **Platform sales** (subscriptions and Botter Boosters) are refunded at staff discretion. No money-back guarantee is stated (section 14).
 
 ---
 
@@ -272,7 +272,7 @@ All prices are in **US dollars** and are charged monthly or annually. There is *
 1. **Subscription payments by members they referred**, meaning the first payment and every renewal. An annual payment earns on the larger payment in the same way as a monthly one.
 2. **Bot Market sales through a listing link**, at a percentage the seller set for that listing.
 
-Nothing else earns commission. **Credit packs earn none.**
+Nothing else earns commission. **Botter Boosters earn none.**
 
 **Rates (settings that can change)**
 
@@ -320,7 +320,7 @@ Worked on listed monthly prices with no discount (illustration only and not an e
 - misleading financial or health claims, such as guaranteed returns, miracle cures and share tips
 - covert monitoring of individuals
 - spam, fake reviews and political manipulation
-- passing off work as someone's own for academic credit
+- passing off work as someone's own for academic boost
 
 Staff hold the list and can tighten it without a release. Do not publish a longer list or any example prompts. Say "the full list is in the terms".
 
@@ -440,7 +440,7 @@ Both font pairs load from Google Fonts. Pink and cyan are the two brand accents.
 - Dashboard, bot list, bot builder and bot style editor (Pro and above)
 - Knowledge files, starters, models, integrations and the importer wizard
 - Chat with streamed replies, share links, embed, paywall, message top-ups, ratings and guarantees
-- Credits, packs, auto top-up, promo codes, billing and plan changes
+- Boosts, packs, auto top-up, promo codes, billing and plan changes
 - Bot Market with listings, Transfer and Multi-sell, licences, reviews, badges, recommendations and listing affiliate links
 - Seller sales page, payouts page, earnings and withdrawals (paid by hand where needed)
 - Analytics and A/B testing
@@ -467,7 +467,7 @@ Both font pairs load from Google Fonts. Pink and cyan are the two brand accents.
 
 - Paid or signed-in chat inside the embed
 - Pushing updates to earlier buyers of a bot
-- Reward credits for sellers and more badges
+- Reward boosts for sellers and more badges
 - A third theme
 
 **Deliberately not built and not planned**
@@ -503,13 +503,13 @@ Do not promise anything from the last two lists.
 
 **Must say or respect**
 
-- **EU exclusion.** Nobody in the EU can pay for anything, whether a subscription, credits, bot access or a Bot Market purchase. EU visitors can still use free Public bots. All 27 member states are blocked by the visitor's location and by billing country. A payment from an EU billing address is refunded at once. Pricing pages and buy buttons must say paid features are not available in the EU. The list is a setting and a solicitor is confirming that the exclusion is allowed.
+- **EU exclusion.** Nobody in the EU can pay for anything, whether a subscription, boosts, bot access or a Bot Market purchase. EU visitors can still use free Public bots. All 27 member states are blocked by the visitor's location and by billing country. A payment from an EU billing address is refunded at once. Pricing pages and buy buttons must say paid features are not available in the EU. The list is a setting and a solicitor is confirming that the exclusion is allowed.
 - **Payout countries.** Payouts reach more than 160 countries. A member in another country can build, buy and publish free bots and earnings build up. Sign-up says so as soon as a country is chosen.
 - **Currency.** US dollars only.
 - **Seller of record.** Botterverse sells bots and bot access. The licence to use a bot comes from the seller under the seller's own terms. Botterverse does not give legal advice about those terms.
 - **Beta.** Say it is a closed beta for a small group. Release 1 takes real payments. List only what section 10 says is built. Say that some features arrive during the beta. Do not set a date.
 - **Prohibited list.** Name categories only. Never give examples or detail.
-- **Affiliate rules.** No multi-level wording. Credit packs earn nothing. Self-referral is banned.
+- **Affiliate rules.** No multi-level wording. Botter Boosters earn nothing. Self-referral is banned.
 - **Tax.** The company is not VAT registered and the tax display is not settled (section 14). Do not say prices include or exclude tax.
 - **Name.** Do not publish assets before the name is cleared.
 - **Rates are settings.** Add "at launch" or link to the pricing page.
@@ -527,8 +527,8 @@ Claude (the default), GPT, Gemini and Grok. The models on offer can change. A bo
 **3. Is there a free plan?**
 No. Apprentice is $5 a month ($50 a year) and there is no free trial. A visitor can still chat with another member's free Public bot without paying.
 
-**4. What are credits?**
-Credits pay for the messages a bot sends. You pay for your own testing and for the chats your visitors have with your bots. Your plan includes credits each month and they expire at renewal. Credits you buy never expire.
+**4. What are boosts?**
+Boosts pay for the messages a bot sends. You pay for your own testing and for the chats your visitors have with your bots. Your plan includes boosts each month and they expire at renewal. Boosts you buy never expire.
 
 **5. Can I sell my bots?**
 Yes. Charge for access with a one-time paywall from Novice. List a bot for sale on Bot Market from Pro as a Transfer or a Multi-sell with one of four licences.
@@ -540,13 +540,13 @@ Yes. Charge for access with a one-time paywall from Novice. List a bot for sale 
 Earnings can be withdrawn after a holdback (21 days by default) and the minimum is $50 by default. You set up payout once on Stripe's own form. Payout fees are shown before you confirm. Some countries cannot be paid.
 
 **8. How does the affiliate programme work?**
-Join from the Affiliates page on Novice or above and share your link. You earn 50% of a referred member's first payment and 20% of each later payment. The rates are settings. Credit packs earn nothing. Commission is payable after the refund period and the payment steps are being finished during the beta.
+Join from the Affiliates page on Novice or above and share your link. You earn 50% of a referred member's first payment and 20% of each later payment. The rates are settings. Botter Boosters earn nothing. Commission is payable after the refund period and the payment steps are being finished during the beta.
 
 **9. Can I move my existing GPT?**
 You can paste its instructions into the importer and upload its files. Botterverse does not connect to your OpenAI account.
 
 **10. Can I use Botterverse from the EU?**
-You can use free Public bots. Nobody in the EU can pay for a plan or credits or buy a bot.
+You can use free Public bots. Nobody in the EU can pay for a plan or boosts or buy a bot.
 
 **11. What is not allowed?**
 Bots for sexual content, gambling, illegal activity, scams, harm to others and similar. Bots are scanned and reported bots are reviewed. A breach can lead to removal or a ban.
@@ -563,10 +563,10 @@ Yes with one click. You keep your plan to the end of the period you paid for. An
 - **Botters Lab:** the member area.
 - **Botter Support Team:** the people who help members and send some payouts by hand.
 - **Plan or tier:** Apprentice, Novice, Expert, Pro or Master. Shown with "Botter" after the name.
-- **Credits:** what messages cost. Included credits come with a plan. Bought credits never expire.
-- **Credit pack:** credits bought in one go at the cart checkout.
-- **Auto top-up:** a charge that adds credits when your credits are low. It is off until you switch it on.
-- **Promo code:** a code that adds bonus credits. It never discounts a price.
+- **Boosts:** what messages cost. Included boosts come with a plan. Bought boosts never expire.
+- **Botter Booster:** boosts bought in one go at the cart checkout.
+- **Auto top-up:** a charge that adds boosts when your boosts are low. It is off until you switch it on.
+- **Promo code:** a code that adds bonus boosts. It never discounts a price.
 - **Personal and Public:** Personal means private to the owner. Public means shareable and sellable.
 - **Paywall:** a one-time charge for access to a bot.
 - **Access:** a buyer's right to chat with a paid bot. It can carry a message cap.
@@ -609,11 +609,11 @@ Yes with one click. You keep your plan to the end of the period you paid for. An
 4. **Logo brief.** Keep the smiling face mark and which theme leads the brand? Write the wordmark as Botterverse or Botterverse?
 5. **Name clearance.** Have the trademark and domain checks been done? The documents also write the name as "Botterverse".
 6. **Bot Market name.** Is the public name Bot Market only? The documents also use BotFlip.
-7. **Credit packs.** Settled on 20 October 2026: see section 5.
+7. **Botter Boosters.** Settled on 20 October 2026: see section 5.
 8. **Knowledge file size.** The documents give both 5 MB and 20 MB. Which is right?
 9. **Affiliate details.** How long does a referral click last on the marketing site? Is commission on a discounted or founders payment worked out on the discounted amount? What link domain do members see?
 10. **Payout speed.** Will payouts run automatically or by hand at launch? What may be said about timing?
-11. **Platform refunds.** What is the refund policy for subscriptions and credit packs? Can a money-back guarantee be advertised?
+11. **Platform refunds.** What is the refund policy for subscriptions and Botter Boosters? Can a money-back guarantee be advertised?
 12. **Support.** Which plans have priority support? Are there support hours or response times to quote?
 13. **Charter and warning.** Is the public charter (notice periods and export guarantee) written? What is the exact AI for good warning wording shown to members?
 14. **Spelling and tax.** Should marketing use British or American spelling for a US dollar audience? How is tax shown?

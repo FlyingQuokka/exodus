@@ -33,7 +33,7 @@ Rules:
 - Signature on its own line: Your Botter Support Team.
 - The P.S. starts with Next up.
 - Page names match the Botters Lab menu.
-- Say reset and not expire for included credits.
+- Say reset and not expire for included boosts.
 
 Example of the last line of S03: "Tomorrow your bot receives a shelf in the Botterverse and its first words. Both take two minutes."
 
@@ -43,7 +43,7 @@ Purpose: make them feel good about the purchase and explain what happens now. Th
 
 Order:
 1. "Congratulations on becoming our latest Botter." A warm opening of two or three sentences.
-2. What has just arrived. Every plan: a Botters Lab account for building and sharing and running bots. Included credits each month (annual plans receive a new set every month). Each message a bot sends uses credits. That includes the person chatting and your own testing. Unused included credits expire at the next renewal or plan change. Credits you buy never expire. Help articles and Feedback and the support portal, with links. Support needs its own account. The same username and password work for both.
+2. What has just arrived. Every plan: a Botters Lab account for building and sharing and running bots. Included boosts each month (annual plans receive a new set every month). Each message a bot sends uses boosts. That includes the person chatting and your own testing. Unused included boosts expire at the next renewal or plan change. Boosts you buy never expire. Help articles and Feedback and the support portal, with links. Support needs its own account. The same username and password work for both.
 3. What your plan adds. A link to the Pricing page and nothing more. Prices and limits stay on the Pricing page because they can change.
 4. What happens now, in order:
    1. Create your Botters Lab account with the email you bought with. That is how the plan reaches your account.
@@ -77,8 +77,8 @@ Each row: the loop that closes the email (and so the recap that opens the next).
 | S07 | Preview and test | "Your bot is ready. Tomorrow it leaves Personal and goes Public." |
 | S08 | Go Public | "Public means it has an address. Tomorrow you send it to your first real visitor." |
 | S09 | Share the link | "A link is good. Your own website is better. Tomorrow your bot moves in." |
-| S10 | Embed on your website | "Your bot is working and so is something else: credits. Tomorrow we look at what fuels it." |
-| S11 | Credits and the credits pill | "Credits can run out at a bad time. Tomorrow you make sure they do not." |
+| S10 | Embed on your website | "Your bot is working and so is something else: boosts. Tomorrow we look at what fuels it." |
+| S11 | Boosts and the boosts pill | "Boosts can run out at a bad time. Tomorrow you make sure they do not." |
 | S12 | Auto top-up and promo codes | **Branch.** Novice and up: "Your bot works. Tomorrow you put a price on it." Apprentice: "Tomorrow you meet the first thing your next plan could add." |
 | S13 | Paywall and one-time price | "A paywall without limits can cost you. Tomorrow you cap it and add a promise." |
 | S14 | Message cap and guarantee | "Now it can earn. Who tells people? Tomorrow you meet the affiliate programme." |

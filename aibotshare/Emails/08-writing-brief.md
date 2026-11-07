@@ -32,8 +32,8 @@ Do not read anything in the `retired` folder. It holds the retired files.
 ## 3. Brand and fact rules
 
 - The brand is Botterverse. The old name never appears.
-- Never mention: prices or plan limits or credit amounts (link to the Pricing page instead), annual plans, the Founders offer (except where your assignment says so), the sixth tier, the EU as a market, named competitors, testimonials or invented customers or stories, income claims or earnings promises, "daily payouts", the affiliate software by name, the Founder badge.
-- Say "reset" for included credits at renewal and not "expire". Credits the member buys never expire.
+- Never mention: prices or plan limits or boost amounts (link to the Pricing page instead), annual plans, the Founders offer (except where your assignment says so), the sixth tier, the EU as a market, named competitors, testimonials or invented customers or stories, income claims or earnings promises, "daily payouts", the affiliate software by name, the Founder badge.
+- Say "reset" for included boosts at renewal and not "expire". Boosts the member buys never expire.
 - Keep the $50 minimum withdrawal and the 14-day refund and 21-day holdback only in event or sequence emails whose subject is withdrawals or refunds.
 - The customer list for Pro and above carries the consent condition: only customers who ticked the box are included. Never say "all your customers".
 - Priority support starts at Pro.
@@ -124,7 +124,7 @@ Search your own files and fix every hit:
 - an en dash or em dash
 - the word get in any form (gets and getting and get)
 - American spellings (color and organize and behavior and license as a noun)
-- the word "expire" next to included or plan credits
+- the word "expire" next to included or plan boosts
 - any old brand name
 - any typed domain other than `{{domain}}`
 - a run of three or more one-line sentences in a row
@@ -160,7 +160,7 @@ The welcome sequence follows `01-welcome-sequence-plan-v4.md`. Where this sectio
 - Everything is labelled "for example". No invented customer or result. No income claims. The bot answers only from the owner's own material.
 - Say which plan is needed to sell it. Selling by paywall needs Novice Botter and above. Listing on Bot Market needs Pro Botter and above.
 
-**New menu note.** The menu has Billing and credits in an Account group. Add it to the page names in section 3. Create a bot is the approved wording in the samples but the guide's route is Bot list then New bot. Use "Create a bot" where the sample did and add `[CONFIRM: menu entry Create a bot or New bot on Bot list]` to Notes.
+**New menu note.** The menu has Billing and boosts in an Account group. Add it to the page names in section 3. Create a bot is the approved wording in the samples but the guide's route is Bot list then New bot. Use "Create a bot" where the sample did and add `[CONFIRM: menu entry Create a bot or New bot on Bot list]` to Notes.
 
 **Extra self-check.** Search for "go Public" and "publish" used as a step name and for "one email a day" or "30 days".
 
@@ -188,7 +188,7 @@ These win over everything above.
 | My profile | `https://lab.{{domain}}/market/profile` |
 | Sales | `https://lab.{{domain}}/sales` |
 | Payouts | `https://lab.{{domain}}/payouts` |
-| Billing and credits | `https://lab.{{domain}}/billing` |
+| Billing and boosts | `https://lab.{{domain}}/billing` |
 | Settings | `https://lab.{{domain}}/settings` |
 | Affiliates | `https://lab.{{domain}}/affiliates` |
 
@@ -238,7 +238,7 @@ Pages inside the builder (sections of the Create a bot page) are not separate pa
 
 ## 13. Owner rules added 1 November 2026
 
-- **No serial "and".** Never write "a and b and c". Any list of three or more items reads "a, b and c" (commas between the items and "and" before the last with no comma in front of it). This applies to every sentence a reader sees. Fixed names stay as they are (for example Billing and credits and Coaching and Consulting and Terms And Conditions and Pleasant Pink). Two items joined by "and" are fine. Clauses joined by "and" are fine.
+- **No serial "and".** Never write "a and b and c". Any list of three or more items reads "a, b and c" (commas between the items and "and" before the last with no comma in front of it). This applies to every sentence a reader sees. Fixed names stay as they are (for example Billing and boosts and Coaching and Consulting and Terms And Conditions and Pleasant Pink). Two items joined by "and" are fine. Clauses joined by "and" are fine.
 - **Say "annual" never "yearly".** Annual billing and Pay annually and Annual plans. The price line still reads for example "$50 per year".
 - **The tagline is "Build a bot. Share it. Sell access."** Never "Build an AI bot".
 - **FOUNDER50 works on monthly and annual billing.** A Founder who leaves can use it again while the coupon is still active.

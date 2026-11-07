@@ -98,12 +98,12 @@ Use the same email address as your Botter's Lab account. **Founders:** remember 
 coupon at checkout.
 
 If you are annual and were due a refund for whole unused months, it goes back to your card within a day.
-Your credits that you bought stay in your account.
+Your boosts that you bought stay in your account.
 
 If you are leaving, thank you. Your account stays here if you ever come back.
 
 ## Do not say
 
-- "Expire" about included credits: the owner's wording is "reset".
+- "Expire" about included boosts: the owner's wording is "reset".
 - A set time of day: it varies by member.
 - That a refund has been paid: it goes in the next daily run after the plan ends.

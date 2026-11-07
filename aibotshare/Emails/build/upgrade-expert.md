@@ -8,11 +8,11 @@ Ten emails for a member who has just moved up to Expert Botter. Days 0, 1, 3, 5,
 |---|---|---|---|
 | UE01 | 0 | Welcome to Expert Botter and what just opened | Next up: what are your visitors really asking? Your conversation starters hold a clue. |
 | UE02 | 1 | Top conversation starters | Next up: you know what they ask. When do they ask it? |
-| UE03 | 3 | Busiest hours and the Daily credit limit | Next up: when is only half the picture. How does your bot compare with others in its category? |
+| UE03 | 3 | Busiest hours and the Daily boost limit | Next up: when is only half the picture. How does your bot compare with others in its category? |
 | UE04 | 5 | Category benchmarks | Next up: numbers show a gap but not the cause. Which questions did your bot fail to answer? |
 | UE05 | 7 | Conversation insights | Next up: one bot can't suit every audience. What would a set of bots for one business look like? |
-| UE06 | 9 | A suite of bots | Next up: more bots mean more messages. How do you keep your credits from running out? |
-| UE07 | 11 | Credits at a bigger scale and Auto top-up | Next up: your numbers can tune your paywall. Which setting should you change first? |
+| UE06 | 9 | A suite of bots | Next up: more bots mean more messages. How do you keep your boosts from running out? |
+| UE07 | 11 | Boosts at a bigger scale and Auto top-up | Next up: your numbers can tune your paywall. Which setting should you change first? |
 | UE08 | 13 | Tune the paywall with data | Next up: same bot, new outfit. A first look at something Pro Botter adds. |
 | UE09 | 15 | Peek: Bot styles (Pro) | Next up: what if someone wanted to buy the bot itself? A look at selling on the Bot Market. |
 | UE10 | 17 | Peek: selling on the Bot Market (Pro) | None. Plain sign-off. |
@@ -33,7 +33,7 @@ Today is a short tour so you can choose where to start. Over the next weeks, one
 
 **What Expert Botter adds**
 
-- More bots and larger included credits. The [Pricing](https://{{domain}}/pricing/) page lists the figures and your limit is shown under Active bots on the [Dashboard](https://lab.{{domain}}/).
+- More bots and larger included boosts. The [Pricing](https://{{domain}}/pricing/) page lists the figures and your limit is shown under Active bots on the [Dashboard](https://lab.{{domain}}/).
 - Top conversation starters on [Analytics](https://lab.{{domain}}/bots/analytics), which counts your starters.
 - Busiest hours on Analytics, which shows when visitors chat.
 - Category benchmarks on Analytics, which set your bot beside the average for its category.
@@ -49,7 +49,7 @@ Your Botter Support Team
 P.S. Next up: what are your visitors really asking? Your conversation starters hold a clue.
 
 **Notes**
-- Facts: Expert Botter adds more bots and larger included credits and deeper analytics: category benchmarks and busiest hours and top conversation starters (guide 1.4, 8.1). No figures printed.
+- Facts: Expert Botter adds more bots and larger included boosts and deeper analytics: category benchmarks and busiest hours and top conversation starters (guide 1.4, 8.1). No figures printed.
 - Automation: UP-Exp step 1. Tags applied: Upgrade Active.
 - If the contact skipped a tier the recap email replaces this one.
 
@@ -99,7 +99,7 @@ P.S. Next up: you know what they ask. When do they ask it?
 
 ---
 
-## UE03 - Busiest hours and the Daily credit limit (day 3, Expert Botter)
+## UE03 - Busiest hours and the Daily boost limit (day 3, Expert Botter)
 
 **Subject:** [Botters Lab] When do they ask it?
 
@@ -115,9 +115,9 @@ Busiest hours on [Analytics](https://lab.{{domain}}/bots/analytics) shows when v
 
 Share your link just before that stretch because that's when people are most ready to try it.
 
-**Daily credit limit**
+**Daily boost limit**
 
-On a busy day, a free bot can use many credits. In Sharing and embed on the [Create a bot](https://lab.{{domain}}/bots/create) page, Daily credit limit caps that. Leave it empty to use the platform default or enter a whole number of credits.
+On a busy day, a free bot can use many boosts. In Sharing and embed on the [Create a bot](https://lab.{{domain}}/bots/create) page, Daily boost limit caps that. Leave it empty to use the platform default or enter a whole number of boosts.
 
 At the limit, free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. The count resets at midnight UTC and you're emailed once that day.
 
@@ -126,7 +126,7 @@ At the limit, free visitors are told the bot has reached its limit for the day. 
 1. Open Busiest hours and note the top three times.
 2. Choose one of those and schedule a post or email with your Share link for just before it.
 3. Check Usage this month on the [Dashboard](https://lab.{{domain}}/) to see what a normal day costs.
-4. Set a Daily credit limit a little above that and press Save.
+4. Set a Daily boost limit a little above that and press Save.
 
 **Task for today**
 
@@ -139,7 +139,7 @@ Your Botter Support Team
 P.S. Next up: when is only half the picture. How does your bot compare with others in its category?
 
 **Notes**
-- Facts: Busiest hours (Expert Botter and above, guide 8.1). Daily credit limit under Sharing and embed: empty uses the platform default or whole credits; free visitors told; paid buyers and owner carry on; resets midnight UTC; owner emailed once that day (4.4). Usage this month on the Dashboard (2.6).
+- Facts: Busiest hours (Expert Botter and above, guide 8.1). Daily boost limit under Sharing and embed: empty uses the platform default or whole boosts; free visitors told; paid buyers and owner carry on; resets midnight UTC; owner emailed once that day (4.4). Usage this month on the Dashboard (2.6).
 - Confirmed by the app agent (answer 7): Busiest hours uses the member's own timezone from account settings (Europe/London by default).
 - The step "just before that stretch" is advice and not a guide fact.
 - Automation: UP-Exp step 3.
@@ -174,7 +174,7 @@ A gap tells you where to look. It doesn't tell you the cause and that's tomorrow
 
 Open Analytics and choose a bot that has a Category and a paywall. Read Category benchmarks in the order above and write one sentence about each.
 
-If the panel is hidden, open the bot from [Bot list](https://lab.{{domain}}/bots) and check its Category. Suggest a category costs no credits.
+If the panel is hidden, open the bot from [Bot list](https://lab.{{domain}}/bots) and check its Category. Suggest a category costs no boosts.
 
 All the best,
 
@@ -183,7 +183,7 @@ Your Botter Support Team
 P.S. Next up: numbers show a gap but not the cause. Which questions did your bot fail to answer?
 
 **Notes**
-- Facts: Category benchmarks show category average for messages per buyer and price and conversion beside This bot, hidden until enough bots feed it (guide 8.1). Price changes apply to new buyers (5.3). Suggest a category uses no credits (3.4).
+- Facts: Category benchmarks show category average for messages per buyer and price and conversion beside This bot, hidden until enough bots feed it (guide 8.1). Price changes apply to new buyers (5.3). Suggest a category uses no boosts (3.4).
 - Confirmed by the app agent (answer 8): with no Category the panel is hidden. It also needs enough bots feeding it (a staff setting).
 - Interpretations (below average means...) are advice and not guide facts.
 - Subject echoes the UE03 P.S.
@@ -203,7 +203,7 @@ Last time you compared your bot with its category. The numbers show a gap but no
 
 **Conversation insights**
 
-This is a report on a bot's conversations. It's off until you switch it on and each run uses your credits, because no plan includes it. Nothing is charged for a skipped or failed run.
+This is a report on a bot's conversations. It's off until you switch it on and each run uses your boosts, because no plan includes it. Nothing is charged for a skipped or failed run.
 
 The report has three parts. Unanswered questions lists what the bot couldn't answer. Common topics shows what people talk about. Suggested additions offers text you can add, with two buttons: Add to knowledge and Add to instructions.
 
@@ -230,7 +230,7 @@ Your Botter Support Team
 P.S. Next up: one bot can't suit every audience. What would a set of bots for one business look like?
 
 **Notes**
-- Facts: off until switched on; no plan includes them so each run costs credits; Analytics section; Unanswered questions and Common topics and Suggested additions with Add to knowledge and Add to instructions; optional Insights email; nothing charged for skipped or failed run; not offered where the owner cannot see the instructions (guide 8.2).
+- Facts: off until switched on; no plan includes them so each run costs boosts; Analytics section; Unanswered questions and Common topics and Suggested additions with Add to knowledge and Add to instructions; optional Insights email; nothing charged for skipped or failed run; not offered where the owner cannot see the instructions (guide 8.2).
 - The rule of thumb for fact versus rule is advice.
 - Subject echoes the UE04 P.S.
 - Automation: UP-Exp step 5.
@@ -273,7 +273,7 @@ Have fun building,
 
 Your Botter Support Team
 
-P.S. Next up: more bots mean more messages. How do you keep your credits from running out?
+P.S. Next up: more bots mean more messages. How do you keep your boosts from running out?
 
 **Notes**
 - Facts: Duplicate adds "Copy" to the name and starts Personal with the paywall off (guide 3.10). Active bots on the Dashboard; paused bots count towards the limit (2.6). Personal can stay Personal (4.1).
@@ -282,38 +282,38 @@ P.S. Next up: more bots mean more messages. How do you keep your credits from ru
 
 ---
 
-## UE07 - Credits at a bigger scale and Auto top-up (day 11, Expert Botter)
+## UE07 - Boosts at a bigger scale and Auto top-up (day 11, Expert Botter)
 
-**Subject:** [Botters Lab] Keeping your credits from running out
+**Subject:** [Botters Lab] Keeping your boosts from running out
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Last time you planned a set of bots. More bots mean more messages, so today you make sure your credits don't run out.
+Last time you planned a set of bots. More bots mean more messages, so today you make sure your boosts don't run out.
 
-**Where credits come from**
+**Where boosts come from**
 
-Included credits are added with your plan and reset at each renewal or plan change. Credits you buy never expire. Select [Billing and credits](https://lab.{{domain}}/billing) to see them. The sections run in this order: Credits and usage, Auto top-up, Promo code, Buy credits and Your plan.
+Included boosts are added with your plan and reset at each renewal or plan change. Boosts you buy never expire. Select [Billing and boosts](https://lab.{{domain}}/billing) to see them. The sections run in this order: Boosts and usage, Auto top-up, Promo code, Buy boosts and Your plan.
 
-The usage graph shows which days used the most. The history labels tell you whether credits came from Plan credits or Credits bought.
+The usage graph shows which days used the most. The history labels tell you whether boosts came from Plan boosts or Boosts bought.
 
-If your credits can't cover a message, every one of your bots stops answering everyone, buyers included. You're emailed when that happens.
+If your boosts can't cover a message, every one of your bots stops answering everyone, buyers included. You're emailed when that happens.
 
 **Setting up Auto top-up**
 
 1. Open Auto top-up and read the statement.
 2. Press Agree and switch on.
-3. Enter Top up when my credits fall below as a whole number of credits.
-4. Enter the Top-up amount in dollars. You receive one credit per cent and there's no pack bonus.
+3. Enter Top up when my boosts fall below as a whole number of boosts.
+4. Enter the Top-up amount in dollars. You receive one boost per cent and there's no Botter Booster bonus.
 
-For example, below 500 credits with a top-up of 10 dollars. Choose figures that suit your own usage.
+For example, below 500 boosts with a top-up of 10 dollars. Choose figures that suit your own usage.
 
 You'll need an active plan and a card on file. You're emailed each time it charges. A daily cap pauses it until the next day. If your card is declined twice, it switches off with an email.
 
 **Task for today**
 
-Switch on Auto top-up with your own figures. Then press the credits pill at the top and check the usage graph.
+Switch on Auto top-up with your own figures. Then press the boosts pill at the top and check the usage graph.
 
 Stay topped up,
 
@@ -322,7 +322,7 @@ Your Botter Support Team
 P.S. Next up: your numbers can tune your paywall. Which setting should you change first?
 
 **Notes**
-- Facts: included credits reset at renewal or plan change and bought credits never expire; five sections in order; usage graph and history labels; bots stop answering when credits cannot cover a message; Auto top-up steps, one credit per cent, needs active plan and card on file, emailed on every charge, daily cap, declined card switches off after a retry (guide 10.1, 10.4).
+- Facts: included boosts reset at renewal or plan change and bought boosts never expire; five sections in order; usage graph and history labels; bots stop answering when boosts cannot cover a message; Auto top-up steps, one boost per cent, needs active plan and card on file, emailed on every charge, daily cap, declined card switches off after a retry (guide 10.1, 10.4).
 - Defaults and the daily top-up count are not printed. The example figures are labelled "for example".
 - Automation: UP-Exp step 7.
 
@@ -340,7 +340,7 @@ Last time you switched on Auto top-up. Your numbers can also tune your paywall, 
 
 **Three settings the data can guide**
 
-Message cap and top-up. If credits per message on [Analytics](https://lab.{{domain}}/bots/analytics) is high, the cap may be too generous. If buyers reach it and don't top up, the top-up size may be too large.
+Message cap and top-up. If boosts per message on [Analytics](https://lab.{{domain}}/bots/analytics) is high, the cap may be too generous. If buyers reach it and don't top up, the top-up size may be too large.
 
 Starters. Top conversation starters shows which ones open the most conversations. They show on the paywall under Things you can ask it.
 
@@ -353,7 +353,7 @@ Existing buyers keep what they paid. Change one setting at a time and give it a 
 **A short tuning checklist**
 
 1. Open Analytics and choose the bot and the last month.
-2. Write down conversations, credits per message and conversion.
+2. Write down conversations, boosts per message and conversion.
 3. Change one thing: the cap, the starters or the description.
 4. Press Save.
 5. Check the same three figures a week later.
@@ -437,7 +437,7 @@ Last time you planned a style for your bots. What if someone wanted to buy the b
 
 Pro Botter and above can list a Public bot on the Bot Market. There are two sale types. Transfer moves ownership and sells once. Multi-sell gives each buyer their own copy under your licence and you keep the original.
 
-To list a bot, select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. The form includes Description and Tags with a Suggest a description and tags button that uses no credits. It also has Sale type and licence, Price (USD) and Affiliate share (%).
+To list a bot, select [My listings](https://lab.{{domain}}/listings) then List a bot for sale. The form includes Description and Tags with a Suggest a description and tags button that uses no boosts. It also has Sale type and licence, Price (USD) and Affiliate share (%).
 
 You choose one of four licences: Personal use, Resell rights, Master resell rights or PLR. See the [Pricing](https://{{domain}}/pricing/) page for the plan.
 
@@ -456,7 +456,7 @@ Happy building,
 Your Botter Support Team
 
 **Notes**
-- Facts: Transfer and Multi-sell; four licences; My listings and List a bot for sale; Suggest a description and tags uses no credits; Price (USD) and Affiliate share (%); listing is Pro Botter and above; every plan can browse and buy (guide 6.1, 6.2, 6.3, 6.5).
+- Facts: Transfer and Multi-sell; four licences; My listings and List a bot for sale; Suggest a description and tags uses no boosts; Price (USD) and Affiliate share (%); listing is Pro Botter and above; every plan can browse and buy (guide 6.1, 6.2, 6.3, 6.5).
 - Listing prerequisites and the platform fee line are left out. Peek only.
 - Final email: plain sign-off. No Next up loop. On send remove Upgrade Active and apply Upgrade Done.
 - Story version dropped (no invented person).

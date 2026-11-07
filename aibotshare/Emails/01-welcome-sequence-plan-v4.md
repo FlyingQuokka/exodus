@@ -31,7 +31,7 @@ Who: **All** means every tier. A tier name means that tier and above. Members on
 | 2 | B1 | Build a bot in one sitting: Details and Instructions and Category and starters | All | S03 and S04 | Testing it and sharing it |
 | 3 | B2 | Test it then Make Public and share the link | All | S07 and S08 and S09 | Feeding it your own material |
 | 4 | B3 | Make it yours: knowledge files and the model | All | S05 and S06 | What fuels a bot |
-| 5 | C1 | Credits and Auto top-up and promo codes | All | S11 and S12 | Your bot on your own website |
+| 5 | C1 | Boosts and Auto top-up and promo codes | All | S11 and S12 | Your bot on your own website |
 | 6 | W1 | Put your bot on your website: the embed snippet | All | S10 reworked | Bots that work well on a website |
 | 7 | W2 | Website bots: an FAQ bot for a sales page and a product helper | All | New | More bot ideas by niche |
 | 8 | W3 | Website bots by niche: recipe bot and glossary bot and course companion (three examples only if the email stays short. Otherwise two) | All | New | Charging for access |
@@ -70,7 +70,7 @@ This keeps the upgrade teasers in the sequence without a separate set of emails.
 
 ## 5. Website bot emails (W1 to W3)
 
-- **W1: the embed snippet.** Open the bot and find Sharing and embed under Advanced. Copy the Embed snippet and paste it into the page. A new bot has Require visitors to sign up switched on so the page shows a Chat with button until it is switched off. Set a Daily credit limit so a busy page can't use up the balance.
+- **W1: the embed snippet.** Open the bot and find Sharing and embed under Advanced. Copy the Embed snippet and paste it into the page. A new bot has Require visitors to sign up switched on so the page shows a Chat with button until it is switched off. Set a Daily boost limit so a busy page can't use up the balance.
 - **W2: bots for a sales page.** An FAQ bot that answers questions about a product or an offer. A product helper that suggests which product or package fits. For each: a worked example for Name and Description and Category and Instructions and Conversation starters and the knowledge file contents. Rule: the bot answers only from the owner's own material and never makes income or results claims.
 - **W3: bots by niche.** A recipe bot for a food blog. A glossary or explainer bot for a topic. A companion for a course. Same worked fill-in.
 

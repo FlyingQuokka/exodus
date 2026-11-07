@@ -14,8 +14,8 @@ Each P.S. loop is paid off by the next email's recap and content. The recap of e
 | UM04 | Reading the results | Next up: a test has a result, so what do you do with it and which of four buttons ends it? |
 | UM05 | Crowning a winner | Next up: a bot can win a test and still lose the sale, so where do visitors drop out between viewing and buying? |
 | UM06 | Views against purchases | Next up: one thing no test will ever change and what to do about it. |
-| UM07 | What you cannot test | Next up: tests use credits too, so how do you stop a busy week emptying them? |
-| UM08 | Credits at scale | Next up: your CRM can see which version each customer met, so what can you do with that? |
+| UM07 | What you cannot test | Next up: tests use boosts too, so how do you stop a busy week emptying them? |
+| UM08 | Boosts at scale | Next up: your CRM can see which version each customer met, so what can you do with that? |
 | UM09 | Tests and the CRM | Next up: everything from these emails in one weekly routine. |
 | UM10 | Your Master routine | None. Plain sign-off. |
 
@@ -35,11 +35,11 @@ New topic: today is a map of what has opened up. The next nine emails take one i
 
 **What Master Botter adds**
 
-Master Botter includes everything in the plans below it. On top of that, you have two features and a larger set of included credits:
+Master Botter includes everything in the plans below it. On top of that, you have two features and a larger set of included boosts:
 
 1. [A/B tests](https://lab.{{domain}}/bots/ab-tests) - run two or more versions of a bot at once and see which one does better. You find it under Bots in the menu.
 2. Advanced analytics - a Conversion panel on the [Analytics](https://lab.{{domain}}/bots/analytics) page that sets Paywall views and Listing views against Purchases and Conversion.
-3. The largest included credits. Tests use credits like any other chat. The [Pricing](https://{{domain}}/pricing/) page shows the amounts.
+3. The largest included boosts. Tests use boosts like any other chat. The [Pricing](https://{{domain}}/pricing/) page shows the amounts.
 
 An A/B test never changes your price. Price is never tested.
 
@@ -57,7 +57,7 @@ P.S. Next up: your first A/B test, from a blank page to Start the test.
 
 **Notes**
 - Facts: Master adds A/B tests and advanced analytics (guide 1.4). A/B tests entry under Bots (1.5). Conversion panel with Paywall views, Listing views, Purchases and Conversion (8.1). Price is never tested (8.3). Messages per conversation appears in the basic analytics (8.1).
-- No credit amounts. Pricing page link instead.
+- No boost amounts. Pricing page link instead.
 - Automation: UP-Mas step 1 (day 0). Tags: Upgrade Active applied. Welcome Active removed.
 
 ---
@@ -186,7 +186,7 @@ New topic: the Results show five figures for each version. Each one answers a di
 **The five measures**
 
 1. Conversations - how many chats each version had. It tells you whether the split is working and whether you have enough data yet.
-2. Messages per conversation - how long chats last. A higher figure can mean people are interested. It can also mean the bot isn't answering fully. Each message uses credits, so read it with care.
+2. Messages per conversation - how long chats last. A higher figure can mean people are interested. It can also mean the bot isn't answering fully. Each message uses boosts, so read it with care.
 3. Returning customers - who came back. This is the strongest sign that a version is useful.
 4. Paywall conversion - the share of that version's paywall views that led to a successful payment for access. It applies only to bots that sell access and shows No views if there were none.
 5. Revenue per conversation - your share of the access payments and message top-ups credited to that version, divided by its conversations. Bot Market sales are not included. It shows No data if there were no conversations.
@@ -219,7 +219,7 @@ Your Botter Support Team
 P.S. Next up: a test has a result, so what do you do with it and which of four buttons ends it?
 
 **Notes**
-- Facts: the five Results measures with these exact labels (guide 8.3). Info mark beside every figure (8.1). Each message uses credits (10.1).
+- Facts: the five Results measures with these exact labels (guide 8.3). Info mark beside every figure (8.1). Each message uses boosts (10.1).
 - Confirmed by the app agent (answer 9): Paywall conversion is new paywall accesses with a successful payment divided by that version's paywall views. Revenue per conversation is the owner's net share of successful access payments and top-ups divided by conversations. Bot Market sales are in neither.
 - Automation: UP-Mas step 4 (day 5).
 
@@ -356,7 +356,7 @@ Change these on the bot itself. Price changes apply to new buyers only and exist
 2. Message cap, top-up size and top-up price.
 3. Money-back guarantee (No guarantee, 7 days or 14 days).
 4. The paywall description.
-5. The model. On a Public bot, a model change means confirming declarations again and a dearer model uses more credits per message.
+5. The model. On a Public bot, a model change means confirming declarations again and a dearer model uses more boosts per message.
 
 Change one setting. Note the date. Compare the same Date range before and after in [Analytics](https://lab.{{domain}}/bots/analytics). Don't change the control's own settings while a test runs, because the results stop being comparable.
 
@@ -377,43 +377,43 @@ Speak soon,
 
 Your Botter Support Team
 
-P.S. Next up: tests use credits too, so how do you stop a busy week emptying them?
+P.S. Next up: tests use boosts too, so how do you stop a busy week emptying them?
 
 **Notes**
-- Facts: price is never tested and variants have Instructions and Starters (guide 8.3). Price changes apply to new buyers (5.3). Guarantee choices No guarantee, 7 days, 14 days (5.4). Model change on a Public bot means confirming declarations again and a dearer model uses more credits (3.8).
+- Facts: price is never tested and variants have Instructions and Starters (guide 8.3). Price changes apply to new buyers (5.3). Guarantee choices No guarantee, 7 days, 14 days (5.4). Model change on a Public bot means confirming declarations again and a dearer model uses more boosts (3.8).
 - Advice about not changing the control during a test is practical guidance and not a guide claim.
 - Automation: UP-Mas step 7 (day 11).
 
 ---
 
-## UM08 - Credits at scale (day 13, Master upgrade)
+## UM08 - Boosts at scale (day 13, Master upgrade)
 
-**Subject:** [Botters Lab] Stop a busy week emptying your credits
+**Subject:** [Botters Lab] Stop a busy week emptying your boosts
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Recap: last time we covered what a test cannot change and I said we'd look at how to stop a busy week emptying your credits.
+Recap: last time we covered what a test cannot change and I said we'd look at how to stop a busy week emptying your boosts.
 
-New topic: every message in every version of a test uses your credits and so do your own previews. A bigger test means more messages.
+New topic: every message in every version of a test uses your boosts and so do your own previews. A bigger test means more messages.
 
 **Three protections**
 
-1. Daily credit limit. Open the bot from [Bot list](https://lab.{{domain}}/bots) then open Sharing and embed. Enter whole credits. Free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. It resets at midnight UTC and you're emailed once that day.
-2. Auto top-up. Open [Billing and credits](https://lab.{{domain}}/billing) then Auto top-up. Read the statement then press Agree and switch on. Set Top up when my credits fall below and the Top-up amount. It needs an active plan and a card on file. It emails you each time it charges.
-3. Warnings. You're emailed when credits fall below your top-up threshold and again when credits can't cover a message. At that point, all your bots stop answering everyone until credits are added.
+1. Daily boost limit. Open the bot from [Bot list](https://lab.{{domain}}/bots) then open Sharing and embed. Enter whole boosts. Free visitors are told the bot has reached its limit for the day. Paid buyers and you carry on. It resets at midnight UTC and you're emailed once that day.
+2. Auto top-up. Open [Billing and boosts](https://lab.{{domain}}/billing) then Auto top-up. Read the statement then press Agree and switch on. Set Top up when my boosts fall below and the Top-up amount. It needs an active plan and a card on file. It emails you each time it charges.
+3. Warnings. You're emailed when boosts fall below your top-up threshold and again when boosts can't cover a message. At that point, all your bots stop answering everyone until boosts are added.
 
-The usage graph on Billing and credits shows Messages, Plan credits and Credits bought over time, so you can see which days run heavy.
+The usage graph on Billing and boosts shows Messages, Plan boosts and Boosts bought over time, so you can see which days run heavy.
 
-**A credit plan**
+**A boost plan**
 
 For example, go through these in order:
 
 > 1. Open the usage graph and note the busiest day of the last month.
-> 2. Set the Top up when my credits fall below value to cover at least one busiest day.
-> 3. Set a Daily credit limit on any bot that runs a test.
-> 4. Check your credit balance in the credits pill at the top of the page before you start a new test.
+> 2. Set the Top up when my boosts fall below value to cover at least one busiest day.
+> 3. Set a Daily boost limit on any bot that runs a test.
+> 4. Check your boost balance in the boosts pill at the top of the page before you start a new test.
 
 **Task for today**
 
@@ -426,8 +426,8 @@ Your Botter Support Team
 P.S. Next up: your CRM can see which version each customer met, so what can you do with that?
 
 **Notes**
-- Facts: Daily credit limit (guide 4.4). Auto top-up labels and behaviour (10.4). Low and exhausted credit emails and all bots stopping (10.1). Usage graph labels (10.1). Preview uses credits (3.9).
-- No credit amounts or default values. The guide gives none.
+- Facts: Daily boost limit (guide 4.4). Auto top-up labels and behaviour (10.4). Low and exhausted boost emails and all bots stopping (10.1). Usage graph labels (10.1). Preview uses boosts (3.9).
+- No boost amounts or default values. The guide gives none.
 - Automation: UP-Mas step 8 (day 13).
 
 ---
@@ -440,7 +440,7 @@ P.S. Next up: your CRM can see which version each customer met, so what can you 
 
 Hi {{contact.first_name}},
 
-Recap: last time we covered how to protect your credits and I said your CRM can see which version each customer met.
+Recap: last time we covered how to protect your boosts and I said your CRM can see which version each customer met.
 
 New topic: every event the CRM connector sends carries the A/B variant. Your own CRM can then compare the customers of each version.
 
@@ -502,9 +502,9 @@ New topic: tests only help if you keep running them. A short weekly routine make
 
 Set a time each week and work through these four steps. Pick one bot at a time.
 
-1. Analytics. Open [Analytics](https://lab.{{domain}}/bots/analytics) in the menu. Note Conversations, Messages per conversation and credits used for the period. On a bot that sells access, open the Conversion panel and note the four figures.
+1. Analytics. Open [Analytics](https://lab.{{domain}}/bots/analytics) in the menu. Note Conversations, Messages per conversation and boosts used for the period. On a bot that sells access, open the Conversion panel and note the four figures.
 2. A/B tests. Open [A/B tests](https://lab.{{domain}}/bots/ab-tests). If a test has reached your number, finish it with Choose as winner, Keep the control or Stop the test. Then press Start a new test with the next idea from your list.
-3. Credits. Check the credits pill and the usage graph on [Billing and credits](https://lab.{{domain}}/billing). Make sure Auto top-up is on and a Daily credit limit is set for any bot under test.
+3. Boosts. Check the boosts pill and the usage graph on [Billing and boosts](https://lab.{{domain}}/billing). Make sure Auto top-up is on and a Daily boost limit is set for any bot under test.
 4. CRM. If your CRM is connected, compare the segments for each variant of your running test.
 
 Write one line in your change log for anything you changed.
@@ -517,7 +517,7 @@ For example, keep this where you'll see it:
 > Bot: [NAME]
 > Analytics: conversations [NUMBER], messages per conversation [NUMBER]
 > Test: [RUNNING OR FINISHED] - [DECISION]
-> Credits: auto top-up [ON OR OFF], daily limit [SET OR NOT]
+> Boosts: auto top-up [ON OR OFF], daily limit [SET OR NOT]
 > CRM: [WHAT THE SEGMENTS SHOW]
 > Next idea to test: [ONE THING]
 
@@ -532,6 +532,6 @@ Happy building,
 Your Botter Support Team
 
 **Notes**
-- Facts: Analytics and Conversion figures (guide 8.1). Test buttons (8.3). Billing and credits, Auto top-up, Daily credit limit (4.4 and 10.4). CRM variant field (9.2).
+- Facts: Analytics and Conversion figures (guide 8.1). Test buttons (8.3). Billing and boosts, Auto top-up, Daily boost limit (4.4 and 10.4). CRM variant field (9.2).
 - Last email: no "Next up" loop. Plain sign-off.
 - Automation: UP-Mas step 10 (day 17). When sent: remove Upgrade Active and apply Upgrade Done.

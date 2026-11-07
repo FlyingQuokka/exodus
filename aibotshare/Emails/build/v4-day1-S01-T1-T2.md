@@ -24,9 +24,9 @@ Congratulations on becoming our latest Botter. You can now build AI bots on the 
 
 **What you've received**
 
-Your plan includes a Botters Lab account, which is where you build, share and run your bots. It also includes credits every month. Credits pay for the messages your bots send, whether a visitor is chatting or you're testing.
+Your plan includes a Botters Lab account, which is where you build, share and run your bots. It also includes boosts every month. Boosts pay for the messages your bots send, whether a visitor is chatting or you're testing.
 
-Unused included credits are reset at your next renewal or plan change. Credits you buy never expire. The [Pricing](https://{{domain}}/pricing/) page lists what each plan adds along with the limits.
+Unused included boosts are reset at your next renewal or plan change. Boosts you buy never expire. The [Pricing](https://{{domain}}/pricing/) page lists what each plan adds along with the limits.
 
 For help you have the [help articles](https://{{domain}}/docs/), a feedback form and a support portal. Support needs its own account but you can use the same username and password as your billing login to keep things simple.
 
@@ -79,7 +79,7 @@ On a computer or phone only you use, tick Keep me signed in. That saves you typi
 
 **The Dashboard**
 
-The [Dashboard](https://lab.{{domain}}/) is the first page you see after you sign in. Credit balance is what you can spend on messages right now and Usage this month shows how many credits you've used.
+The [Dashboard](https://lab.{{domain}}/) is the first page you see after you sign in. Boost balance is what you can spend on messages right now and Usage this month shows how many boosts you've used.
 
 Active bots shows how many bots you have against your plan's limit, for example 3 of 5. Revenue over time will show your share of what your bots earn.
 
@@ -87,13 +87,13 @@ Active bots shows how many bots you have against your plan's limit, for example 
 
 The menu down the left is how you move around. Bots holds [Bot list](https://lab.{{domain}}/bots), [Import a bot](https://lab.{{domain}}/bots/import), Analytics, A/B tests and Bot styles. Bot Market holds Browse, Bots I bought, My listings and My profile.
 
-Earnings holds Sales and Payouts. Account holds [Billing and credits](https://lab.{{domain}}/billing). Settings, Support, Help, Feedback and Affiliates sit at the foot.
+Earnings holds Sales and Payouts. Account holds [Billing and boosts](https://lab.{{domain}}/billing). Settings, Support, Help, Feedback and Affiliates sit at the foot.
 
 Your plan name shows under your name at the top right. A page your plan doesn't include has a short note saying what it does and which plans have it, so you can look without anything breaking.
 
 **Task for today**
 
-[Sign in](https://lab.{{domain}}/login) with your username and tick Keep me signed in. Then find your Credit balance on the Dashboard and open Bot list to see where your bots will live.
+[Sign in](https://lab.{{domain}}/login) with your username and tick Keep me signed in. Then find your Boost balance on the Dashboard and open Bot list to see where your bots will live.
 
 For a quick win, press the theme button at the top to switch between Pleasant Pink and Nightshift.
 
@@ -120,7 +120,7 @@ Hi {{contact.first_name}},
 
 Recap: earlier today, you had a tour of signing in, the Dashboard and the menu. Your account is confirmed and your plan is in place.
 
-New topic: if you already have a bot somewhere else you don't need to start again. [Import a bot](https://lab.{{domain}}/bots/import) brings it into the Botters Lab by pasting and uses no credits.
+New topic: if you already have a bot somewhere else you don't need to start again. [Import a bot](https://lab.{{domain}}/bots/import) brings it into the Botters Lab by pasting and uses no boosts.
 
 **What you can bring**
 
@@ -137,7 +137,7 @@ The bot opens in the builder as Personal, so only you can use it. It counts towa
 
 **Task for today**
 
-Import one bot. Read Not carried across before you change anything and then try the bot in Preview. Preview uses your credits.
+Import one bot. Read Not carried across before you change anything and then try the bot in Preview. Preview uses your boosts.
 
 If you have no bot to bring in, you don't need to do anything today because tomorrow's email builds one with you.
 
@@ -148,7 +148,7 @@ Your Botter Support Team
 P.S. Next up: how to build a bot from scratch in a single sitting.
 
 **Notes**
-- Facts: Import a bot is paste-only with no credits and nothing saved until Create bot. Integrations are not part of Apprentice Botter. The imported bot opens as Personal and counts towards the plan limit (3.1 and 3.12).
+- Facts: Import a bot is paste-only with no boosts and nothing saved until Create bot. Integrations are not part of Apprentice Botter. The imported bot opens as Personal and counts towards the plan limit (3.1 and 3.12).
 - Fallback version (no tier tag by the end of day 1): replace the second sentence of the recap with "If you haven't created your account yet, the link in your purchase email is the place to start." Nothing else changes. The fallback stays plan-neutral.
 - T2 must never send before T1. Add a condition on T1 having been sent.
 - Reworked from X1. X1 stays available as a standalone email elsewhere.

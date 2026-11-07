@@ -89,7 +89,7 @@ Hi {{contact.first_name}},
 
 Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.
 
-Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its credits are added once you confirm.
+Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.
 
 Your Botter Support Team
 
@@ -130,14 +130,14 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You've confirmed your email address, so your plan and its credits have been added to your Botters Lab account.
+You've confirmed your email address, so your plan and its boosts have been added to your Botters Lab account.
 
-[Sign in](https://lab.{{domain}}/login) with your username and your password. Your [Dashboard](https://lab.{{domain}}/) shows your credit balance and how many bots your plan allows.
+[Sign in](https://lab.{{domain}}/login) with your username and your password. Your [Dashboard](https://lab.{{domain}}/) shows your boost balance and how many bots your plan allows.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: "the plan and its credits are then added" once the email is confirmed (digest 2.3). Sign-in takes the username and never the email address.
+- Facts: "the plan and its boosts are then added" once the email is confirmed (digest 2.3). Sign-in takes the username and never the email address.
 - Automation: none. Sender is None because the guide shows a notice only. The welcome sequence covers this moment so this email is optional.
 
 ---
@@ -371,22 +371,22 @@ Your Botter Support Team
 
 ---
 
-## E12 - Daily credit limit reached (once per day per bot)
+## E12 - Daily boost limit reached (once per day per bot)
 
-**Subject:** [Botters Lab] A bot has reached its daily credit limit
+**Subject:** [Botters Lab] A bot has reached its daily boost limit
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-{{bot_name}} has reached its Daily credit limit for today. Free visitors are told the bot has reached its limit for the day. Paid buyers and you can carry on.
+{{bot_name}} has reached its Daily boost limit for today. Free visitors are told the bot has reached its limit for the day. Paid buyers and you can carry on.
 
-The limit resets at midnight UTC. To change it, open the bot from [Bot list](https://lab.{{domain}}/bots) and go to Sharing and embed. Enter a new Daily credit limit and press Save. You'll receive this email once per day.
+The limit resets at midnight UTC. To change it, open the bot from [Bot list](https://lab.{{domain}}/bots) and go to Sharing and embed. Enter a new Daily boost limit and press Save. You'll receive this email once per day.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: **Daily credit limit** is in **Sharing and embed**, a section of the bot's page. At the limit free visitors are told and paid buyers and the owner carry on. Resets at midnight UTC and the owner is emailed once that day (digest 4.4).
+- Facts: **Daily boost limit** is in **Sharing and embed**, a section of the bot's page. At the limit free visitors are told and paid buyers and the owner carry on. Resets at midnight UTC and the owner is emailed once that day (digest 4.4).
 - Automation: none. Sender is App [verify with the app agent].
 
 ---
@@ -430,10 +430,10 @@ Your plan has changed, so some of what your account can do has changed with it.
 
 Bots over your new plan's limit are paused, the most recently created first. You can choose which to keep running from your Bot list. Upgrading again starts them all.
 
-Paywalls, listings and bot styles follow the features of your plan. Remaining credits from any credit packs you bought are untouched. Your included credits change to your new plan's at your next renewal.
+Paywalls, listings and bot styles follow the features of your plan. Remaining boosts from any Botter Boosters you bought are untouched. Your included boosts change to your new plan's at your next renewal.
 
 [Open your Bot list]
-[Open Billing and credits]
+[Open Billing and boosts]
 
 **Notes**
 - Facts: when the plan drops bots over the limit are paused newest first and **Keep this bot** chooses which run (digest 3.10 and 3.11 and 10.6).
@@ -456,10 +456,10 @@ Your plan has ended. Your account is still open and your data is kept.
 Your bots are paused until you buy a plan again.
    * Bots paused: {{ paused_bot_count }}
 
-When your new plan starts, your bots come back, oldest first, up to the new plan's bot limit. Remaining credits from any credit packs you bought are untouched. Included credits you had not used have been reset.
+When your new plan starts, your bots come back, oldest first, up to the new plan's bot limit. Remaining boosts from any Botter Boosters you bought are untouched. Included boosts you had not used have been reset.
 
 [See the plans]
-[Open Billing and credits]
+[Open Billing and boosts]
 
 **Notes**
 - No overlap with O15-4. The app agent confirmed on 1 November 2026 that it sends `plan.ended` only where the member did not press Cancel (failed payment or FluentCart's own Cancel button). A member who pressed Cancel receives O15-4 only. A banned member receives the ban email only.
@@ -484,7 +484,7 @@ Welcome back. Your new plan allows fewer bots than you have.
 Your oldest bots are running up to the limit. The rest stay paused. To choose which bots run, open your Bot list and press Keep this bot on each one you want to run. Moving up to a larger plan starts the rest again.
 
 [Open your Bot list]
-[Open Billing and credits]
+[Open Billing and boosts]
 
 **Notes**
 - Not sent when no bots are paused.
@@ -583,12 +583,12 @@ Hi {{contact.first_name}},
 
 Your payment for {{bot_name}} is confirmed. The bot is in your [Bot list](https://lab.{{domain}}/bots) and is marked Purchased.
 
-Before you use it with customers, enter the credentials for any integrations and switch each one on. Then confirm the declarations. The bot runs on your own credits. You can read the terms any time under Licence terms on the bot.
+Before you use it with customers, enter the credentials for any integrations and switch each one on. Then confirm the declarations. The bot runs on your own boosts. You can read the terms any time under Licence terms on the bot.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: once payment is confirmed the bot is in **Bot list** marked **Purchased** and the buyer is emailed. A bought bot arrives with integrations switched off and declarations cleared. Bought bots run on the buyer's credits (digest 6.3 and 6.4 and 6.2 and 4.2).
+- Facts: once payment is confirmed the bot is in **Bot list** marked **Purchased** and the buyer is emailed. A bought bot arrives with integrations switched off and declarations cleared. Bought bots run on the buyer's boosts (digest 6.3 and 6.4 and 6.2 and 4.2).
 - Automation: sender is App [verify with the app agent]. Behaviour email O12 follows seven days later. This email does not mention refunds because O12 covers them.
 - The receipt is a separate email from the cart (event 39).
 

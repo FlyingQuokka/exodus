@@ -22,7 +22,7 @@ Five emails for plan v4, all for All tiers. W1 reworks S10 (the embed snippet). 
 
 Hi {{contact.first_name}},
 
-Recap: last time we covered credits, Auto top-up and promo codes, which pay for every message your bot sends. We said your bot would move onto your own website next.
+Recap: last time we covered boosts, Auto top-up and promo codes, which pay for every message your bot sends. We said your bot would move onto your own website next.
 
 New topic: the Embed snippet is a small piece of code that puts your bot on a page you control. It takes a few minutes once your bot is Public.
 
@@ -42,15 +42,15 @@ Require visitors to sign up is on for a new bot. While it's on, the embed shows 
 
 Switch it off in Sharing and embed and a free bot runs its chat inside your page. A paid bot always needs an account, so it keeps the button.
 
-**Set a Daily credit limit first**
+**Set a Daily boost limit first**
 
-With sign-up off, anyone can chat at once and every message uses your credits. In Sharing and embed, Daily credit limit lets you leave the box empty to use the platform default or enter a number of whole credits.
+With sign-up off, anyone can chat at once and every message uses your boosts. In Sharing and embed, Daily boost limit lets you leave the box empty to use the platform default or enter a number of whole boosts.
 
 When a free visitor reaches the limit, they're told the bot has reached its limit for the day while paid buyers and you carry on. It resets at midnight UTC and we email you once that day.
 
 **Task for today**
 
-Paste the Embed snippet into one page of your site. In Sharing and embed, decide whether Require visitors to sign up stays on, then set a Daily credit limit and press Save.
+Paste the Embed snippet into one page of your site. In Sharing and embed, decide whether Require visitors to sign up stays on, then set a Daily boost limit and press Save.
 
 See you tomorrow,
 
@@ -59,7 +59,7 @@ Your Botter Support Team
 P.S. Next up: which kinds of bot work well on a website.
 
 **Notes**
-- Facts: Sharing and embed is a section of the Create a bot page and works once the bot is saved. Personal bots have no embed. Copy button beside Embed snippet and paste into the custom code or HTML box. Embed follows the bot. Visitors are told they are talking to an AI assistant. Require visitors to sign up is on for a new bot so the embed shows a "Chat with" button that opens the bot's page in a new tab. Off for a free bot runs the chat in the page. A paid bot or sign-up on gives the button. Daily credit limit: empty uses the platform default or whole credits. Free visitors are told the bot has reached its limit for the day. Paid buyers and the owner carry on. Resets at midnight UTC with one email that day. Both switches are kept on Save (4.4 and 4.5 and 3.3).
+- Facts: Sharing and embed is a section of the Create a bot page and works once the bot is saved. Personal bots have no embed. Copy button beside Embed snippet and paste into the custom code or HTML box. Embed follows the bot. Visitors are told they are talking to an AI assistant. Require visitors to sign up is on for a new bot so the embed shows a "Chat with" button that opens the bot's page in a new tab. Off for a free bot runs the chat in the page. A paid bot or sign-up on gives the button. Daily boost limit: empty uses the platform default or whole boosts. Free visitors are told the bot has reached its limit for the day. Paid buyers and the owner carry on. Resets at midnight UTC with one email that day. Both switches are kept on Save (4.4 and 4.5 and 3.3).
 - Reworked from S10. Footer items (Report this bot and Certified by Botterverse) are left out for length.
 - Automation: welcome sequence A0 step for day 6. Tags tested: Welcome Active.
 
@@ -73,7 +73,7 @@ P.S. Next up: which kinds of bot work well on a website.
 
 Hi {{contact.first_name}},
 
-Recap: yesterday you put the Embed snippet on a page and set a Daily credit limit. We left one question open: which kinds of bot work well on a website.
+Recap: yesterday you put the Embed snippet on a page and set a Daily boost limit. We left one question open: which kinds of bot work well on a website.
 
 New topic: two bots suit a sales page well. An FAQ bot answers questions about a product or an offer and a product helper suggests which product or package fits.
 
@@ -107,7 +107,7 @@ Build it on the [Create a bot](https://lab.{{domain}}/bots/create) page. Everyth
 
 Pick one of the two and build it from your own sales page. Save the bot first, then in Knowledge files, press Add a file and wait for the status to read Ready.
 
-Try three real questions in Preview before you embed it. Preview uses your credits.
+Try three real questions in Preview before you embed it. Preview uses your boosts.
 
 Happy building,
 
@@ -116,7 +116,7 @@ Your Botter Support Team
 P.S. Next up: more bot ideas by niche.
 
 **Notes**
-- Facts: Create a bot sections and exact names (Details and Category and Instructions with the box What the bot should do and Conversation starters and Knowledge files). Suggest a category uses no credits. Knowledge files accept PDF and Word and text and Markdown and CSV and only work once the bot is saved. Status goes Being read then Ready and only ready files are used. Preview uses the owner's credits (3.1 to 3.9).
+- Facts: Create a bot sections and exact names (Details and Category and Instructions with the box What the bot should do and Conversation starters and Knowledge files). Suggest a category uses no boosts. Knowledge files accept PDF and Word and text and Markdown and CSV and only work once the bot is saved. Status goes Being read then Ready and only ready files are used. Preview uses the owner's boosts (3.1 to 3.9).
 - Instructions text keeps to the rule that the bot answers only from the owner's own material. It makes no income or results claims. No invented customer or product.
 - Automation: welcome sequence A0 step for day 7. Tags tested: Welcome Active.
 
@@ -195,21 +195,21 @@ Hi {{contact.first_name}},
 
 Recap: last time we read the numbers for a bot. We left one question open: what one message costs.
 
-New topic: every message uses credits by its real size, so it's worth knowing roughly what a message costs before you set a price for access.
+New topic: every message uses boosts by its real size, so it's worth knowing roughly what a message costs before you set a price for access.
 
 **How to find out**
 
-Note your Credit balance on the [Dashboard](https://lab.{{domain}}/), then send ten typical questions to your bot in Preview. Check the Credit balance again and divide the difference by ten.
+Note your Boost balance on the [Dashboard](https://lab.{{domain}}/), then send ten typical questions to your bot in Preview. Check the Boost balance again and divide the difference by ten.
 
-Balances show in whole credits and round down, so ten messages give a steadier figure than one. If your plan includes [Analytics](https://lab.{{domain}}/bots/analytics), the basic panel also shows credits used and credits per message.
+Balances show in whole boosts and round down, so ten messages give a steadier figure than one. If your plan includes [Analytics](https://lab.{{domain}}/bots/analytics), the basic panel also shows boosts used and boosts per message.
 
 **Three things that change the figure**
 
-- A dearer model uses more credits per message. You choose it in Model.
-- Testing in Preview uses credits too, so your own tests count.
+- A dearer model uses more boosts per message. You choose it in Model.
+- Testing in Preview uses boosts too, so your own tests count.
 - Longer questions and longer answers use more.
 
-If you sell access with a paywall, each buyer message is paid from your credits. A Message cap is there to protect you, so work out the cost per message first and then decide on a One-time price and a cap.
+If you sell access with a paywall, each buyer message is paid from your boosts. A Message cap is there to protect you, so work out the cost per message first and then decide on a One-time price and a cap.
 
 **Task for today**
 
@@ -222,10 +222,10 @@ Your Botter Support Team
 P.S. Next up: finding your busy hours.
 
 **Notes**
-- Facts: each message uses credits by its real size and a more expensive model uses more. Preview uses the owner's credits. Dashboard shows Credit balance in whole credits (rounded down). Basic analytics (credits used and credits per message) is Novice Botter and above. The paywall and Message cap are Novice Botter and above. The Message cap protects the owner because each buyer message is paid from the owner's credits (3.8 and 3.9 and 5.3 and 8.1 and 10.1 and 10.2).
+- Facts: each message uses boosts by its real size and a more expensive model uses more. Preview uses the owner's boosts. Dashboard shows Boost balance in whole boosts (rounded down). Basic analytics (boosts used and boosts per message) is Novice Botter and above. The paywall and Message cap are Novice Botter and above. The Message cap protects the owner because each buyer message is paid from the owner's boosts (3.8 and 3.9 and 5.3 and 8.1 and 10.1 and 10.2).
 - The paywall is described and not instructed so Apprentice members are not told to switch it on.
-- Longer questions and answers use more credits: the guide says credits are by "real size".
-- No prices or credit amounts. Pricing is not linked because no figure is given.
+- Longer questions and answers use more boosts: the guide says boosts are by "real size".
+- No prices or boost amounts. Pricing is not linked because no figure is given.
 - Automation: welcome sequence A0 step for day 17. Tags tested: Welcome Active.
 
 ---

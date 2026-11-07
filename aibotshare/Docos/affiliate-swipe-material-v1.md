@@ -25,7 +25,7 @@ Lines in [square brackets] are for you to fill in or delete. Nothing here has be
 - Do not call any plan free. There is no free plan and no trial.
 - Selling access starts on Novice Botter. Selling on Bot Market starts on Pro Botter. Do not imply a plan can do more than it can.
 - A bot is only as good as its instructions and files. Do not promise sales or customers or income.
-- Credit packs earn no commission. Do not push them.
+- Botter Boosters earn no commission. Do not push them.
 - To promote a Bot Market listing use the link from Promote on that listing page. Use your own link for everything else.
 
 ---
@@ -42,7 +42,7 @@ Hi [FIRST NAME],
 
 If you built a custom GPT you know the limits. You can't see who used it. You have no way to message them. You can't choose the model. The link your customers use goes when the GPT does.
 
-I've been looking at Botterverse as a place to take a bot across. You paste the GPT's instructions into Import a bot and upload its files. It opens as a bot you can edit. Importing uses no credits and the last step lists anything that could not move.
+I've been looking at Botterverse as a place to take a bot across. You paste the GPT's instructions into Import a bot and upload its files. It opens as a bot you can edit. Importing uses no boosts and the last step lists anything that could not move.
 
 After that you choose the model for each bot. The choices are Claude, GPT, Gemini and Grok. Some plans have every model and the cheapest has the everyday ones. You can ask visitors to sign up so you know who is chatting.
 
@@ -72,7 +72,7 @@ Share. Send a link or paste one snippet into your own site. Visitors are told th
 
 Sell. Charge a one-time price for access. Set a message cap with a top-up if you want one. Add a money-back guarantee if you want one. Selling starts on the Novice plan.
 
-Every message a bot sends uses credits from your balance. Your plan includes credits each month so it's worth reading how that works before you start.
+Every message a bot sends uses boosts from your balance. Your plan includes boosts each month so it's worth reading how that works before you start.
 
 Every bot starts private. It goes live only when you press Make Public. You can preview it first.
 
@@ -96,7 +96,7 @@ Hi [FIRST NAME],
 
 If you coach or consult you probably answer the same questions many times. A bot can answer them from your own material while you do other work.
 
-On Botterverse you write down who the bot is for and what it helps with. You say what tone to use and what it should not discuss. You upload your files. PDF, Word, text, Markdown and CSV all work. Uploading uses no credits.
+On Botterverse you write down who the bot is for and what it helps with. You say what tone to use and what it should not discuss. You upload your files. PDF, Word, text, Markdown and CSV all work. Uploading uses no boosts.
 
 Then you preview it. You chat with it as a client would and try a question it should refuse. Nobody else sees it until you press Make Public.
 
@@ -152,7 +152,7 @@ Hi [FIRST NAME],
 
 I came across a bot on Bot Market called [BOT NAME]. The listing describes it like this: [ONE LINE FROM THE LISTING].
 
-Bot Market is where Botters buy and sell bots with each other. It is for members only and it is not a public store. Every plan can buy. When you buy you receive the bot itself and it runs on your own credits.
+Bot Market is where Botters buy and sell bots with each other. It is for members only and it is not a public store. Every plan can buy. When you buy you receive the bot itself and it runs on your own boosts.
 
 Before you pay you can read the licence you are buying. It tells you what you can and cannot do with the bot. The listing also shows reviews from verified purchases and details about the seller.
 
@@ -199,7 +199,7 @@ Affiliate link: I earn a commission if you join through my link.
 Platform-neutral. They suit a Skool group or Facebook or LinkedIn. No hashtags. Each post ends with the link and the disclosure.
 
 **Post 1**
-Custom GPTs are being switched off. If you built one you can paste its instructions and files into Import a bot on Botterverse and carry on from there. Importing uses no credits. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join through my link.
+Custom GPTs are being switched off. If you built one you can paste its instructions and files into Import a bot on Botterverse and carry on from there. Importing uses no boosts. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join through my link.
 
 **Post 2**
 Build a bot. Share it. Sell access to it. On Botterverse you choose the model and set the price. There is no code to write. Plans from $5 a month. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join through my link.
@@ -241,7 +241,7 @@ Botterverse has a Founders offer. It is 50% off every plan for life with the cou
 For bios, comments and replies. Each is under 30 words and carries the disclosure.
 
 1. Build a bot from your own files. Share it. Sell access. Plans from $5 a month. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
-2. Moving a custom GPT? Paste its instructions into Import a bot. No credits used. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
+2. Moving a custom GPT? Paste its instructions into Import a bot. No boosts used. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
 3. You choose the model for each bot and set your own price. No code. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
 4. A bot that answers from your own lessons or client material. Preview it first. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
 5. Share a bot by link or paste it into your own site. [YOUR AFFILIATE LINK] Affiliate link. I earn a commission if you join.
@@ -262,7 +262,7 @@ Disclosure line for the ad caption or alt text or the page it sits on: "Affiliat
 | # | Size | Headline (up to 6 words) | Supporting line (up to 12 words) | Button |
 |---|---|---|---|---|
 | 1 | 728x90 | Build a bot. Sell access. | Pick the model and set the price. No code. | Take Me To The Botterverse |
-| 2 | 300x250 | Move your custom GPT across | Paste it into Import a bot. No credits used. | Take Me To The Botterverse |
+| 2 | 300x250 | Move your custom GPT across | Paste it into Import a bot. No boosts used. | Take Me To The Botterverse |
 | 3 | 160x600 | Your bot. Your model. | Build it and share it. Then sell access. No code. | Take Me To The Botterverse |
 | 4 | 970x250 | Build bots you control | Choose the model and set the price. No code. | Take Me To The Botterverse |
 | 5 | 320x50 | Build. Share. Sell. | Plans from $5 a month. | Take Me To The Botterverse |

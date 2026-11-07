@@ -14,7 +14,7 @@
 
 ## Brand Voice
 
-Speaks the imer's own language: PLR, MRR, RR, funnels, OTOs, affiliates, credits, tiers, not generic SaaS terms. Direct and plain, confident without corporate hedging, aimed at people who already sell online. Speaks as the product, never as a named founder. Calls the member area the Botter's Lab. Names the OpenAI shutdown directly without gloating, since this audience lived through it. Leans on proof over promises: published fees, a live embedded demo and exact numbers (50% of a referred member's first payment, 20% of every payment after) rather than vague reward language. Never promises income. Writes the name as Botterverse in prose and Botterverse only as the domain.
+Speaks the imer's own language: PLR, MRR, RR, funnels, OTOs, affiliates, boosts, tiers, not generic SaaS terms. Direct and plain, confident without corporate hedging, aimed at people who already sell online. Speaks as the product, never as a named founder. Calls the member area the Botter's Lab. Names the OpenAI shutdown directly without gloating, since this audience lived through it. Leans on proof over promises: published fees, a live embedded demo and exact numbers (50% of a referred member's first payment, 20% of every payment after) rather than vague reward language. Never promises income. Writes the name as Botterverse in prose and Botterverse only as the domain.
 
 ## Core Offer
 

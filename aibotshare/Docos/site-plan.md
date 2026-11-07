@@ -13,7 +13,7 @@ Written 31 October 2026. Working plan for the redesign. Nothing here has been bu
 | Emails | Written to `aibotshare\emails\`. |
 | Logos and images | Blue-sky exercise. 10 logo concepts and 10 image concepts first. Not tied to the smiling-face placeholder. |
 | Home page colours | 5 comparison options that may leave the main theme. Made only after the copy is final. |
-| Credits for Genesis bots | Use first. Tell the owner when a top-up is needed. |
+| Boosts for Genesis bots | Use first. Tell the owner when a top-up is needed. |
 | Brand and domain | The brand is renamed Botterverse and no mention of Botterverse remains in the plan documents. The base domain is botterverse.com. The token {{domain}} holds the base domain only. The owner is renaming the local domain to match. |
 | Site access | Chrome is signed in as Agent User. Read-only until designs are approved. The password file is not needed and not read. |
 
@@ -37,7 +37,7 @@ Written 31 October 2026. Working plan for the redesign. Nothing here has been bu
 | `assets/css/botterverse.css` | One tokens and components stylesheet. No inline styles. |
 | `templates/` | Front page template for Home. Default page template. Single post. 404. Search. |
 | `parts/header.html` | Logo. Menu. Cart and account icons. |
-| `parts/footer.html` | Footer menu from navigation post 208. No credit row. |
+| `parts/footer.html` | Footer menu from navigation post 208. No boost row. |
 | `patterns/` | Hero. Cards. Accordion. Pricing table. CTA band. Step list. Email-capture. |
 | `styles/` | Nightshift as an optional style variation. |
 | Integrations CSS | Fluent Support portal. Fluent Forms. Better Docs. WordPress login. FluentCRM email template. |
@@ -110,7 +110,7 @@ You said I may change the menus. The Shop link goes.
 | Footer, column Help | Everyone | Support. Help centre. Feedback. Billing and invoices |
 | Footer, column Legal | Everyone | Terms And Conditions. Privacy Policy. Legal with a submenu holding CCPA and DMCA and CRM Consent and Auto Top-Up Consent |
 
-Cart and Checkout and Order Review and Receipt are never in a menu. FluentCart reaches them. The bottom credit row is removed.
+Cart and Checkout and Order Review and Receipt are never in a menu. FluentCart reaches them. The bottom boost row is removed.
 
 The Log in link goes to the Botters Lab sign-in. Its address is `lab.` plus the site's own domain plus `/login`. It is never typed in full. See section 9.
 

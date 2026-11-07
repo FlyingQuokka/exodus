@@ -55,9 +55,9 @@ Story means the email opens with a short story. Peek means it shows a feature fr
 | ID | Day | Subject idea | What it covers | Story | Use at once |
 |---|---|---|---|---|---|
 | UN01 | 0 | Welcome to Novice | What just opened: every model and paywall and integrations and basic analytics and affiliate programme and more bots | No | Choose the first one to try |
-| UN02 | 1 | Four brains now | Every model. Dearer models use more credits. A model change on a Public bot means confirming declarations again | No | A question to try on each family |
+| UN02 | 1 | Four brains now | Every model. Dearer models use more boosts. A model change on a Public bot means confirming declarations again | No | A question to try on each family |
 | UN03 | 3 | Ana's checklist | Paywall step by step. One-time price. Sell access to this bot. What buyers see | Yes | An example paywall description and three starters |
-| UN04 | 5 | Cap it and top it up | Message cap and top-up. Why the cap protects the owner's credits | No | Example cap and top-up values |
+| UN04 | 5 | Cap it and top it up | Message cap and top-up. Why the cap protects the owner's boosts | No | Example cap and top-up values |
 | UN05 | 7 | Promise and prove | Money-back guarantee. Show the bot's rating. Handling a claim in Sales | No | A short checklist for choosing the guarantee |
 | UN06 | 9 | Let a bot write your promotions | Join the affiliate programme. Your link. Referrals. The Swipe Writer in depth | No | Fuller instructions for the Swipe Writer |
 | UN07 | 11 | Promote other Botters' bots | Promote a listing. Promoted listings. Commission. Last click counts | No | Copy a Promote link |
@@ -69,13 +69,13 @@ Story means the email opens with a short story. Peek means it shows a feature fr
 
 | ID | Day | Subject idea | What it covers | Story | Use at once |
 |---|---|---|---|---|---|
-| UE01 | 0 | Welcome to Expert | What just opened: more bots and larger included credits and deeper analytics | No | Choose the first one to try |
+| UE01 | 0 | Welcome to Expert | What just opened: more bots and larger included boosts and deeper analytics | No | Choose the first one to try |
 | UE02 | 1 | Rosa's surprising question | Top conversation starters and how to rewrite your starters from them | Yes | A prompt for rewriting starters |
-| UE03 | 3 | Find the busy hours | Busiest hours. When to share. When to set a Daily credit limit | No | A simple posting plan |
+| UE03 | 3 | Find the busy hours | Busiest hours. When to share. When to set a Daily boost limit | No | A simple posting plan |
 | UE04 | 5 | How you compare | Category benchmarks. Messages per buyer and price and conversion beside This bot. Hidden until enough bots feed it | No | Which panel to read first |
 | UE05 | 7 | Close the gap | Conversation insights in depth. Unanswered questions and Common topics and Suggested additions | No | Use Add to knowledge on one suggestion |
 | UE06 | 9 | A bot for every audience | Using the Expert bot limit. A suite for one business | No | A named bot suite |
-| UE07 | 11 | Credits at a bigger scale | Plan credits and bought credits and the usage graph and Auto top-up | No | The auto top-up steps |
+| UE07 | 11 | Boosts at a bigger scale | Plan boosts and bought boosts and the usage graph and Auto top-up | No | The auto top-up steps |
 | UE08 | 13 | Tune the paywall with data | Use analytics to adjust cap and starters and description. Price is never tested | No | A short tuning checklist |
 | UE09 | 15 | Same bot. New outfit | **Peek (Pro):** Bot styles | No | A sample style recipe |
 | UE10 | 17 | Maya's bot found a buyer | **Peek (Pro):** selling on Bot Market and Multi-sell | Yes | The listing fields |
@@ -101,16 +101,16 @@ Master has no peeks. Every email is about using what Master has.
 
 | ID | Day | Subject idea | What it covers | Story | Use at once |
 |---|---|---|---|---|---|
-| UM01 | 0 | Welcome to Master | What just opened: A/B tests and advanced analytics and the largest included credits | No | Choose the first test |
+| UM01 | 0 | Welcome to Master | What just opened: A/B tests and advanced analytics and the largest included boosts | No | Choose the first test |
 | UM02 | 1 | Your first A/B test | Control and variants. Control's share (%). Start the test | No | A setup checklist |
 | UM03 | 3 | What to test first | Five test ideas with paste-in variants. Greeting and tone and answer length and starters and closing line | Yes | Five variants to paste |
 | UM04 | 5 | Read the results | Conversations and Messages per conversation and Returning customers and Paywall conversion and Revenue per conversation | No | A reading guide |
 | UM05 | 7 | Crown a winner | Choose as winner and Keep the control and Stop the test and Start a new test | No | A decision rule |
 | UM06 | 9 | Views against purchases | The Conversion panel. Paywall views and Listing views and Purchases and Conversion | Yes | A diagnosis checklist |
 | UM07 | 11 | What you cannot test | Price is never tested. What to adjust instead | No | A list of things to test instead |
-| UM08 | 13 | Credits at scale | Large credit use. Daily credit limit and Auto top-up and the usage graph | No | A credit budget checklist |
+| UM08 | 13 | Boosts at scale | Large boost use. Daily boost limit and Auto top-up and the usage graph | No | A boost budget checklist |
 | UM09 | 15 | Tests and the CRM together | The A/B variant in each CRM event. Segmenting by variant | No | A tag plan for variants |
-| UM10 | 17 | Your Master routine | A weekly review across tests and analytics and credits and the CRM | No | A one-page routine |
+| UM10 | 17 | Your Master routine | A weekly review across tests and analytics and boosts and the CRM | No | A one-page routine |
 
 ## 6. Automations needed
 

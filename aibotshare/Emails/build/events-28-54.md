@@ -1,6 +1,6 @@
 # Event emails 28 to 54
 
-Transactional and notification emails for events 28 to 54 in `06-event-emails-plan.md`: credits and billing and plan and account events plus the two help desk templates. Draft for owner review. Nothing is built in the app or WordPress or FluentCRM.
+Transactional and notification emails for events 28 to 54 in `06-event-emails-plan.md`: boosts and billing and plan and account events plus the two help desk templates. Draft for owner review. Nothing is built in the app or WordPress or FluentCRM.
 
 **Not written (covered or not needed):** 50 (covered by event 23 and O08) and 53 (on-screen only) and 54 (handled by the behaviour sequences and the welcome sequence).
 
@@ -13,7 +13,7 @@ Transactional and notification emails for events 28 to 54 in `06-event-emails-pl
 | `{{contact.first_name}}` | Member's first name |
 | `{{domain}}` | Base domain |
 | `{{amount}}` | Amount charged by an auto top-up (E33) |
-| `{{credits_removed}}` | Credits taken off after a refunded pack (E38) |
+| `{{credits_removed}}` | Boosts taken off after a refunded pack (E38) |
 | `{{plan_name}}` | The member's current plan (E40) |
 | `{{old_plan_name}}` and `{{new_plan_name}}` | Plan before and after a change (E41a) |
 | `{{end_date}}` | Date the plan ends (E42a and E42b) |
@@ -65,14 +65,14 @@ The conversation insights report for {{bot_name}} is ready. It covers {{period_s
 
 It shows Unanswered questions, Common topics and Suggested additions. For each suggestion, you can press Add to knowledge or Add to instructions.
 
-[Open the report]({{analytics_url}}). It is in the Conversation insights panel on Analytics. Each run uses credits from your balance.
+[Open the report]({{analytics_url}}). It is in the Conversation insights panel on Analytics. Each run uses boosts from your balance.
 
 You receive this email because the Insights switch is on under Email notifications in [Settings](https://lab.{{domain}}/settings). Switch it off there if you'd rather not receive it.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: Insights is an optional switch under Email notifications in Settings. The panel shows Unanswered questions and Common topics and Suggested additions with Add to knowledge and Add to instructions. No plan includes insights so each run uses the owner's credits (8.2).
+- Facts: Insights is an optional switch under Email notifications in Settings. The panel shows Unanswered questions and Common topics and Suggested additions with Add to knowledge and Add to instructions. No plan includes insights so each run uses the owner's boosts (8.2).
 - Sender: App. Opt-in.
 - Automation: none.
 - Confirmed by the app agent (answers 19): the report opens on Bot analytics in the Conversation insights panel, under Conversations over time. The insight.ready email carries a link to it.
@@ -103,31 +103,31 @@ Your Botter Support Team
 
 ---
 
-## E31 - Credits low (on event, all members with auto top-up threshold set)
+## E31 - Boosts low (on event, all members with auto top-up threshold set)
 
-**Subject:** [Botters Lab] Your credits are running low
+**Subject:** [Botters Lab] Your boosts are running low
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-Your credits have fallen below the level set under Top up when my credits fall below.
+Your boosts have fallen below the level set under Top up when my boosts fall below.
 
-When credits run out, all of your bots stop answering everyone. That includes buyers.
+When boosts run out, all of your bots stop answering everyone. That includes buyers.
 
-Open [Billing and credits](https://lab.{{domain}}/billing) to add more. Use Buy credits for a pack or switch on Auto top-up so it happens by itself.
+Open [Billing and boosts](https://lab.{{domain}}/billing) to add more. Use Buy boosts to add a Botter Booster or switch on Auto top-up so it happens by itself.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: the member is emailed when credits fall below their auto top-up threshold. Billing and credits has Buy credits and Auto top-up and Promo code sections. At zero all of the owner's bots stop answering (10.1).
+- Facts: the member is emailed when boosts fall below their auto top-up threshold. Billing and boosts has Buy boosts and Auto top-up and Promo code sections. At zero all of the owner's bots stop answering (10.1).
 - Sender: App.
 - Automation: none.
-- Confirmed by the app agent (answer 21): the email goes whether or not Auto top-up is on, once per crossing of the level. Any credits added clear the level so the next charge below it sends the email again. A new member starts on a level of 1,000 credits.
+- Confirmed by the app agent (answer 21): the email goes whether or not Auto top-up is on, once per crossing of the level. Any boosts added clear the level so the next charge below it sends the email again. A new member starts on a level of 1,000 boosts.
 
 ---
 
-## E32 - Credits exhausted (on event, all members)
+## E32 - Boosts exhausted (on event, all members)
 
 **Subject:** [Botters Lab] Your bots have stopped answering
 
@@ -135,19 +135,19 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your credits can no longer cover a message. All of your bots have stopped answering everyone, including your buyers, until you add credits.
+Your boosts can no longer cover a message. All of your bots have stopped answering everyone, including your buyers, until you add boosts.
 
-Open [Billing and credits](https://lab.{{domain}}/billing) and add credits with Buy credits. If you have a promo code, enter it under Promo code and press Redeem.
+Open [Billing and boosts](https://lab.{{domain}}/billing) and add boosts with Buy boosts. If you have a promo code, enter it under Promo code and press Redeem.
 
 Your bots start answering again from the next message once your balance covers it.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: when credits cannot cover a message all of the owner's bots stop answering everyone including buyers until credits are added. The member is emailed again (10.1). Promo code and Redeem (10.5).
+- Facts: when boosts cannot cover a message all of the owner's bots stop answering everyone including buyers until boosts are added. The member is emailed again (10.1). Promo code and Redeem (10.5).
 - Sender: App.
 - Automation: none.
-- Confirmed by the app agent (answer 22): nothing needs pressing. The first message the credit check lets through clears the stopped state. The check needs the balance to cover the message's worst-case cost so a very small top-up can still be refused.
+- Confirmed by the app agent (answer 22): nothing needs pressing. The first message the boost check lets through clears the stopped state. The check needs the balance to cover the message's worst-case cost so a very small top-up can still be refused.
 
 ---
 
@@ -159,14 +159,14 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your credits fell below your Auto top-up threshold, so we charged {{amount}} to your card and added the credits to your balance.
+Your boosts fell below your Auto top-up threshold, so we charged {{amount}} to your card and added the boosts to your balance.
 
-You can change the threshold or the Top-up amount or switch Auto top-up off in [Billing and credits](https://lab.{{domain}}/billing).
+You can change the threshold or the Top-up amount or switch Auto top-up off in [Billing and boosts](https://lab.{{domain}}/billing).
 
 Your Botter Support Team
 
 **Notes**
-- Facts: the member is emailed each time auto top-up charges. Settings are Top up when my credits fall below and Top-up amount. One credit per cent with no pack bonus (10.4). No amount is printed in this copy.
+- Facts: the member is emailed each time auto top-up charges. Settings are Top up when my boosts fall below and Top-up amount. One boost per cent with no Botter Booster bonus (10.4). No amount is printed in this copy.
 - Sender: App.
 - Automation: the Power User tag fires on the first charge (set by the app agent and not by this email).
 
@@ -182,7 +182,7 @@ Hi {{contact.first_name}},
 
 Auto top-up has reached its limit for today and is paused until midnight UTC.
 
-After that, it tries again the next time your credits are used while the balance is below your level. To add credits now, open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits.
+After that, it tries again the next time your boosts are used while the balance is below your level. To add boosts now, open [Billing and boosts](https://lab.{{domain}}/billing) and use Buy boosts.
 
 Your Botter Support Team
 
@@ -190,7 +190,7 @@ Your Botter Support Team
 - Facts: a daily cap pauses auto top-up until the next day with an email (10.4). The number of top-ups per day is not printed because the guide and the brief differ (conflict 29).
 - Sender: App.
 - Automation: none.
-- Confirmed by the app agent (answer 23): the daily cap counts from UTC midnight (default 3 top-ups per UTC day, a staff setting). Nothing runs at midnight. The next attempt comes from the next usage charge that leaves the balance below the level, so a member whose bots have already stopped has no new attempt until credits are added another way. The wording follows the app as built (owner decision 1 November 2026).
+- Confirmed by the app agent (answer 23): the daily cap counts from UTC midnight (default 3 top-ups per UTC day, a staff setting). Nothing runs at midnight. The next attempt comes from the next usage charge that leaves the balance below the level, so a member whose bots have already stopped has no new attempt until boosts are added another way. The wording follows the app as built (owner decision 1 November 2026).
 
 ---
 
@@ -204,9 +204,9 @@ Hi {{contact.first_name}},
 
 Your card was declined twice, so Auto top-up has switched itself off. No more charges will be tried.
 
-Update your card from the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). Then press Agree and switch on.
+Update your card from the customer area under Invoices, receipts and saved cards in [Billing and boosts](https://lab.{{domain}}/billing). Then press Agree and switch on.
 
-If your credits run low in the meantime, you can add them with Buy credits.
+If your boosts run low in the meantime, you can add them with Buy boosts.
 
 Your Botter Support Team
 
@@ -228,7 +228,7 @@ Hi {{contact.first_name}},
 
 We've updated the Auto top-up statement. A top-up came due and wasn't charged. Auto top-up is paused until you agree to the new statement.
 
-Open [Billing and credits](https://lab.{{domain}}/billing) and read the statement. It links to The Auto top-up section of our terms and conditions. Then press Switch off and after that press Agree and switch on.
+Open [Billing and boosts](https://lab.{{domain}}/billing) and read the statement. It links to The Auto top-up section of our terms and conditions. Then press Switch off and after that press Agree and switch on.
 
 Until you agree, no automatic charges are made.
 
@@ -252,39 +252,39 @@ Hi {{contact.first_name}},
 
 Your bank asked for approval of an Auto top-up payment, so it didn't go through. We don't retry a payment that needs approval and Auto top-up stays on. The next attempt waits until your balance is back at your level or above.
 
-To add credits, open [Billing and credits](https://lab.{{domain}}/billing) and use Buy credits. The checkout opens in a new tab where you can approve the payment with your bank.
+To add boosts, open [Billing and boosts](https://lab.{{domain}}/billing) and use Buy boosts. The checkout opens in a new tab where you can approve the payment with your bank.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: if the bank asks for approval auto top-up is not retried and the member buys a pack instead (10.4). Buy credits opens checkout in a new tab (10.3).
+- Facts: if the bank asks for approval auto top-up is not retried and the member buys a Botter Booster instead (10.4). Buy boosts opens checkout in a new tab (10.3).
 - Sender: App. The guide does not state this email. Recommended.
 - Automation: none.
-- Confirmed by the app agent (answer 26): the switch is not changed and the app sends "Your bank needs you to approve a top-up" with the amount and a Buy credits link. No new attempt starts until added credits bring the balance back to the level or above or the member switches it off.
+- Confirmed by the app agent (answer 26): the switch is not changed and the app sends "Your bank needs you to approve a top-up" with the amount and a Buy boosts link. No new attempt starts until added boosts bring the balance back to the level or above or the member switches it off.
 
 ---
 
-## E38 - DROPPED - Credit pack refunded (Optional) (on event, buyers of a refunded pack)
+## E38 - DROPPED - Botter Booster refunded (Optional) (on event, buyers of a refunded pack)
 
 **Dropped by the owner on 2 November 2026. Do not build. The text is kept for the record.**
 
-**Subject:** [Botterverse] Your credit pack was refunded
+**Subject:** [Botterverse] Your Botter Booster was refunded
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-A credit pack payment has been refunded. We've taken {{credits_removed}} credits off your balance for it. A refund removes credits only up to the balance you have.
+A Botter Booster payment has been refunded. We've taken {{credits_removed}} boosts off your balance for it. A refund removes boosts only up to the balance you have.
 
-You can see the change in the usage history in [Billing and credits](https://lab.{{domain}}/billing). It appears as Refunded purchase.
+You can see the change in the usage history in [Billing and boosts](https://lab.{{domain}}/billing). It appears as Refunded purchase.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: if a pack's payment is refunded its credits are removed up to the balance. History label is Refunded purchase (10.1 and 10.3).
+- Facts: if a pack's payment is refunded its boosts are removed up to the balance. History label is Refunded purchase (10.1 and 10.3).
 - Sender: App. The guide does not state this email. Optional.
 - Automation: none.
-- [DECISION: the app agent says (answer 27) the app has no email for a refunded credit pack. A pack refund reaches the app through Stripe, the credits removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optional) or ask the app agent to add it. FluentCart's own refund email to the customer cannot carry the credits figure.]
+- [DECISION: the app agent says (answer 27) the app has no email for a refunded Botter Booster. A Botter Booster refund reaches the app through Stripe, the boosts removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optional) or ask the app agent to add it. FluentCart's own refund email to the customer cannot carry the boosts figure.]
 
 ---
 
@@ -300,7 +300,7 @@ Thanks for your payment. Here's your receipt.
 
 {{order.items_table}}
 
-Plan payments are listed in the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). Bot access, message top-ups and Bot Market purchases are single payments. Each has its own receipt and no card is saved.
+Plan payments are listed in the customer area under Invoices, receipts and saved cards in [Billing and boosts](https://lab.{{domain}}/billing). Bot access, message top-ups and Bot Market purchases are single payments. Each has its own receipt and no card is saved.
 
 Your Botter Support Team
 
@@ -322,7 +322,7 @@ Hi {{order.customer.first_name}},
 
 The last payment for your {{subscription.item_name}} plan didn't go through. Your plan stays while we try the payment again.
 
-Update your card from the customer area under Invoices, receipts and saved cards in [Billing and credits](https://lab.{{domain}}/billing). You sign in there with your billing login and not with your Botters Lab username.
+Update your card from the customer area under Invoices, receipts and saved cards in [Billing and boosts](https://lab.{{domain}}/billing). You sign in there with your billing login and not with your Botters Lab username.
 
 The red Payment past due pill shows at the top of the Botters Lab until the payment is made.
 
@@ -346,14 +346,14 @@ Hi {{contact.first_name}},
 
 Your plan has changed from {{old_plan_name}} to {{new_plan_name}}. The change takes effect now.
 
-Included credits from your old plan are replaced by the new plan's first payment. Remaining credits from any credit packs you bought are untouched.
+Included boosts from your old plan are replaced by the new plan's first payment. Remaining boosts from any Botter Boosters you bought are untouched.
 
 {{new_plan_name}} includes all the features of the lower plans. You can see what's included on the [pricing page](https://{{domain}}/pricing/#compare).
 
 Your Botter Support Team
 
 **Notes**
-- Facts: the new plan's first payment replaces unused included credits and bought credits stay. Moving back up restores features paused by a move down (10.6). Plan change emails are always sent (12.1).
+- Facts: the new plan's first payment replaces unused included boosts and bought boosts stay. Moving back up restores features paused by a move down (10.6). Plan change emails are always sent (12.1).
 - Sender: Cart.
 - Automation: pairs with the tier tags. The tag change is set by the cart automation and not by this email.
 - Confirmed 3 November 2026: Your plan shows no plan details, so the email links to the plan comparison table on the pricing page.
@@ -372,7 +372,7 @@ You've cancelled your plan. It ends on {{subscription.expire_at}} and works as n
 
 On a monthly plan, that is the end of the period you paid for. On an annual plan, it is the end of the current month and we refund the whole months you haven't used to your card after it ends. We email you when the refund is made.
 
-Until then, the red Plan cancelling pill shows in the Botters Lab. If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
+Until then, the red Plan cancelling pill shows in the Botters Lab. If you change your mind, press Keep my plan in [Billing and boosts](https://lab.{{domain}}/billing) before that date.
 
 Your Botter Support Team
 
@@ -398,7 +398,7 @@ You've cancelled your plan. It ends on {{end_date}}, which is the end of the cur
 
 After it ends, we refund the whole months you haven't used to your card and email you when the refund is made. Until the plan ends, the red Plan cancelling pill shows in the Botters Lab.
 
-If you change your mind, press Keep my plan in [Billing and credits](https://lab.{{domain}}/billing) before that date.
+If you change your mind, press Keep my plan in [Billing and boosts](https://lab.{{domain}}/billing) before that date.
 
 Your Botter Support Team
 
@@ -422,17 +422,17 @@ Hi {{contact.first_name}},
 
 Your {{plan_name}} plan has ended. Your account stays open and you can sign in to chat with bots you bought access to.
 
-Your own bots are paused and your data is kept. Unused plan credits have reset. Remaining credits from any credit packs you bought are untouched. Auto top-up is off.
+Your own bots are paused and your data is kept. Unused plan boosts have reset. Remaining boosts from any Botter Boosters you bought are untouched. Auto top-up is off.
 
 To build and run bots again, choose a plan on the [Pricing](https://{{domain}}/pricing/) page. Bots your old plan paused start again up to the new plan's bot limit.
 
 Your Botter Support Team
 
 **Notes**
-- Facts: after the plan ends the account stays open and own bots pause with data kept and unused plan credits reset and bought credits stay and auto top-up switches off (10.7).
+- Facts: after the plan ends the account stays open and own bots pause with data kept and unused plan boosts reset and bought boosts stay and auto top-up switches off (10.7).
 - Sender: CRM. The guide does not state this email. Recommended.
 - Automation: follows O06. Tag handling is in the automation plan.
-- Confirmed by the app agent (answer 38): choosing a plan returns the bots the old plan paused, oldest first, up to the new plan's limit. Bots paused by the owner or by staff stay paused. A returned bot still needs credits to answer. See the open decision on E43 against the app's plan.ended email.
+- Confirmed by the app agent (answer 38): choosing a plan returns the bots the old plan paused, oldest first, up to the new plan's limit. Bots paused by the owner or by staff stay paused. A returned bot still needs boosts to answer. See the open decision on E43 against the app's plan.ended email.
 
 ---
 
@@ -491,7 +491,7 @@ Hi {{contact.first_name}},
 
 The data export you asked for is ready. It is available until {{expiry_date}}.
 
-[Download your export]({{download_url}}) or find it under Data export in [Settings](https://lab.{{domain}}/settings). The zip holds your bots and their conversations, your sales and credit history and the files you uploaded. Integration passwords and keys are never included.
+[Download your export]({{download_url}}) or find it under Data export in [Settings](https://lab.{{domain}}/settings). The zip holds your bots and their conversations, your sales and boost history and the files you uploaded. Integration passwords and keys are never included.
 
 Your Botter Support Team
 
@@ -562,7 +562,7 @@ Hi {{contact.first_name}},
 
 Your account is open again. Your bots and listings that were paused for the closing are restored. So are your affiliate record and your Botterverse emails. Your plan carries on unless it was set to cancel before you closed the account or its paid period has ended.
 
-Auto top-up stays off. If you used it, open [Billing and credits](https://lab.{{domain}}/billing) and switch it on again.
+Auto top-up stays off. If you used it, open [Billing and boosts](https://lab.{{domain}}/billing) and switch it on again.
 
 Your Botter Support Team
 
@@ -615,7 +615,7 @@ Reply to this email to answer.
 Your Botter Support Team
 
 **Notes**
-- Facts: Support opens the help desk in a new tab with its own sign-in. A member who bought a plan or credits already has a website account (13.1).
+- Facts: Support opens the help desk in a new tab with its own sign-in. A member who bought a plan or boosts already has a website account (13.1).
 - Sender: Desk. A template for the Fluent Support emails.
 - Confirmed by the owner 3 November 2026: members can reply by email. The app agent says this works only through Fluent Support Pro's email piping, which is set up on the live site at go-live and has not been tested. Check it on the live site before launch.
 - No response time is promised. Priority support is not mentioned.

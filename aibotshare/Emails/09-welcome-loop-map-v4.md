@@ -20,7 +20,7 @@ The single final loop table for the welcome sequence in plan v4 (`01-welcome-seq
 | 2 | B1 | Build a bot in one sitting | all tiers | [Botters Lab] Build a bot in one sitting | Next up: testing it and sharing it. | `build\v4-B1-B3-C1.md` |
 | 3 | B2 | Test it then Make Public and share the link | all tiers | [Botters Lab] Test it, then share it | Next up: feeding it your own material. | `build\v4-B1-B3-C1.md` |
 | 4 | B3 | Make it yours: knowledge files and the model | all tiers | [Botters Lab] Feed your bot your own material | Next up: what fuels a bot. | `build\v4-B1-B3-C1.md` |
-| 5 | C1 | Credits and Auto top-up and promo codes | all tiers | [Botters Lab] What fuels your bot | Next up: your bot on your own website. | `build\v4-B1-B3-C1.md` |
+| 5 | C1 | Boosts and Auto top-up and promo codes | all tiers | [Botters Lab] What fuels your bot | Next up: your bot on your own website. | `build\v4-B1-B3-C1.md` |
 | 6 | W1 | Put your bot on your website | all tiers | [Botters Lab] Put your bot on your own website | Next up: which kinds of bot work well on a website. | `build\v4-W1-W3-TIP.md` |
 | 7 | W2 | Website bots for a sales page | all tiers | [Botters Lab] Bots that work well on a website | Next up: more bot ideas by niche. | `build\v4-W1-W3-TIP.md` |
 | 8 | W3 | Website bots by niche | all tiers | [Botters Lab] Three website bots for your niche | Next up: charging for access. | `build\v4-W1-W3-TIP.md` |

@@ -152,7 +152,7 @@ The bot needs to be Public with its declarations confirmed. It also needs a cate
 
 Select [My listings](https://lab.{{domain}}/listings) under Bot Market then List a bot for sale. Press List it beside the bot you want to sell.
 
-1. Listing details - a Description and Tags. Press Suggest a description and tags and the app drafts both for you. It uses no credits.
+1. Listing details - a Description and Tags. Press Suggest a description and tags and the app drafts both for you. It uses no boosts.
 2. Sale type and licence - Transfer moves ownership and sells once. Multi-sell gives each buyer their own copy and you keep the original.
 3. Price - Price (USD) and an Affiliate share (%). The share is taken from what's left after the platform fee. The form shows the fee line.
 4. On the listing - switches for Show verified sales and conversations, Show verified revenue, Show in Bot Market and Require attribution on copies.

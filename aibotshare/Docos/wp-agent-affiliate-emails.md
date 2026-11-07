@@ -14,7 +14,7 @@ The owner's commission tests on 3 November showed that FluentAffiliate's own ema
 
 **Why it is wrong:**
 - **It names FluentAffiliate's figure, not the app's.** FluentAffiliate works at its flat 20%. The app pays 50% of a member's first payment and 20% after that, so a first sale is emailed at less than half its real commission.
-- **It goes for referrals the app never pays.** In the test it went for a self-referral and for a credit pack. The app skips both and pays nothing.
+- **It goes for referrals the app never pays.** In the test it went for a self-referral and for a Botter Booster. The app skips both and pays nothing.
 - **It goes before the refund period.** A commission is paid only once `sales.refund_period` (14 days) has passed. A refund inside it means no commission at all, after the affiliate has been told they earned one.
 
 **What replaces it:** the app's own email, "A commission has been added" (`affiliate.commission_credited`). It goes when the commission is actually credited to the affiliate's earnings, at the right amount, after every check. Nothing needs adding.
@@ -29,19 +29,19 @@ The owner's commission tests on 3 November showed that FluentAffiliate's own ema
 
 ### 3. The staff copy of the new sale email
 
-**Seen in the test:** "New Affiliate Sale Notification", sent to staff. It carries FluentAffiliate's figure too. It also goes for self-referrals and credit packs. The app's daily report already lists the commissions held for review and those paid. Switch it off unless the owner wants it as an early signal. If it stays, it should never be read as the amount owed.
+**Seen in the test:** "New Affiliate Sale Notification", sent to staff. It carries FluentAffiliate's figure too. It also goes for self-referrals and Botter Boosters. The app's daily report already lists the commissions held for review and those paid. Switch it off unless the owner wants it as an early signal. If it stays, it should never be read as the amount owed.
 
 ### 4. One sentence in the app's `plan.downgraded` email, for your approval
 
 The app sends `plan.downgraded` when a member's tier falls. Its body says:
 
-> Included credits you had not used have been reset.
+> Included boosts you had not used have been reset.
 
 The owner's test showed this is not true when the email goes. A move down within a period has no paid invoice, so nothing is reset or granted until the next renewal. Members cannot move down themselves under Option C, so this email goes only when a plan is changed outside the member area, but it should still be true.
 
 The app agent proposes:
 
-> Your included credits change to your new plan's at your next renewal.
+> Your included boosts change to your new plan's at your next renewal.
 
 Reply with this sentence approved or with your own. The app agent will then change the template, with a data migration for a saved row staff have not edited.
 

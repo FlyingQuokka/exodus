@@ -35,7 +35,7 @@ Founders offer: 50% off every plan for life. Join as a founder and you stay one.
 | Monthly | $5 | $47 | $97 | $197 | $297 |
 | Annual | $50 | $470 | $970 | $1,970 | $2,970 |
 | Bots | 1 | 5 | 20 | Unlimited | Unlimited |
-| Credits each month | 300 | 2,000 | 5,000 | 12,000 | 20,000 |
+| Boosts each month | 300 | 2,000 | 5,000 | 12,000 | 20,000 |
 
 **One line on each card:**
 - **Apprentice:** Build and share bots with everyday AI models.
@@ -73,23 +73,23 @@ Founders offer: 50% off every plan for life. Join as a founder and you stay one.
 **Under the table:**
 The selling fee is a percentage of the price after tax plus 30 cents. It is never more than the sale. Payout fees from the payment processor are passed on at cost and shown before you confirm a withdrawal. Prices are in US dollars.
 
-### Credits
+### Boosts
 
-**Heading:** Credits fuel your bots
+**Heading:** Boosts fuel your bots
 
-Every message a bot sends uses credits. Your plan includes credits each month and they expire at renewal. Credits you buy never expire. Buy a credit pack at checkout.
+Every message a bot sends uses boosts. Your plan includes boosts each month and they expire at renewal. Boosts you buy never expire. Buy a Botter Booster at checkout.
 
-| Pack | Price | Credits |
+| Pack | Price | Boosts |
 |---|---|---|
 | Starter | $10 | 1,000 |
-| Builder | $25 | 2,600 including 100 bonus credits |
-| Launcher | $50 | 5,500 including 500 bonus credits |
-| Promoter | $100 | 11,500 including 1,500 bonus credits |
-| Campaigner | $250 | 30,000 including 5,000 bonus credits |
+| Builder | $25 | 2,600 including 100 bonus boosts |
+| Launcher | $50 | 5,500 including 500 bonus boosts |
+| Promoter | $100 | 11,500 including 1,500 bonus boosts |
+| Campaigner | $250 | 30,000 including 5,000 bonus boosts |
 
 Auto top-up is off until you switch it on.
 
-**Closing line:** Cancel from Billing and credits when you like. Your plan runs to the end of the period you paid for.
+**Closing line:** Cancel from Billing and boosts when you like. Your plan runs to the end of the period you paid for.
 
 **Button:** Take Me To The Botterverse
 
@@ -149,7 +149,7 @@ Emails, social posts, short pitches and banners are ready to use. Copy them and 
 
 - You cannot refer yourself. A repeat offender is banned and forfeits earnings.
 - One level only. You earn on the members you refer and not on the members they refer.
-- Credit packs earn nothing.
+- Botter Boosters earn nothing.
 - If your plan drops to Apprentice or ends you leave the programme. Commission you have already earned stays yours. Move back up and you rejoin.
 
 **Earnings disclaimer:** Botterverse does not promise or guarantee any income.
@@ -186,7 +186,7 @@ Copy the share link or paste the embed into your own site.
 Put a one-time price on it. Set a message cap and a top-up. Add a money-back guarantee if you want one. This starts on Novice.
 
 **8. Watch it work**
-See conversations, credits and revenue on your dashboard. Deeper analytics start on Expert.
+See conversations, boosts and revenue on your dashboard. Deeper analytics start on Expert.
 
 ### Three ways to reach people
 
@@ -217,10 +217,10 @@ No. You write instructions in plain language and upload files. Integrations use 
 No. The cheapest plan is on the [Pricing](/pricing/) page. Visitors can still chat with free Public bots without paying.
 
 **Who pays when people chat with my bot?**
-You do. Each message uses credits from your balance. Your plan includes credits each month and you can buy more. Set a daily credit limit on a bot and a message cap on a paid bot so a busy day cannot use up your balance.
+You do. Each message uses boosts from your balance. Your plan includes boosts each month and you can buy more. Set a daily boost limit on a bot and a message cap on a paid bot so a busy day cannot use up your balance.
 
 **Can I move my custom GPT?**
-Yes. Paste its instructions into Import a bot and upload its files. It does not connect to your OpenAI account so you paste the content in. Rebuild any actions as integrations from Novice. The last step lists anything that could not be carried across. It uses no credits.
+Yes. Paste its instructions into Import a bot and upload its files. It does not connect to your OpenAI account so you paste the content in. Rebuild any actions as integrations from Novice. The last step lists anything that could not be carried across. It uses no boosts.
 
 **Which AI models can I use?**
 Claude (the default), GPT, Gemini or Grok. You choose for each bot. Apprentice has the everyday models. Every other plan has every model.
@@ -238,7 +238,7 @@ A sale can be refunded for 14 days. Earnings from a sale become withdrawable 21 
 Yes to both. An upgrade is prorated. If you move down any bots over the new limit are paused and you choose which keep running. A monthly plan runs to the end of the period you paid for. After a plan ends your account stays open. Your bots pause and your data is kept.
 
 **Can I use Botterverse in the EU?**
-You can use free Public bots. We cannot offer our paid services in the EU because the complexity of the EU tax rules makes it impractical for a small business to comply. That covers plans, credits, bot access and Bot Market purchases.
+You can use free Public bots. We cannot offer our paid services in the EU because the complexity of the EU tax rules makes it impractical for a small business to comply. That covers plans, boosts, bot access and Bot Market purchases.
 
 ---
 
@@ -261,7 +261,7 @@ Three places can help.
 |---|---|---|
 | Botters Lab | Building and selling bots | Your username and password |
 | Billing login | Invoices, receipts, card changes and cancelling | The email you bought with. The link is in your purchase email |
-| Help desk | Your tickets | Its own account. If you bought a plan or credits press Reset password. Otherwise press Create an account |
+| Help desk | Your tickets | Its own account. If you bought a plan or boosts press Reset password. Otherwise press Create an account |
 
 **Writing a ticket that helps us help you**
 - Your username.
@@ -324,7 +324,7 @@ Choose a type:
 
 **Heading:** Help desk sign in
 
-**Body:** This is separate from the Botters Lab. If you bought a plan or credits you already have an account. Press Reset password. If you are new press Create an account.
+**Body:** This is separate from the Botters Lab. If you bought a plan or boosts you already have an account. Press Reset password. If you are new press Create an account.
 
 **Links:** Reset password. Create an account.
 

@@ -69,7 +69,7 @@ If you built one you know the limits. You could not see who used it. You had no 
 
 Botterverse works the other way round.
 
-- **Bring your GPT across.** Paste its instructions and files into Import a bot. It opens as a bot you can edit. It uses no credits.
+- **Bring your GPT across.** Paste its instructions and files into Import a bot. It opens as a bot you can edit. It uses no boosts.
 - **Choose the model.** Pick it for each bot. Nothing is chosen for you.
 - **Know who is chatting.** Ask visitors to sign up and you see who they are.
 - **Reach customers who agree.** On Pro and above you can connect your own CRM and download the customers who ticked the box to share their details.
@@ -88,7 +88,7 @@ Botterverse works the other way round.
 Claude, GPT, Gemini or Grok. Choose it for each bot.
 
 **Your knowledge**
-Upload PDF or Word or text or Markdown or CSV files. Uploading uses no credits.
+Upload PDF or Word or text or Markdown or CSV files. Uploading uses no boosts.
 
 **Your link or your site**
 Every Public bot has its own page with your username in the address. Or paste the embed into your site.
@@ -100,7 +100,7 @@ One-time price. Optional message cap and top-up. Optional 7 or 14 day money-back
 Buy bots from other Botters on any plan. Sell yours from Pro with your own licence terms.
 
 **Your numbers**
-See credits, usage and revenue on your dashboard. Deeper analytics from Expert. A/B tests on Master.
+See boosts, usage and revenue on your dashboard. Deeper analytics from Expert. A/B tests on Master.
 
 ---
 
@@ -154,14 +154,14 @@ Every bot is checked before it can go Public. Each one has a Certified by Botter
 
 | Plan | Price | What it adds |
 |---|---|---|
-| Apprentice Botter | $5 | Build and share bots. Everyday AI models. 1 bot. 300 credits each month |
-| Novice Botter | $47 | 20 bots. Every AI model. Paywall. Integrations. Affiliate programme. 2,000 credits each month |
-| Expert Botter | $97 | 50 bots. Deeper analytics. 5,000 credits each month |
-| Pro Botter | $197 | Unlimited bots. Bot styles. Sell on Bot Market. CRM connector. Priority support. 12,000 credits each month |
-| Master Botter | $297 | A/B tests. Advanced analytics. 20,000 credits each month |
+| Apprentice Botter | $5 | Build and share bots. Everyday AI models. 1 bot. 300 boosts each month |
+| Novice Botter | $47 | 20 bots. Every AI model. Paywall. Integrations. Affiliate programme. 2,000 boosts each month |
+| Expert Botter | $97 | 50 bots. Deeper analytics. 5,000 boosts each month |
+| Pro Botter | $197 | Unlimited bots. Bot styles. Sell on Bot Market. CRM connector. Priority support. 12,000 boosts each month |
+| Master Botter | $297 | A/B tests. Advanced analytics. 20,000 boosts each month |
 
 **Under the table:**
-Each plan includes everything in the one before. Pay annually and have two months free. Included credits renew each month. Credits you buy never expire.
+Each plan includes everything in the one before. Pay annually and have two months free. Included boosts renew each month. Boosts you buy never expire.
 
 **Founders line** [Show only while the offer runs.]: Founders pay half for life on every plan.
 
@@ -178,7 +178,7 @@ Each plan includes everything in the one before. Pay annually and have two month
 **Body:**
 From the Novice plan you can join the affiliate programme. Share your link. You earn commission on the subscription payments of members who join through it. The first payment earns the most. Every payment after earns a smaller share.
 
-At launch the programme pays 50% of a referred member's first payment and 20% of every payment after. Credit packs earn nothing.
+At launch the programme pays 50% of a referred member's first payment and 20% of every payment after. Botter Boosters earn nothing.
 
 Selling on Bot Market? Set an affiliate share on your listing. Any member from Novice up can promote it.
 
@@ -207,19 +207,19 @@ Selling on Bot Market? Set an affiliate share on your listing. Any member from N
 | Which plan should I pick? | Partly (section 8) | New answer |
 
 **Who pays when people chat with my bot?**
-You do. Each message uses credits from your balance at its real size. Your plan includes credits each month and you can buy more. Set a daily credit limit on a bot and a message cap on a paid bot so a busy day cannot use up your balance.
+You do. Each message uses boosts from your balance at its real size. Your plan includes boosts each month and you can buy more. Set a daily boost limit on a bot and a message cap on a paid bot so a busy day cannot use up your balance.
 
 **Can someone copy my instructions or files?**
 Every bot is told never to reveal or quote or summarise or translate its instructions or files. No instruction is a perfect lock so keep secrets out of them. [CONFIRM the tone.]
 
 **I already have a custom GPT. Do I start again?**
-No. Paste its instructions and files into Import a bot. It opens as a bot you can edit. It uses no credits. The last step lists anything that could not move.
+No. Paste its instructions and files into Import a bot. It opens as a bot you can edit. It uses no boosts. The last step lists anything that could not move.
 
 **Do I need to be technical?**
 No. If you can brief a new assistant you can write a bot's instructions.
 
 **Is there a free trial?**
-No. There is no free plan or trial. Apprentice is $5 a month and you can cancel from Billing and credits when you like. Your plan runs to the end of the period you paid for.
+No. There is no free plan or trial. Apprentice is $5 a month and you can cancel from Billing and boosts when you like. Your plan runs to the end of the period you paid for.
 
 **Will I be locked in?**
 No. Request an export from Settings. Your bots, knowledge and conversations go with you.
@@ -231,7 +231,7 @@ No plan promises sales. You have four ways to reach people. Share a link. Put th
 Every bot is checked before it can go Public. You write the instructions and choose what it knows. Preview it before anyone else sees it. The Certified page does not vouch for the answers so test yours.
 
 **Which plan should I pick?**
-Start with the function you need. Apprentice builds and shares. Novice adds selling and every model. Pro adds Bot Market selling and the CRM connector. You can change plan from Billing and credits and the bought credits stay.
+Start with the function you need. Apprentice builds and shares. Novice adds selling and every model. Pro adds Bot Market selling and the CRM connector. You can change plan from Billing and boosts and the bought boosts stay.
 
 **Button:** Read the full FAQ
 

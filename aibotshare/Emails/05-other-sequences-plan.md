@@ -61,7 +61,7 @@ Waiting means the first step holds until the tag is removed. A Check Condition b
 | O11 | Bot Market seller | Tag Bot Market Seller applied | Sellers | 2 | None |
 | O12 | Bot Market buyer | Tag Bot Market Buyer applied | Buyers | 2 | None |
 | O13 | Moved across from a GPT | Tag Migrated From GPT applied | Imports | 1 | None |
-| O14 | Power User | Tag Power User applied | Heavy credit users | 2 | None |
+| O14 | Power User | Tag Power User applied | Heavy boost users | 2 | None |
 
 Total about 47 emails.
 
@@ -106,7 +106,7 @@ Never mention the affiliate software by name.
 
 **O13 Moved across from a GPT.** One email. Test it in Preview. Rebuild actions as integrations on Novice and above. The welcome sequence already swaps Import a bot to day 3 for these members.
 
-**O14 Power User.** Two steps. The auto top-up worked and where to change it. Then making credits go further. No pressure and no "free credits".
+**O14 Power User.** Two steps. The auto top-up worked and where to change it. Then making boosts go further. No pressure and no "free boosts".
 
 ## 5. Tags used
 

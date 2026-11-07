@@ -34,7 +34,7 @@ Written with the Genesis New Hook Bot (headlines by awareness level) and Univers
 | Size | Headline | Supporting line |
 |---|---|---|
 | 728x90 | Your bot, your price | Choose the model. Set the price. No code. |
-| 300x250 | Move your custom GPT across | Paste it into Import a bot. No credits used. |
+| 300x250 | Move your custom GPT across | Paste it into Import a bot. No boosts used. |
 | 160x600 | Build / Share / Sell with Your bot. Your model. Your price. | Build it and share it. Then sell access. No code. |
 | 970x250 | Build bots you control | Choose the model and set the price. No code. |
 | 320x50 | Your bot, your price | Plans from $5 a month |

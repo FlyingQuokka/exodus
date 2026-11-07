@@ -67,7 +67,7 @@ Rules:
 
 Read from the plugin source. Nothing has been tested live. Full detail is in `Docos\admin-verification-report.md`.
 
-1. **Plan purchase.** Use Subscription Activated with restart switched off. Order Paid also fires but it fires for credit packs and any other order as well. Never use both.
+1. **Plan purchase.** Use Subscription Activated with restart switched off. Order Paid also fires but it fires for Botter Boosters and any other order as well. Never use both.
 2. **Upgrades.** FluentCart creates a new order and a new subscription and cancels the old one silently. So Subscription Activated fires again for the new plan. Restart off stops a member re-entering the welcome sequence. There is no FluentCRM trigger for a plan change. The app's tier tags remain the signal.
 3. **Tags.** Tag Applied and Tag Removed are Pro triggers and they exist. One automation can start another by applying a tag.
 4. **Conditions.** A Check Condition block (Pro) tests tags and lists and custom fields.

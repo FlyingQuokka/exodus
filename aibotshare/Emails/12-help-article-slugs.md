@@ -23,7 +23,7 @@ Read from the BetterDocs articles on the local site on 1 November 2026 (public R
 | `connect-your-crm` | Connect your CRM |
 | `conversation-insights` | Conversation insights |
 | `create-a-bot` | Create a bot |
-| `credit-packs` | Buy a credit pack |
+| `credit-packs` | Buy a Botter Booster |
 | `crm-connector` | The CRM connector |
 | `customer-consent` | Customers’ consent and the customer CSV |
 | `dashboard` | The dashboard |
@@ -73,11 +73,11 @@ Read from the BetterDocs articles on the local site on 1 November 2026 (public R
 | `signing-up` | Signing up and signing in |
 | `starters-and-category` | Conversation starters and category |
 | `support` | Contact the Botter Support Team |
-| `top-up-credits` | Top up your credits |
+| `top-up-credits` | Top up your boosts |
 | `transfer-and-multi-sell` | Transfer, Multi-sell and licences |
-| `what-are-credits` | What credits are |
+| `what-are-credits` | What boosts are |
 | `what-is-botterverse` | What Botterverse is |
-| `whole-credits` | Why balances show whole credits |
+| `whole-credits` | Why balances show whole boosts |
 | `withdraw` | Withdraw your earnings |
 
 ## Notes
@@ -85,3 +85,16 @@ Read from the BetterDocs articles on the local site on 1 November 2026 (public R
 - Slugs for the emails: Analytics is `bot-analytics`. Bot Market buying is `browse-and-buy`. The affiliate programme is `affiliate-programme`. Models is `choose-a-model`. Make Public and Personal is `personal-and-public`. Declarations is `declarations`.
 - On 1 November 2026 the old brand name was replaced with Botterverse in 26 articles (47 uses) and the article `what-is-aibotshare` became `what-is-botterverse`. The old address redirects to the new one.
 - At the time of reading `https://botterverse.debbie` answered 403 and `https://aibotshare.debbie` answered. The domain move was still in progress.
+
+## Rename to Botter Boosters (pending, database only)
+
+These articles live in BetterDocs on the site and are not in the repository. Titles and body text need "credit" changed to "boost" and "credit pack" changed to "Botter Booster". Change the slugs too and keep a redirect from each old slug.
+
+| Current slug | New slug | New title |
+|---|---|---|
+| `credit-packs` | `botter-boosters` | Buy a Botter Booster |
+| `top-up-credits` | `top-up-boosts` | Top up your boosts |
+| `what-are-credits` | `what-are-boosts` | What boosts are |
+| `whole-credits` | `whole-boosts` | Why balances show whole boosts |
+
+No email in `emails.json` links to these four slugs, so the rename breaks nothing there. Search the other 71 articles for the words credit and credits as well.

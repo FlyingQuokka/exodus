@@ -71,7 +71,7 @@ Yesterday's tour showed that every AI model is now yours to choose from. Today i
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) and select the Model section. You'll find Claude (the default), GPT, Gemini and Grok. On your earlier plan, only the everyday models were offered and now every model in each family is open.
 
-A dearer model uses more credits per message. That applies to your visitors' chats and to your own testing in Preview.
+A dearer model uses more boosts per message. That applies to your visitors' chats and to your own testing in Preview.
 
 Two rules are worth knowing. If you change the model on a Public bot, you'll confirm its declarations again. If your instructions are too long for the model you pick, Save refuses with the message The instructions are too large for this model.
 
@@ -85,7 +85,7 @@ Use a question that needs judgement and not a fact. Here's one you can adapt:
 
 Use Duplicate on a working bot so your original stays untouched. The copy starts as Personal and counts towards your bot limit.
 
-In the copy, choose a different model and press Save. Open Preview and ask the question above. Check your credits pill before and after to see what the answer cost. Repeat for each family and keep the one whose answer you'd be happy for a customer to read.
+In the copy, choose a different model and press Save. Open Preview and ask the question above. Check your boosts pill before and after to see what the answer cost. Repeat for each family and keep the one whose answer you'd be happy for a customer to read.
 
 Enjoy the comparison,
 
@@ -94,7 +94,7 @@ Your Botter Support Team
 P.S. Next up: your bot is ready to earn. What will a buyer see before they pay?
 
 **Notes**
-- Facts: four families with Claude as default; Apprentice Botter has everyday models only; dearer models use more credits; model change on a Public bot means confirming declarations again; refusal wording; Preview uses the last saved version and the owner's credits; Duplicate starts Personal and counts towards the limit (guide 3.8, 3.9, 3.10).
+- Facts: four families with Claude as default; Apprentice Botter has everyday models only; dearer models use more boosts; model change on a Public bot means confirming declarations again; refusal wording; Preview uses the last saved version and the owner's boosts; Duplicate starts Personal and counts towards the limit (guide 3.8, 3.9, 3.10).
 - Subject echoes the UN01 P.S.
 - Automation: UP-Nov step 2.
 
@@ -160,7 +160,7 @@ P.S. Next up: a paywall with no limits can cost you. How do you cap it?
 
 Hi {{contact.first_name}},
 
-On day 3, you switched on the paywall and saw what a buyer sees. A paywall with no limits can cost you, because every buyer message is paid from your credits.
+On day 3, you switched on the paywall and saw what a buyer sees. A paywall with no limits can cost you, because every buyer message is paid from your boosts.
 
 Today you'll add a Message cap and a top-up so each sale stays worthwhile.
 
@@ -172,7 +172,7 @@ A top-up needs three things: a cap, a Top-up size in messages and a Top-up price
 
 **Choosing the numbers**
 
-Open [Analytics](https://lab.{{domain}}/bots/analytics) and find credits per message for your bot. That's roughly what one buyer message costs you. Multiply it by the cap and check the one-time price covers that with room to spare.
+Open [Analytics](https://lab.{{domain}}/bots/analytics) and find boosts per message for your bot. That's roughly what one buyer message costs you. Multiply it by the cap and check the one-time price covers that with room to spare.
 
 For example, a cap of 100 messages with a top-up of 50 messages. The guide's own example button reads "Top up 50 messages for $9.00". Treat any figures as a starting point and adjust once you've seen real use.
 
@@ -189,7 +189,7 @@ Your Botter Support Team
 P.S. Next up: one promise that puts a buyer at ease. What does it cost you if someone uses it?
 
 **Notes**
-- Facts: Message cap empty means no cap; top-up needs both fields and a cap; buyer sees Top up at the cap; fee on each access and top-up; the cap protects the owner because each buyer message is paid from the owner's credits (guide 5.3). Credits per message is a basic analytics figure (8.1). The $9.00 example is the guide's own button wording (5.5).
+- Facts: Message cap empty means no cap; top-up needs both fields and a cap; buyer sees Top up at the cap; fee on each access and top-up; the cap protects the owner because each buyer message is paid from the owner's boosts (guide 5.3). Boosts per message is a basic analytics figure (8.1). The $9.00 example is the guide's own button wording (5.5).
 - Confirmed by the app agent (1 November 2026, answer 13): a message shows beside the price field when the price is changed to below the minimum. The minimums are staff settings so no figure is stated.
 - Subject echoes the UN03 P.S.
 - Automation: UP-Nov step 4.
@@ -259,7 +259,7 @@ First, you'll join the affiliate programme and then build a small helper bot to 
 
 Select [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu then Join the affiliate programme. You'll see Your link, which ends in your username.
 
-You earn commission on subscription payments from members who join through your link. That covers their first payment and every renewal. Credit packs earn nothing and referring yourself breaks the terms. Support can tell you the current rates.
+You earn commission on subscription payments from members who join through your link. That covers their first payment and every renewal. Botter Boosters earn nothing and referring yourself breaks the terms. Support can tell you the current rates.
 
 **A promotions bot**
 
@@ -280,7 +280,7 @@ Your Botter Support Team
 P.S. Next up: your own bots aren't the only ones you can promote. Whose would you pick?
 
 **Notes**
-- Facts: Affiliates page, Join the affiliate programme, Your link ends in username; commission on subscription payments (first and every renewal) of members who joined through the link; credit packs earn nothing; self-referral breaks terms; Support gives rates (guide 11.1, 11.2, 11.4). Knowledge files accept PDF, Word, text, Markdown and CSV (3.7).
+- Facts: Affiliates page, Join the affiliate programme, Your link ends in username; commission on subscription payments (first and every renewal) of members who joined through the link; Botter Boosters earn nothing; self-referral breaks terms; Support gives rates (guide 11.1, 11.2, 11.4). Knowledge files accept PDF, Word, text, Markdown and CSV (3.7).
 - No rates, no income claims. The bot instructions tell the bot never to invent results or earnings.
 - "Swipe Writer" is a bot the member builds here. The guide has no such feature and the welcome sequence does not use the name, so this stays as written.
 - Subject echoes the UN05 P.S.
@@ -404,7 +404,7 @@ Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose
 
 - Conversations, with the change since the previous period.
 - Messages, with messages per conversation.
-- Credits used, with credits per message.
+- Boosts used, with boosts per message.
 - Revenue, with the number of access purchases.
 - Conversations over time, as a graph.
 
@@ -412,7 +412,7 @@ Select [Analytics](https://lab.{{domain}}/bots/analytics) in the menu and choose
 
 Few conversations means the bot isn't being found. Share the link again or add it to your website.
 
-Many messages per conversation can mean the bot needs fuller instructions or knowledge files. Credits per message tells you if your model choice is paying its way.
+Many messages per conversation can mean the bot needs fuller instructions or knowledge files. Boosts per message tells you if your model choice is paying its way.
 
 Conversations without purchases on a paid bot suggest the description or starters need work.
 

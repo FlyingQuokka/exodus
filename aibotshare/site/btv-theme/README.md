@@ -22,7 +22,7 @@ Do not install on a live server until the owner approves. Page IDs differ per en
 - `assets/css/btv-home.css`: the home page only (every rule starts with `.hm`). It also loads Nunito Black and M PLUS Rounded 1c, which are used on that page and nowhere else. Enqueued by `inc/assets.php` on the front page. To update the home page without touching other pages' database edits, write `pages/home.html` into the Home page alone. Do not run the full page installer, which replaces every page.
 - `assets/css/integrations/`: FluentCart, Fluent Forms, Fluent Support, Better Docs and the WordPress login. CSS only.
 - `templates/`: front-page, page, page-landing, page-wide, single, index, home, archive, search, 404.
-- `parts/`: header and footer. Both are dynamic blocks (`inc/header-footer.php`). The header changes when signed in. The footer's Legal column shows the Footer navigation post (found by title). No credit row.
+- `parts/`: header and footer. Both are dynamic blocks (`inc/header-footer.php`). The header changes when signed in. The footer's Legal column shows the Footer navigation post (found by title). No boost row.
 - `patterns/`: hero, cards, accordion, pricing table, CTA band, step list and email capture. The header holds a banner slot (see `inc/banners.php`). Banners are managed in Advanced Ads and set up by the sync from `btv-sync/data/banners.json`. To end the Founders offer set `"active": false` on its banner in that file.
 - `pages/`: Home, Pricing, How it works, Affiliates, FAQ, Support, Feedback, Founders offer and Bot Market as block markup. Each design section is a Custom HTML block, so edit the files and run the installer, not the Site Editor.
 - `inc/domain.php`: the `{{domain}}` and `{{theme}}` token filter and `btv_lab_url()`.
@@ -34,7 +34,7 @@ Do not install on a live server until the owner approves. Page IDs differ per en
 - Header (signed out): How it works, Pricing, Bot Market, Affiliates, FAQ, Support, then the Botters Lab button. It collapses to a menu button at 1000px and below. Signed in: Support, the Account icon and the Botters Lab button. The cart icon shows only when the cart has items.
 - Every Botters Lab link opens in a new tab (`target="_blank" rel="noopener"`), as does the footer Documentation link.
 - `bin/install-pages.php` also rebuilds the Footer navigation post (legal pages only).
-- Pricing keeps the live buy links unchanged except the host, which is now `lab.{{domain}}` and renders to the same address as before. The design had no buy links so each plan button is the monthly link with an "Or pay annually" link below it. The credit pack table has an added Buy column.
+- Pricing keeps the live buy links unchanged except the host, which is now `lab.{{domain}}` and renders to the same address as before. The design had no buy links so each plan button is the monthly link with an "Or pay annually" link below it. The Botter Booster table has an added Buy column.
 - The Affiliates page needs the slug `affiliates`. The draft portal page (ID 231, Fluent Affiliate shortcode) held it, so the installer renamed that draft's slug to `affiliates-lab`.
 - The Lab host is `lab.` plus the domain, as in the existing buy links. The site plan said `members.`, so update the plan.
 - The footer Legal column shows the Footer navigation post as it is. That post still lists Feedback and Support and Terms of Use, so trim it to the legal pages.

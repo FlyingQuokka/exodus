@@ -6,7 +6,7 @@ Shared notes:
 - Sender is Botterverse. Prefix `[Botterverse]` on every email here.
 - Nobody in these sequences is a member yet. No email refers to "your bots" or to the Lab as available to them. Each uses a **Next step** heading and not "Task for today".
 - No Founders text appears in these emails. The Founders offer goes to Leads as two separate broadcasts (`broadcast-founders.md`) while the offer is open.
-- No prices or limits or credit amounts appear. Every email that needs them links to `https://{{domain}}/pricing/`.
+- No prices or limits or boost amounts appear. Every email that needs them links to `https://{{domain}}/pricing/`.
 
 ---
 
@@ -20,7 +20,7 @@ Shared notes:
 |---|---|---|
 | O01-01 | Custom GPTs are being switched off and what you can build instead | Next up: you've built a custom GPT already? Whether you have to start again. |
 | O01-02 | Bring a GPT across with Import a bot | Next up: who pays when people chat with a bot and how to keep that predictable. |
-| O01-03 | Who pays when people chat (credits and limits) | Next up: what happens when someone pays to use a bot and what Botterverse keeps. |
+| O01-03 | Who pays when people chat (boosts and limits) | Next up: what happens when someone pays to use a bot and what Botterverse keeps. |
 | O01-04 | Selling access and the published fee | Next up: which plan suits what you want to do. |
 | O01-05 | Choosing a plan | None. Plain sign-off. |
 
@@ -79,7 +79,7 @@ Botterverse has a page called [Import a bot](https://lab.{{domain}}/bots/import)
 
 The steps are Instructions, Files, Integrations and Review. In Review, you see a suggested name, description, category and conversation starters. A list called Not carried across shows anything that couldn't move.
 
-Nothing is saved until you press Create bot and it opens as a bot only you can see. Importing uses no credits.
+Nothing is saved until you press Create bot and it opens as a bot only you can see. Importing uses no boosts.
 
 **A note on actions**
 
@@ -96,7 +96,7 @@ Your Botter Support Team
 P.S. Next up: who pays when people chat with a bot and how to keep that predictable.
 
 **Notes**
-- Facts: Import a bot is paste only and uses no credits and the last step lists what was not carried across. Integrations are not part of Apprentice (guide 3.12). Integrations from Novice (9.1).
+- Facts: Import a bot is paste only and uses no boosts and the last step lists what was not carried across. Integrations are not part of Apprentice (guide 3.12). Integrations from Novice (9.1).
 - Wording "only you can see" = Personal (guide 3.12 and 4.1).
 - Automation: O01 step 2.
 
@@ -112,15 +112,15 @@ Hi {{contact.first_name}},
 
 Last time, we covered bringing a GPT across with [Import a bot](https://lab.{{domain}}/bots/import). The next thing most people ask about is who pays when people chat with a bot.
 
-**Credits**
+**Boosts**
 
-You do. Every message a bot sends uses credits from the owner's balance at its real size. That includes visitors, customers and your own testing. A more expensive model uses more credits per message.
+You do. Every message a bot sends uses boosts from the owner's balance at its real size. That includes visitors, customers and your own testing. A more expensive model uses more boosts per message.
 
-Your plan includes credits each month and they reset at renewal. Credits you buy never expire. The [Pricing](https://{{domain}}/pricing/) page lists the amounts.
+Your plan includes boosts each month and they reset at renewal. Boosts you buy never expire. The [Pricing](https://{{domain}}/pricing/) page lists the amounts.
 
 **Keeping it predictable**
 
-Two settings stop a busy day from using up your balance. A Daily credit limit on a bot caps what free visitors can use in a day. A Message cap on a paid bot limits how many messages a buyer receives before a top-up.
+Two settings stop a busy day from using up your balance. A Daily boost limit on a bot caps what free visitors can use in a day. A Message cap on a paid bot limits how many messages a buyer receives before a top-up.
 
 You can also switch on Auto top-up so a low balance is topped up from your card. It stays off until you switch it on.
 
@@ -135,8 +135,8 @@ Your Botter Support Team
 P.S. Next up: what happens when someone pays to use a bot and what Botterverse keeps.
 
 **Notes**
-- Facts: owner pays for visitor and customer chats and own testing (guide 1.3 and 10.1). Daily credit limit (4.4). Message cap (5.3). Auto top-up off until switched on (10.4). Included credits reset and bought credits never expire.
-- Daily credit limit effect worded as "free visitors" as the guide says free visitors are told the limit is reached while paid buyers carry on.
+- Facts: owner pays for visitor and customer chats and own testing (guide 1.3 and 10.1). Daily boost limit (4.4). Message cap (5.3). Auto top-up off until switched on (10.4). Included boosts reset and bought boosts never expire.
+- Daily boost limit effect worded as "free visitors" as the guide says free visitors are told the limit is reached while paid buyers carry on.
 - Automation: O01 step 3.
 
 ---
@@ -196,9 +196,9 @@ Each plan includes everything in the one before. Apprentice Botter builds and sh
 
 Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{domain}}/bot-styles), selling on Bot Market, the CRM connector and priority support. Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advanced analytics.
 
-There's no free plan or trial. You can cancel from [Billing and credits](https://lab.{{domain}}/billing) when you like.
+There's no free plan or trial. You can cancel from [Billing and boosts](https://lab.{{domain}}/billing) when you like.
 
-Your plan runs to the end of the period you paid for. You can change plan later and remaining credits from any credit packs you bought are untouched.
+Your plan runs to the end of the period you paid for. You can change plan later and remaining boosts from any Botter Boosters you bought are untouched.
 
 **Next step**
 
@@ -209,7 +209,7 @@ Whenever you're ready,
 Your Botter Support Team
 
 **Notes**
-- Facts: plan contents (guide 1.4 and pages-copy-v1 table). No free plan or trial and cancel from Billing and credits (guide 1.4 and 10.7). Bought credits stay on plan change (10.6).
+- Facts: plan contents (guide 1.4 and pages-copy-v1 table). No free plan or trial and cancel from Billing and boosts (guide 1.4 and 10.7). Bought boosts stay on plan change (10.6).
 - Final email: no loop. Ends on a plain sign-off.
 - Automation: O01 step 5. Exit when tag Customer is applied.
 
@@ -227,7 +227,7 @@ Your Botter Support Team
 | O03-02 | What to build | Next up: how a visitor reaches your bot and who checks it. |
 | O03-03 | Share and embed and the checks | Next up: putting a price on a bot. |
 | O03-04 | Selling access | Next up: what chatting costs and how to cap it. |
-| O03-05 | Credits and limits | Next up: Bot Market and the affiliate programme. |
+| O03-05 | Boosts and limits | Next up: Bot Market and the affiliate programme. |
 | O03-06 | Bot Market and affiliates | Next up: which plan to start on. |
 | O03-07 | Choosing a plan | Next up: the questions people ask last. |
 | O03-08 | Questions answered | None. Plain sign-off. |
@@ -292,7 +292,7 @@ These are examples only. A bot is only as good as its instructions and files.
 
 **How you build it**
 
-You write what the bot should do in plain language as if you were briefing a new assistant. You add files in PDF or Word or text or Markdown or CSV and you choose Claude, GPT, Gemini or Grok. Uploading files uses no credits.
+You write what the bot should do in plain language as if you were briefing a new assistant. You add files in PDF or Word or text or Markdown or CSV and you choose Claude, GPT, Gemini or Grok. Uploading files uses no boosts.
 
 **Next step**
 
@@ -305,7 +305,7 @@ Your Botter Support Team
 P.S. Next up: how a visitor reaches your bot and who checks it.
 
 **Notes**
-- Facts: home copy v3 section 5 examples (affiliate marketing bot reworded as marketing material). File types and no credits for upload (guide 3.7). Models (3.8).
+- Facts: home copy v3 section 5 examples (affiliate marketing bot reworded as marketing material). File types and no boosts for upload (guide 3.7). Models (3.8).
 - Automation: O03 step 2.
 
 ---
@@ -382,7 +382,7 @@ P.S. Next up: what chatting costs and how to cap it.
 
 ---
 
-## O03-05 - Credits and limits (day 8, Leads)
+## O03-05 - Boosts and limits (day 8, Leads)
 
 **Subject:** [Botterverse] What chatting costs and how to cap it
 
@@ -390,21 +390,21 @@ P.S. Next up: what chatting costs and how to cap it.
 
 Hi {{contact.first_name}},
 
-In the last email, we looked at putting a price on a bot. The cost on your side is credits.
+In the last email, we looked at putting a price on a bot. The cost on your side is boosts.
 
 **Who pays**
 
-You do. Each message a bot sends uses credits from your balance at its real size. That covers visitors, customers and your own testing. A more expensive model uses more credits.
+You do. Each message a bot sends uses boosts from your balance at its real size. That covers visitors, customers and your own testing. A more expensive model uses more boosts.
 
-Your plan includes credits each month and they reset at renewal. Credits you buy never expire. There's no free plan or trial.
+Your plan includes boosts each month and they reset at renewal. Boosts you buy never expire. There's no free plan or trial.
 
 **Caps**
 
-Set a Daily credit limit on a bot and a Message cap on a paid bot, so a busy day can't use up your balance. Auto top-up is off until you switch it on.
+Set a Daily boost limit on a bot and a Message cap on a paid bot, so a busy day can't use up your balance. Auto top-up is off until you switch it on.
 
 **Next step**
 
-Look at the credit packs on the [Pricing](https://{{domain}}/pricing/) page and think about how many people might chat with your bot in a week.
+Look at the Botter Boosters on the [Pricing](https://{{domain}}/pricing/) page and think about how many people might chat with your bot in a week.
 
 Speak soon,
 
@@ -426,7 +426,7 @@ P.S. Next up: Bot Market and the affiliate programme.
 
 Hi {{contact.first_name}},
 
-Last time, we covered credits and how to cap them. Two more things can bring people to your bots.
+Last time, we covered boosts and how to cap them. Two more things can bring people to your bots.
 
 **Bot Market**
 
@@ -436,7 +436,7 @@ Bot Market is where Botters buy and sell bots with each other. Every plan can bu
 
 From the Novice Botter plan, you can join the programme and share your link. You earn commission on the subscription payments of members who join through it. The [Affiliates](https://{{domain}}/affiliates/) page lists the rates at launch and the rules.
 
-Credit packs earn nothing and you can't refer yourself. Botterverse doesn't promise or guarantee any income.
+Botter Boosters earn nothing and you can't refer yourself. Botterverse doesn't promise or guarantee any income.
 
 **Next step**
 
@@ -470,7 +470,7 @@ Each plan includes everything in the one before. Apprentice Botter builds and sh
 
 Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{domain}}/bot-styles), selling on Bot Market, the CRM connector and priority support. Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advanced analytics.
 
-Remaining credits from any credit packs you bought are untouched when you change plan from [Billing and credits](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
+Remaining boosts from any Botter Boosters you bought are untouched when you change plan from [Billing and boosts](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
 
 **Next step**
 
@@ -584,11 +584,11 @@ Here are the questions people ask most before they join, in case one of them is 
 
 **Is there a free trial?**
 
-No. There's no free plan or trial. You can cancel from [Billing and credits](https://lab.{{domain}}/billing) when you like and your plan runs to the end of the period you paid for.
+No. There's no free plan or trial. You can cancel from [Billing and boosts](https://lab.{{domain}}/billing) when you like and your plan runs to the end of the period you paid for.
 
 **Who pays when people chat with my bot?**
 
-You do. Each message uses credits from your balance and your plan includes credits each month. A Daily credit limit and a Message cap keep a busy day from using up your balance.
+You do. Each message uses boosts from your balance and your plan includes boosts each month. A Daily boost limit and a Message cap keep a busy day from using up your balance.
 
 **Will I be locked in?**
 

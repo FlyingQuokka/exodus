@@ -192,3 +192,4 @@ body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit { background: va
 body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--bv-ink) !important; color: #fff !important; }
 
 .pg-form .ff_submit_btn_wrapper { display: flex; justify-content: center; text-align: center; }
+.pg-head:has(.pg-coupon) .pg-eyebrow { font-size: 1.4rem; letter-spacing: .12em; }

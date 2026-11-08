@@ -31,7 +31,7 @@ function btv_die_alert()
     set_transient('btv_die_alert_sent', 1, DAY_IN_SECONDS);
     global $wp_version;
     wp_mail(
-        'support@' . btv_base_domain(),
+        'btvadmin@' . btv_base_domain(),
         '[Botterverse] The error screen needs a code change',
         "The Botterverse theme styles WordPress's error screens by building on the core function _default_wp_die_handler. That function was not found, so the screens are shown without the Botterverse look.
 

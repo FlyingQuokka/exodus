@@ -16,6 +16,7 @@ This repository holds only what runs on the live server. Design and development 
 - WordPress 6.5 or later (built on 7.1) and PHP 8.0 or later on the command line. WP-CLI is not used.
 - Plugins: FluentCart and FluentCRM and Fluent Forms and Fluent Support and FluentAffiliate (Pro versions where the site uses them) and Better Docs and Advanced Ads 2.x and WP Legal Pages and Yoast SEO. The sync skips a step when its plugin is missing and says so.
 - The Botters Lab app at `lab.<domain>`.
+- Mail addresses: `support@<domain>` is customer-facing and goes to Fluent Support. Admin alerts from the theme go to `btvadmin@<domain>`. Both are built from the site domain, never typed.
 
 ## Set up or update
 

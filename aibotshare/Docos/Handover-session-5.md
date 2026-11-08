@@ -80,7 +80,7 @@ Still to do:
 | New repository | Decide where to create the `botterversewp` repository |
 | Go-live | Remove the `btv_preview_die` block in `site\btv-theme\inc\die.php` first. Install Advanced Ads on live. Supply the live bot scripts for the home page slots. Add `favicon.ico` on live. Set the end date on the FOUNDER50 coupon in FluentCart: the banner and the Founders page and FB2 and FND2-01 read it through `{{cpn_dateend_founder50}}` (UTC time of the end of the US Eastern day, minus five hours) and say "a date to be confirmed" until it is set. Replace the two home page bot ids and the FAQ page bot id in the embed scripts with the live ids. Run the sync so the help page templates and the FND2 sequence and the lead form feed (Main List and the tag Src Founders Page) reach live, then publish FND2. After editing a legal page (CCPA or DMCA or Privacy or Terms) on live, open the option `banner_cookie_options` and remove the entry added for that page ID: WP Legal Pages adds one, and its `setcookie` call prints PHP header warnings on every page for a day when `display_errors` is on |
 | Duplicate icons | Stale copies of the chosen icons remain in `Designs-WP\Icons`. New designs go there and chosen ones move to `aibotshare\Icons` |
-| Tests | Order tests in the app. The Not tested list in `site\btv-theme\README.md` still stands |
+| Tests | Order tests in the app. The Known gaps list in `site\README.md` still stands. The old theme and sync READMEs are kept in `Docos\dev-notes-old-readmes.md`. `python tools\publish-to-repo.py` copies the live-server files into the botterversewp repository |
 
 ## 5. Facts that must stay right in all copy
 

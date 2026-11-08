@@ -2,7 +2,9 @@
 /**
  * Writes the page markup in pages/ into WordPress. Safe to run again: pages are found by slug.
  *
- *   php bin/install-pages.php --wp=D:/path/to/public --host=the-site-host [--dry-run]
+ *   php bin/install-pages.php --wp=D:/path/to/public --host=the-site-host [--dry-run] [--only=slug]
+ *
+ * --only=slug writes that one page and skips the other pages and the footer navigation post.
  *
  * Existing pages keep their ID, slug and publish state. Their content and page template are replaced.
  * New pages are created and published. FluentCart system pages and the buy links on Pricing are never touched here:
@@ -10,13 +12,14 @@
  * Nothing here runs on a live server unless you point --wp at it.
  */
 
-$options = getopt('', ['wp:', 'host:', 'dry-run']);
+$options = getopt('', ['wp:', 'host:', 'dry-run', 'only:']);
 $wp_path = $options['wp'] ?? getenv('BTV_WP_PATH');
 if (!$wp_path || !is_readable(rtrim($wp_path, '/\\') . '/wp-load.php')) {
     fwrite(STDERR, "Give the WordPress folder with --wp=PATH (it must contain wp-load.php).\n");
     exit(1);
 }
 $dry = array_key_exists('dry-run', $options);
+$only = $options['only'] ?? null;
 $_SERVER['HTTP_HOST'] = $options['host'] ?? 'localhost';
 $_SERVER['HTTPS'] = 'on';
 define('WP_USE_THEMES', false);
@@ -42,7 +45,16 @@ $pages = [
     'bot-market'    => ['Bot Market', 'page-landing'],
 ];
 
+if ($only !== null && !isset($pages[$only])) {
+    fwrite(STDERR, "Unknown page slug '$only'. Choose one of: " . implode(', ', array_keys($pages)) . "
+");
+    exit(1);
+}
+
 foreach ($pages as $slug => [$title, $template]) {
+    if ($only !== null && $slug !== $only) {
+        continue;
+    }
     $file = dirname(__DIR__) . '/pages/' . $slug . '.html';
     $content = is_readable($file) ? file_get_contents($file) : false;
     if ($content === false) {
@@ -90,6 +102,13 @@ foreach ($pages as $slug => [$title, $template]) {
             }
         }
     }
+}
+
+if ($only !== null) {
+    echo $dry ? "Dry run. Nothing was written.
+" : "Done ($only only).
+";
+    exit(0);
 }
 
 // ---- Footer navigation post (the Legal column): legal pages only. Feedback and Support are in the Help column. ----

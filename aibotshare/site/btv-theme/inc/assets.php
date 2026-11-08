@@ -28,9 +28,17 @@ add_action('wp_enqueue_scripts', function () {
         wp_enqueue_style('btv-' . $name, btv_asset($rel), ['btv-theme'], btv_asset_version($rel));
     }
 
-    // The home page has its own stylesheet and two display fonts, loaded on that page only.
+    // The home page and the pages redone in its style share the fonts and tokens in btv-base.css.
+    // The home page has its own stylesheet. The other pages share btv-pages.css.
+    $restyled = ['pricing', 'faq', 'how-it-works', 'affiliates', 'support', 'feedback', 'bot-market'];
+    if (is_front_page() || is_page($restyled)) {
+        wp_enqueue_style('btv-base', btv_asset('css/btv-base.css'), ['btv-theme'], btv_asset_version('css/btv-base.css'));
+    }
     if (is_front_page()) {
-        wp_enqueue_style('btv-home', btv_asset('css/btv-home.css'), ['btv-theme'], btv_asset_version('css/btv-home.css'));
+        wp_enqueue_style('btv-home', btv_asset('css/btv-home.css'), ['btv-base'], btv_asset_version('css/btv-home.css'));
+    }
+    if (is_page($restyled)) {
+        wp_enqueue_style('btv-pages', btv_asset('css/btv-pages.css'), ['btv-base'], btv_asset_version('css/btv-pages.css'));
     }
 
     wp_enqueue_script('btv-site',btv_asset('js/btv-site.js'), [], btv_asset_version('js/btv-site.js'), ['in_footer' => true, 'strategy' => 'defer']);

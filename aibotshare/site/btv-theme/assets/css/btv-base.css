@@ -1,0 +1,11 @@
+/* Shared by the home page and every page redone in its style: two display fonts and the colour tokens.
+   Loaded once on those pages. Nothing here styles an element. */
+
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 900; font-display: swap; src: url('../fonts/btv-nunito-black.woff2') format('woff2'); }
+@font-face { font-family: 'M PLUS Rounded 1c'; font-style: normal; font-weight: 800; font-display: swap; src: url('../fonts/btv-m-plus-rounded-1c.woff2') format('woff2'); }
+
+.hm, .pg {
+  --bv-ink: #282637; --bv-purple: #984f92; --bv-pink: #dc8fd5; --bv-pinksoft: #ffe0fb; --bv-cyansoft: #d4f6f8; --bv-lilac: #ebedfc; --bv-line: #e3e0ee;
+  --bv-head: 'M PLUS Rounded 1c', 'Baloo 2', system-ui, sans-serif; --bv-motto: 'Nunito', 'Baloo 2', system-ui, sans-serif;
+  --bv-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 10.5l4 4 8-9' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}

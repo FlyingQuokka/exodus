@@ -9,3 +9,6 @@
   --bv-head: 'M PLUS Rounded 1c', 'Baloo 2', system-ui, sans-serif; --bv-motto: 'Nunito', 'Baloo 2', system-ui, sans-serif;
   --bv-tick: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M4 10.5l4 4 8-9' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
+
+/* A smaller gap between the end of the content and the footer on the redone pages */
+body:has(.pg, .hm) .site-footer { margin-top: 2rem; }

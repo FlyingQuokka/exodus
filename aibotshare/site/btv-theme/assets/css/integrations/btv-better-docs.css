@@ -25,7 +25,9 @@ body .betterdocs-breadcrumb a { color: var(--accent-text); }
 body [class*="betterdocs-"] :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
 
 /* Help centre grid: overrides the colours Better Docs saved inside its blocks (blue headings, blue count badge, square white cards) */
-body .betterdocs-category-grid-wrapper { padding-block: 1rem 3rem; }
+body .betterdocs-category-grid-wrapper { padding-block: 1rem .5rem; }
+/* A smaller gap between the end of the help pages and the footer */
+body:has([class*="betterdocs"]) .site-footer { margin-top: 2rem; }
 body .betterdocs-category-grid-inner-wrapper { gap: 1.25rem; }
 body .betterdocs-single-category-wrapper.category-grid {
   background: var(--surface) !important; border: 1px solid var(--border) !important; border-radius: var(--r-card) !important;

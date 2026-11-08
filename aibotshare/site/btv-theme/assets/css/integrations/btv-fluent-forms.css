@@ -31,8 +31,8 @@
 
 /* Button */
 .fluentform .ff_submit_btn_wrapper { margin-bottom: 0; }
-.fluentform .ff_submit_btn_wrapper .ff-btn-submit { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; line-height: 1; padding: .95rem 1.7rem; border-radius: 999px; border: 2px solid transparent; background: var(--accent); color: var(--on-accent); cursor: pointer; box-shadow: none; transition: transform .15s ease, background .15s ease; }
-.fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--accent-hover); color: var(--on-accent); transform: translateY(-1px); opacity: 1; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 800; font-size: 1.1rem; line-height: 1; padding: .95rem 1.7rem; border-radius: 999px; border: 2px solid transparent; background: var(--accent) !important; color: var(--on-accent) !important; cursor: pointer; box-shadow: none; transition: transform .15s ease, background .15s ease; }
+.fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--accent-hover) !important; color: var(--on-accent) !important; transform: translateY(-1px); opacity: 1; }
 .fluentform .ff_submit_btn_wrapper .ff-btn-submit:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
 .fluentform .ff_submit_btn_wrapper .ff-btn-submit:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 

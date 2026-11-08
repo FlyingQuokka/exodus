@@ -9,7 +9,7 @@
       "active": true,
       "pages": "all",
       "ends": "2026-11-30 23:59:59",
-      "html": "<div class=\"band\">Founders offer: 50% off every plan for life with code FOUNDER50. Closes 30 November. <a href=\"/founders/\">See the offer</a></div>"
+      "html": "<div class=\"band\">Founders offer: 50% off every plan for life with code FOUNDER50. Closes {{founders_close}}. <a href=\"/founders/\">See the offer</a></div>"
     }
   ]
 }

@@ -17,11 +17,40 @@ function btv_base_domain()
 }
 
 /**
+ * When the Founders offer closes, read from the end date of its FluentCart coupon so nobody types the date into an email or a page.
+ * The coupon end date is saved as a UTC time that stands for the end of a day in US Eastern time, so five hours come off before the date is read.
+ * Returns the words "on 30 November" or, when the coupon has no end date, "soon". Written into copy as {{founders_close}}.
+ */
+if (!function_exists('btv_founders_close')) {
+    function btv_founders_close()
+    {
+        static $cache = null;
+        if ($cache !== null) {
+            return $cache;
+        }
+        global $wpdb;
+        $cache = 'soon';
+        $code = (string) apply_filters('btv_founders_coupon_code', 'FOUNDER50');
+        $end = $wpdb->get_var($wpdb->prepare("SELECT end_date FROM {$wpdb->prefix}fct_coupons WHERE code = %s AND status = 'active' LIMIT 1", $code));
+        if ($end && strpos((string) $end, '0000') !== 0) {
+            $time = strtotime($end . ' UTC');
+            if ($time) {
+                $cache = 'on ' . gmdate('j F', $time - 5 * HOUR_IN_SECONDS);
+            }
+        }
+        return $cache;
+    }
+}
+
+/**
  * FluentCRM only parses codes written group.key. It hands any other code to this filter.
  */
 add_filter('fluentcrm_smartcode_fallback', function ($code, $subscriber = null) {
     if ($code === '{{domain}}') {
         return btv_base_domain();
+    }
+    if ($code === '{{founders_close}}') {
+        return btv_founders_close();
     }
     return $code;
 }, 10, 2);

@@ -40,13 +40,13 @@ Your Botter Support Team
 
 ## FB2 - The Founders offer closes soon (broadcast, Leads)
 
-**Subject:** [Botterverse] The Founders offer closes on 30 November
+**Subject:** [Botterverse] The Founders offer closes {{founders_close}}
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-The Founders offer closes on 30 November. After that, new plans are at the standard price.
+The Founders offer closes {{founders_close}}. After that, new plans are at the standard price.
 
 If you join before then, your price stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.
 
@@ -56,6 +56,6 @@ Your Botter Support Team
 
 **Notes**
 - States the closing date as a fact and nothing more. No countdown and no pressure wording.
-- The closing date is 30 November (owner decision 1 November 2026). Change it here and in the subject if the date moves.
-- Send once about three days before the close. Do not send a third email. Contacts who join are excluded by the Customer tag.
+- The closing date is never typed. `{{founders_close}}` reads the end date of the FOUNDER50 coupon (UTC end date minus five hours, so the US Eastern day) and gives "on 30 November". It gives "soon" when the coupon has no end date.
+- Send once about three days before the close. Do not send a third email. Contacts who join are excluded by the Customer tag. Contacts on the FND2 sequence (tag Src Founders Page) receive FB2 as well and not FB1.
 - Automation: none. Send once as a campaign. When the offer closes stop using both emails and remove the Founders band from the Home page and Pricing page.

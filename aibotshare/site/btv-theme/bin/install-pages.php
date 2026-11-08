@@ -116,7 +116,7 @@ $legal = [
     ['Terms And Conditions', 'terms-and-conditions'],
     ['Privacy Policy', 'privacy-policy'],
     ['Legal', 'legal', [
-        ['CCPA', 'ccpa-california-consumer-privacy-act'],
+        ['CCPA', 'ccpa'],
         ['DMCA', 'dmca'],
     ]],
 ];

@@ -10,6 +10,23 @@
  "publish": true,
  "steps": [
   {
+   "key": "O01-skip-founders",
+   "do": "condition",
+   "note": "A Founders page sign-up follows FND2, which carries the O01 emails on its own timing.",
+   "if": {
+    "match": "any",
+    "tags": [
+     "Src Founders Page"
+    ]
+   },
+   "yes": [
+    {
+     "key": "O01-skip-end",
+     "do": "end"
+    }
+   ]
+  },
+  {
    "key": "O01-01",
    "do": "email",
    "email": "O01-01"

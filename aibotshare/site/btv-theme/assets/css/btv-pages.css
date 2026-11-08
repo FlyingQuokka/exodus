@@ -176,3 +176,17 @@ body.btv-legal .btv-main table { border-collapse: collapse; width: 100%; font-si
 body.btv-legal .btv-main th, body.btv-legal .btv-main td { border: 1px solid var(--bv-line); padding: .8rem 1rem; text-align: left; vertical-align: top; }
 body.btv-legal .btv-main th { background: var(--bv-lilac); font-family: var(--bv-head); font-weight: 800; color: var(--bv-ink); }
 body.btv-legal .btv-main a { color: var(--bv-purple); }
+
+.pg-head h1 .pg-line { display: block; }
+
+/* Founders offer page */
+.pg-coupon { display: grid; gap: .2rem; justify-items: center; margin: 1.6rem auto 0; padding: 1.2rem 2.4rem; background: var(--bv-pinksoft); color: var(--bv-ink); border-radius: 24px; width: fit-content; max-width: 100%; }
+.pg-coupon .k { font-size: .85rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--bv-purple); }
+.pg-coupon b { font-family: var(--bv-head); font-weight: 800; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.05; letter-spacing: .04em; }
+.pg-coupon .s { font-size: .95rem; color: #4f4d5f; }
+.pg-founders-tbl td.f { background: var(--bv-pinksoft); color: var(--bv-purple); font-size: 1.15rem; }
+.pg-form { text-align: center; }
+.pg-form h2 { text-align: center; }
+.pg-form .fluentform { max-width: 30rem; margin-inline: auto; text-align: left; }
+body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit { background: var(--bv-purple) !important; color: #fff !important; }
+body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--bv-ink) !important; color: #fff !important; }

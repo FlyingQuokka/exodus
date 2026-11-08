@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="31.5 10.5 290 290" width="512" height="512" role="img" aria-label="Sad grey GPT bot with a drooping antenna">
+  <title>Sad GPT bot (grey, drooping antenna, transparent background)</title>
+  <g transform="translate(41.5 26.5) scale(3.5526)">
+    <g transform="translate(8 3) rotate(-3 30 40)">
+      <rect x="14" y="54" width="10" height="12" rx="5" fill="#8a879e"/><rect x="36" y="54" width="10" height="12" rx="5" fill="#8a879e"/>
+      <rect x="5" y="12" width="50" height="42" rx="17" fill="#c9c6d8"/>
+      <path d="M30 12.5 L30 8.5 Q30 4.5 24.5 5.5 Q18.5 6.8 18.5 16" fill="none" stroke="#6b6980" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="18.5" cy="19.4" r="3.4" fill="#b3b0c4" stroke="#6b6980" stroke-width="1"/>
+      <circle cx="21" cy="33" r="4.2" fill="#4f4d5f"/><circle cx="39" cy="33" r="4.2" fill="#4f4d5f"/>
+      <path d="M14.5 27 L26 23.5" stroke="#4f4d5f" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M45.5 27 L34 23.5" stroke="#4f4d5f" stroke-width="2.6" stroke-linecap="round"/>
+      <path d="M22 45 Q30 39 38 45" stroke="#4f4d5f" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M44.5 37.5 q-2.6 3.8 0 5.4 q2.6 -1.6 0 -5.4z" fill="#8fd3e8"/>
+    </g>
+  </g>
+</svg>

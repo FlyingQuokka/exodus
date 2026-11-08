@@ -13,19 +13,79 @@
    "key": "FND2-01",
    "do": "email",
    "email": "FND2-01",
-   "note": "At once. They are on the list."
+   "note": "Day 0. They are on the list and the offer in short."
   },
   {
-   "key": "FND2-w02",
+   "key": "FND2-w1",
    "do": "wait",
-   "amount": 3,
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-O01-01",
+   "do": "email",
+   "email": "O01-01",
+   "note": "Day 2. Why Botterverse."
+  },
+  {
+   "key": "FND2-w2",
+   "do": "wait",
+   "amount": 2,
    "unit": "days"
   },
   {
    "key": "FND2-02",
    "do": "email",
    "email": "FND2-02",
-   "note": "Day 3. How the coupon works."
+   "note": "Day 4. How the coupon works."
+  },
+  {
+   "key": "FND2-w3",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-O01-02",
+   "do": "email",
+   "email": "O01-02",
+   "note": "Day 6. Import a bot."
+  },
+  {
+   "key": "FND2-w4",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-O01-03",
+   "do": "email",
+   "email": "O01-03",
+   "note": "Day 8. Who pays when people chat."
+  },
+  {
+   "key": "FND2-w5",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-O01-04",
+   "do": "email",
+   "email": "O01-04",
+   "note": "Day 10. Selling access."
+  },
+  {
+   "key": "FND2-w6",
+   "do": "wait",
+   "amount": 2,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-O01-05",
+   "do": "email",
+   "email": "O01-05",
+   "note": "Day 12. Choosing a plan."
   }
  ]
 }

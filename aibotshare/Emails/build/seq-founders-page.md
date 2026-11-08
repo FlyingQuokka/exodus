@@ -1,20 +1,26 @@
 # Sequence FND2 - Founders page list
 
-Two emails for people who join the list from the form on the Founders offer page. They are on the main list with the tags Lead and Src Founders Page. The tag Src Founders Page starts this sequence. The tag Lead also starts O01 and puts them on the Leads broadcasts FB1 and FB2, so nothing here repeats the closing date reminder.
+One combined track for people who join the list from the form on the Founders offer page. They are on the main list with the tags Lead and Src Founders Page. The tag Src Founders Page starts this sequence. The same people also carry the tag Lead, so O01 skips them (its first step ends the run for anyone with the tag Src Founders Page) and FB1 leaves them out. They still receive the FB2 closing broadcast.
 
-**Trigger:** tag Src Founders Page applied. **Exit:** tag Customer applied.
+**Trigger:** tag Src Founders Page applied. **Exit:** tag Customer applied (the STOP Leads - Customer automation cancels it).
 
 Shared notes:
 - Sender is Botterverse. Prefix `[Botterverse]` on every email.
-- The offer facts follow the Founders offer page and the two broadcasts. 50% off for life. The coupon FOUNDER50 works on every plan and on monthly and annual billing. The closing date is 30 November, as in FB2. No price figures and no income claims.
+- The closing date is never typed in an email. `{{founders_close}}` reads the end date of the FOUNDER50 coupon (UTC end date minus five hours, so the US Eastern day) and gives "on 30 November". It gives "soon" when the coupon has no end date.
+- The offer facts follow the Founders offer page. 50% off for life. The coupon FOUNDER50 works on every plan and on monthly and annual billing. No price figures and no income claims.
 - Nobody in this sequence is a member yet.
 
 ## Loop map
 
-| ID | When | Purpose |
+| Day | Email | Purpose |
 |---|---|---|
-| FND2-01 | At once | Confirms they are on the list and says how the offer works |
-| FND2-02 | Three days later | Explains the coupon in plain steps |
+| 0 | FND2-01 | Confirms they are on the list and says how the offer works |
+| 2 | O01-01 | Why Botterverse (from O01) |
+| 4 | FND2-02 | Explains the coupon in plain steps |
+| 6 | O01-02 | Bring a GPT across with Import a bot (from O01) |
+| 8 | O01-03 | Who pays when people chat (from O01) |
+| 10 | O01-04 | Selling access and the published fee (from O01) |
+| 12 | O01-05 | Choosing a plan (from O01) |
 
 ---
 
@@ -26,7 +32,7 @@ Shared notes:
 
 Hi {{contact.first_name}},
 
-Thanks for joining the list. We'll email you before the Founders offer closes on 30 November.
+Thanks for joining the list. We'll email you before the Founders offer closes {{founders_close}}.
 
 Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.
 
@@ -56,12 +62,12 @@ Here is how the Founders coupon works.
 - It works on monthly and annual billing.
 - A Founder stays a Founder for life and the price stays.
 
-Enter the code at the checkout when you choose a plan. If you leave later you can rejoin as a Founder while the coupon is still active.
+Enter the code at the checkout when you choose a plan. If you leave later, you can rejoin as a Founder while the coupon is still active.
 
 The [Pricing](https://{{domain}}/pricing/) page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.
 
 Your Botter Support Team
 
 **Notes**
-- Sent three days after FND2-01.
+- Sent on day 4, two days after O01-01.
 - Facts: the Founders offer page questions. Nothing about the closing date here because FB2 covers it.

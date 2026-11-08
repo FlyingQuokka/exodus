@@ -97,17 +97,21 @@ body .betterdocs-toc li a { display: block; padding: .5rem 0 !important; text-de
 body .betterdocs-toc li a.active { color: var(--accent-text) !important; font-weight: 700; }
 
 /* The help pages sit in the same 1120px width as every other page. Headings use the site heading font. */
-body .btv-docs-wrap { padding-block: 1.5rem 0; }
+body .btv-docs-wrap { padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 0; }
 body [class*="betterdocs-"] h1, body [class*="betterdocs-"] h2, body [class*="betterdocs-"] h3, body [class*="betterdocs-"] h4,
 body .betterdocs-entry-title, body .betterdocs-single-title, body .betterdocs-category-title, body .betterdocs-entry-content h2, body .betterdocs-entry-content h3 {
   font-family: 'M PLUS Rounded 1c', 'Baloo 2', system-ui, sans-serif !important; font-weight: 800; text-transform: none !important; letter-spacing: -.015em; line-height: 1.1;
 }
 /* Article and category pages: a sidebar of fixed width and the content takes the rest, so category names no longer break mid-word */
 body .btv-docs-wrap .wp-block-columns.alignwide { gap: 2rem; flex-wrap: nowrap; }
-body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:first-child { flex: 0 0 290px !important; min-width: 0; }
+body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:first-child { flex: 0 0 360px !important; min-width: 0; }
 body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:nth-child(2) { flex: 1 1 0 !important; min-width: 0; }
 @media (max-width: 900px) {
   body .btv-docs-wrap .wp-block-columns.alignwide { flex-wrap: wrap; }
   body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:first-child, body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:nth-child(2) { flex: 1 1 100% !important; }
 }
 body.single-docs h1, body.single-docs .betterdocs-entry-title, body.single-docs [class*="title"] { text-transform: none !important; }
+
+/* The sidebar is as tall as its content: when a section is opened the whole list shows and nothing scrolls inside it */
+body .betterdocs-sidebar-content, body .betterdocs-sidebar-content.betterdocs-category-sidebar { position: static !important; max-height: none !important; height: auto !important; overflow: visible !important; }
+body .btv-docs-wrap .wp-block-columns.alignwide, body .btv-docs-wrap .wp-block-columns { max-width: none; width: 100%; }

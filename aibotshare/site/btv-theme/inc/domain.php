@@ -4,6 +4,7 @@
  *
  * {{domain}} holds the base domain only, for example https://lab.{{domain}}/login.
  * {{theme}} holds the address of this theme folder, so images in page content need no typed path.
+ * {{founders_close}} holds "on 30 November" read from the end date of the Founders coupon (see the Botterverse Sync plugin), or "soon".
  * Both are replaced when a block renders and when classic content renders.
  */
 
@@ -41,8 +42,8 @@ function btv_replace_tokens($html)
         return $html;
     }
     return str_replace(
-        ['{{domain}}', '{{theme}}'],
-        [btv_base_domain(), untrailingslashit(get_template_directory_uri())],
+        ['{{domain}}', '{{theme}}', '{{founders_close}}'],
+        [btv_base_domain(), untrailingslashit(get_template_directory_uri()), function_exists('btv_founders_close') ? btv_founders_close() : 'soon'],
         $html
     );
 }

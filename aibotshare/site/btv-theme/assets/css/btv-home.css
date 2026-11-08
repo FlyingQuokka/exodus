@@ -84,7 +84,8 @@
 .hm-safe li { background: #fff; border: 1px solid var(--bv-line); border-radius: 20px; padding: 1.1rem 1.4rem; } .hm-safe li b { font-family: var(--bv-head); display: block; font-size: 1.15rem; margin-bottom: .15rem; color: var(--bv-ink); }
 
 /* Live bot slots. The app adds its own script inside the box. */
-.hm-slot { background: #fff; border: 2px dashed var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; min-height: 440px; display: grid; place-items: center; text-align: center; padding: 2rem; color: #6b6980; }
+.hm-slot { background: #fff; border: 2px solid var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; padding: 0; overflow: hidden auto; max-height: 600px; }
+.hm-slot iframe { display: block; width: 100%; border: 0; }
 .hm-slot b { display: block; font-family: var(--bv-head); color: var(--bv-ink); font-size: 1.3rem; margin-bottom: .3rem; }
 .hm-slot-note { margin: .8rem 0 0; font-size: .9rem; color: #6b6980; text-align: center; }
 

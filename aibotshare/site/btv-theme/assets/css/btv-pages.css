@@ -161,4 +161,18 @@
 .pg-head p:has(> .pg-btn) { margin: 1.4rem 0 0; }
 
 /* Live bot box. The app's embed script sits inside it. */
-.pg-slot { background: #fff; border: 2px dashed var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; min-height: 440px; display: grid; place-items: center; }
+.pg-slot { background: #fff; border: 2px solid var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; padding: 0; overflow: hidden auto; max-height: 600px; }
+.pg-slot iframe { display: block; width: 100%; border: 0; }
+
+/* Legal pages: the same fonts as the other pages and a reading column */
+body.btv-legal .btv-main h1, body.btv-legal .btv-main h2, body.btv-legal .btv-main h3, body.btv-legal .btv-main h4 { font-family: var(--bv-head); font-weight: 800; color: var(--bv-ink); letter-spacing: -.015em; line-height: 1.1; }
+body.btv-legal .btv-main h1 { font-size: clamp(1.8rem, 3.8vw, 3.1rem); }
+body.btv-legal .btv-main h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); margin-top: 2rem; }
+body.btv-legal .btv-main h3 { font-size: 1.4rem; margin-top: 1.8rem; }
+body.btv-legal .btv-main h4 { font-size: 1.15rem; margin-top: 1.4rem; }
+body.btv-legal .page-head { padding-top: 2.4rem; }
+body.btv-legal .prose { max-width: 52rem; }
+body.btv-legal .btv-main table { border-collapse: collapse; width: 100%; font-size: .95rem; background: #fff; border: 1px solid var(--bv-line); }
+body.btv-legal .btv-main th, body.btv-legal .btv-main td { border: 1px solid var(--bv-line); padding: .8rem 1rem; text-align: left; vertical-align: top; }
+body.btv-legal .btv-main th { background: var(--bv-lilac); font-family: var(--bv-head); font-weight: 800; color: var(--bv-ink); }
+body.btv-legal .btv-main a { color: var(--bv-purple); }

@@ -264,9 +264,29 @@ class BTV_Sync
      */
     private function docsTemplates()
     {
-        // Better Docs saves its own templates, and they name another theme's header and footer.
         global $wpdb;
         $theme = get_stylesheet();
+
+        // The help pages use our copies of the Better Docs templates (data/templates): the same width as every other page and no plugin background.
+        // Better Docs keeps its saved templates in the database under its own name, so they are found there by name.
+        $written = 0;
+        foreach (glob(BTV_SYNC_DIR . '/data/templates/*.html') as $file) {
+            $name = basename($file, '.html');
+            $id = (int) $wpdb->get_var($wpdb->prepare(
+                "SELECT p.ID FROM {$wpdb->posts} p JOIN {$wpdb->term_relationships} r ON r.object_id = p.ID JOIN {$wpdb->term_taxonomy} x ON x.term_taxonomy_id = r.term_taxonomy_id JOIN {$wpdb->terms} t ON t.term_id = x.term_id
+                 WHERE p.post_type = 'wp_template' AND p.post_name = %s AND x.taxonomy = 'wp_theme' AND t.name = 'betterdocs/betterdocs' LIMIT 1",
+                $name
+            ));
+            $content = file_get_contents($file);
+            if ($id && $content !== false && $wpdb->get_var($wpdb->prepare("SELECT post_content FROM {$wpdb->posts} WHERE ID = %d", $id)) !== $content) {
+                $wpdb->update($wpdb->posts, ['post_content' => $content], ['ID' => $id]);
+                clean_post_cache($id);
+                $written++;
+            }
+        }
+        $this->say('saved templates: ' . $written . ' help page template(s) written from data/templates');
+
+        // Better Docs saves its own templates, and they name another theme's header and footer.
         $rows = $wpdb->get_results("SELECT ID, post_content FROM {$wpdb->posts} WHERE post_type = 'wp_template' AND post_content LIKE '%wp:template-part%'");
         $fixed = 0;
         foreach ($rows as $row) {

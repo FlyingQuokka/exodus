@@ -190,3 +190,5 @@ body.btv-legal .btv-main a { color: var(--bv-purple); }
 .pg-form .fluentform { max-width: 30rem; margin-inline: auto; text-align: left; }
 body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit { background: var(--bv-purple) !important; color: #fff !important; }
 body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { background: var(--bv-ink) !important; color: #fff !important; }
+
+.pg-form .ff_submit_btn_wrapper { display: flex; justify-content: center; text-align: center; }

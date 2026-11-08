@@ -42,7 +42,7 @@
 .fluentform .ff-el-is-error .text-danger, .fluentform .error.text-danger { color: var(--danger); font-weight: 700; font-size: .92rem; margin-top: .35rem; display: block; }
 
 /* Messages */
-.fluentform .ff-message-success, .ff-message-success { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-left: 5px solid var(--success); border-radius: var(--r-ctl); padding: 1rem 1.2rem; box-shadow: none; }
+.fluentform .ff-message-success, .ff-message-success { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-left: 5px solid var(--accent-text); border-radius: var(--r-ctl); padding: 1rem 1.2rem; box-shadow: none; }
 .fluentform .ff-message-success p:last-child { margin-bottom: 0; }
 .fluentform .ff-errors-in-stack { color: var(--danger); font-weight: 700; }
 

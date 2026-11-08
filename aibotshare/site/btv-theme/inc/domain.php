@@ -4,7 +4,7 @@
  *
  * {{domain}} holds the base domain only, for example https://lab.{{domain}}/login.
  * {{theme}} holds the address of this theme folder, so images in page content need no typed path.
- * {{founders_close}} holds "on 30 November" read from the end date of the Founders coupon (see the Botterverse Sync plugin), or "soon".
+ * {{cpn_dateend_COUPONCODE}} holds the end date of that FluentCart coupon, for example {{cpn_dateend_founder50}} gives "30 November" (see the Botterverse Sync plugin).
  * Both are replaced when a block renders and when classic content renders.
  */
 
@@ -41,11 +41,12 @@ function btv_replace_tokens($html)
     if (!is_string($html) || strpos($html, '{{') === false) {
         return $html;
     }
-    return str_replace(
-        ['{{domain}}', '{{theme}}', '{{founders_close}}'],
-        [btv_base_domain(), untrailingslashit(get_template_directory_uri()), function_exists('btv_founders_close') ? btv_founders_close() : 'soon'],
+    $html = str_replace(
+        ['{{domain}}', '{{theme}}'],
+        [btv_base_domain(), untrailingslashit(get_template_directory_uri())],
         $html
     );
+    return function_exists('btv_replace_coupon_dates') ? btv_replace_coupon_dates($html) : $html;
 }
 
 add_filter('render_block', 'btv_replace_tokens', 20);

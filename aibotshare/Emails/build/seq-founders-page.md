@@ -6,7 +6,7 @@ One combined track for people who join the list from the form on the Founders of
 
 Shared notes:
 - Sender is Botterverse. Prefix `[Botterverse]` on every email.
-- The closing date is never typed in an email. `{{founders_close}}` reads the end date of the FOUNDER50 coupon (UTC end date minus five hours, so the US Eastern day) and gives "on 30 November". It gives "soon" when the coupon has no end date.
+- The closing date is never typed in an email. `{{cpn_dateend_founder50}}` reads the end date of the FOUNDER50 coupon (UTC end date minus five hours, so the US Eastern day) and gives "30 November". It gives "a date to be confirmed" when the coupon has no end date. The same tag format works for any coupon: `{{cpn_dateend_COUPONCODE}}`.
 - The offer facts follow the Founders offer page. 50% off for life. The coupon FOUNDER50 works on every plan and on monthly and annual billing. No price figures and no income claims.
 - Nobody in this sequence is a member yet.
 
@@ -32,7 +32,7 @@ Shared notes:
 
 Hi {{contact.first_name}},
 
-Thanks for joining the list. We'll email you before the Founders offer closes {{founders_close}}.
+Thanks for joining the list. We'll email you before the Founders offer closes on {{cpn_dateend_founder50}}.
 
 Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.
 

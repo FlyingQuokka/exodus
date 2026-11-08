@@ -7,8 +7,8 @@
  },
  "FB2": {
   "title": "The Founders offer closes soon (broadcast, Leads)",
-  "subject": "[Botterverse] The Founders offer closes {{founders_close}}",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Founders offer closes {{founders_close}}. After that, new plans are at the standard price.</p>\n<p>If you join before then, your price stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.</p>\n<p>Enter FOUNDER50 at the checkout. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes.</p>\n<p>Your Botter Support Team</p>",
+  "subject": "[Botterverse] The Founders offer closes on {{cpn_dateend_founder50}}",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Founders offer closes on {{cpn_dateend_founder50}}. After that, new plans are at the standard price.</p>\n<p>If you join before then, your price stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.</p>\n<p>Enter FOUNDER50 at the checkout. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes.</p>\n<p>Your Botter Support Team</p>",
   "source": "broadcast-founders.md"
  },
  "E01A": {
@@ -626,7 +626,7 @@
  "FND2-01": {
   "title": "You are on the Founders list (at once, Leads)",
   "subject": "[Botterverse] You're on the Founders list",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Thanks for joining the list. We'll email you before the Founders offer closes {{founders_close}}.</p>\n<p>Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.</p>\n<p>The coupon works on every plan. Enter FOUNDER50 at the checkout when you choose a plan.</p>\n<p>The <a href=\"https://{{domain}}/founders/\">Founders offer</a> page has the details. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Thanks for joining the list. We'll email you before the Founders offer closes on {{cpn_dateend_founder50}}.</p>\n<p>Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.</p>\n<p>The coupon works on every plan. Enter FOUNDER50 at the checkout when you choose a plan.</p>\n<p>The <a href=\"https://{{domain}}/founders/\">Founders offer</a> page has the details. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-founders-page.md"
  },
  "FND2-02": {

@@ -17,28 +17,42 @@ function btv_base_domain()
 }
 
 /**
- * When the Founders offer closes, read from the end date of its FluentCart coupon so nobody types the date into an email or a page.
+ * The end date of a FluentCart coupon, read from the coupon so nobody types it into an email or a page.
+ * Copy writes {{cpn_dateend_COUPONCODE}}, for example {{cpn_dateend_founder50}}, and any coupon can be used the same way.
  * The coupon end date is saved as a UTC time that stands for the end of a day in US Eastern time, so five hours come off before the date is read.
- * Returns the words "on 30 November" or, when the coupon has no end date, "soon". Written into copy as {{founders_close}}.
+ * Returns the date as "30 November". When the coupon is missing or has no end date it returns "a date to be confirmed", so a sentence such as "closes on {{cpn_dateend_founder50}}" still reads well.
  */
-if (!function_exists('btv_founders_close')) {
-    function btv_founders_close()
+if (!function_exists('btv_coupon_date_end')) {
+    function btv_coupon_date_end($code)
     {
-        static $cache = null;
-        if ($cache !== null) {
-            return $cache;
+        static $cache = [];
+        $key = strtolower((string) $code);
+        if (isset($cache[$key])) {
+            return $cache[$key];
         }
         global $wpdb;
-        $cache = 'soon';
-        $code = (string) apply_filters('btv_founders_coupon_code', 'FOUNDER50');
-        $end = $wpdb->get_var($wpdb->prepare("SELECT end_date FROM {$wpdb->prefix}fct_coupons WHERE code = %s AND status = 'active' LIMIT 1", $code));
+        $cache[$key] = 'a date to be confirmed';
+        $end = $wpdb->get_var($wpdb->prepare("SELECT end_date FROM {$wpdb->prefix}fct_coupons WHERE LOWER(code) = %s AND status = 'active' LIMIT 1", $key));
         if ($end && strpos((string) $end, '0000') !== 0) {
             $time = strtotime($end . ' UTC');
             if ($time) {
-                $cache = 'on ' . gmdate('j F', $time - 5 * HOUR_IN_SECONDS);
+                $cache[$key] = gmdate('j F', $time - 5 * HOUR_IN_SECONDS);
             }
         }
-        return $cache;
+        return $cache[$key];
+    }
+}
+
+/** Replace every {{cpn_dateend_CODE}} in a string. */
+if (!function_exists('btv_replace_coupon_dates')) {
+    function btv_replace_coupon_dates($text)
+    {
+        if (!is_string($text) || strpos($text, '{{cpn_dateend_') === false) {
+            return $text;
+        }
+        return preg_replace_callback('/\{\{cpn_dateend_([A-Za-z0-9_-]+)\}\}/', function ($m) {
+            return btv_coupon_date_end($m[1]);
+        }, $text);
     }
 }
 
@@ -49,8 +63,8 @@ add_filter('fluentcrm_smartcode_fallback', function ($code, $subscriber = null) 
     if ($code === '{{domain}}') {
         return btv_base_domain();
     }
-    if ($code === '{{founders_close}}') {
-        return btv_founders_close();
+    if (strpos($code, '{{cpn_dateend_') === 0) {
+        return btv_replace_coupon_dates($code);
     }
     return $code;
 }, 10, 2);

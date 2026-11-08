@@ -419,6 +419,21 @@ class BTV_Sync
         return $this->tagIds[$title] = (int) $tag->id;
     }
 
+    /** The id of a FluentCRM list found by its title. The list is created if it is missing. */
+    private function listId($title)
+    {
+        global $wpdb;
+        $table = $wpdb->prefix . 'fc_lists';
+        $id = (int) $wpdb->get_var($wpdb->prepare("SELECT id FROM $table WHERE title = %s", $title));
+        if (!$id) {
+            $now = current_time('mysql');
+            $wpdb->insert($table, ['title' => $title, 'slug' => sanitize_title($title), 'is_public' => 0, 'created_at' => $now, 'updated_at' => $now]);
+            $id = (int) $wpdb->insert_id;
+            $this->say('lists: created ' . $title . ' as list ' . $id);
+        }
+        return $id;
+    }
+
     private function email($id)
     {
         if ($this->emails === null) {
@@ -715,11 +730,14 @@ class BTV_Sync
                 ],
                 'layout' => ['labelPlacement' => 'top', 'helpMessagePlacement' => 'with_label', 'errorMessagePlacement' => 'inline', 'asteriskPlacement' => 'asterisk-right'],
             ];
+            // Everyone joins the one main list. Tags do the segmenting: the status tag and a source tag for where the form sits.
+            $listId = $this->listId(isset($def['list']) ? $def['list'] : 'Main List');
+            $tagIds = array_map([$this, 'tagId'], isset($def['tags']) ? $def['tags'] : [$def['tag']]);
             $feed = [
                 'name' => 'Lead capture to FluentCRM',
                 'first_name' => '{inputs.first_name}', 'last_name' => '', 'full_name' => '', 'email' => '{inputs.email}',
                 'other_fields' => [['item_value' => '', 'label' => '']], 'company_fields' => [['item_value' => '', 'label' => '']],
-                'list_id' => '', 'tag_ids' => [$this->tagId($def['tag'])], 'tag_ids_selection_type' => 'simple', 'tag_routers' => [],
+                'list_id' => (string) $listId, 'tag_ids' => $tagIds, 'tag_ids_selection_type' => 'simple', 'tag_routers' => [],
                 'skip_if_exists' => false, 'double_opt_in' => false, 'force_subscribe' => false, 'skip_primary_data' => false,
                 'conditionals' => ['conditions' => [], 'status' => false, 'type' => 'all'],
                 'run_events_only' => [], 'remove_tags' => [], 'enabled' => true,
@@ -728,7 +746,7 @@ class BTV_Sync
             $this->setFormMeta($metas, $id, '_primary_email_field', 'email');
             $this->setFormMeta($metas, $id, 'fluentcrm_feeds', wp_json_encode($feed));
             update_option('btv_lead_form_id', $id);
-            $this->say('forms: ' . $def['title'] . ' (form ' . $id . ') saved with a feed that applies the tag ' . $def['tag']);
+            $this->say('forms: ' . $def['title'] . ' (form ' . $id . ') saved with a feed that adds contacts to the list ' . (isset($def['list']) ? $def['list'] : 'Main List') . ' and applies the tags ' . implode(', ', isset($def['tags']) ? $def['tags'] : [$def['tag']]));
         }
     }
 
@@ -782,7 +800,7 @@ class BTV_Sync
             'submitButton' => [
                 'uniqElKey' => $uid(4), 'element' => 'button',
                 'attributes' => ['type' => 'submit', 'class' => ''],
-                'settings' => ['align' => 'left', 'button_style' => 'default', 'container_class' => '', 'help_message' => '', 'background_color' => '#1a7efb', 'button_size' => 'md', 'color' => '#ffffff',
+                'settings' => ['align' => 'left', 'button_style' => 'no_style', 'container_class' => '', 'help_message' => '', 'background_color' => '', 'button_size' => 'md', 'color' => '',
                     'button_ui' => ['type' => 'default', 'text' => $def['button'], 'img_url' => '']],
                 'editor_options' => ['title' => 'Submit Button'],
             ],

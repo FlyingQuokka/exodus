@@ -1,11 +1,15 @@
 [
-  {
-    "title": "Botterverse lead capture",
-    "tag": "Lead",
-    "first_name_placeholder": "First name",
-    "email_placeholder": "Email address",
-    "consent": "I agree to receive emails from Botterverse. I can unsubscribe at any time.",
-    "button": "Join the list",
-    "success": "Thanks. You're on the list."
-  }
+ {
+  "title": "Botterverse lead capture",
+  "first_name_placeholder": "First name",
+  "email_placeholder": "Email address",
+  "consent": "I agree to receive emails from Botterverse. I can unsubscribe at any time.",
+  "button": "Join the list",
+  "success": "Thanks. You're on the list.",
+  "list": "Main List",
+  "tags": [
+   "Lead",
+   "Src Founders Page"
+  ]
+ }
 ]

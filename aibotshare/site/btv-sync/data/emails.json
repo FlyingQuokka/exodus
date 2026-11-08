@@ -623,6 +623,18 @@
   "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has ended, so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.</p>\n<h2><a href=\"https://{{domain}}/pricing/\">See the plans</a></h2>\n<p>Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.</p>\n<p>Remaining boosts from any Botter Boosters you bought are untouched. Included boosts you had not used have been reset.</p>\n<p>If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.</p>\n<p>If you're leaving, thank you. Your account stays here if you ever come back.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
+ "FND2-01": {
+  "title": "You are on the Founders list (at once, Leads)",
+  "subject": "[Botterverse] You're on the Founders list",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Thanks for joining the list. We'll email you before the Founders offer closes on 30 November.</p>\n<p>Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.</p>\n<p>The coupon works on every plan. Enter FOUNDER50 at the checkout when you choose a plan.</p>\n<p>The <a href=\"https://{{domain}}/founders/\">Founders offer</a> page has the details. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes.</p>\n<p>Your Botter Support Team</p>",
+  "source": "seq-founders-page.md"
+ },
+ "FND2-02": {
+  "title": "How the Founders coupon works (day 3, Leads)",
+  "subject": "[Botterverse] How the Founders coupon works",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Here is how the Founders coupon works.</p>\n<ul><li>FOUNDER50 works on all five plans.</li><li>It works on monthly and annual billing.</li><li>A Founder stays a Founder for life and the price stays.</li></ul>\n<p>Enter the code at the checkout when you choose a plan. If you leave later you can rejoin as a Founder while the coupon is still active.</p>\n<p>The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.</p>\n<p>Your Botter Support Team</p>",
+  "source": "seq-founders-page.md"
+ },
  "UE01": {
   "title": "Welcome to Expert Botter (day 0, new Expert Botter)",
   "subject": "[Botterverse] Welcome to Expert Botter",

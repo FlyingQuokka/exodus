@@ -15,7 +15,8 @@
    "automations": [
     "O01 Pre-launch nurture",
     "O03 Public launch",
-    "O04 Cart abandonment"
+    "O04 Cart abandonment",
+    "FND2 Founders page list"
    ],
    "note": "A buyer leaves the lead sequences."
   }

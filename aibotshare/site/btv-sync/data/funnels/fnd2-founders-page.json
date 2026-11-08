@@ -1,0 +1,31 @@
+{
+ "title": "FND2 Founders page list",
+ "trigger": {
+  "type": "tag_applied",
+  "tags": [
+   "Src Founders Page"
+  ]
+ },
+ "run_multiple": false,
+ "publish": true,
+ "steps": [
+  {
+   "key": "FND2-01",
+   "do": "email",
+   "email": "FND2-01",
+   "note": "At once. They are on the list."
+  },
+  {
+   "key": "FND2-w02",
+   "do": "wait",
+   "amount": 3,
+   "unit": "days"
+  },
+  {
+   "key": "FND2-02",
+   "do": "email",
+   "email": "FND2-02",
+   "note": "Day 3. How the coupon works."
+  }
+ ]
+}

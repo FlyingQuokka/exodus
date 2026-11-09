@@ -164,6 +164,10 @@
 .pg-slot { background: #fff; border: 2px solid var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; padding: 0; overflow: hidden auto; max-height: 600px; }
 .pg-slot iframe { display: block; width: 100%; border: 0; }
 
+/* Shown when no bot has loaded after a few seconds (the embed adds an iframe when a bot is available). */
+.pg-slot:not(:has(iframe))::after { content: "This bot is not currently available."; display: block; padding: 1.6rem 1.2rem; text-align: center; font-family: var(--bv-head); font-weight: 800; font-size: 1.1rem; color: var(--bv-ink); opacity: 0; animation: btv-slot-msg 0s 4s forwards; }
+@keyframes btv-slot-msg { to { opacity: 1; } }
+
 /* Legal pages: the same fonts as the other pages and a reading column */
 body.btv-legal .btv-main h1, body.btv-legal .btv-main h2, body.btv-legal .btv-main h3, body.btv-legal .btv-main h4 { font-family: var(--bv-head); font-weight: 800; color: var(--bv-ink); letter-spacing: -.015em; line-height: 1.1; }
 body.btv-legal .btv-main h1 { font-size: clamp(1.8rem, 3.8vw, 3.1rem); }

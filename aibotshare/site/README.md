@@ -20,6 +20,8 @@ This repository holds only what runs on the live server. Design and development 
 
 ## Set up or update
 
+Clone this repository outside the web root on the server then run `bash deploy.sh --wp=<WordPress folder> --host=<site host> --user=<admin login> --pages=<slugs or all> --sync --backed-up`. It pulls then copies the two folders into `wp-content` then writes the named pages then runs the sync. Add `--dry-run` to preview and `--publish` to publish new automations. The manual steps below do the same by hand.
+
 1. Place the two folders under `wp-content` and activate the theme and the plugin.
 2. Write pages: `php wp-content/themes/btv-theme/bin/install-pages.php --wp=<WordPress folder> --host=<site host> --only=<slug>`. Slugs: `home` `pricing` `how-it-works` `affiliates` `faq` `support` `feedback` `founders` `bot-market`. Always use `--only`. Without it every page is replaced, which also wipes edits made in the admin. The installer never touches FluentCart system pages.
 3. Run the sync: `php wp-content/plugins/btv-sync/bin/run-sync.php --wp=<WordPress folder> --user=<admin login> [--publish]`. Without `--publish` new automations stay as drafts.

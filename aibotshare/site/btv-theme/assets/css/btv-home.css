@@ -86,6 +86,10 @@
 /* Live bot slots. The app adds its own script inside the box. */
 .hm-slot { background: #fff; border: 2px solid var(--bv-purple); border-radius: 28px; width: min(572px, 100%); margin: 0 auto; padding: 0; overflow: hidden auto; max-height: 600px; }
 .hm-slot iframe { display: block; width: 100%; border: 0; }
+
+/* Shown when no bot has loaded after a few seconds (the embed adds an iframe when a bot is available). */
+.hm-slot:not(:has(iframe))::after { content: "This bot is not currently available."; display: block; padding: 1.6rem 1.2rem; text-align: center; font-family: var(--bv-head); font-weight: 800; font-size: 1.1rem; color: var(--bv-ink); opacity: 0; animation: btv-slot-msg 0s 4s forwards; }
+@keyframes btv-slot-msg { to { opacity: 1; } }
 .hm-slot b { display: block; font-family: var(--bv-head); color: var(--bv-ink); font-size: 1.3rem; margin-bottom: .3rem; }
 .hm-slot-note { margin: .8rem 0 0; font-size: .9rem; color: #6b6980; text-align: center; }
 

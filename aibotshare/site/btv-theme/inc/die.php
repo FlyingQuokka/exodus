@@ -104,21 +104,3 @@ pre { display: block; max-width: 100%; overflow: auto; margin: 0 0 1em; padding:
 CSS;
     return preg_replace('#</head>#i', $css . '</head>', $html, 1);
 }
-
-/**
- * REMOVE THIS BLOCK BEFORE GO LIVE. The preview is only for checking the look on the local site.
- *
- * A way for a signed-in administrator to see the screen. /?btv_preview_die=1 shows one message and
- * /?btv_preview_die=2 shows a list. Nobody else sees anything.
- */
-add_action('init', function () {
-    if (!isset($_GET['btv_preview_die']) || !current_user_can('manage_options')) {
-        return;
-    }
-    if ($_GET['btv_preview_die'] === '2') {
-        $errors = new WP_Error('first', 'The first thing that went wrong.');
-        $errors->add('second', 'The second thing that went wrong.');
-        wp_die($errors, 'Example error list', ['response' => 403, 'back_link' => true]);
-    }
-    wp_die('This is an example of an error message. It is shown when something fails and WordPress has nothing better to say.', 'Example error', ['response' => 403, 'back_link' => true, 'link_url' => home_url('/'), 'link_text' => 'Go to the home page']);
-}, 20);

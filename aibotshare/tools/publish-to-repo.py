@@ -8,6 +8,7 @@ update everything made here:
     site/btv-theme   ->  <repo>/wp-content/themes/btv-theme
     site/btv-sync    ->  <repo>/wp-content/plugins/btv-sync
     site/README.md   ->  <repo>/README.md
+    site/deploy.sh   ->  <repo>/deploy.sh
 
 Left out on purpose: bin/check-domains.php and bin/dump-pages.php (development helpers) and any README inside a folder.
 Before copying it rebuilds data/emails.json from Emails/build then stops when the domain check fails or the
@@ -23,7 +24,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, 'site')
-DEFAULT_REPO = os.path.normpath(os.path.join(ROOT, '..', '..', 'Repos', 'botterversewp'))
+DEFAULT_REPO = os.path.normpath(r'E:\Projects\AIBotShare\Repos\Botterverse\botterversewp')
 
 MAPPINGS = [
     ('btv-theme', os.path.join('wp-content', 'themes', 'btv-theme')),
@@ -92,7 +93,7 @@ def main():
                 if not args.dry_run:
                     os.remove(os.path.join(dest_base, rel))
 
-    for src, dest_rel in [(os.path.join(SITE, 'README.md'), 'README.md')]:
+    for src, dest_rel in [(os.path.join(SITE, 'README.md'), 'README.md'), (os.path.join(SITE, 'deploy.sh'), 'deploy.sh')]:
         dest = os.path.join(repo, dest_rel)
         if not same(src, dest):
             print('update  ' + dest_rel)

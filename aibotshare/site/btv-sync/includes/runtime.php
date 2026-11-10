@@ -144,3 +144,46 @@ add_filter('wp_mail', function ($args) {
     $args['headers'] = is_array($headers) ? array_merge($headers, [$type]) : trim($joined . "\n" . $type);
     return $args;
 });
+
+/**
+ * FluentCart emails (the receipt and the new sale notice to the shop) come in FluentCart's own grey layout.
+ * Put the body in the Botterverse layout with the logo and swap FluentCart's blue and grey inline colours for the
+ * brand colours. Only mail that holds FluentCart's order totals table is touched. Everything else is left alone.
+ */
+add_filter('wp_mail', function ($args) {
+    $message = isset($args['message']) ? (string) $args['message'] : '';
+    if (strpos($message, 'fct-email-totals') === false || strpos($message, 'bv-cart') !== false) {
+        return $args;
+    }
+    $file = BTV_SYNC_DIR . '/templates/cart-email.html';
+    if (!is_readable($file) || !preg_match('~<body[^>]*>(.*)</body>~is', $message, $m)) {
+        return $args;
+    }
+    $body = $m[1];
+    // FluentCart's hidden preview line names FluentCart, so it goes.
+    $body = preg_replace('~<div[^>]*data-skip-in-text="true"[^>]*>.*?</div>~is', '', $body);
+    // The card FluentCart draws around the sale notice is replaced by the Botterverse card.
+    $body = preg_replace_callback('~<table[^>]*class="email_wrap"[^>]*>~i', function ($t) {
+        return preg_replace('~border:[^;"]*;|border-radius:[^;"]*;|background-color:[^;"]*;~i', '', $t[0]);
+    }, $body);
+    $body = str_replace('class="email_wrap_inner" style="padding:32px;"', 'class="email_wrap_inner" style="padding:0;"', $body);
+    $map = [
+        '17,24,39' => '#391d37', '75,85,99' => '#6b5469', '55,65,81' => '#2b1a2a',
+        '243,244,246' => '#f3eefb', '238,240,243' => '#e6dff2', '229,231,235' => '#e6dff2',
+        '209,213,219' => '#d9cfe8', '241,243,246' => '#f8f7ff', '248,249,250' => '#f8f7ff',
+        '248,250,252' => '#faf8ff', '238,242,255' => '#f3eefb', '224,231,255' => '#ffe0fb',
+        '67,56,202' => '#984f92', '30,58,138' => '#391d37',
+    ];
+    $body = preg_replace_callback('~rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)~', function ($c) use ($map) {
+        $key = $c[1] . ',' . $c[2] . ',' . $c[3];
+        return isset($map[$key]) ? $map[$key] : $c[0];
+    }, $body);
+    $body = str_replace('#64748b', '#6b5469', $body);
+    $html = file_get_contents($file);
+    $html = str_replace('{{body}}', $body, $html);
+    $html = str_replace('{{domain}}', btv_base_domain(), $html);
+    $logo = wp_get_attachment_url((int) get_option('btv_email_logo_id'));
+    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-logo-transparent.png', $html);
+    $args['message'] = $html;
+    return $args;
+}, 20);

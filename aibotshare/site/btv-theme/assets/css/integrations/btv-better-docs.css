@@ -125,3 +125,6 @@ body .btv-docs-wrap .wp-block-columns.alignwide, body .btv-docs-wrap .wp-block-c
 body.single-docs .wp-block-post-title, body.single-docs .betterdocs-entry-title { font-size: clamp(2.2rem, 4vw, 3rem) !important; }
 body .betterdocs-entry-content h2, body #betterdocs-single-content h2 { font-size: clamp(1.45rem, 2.4vw, 1.75rem) !important; margin: 2rem 0 .75rem; }
 body .betterdocs-entry-content h3, body #betterdocs-single-content h3 { font-size: 1.25rem !important; margin: 1.5rem 0 .5rem; }
+
+/* The article column starts level with the sidebars: the template's 57px top padding is removed */
+body .btv-docs-wrap .wp-block-columns.alignwide > .wp-block-column:nth-child(2) { padding-top: 0 !important; }

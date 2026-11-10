@@ -146,27 +146,10 @@ add_filter('wp_mail', function ($args) {
 });
 
 /**
- * FluentCart emails (the receipt and the notices to the shop and the plain emails to customers) come in FluentCart's own grey layout.
- * Put the body in the Botterverse layout with the logo and swap FluentCart's blue and grey inline colours for the
- * brand colours. Only mail that holds FluentCart's email_wrap table is touched. Everything else is left alone.
+ * Brand colours for the inline colours that FluentCart and Fluent Forms write into their emails.
  */
-add_filter('wp_mail', function ($args) {
-    $message = isset($args['message']) ? (string) $args['message'] : '';
-    if (strpos($message, 'class="email_wrap"') === false || strpos($message, 'bv-cart') !== false) {
-        return $args;
-    }
-    $file = BTV_SYNC_DIR . '/templates/cart-email.html';
-    if (!is_readable($file) || !preg_match('~<body[^>]*>(.*)</body>~is', $message, $m)) {
-        return $args;
-    }
-    $body = $m[1];
-    // FluentCart's hidden preview line names FluentCart, so it goes.
-    $body = preg_replace('~<div[^>]*data-skip-in-text="true"[^>]*>.*?</div>~is', '', $body);
-    // The card FluentCart draws around the sale notice is replaced by the Botterverse card.
-    $body = preg_replace_callback('~<table[^>]*class="email_wrap"[^>]*>~i', function ($t) {
-        return preg_replace('~border:[^;"]*;|border-radius:[^;"]*;|background-color:[^;"]*;~i', '', $t[0]);
-    }, $body);
-    $body = str_replace('class="email_wrap_inner" style="padding:32px;"', 'class="email_wrap_inner" style="padding:0;"', $body);
+function btv_brand_email_colours($html)
+{
     $map = [
         '17,24,39' => '#391d37', '75,85,99' => '#6b5469', '55,65,81' => '#2b1a2a',
         '243,244,246' => '#f3eefb', '238,240,243' => '#e6dff2', '229,231,235' => '#e6dff2',
@@ -174,16 +157,84 @@ add_filter('wp_mail', function ($args) {
         '248,250,252' => '#faf8ff', '238,242,255' => '#f3eefb', '224,231,255' => '#ffe0fb',
         '67,56,202' => '#984f92', '30,58,138' => '#391d37',
     ];
-    $body = preg_replace_callback('~rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)~', function ($c) use ($map) {
+    $html = preg_replace_callback('~rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)~', function ($c) use ($map) {
         $key = $c[1] . ',' . $c[2] . ',' . $c[3];
         return isset($map[$key]) ? $map[$key] : $c[0];
-    }, $body);
-    $body = str_replace('#64748b', '#6b5469', $body);
+    }, $html);
+    return str_ireplace(
+        ['#64748b', '#2F3448', '#eaeaea', '#94a3b8', '#f8f9fa', '#017EF3', '#111827', '#eaf4ff'],
+        ['#6b5469', '#2b1a2a', '#e6dff2', '#6b5469', '#f8f7ff', '#8a3f84', '#391d37', '#f3eefb'],
+        $html
+    );
+}
+
+/**
+ * Put a body into the Botterverse card (logo on top). Returns the whole HTML email or '' when the layout is missing.
+ */
+function btv_wrap_cart_email($body)
+{
+    $file = BTV_SYNC_DIR . '/templates/cart-email.html';
+    if (!is_readable($file)) {
+        return '';
+    }
     $html = file_get_contents($file);
     $html = str_replace('{{body}}', $body, $html);
     $html = str_replace('{{domain}}', btv_base_domain(), $html);
     $logo = wp_get_attachment_url((int) get_option('btv_email_logo_id'));
-    $html = str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-logo-transparent.png', $html);
+    return str_replace('{{logo_url}}', $logo ? $logo : 'https://' . btv_base_domain() . '/wp-content/uploads/btv-logo-transparent.png', $html);
+}
+
+/**
+ * Three kinds of mail arrive in someone else's layout. Each is put in the Botterverse layout here.
+ *  1. FluentCart emails (the receipt and the notices to the shop and the plain emails to customers and the weekly
+ *     digest). They hold FluentCart's email_wrap table.
+ *  2. The weekly Email Summary of Your Forms from Fluent Forms (the table with the class summary_table).
+ * Everything else is left alone.
+ */
+add_filter('wp_mail', function ($args) {
+    $message = isset($args['message']) ? (string) $args['message'] : '';
+    if (strpos($message, 'bv-cart') !== false) {
+        return $args;
+    }
+    $body = '';
+    if (strpos($message, 'class="email_wrap"') !== false && preg_match('~<body[^>]*>(.*)</body>~is', $message, $m)) {
+        $body = $m[1];
+        // FluentCart's hidden preview line names FluentCart, so it goes.
+        $body = preg_replace('~<div[^>]*data-skip-in-text="true"[^>]*>.*?</div>~is', '', $body);
+        // The card FluentCart draws around the email is replaced by the Botterverse card.
+        $body = preg_replace_callback('~<table[^>]*class="email_wrap"[^>]*>~i', function ($t) {
+            return preg_replace('~border:[^;"]*;|border-radius:[^;"]*;|background-color:[^;"]*;~i', '', $t[0]);
+        }, $body);
+        $body = str_replace('class="email_wrap_inner" style="padding:32px;"', 'class="email_wrap_inner" style="padding:0;"', $body);
+        $body = btv_brand_email_colours($body);
+    } elseif (strpos($message, 'class="summary_table"') !== false && class_exists('DOMDocument')) {
+        $dom = new DOMDocument();
+        $previous = libxml_use_internal_errors(true);
+        $dom->loadHTML('<?xml encoding="utf-8" ?>' . $message);
+        libxml_clear_errors();
+        libxml_use_internal_errors($previous);
+        $xp = new DOMXPath($dom);
+        $node = $xp->query('//div[contains(concat(" ", normalize-space(@class), " "), " content ")]')->item(0);
+        if ($node) {
+            $inner = '';
+            foreach ($node->childNodes as $child) {
+                $inner .= $dom->saveHTML($child);
+            }
+            $inner = str_replace("'Helvetica Neue',Helvetica,Arial,sans-serif", "'Nunito Sans','Trebuchet MS','Segoe UI',Verdana,Arial,sans-serif", $inner);
+            $inner = preg_replace_callback('~<td class="alert alert-warning"[^>]*>~i', function ($t) {
+                return str_ireplace(['#FF9F00', '#673ab7', 'color: #fff'], ['#ffe0fb', '#ffe0fb', 'color: #391d37'], $t[0]);
+            }, $inner);
+            $inner = str_ireplace(['#e9e9e9', '#e0e0e0', '#999'], ['#e6dff2', '#e6dff2', '#6b5469'], $inner);
+            $body = $inner;
+        }
+    }
+    if ($body === '') {
+        return $args;
+    }
+    $html = btv_wrap_cart_email($body);
+    if ($html === '') {
+        return $args;
+    }
     $args['message'] = $html;
     return $args;
 }, 20);

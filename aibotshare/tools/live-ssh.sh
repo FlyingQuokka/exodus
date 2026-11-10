@@ -4,7 +4,7 @@
 #   bash tools/live-ssh.sh 'cd ~/botterversewp && git log --oneline | head -3'
 #   bash tools/live-ssh.sh < some-script.sh        (the script is read from standard input and run with bash -s)
 #
-# The connection details are read from the info file in the Botterverse key folder (host on line 6 and port on line 9
+# The connection details are read from the info file Docos/Server-Info.txt in the Botterverse folder (host on line 6 and port on line 9
 # and user name on line 12 and the key passphrase on line 15). The passphrase is passed to ssh through a temporary
 # helper that is deleted afterwards. It is never printed. Do not print the info file in chat or in logs.
 #
@@ -13,7 +13,7 @@
 # the server key, confirm the new fingerprint in WinSCP (Session, Server/Protocol Information) before replacing the file.
 
 KEYS="${BTV_KEYS:-/e/Projects/AIBotShare/Repos/Botterverse/.ssh}"
-INFO="$KEYS/SSH-Info.txt"
+INFO="${BTV_INFO:-/e/Projects/AIBotShare/Repos/Botterverse/Docos/Server-Info.txt}"
 KEY="$KEYS/btv_rsa_live_server"
 KNOWN="$KEYS/btv_known_hosts"
 [ -f "$INFO" ] && [ -f "$KEY" ] && [ -f "$KNOWN" ] || { echo "Missing $INFO or $KEY or $KNOWN" >&2; exit 2; }

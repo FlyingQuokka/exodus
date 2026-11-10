@@ -430,7 +430,7 @@ Your plan has changed, so some of what your account can do has changed with it.
 
 Bots over your new plan's limit are paused, the most recently created first. You can choose which to keep running from your Bot list. Upgrading again starts them all.
 
-Paywalls, listings and bot styles follow the features of your plan. Remaining boosts from any Botter Boosters you bought are untouched. Your included boosts change to your new plan's at your next renewal.
+Paywalls, listings and bot styles follow the features of your plan. Remaining boosts from any Botter Booster Packs you bought are untouched. Your included boosts change to your new plan's at your next renewal.
 
 [Open your Bot list]
 [Open Billing and boosts]
@@ -456,7 +456,7 @@ Your plan has ended. Your account is still open and your data is kept.
 Your bots are paused until you buy a plan again.
    * Bots paused: {{ paused_bot_count }}
 
-When your new plan starts, your bots come back, oldest first, up to the new plan's bot limit. Remaining boosts from any Botter Boosters you bought are untouched. Included boosts you had not used have been reset.
+When your new plan starts, your bots come back, oldest first, up to the new plan's bot limit. Remaining boosts from any Botter Booster Packs you bought are untouched. Included boosts you had not used have been reset.
 
 [See the plans]
 [Open Billing and boosts]

@@ -198,7 +198,7 @@ Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{
 
 There's no free plan or trial. You can cancel from [Billing and boosts](https://lab.{{domain}}/billing) when you like.
 
-Your plan runs to the end of the period you paid for. You can change plan later and remaining boosts from any Botter Boosters you bought are untouched.
+Your plan runs to the end of the period you paid for. You can change plan later and remaining boosts from any Botter Booster Packs you bought are untouched.
 
 **Next step**
 
@@ -404,7 +404,7 @@ Set a Daily boost limit on a bot and a Message cap on a paid bot, so a busy day 
 
 **Next step**
 
-Look at the Botter Boosters on the [Pricing](https://{{domain}}/pricing/) page and think about how many people might chat with your bot in a week.
+Look at the Botter Booster Packs on the [Pricing](https://{{domain}}/pricing/) page and think about how many people might chat with your bot in a week.
 
 Speak soon,
 
@@ -436,7 +436,7 @@ Bot Market is where Botters buy and sell bots with each other. Every plan can bu
 
 From the Novice Botter plan, you can join the programme and share your link. You earn commission on the subscription payments of members who join through it. The [Affiliates](https://{{domain}}/affiliates/) page lists the rates at launch and the rules.
 
-Botter Boosters earn nothing and you can't refer yourself. Botterverse doesn't promise or guarantee any income.
+Botter Booster Packs earn nothing and you can't refer yourself. Botterverse doesn't promise or guarantee any income.
 
 **Next step**
 
@@ -470,7 +470,7 @@ Each plan includes everything in the one before. Apprentice Botter builds and sh
 
 Expert Botter adds deeper analytics. Pro Botter adds [Bot styles](https://lab.{{domain}}/bot-styles), selling on Bot Market, the CRM connector and priority support. Master Botter adds [A/B tests](https://lab.{{domain}}/bots/ab-tests) and advanced analytics.
 
-Remaining boosts from any Botter Boosters you bought are untouched when you change plan from [Billing and boosts](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
+Remaining boosts from any Botter Booster Packs you bought are untouched when you change plan from [Billing and boosts](https://lab.{{domain}}/billing). You can also cancel when you like and your plan runs to the end of the period you paid for.
 
 **Next step**
 

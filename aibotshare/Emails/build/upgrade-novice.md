@@ -259,7 +259,7 @@ First, you'll join the affiliate programme and then build a small helper bot to 
 
 Select [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu then Join the affiliate programme. You'll see Your link, which ends in your username.
 
-You earn commission on subscription payments from members who join through your link. That covers their first payment and every renewal. Botter Boosters earn nothing and referring yourself breaks the terms. Support can tell you the current rates.
+You earn commission on subscription payments from members who join through your link. That covers their first payment and every renewal. Botter Booster Packs earn nothing and referring yourself breaks the terms. Support can tell you the current rates.
 
 **A promotions bot**
 
@@ -280,7 +280,7 @@ Your Botter Support Team
 P.S. Next up: your own bots aren't the only ones you can promote. Whose would you pick?
 
 **Notes**
-- Facts: Affiliates page, Join the affiliate programme, Your link ends in username; commission on subscription payments (first and every renewal) of members who joined through the link; Botter Boosters earn nothing; self-referral breaks terms; Support gives rates (guide 11.1, 11.2, 11.4). Knowledge files accept PDF, Word, text, Markdown and CSV (3.7).
+- Facts: Affiliates page, Join the affiliate programme, Your link ends in username; commission on subscription payments (first and every renewal) of members who joined through the link; Botter Booster Packs earn nothing; self-referral breaks terms; Support gives rates (guide 11.1, 11.2, 11.4). Knowledge files accept PDF, Word, text, Markdown and CSV (3.7).
 - No rates, no income claims. The bot instructions tell the bot never to invent results or earnings.
 - "Swipe Writer" is a bot the member builds here. The guide has no such feature and the welcome sequence does not use the name, so this stays as written.
 - Subject echoes the UN05 P.S.

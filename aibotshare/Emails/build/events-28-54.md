@@ -115,7 +115,7 @@ Your boosts have fallen below the level set under Top up when my boosts fall bel
 
 When boosts run out, all of your bots stop answering everyone. That includes buyers.
 
-Open [Billing and boosts](https://lab.{{domain}}/billing) to add more. Use Buy boosts to add a Botter Booster or switch on Auto top-up so it happens by itself.
+Open [Billing and boosts](https://lab.{{domain}}/billing) to add more. Use Buy boosts to add a Botter Booster Pack or switch on Auto top-up so it happens by itself.
 
 Your Botter Support Team
 
@@ -166,7 +166,7 @@ You can change the threshold or the Top-up amount or switch Auto top-up off in [
 Your Botter Support Team
 
 **Notes**
-- Facts: the member is emailed each time auto top-up charges. Settings are Top up when my boosts fall below and Top-up amount. One boost per cent with no Botter Booster bonus (10.4). No amount is printed in this copy.
+- Facts: the member is emailed each time auto top-up charges. Settings are Top up when my boosts fall below and Top-up amount. One boost per cent with no Botter Booster Pack bonus (10.4). No amount is printed in this copy.
 - Sender: App.
 - Automation: the Power User tag fires on the first charge (set by the app agent and not by this email).
 
@@ -257,24 +257,24 @@ To add boosts, open [Billing and boosts](https://lab.{{domain}}/billing) and use
 Your Botter Support Team
 
 **Notes**
-- Facts: if the bank asks for approval auto top-up is not retried and the member buys a Botter Booster instead (10.4). Buy boosts opens checkout in a new tab (10.3).
+- Facts: if the bank asks for approval auto top-up is not retried and the member buys a Botter Booster Pack instead (10.4). Buy boosts opens checkout in a new tab (10.3).
 - Sender: App. The guide does not state this email. Recommended.
 - Automation: none.
 - Confirmed by the app agent (answer 26): the switch is not changed and the app sends "Your bank needs you to approve a top-up" with the amount and a Buy boosts link. No new attempt starts until added boosts bring the balance back to the level or above or the member switches it off.
 
 ---
 
-## E38 - DROPPED - Botter Booster refunded (Optional) (on event, buyers of a refunded pack)
+## E38 - DROPPED - Botter Booster Pack refunded (Optional) (on event, buyers of a refunded pack)
 
 **Dropped by the owner on 2 November 2026. Do not build. The text is kept for the record.**
 
-**Subject:** [Botterverse] Your Botter Booster was refunded
+**Subject:** [Botterverse] Your Botter Booster Pack was refunded
 
 **Body:**
 
 Hi {{contact.first_name}},
 
-A Botter Booster payment has been refunded. We've taken {{credits_removed}} boosts off your balance for it. A refund removes boosts only up to the balance you have.
+A Botter Booster Pack payment has been refunded. We've taken {{credits_removed}} boosts off your balance for it. A refund removes boosts only up to the balance you have.
 
 You can see the change in the usage history in [Billing and boosts](https://lab.{{domain}}/billing). It appears as Refunded purchase.
 
@@ -284,7 +284,7 @@ Your Botter Support Team
 - Facts: if a pack's payment is refunded its boosts are removed up to the balance. History label is Refunded purchase (10.1 and 10.3).
 - Sender: App. The guide does not state this email. Optional.
 - Automation: none.
-- [DECISION: the app agent says (answer 27) the app has no email for a refunded Botter Booster. A Botter Booster refund reaches the app through Stripe, the boosts removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optional) or ask the app agent to add it. FluentCart's own refund email to the customer cannot carry the boosts figure.]
+- [DECISION: the app agent says (answer 27) the app has no email for a refunded Botter Booster Pack. A Botter Booster Pack refund reaches the app through Stripe, the boosts removed are saved as a Refunded purchase row. An email would need a code change. Drop E38 (it is optional) or ask the app agent to add it. FluentCart's own refund email to the customer cannot carry the boosts figure.]
 
 ---
 
@@ -346,7 +346,7 @@ Hi {{contact.first_name}},
 
 Your plan has changed from {{old_plan_name}} to {{new_plan_name}}. The change takes effect now.
 
-Included boosts from your old plan are replaced by the new plan's first payment. Remaining boosts from any Botter Boosters you bought are untouched.
+Included boosts from your old plan are replaced by the new plan's first payment. Remaining boosts from any Botter Booster Packs you bought are untouched.
 
 {{new_plan_name}} includes all the features of the lower plans. You can see what's included on the [pricing page](https://{{domain}}/pricing/#compare).
 
@@ -422,7 +422,7 @@ Hi {{contact.first_name}},
 
 Your {{plan_name}} plan has ended. Your account stays open and you can sign in to chat with bots you bought access to.
 
-Your own bots are paused and your data is kept. Unused plan boosts have reset. Remaining boosts from any Botter Boosters you bought are untouched. Auto top-up is off.
+Your own bots are paused and your data is kept. Unused plan boosts have reset. Remaining boosts from any Botter Booster Packs you bought are untouched. Auto top-up is off.
 
 To build and run bots again, choose a plan on the [Pricing](https://{{domain}}/pricing/) page. Bots your old plan paused start again up to the new plan's bot limit.
 

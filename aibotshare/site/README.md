@@ -54,7 +54,7 @@ Everything in this repository deploys with `deploy.sh` (see Set up or update). C
 ## Facts the copy must keep right
 
 - Brand: Botterverse. The members area and its pages: Botters Lab. Plans: Apprentice $5 and Novice $47 and Expert $97 and Pro $197 and Master $297 a month. The app has a sixth tier that the site never mentions.
-- Credits power bot messages. Plans include credits each month and they expire at renewal. Credits bought in a booster pack never expire. Booster packs earn nothing for affiliates.
+- Credits power bot messages. Plans include credits each month and they expire at renewal. Credits bought in a Botter Booster Pack never expire. Botter Booster Packs earn nothing for affiliates.
 - Selling fee is 5 percent (Apprentice to Expert) or 3 percent (Pro and Master) of the price after tax plus 30 cents. Selling on the Bot Market starts at Pro.
 - 30-day money-back guarantee on every plan. Bot Market refunds are 14 days. Earnings can be withdrawn 21 days after a sale. No free plan and no trial.
 - Paid features are not sold in the EU. Say so in one FAQ answer and on the cart page only.

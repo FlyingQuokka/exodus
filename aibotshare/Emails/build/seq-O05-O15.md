@@ -204,7 +204,7 @@ Today is a short update. Your Botters Lab account is still open and nothing in i
 
 **What's in your account**
 
-Your bots are paused with their instructions and knowledge files kept. Remaining boosts from any Botter Boosters you bought are untouched.
+Your bots are paused with their instructions and knowledge files kept. Remaining boosts from any Botter Booster Packs you bought are untouched.
 
 We keep adding to the Botters Lab. The [help articles](https://{{domain}}/docs/) describe each feature as it stands today.
 
@@ -336,7 +336,7 @@ Open [Affiliates](https://lab.{{domain}}/affiliates) at the foot of the menu in 
 
 **What earns commission**
 
-You earn commission on the subscription payments of members who joined through your link. That covers their first payment and every renewal. Commission is currently 50% on the first payment and 20% on later ones, worked out on the part of the payment after tax. Botter Boosters earn nothing.
+You earn commission on the subscription payments of members who joined through your link. That covers their first payment and every renewal. Commission is currently 50% on the first payment and 20% on later ones, worked out on the part of the payment after tax. Botter Booster Packs earn nothing.
 
 You also earn on Bot Market sales made through your listing links. That's covered in a later email.
 
@@ -361,7 +361,7 @@ P.S. Next up: what to say when you share your link. Plain wording you can adapt.
 **Notes**
 - Facts: digest chapter 11 (11.1 to 11.4). Self-referral and single level and leaving the programme.
 - The affiliate software is never named.
-- Confirmed by the app agent (answer 43): the app pays 50% of a member's first ever subscription payment and 20% of every later payment, on the part after tax. Botter Boosters and order bumps earn nothing. Staff set both rates and press Pay commissions after the refund period. The text gives no figures.
+- Confirmed by the app agent (answer 43): the app pays 50% of a member's first ever subscription payment and 20% of every later payment, on the part after tax. Botter Booster Packs and order bumps earn nothing. Staff set both rates and press Pay commissions after the refund period. The text gives no figures.
 - The rates are stated as "currently" because staff set them (owner approved the wording on 2 November 2026).
 - Automation: O08 step 1, trigger is the affiliate-joined event. Novice Botter and above only. Test the tier tag before starting.
 
@@ -971,7 +971,7 @@ Your plan has ended, so you can buy your new one now. Your bots are paused until
 
 Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.
 
-Remaining boosts from any Botter Boosters you bought are untouched. Included boosts you had not used have been reset.
+Remaining boosts from any Botter Booster Packs you bought are untouched. Included boosts you had not used have been reset.
 
 If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.
 

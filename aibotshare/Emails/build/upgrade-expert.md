@@ -305,7 +305,7 @@ If your boosts can't cover a message, every one of your bots stops answering eve
 1. Open Auto top-up and read the statement.
 2. Press Agree and switch on.
 3. Enter Top up when my boosts fall below as a whole number of boosts.
-4. Enter the Top-up amount in dollars. You receive one boost per cent and there's no Botter Booster bonus.
+4. Enter the Top-up amount in dollars. You receive one boost per cent and there's no Botter Booster Pack bonus.
 
 For example, below 500 boosts with a top-up of 10 dollars. Choose figures that suit your own usage.
 

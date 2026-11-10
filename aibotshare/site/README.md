@@ -27,6 +27,10 @@ Clone this repository outside the web root on the server then run `bash deploy.s
 3. Run the sync: `php wp-content/plugins/btv-sync/bin/run-sync.php --wp=<WordPress folder> --user=<admin login> [--publish]`. Without `--publish` new automations stay as drafts.
 4. Take a database backup first. Nothing here uses a page or post ID, so it works on any copy of the site.
 
+## Changing the live site
+
+Everything in this repository deploys with `deploy.sh` (see Set up or update). Content that is stored in the database is not in this repository: the legal pages and the Better Docs articles and the shop settings. Edit those in the WordPress admin. In development every change is made on a local copy first and then copied to live.
+
 ## How it works
 
 - **Pages are files.** Each design section is a Custom HTML block in `pages/<slug>.html`. Edit the file and run the installer. Do not edit these pages in the Site Editor.

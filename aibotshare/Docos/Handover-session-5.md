@@ -10,8 +10,8 @@ Written 7 November 2026. It replaces `Handover-WP-Design.md` (30 October) where 
 | Sync plugin `btv-sync` | Built. Tags and email design and automations and banners and settings are all applied from files by `php site\btv-sync\bin\run-sync.php --wp=<path> --user=agentuser`. Safe to repeat. Automations are saved as drafts |
 | Emails | Sources in `Emails\build`. `site\btv-sync\data\emails.json` is built from them by `tools\build-email-data.py` |
 | Banners | Concepts and two sets (with and without the 11 December date) in `Designs-WP\Banners\New`. Not chosen yet |
-| Rename to Botter Boosters | Done in the repository and pushed (commit `a0738e5`). **Waiting for the app agent** (see section 3) |
-| Live site | None yet. Local only |
+| Rename to Botter Boosters | Done in the repository and in the app (app agent confirmed 9 November). Live |
+| Live site | Live at botterverse.com since 9 November 2026. Theme and plugin and the nine pages and the sync and the automations are deployed. How to change it: section 8 |
 
 Local site: `https://botterverse.debbie` (hosts file). The Botters Lab is at `lab.` plus the domain. In the Claude shell use `curl -k --resolve botterverse.debbie:443:127.0.0.1 https://botterverse.debbie/...`. WordPress files are at `D:\Users\Quokka\Desktop\Websites\botterverse\public`. Backup from before the build: `D:\Users\Quokka\Desktop\Websites\botterverse\backups\pre-build-2026-11-02.sql`.
 
@@ -109,3 +109,22 @@ British English. No comma before "and" or "or". Hyphens only and never an em or 
 - Never delete uploads with a broad glob. It once removed the real logo thumbnail.
 - Scratchpad folders are volatile. Keep real files in the project.
 - Git warns that LF will become CRLF on many files. That is harmless.
+
+## 8. Changing the live site
+
+The live site is `botterverse.com`. WordPress is in `/home/btrvers/public_html` on a Krystal cPanel server. SSH is on port 722 and needs shell access switched on by Krystal. The login is `btrvers`. The keys and the connection details are in `E:\Projects\AIBotShare\Repos\Botterverse\.ssh` and the key passphrases are in `SSH-Info.txt` there. Never print that file in chat or in logs. `tools\live-ssh.sh` runs a command on the server and supplies the passphrase itself. The server's host key is not pinned yet.
+
+**Rule: every change is made and checked on the local site first. Then it is copied to live by the route in the table.** Nothing is typed straight into live unless the table says "live only". Before any route that changes the database take a backup (UpdraftPlus or cPanel). After it check the live page with `curl` and report what changed.
+
+| Content | Where it lives | Route to live |
+|---|---|---|
+| Theme code and styles and templates and the page files (`pages\*.html`) | The repository | **Repo route.** Edit in `aibotshare\site`. Run `python tools\publish-to-repo.py` (it rebuilds the emails and runs the domain check). Commit and push in `E:\Projects\AIBotShare\Repos\Botterverseotterversewp`. On the server run `bash ~/botterversewp/deploy.sh --wp=/home/btrvers/public_html --host=botterverse.com --pages=<slugs> --backed-up`. Use `--dry-run` first. The script pulls and copies the two folders and writes the named pages |
+| Sync data: tags and email text and automations and forms and banners and settings and the help page templates | The repository (`sitetv-sync\data`) | **Repo route** with `--user=agentuser --sync --backed-up`. Add `--publish` to publish automations. The sync is safe to repeat |
+| Legal pages (WP Legal Pages) and the Better Docs articles | The database only | **Database script route.** Change the local site first. Then copy the finished content to live with a one-off PHP script run over SSH (`tools\live-ssh.sh`). The script loads WordPress and updates each post matched by slug. Check the result with `curl`. The help articles come from `docs/help` in the app repository, which this project only reads. Build them with `python toolsuild-docs.py` (it checks every article's words and links) then apply with `toolspply-docs.php`, which only reports until `BTV_APPLY=1` is set and saves the current articles first when `BTV_SNAPSHOT=<file>` is set. Run it on local first and then on live (send the JSON and the script with `tools\live-ssh.sh`). Snapshots from 10 November 2026 are in `output\docs-snapshots` For legal pages also check the WP Legal Pages credit setting and the `banner_cookie_options` entries |
+| FluentCart products and coupons and prices and shop settings and other plugin settings | The database | **Live admin.** Change them in the WordPress admin on live and mirror them on local when it matters. The sync does not cover them. Live only |
+| The Checkout Guard plugin (`btv_checkout_guard`) | The app repository | The app agent installs it on live at go-live. This project does not copy it |
+| Bot ids in the embed scripts | The page files `home.html` and `faq.html` | **Repo route** once the app agent has made the live bots |
+
+When a route is used for the first time on a content type test it with one item and check it before doing the rest.
+
+Gotchas for the live server: `sftp -b` turns on batch mode and blocks the passphrase prompt so use the helper script. The host line in the info file once held an invisible character so the helper strips anything but letters and digits and dots. The installer replaces a page's whole content so any edit made to it in the admin is lost. Never run the installer without `--only` (`deploy.sh` always passes it).

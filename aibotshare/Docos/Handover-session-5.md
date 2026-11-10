@@ -11,6 +11,7 @@ Written 7 November 2026. It replaces `Handover-WP-Design.md` (30 October) where 
 | Emails | Sources in `Emails\build`. `site\btv-sync\data\emails.json` is built from them by `tools\build-email-data.py` |
 | Banners | Concepts and two sets (with and without the 11 December date) in `Designs-WP\Banners\New`. Not chosen yet |
 | Rename to Botter Boosters | Done in the repository and in the app (app agent confirmed 9 November). Live |
+| Public name Botter Booster Packs (10 November) | Pricing page and affiliates page and emails and README done and live. Product title in FluentCart is changed by the owner in live admin. Help articles wait for the app agent to change `docs/help`, then rebuild with `tools/build-docs.py` and apply by database script. Slugs such as `booster-packs` stay |
 | Live site | Live at botterverse.com since 9 November 2026. Theme and plugin and the nine pages and the sync and the automations are deployed. How to change it: section 8 |
 
 Local site: `https://botterverse.debbie` (hosts file). The Botters Lab is at `lab.` plus the domain. In the Claude shell use `curl -k --resolve botterverse.debbie:443:127.0.0.1 https://botterverse.debbie/...`. WordPress files are at `D:\Users\Quokka\Desktop\Websites\botterverse\public`. Backup from before the build: `D:\Users\Quokka\Desktop\Websites\botterverse\backups\pre-build-2026-11-02.sql`.

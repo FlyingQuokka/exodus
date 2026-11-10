@@ -146,13 +146,13 @@ add_filter('wp_mail', function ($args) {
 });
 
 /**
- * FluentCart emails (the receipt and the new sale notice to the shop) come in FluentCart's own grey layout.
+ * FluentCart emails (the receipt and the notices to the shop and the plain emails to customers) come in FluentCart's own grey layout.
  * Put the body in the Botterverse layout with the logo and swap FluentCart's blue and grey inline colours for the
- * brand colours. Only mail that holds FluentCart's order totals table is touched. Everything else is left alone.
+ * brand colours. Only mail that holds FluentCart's email_wrap table is touched. Everything else is left alone.
  */
 add_filter('wp_mail', function ($args) {
     $message = isset($args['message']) ? (string) $args['message'] : '';
-    if (strpos($message, 'fct-email-totals') === false || strpos($message, 'bv-cart') !== false) {
+    if (strpos($message, 'class="email_wrap"') === false || strpos($message, 'bv-cart') !== false) {
         return $args;
     }
     $file = BTV_SYNC_DIR . '/templates/cart-email.html';

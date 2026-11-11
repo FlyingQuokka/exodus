@@ -87,7 +87,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.
+Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}
+
+It works for 60 minutes.
 
 Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.
 
@@ -191,9 +193,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You asked to reset the password for your billing login. Use this link: {{reset_link}}.
+You asked to reset the password for your billing login. Use this link: {{reset_link}}
 
-The link works once and expires after 24 hours. Your billing login is separate from your Botters Lab sign-in, so this doesn't change your Botters Lab password.
+The link works once and expires after 24 hours.
+
+Your billing login is separate from your Botters Lab sign-in, so this doesn't change your Botters Lab password.
 
 If you didn't ask for this, you can ignore this email.
 

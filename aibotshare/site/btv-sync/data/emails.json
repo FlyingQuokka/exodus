@@ -26,7 +26,7 @@
  "E02A": {
   "title": "Email confirmation link (day 0, new account)",
   "subject": "[Botterverse] Confirm your email address",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}. It works for 60 minutes.</p>\n<p>Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}</p>\n<p>It works for 60 minutes.</p>\n<p>Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E02B": {
@@ -56,7 +56,7 @@
  "E06": {
   "title": "Billing login password reset (any time, on request)",
   "subject": "[Botterverse] Reset your billing login password",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>You asked to reset the password for your billing login. Use this link: {{reset_link}}.</p>\n<p>The link works once and expires after 24 hours. Your billing login is separate from your Botters Lab sign-in, so this doesn't change your Botters Lab password.</p>\n<p>If you didn't ask for this, you can ignore this email.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>You asked to reset the password for your billing login. Use this link: {{reset_link}}.</p>\n<p>The link works once and expires after 24 hours</p>\n<p>Your billing login is separate from your Botters Lab sign-in, so this doesn't change your Botters Lab password.</p>\n<p>If you didn't ask for this, you can ignore this email.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E07A": {

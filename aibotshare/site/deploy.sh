@@ -14,6 +14,8 @@
 #   --no-pull        Skip git pull and deploy what is already checked out.
 #   --dry-run        Show what would change and run nothing.
 #
+# The static error pages and the three WordPress error drop-ins (db-error.php and maintenance.php and php-error.php)
+# are copied to the WordPress folder every time. They need the ErrorDocument block in .htaccess (see the handover).
 # Without --pages and --sync only the files are copied. Theme styles and templates are live at once.
 # Page text lives in the database so it needs --pages. Tags and emails and forms need --sync.
 
@@ -62,6 +64,11 @@ RSYNC_OPTS="-a --delete"
 [ "$DRY" = 1 ] && RSYNC_OPTS="-a --delete --dry-run --itemize-changes"
 rsync $RSYNC_OPTS "$REPO/wp-content/themes/btv-theme/" "$WP/wp-content/themes/btv-theme/"
 rsync $RSYNC_OPTS "$REPO/wp-content/plugins/btv-sync/" "$WP/wp-content/plugins/btv-sync/"
+
+echo "Copying the error pages"
+ERR="$REPO/wp-content/plugins/btv-sync/error-pages"
+for f in "$ERR"/btv-error-*.html; do run cp "$f" "$WP/$(basename "$f")"; done
+for f in "$ERR"/dropins/*.php; do run cp "$f" "$WP/wp-content/$(basename "$f")"; done
 
 if [ -n "$PAGES" ]; then
   [ "$PAGES" = "all" ] && PAGES="${ALL_PAGES// /,}"

@@ -279,7 +279,7 @@ Hi {{contact.first_name}},
 
 This is the last email in this series. We won't keep writing about your cancelled plan.
 
-Your account stays open and your bots stay saved. If you ever want to build again, buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botters Lab account, then sign in at https://lab.{{domain}}/login.
+Your account stays open and your bots stay saved. If you ever want to build again, buy a plan on the [Pricing](https://{{domain}}/pricing/) page with the same email address as your Botters Lab account, then sign in at https://lab.{{domain}}/login
 
 If something stopped you from staying and we could have helped, the [Feedback](https://{{domain}}/feedback/) page is open any time. We read every email.
 

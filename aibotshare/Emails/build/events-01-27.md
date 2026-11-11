@@ -42,8 +42,17 @@ Hi {{contact.first_name}},
 
 Thank you for your purchase. This email holds the two links you need to start.
 
-1. Set the password for your billing login: {{billing_password_link}}. The billing login is where you find invoices, change your card and cancel your plan. The link works once and expires after 24 hours.
-2. Create your Botters Lab account: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
+**1. Set the password for your billing login**
+
+{{billing_password_link}}
+
+The billing login is where you find invoices, change your card and cancel your plan. The link works once and expires after 24 hours.
+
+**2. Create your Botters Lab account**
+
+{{create_account_link}}
+
+Use the same email address you bought with so your plan reaches your account.
 
 If you already have a Botters Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
@@ -66,7 +75,9 @@ Hi {{contact.first_name}},
 
 Thank you for your purchase. You already have a help desk sign-in under this email address, so we haven't created a separate billing login.
 
-Use your help desk sign-in for invoices and card changes. To start building, create your Botters Lab account here: {{create_account_link}}. Use the same email address you bought with so your plan reaches your account.
+Use your help desk sign-in for invoices and card changes. To start building, create your Botters Lab account here: {{create_account_link}}
+
+Use the same email address you bought with so your plan reaches your account.
 
 If you already have a Botters Lab account under this email address, you only need to sign in and verify your email address. Your plan is added automatically.
 
@@ -111,7 +122,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You asked us to send the link again. Here is a fresh one: {{confirmation_link}}. It works for 60 minutes.
+You asked us to send the link again. Here is a fresh one: {{confirmation_link}}
+
+It works for 60 minutes.
 
 Once you confirm your email address, making a bot Public and submitting a listing open up.
 
@@ -219,7 +232,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-You asked to change the email address on your Botters Lab account to this one. Confirm the change with this link: {{confirmation_link}}.
+You asked to change the email address on your Botters Lab account to this one. Confirm the change with this link: {{confirmation_link}}
 
 Your change also carries to your billing account. If you didn't ask for this, you can ignore this email.
 
@@ -303,7 +316,7 @@ Hi {{contact.first_name}},
 
 The password for your Botters Lab account has just been changed.
 
-If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/.
+If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/
 
 Your Botter Support Team
 
@@ -346,7 +359,7 @@ The check found that {{bot_name}} falls into a category that isn't allowed: {{bl
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) and review its name, description, instructions and knowledge files. Press Save then Make Public once the text is changed. The full list of banned categories is in the terms.
 
-If you think the check was wrong, contact the Botter Support Team at https://{{domain}}/support/.
+If you think the check was wrong, contact the Botter Support Team at https://{{domain}}/support/
 
 Your Botter Support Team
 
@@ -527,7 +540,7 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and the amount of {{amount}} is being refunded to you. Your bank may take a few days to show it.
 
-Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the Botter Support Team at https://{{domain}}/support/.
+Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the Botter Support Team at https://{{domain}}/support/
 
 Your Botter Support Team
 
@@ -548,7 +561,9 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and it wasn't approved for a refund.
 
-If you'd like this looked at again, contact the Botter Support Team at https://{{domain}}/support/. Please say which bot it was and what happened.
+If you'd like this looked at again, contact the Botter Support Team at https://{{domain}}/support/
+
+Please say which bot it was and what happened.
 
 Your Botter Support Team
 
@@ -569,7 +584,7 @@ Hi {{contact.first_name}},
 
 The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time, so it has been refunded automatically.
 
-The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the Botter Support Team at https://{{domain}}/support/.
+The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the Botter Support Team at https://{{domain}}/support/
 
 Your Botter Support Team
 
@@ -689,9 +704,11 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The seller of {{bot_name}} has updated the licence terms for the bot. You can read them here: {{licence_terms_link}}.
+The seller of {{bot_name}} has updated the licence terms for the bot. You can read them here: {{licence_terms_link}}
 
-You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms, contact the Botter Support Team at https://{{domain}}/support/. Botterverse doesn't give legal advice about licence terms.
+You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms, contact the Botter Support Team at https://{{domain}}/support/
+
+Botterverse doesn't give legal advice about licence terms.
 
 Your Botter Support Team
 

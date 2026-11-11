@@ -238,3 +238,64 @@ add_filter('wp_mail', function ($args) {
     $args['message'] = $html;
     return $args;
 }, 20);
+
+/**
+ * Buy buttons add to one shared cart.
+ *
+ * Every buy button on the site points at /?btv_add=VARIATION_ID (through the Lab's /buy page, which checks the
+ * visitor's country). This puts one of that variation into the visitor's FluentCart cart and sends them to the cart
+ * page. FluentCart's own instant checkout link would start a separate one-item cart each time.
+ *
+ *  - A membership plan replaces any membership plan already in the cart, so there is only ever one.
+ *  - Any other item (a Botter Booster Pack or the Members Guide) is added alongside other one-off items. Adding it
+ *    again raises its quantity by one.
+ *  - FluentCart does not allow a plan and a one-off item in one cart. The cart is left as it is and the visitor is sent
+ *    to the pricing page with ?btv_msg=plan-in-cart or ?btv_msg=pack-in-cart.
+ *  - Only variations of a published product can be added.
+ */
+add_action('template_redirect', function () {
+    if (!isset($_GET['btv_add'])) {
+        return;
+    }
+    $cart_page = function () {
+        $settings = get_option('fluent_cart_store_settings');
+        $id = is_array($settings) && !empty($settings['cart_page_id']) ? (int) $settings['cart_page_id'] : 0;
+        return $id && get_permalink($id) ? get_permalink($id) : home_url('/cart/');
+    };
+    $variation_id = absint(wp_unslash($_GET['btv_add']));
+    if (!$variation_id || !class_exists('FluentCart\App\Models\ProductVariation') || !class_exists('FluentCart\Api\Resource\FrontendResource\CartResource')) {
+        wp_safe_redirect($cart_page());
+        exit;
+    }
+    $variation = \FluentCart\App\Models\ProductVariation::query()->with('product')->find($variation_id);
+    if (!$variation || !$variation->product || get_post_status($variation->post_id) !== 'publish') {
+        wp_safe_redirect($cart_page());
+        exit;
+    }
+    $resource = 'FluentCart\Api\Resource\FrontendResource\CartResource';
+    $is_plan = $variation->payment_type === 'subscription';
+    $cart = $resource::get(['create' => false]);
+    $cart = $cart && !is_wp_error($cart) ? $cart : null;
+    $has_items = $cart && !empty($cart->cart_data);
+    $has_plan = $has_items && $cart->hasSubscription();
+    // FluentCart does not allow a subscription and a one-off product in one cart. Leave the cart as it is and
+    // tell the visitor on the pricing page.
+    if ($has_items && ($is_plan ? !$has_plan : $has_plan)) {
+        $pricing = get_page_by_path('pricing');
+        $back = $pricing ? get_permalink($pricing) : home_url('/pricing/');
+        wp_safe_redirect(add_query_arg('btv_msg', $is_plan ? 'pack-in-cart' : 'plan-in-cart', $back));
+        exit;
+    }
+    if ($is_plan && $has_plan) {
+        // One membership at a time: take out the plan that is there before adding the new one.
+        $siblings = \FluentCart\App\Models\ProductVariation::query()->where('post_id', $variation->post_id)->pluck('id')->all();
+        foreach ($siblings as $sibling) {
+            if ($cart->findExistingItemAndIndex($sibling)) {
+                $cart->removeItem($sibling);
+            }
+        }
+    }
+    $resource::update(['item_id' => $variation_id, 'quantity' => 1], '', []);
+    wp_safe_redirect($cart_page());
+    exit;
+}, 1);

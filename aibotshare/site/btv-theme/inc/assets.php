@@ -58,6 +58,11 @@ add_action('wp_enqueue_scripts', function () {
 
     wp_enqueue_script('btv-site',btv_asset('js/btv-site.js'), [], btv_asset_version('js/btv-site.js'), ['in_footer' => true, 'strategy' => 'defer']);
 
+    // The Monthly and Annual switch on the pricing page.
+    if (is_page('pricing')) {
+        wp_enqueue_script('btv-pricing', btv_asset('js/btv-pricing.js'), [], btv_asset_version('js/btv-pricing.js'), ['in_footer' => true, 'strategy' => 'defer']);
+    }
+
     // The picture set draws the ten illustrations. Load it only on pages that use one.
     $post = get_post();
     if ($post && strpos((string) $post->post_content, 'data-pic=') !== false) {

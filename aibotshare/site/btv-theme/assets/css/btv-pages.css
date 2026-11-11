@@ -197,3 +197,11 @@ body .pg-form .fluentform .ff_submit_btn_wrapper .ff-btn-submit:hover { backgrou
 
 .pg-form .ff_submit_btn_wrapper { display: flex; justify-content: center; text-align: center; }
 .pg-head:has(.pg-coupon) .pg-eyebrow { font-size: 1.4rem; letter-spacing: .12em; }
+
+/* Monthly and Annual switch and the cart notice on the pricing page */
+.pg-bill { display: flex; justify-content: center; gap: .3rem; width: fit-content; margin: 0 auto 1.4rem; padding: .3rem; background: var(--bv-lilac); border-radius: 999px; }
+.pg-bill[hidden], .pg-note[hidden] { display: none; }
+.pg-bill button { font-family: var(--font-body); font-weight: 800; font-size: 1rem; line-height: 1.2; padding: .6rem 1.4rem; border: 0; border-radius: 999px; background: transparent; color: var(--bv-ink); cursor: pointer; }
+.pg-bill button[aria-pressed="true"] { background: var(--bv-purple); color: #fff; }
+.pg-bill small { margin-left: .5em; font-size: .75rem; font-weight: 700; }
+.pg-note { max-width: 52rem; margin: 0 auto 1.2rem; padding: .9rem 1.2rem; background: var(--bv-pinksoft); border: 1px solid var(--bv-purple); border-radius: 16px; color: var(--bv-ink); }

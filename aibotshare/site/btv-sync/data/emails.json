@@ -44,7 +44,7 @@
  "E04": {
   "title": "Forgotten password (any time, on request)",
   "subject": "[Botterverse] Choose a new password",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link, the earlier one stops working.</p>\n<p>If you didn't ask for this, you can ignore this email and your password stays as it is.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}</p>\n<p>The link works for the next hour. If you ask for another link, the earlier one stops working.</p>\n<p>If you didn't ask for this, you can ignore this email and your password stays as it is.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E05": {

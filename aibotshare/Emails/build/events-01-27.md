@@ -152,7 +152,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}. The link works for the next hour. If you ask for another link, the earlier one stops working.
+We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}
+
+The link works for the next hour. If you ask for another link, the earlier one stops working.
 
 If you didn't ask for this, you can ignore this email and your password stays as it is.
 

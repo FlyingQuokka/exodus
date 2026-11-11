@@ -273,6 +273,7 @@ table.compare.u-flat th, table.compare.u-flat td { text-align: left; }
 .post-list h2 a { color: var(--text); text-decoration: none; }
 .post-list h2 a:hover { color: var(--accent-text); }
 .not-found { padding: 5rem 0; text-align: center; }
+.not-found h1, .not-found .lede { text-align: center; margin-inline: auto; }
 .search-form { display: flex; gap: .6rem; max-width: 560px; margin-inline: auto; }
 .search-form input[type=search] { flex: 1; min-width: 0; font: inherit; color: var(--text); background: var(--surface); border: 2px solid var(--border-strong); border-radius: var(--r-ctl); padding: .8rem 1rem; }
 .search-form input[type=search]:focus { outline: none; border-color: var(--accent-text); box-shadow: 0 0 0 4px var(--accent-soft); }

@@ -608,19 +608,19 @@
  "O15-2": {
   "title": "Plan ending tomorrow (event, tag Plan Ending Tomorrow)",
   "subject": "[Botterverse] Your plan ends tomorrow",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan ends tomorrow. The <a href=\"https://lab.{{domain}}/billing\">Billing and boosts</a> page shows the exact time.</p>\n<p><strong>Moving to a different plan?</strong> Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.</p>\n<p>Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists the plans.</p>\n<p><strong>Changed your mind?</strong> Press Keep my plan on the Billing and boosts page.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan ends tomorrow. The <a href=\"https://lab.{{domain}}/billing\">Billing and boosts</a> page shows the exact time.</p>\n<p><strong>Moving to a different plan?</strong> Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.</p>\n<p>Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you. The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists the plans.</p>\n<p><strong>Changed your mind?</strong> Press Keep my plan on the Billing and boosts page.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
  "O15-3": {
   "title": "Plan ends today (event, tag Plan Ends Today)",
   "subject": "[Botterverse] Your plan ends today",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Today's the day. Your plan ends later today at the time shown on the <a href=\"https://lab.{{domain}}/billing\">Billing and boosts</a> page. We'll email you again the moment it has ended, so you can buy your new plan straight away.</p>\n<p><strong>Have these ready:</strong> the email address of your Botters Lab account and your Founders coupon if you have one.</p>\n<p><strong>Changed your mind?</strong> You can still press Keep my plan on the Billing and boosts page until it ends.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Today's the day. Your plan ends later today at the time shown on the <a href=\"https://lab.{{domain}}/billing\">Billing and boosts</a> page. We'll email you again the moment it has ended, so you can buy your new plan straight away.</p>\n<p><strong>Have this ready:</strong> the email address of your Botters Lab account. If you have a Founders coupon, the checkout applies it for you.</p>\n<p><strong>Changed your mind?</strong> You can still press Keep my plan on the Billing and boosts page until it ends.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
  "O15-4": {
   "title": "Plan ended (event, tag Plan Ended)",
   "subject": "[Botterverse] Your plan has ended - pick your new one now",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has ended, so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.</p>\n<h2><a href=\"https://{{domain}}/pricing/\">See the plans</a></h2>\n<p>Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.</p>\n<p>Remaining boosts from any Botter Booster Packs you bought are untouched. Included boosts you had not used have been reset.</p>\n<p>If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.</p>\n<p>If you're leaving, thank you. Your account stays here if you ever come back.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan has ended, so you can buy your new one now. Your bots are paused until you do. They come back as soon as your new plan starts, oldest first, up to your new plan's bot limit.</p>\n<h2><a href=\"https://{{domain}}/pricing/\">See the plans</a></h2>\n<p>Use the same email address as your Botters Lab account. If you have a Founders coupon, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you.</p>\n<p>Remaining boosts from any Botter Booster Packs you bought are untouched. Included boosts you had not used have been reset.</p>\n<p>If you're on an annual plan and were due a refund for whole unused months, it goes back to your card within a day.</p>\n<p>If you're leaving, thank you. Your account stays here if you ever come back.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-O05-O15.md"
  },
  "FND2-01": {
@@ -1213,8 +1213,8 @@
  },
  "FND1": {
   "title": "Keep your Founders coupon (sent when the Founder tag is applied, Founders only)",
-  "subject": "[Botterverse] Keep your Founders coupon code",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan was bought with the Founders coupon, so you're a Founder. That stays with you for life.</p>\n<p>The coupon works on every plan. It doesn't carry over to a new plan by itself, so enter the code at the checkout each time you <a href=\"https://lab.{{domain}}/billing\">change plan</a>.</p>\n<p>Keep the code somewhere safe so you have it when you need it.</p>\n<p>Thank you for joining early,</p>\n<p>Your Botter Support Team</p>",
+  "subject": "[Botterverse] Your Founders discount stays with you",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your plan was bought with the Founders coupon, so you're a Founder. That stays with you for life.</p>\n<p>The coupon works on every plan and you don't need to enter it again. When you <a href=\"https://lab.{{domain}}/billing\">change plan</a>, the checkout applies it for you.</p>\n<p>If you buy a new plan after your current one has ended, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you.</p>\n<p>If you remove the coupon at a checkout, only that plan is billed at the full price. Your next change of plan has it again.</p>\n<p>Thank you for joining early,</p>\n<p>Your Botter Support Team</p>",
   "source": "v4-day1-S01-T1-T2.md"
  }
 }

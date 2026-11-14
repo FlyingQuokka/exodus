@@ -923,7 +923,7 @@ Your plan ends tomorrow. The [Billing and boosts](https://lab.{{domain}}/billing
 
 **Moving to a different plan?** Set aside a moment tomorrow to buy it as soon as this one ends. When no plan is active, your bots pause and their pages show as unavailable, so buying straight away keeps them running for your visitors.
 
-Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, type it at checkout again because it doesn't carry over by itself. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
+Use the same email address as your Botters Lab account, so your new plan reaches it. If you have a Founders coupon, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you. The [Pricing](https://{{domain}}/pricing/) page lists the plans.
 
 **Changed your mind?** Press Keep my plan on the Billing and boosts page.
 
@@ -945,7 +945,7 @@ Hi {{contact.first_name}},
 
 Today's the day. Your plan ends later today at the time shown on the [Billing and boosts](https://lab.{{domain}}/billing) page. We'll email you again the moment it has ended, so you can buy your new plan straight away.
 
-**Have these ready:** the email address of your Botters Lab account and your Founders coupon if you have one.
+**Have this ready:** the email address of your Botters Lab account. If you have a Founders coupon, the checkout applies it for you.
 
 **Changed your mind?** You can still press Keep my plan on the Billing and boosts page until it ends.
 
@@ -969,7 +969,7 @@ Your plan has ended, so you can buy your new one now. Your bots are paused until
 
 **[See the plans](https://{{domain}}/pricing/)**
 
-Use the same email address as your Botters Lab account. If you have a Founders coupon, remember to type it at checkout.
+Use the same email address as your Botters Lab account. If you have a Founders coupon, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you.
 
 Remaining boosts from any Botter Booster Packs you bought are untouched. Included boosts you had not used have been reset.
 

@@ -158,7 +158,7 @@ P.S. Next up: how to build a bot from scratch in a single sitting.
 
 ## FND1 - Keep your Founders coupon (sent when the Founder tag is applied, Founders only)
 
-**Subject:** [Botterverse] Keep your Founders coupon code
+**Subject:** [Botterverse] Your Founders discount stays with you
 
 **Body:**
 
@@ -166,9 +166,11 @@ Hi {{contact.first_name}},
 
 Your plan was bought with the Founders coupon, so you're a Founder. That stays with you for life.
 
-The coupon works on every plan. It doesn't carry over to a new plan by itself, so enter the code at the checkout each time you [change plan](https://lab.{{domain}}/billing).
+The coupon works on every plan and you don't need to enter it again. When you [change plan](https://lab.{{domain}}/billing), the checkout applies it for you.
 
-Keep the code somewhere safe so you have it when you need it.
+If you buy a new plan after your current one has ended, press Open the Customer Area on your Billing page first so you're signed in to your billing account. The checkout then applies it for you.
+
+If you remove the coupon at a checkout, only that plan is billed at the full price. Your next change of plan has it again.
 
 Thank you for joining early,
 
@@ -177,6 +179,7 @@ Your Botter Support Team
 **Notes**
 - Event-style email: no recap and no Task for today and no P.S. Written to the decisions in the handover (the coupon works on all tiers and a Founder is a Founder for life).
 - Trigger: the Founder tag being applied. It can arrive minutes or days after purchase because the app queues it. FluentCRM sends this once. If the tag arrives before the welcome emails the order of the emails does not matter.
+- Wording replaced on 14 November 2026 with the app agent's text in `docs/handoffs/founders-coupon-carry.md` (the owner's answers section): the checkout now applies the coupon by itself on a founder's next plan, so members no longer enter it.
 - The Founder badge is not mentioned (it shows only in the Botters Lab). No offer terms or prices.
 - Not part of the welcome loop and it breaks no P.S. chain. Do not run it through the one-email-per-day collision rule.
 - Automation: FND1 on tag Founder. Sends once. Applies no other tag.

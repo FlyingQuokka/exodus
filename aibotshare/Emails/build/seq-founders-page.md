@@ -62,7 +62,7 @@ Here is how the Founders coupon works.
 - It works on monthly and annual billing.
 - A Founder stays a Founder for life and the price stays.
 
-Enter the code at the checkout when you choose a plan. If you leave later, you can rejoin as a Founder while the coupon is still active.
+Enter the code at the checkout when you choose a plan. After that you don't need to enter it again. If you leave and come back later, press Open the Customer Area on your Billing page first and the checkout applies the coupon for you.
 
 The [Pricing](https://{{domain}}/pricing/) page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.
 

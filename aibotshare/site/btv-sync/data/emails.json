@@ -632,7 +632,7 @@
  "FND2-02": {
   "title": "How the Founders coupon works (day 3, Leads)",
   "subject": "[Botterverse] How the Founders coupon works",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Here is how the Founders coupon works.</p>\n<ul><li>FOUNDER50 works on all five plans.</li><li>It works on monthly and annual billing.</li><li>A Founder stays a Founder for life and the price stays.</li></ul>\n<p>Enter the code at the checkout when you choose a plan. If you leave later, you can rejoin as a Founder while the coupon is still active.</p>\n<p>The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Here is how the Founders coupon works.</p>\n<ul><li>FOUNDER50 works on all five plans.</li><li>It works on monthly and annual billing.</li><li>A Founder stays a Founder for life and the price stays.</li></ul>\n<p>Enter the code at the checkout when you choose a plan. After that you don't need to enter it again. If you leave and come back later, press Open the Customer Area on your Billing page first and the checkout applies the coupon for you.</p>\n<p>The <a href=\"https://{{domain}}/pricing/\">Pricing</a> page lists what each plan includes. Each plan includes everything in the one before and you can change plan later.</p>\n<p>Your Botter Support Team</p>",
   "source": "seq-founders-page.md"
  },
  "UE01": {

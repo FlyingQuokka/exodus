@@ -21,7 +21,7 @@ Who receives them: contacts on the main list with the tag Leads. Exclude contact
 
 Hi {{contact.first_name}},
 
-The Founders offer is open. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.
+The Founders offer is open. Every plan is 50% off for life while the offer runs. Join as a Founder and your subscription stays at 50% off for life.
 
 The coupon works on every plan. Enter FOUNDER50 at the checkout when you choose a plan.
 
@@ -48,7 +48,7 @@ Hi {{contact.first_name}},
 
 The Founders offer closes on {{cpn_dateend_founder50}}. After that, new plans are at the standard price.
 
-If you join before then, your price stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.
+If you join before then, your subscription stays at 50% off for life. The coupon works on every plan, so you can choose the plan that suits you.
 
 Enter FOUNDER50 at the checkout. The [Pricing](https://{{domain}}/pricing/) page lists what each plan includes.
 

@@ -34,7 +34,7 @@ Hi {{contact.first_name}},
 
 Thanks for joining the list. We'll email you before the Founders offer closes on {{cpn_dateend_founder50}}.
 
-Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your price stays.
+Here is the offer in short. Every plan is 50% off for life while the offer runs. Join as a Founder and your subscription stays at 50% off for life.
 
 The coupon works on every plan. Enter FOUNDER50 at the checkout when you choose a plan.
 
@@ -60,7 +60,7 @@ Here is how the Founders coupon works.
 
 - FOUNDER50 works on all five plans.
 - It works on monthly and annual billing.
-- A Founder stays a Founder for life and the price stays.
+- A Founder stays a Founder for life.
 
 Enter the code at the checkout when you choose a plan. After that you don't need to enter it again. If you leave and come back later, press Open the Customer Area on your Billing page first and the checkout applies the coupon for you.
 

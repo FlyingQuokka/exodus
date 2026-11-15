@@ -378,7 +378,8 @@ Your Botter Support Team
 
 **Notes**
 - Facts: monthly plan runs to the end of the paid period. Pill Plan cancelling and the Ends date and Keep my plan (10.7 and 12.3). Digest conflict 8: say "you keep your plan to the end of the period you paid for" and not "no refunds".
-- Sender: Cart. Owner decision 2 November 2026: a cancelling member receives this email. FluentCart's `subscription_canceled_customer` notification sends it with this wording in place of its stock text.
+- MOVED TO THE APP on 15 November 2026. The FluentCart notification `subscription_canceled_customer` is switched off. FluentCart sent it only when the plan ended in Stripe and its `{{subscription.expire_at}}` code was empty (the subject read 'Your plan will end on Never'). The app agent sends the cancellation email when the member presses Cancel. This text is kept for the record and for the app agent's wording. See Docos/app-agent-note-cancellation-email.md.
+- Sender (old): Cart. Owner decision 2 November 2026: a cancelling member receives this email.
 - Automation: the Cancelled tag is applied by the automation. O06 step 1 must not send this email as well.
 - One text serves monthly and annual plans because FluentCart has no conditional blocks (E42b merged into this email, 2 November 2026). `{{subscription.expire_at}}` must be checked with a real cancelled subscription: the plugin shows 'Never' when it is empty.
 

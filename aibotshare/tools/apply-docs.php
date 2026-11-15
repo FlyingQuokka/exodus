@@ -134,7 +134,7 @@ foreach ($ids as $folder => $byOrder) {
     $term = get_term_by('slug', $folder, 'doc_category');
     $want = implode(',', array_values(array_filter($byOrder)));
     $have = (string) get_term_meta($term->term_id, '_docs_order', true);
-    if ($have !== $want && $want !== '') {
+    if ($have !== $want && $want !== '' && getenv('BTV_NO_ORDER') !== '1') {   // BTV_NO_ORDER=1 for a run with a single article: the folder order is left alone
         echo "order     $folder: was $have, becomes $want\n";
         if ($live) {
             update_term_meta($term->term_id, '_docs_order', $want);

@@ -2,10 +2,10 @@
   "send": {
     "order_paid_customer": "E39",
     "subscription_renewal_customer": "E39",
-    "subscription_renewal_failed_customer": "E40",
-    "subscription_canceled_customer": "E42a"
+    "subscription_renewal_failed_customer": "E40"
   },
   "off": [
+    "subscription_canceled_customer",
     "subscription_past_due_customer",
     "order_refunded_customer",
     "order_shipped_customer",

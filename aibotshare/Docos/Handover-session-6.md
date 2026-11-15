@@ -19,19 +19,22 @@ Done and live this session:
 
 | Item | Who | What I do after |
 |---|---|---|
-| Cancellation email built and merged on dev (075abbda), not released | App agent | Nothing. E42a is already off, so no member receives a cancellation email until it is released |
+| Cancellation email built and merged on dev (075abbda), not released. "Released" means live on the app's production server, which needs the Lab | App agent | Nothing. E42a is already off, so no member receives a cancellation email until it is released |
 | Live bot ids for the two home page embeds and the FAQ embed | App agent, after the lab is deployed (Back Office House Bots, Copy Embed Code) | Edit the page files, publish to the repo, run `deploy.sh --pages=home,faq` |
-| Lab deployed at `lab.botterverse.com` | App agent and owner | Until then every Join and buy button on live ends in a 404 (the route is `/buy?checkout=...`). Check the buttons once it is up |
+| Lab deployed at `lab.botterverse.com` (the owner confirmed on 15 November it is not live yet. The host answered 403 on its home page and 404 on `/buy`) | App agent and owner | Until then every Join and buy button on live ends in a 404 (the route is `/buy?checkout=...`) and nothing that relies on the app works. Check the buttons once it is up |
 | `btv_checkout_guard` on live | Owner at deployment (version 2.0.20, matching secrets) | Nothing. It is not mine |
 | E-code event emails built in the app | App agent | Nothing |
 
 ## 3. Open on my side
 
-- Set the end date on the FOUNDER50 coupon in FluentCart (live admin only). The banner and the Founders page read it through `{{cpn_dateend_founder50}}` and say "a date to be confirmed" until it is set.
-- Install Advanced Ads on live and add `favicon.ico` on live.
-- Run the sync so the help page templates and the FND2 sequence and the lead form feed reach live, then publish FND2 (see the Go-live row in `Handover-session-5.md`).
+- The owner will set the end date on the FOUNDER50 coupon in FluentCart (live admin only). The banner and the Founders page read it through `{{cpn_dateend_founder50}}` and say "a date to be confirmed" until it is set.
 - After editing any legal page on live remove the entry WP Legal Pages adds to the option `banner_cookie_options`.
-- Check the FluentCart system pages once there are real orders.
+- When the Lab is live and the bot ids are in: check the Join and buy buttons then run one real test order on live to prove the whole process (this replaces the old "check the FluentCart system pages" item, which the owner dropped on 15 November 2026 because the pages run the same third-party code on both sites).
+
+Closed on 15 November 2026 (checked on live, read only):
+- The sync is not needed for the help page templates or the lead form feed. The three live templates (`archive-docs` and `single-docs` and `taxonomy-doc_category`) match the repository files by checksum. Form 3 (Botterverse lead capture) feeds Main List with the tags Lead and Src Founders Page. FND2 exists on live and is published. The owner reports every automation on live is published.
+- `favicon.ico` works on live (the owner sees it in the browser tab).
+- Advanced Ads is installed. It is the free version. Ad blocker disguise is off and not wanted (it only helps with third-party ad networks), so the dashboard notice "Some assets were changed. Please rebuild the asset folder" can be ignored or dismissed.
 
 ## 4. Things to know
 

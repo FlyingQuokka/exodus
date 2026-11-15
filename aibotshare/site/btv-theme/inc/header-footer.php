@@ -80,7 +80,7 @@ function btv_render_header()
     $actions = '';
     $count = btv_cart_count();
     if ($count > 0) {
-        $actions .= '<a class="icon-link" href="' . esc_url(btv_path('cart-2')) . '"><span class="visually-hidden">Cart</span>' . btv_icon('cart')
+        $actions .= '<a class="icon-link" href="' . esc_url(btv_path('cart')) . '"><span class="visually-hidden">Cart</span>' . btv_icon('cart')
             . '<span class="count" aria-hidden="true">' . (int) $count . '</span></a>';
     }
     if (is_user_logged_in()) {

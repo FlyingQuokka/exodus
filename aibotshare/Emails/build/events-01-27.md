@@ -322,7 +322,7 @@ Your Botter Support Team
 
 **Notes**
 - Facts: security emails are always sent (digest 12.1). The guide gives no specifics for this email.
-- [DECISION: the app agent says (answer 32) the app sends no password change email. Settings shows "Your password is changed." and signs out other devices. Ask the app agent to add this email or drop E08. The billing login does send WordPress's own Password Changed notice.]
+- DECIDED 15 November 2026: the app sends this email as `auth.password_changed`, after every saved password change (merged and tested 14 November). Subject "Your password has been changed". It uses this wording without the sign-off or the subject prefix, which the app's layout adds. Nothing on the WordPress side sends a password-changed email. Earlier note kept in the handover history: the app first said it sent none.
 - Automation: none. Sender is App [verify with the app agent].
 
 ---

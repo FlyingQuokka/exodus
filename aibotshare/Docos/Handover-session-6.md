@@ -15,6 +15,8 @@ Done and live this session:
 - E42a (the FluentCart cancellation email) is switched off on live. The app sends the cancellation email instead.
 - All 76 help articles match their source in `lab/docs/help`, including full title case headings, the password rules and `ab-tests`. Legal wording is approved by the owner, who also told me to check off the solicitor review and the DMCA agent registration (15 November 2026).
 
+Done and live on 17 November 2026: the third help republish list (`Docos\wp-agent-help-republish-17-november.md`, 10 articles: `affiliate-programme` and `promote-a-listing` and `browse-and-buy` and `list-a-bot` and `listing-blocked` and `earnings-and-holds` and `set-up-payouts` and `withdraw` and `signing-up` and `paywall`). Built from `lab/docs/help` on `dev`, applied locally and then live (dry runs showed only those 10 changed). The app agent marked the list complete later on 17 November. A fresh build and dry run afterwards showed no changes (no help file changed after commit `cde27392`), so nothing is pending on it. If the app agent sends another list, run `build-docs.py` and a dry run first. Live backup `/home/btrvers/backups/pre-docs-17nov-20261117.sql` and snapshot `docs-snapshot-17nov-20261117.json`.
+
 ## 2. Waiting on others
 
 | Item | Who | What I do after |

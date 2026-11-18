@@ -1,7 +1,7 @@
 <?php
 /**
  * Runs on every request. It holds: the email codes ({{domain}} and {{cpn_dateend_CODE}} and {{deal_block_NAME}}), the Botterverse email design
- * template, the branding of FluentCart emails, the buy button route (/?btv_add=ID) and the coupon codes carried on links (?cpn=CODE).
+ * template, the branding of FluentCart emails and the buy button route (/?btv_add=ID). The coupon-on-a-link code (?cpn=CODE) was removed on 18 November 2026: the app applies it in btv_checkout_guard.
  */
 
 if (!defined('ABSPATH')) {
@@ -297,64 +297,9 @@ add_action('template_redirect', function () {
         }
     }
     $resource::update(['item_id' => $variation_id, 'quantity' => 1], '', []);
-    btv_apply_link_coupon();
     wp_safe_redirect($cart_page());
     exit;
 }, 1);
-
-/**
- * Coupon codes carried on links.
- *
- * A link such as https://botterverse.com/?cpn=founder50 (or /pricing/?cpn=founder50) keeps the code for 14 days in the
- * cookie btv_cpn. The cookie is written by a few lines of script in the page footer so it still works when a page is cached.
- * When the visitor then adds a plan through /?btv_add=ID (or a link carries both) the code is put on their cart.
- * FluentCart checks the code itself: a code that is wrong or not yet started or ended is ignored and the visitor pays the listed price.
- * A code that was applied is removed from the cookie. Only letters and numbers and hyphens and underscores are accepted.
- */
-if (!function_exists('btv_clean_coupon_code')) {
-    function btv_clean_coupon_code($code)
-    {
-        $code = strtolower(trim((string) $code));
-        return preg_match('/^[a-z0-9_-]{2,40}$/', $code) ? $code : '';
-    }
-}
-
-add_action('wp_footer', function () {
-    if (is_admin()) {
-        return;
-    }
-    ?>
-<script>
-(function(){try{var m=/[?&]cpn=([A-Za-z0-9_-]{2,40})(?:&|#|$)/.exec(location.search);if(m){document.cookie='btv_cpn='+encodeURIComponent(m[1].toLowerCase())+'; max-age=1209600; path=/; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');}}catch(e){}})();
-</script>
-    <?php
-}, 99);
-
-if (!function_exists('btv_apply_link_coupon')) {
-    function btv_apply_link_coupon()
-    {
-        $code = '';
-        if (isset($_GET['cpn'])) {
-            $code = btv_clean_coupon_code(wp_unslash($_GET['cpn']));
-        }
-        if (!$code && isset($_COOKIE['btv_cpn'])) {
-            $code = btv_clean_coupon_code(wp_unslash($_COOKIE['btv_cpn']));
-        }
-        if (!$code || !class_exists('FluentCart\Api\Resource\FrontendResource\CartResource')) {
-            return false;
-        }
-        $cart = \FluentCart\Api\Resource\FrontendResource\CartResource::get(['create' => false]);
-        if (!$cart || is_wp_error($cart) || empty($cart->cart_data) || !method_exists($cart, 'applyCoupon')) {
-            return false;
-        }
-        $result = $cart->applyCoupon([$code]);
-        $applied = !is_wp_error($result) && in_array($code, array_map('strtolower', (array) $cart->coupons), true);
-        if ($applied && !headers_sent()) {
-            setcookie('btv_cpn', '', time() - DAY_IN_SECONDS, '/');
-        }
-        return $applied;
-    }
-}
 
 /**
  * Which deal is running, worked out from the two coupons when an email is sent.

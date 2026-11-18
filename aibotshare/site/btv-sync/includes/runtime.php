@@ -1,6 +1,7 @@
 <?php
 /**
- * Runs on every request. Keeps to the three FluentCRM hooks the emails need.
+ * Runs on every request. It holds: the email codes ({{domain}} and {{cpn_dateend_CODE}} and {{deal_block_NAME}}), the Botterverse email design
+ * template, the branding of FluentCart emails, the buy button route (/?btv_add=ID) and the coupon codes carried on links (?cpn=CODE).
  */
 
 if (!defined('ABSPATH')) {
@@ -296,6 +297,123 @@ add_action('template_redirect', function () {
         }
     }
     $resource::update(['item_id' => $variation_id, 'quantity' => 1], '', []);
+    btv_apply_link_coupon();
     wp_safe_redirect($cart_page());
     exit;
 }, 1);
+
+/**
+ * Coupon codes carried on links.
+ *
+ * A link such as https://botterverse.com/?cpn=founder50 (or /pricing/?cpn=founder50) keeps the code for 14 days in the
+ * cookie btv_cpn. The cookie is written by a few lines of script in the page footer so it still works when a page is cached.
+ * When the visitor then adds a plan through /?btv_add=ID (or a link carries both) the code is put on their cart.
+ * FluentCart checks the code itself: a code that is wrong or not yet started or ended is ignored and the visitor pays the listed price.
+ * A code that was applied is removed from the cookie. Only letters and numbers and hyphens and underscores are accepted.
+ */
+if (!function_exists('btv_clean_coupon_code')) {
+    function btv_clean_coupon_code($code)
+    {
+        $code = strtolower(trim((string) $code));
+        return preg_match('/^[a-z0-9_-]{2,40}$/', $code) ? $code : '';
+    }
+}
+
+add_action('wp_footer', function () {
+    if (is_admin()) {
+        return;
+    }
+    ?>
+<script>
+(function(){try{var m=/[?&]cpn=([A-Za-z0-9_-]{2,40})(?:&|#|$)/.exec(location.search);if(m){document.cookie='btv_cpn='+encodeURIComponent(m[1].toLowerCase())+'; max-age=1209600; path=/; SameSite=Lax'+(location.protocol==='https:'?'; Secure':'');}}catch(e){}})();
+</script>
+    <?php
+}, 99);
+
+if (!function_exists('btv_apply_link_coupon')) {
+    function btv_apply_link_coupon()
+    {
+        $code = '';
+        if (isset($_GET['cpn'])) {
+            $code = btv_clean_coupon_code(wp_unslash($_GET['cpn']));
+        }
+        if (!$code && isset($_COOKIE['btv_cpn'])) {
+            $code = btv_clean_coupon_code(wp_unslash($_COOKIE['btv_cpn']));
+        }
+        if (!$code || !class_exists('FluentCart\Api\Resource\FrontendResource\CartResource')) {
+            return false;
+        }
+        $cart = \FluentCart\Api\Resource\FrontendResource\CartResource::get(['create' => false]);
+        if (!$cart || is_wp_error($cart) || empty($cart->cart_data) || !method_exists($cart, 'applyCoupon')) {
+            return false;
+        }
+        $result = $cart->applyCoupon([$code]);
+        $applied = !is_wp_error($result) && in_array($code, array_map('strtolower', (array) $cart->coupons), true);
+        if ($applied && !headers_sent()) {
+            setcookie('btv_cpn', '', time() - DAY_IN_SECONDS, '/');
+        }
+        return $applied;
+    }
+}
+
+/**
+ * Which deal is running, worked out from the two coupons when an email is sent.
+ *
+ *  - 'bf'       FOUNDER50 is active and today is inside its start and end dates (the Black Friday and Cyber Monday deal)
+ *  - 'festive'  FOUNDER40 is active and today is inside its dates (the festive deal)
+ *  - 'normal'   neither
+ * FluentCart saves a coupon's dates as UTC times. Nothing is typed into an email: the dates are the coupon's own.
+ */
+if (!function_exists('btv_deal_phase')) {
+    function btv_deal_phase()
+    {
+        static $phase = null;
+        if ($phase !== null) {
+            return $phase;
+        }
+        global $wpdb;
+        $phase = 'normal';
+        $now = time();
+        foreach (['bf' => 'founder50', 'festive' => 'founder40'] as $name => $code) {
+            $row = $wpdb->get_row($wpdb->prepare("SELECT start_date, end_date FROM {$wpdb->prefix}fct_coupons WHERE LOWER(code) = %s AND status = 'active' LIMIT 1", $code));
+            if (!$row) {
+                continue;
+            }
+            $start = ($row->start_date && strpos((string) $row->start_date, '0000') !== 0) ? strtotime($row->start_date . ' UTC') : 0;
+            $end = ($row->end_date && strpos((string) $row->end_date, '0000') !== 0) ? strtotime($row->end_date . ' UTC') : PHP_INT_MAX;
+            if ($now >= $start && $now <= $end) {
+                $phase = $name;
+                break;
+            }
+        }
+        return $phase = apply_filters('btv_deal_phase', $phase);
+    }
+}
+
+/**
+ * {{deal_block_NAME}} in an email (body or subject) becomes the text for the deal that is running.
+ * The texts are in data/deal-blocks.json as {"NAME": {"bf": "...", "festive": "...", "normal": "..."}}.
+ * A block may hold {{domain}} and {{cpn_dateend_CODE}}. Any phase without text falls back to "normal" and then to nothing.
+ */
+if (!function_exists('btv_deal_block')) {
+    function btv_deal_block($name)
+    {
+        static $blocks = null;
+        if ($blocks === null) {
+            $file = dirname(__DIR__) . '/data/deal-blocks.json';
+            $blocks = is_readable($file) ? json_decode((string) file_get_contents($file), true) : [];
+            $blocks = is_array($blocks) ? $blocks : [];
+        }
+        $set = isset($blocks[$name]) && is_array($blocks[$name]) ? $blocks[$name] : [];
+        $text = $set[btv_deal_phase()] ?? ($set['normal'] ?? '');
+        $text = str_replace('{{domain}}', btv_base_domain(), (string) $text);
+        return btv_replace_coupon_dates($text);
+    }
+}
+
+add_filter('fluentcrm_smartcode_fallback', function ($code, $subscriber = null) {
+    if (strpos($code, '{{deal_block_') === 0 && substr($code, -2) === '}}') {
+        return btv_deal_block(substr($code, 13, -2));
+    }
+    return $code;
+}, 11, 2);

@@ -6,7 +6,7 @@
    "Founder"
   ]
  },
- "run_multiple": false,
+ "run_multiple": true,
  "publish": true,
  "steps": [
   {

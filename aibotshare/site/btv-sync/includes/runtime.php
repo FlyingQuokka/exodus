@@ -21,7 +21,7 @@ function btv_base_domain()
  * The end date of a FluentCart coupon, read from the coupon so nobody types it into an email or a page.
  * Copy writes {{cpn_dateend_COUPONCODE}}, for example {{cpn_dateend_founder50}}, and any coupon can be used the same way.
  * The coupon end date is saved as a UTC time that stands for the end of a day in US Eastern time, so five hours come off before the date is read.
- * Returns the date as "30 November". When the coupon is missing or has no end date it returns "a date to be confirmed", so a sentence such as "closes on {{cpn_dateend_founder50}}" still reads well.
+ * Returns the date as "1st December". When the coupon is missing or has no end date it returns "a date to be confirmed", so a sentence such as "closes on {{cpn_dateend_founder50}}" still reads well.
  */
 if (!function_exists('btv_coupon_date_end')) {
     function btv_coupon_date_end($code)
@@ -37,7 +37,7 @@ if (!function_exists('btv_coupon_date_end')) {
         if ($end && strpos((string) $end, '0000') !== 0) {
             $time = strtotime($end . ' UTC');
             if ($time) {
-                $cache[$key] = gmdate('j F', $time - 5 * HOUR_IN_SECONDS);
+                $cache[$key] = gmdate('jS F', $time - 5 * HOUR_IN_SECONDS);
             }
         }
         return $cache[$key];

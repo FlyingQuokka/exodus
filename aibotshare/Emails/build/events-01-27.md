@@ -98,7 +98,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}
+Your Botters Lab account has been created. Please use this link to [confirm your email address]({{confirmation_link}}).
 
 It works for 60 minutes.
 
@@ -165,7 +165,7 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}
+We received a request to choose a new password for your Botters Lab account. Use this link to [choose a new password]({{reset_link}}).
 
 The link works for the next hour. If you ask for another link, the earlier one stops working.
 
@@ -254,7 +254,7 @@ Hi {{contact.first_name}},
 
 Someone asked to change the email address on your Botters Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.
 
-If this was you, there is nothing to do. If it wasn't you, please contact the Botter Support Team at https://{{domain}}/support/ and change your password in [Settings](https://lab.{{domain}}/settings).
+If this was you, there is nothing to do. If it wasn't you, please contact the [Botter Support Team](https://{{domain}}/support/) and change your password in [Settings](https://lab.{{domain}}/settings).
 
 Your Botter Support Team
 
@@ -275,7 +275,7 @@ Hi {{contact.first_name}},
 
 The email address on your Botters Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.
 
-If you didn't make this change, please contact the Botter Support Team at https://{{domain}}/support/ straight away.
+If you didn't make this change, please contact the [Botter Support Team](https://{{domain}}/support/) straight away.
 
 Your Botter Support Team
 
@@ -316,7 +316,7 @@ Hi {{contact.first_name}},
 
 The password for your Botters Lab account has just been changed.
 
-If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/
+If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the [Sign in](https://lab.{{domain}}/login) page to choose a new one and contact the [Botter Support Team](https://{{domain}}/support/).
 
 Your Botter Support Team
 
@@ -359,7 +359,7 @@ The check found that {{bot_name}} falls into a category that isn't allowed: {{bl
 
 Open the bot from [Bot list](https://lab.{{domain}}/bots) and review its name, description, instructions and knowledge files. Press Save then Make Public once the text is changed. The full list of banned categories is in the terms.
 
-If you think the check was wrong, contact the Botter Support Team at https://{{domain}}/support/
+If you think the check was wrong, contact the [Botter Support Team](https://{{domain}}/support/).
 
 Your Botter Support Team
 
@@ -540,7 +540,7 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and the amount of {{amount}} is being refunded to you. Your bank may take a few days to show it.
 
-Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the Botter Support Team at https://{{domain}}/support/
+Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the [Botter Support Team](https://{{domain}}/support/).
 
 Your Botter Support Team
 
@@ -561,7 +561,7 @@ Hi {{contact.first_name}},
 
 Your claim on {{bot_name}} has been decided and it wasn't approved for a refund.
 
-If you'd like this looked at again, contact the Botter Support Team at https://{{domain}}/support/
+If you'd like this looked at again, contact the [Botter Support Team](https://{{domain}}/support/).
 
 Please say which bot it was and what happened.
 
@@ -584,7 +584,7 @@ Hi {{contact.first_name}},
 
 The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time, so it has been refunded automatically.
 
-The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the Botter Support Team at https://{{domain}}/support/
+The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the [Botter Support Team](https://{{domain}}/support/).
 
 Your Botter Support Team
 
@@ -665,7 +665,7 @@ Hi {{contact.first_name}},
 
 The Botter Support Team has looked at your refund request for {{bot_name}} and it wasn't approved. A refund is only approved when the bot does not work or isn't as described.
 
-If you have more to add, contact the Botter Support Team at https://{{domain}}/support/ and include the exact wording of any messages you saw.
+If you have more to add, contact the [Botter Support Team](https://{{domain}}/support/) and include the exact wording of any messages you saw.
 
 Your Botter Support Team
 
@@ -704,9 +704,9 @@ Your Botter Support Team
 
 Hi {{contact.first_name}},
 
-The seller of {{bot_name}} has updated the licence terms for the bot. You can read them here: {{licence_terms_link}}
+The seller of {{bot_name}} has updated the licence terms for the bot. You can [read them here]({{licence_terms_link}}).
 
-You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms, contact the Botter Support Team at https://{{domain}}/support/
+You'll also find the terms under Licence terms on the bot in [Bots I bought](https://lab.{{domain}}/my-bots). If you have questions about the terms, contact the [Botter Support Team](https://{{domain}}/support/).
 
 Botterverse doesn't give legal advice about licence terms.
 

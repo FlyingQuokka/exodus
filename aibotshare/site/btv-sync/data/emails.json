@@ -26,7 +26,7 @@
  "E02A": {
   "title": "Email confirmation link (day 0, new account)",
   "subject": "[Botterverse] Confirm your email address",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your Botters Lab account has been created. Confirm your email address with this link: {{confirmation_link}}</p>\n<p>It works for 60 minutes.</p>\n<p>Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your Botters Lab account has been created. Please use this link to <a href=\"{{confirmation_link}}\">confirm your email address</a>.</p>\n<p>It works for 60 minutes.</p>\n<p>Some things stay closed until you do. For example, you can't make a bot Public or submit a listing. If you paid for your plan before creating your account, the plan and its boosts are added once you confirm.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E02B": {
@@ -44,7 +44,7 @@
  "E04": {
   "title": "Forgotten password (any time, on request)",
   "subject": "[Botterverse] Choose a new password",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>We received a request to choose a new password for your Botters Lab account. Use this link to choose one: {{reset_link}}</p>\n<p>The link works for the next hour. If you ask for another link, the earlier one stops working.</p>\n<p>If you didn't ask for this, you can ignore this email and your password stays as it is.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>We received a request to choose a new password for your Botters Lab account. Use this link to <a href=\"{{reset_link}}\">choose a new password</a>.</p>\n<p>The link works for the next hour. If you ask for another link, the earlier one stops working.</p>\n<p>If you didn't ask for this, you can ignore this email and your password stays as it is.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E05": {
@@ -68,13 +68,13 @@
  "E07B": {
   "title": "Email change: notice to the old address (on request)",
   "subject": "[Botterverse] A change of email address was asked for",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Someone asked to change the email address on your Botters Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.</p>\n<p>If this was you, there is nothing to do. If it wasn't you, please contact the Botter Support Team at https://{{domain}}/support/ and change your password in <a href=\"https://lab.{{domain}}/settings\">Settings</a>.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Someone asked to change the email address on your Botters Lab account to {{new_email}}. The change only happens once the link we sent to that address is used.</p>\n<p>If this was you, there is nothing to do. If it wasn't you, please contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a> and change your password in <a href=\"https://lab.{{domain}}/settings\">Settings</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E07C": {
   "title": "Email change: confirmation to the old address (once done)",
   "subject": "[Botterverse] Your email address has been changed",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The email address on your Botters Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.</p>\n<p>If you didn't make this change, please contact the Botter Support Team at https://{{domain}}/support/ straight away.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The email address on your Botters Lab account is now {{new_email}}. Emails for your account will go to the new address from now on.</p>\n<p>If you didn't make this change, please contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a> straight away.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E07D": {
@@ -86,7 +86,7 @@
  "E08": {
   "title": "Password change (when the password is changed)",
   "subject": "[Botterverse] Your password has been changed",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The password for your Botters Lab account has just been changed.</p>\n<p>If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the <a href=\"https://lab.{{domain}}/login\">Sign in</a> page to choose a new one and contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The password for your Botters Lab account has just been changed.</p>\n<p>If this was you, there is nothing to do. If it wasn't you, use Forgotten password? on the <a href=\"https://lab.{{domain}}/login\">Sign in</a> page to choose a new one and contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E09": {
@@ -98,7 +98,7 @@
  "E10": {
   "title": "Public bot switched to Personal after a blocked category (when it happens)",
   "subject": "[Botters Lab] Your bot has been switched to Personal",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The check found that {{bot_name}} falls into a category that isn't allowed: {{blocked_categories}}. The bot is now Personal, so its link and embed have stopped and it has no customers.</p>\n<p>Open the bot from <a href=\"https://lab.{{domain}}/bots\">Bot list</a> and review its name, description, instructions and knowledge files. Press Save then Make Public once the text is changed. The full list of banned categories is in the terms.</p>\n<p>If you think the check was wrong, contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The check found that {{bot_name}} falls into a category that isn't allowed: {{blocked_categories}}. The bot is now Personal, so its link and embed have stopped and it has no customers.</p>\n<p>Open the bot from <a href=\"https://lab.{{domain}}/bots\">Bot list</a> and review its name, description, instructions and knowledge files. Press Save then Make Public once the text is changed. The full list of banned categories is in the terms.</p>\n<p>If you think the check was wrong, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E11": {
@@ -146,19 +146,19 @@
  "E16A": {
   "title": "Guarantee claim decided: refunded (buyer)",
   "subject": "[Botters Lab] Your claim on {{bot_name}} has been refunded",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your claim on {{bot_name}} has been decided and the amount of {{amount}} is being refunded to you. Your bank may take a few days to show it.</p>\n<p>Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your claim on {{bot_name}} has been decided and the amount of {{amount}} is being refunded to you. Your bank may take a few days to show it.</p>\n<p>Your access to the bot ends once the refund has settled. If you have a question about the refund, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E16B": {
   "title": "Guarantee claim decided: not refunded (buyer)",
   "subject": "[Botters Lab] Your claim on {{bot_name}} has been decided",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your claim on {{bot_name}} has been decided and it wasn't approved for a refund.</p>\n<p>If you'd like this looked at again, contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Please say which bot it was and what happened.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>Your claim on {{bot_name}} has been decided and it wasn't approved for a refund.</p>\n<p>If you'd like this looked at again, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Please say which bot it was and what happened.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E17": {
   "title": "Guarantee claim refunded automatically - Optional (buyer)",
   "subject": "[Botters Lab] Your claim on {{bot_name}} has been refunded",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time, so it has been refunded automatically.</p>\n<p>The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The owner of {{bot_name}} didn't answer your Money-back guarantee claim in time, so it has been refunded automatically.</p>\n<p>The refund is {{amount}}. Your bank may take a few days to show it. If you have a question about it, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E18": {
@@ -182,7 +182,7 @@
  "E20B": {
   "title": "Bot Market refund decision: not approved (buyer)",
   "subject": "[Botters Lab] Your refund request has been decided",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Botter Support Team has looked at your refund request for {{bot_name}} and it wasn't approved. A refund is only approved when the bot does not work or isn't as described.</p>\n<p>If you have more to add, contact the Botter Support Team at https://{{domain}}/support/ and include the exact wording of any messages you saw.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The Botter Support Team has looked at your refund request for {{bot_name}} and it wasn't approved. A refund is only approved when the bot does not work or isn't as described.</p>\n<p>If you have more to add, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a> and include the exact wording of any messages you saw.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E21": {
@@ -194,7 +194,7 @@
  "E22": {
   "title": "Licence terms changed (each current holder)",
   "subject": "[Botters Lab] {{seller_username}} has updated the licence terms for {{bot_name}}",
-  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The seller of {{bot_name}} has updated the licence terms for the bot. You can read them here: {{licence_terms_link}}</p>\n<p>You'll also find the terms under Licence terms on the bot in <a href=\"https://lab.{{domain}}/my-bots\">Bots I bought</a>. If you have questions about the terms, contact the Botter Support Team at https://{{domain}}/support/</p>\n<p>Botterverse doesn't give legal advice about licence terms.</p>\n<p>Your Botter Support Team</p>",
+  "body_html": "<p>Hi {{contact.first_name}},</p>\n<p>The seller of {{bot_name}} has updated the licence terms for the bot. You can <a href=\"{{licence_terms_link}}\">read them here</a>.</p>\n<p>You'll also find the terms under Licence terms on the bot in <a href=\"https://lab.{{domain}}/my-bots\">Bots I bought</a>. If you have questions about the terms, contact the <a href=\"https://{{domain}}/support/\">Botter Support Team</a>.</p>\n<p>Botterverse doesn't give legal advice about licence terms.</p>\n<p>Your Botter Support Team</p>",
   "source": "events-01-27.md"
  },
  "E23A": {

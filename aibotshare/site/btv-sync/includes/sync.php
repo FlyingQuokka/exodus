@@ -127,6 +127,22 @@ class BTV_Sync
             update_option('_fluentcrm_experimental_settings', $current);
         }
 
+        // Abandoned cart tracking needs more than the flag above. FluentCRM's own settings page also creates the
+        // table and saves these settings, and the O04 trigger stays inactive until they exist. Only the keys named
+        // in the file are written. Every other key keeps its saved value or FluentCRM's default.
+        if (!empty($def['fluentcrm_abandoned_cart']) && is_array($def['fluentcrm_abandoned_cart'])) {
+            if (class_exists('FluentCrm\App\Modules\AbandonCart\AbandonCartMigrator')) {
+                \FluentCrm\App\Modules\AbandonCart\AbandonCartMigrator::migrate();
+                $saved = get_option('_fc_ab_cart_settings', []);
+                $saved = is_array($saved) ? $saved : [];
+                $want = array_merge($saved, $def['fluentcrm_abandoned_cart']);
+                if ($want !== $saved) {
+                    update_option('_fc_ab_cart_settings', $want);
+                    $changed[] = 'abandoned_cart_settings';
+                }
+            }
+        }
+
         // The reply-to address on every FluentCRM email. Replies reach the support desk.
         if (!empty($def['fluentcrm_reply_to'])) {
             $global = get_option('fluentcrm-global-settings', []);

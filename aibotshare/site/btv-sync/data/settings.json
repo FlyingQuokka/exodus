@@ -3,5 +3,16 @@
   "abandoned_cart": "yes"
  },
  "fluentcrm_reply_to": "support@{{domain}}",
- "fluentcrm_reply_to_name": "Botter Support Team"
+ "fluentcrm_reply_to_name": "Botter Support Team",
+ "fluentcrm_abandoned_cart": {
+  "enabled": "yes",
+  "enabled_providers": [
+   "fluent_cart"
+  ],
+  "capture_after_minutes": "30",
+  "gdpr_consent": "yes",
+  "disabled_user_roles": [
+   "administrator"
+  ]
+ }
 }

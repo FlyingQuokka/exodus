@@ -1,4 +1,4 @@
-# Handover: Botterverse site, session 6 (written 15 November 2026 and updated 18 November 2026)
+# Handover: Botterverse site, session 6 (written 15 November 2026 and updated 25 November 2026)
 
 Read this first. Then read `Handover-session-5.md`: it is still the reference for the facts that must stay right in copy (section 5) and the writing rules (section 6) and the working notes (section 7) and the routes to the live site (section 8). Its status table (section 1) lists every change made so far with dates. This file only says where things stand now.
 
@@ -37,14 +37,21 @@ Done on 24 and 25 November 2026 (go-live work with the Lab live):
 - **Live server instructions** for the app agent: `E:/Projects/AIBotShare/Repos/Botterverse/Docos/live-server-ssh-instructions.md`. `live-ssh.sh` is also copied into the `.ssh` folder there and works from it.
 - **Event email links.** Named links in the event emails (`events-01-27.md` and `emails.json`), live copy matches. The stale file `E:/Projects/AIBotShare/Docos/emails.json` has old Founders wording: do not load it.
 
+Done on 25 November 2026 (site audit and clean-up):
+- **Audit.** Every item in `Docos/WordPress-Setup.md` was checked on live (read only) and all 137 URLs were fetched. All pages and links answer correctly and all 15 buy buttons go through the Lab to the cart. Plan and pack variations, upgrade paths, the five Lab feeds, the Buyers feed, FluentAffiliate settings, the checkout guard (2.0.24) and Stripe (keys in `wp-config.php`, live mode) are correct.
+- **Credits stay credits.** The owner withdrew the boosts rename on 8 November: the unit is credits and only packs are Botter Booster Packs (buttons that mean a pack say "Buy a Botter Booster Pack", the menu label is "Billing And Credits"). 265 live FluentCRM emails said "boosts". The sources in `Emails/build` (433 mentions), `emails.json` and the Concept C banner were corrected, then synced to live with a backup (`pre-credits-sync-20261125.sql`). Live now has 0 boosts and 263 credits. The app's own "Buy Credits" button still needs changing to "Buy a Botter Booster Pack" (app agent).
+- **Server changes (live and local).** Empire variations 29 and 30 set inactive, so `/?btv_add=29` no longer adds Empire (set in FluentCart, Products, Botterverse Membership, Pricing). The 12 stale upgrade paths (old variation ids 1 to 18) were deleted (9 valid remain). Entries 51 and 55 removed from `banner_cookie_options` (now empty). A marked block in `public_html/.htaccess` adds security headers (`X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy` and HSTS `max-age=300`) and blocks `xmlrpc.php` (403). The AIOS PHP firewall stays off, so its XMLRPC option would do nothing. Backups `pre-stale-paths-20261125.sql` and `pre-empire-cookies-20261125.sql` and the `.htaccess` copies `htaccess-pre-headers-20261125` and `htaccess-pre-xmlrpc-20261125`.
+- **The owner's own changes.** UpdraftPlus backups on (weekly files and daily database), real cron for WordPress (`DISABLE_WP_CRON` true), AIOS invalid-username lockout off, readme.html deleted, demo Fluent Forms inactive, postal address and From name added to FluentCRM, admin email `sysadmin.wp@botterverse.com`, search engine visibility still blocked on purpose until launch.
+- **Help articles of 25 November** (`wp-agent-help-articles-25-nov.md`, owner confirmed the release is live): `signing-up` and `member-menu` as listed plus `change-plan` (a change of 20 November on `dev` that no list carried). Applied locally and live. Backup `pre-docs-25nov-20261125.sql` and snapshot `docs-snapshot-25nov-20261125.json`.
+- **Feeds to the Lab.** The two 401s on the order page for order 28 (24 November 14:39) were from before the Lab's secret matched. A test with the real secret now gets 422 and a wrong one 401. The second live test order (25 November 17:03) shows both feeds with Response Code 200. Both embedded bots (Ask Botterverse and Inspector Clickworth) answer on live.
+- **New material.** 28 banner PNGs in `Designs-WP/Banners/New/png`. Evergreen affiliate swipe emails in `Docos/affiliate-swipe-emails-v2.md` (replace the six in `affiliate-swipe-material-v1.md`, which followed the old rules).
+
 ## 2. Waiting on others
 
 | Item | Who | What I do after |
 |---|---|---|
 | Cancellation email built and merged on dev (075abbda), not released. "Released" means live on the app's production server, which needs the Lab | App agent | Nothing. E42a is already off, so no member receives a cancellation email until it is released |
-| The embedded bots answer "This bot isn't available at the moment" on live on live (the live ids are in the pages) | App agent | Check the home page demo bot and the FAQ bot answer once fixed. Nothing to change in the pages |
-| Lab deployed at `lab.botterverse.com` (live and working from 24 November) | App agent and owner | Until then every Join and buy button on live ends in a 404 (the route is `/buy?checkout=...`) and nothing that relies on the app works. Check the buttons once it is up |
-| `btv_checkout_guard` on live | Owner at deployment (version 2.0.20, matching secrets) | Nothing. It is not mine |
+| Rename the app button "Buy Credits" to "Buy a Botter Booster Pack" | App agent | Nothing on the site |
 | E-code event emails built in the app | App agent | Nothing |
 | `btv_checkout_guard` 2.0.22 (applies the `cpn` coupon) and FOUNDER40 recognised as a Founder coupon, Founder tag removed on cancel | App agent | Nothing on the site. The app agent needs the FND1 note above |
 
@@ -52,8 +59,9 @@ Done on 24 and 25 November 2026 (go-live work with the Lab live):
 
 - Wait for the owner's review of `bfcm-festive-copy-v1.md`. Then: put the approved sequences into the sync data (the Black Friday and festive sign-up sequences with the festive one on its own tag such as Src Festive and the Black Friday sequence stopped on 2nd December) and the deal blocks into `data/deal-blocks.json` and the swapped affiliate emails into the follow-up sequence. Make the banners and landing pages for the app (title and image and alt text and landing path and coupon for each item). Prepare the closed state for the gap days. The sign-up emails use scheduled content so the sequences must not keep sending stale dates.
 - Tell the app agent about the FND1 tag point (see above).
-- After editing any legal page on live remove the entry WP Legal Pages adds to the option `banner_cookie_options`.
-- When the Lab is live and the bot ids are in: check the Join and buy buttons then run one real test order on live to prove the whole process (this replaces the old "check the FluentCart system pages" item, which the owner dropped on 15 November 2026 because the pages run the same third-party code on both sites).
+- After editing any legal page on live remove the entry WP Legal Pages adds to the option `banner_cookie_options` (the option is in the `btv_options` table).
+- Before real prospects arrive (the owner): cancel the active $2.50 test subscription (subscription 27) and remove the test member data (testbotter01 and FluentCRM contact 10 and the test orders). Check the Brevo plan limit (the old account was free at 300 per day). Send a test email to Gmail and Outlook and check inbox placement. Switch search engine visibility on at launch.
+- After a week: raise the HSTS `max-age` in the `.htaccess` block to 31536000. After a few weeks of clean Brevo reports consider DMARC `p=quarantine` (it is `p=none` now). Update the nine pending Fluent plugins after launch week and test one plan upgrade after the FluentCart update.
 
 Closed on 15 November 2026 (checked on live, read only):
 - The sync is not needed for the help page templates or the lead form feed. The three live templates (`archive-docs` and `single-docs` and `taxonomy-doc_category`) match the repository files by checksum. Form 3 (Botterverse lead capture) feeds Main List with the tags Lead and Src Founders Page. FND2 exists on live and is published. The owner reports every automation on live is published.

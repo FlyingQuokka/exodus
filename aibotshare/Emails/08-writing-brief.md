@@ -38,7 +38,7 @@ Do not read anything in the `retired` folder. It holds the retired files.
 - The customer list for Pro and above carries the consent condition: only customers who ticked the box are included. Never say "all your customers".
 - Priority support starts at Pro.
 - The cheapest tier is Apprentice Botter. The tiers in order are Apprentice Botter and Novice Botter and Expert Botter and Pro Botter and Master Botter. Never imply a member has a feature their tier doesn't. Use the digest to check each feature's tier.
-- Page names must match the Botters Lab menu: Dashboard and Bot list and Create a bot and Import a bot and Analytics and A/B tests and Bot styles and Browse and Bots I bought and My listings and My profile and Sales and Payouts and Settings and Support and Help and Feedback and Affiliates. Use the guide's exact labels for buttons and fields and section names.
+- Page names must match the Botters Lab menu: Dashboard and Bot list and Create a bot and Import a bot and Analytics and A/B tests and Bot styles and Browse and Bots I bought and My listings and My profile and Sales and Payouts and Settings and Support and Feedback and Help and Affiliates. Use the guide's exact labels for buttons and fields and section names.
 - If you are unsure of a fact write `[CONFIRM: what is unclear]` in the email's Notes and keep the email text neutral. Never invent a number or a feature or a button label.
 
 ## 4. Links and merge codes

@@ -91,7 +91,7 @@ Active bots shows how many bots you have against your plan's limit, for example 
 
 The menu down the left is how you move around. Bots holds the Bot list, Create a bot, Import a bot, Analytics, A/B tests and Bot styles. Bot Market holds Browse, Bots I bought, My listings and My profile. Earnings holds Sales and Payouts.
 
-Settings, Support, Help, Feedback and Affiliates sit at the foot. Which of these you can use depends on your plan, so don't worry if a few aren't ready yet.
+Settings, Support, Feedback, Help and Affiliates sit at the foot. Which of these you can use depends on your plan, so don't worry if a few aren't ready yet.
 
 The Bot list page shows each of your bots with its status such as Running or Paused by you. It's empty for now and that's about to change.
 

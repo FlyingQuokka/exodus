@@ -87,7 +87,7 @@ Active bots shows how many bots you have against your plan's limit, for example 
 
 The menu down the left is how you move around. Bots holds [Bot list](https://lab.{{domain}}/bots), [Import a bot](https://lab.{{domain}}/bots/import), Analytics, A/B tests and Bot styles. Bot Market holds Browse, Bots I bought, My listings and My profile.
 
-Earnings holds Sales and Payouts. Account holds [Billing And Credits](https://lab.{{domain}}/billing). Settings, Support, Help, Feedback and Affiliates sit at the foot.
+Earnings holds Sales and Payouts. Account holds [Billing And Credits](https://lab.{{domain}}/billing). Settings, Support, Feedback, Help and Affiliates sit at the foot.
 
 Your plan name shows under your name at the top right. A page your plan doesn't include has a short note saying what it does and which plans have it, so you can look without anything breaking.
 
